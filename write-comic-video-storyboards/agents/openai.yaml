@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转视频分镜"
+  short_description: "从原漫画与截图生成结构化、可直接制作的AI视频分镜"
+  default_prompt: "Use $write-comic-video-storyboards to analyze the original comic pages and cropped references, then create environment assets and structured AI video storyboard clips with natural dialogue timing."

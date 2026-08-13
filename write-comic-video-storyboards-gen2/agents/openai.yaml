@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2"
+  short_description: "原格优先的二维动画分镜与双版本提示词"
+  default_prompt: "Use $write-comic-video-storyboards-gen2 to preserve recognizable comic panels, create detailed 2D animation storyboards, and append complete platform-safe replacement clips when needed."
