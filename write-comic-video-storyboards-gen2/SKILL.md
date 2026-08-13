@@ -22,9 +22,9 @@ Do not read scripts unless modifying them. Run validation scripts directly.
 ## Workflow
 
 1. Establish source/original and crop directories, reading order, output path, dialogue language, target model, aspect ratio, and the default 15-second soft ceiling. Use generic character labels until references exist. Add no BGM.
-2. Inventory images in natural order. Inspect all panels once at overview scale; reopen only cited, text-critical, ambiguous, or visually complex panels at full resolution. Check the current panel plus neighbors; expand to five only when ambiguity remains.
+2. Inventory images in natural order. Create non-destructive review copies at about 540 pixels wide while preserving aspect ratio and leaving source files unchanged. Inspect all panels once through contact sheets or these copies. For small text, hand–prop assignment, facial detail, complex action, or ambiguity, create or open a roughly 720-pixel copy; use full resolution only when 720 pixels remains insufficient. Do not repeatedly load high-resolution panels already understood. Check the current panel plus neighbors; expand to five only when ambiguity remains.
 3. Build a compact internal ledger containing: crop↔original, location, characters, visible action/pose, dialogue, props, entering/exiting state, 保格/拆格/补格/并格, behavior type (state/action; reaction as an optional tag), and ambiguity. Do not output full analysis tables unless requested or needed for review.
-4. For every 保格 candidate, lock an original-panel reproduction point: framing/viewpoint, subject placement, pose, left/right hand–prop assignment, expression/gaze, and layer hierarchy. The generated shot must clearly pass through and briefly hold it.
+4. For every 保格 candidate, lock an original-panel reproduction point: vertical camera angle, horizontal viewing direction, shot scale, subject placement, pose, left/right hand–prop assignment, expression/gaze, and layer hierarchy. The generated shot must clearly pass through and briefly hold it.
 5. Time dialogue before camera flourishes. Include breath, hesitation, pauses, interruption, and listener reaction. Split rather than accelerate. Use continuous integer timecodes.
 6. Cluster locations and choose the lightest useful environment deliverable. Give simple or one-off locations a compact environment prompt for direct use without a reference image; create a structural line-art reference only for recurring spatially complex locations. Put `环境参考：【名称】` once below the clip title only when an environment image is actually used. Describe the distinct visible background in each shot.
 7. Draft each block in this order: optional `分镜参考`; concise `景别`; concise `构图`; concise `运镜`; detailed `画面内容`. The first three fields define the shot's base state. Put any timed change of scale, composition, or camera—especially multi-stage camera movement—inside `画面内容`. End on a reproducible pose or object state.
@@ -40,6 +40,8 @@ Do not read scripts unless modifying them. Run validation scripts directly.
 - Do not turn dialogue concepts into replacement props or scenes. If the panel shows left-hand skewer and right-hand map, a line about money does not authorize coins.
 - Use originals to recover omitted text and context; use crop filenames for formal references.
 - Determine camera angle from camera position and perspective, never from where the character looks. A raised or lowered head does not itself imply a low or high camera.
+- Keep horizontal viewing direction separate from composition position. Record `正面／略微斜侧面／斜侧面／纯侧面／背面` in `景别`; record `左侧三分之一／中央／右侧三分之一／边缘或其他偏心位置` in `构图`. A centered subject may still be seen from the side.
+- Never use `中央` as a fallback. Infer placement from the cited panel's visual center of mass, negative space, overlap, and layer hierarchy. Preserve genuine centered compositions; do not force variety against the source.
 - Before citing a crop, recheck base scale/angle, subject placement and overlap, pose/gaze, hands/props, and layer hierarchy. Do not put off-panel props or a planned later camera state into the cited panel's base fields.
 
 ### Timing, structure, and sound

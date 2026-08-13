@@ -23,7 +23,7 @@ Use generic labels such as “女孩”“男孩”“女仆” until character 
 
 ### 2. Inventory both source layers
 
-List images in natural numeric order. Inspect all originals and crops at overview scale, then reopen relevant panels at readable resolution.
+List images in natural numeric order. Create non-destructive review copies before visual inspection: default to about 540 pixels wide while preserving aspect ratio; keep originals unchanged. Inspect all originals and crops once through contact sheets or these review copies. Create or open a roughly 720-pixel copy only when small text, hand–prop assignment, facial detail, complex action, or ambiguity cannot be resolved at 540 pixels; open the full-resolution source only as a final exception. Do not repeatedly load full-resolution panels already understood.
 
 - Read original pages for missing dialogue, narration, order, and wider context.
 - Use cropped filenames for every formal `分镜参考` citation.

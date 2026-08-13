@@ -41,12 +41,14 @@ Prefer boundaries at location/time change, completed entrance/exit/reveal, dialo
 Every timed block uses concise base fields followed by a detailed execution field:
 
 1. optional `分镜参考 [crop.jpg]`;
-2. `景别：` base camera angle plus base shot scale only, for example `平视，面部近景`;
-3. `构图：` only essential subject placement, key prop, depth, or occlusion;
+2. `景别：` base vertical camera angle, horizontal viewing direction when visually meaningful, and base shot scale only, for example `轻微仰视，略微斜侧面，全身中景` or `平视，面部近景`;
+3. `构图：` only essential subject placement, key prop, depth, or occlusion; identify left/right thirds or other off-center placement when present, and never default to `中央`;
 4. `运镜：` one concise base instruction such as `固定镜头`, `跟随镜头`, or `固定镜头，缓慢拉远`;
 5. `画面内容：` detailed start state, ordered action, performance, environment/light, dialogue, sound, endpoint, and any timed change of scale, composition, or camera movement. Camera changes may be described here whenever they occur, especially multi-stage movement.
 
 Do not repeat the same fact across the four fields. The base `景别` must describe the cited panel, not a later push-in result; put that change in `运镜` or, when timed/complex, in `画面内容`.
+
+Treat viewing direction and frame placement as independent axes. Use the plain prompt terms `正面`, `略微斜侧面`, `斜侧面`, `纯侧面`, or `背面` for direction; reserve `左侧三分之一`, `中央`, `右侧三分之一`, `边缘`, and other off-center descriptions for composition. Determine placement from the source panel's visual weight, negative space, overlap, and foreground/background relationship. Preserve a genuinely centered source panel, but never select center merely because placement is uncertain.
 
 After every spoken or narrated sentence add `（音色、语气、情绪；必要时语速、停顿、重音）`. Add no BGM or musical cues.
 
