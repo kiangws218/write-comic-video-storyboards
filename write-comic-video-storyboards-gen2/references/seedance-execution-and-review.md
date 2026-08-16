@@ -76,7 +76,7 @@ Compliance review is a safety and clarity pass, not a moderation-bypass pass.
 
 ## 6. No-BGM rule
 
-Do not add BGM, score, melody, musical mood, instrument cues, or beat-synced music. Use dialogue, narration, room tone, weather, Foley, impacts, breath, silence, and other diegetic sound only.
+Storyboard mother drafts contain dialogue and narration only; do not add BGM, ambience, Foley, impacts, breath sounds, silence cues, or other audio-production instructions to them. Handle any separate audio-design pass outside the storyboard text.
 
 ## 7. Output format
 
