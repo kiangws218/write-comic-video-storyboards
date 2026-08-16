@@ -1,69 +1,36 @@
-# 2D animation execution grammar
+# 2D animation and combat execution
 
-Use this reference when compiling anime, manga, cel-animation, or hand-drawn execution prompts.
+Read this file for fights or complex fast action. `storyboard-spec.md` remains authoritative: never manufacture unsupported action phases merely to make combat complete.
 
-## 1. Lock the medium
+## Medium and layers
 
-State the medium once when needed: hand-drawn 2D animation, clean line art, cel-shaded characters, and painted or line-art background appropriate to the project. Preserve the established character design, palette, and line weight.
+Use hand-drawn 2D animation, clean line art, cel-shaded characters, and layered painted/line-art backgrounds. Avoid sensor, ISO, lens-breathing, and photographic bokeh language unless a hybrid look is requested.
 
-Avoid photographic sensor, ISO, lens-breathing, bokeh, and shallow-depth-of-field language unless the user explicitly requests a hybrid simulated-camera look. Use framing, angle, layer movement, scale change, occlusion, and drawn focus instead.
+Use only relevant layers: foreground occluders/debris, character cels, midground props/opponents, background layout, and weather/light/reflection composites. Assign different movement rates when parallax matters; do not move every layer equally.
 
-## 2. Build motion in animation layers
+## Source-bounded fast action
 
-Use only layers relevant to the shot:
+Identify which phases the comic actually supplies: anticipation, burst, contact, displacement, immediate response, follow-through, or landing. Animate the supplied phases and only the smallest connective motion between them.
 
-- foreground leaves, debris, doorframes, furniture edges, or passing objects;
-- character cel layer with pose change and facial performance;
-- midground props or other characters;
-- painted background with pan, vertical drift, or held layout;
-- weather, dust, rain, smoke, light shapes, or reflections as compositing layers.
+- If one panel shows only decisive contact, it may remain a contact-centered shot.
+- If adjacent panels explicitly show anticipation and landing, connect them without inventing a new attack, route, grip, or impact.
+- If a needed phase changes composition, use an uncited hard-cut shot.
+- A three-second shot may contain several continuous actions when source-supported; do not reject it solely for action count.
 
-Describe different movement rates to create parallax. Do not move every layer equally.
+Use held anticipation, smear frames, speed lines, impact frames, debris, cloth delay, and readable landing poses selectively. Do not make every second equally fast.
 
-## 3. Use a complete action phrase
+## Faces, camera, and light
 
-For meaningful motion, specify:
+At peak speed, reduce detailed facial demands; keep the face readable before or after and let silhouette, pose, speed lines, background scroll, and impact shapes carry the burst.
 
-1. preparation or anticipation;
-2. main action and direction;
-3. contact, displacement, or other visible result;
-4. bodily and material follow-through;
-5. settled endpoint.
+Prefer one motivated camera behavior per shot: pan, track, tilt, fixed layout, or continuous push. A real viewpoint change is a hard cut. Avoid vague orbiting language.
 
-For fast action, selectively use a brief held anticipation, burst movement, smear frame, speed lines, impact frame, debris or cloth delay, and a readable landing pose. Do not make every second equally fast.
+Describe light as visible 2D shapes—cel shadow, rim-light edge, moving light band, cloud shadow, or sliding highlight. Specify direction only when it materially supports space, mood, or action.
 
-## 4. Preserve faces during strong motion
+## Failure correction
 
-When motion is the primary target, avoid demanding detailed facial acting at the fastest instant. Keep the face readable before and after the burst; let silhouette, pose, speed lines, background scroll, impact shapes, and follow-through carry the peak action.
-
-## 5. Treat the camera as animation layout
-
-Prefer one motivated camera behavior per shot:
-
-- pan across a painted background;
-- slow push by scaling the composed layers;
-- track with the subject while the background scrolls;
-- tilt from one drawn layer to another;
-- hold the layout while character animation changes the focal point.
-
-A shot may change from medium to close-up through a continuous push. A real cut requires a new viewpoint or dramatic purpose and should be stated as a hard cut.
-
-## 6. Draw light as shapes
-
-Describe light through visible animated forms:
-
-- hard two-tone cel shadow;
-- clean rim-light shape along hair or clothing edge;
-- moving window-light band;
-- cloud shadow crossing the ground and character layers;
-- narrow highlight sliding across metal, glass, or wet stone.
-
-Specify light direction only when it materially supports space, mood, or a key action. Do not overconstrain every ordinary shot.
-
-## 7. Failure corrections
-
-- Photoreal drift: remove sensor, lens, bokeh, and live-action capture terms; restate 2D layers and cel shading.
-- Floaty action: add anticipation, direction, contact, weight transfer, follow-through, and endpoint.
-- Melting face during combat: reduce facial demands at peak speed; use silhouette, smear, speed lines, and an impact frame.
-- Static-panel feeling: add a meaningful pose change, prop feedback, environment layer motion, and a final state.
-- Uniform background movement: assign distinct speeds or hold one layer while another moves.
+- Photoreal drift: remove photographic capture terms; restate 2D layers and cel shading.
+- Floaty action: clarify the source-supported direction, contact/result, weight transfer, and endpoint; do not add unsupported phases.
+- Melting face: reduce facial demand at peak speed.
+- Static-panel feeling: add a source-supported pose change, visible prop/environment response, or camera phase.
+- Uniform background motion: differentiate layer speeds or hold one layer.

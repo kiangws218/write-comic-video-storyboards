@@ -25,9 +25,12 @@ PRODUCTION_NOTE_RE = re.compile(
 )
 FIELD_NAMES = ("景别", "构图", "运镜", "画面内容")
 ENVIRONMENT_RE = re.compile(r"^环境参考[：:]", re.MULTILINE)
-MUSIC_RE = re.compile(
-    r"音效[：:][^\r\n]*(?:BGM|配乐|音乐|旋律|弦乐|木琴|主题曲|配器)",
+AUDIO_RE = re.compile(
+    r"(?:音效|环境声|动作声|拟音|BGM|配乐|背景音乐)[：:]",
     re.IGNORECASE,
+)
+META_RE = re.compile(
+    r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则"
 )
 NEGATIVE_PROMPT_RE = re.compile(
     r"^(?:构图|运镜)[：:][^\r\n]*(?:不增加|不使用|不推拉|不环绕|"
@@ -146,11 +149,6 @@ def main() -> int:
                 )
             previous_end = end
 
-        if previous_end is not None and previous_end < args.max_seconds:
-            warnings.append(
-                f"{label}{number}在{previous_end}s结束，未使用完整{args.max_seconds}秒。"
-            )
-
         for match in PRODUCTION_NOTE_RE.finditer(chunk):
             errors.append(
                 f"{label}{number}含制作流程说明，不是可直接生成的提示词：{match.group(0)}"
@@ -184,8 +182,13 @@ def main() -> int:
                     "景别、构图、运镜、画面内容。"
                 )
 
-        for match in MUSIC_RE.finditer(chunk):
-            errors.append(f"{label}{number}含BGM或音乐提示：{match.group(0)}")
+        for match in AUDIO_RE.finditer(chunk):
+            errors.append(f"{label}{number}含音效或音乐字段：{match.group(0)}")
+
+        for match in META_RE.finditer(chunk):
+            errors.append(
+                f"{label}{number}含参考分析元表述，请改写为可见画面：{match.group(0)}"
+            )
 
         for match in NEGATIVE_PROMPT_RE.finditer(chunk):
             errors.append(
@@ -243,7 +246,7 @@ def main() -> int:
     if errors:
         print(f"验证失败：{len(errors)}个错误，{len(warnings)}个警告。")
         return 1
-    print(f"验证通过：0个错误，{len(warnings)}个警告。")
+    print(f"结构验证通过：0个错误，{len(warnings)}个警告。")
     return 0
 
 

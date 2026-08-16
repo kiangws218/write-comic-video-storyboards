@@ -1,24 +1,14 @@
 # Seedance execution, review, and retake
 
-Use this reference only when producing directly pasteable execution prompts or diagnosing a generated result. Keep the detailed storyboard mother draft as the source of truth.
+Read this file only for paste-ready execution prompts or failed-generation review. Compile from the approved mother draft; do not rewrite the story.
 
-## 1. Compile instead of rewriting
+## Compile
 
-For each approved clip:
+For each clip retain plot result, dialogue, timing, shot purpose, valid reference role, visible action causality, local background, lighting, and endpoint. Remove duplicated static details, repeated atmosphere, empty quality adjectives, redundant negatives, and operator notes.
 
-1. copy immutable plot result, dialogue, timing, shot purpose, and valid references;
-2. identify whether the clip is a continuous take, phased single take, or actual multishot clip;
-3. retain the primary generation target and fragile anchor from pre-analysis;
-4. remove repeated static details already carried by a valid reference image;
-5. retain concrete movement, composition, environment, material, lighting, voice, and sound details that affect generation;
-6. remove empty evaluators such as “高级”“震撼”“电影级” unless translated into observable form;
-7. preserve natural speech time rather than compressing dialogue to meet a character budget.
+Do not add sound effects, ambience, Foley, breath cues, silence cues, BGM, or music. Voice directions attached to dialogue remain.
 
-If shortening would damage the shot, split the generated clip or ask the user to select a larger supported limit.
-
-## 2. Choose one prompt skeleton
-
-For a Chinese Seedance surface that accepts a timeline, use:
+Choose one structure:
 
 ```text
 〖时间轴〗
@@ -27,85 +17,43 @@ For a Chinese Seedance surface that accepts a timeline, use:
 9-15秒：……
 ```
 
-Use integer timecodes. Do not mix this with `Shot 1 / Shot 2` labels.
+Use integer timecodes. For a continuous take, blocks are phases of one camera/action path. For a true multishot clip, state `硬切` at the new block and give each shot one primary action, one camera behavior, visible local background, and endpoint. Split when combined load is too high.
 
-For a continuous take, time blocks describe phases of the same camera path and action chain. Do not insert “硬切” between them.
+## Reference roles
 
-For a genuine multishot clip, state the hard cut at the beginning of the new time block. Give each shot one primary action, one camera behavior, and one completed visual endpoint. A 10–15 second generation usually supports two or three substantial shots; more cuts require simpler actions or separate generation.
+Assign each asset one role: exact composition/pose, environment geometry, style/palette, or another supported control role. Character identity and costume are handled by supplied character references, not repeatedly restated in the storyboard.
 
-## 3. Reference-role discipline
+Only call a crop a formal storyboard reference when the full referenced sub-shot matches it. If it provides only a local detail, omit the citation and describe the target directly.
 
-Assign every referenced asset one explicit role:
+## Character budget
 
-- exact composition and pose;
-- character identity or costume;
-- environment geometry;
-- style or palette;
-- first frame or another supported control role.
+Use the actual surface limit. For a 2000-character field, target at most 1900. Count with `scripts/audit_seedance_prompt.py`.
 
-Only call a crop a formal storyboard reference when it matches the full target composition. If it supplies only a local detail, omit it and describe the target shot directly.
+Compress in this order:
 
-For image-led video, prompt what the image cannot show: motion, timing, camera behavior, reaction, sound, light change, transformation, and required preservation. Avoid re-describing every visible static attribute.
+1. duplicated static detail;
+2. repeated atmosphere;
+3. empty evaluators and synonyms;
+4. redundant negative instructions;
+5. decorative motion unrelated to the beat.
 
-## 4. Character budget
+Do not remove dialogue pauses, action causality, critical material/color, valid reference roles, visible local background, or endpoint.
 
-Treat the input limit as surface-specific. If the active field supports 2000 characters, target at most 1900 to leave editing room. Count actual Unicode characters with the supplied audit script; never estimate by sight.
+## Adult master and safe execution
 
-When compression is required, remove in this order:
+Never sanitize or rewrite an adult/R18 master while compiling it. Apply platform-safe wording review only to the separately marked safe replacement draft. Do not use code words or claim guaranteed approval.
 
-1. duplicated static description;
-2. repeated atmosphere declarations;
-3. empty quality adjectives and synonym stacking;
-4. redundant negative instructions already expressed positively;
-5. minor decorative motion unrelated to the shot purpose.
+## Diagnose and retake
 
-Do not remove dialogue pauses, action causality, critical material/color information, valid reference roles, or the visible endpoint merely to save characters.
-
-## 5. Review for platform-safe wording
-
-Review the execution prompt before delivery:
-
-- state character adulthood clearly when age could be ambiguous and adult context is essential;
-- describe visible actions, clothing, framing, injuries, and physical consequences objectively;
-- avoid exploitative sexualization, graphic gore, instructions for wrongdoing, or other disallowed content;
-- remove contradictory wording and risky combinations created accidentally by stacked adjectives;
-- preserve safe plot function where possible, but do not invent code words, euphemisms, misspellings, or substitutions intended to evade platform review;
-- if the requested result cannot be expressed safely, flag it for revision instead of claiming it will pass review.
-
-Compliance review is a safety and clarity pass, not a moderation-bypass pass.
-
-## 6. No-BGM rule
-
-Storyboard mother drafts contain dialogue and narration only; do not add BGM, ambience, Foley, impacts, breath sounds, silence cues, or other audio-production instructions to them. Handle any separate audio-design pass outside the storyboard text.
-
-## 7. Output format
-
-````markdown
-## 【片段1】标题
-
-```text
-〖时间轴〗
-0-3秒：……
-4-8秒：……
-9-15秒：……
-```
-````
-
-Keep compliance reasoning, removed phrases, character counts, and operator notes outside the fenced prompt.
-
-## 8. Diagnose and retake
-
-Classify the result before changing the prompt:
+Classify before changing the prompt:
 
 - **Keep**: primary target and fragile anchor succeeded.
-- **Fix in post**: a brief removable flaw does not affect story or continuity.
-- **Edit locally**: one isolated layer, object, or short interval is wrong.
+- **Fix in post**: brief removable flaw.
+- **Edit locally**: one isolated layer/object/interval is wrong.
 - **Reroll**: prompt is clear and failure appears stochastic.
 - **Rewrite**: the same semantic failure recurs or instructions conflict.
-- **Split**: the shot exceeds the model's combined load.
+- **Split**: combined shot load is too high.
 
-Change one meaningful variable per retry: one clause, one reference role, one camera behavior, one action density choice, or one generation mode. Record:
+Change one meaningful variable per retry. After two identical failures, change wording or structure rather than rerolling unchanged. Do not modify later comic events to accommodate incidental output drift.
 
-`Take N · changed: … · result: … · verdict: …`
-
-Two attempts with the same flaw require a wording or structural change. Do not modify later comic events to accommodate incidental output drift.
+Output only the prompt body. Keep compliance reasoning, removed phrases, character counts, and retake notes outside it.
