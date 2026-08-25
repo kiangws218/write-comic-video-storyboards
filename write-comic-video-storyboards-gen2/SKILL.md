@@ -21,25 +21,26 @@ Run scripts directly; do not read them unless modifying them.
 ## Workflow
 
 1. Confirm source/original and crop directories, reading order, output path, dialogue language, aspect ratio, target model, and the 15-second soft ceiling.
-2. Make non-destructive review copies about 540 px wide. Use about 720 px for small text, hand/prop relations, facial detail, or ambiguity; use full resolution only if still necessary. Inspect all panels once, then revisit only the current panel and neighbors.
-3. Recover missing text and order from originals; cite crop filenames in the storyboard. Build the smallest useful internal ledger. Expand it only for risky or ambiguous beats.
-4. Decide 保格／拆格／补格／并格, then classify each beat as State or Action with an optional Reaction tag. Establish natural dialogue timing before camera flourishes.
-5. For each cited sub-shot, verify viewpoint, scale, placement, overlap, pose/gaze, hands/props, and foreground/background hierarchy. The cited composition may occur at the opening, middle, or endpoint.
-6. Draft integer time blocks in this order: optional `分镜参考`; concise `景别`; concise `构图`; concise `运镜`; detailed `画面内容`. Describe only visible, generatable content.
-7. Validate structure with `scripts/validate_storyboard.py`, then manually audit source fidelity. A script pass is not evidence that the comic was reread or that content is correct.
-8. After the storyboard is approved, generate the Chinese SRT unless the user explicitly requests it earlier. Do not create a Markdown dialogue table unless requested.
+2. Make a 360–480 px global review set or contact sheets. Use this pass only for order, text, locations, continuity, and risk marking; do not draft exact composition from it.
+3. Draft in contiguous batches of about 3–6 panels. Reopen that batch at about 720 px, freeze each current panel's compact screen facts, inspect its immediate neighbors, and write while the images are fresh. Escalate only risky panels to original resolution: unusual or strong perspective, fast action, overlapping limbs, hand/prop contact, complex creature/prop topology, heavy occlusion/effects, off-frame causes, or unresolved text/details.
+4. Recover missing text and order from originals; cite crop filenames in the storyboard. Build the smallest useful internal ledger. Expand it only for risky or ambiguous beats.
+5. Decide 保格／拆格／补格／并格, then classify each beat as State or Action with an optional Reaction tag. Time speech and visible action by their actual load; run ordinary performance concurrently with speech and never fill a clip mechanically.
+6. For each cited sub-shot, compare the finished prompt with the current panel's frozen screen facts. Use the composition and topology locks in `storyboard-spec.md` when triggered. Remove any visible noun or relation supported only by story continuity. Adjacent shots must create a real visual or dramatic increment; otherwise merge them.
+7. Within each clip, reset numbering and write `分镜1（3秒）`-style integer-duration blocks in this order: optional `分镜参考`; concise `景别`; concise `构图`; concise `运镜`; detailed `画面内容`. Describe only visible, generatable content.
+8. Validate with `scripts/validate_storyboard.py`, audit each batch while its images remain open, then revisit only flagged risk shots for the episode-level source audit. A script pass is not evidence that the comic was reread or that content is correct.
+9. After the storyboard is approved, generate the Chinese SRT unless the user explicitly requests it earlier. Do not create a Markdown dialogue table unless requested.
 
 ## Core invariants
 
-1. **Source before motion.** Never replace visible comic content with a dialogue-derived prop, scene, character, or action.
+1. **Source before motion.** Never replace visible comic content with a dialogue-derived prop, scene, character, or action. Current-frame visibility outranks story continuity.
 2. **References are phase-specific.** Cite a crop only when the referenced sub-shot matches the full composition. A later different composition must be an explicit hard cut or uncited 补格/reverse shot.
-3. **Minimum motion.** State beats remain continuous and restrained. Action beats receive only a source-supported preceding phase, following phase, or refinement of the shown action when it helps the beat; never auto-complete an action chain.
+3. **Minimum motion.** State beats remain continuous and restrained. Action beats receive only a source-supported preceding phase, following phase, or refinement of the shown action when it helps the beat; never auto-complete an action chain or stretch a finished beat to 15 seconds.
 4. **Action admission test.** A substantive added action must have source evidence, be visible in the framing, and preserve the cited pose/hand/prop/overlap anchors. Otherwise remove it or place a necessary composition change in an uncited shot.
 5. **No off-frame mechanics.** Do not invent bracing, gripping, contact, hidden props, travel paths, setup, follow-through, or recovery merely to make motion physically complete.
-6. **Visible local background is mandatory and uncapped.** In every shot, describe all useful background information actually visible in that framing—foreground occluders, surfaces, objects, terrain, structures, depth layers, weather, light, wear, and irregular detail. Write whatever is visibly present; do not reduce it to a fixed quota and do not invent off-frame space.
+6. **Visible local background is mandatory and uncapped.** In every shot, describe all useful background information actually visible in that framing—physical or abstract. Write whatever is present; do not impose a quota, invent off-frame space, or restore a physical location behind a source-supported solid, gradient, or speed-line background.
 7. **Natural speech.** Split rather than accelerate. After every spoken or narrated sentence add `（音色、语气、情绪；必要时语速、停顿、重音）`.
 8. **Visual-only storyboard.** Write dialogue and narration, but no sound effects, ambience, Foley, breath sounds, silence cues, BGM, or musical instructions.
-9. **Direct prompt language.** Do not write production notes or meta-language such as “保持原格姿势／与原格一致／原格中……”. Describe the visible pose, placement, motion, background, and endpoint directly.
+9. **Direct prompt language.** Do not write production notes, reference-analysis language, or negative control stacks such as “保持原格姿势／按照原格处理／不出现湖岸实景”. State the positive visible pose, placement, motion, background, and endpoint directly.
 10. **Adult delivery when requested.** Keep the complete source-faithful adult/R18 master first; append complete platform-safe replacements only for affected clips. Never overwrite or silently sanitize the master.
 
 Use hard cuts by default. Speed lines, solid-color backgrounds, and gradients are optional only when source-supported or genuinely useful to the story beat; monochrome source effects may be colorized while preserving their function.

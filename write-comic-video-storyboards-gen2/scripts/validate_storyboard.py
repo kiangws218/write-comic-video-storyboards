@@ -13,7 +13,10 @@ SEGMENT_RE = re.compile(r"^#{1,6}\s*【片段\s*(\d+)】", re.MULTILINE)
 SAFE_SEGMENT_RE = re.compile(
     r"^#{1,6}\s*【平台安全替换[·・\s]*片段\s*(\d+)】", re.MULTILINE
 )
-TIMECODE_RE = re.compile(r"\*\*(\d+(?:\.\d+)?)-(\d+(?:\.\d+)?)s[：:]\*\*")
+SHOT_RE = re.compile(
+    r"\*\*分镜\s*(\d+)\s*[（(]\s*(\d+(?:\.\d+)?)\s*秒\s*[）)]\s*[：:]\*\*"
+)
+LEGACY_TIMECODE_RE = re.compile(r"\*\*\d+(?:\.\d+)?-\d+(?:\.\d+)?s[：:]\*\*")
 REFERENCE_RE = re.compile(
     r"(?:分镜参考|参考)?\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?",
     re.IGNORECASE,
@@ -30,11 +33,13 @@ AUDIO_RE = re.compile(
     re.IGNORECASE,
 )
 META_RE = re.compile(
-    r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则"
+    r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则|"
+    r"(?:按照|依照|按)(?:原格|原图|参考图)(?:进行)?(?:处理|呈现|还原)?|"
+    r"(?:背景|画面)(?:按照|依照|按)(?:原格|原图|参考图)(?:进行)?(?:处理|呈现|还原)?"
 )
 NEGATIVE_PROMPT_RE = re.compile(
-    r"^(?:构图|运镜)[：:][^\r\n]*(?:不增加|不使用|不推拉|不环绕|"
-    r"不出现|不进入|不显示|不改变|不穿透|不继续)",
+    r"^(?:景别|构图|运镜|画面内容)[：:][^\r\n]*(?:不增加|不使用|不推拉|不环绕|"
+    r"不出现|不进入|不显示|不改变|不穿透|不继续|不做|不要|避免|无需)",
     re.MULTILINE,
 )
 QUOTE_RE = re.compile(r"“([^”]+)”")
@@ -124,30 +129,35 @@ def main() -> int:
             validate_chunk(label, number, chunk)
 
     def validate_chunk(label: str, number: int, chunk: str) -> None:
-        timecodes = list(TIMECODE_RE.finditer(chunk))
-        if not timecodes:
-            errors.append(f"{label}{number}没有时间码。")
+        shots = list(SHOT_RE.finditer(chunk))
+        if not shots:
+            if LEGACY_TIMECODE_RE.search(chunk):
+                errors.append(f"{label}{number}仍使用旧时间段，应改为‘分镜1（3秒）’格式。")
+            else:
+                errors.append(f"{label}{number}没有分镜时长块。")
             return
 
-        previous_end: int | None = None
-        for match in timecodes:
-            start_raw, end_raw = match.groups()
-            if "." in start_raw or "." in end_raw:
-                errors.append(f"{label}{number}含小数时间码：{match.group(0)}")
+        shot_numbers: list[int] = []
+        total_duration = 0
+        for match in shots:
+            shot_raw, duration_raw = match.groups()
+            shot_number = int(shot_raw)
+            shot_numbers.append(shot_number)
+            if "." in duration_raw:
+                errors.append(f"{label}{number}含小数时长：{match.group(0)}")
                 continue
-            start, end = int(start_raw), int(end_raw)
-            if start > end:
-                errors.append(f"{label}{number}时间倒置：{match.group(0)}")
-            if end > args.max_seconds:
-                errors.append(f"{label}{number}超过{args.max_seconds}秒：{match.group(0)}")
-            if previous_end is None and start != 0:
-                errors.append(f"{label}{number}没有从0秒开始：{match.group(0)}")
-            if previous_end is not None and start != previous_end + 1:
-                errors.append(
-                    f"{label}{number}时间不连续：上一段结束于{previous_end}s，"
-                    f"下一段开始于{start}s。"
-                )
-            previous_end = end
+            duration = int(duration_raw)
+            if duration <= 0:
+                errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
+            total_duration += duration
+
+        expected = list(range(1, len(shot_numbers) + 1))
+        if shot_numbers != expected:
+            errors.append(f"{label}{number}分镜编号应从1连续递增：{shot_numbers}")
+        if total_duration > args.max_seconds:
+            errors.append(
+                f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+            )
 
         for match in PRODUCTION_NOTE_RE.finditer(chunk):
             errors.append(
@@ -157,28 +167,38 @@ def main() -> int:
         environment_matches = list(ENVIRONMENT_RE.finditer(chunk))
         if len(environment_matches) > 1:
             errors.append(f"{label}{number}重复写了环境参考，应只在片段标题下写一次。")
-        if timecodes and any(match.start() > timecodes[0].start() for match in environment_matches):
-            errors.append(f"{label}{number}把环境参考写进了时间块。")
+        if shots and any(match.start() > shots[0].start() for match in environment_matches):
+            errors.append(f"{label}{number}把环境参考写进了分镜块。")
 
-        for index, timecode in enumerate(timecodes):
+        previous_references: tuple[str, ...] = ()
+        for index, shot in enumerate(shots):
             block_end = (
-                timecodes[index + 1].start()
-                if index + 1 < len(timecodes)
+                shots[index + 1].start()
+                if index + 1 < len(shots)
                 else len(chunk)
             )
-            block = chunk[timecode.end() : block_end]
+            block = chunk[shot.end() : block_end]
+            current_references = tuple(
+                reference.casefold() for reference in REFERENCE_RE.findall(block)
+            )
+            if current_references and current_references == previous_references:
+                warnings.append(
+                    f"{label}{number}的相邻{shot.group(0)}重复同一参考图；"
+                    "请确认存在新的主体、景别、视角、构图、画面信息或戏剧功能，否则合并。"
+                )
+            previous_references = current_references
             positions: list[int] = []
             for field in FIELD_NAMES:
                 field_match = re.search(rf"^{field}[：:]", block, re.MULTILINE)
                 if field_match is None:
                     errors.append(
-                        f"{label}{number}的{timecode.group(0)}缺少‘{field}：’字段。"
+                        f"{label}{number}的{shot.group(0)}缺少‘{field}：’字段。"
                     )
                 else:
                     positions.append(field_match.start())
             if len(positions) == len(FIELD_NAMES) and positions != sorted(positions):
                 errors.append(
-                    f"{label}{number}的{timecode.group(0)}字段顺序应为"
+                    f"{label}{number}的{shot.group(0)}字段顺序应为"
                     "景别、构图、运镜、画面内容。"
                 )
 

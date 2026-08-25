@@ -10,14 +10,18 @@ Use only relevant layers: foreground occluders/debris, character cels, midground
 
 ## Source-bounded fast action
 
+This reference does not authorize an extended original exchange merely because a scene contains combat. First lock each supplied panel's viewpoint, scale, screen placement, action vector, contact point, foreground/background hierarchy, and physical versus abstract background. Only then apply combat motion grammar.
+
 Identify which phases the comic actually supplies: anticipation, burst, contact, displacement, immediate response, follow-through, or landing. Animate the supplied phases and only the smallest connective motion between them.
 
 - If one panel shows only decisive contact, it may remain a contact-centered shot.
-- If adjacent panels explicitly show anticipation and landing, connect them without inventing a new attack, route, grip, or impact.
+- If adjacent panels explicitly show successive phases, connect them in source order, cite both phases, and do not invent a new attack, route, grip, impact, or later recovery.
 - If a needed phase changes composition, use an uncited hard-cut shot.
 - A three-second shot may contain several continuous actions when source-supported; do not reject it solely for action count.
 
 Use held anticipation, smear frames, speed lines, impact frames, debris, cloth delay, and readable landing poses selectively. Do not make every second equally fast.
+
+Apply speed lines, shake, impact shapes, debris, and environment response only after the source locks pass. These devices may strengthen a supplied action but must not change its shot scale, left/right relation, action vector, contact point, or source-supported special background.
 
 ## Faces, camera, and light
 

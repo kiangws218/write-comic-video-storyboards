@@ -28,6 +28,8 @@ Adjacent panels establish chronology and off-frame continuity, not current-frame
 
 Time speech before segmentation. Split at a question/answer, interruption, completed action, reaction, or stable endpoint. Long dialogue may continue over a reverse shot or visible environment/prop/detail insert.
 
+For a multi-turn panel, record one compact coverage choice: `shared composition｜speaker/listener reverse｜environment/prop/detail insert`. If splitting creates no change in subject focus, scale, viewpoint, composition, visible information, or dramatic function, merge the shots. Dialogue turn alone does not justify a duplicate shot.
+
 Only for high-load clips record:
 
 - primary generation target;
