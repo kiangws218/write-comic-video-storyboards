@@ -28,7 +28,7 @@ PRODUCTION_NOTE_RE = re.compile(
     r"一次性场景|不单独生成环境图|不建立独立背景|视频生成时|"
     r"后期添加|用于衔接|为下一片段(?:对白)?衔接|避免乱码"
 )
-FIELD_NAMES = ("景别", "构图", "运镜", "画面内容")
+LEGACY_FIELD_RE = re.compile(r"^(?:景别|构图|运镜|画面内容)[：:]", re.MULTILINE)
 ENVIRONMENT_RE = re.compile(r"^环境参考[：:]", re.MULTILINE)
 AUDIO_RE = re.compile(
     r"(?:音效|环境声|动作声|拟音|BGM|配乐|背景音乐)[：:]",
@@ -85,8 +85,6 @@ def missing_voice_directions(chunk: str) -> list[str]:
     """Return spoken/narrated quotes not followed by a full-width voice note."""
     missing: list[str] = []
     for line in chunk.splitlines():
-        if not line.startswith("画面内容："):
-            continue
         for match in QUOTE_RE.finditer(line):
             prefix = line[: match.start()]
             # Ignore quoted keywords inside an existing voice-direction parenthesis.
@@ -346,19 +344,9 @@ def main() -> int:
                     "请确认存在新的主体、景别、视角、构图、画面信息或戏剧功能，否则合并。"
                 )
             previous_references = current_references
-            positions: list[int] = []
-            for field in FIELD_NAMES:
-                field_match = re.search(rf"^{field}[：:]", block, re.MULTILINE)
-                if field_match is None:
-                    errors.append(
-                        f"{label}{number}的{shot.group(0)}缺少‘{field}：’字段。"
-                    )
-                else:
-                    positions.append(field_match.start())
-            if len(positions) == len(FIELD_NAMES) and positions != sorted(positions):
+            if LEGACY_FIELD_RE.search(block):
                 errors.append(
-                    f"{label}{number}的{shot.group(0)}字段顺序应为"
-                    "景别、构图、运镜、画面内容。"
+                    f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"
                 )
 
         for match in AUDIO_RE.finditer(chunk):

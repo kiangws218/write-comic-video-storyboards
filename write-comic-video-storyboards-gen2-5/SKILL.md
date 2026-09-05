@@ -1,15 +1,16 @@
 ---
-name: write-comic-video-storyboards-gen2
-description: Turn ordered comic, manga, manhua, or webtoon originals and crops into source-faithful, production-ready 2D animation storyboards and optional Seedance prompts. Use for original-panel preservation, missing-text recovery, preserve/split/fill/merge analysis, natural dialogue timing, local-background prompting, adult/R18 master plus platform-safe replacements, combat prompting, validation, or generation retakes.
+name: write-comic-video-storyboards-gen2-5
+description: Turn ordered comic panels into rigorously source-faithful 2D animation storyboards with compact prose, continuous-action clip grouping, restrained performance enrichment, and motivated animation effects. Use when Gen2-level panel restoration must remain authoritative while improving shot flow and production finish.
 ---
 
-# Comic video storyboards Gen2
+# Comic video storyboards Gen2.5
 
-Create a source-faithful storyboard mother draft. The comic is authoritative; an approved mother draft is authoritative for later execution prompts.
+Create a source-faithful storyboard mother draft with selective cinematic polish. The comic is authoritative; polish is admitted only after panel composition, space, angle, pose, contact, and event order are locked.
 
 ## Load only what is needed
 
 - New episode or substantial rewrite: read [references/storyboard-spec.md](references/storyboard-spec.md).
+- Always read [references/gen2-5-cinematic-extension.md](references/gen2-5-cinematic-extension.md); it defines the compact format, continuous-action grouping, performance restraint, and animation-effects gate.
 - Ambiguous order, long/multi-speaker panels, or requested pre-analysis: also read [references/pre-analysis-gen2.md](references/pre-analysis-gen2.md).
 - Paste-ready Seedance prompt or failed-generation review: read [references/seedance-execution-and-review.md](references/seedance-execution-and-review.md).
 - Fight or complex fast action: also read [references/2d-animation-execution.md](references/2d-animation-execution.md); its motion grammar remains subordinate to source fidelity in `storyboard-spec.md`.
@@ -26,7 +27,7 @@ Run scripts directly; do not read them unless modifying them.
 4. Recover missing text and order from originals; cite crop filenames in the storyboard. For an ordinary panel, keep the internal ledger minimal. Before drafting any panel with 3+ bubbles, 2+ speakers, dialogue plus inner speech, or more than about 6 seconds of speech, create the dialogue-risk row defined in [references/pre-analysis-gen2.md](references/pre-analysis-gen2.md). Record every source bubble in reading order, including speaker, kind, source text, final line, estimated seconds, and target shot.
 5. Pass the dialogue gate before writing the batch: estimate speech first, choose shared/reverse/insert coverage, then set shot and clip boundaries. Never shrink speech to fit space left in a preselected 15-second clip. Decide 保格／拆格／补格／并格 and State/Action/Reaction after the speech load is known; run ordinary performance concurrently with speech.
 6. For each cited sub-shot, compare the finished prompt with the current panel's frozen screen facts. Use the composition and topology locks in `storyboard-spec.md` when triggered. Remove any visible noun or relation supported only by story continuity. Adjacent shots must create a real visual or dramatic increment; otherwise merge them.
-7. Within each clip, reset numbering and write `分镜1（3秒）`-style integer-duration blocks in this order: optional `分镜参考`; concise `景别`; concise `构图`; concise `运镜`; detailed `画面内容`. Describe only visible, generatable content.
+7. Keep every source-continuous action phrase in one generated clip whenever it fits the model limit. Treat each `分镜N（X秒）` block as a timed shot group: give the group one integer total duration, but leave internal microcuts, inserts, and cited phases untimed. In compact prose, preserve source anchors first, then add only admitted coverage and state the intended rhythm through holds, acceleration/deceleration, in-between density, slow motion, impact frames, and recovery. Use a new line for a real internal hard cut or insert; do not restore separate field headings.
 8. While each batch is still open, compare the source bubbles with the dialogue-risk rows one by one, then compare those rows with the finished shots. For a new episode or substantial rewrite, pass the internal JSON ledger to `scripts/validate_storyboard.py --dialogue-ledger`; fix missing lines, wrong targets, or insufficient shot time before advancing. Then run the ordinary visual/source audit. A script pass is not evidence that the comic was reread or that screen facts are correct.
 9. After the storyboard is approved, generate the Chinese SRT unless the user explicitly requests it earlier. Do not create a Markdown dialogue table unless requested.
 
@@ -42,6 +43,11 @@ Run scripts directly; do not read them unless modifying them.
 8. **Visual-only storyboard.** Write dialogue and narration, but no sound effects, ambience, Foley, breath sounds, silence cues, BGM, or musical instructions.
 9. **Direct prompt language.** Do not write production notes, reference-analysis language, or negative control stacks such as “保持原格姿势／按照原格处理／不出现湖岸实景”. State the positive visible pose, placement, motion, background, and endpoint directly.
 10. **Adult delivery when requested.** Keep the complete source-faithful adult/R18 master first; append complete platform-safe replacements only for affected clips. Never overwrite or silently sanitize the master.
+11. **Panel restoration is mandatory.** A cited comic composition must become recognizably readable at its declared phase; it is not merely inspiration. Added connective motion may not restage its angle, screen placement, overlap, pose silhouette, hand/prop relation, contact, or background hierarchy.
+12. **Continuous-action clip boundary.** Do not end a generated clip between tightly coupled phases such as load→launch, swing→contact, fall→landing, or grab→pull when the whole phrase fits within 15 seconds. Internal cuts are allowed, but the action phrase remains in one clip.
+13. **Effects are subordinate.** Air distortion, directional wash, impact flash, glint, shockwave, debris, or camera response must express a source-supported speed, force, material, or light event. They may strengthen an anchor but never cover, replace, or deform it beyond recognition.
+14. **Coverage may expand; story may not.** Uncited microcuts, environment/prop/reaction inserts, and necessary connective views are allowed when they clarify an existing action, space, rhythm, or emotion. They cannot replace a cited panel, contradict its screen facts, introduce a new story event, or become the only view of a source-important beat.
+15. **Name what the model can see.** When no creature or special-object reference asset is supplied, do not rely on a lore name alone. Use a stable visual label built from scale, color, surface/material, body type, and defining anatomy; repeat the full label at the first appearance of every independently generated clip.
 
 Use hard cuts by default. Speed lines, solid-color backgrounds, and gradients are optional only when source-supported or genuinely useful to the story beat; monochrome source effects may be colorized while preserving their function.
 

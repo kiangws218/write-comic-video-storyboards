@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2.5"
+  short_description: "二代严谨还原加连续动作与克制动画特效"
+  default_prompt: "Use $write-comic-video-storyboards-gen2-5 to preserve comic panels rigorously while improving continuous action, compact shot writing, performance, and motivated animation effects."
