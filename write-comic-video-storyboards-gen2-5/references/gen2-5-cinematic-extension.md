@@ -33,7 +33,7 @@ Do not output `景别：`, `构图：`, `运镜：`, or `画面内容：` headin
 平视中近景，人物位于右侧三分之一；固定镜头。人物……“……”（音色、语气、情绪）。身后可见……，动作结束在……。
 ```
 
-Treat one numbered block as a timed shot group. Give the group one total duration; do not assign separate second counts to its internal phases. For a genuine hard cut or insert inside the same generated clip, start a new line with `硬切：`, `碎切：`, `反打：`, `环境空镜：`, `插入镜头：`, or `补镜：`. State its new angle and visible composition directly. Do not create a second numbered block merely because the speaker changes.
+Treat one numbered block as one actual camera shot and give it one positive integer duration. A genuine hard cut, reverse shot, microcut, insert, environment shot, or newly composed view inside the same generated clip starts the next numbered block. Continuous phases without a cut stay in one block. Do not create a second numbered block merely because the speaker changes.
 
 ## 3. Continuous-action unit
 
@@ -46,13 +46,13 @@ Before setting clip boundaries, identify action units. One unit has one uninterr
 - throw → flight → impact;
 - tail/body sweep → character displacement → landing or splash.
 
-Keep the whole unit in one generated clip when its natural duration is within 15 seconds. This is more important than equal clip length. A clip may contain several cited source phases and necessary internal hard cuts, but it must not hand an unfinished motion to the next clip.
+Keep the whole unit in one generated clip when its natural duration is within 15 seconds. This is more important than equal clip length. A clip may contain several cited source phases and several numbered shots when the camera cuts, but it must not hand an unfinished motion to the next clip.
 
 Split only at a physically stable state, an intentional hold, a completed contact/result, a clear change of intention, a time/location jump, or an unavoidable model-duration limit. If the unit exceeds 15 seconds, split at the strongest stable pose and restate that exact pose, screen direction, grip/contact, speed state, and background relation at the next clip opening.
 
 Do not combine merely adjacent actions that have different intentions. Dialogue followed by a new attack can be separate even if the character has not changed location.
 
-## 3.1 Rhythm inside a shot group
+## 3.1 Rhythm inside a shot
 
 Design temporal contrast instead of giving every phase equal weight:
 
@@ -63,7 +63,7 @@ Design temporal contrast instead of giving every phase equal weight:
 - **Impact:** the contact instant may compress to one or two graphic frames, followed by a short readable recoil, deformation, debris, water, or camera-settle phase.
 - **Aftermath:** reduce motion and allow the result pose or changed environment to register before the next intention begins.
 
-Write these rhythm changes directly in the shot-group prose, for example `蓄力阶段动作细密缓慢；发力一刻中割骤减、速度陡升；空中展开时中割重新集中，使四肢和武器轨迹清楚；接触瞬间插入一至两帧黑白闪，随后短暂保持受力结果`. Use only the phases that materially help the beat.
+Write these rhythm changes directly in the shot prose, for example `蓄力阶段动作细密缓慢；发力一刻中割骤减、速度陡升；空中展开时中割重新集中，使四肢和武器轨迹清楚；接触瞬间插入一至两帧黑白闪，随后短暂保持受力结果`. Use only the phases that materially help the beat.
 
 Atmosphere and action-quality language such as `速度感强烈`, `力量感突出`, `冲击力集中`, `紧张逼迫`, `严肃压抑`, or `激烈近身交锋` is allowed when the visible staging, rhythm, light, or effects actually produce that quality. Attach it to the relevant phase; do not use it as a generic quality suffix.
 

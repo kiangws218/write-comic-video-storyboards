@@ -15,6 +15,8 @@ Use a layered inspection pass:
 
 Before interpreting story function, freeze one compact internal **screen-fact lock** for the current panel: visible subjects and screen placement/facing; viewpoint/scale; visible hands, props, contacts, and occlusion; physical versus abstract background. Keep it terse and do not output it. Story continuity may explain the panel but cannot add a visible noun or relation to this lock.
 
+Resolve identity as a separate gate after the screen-fact lock. A name is allowed only when an explicit character-reference mapping or discriminating visible traits in the current panel support it. Adjacent panels, plot continuity, dialogue order, and expected presence may produce a candidate to compare, but none is identity evidence by itself. If mapped traits are obscured or shared, retain a descriptive label such as `持长篙的船工`, `被扛着的村民`, or `画面右侧女子` until a later panel establishes the name. Do not let a likely story role overwrite the current panel's visible subject count, action, or relation.
+
 Use `分镜参考` only when the referenced sub-shot matches the crop's:
 
 - viewpoint and scale;
@@ -24,13 +26,13 @@ Use `分镜参考` only when the referenced sub-shot matches the crop's:
 
 The reference may appear at the opening, middle, or endpoint. It need only become clearly readable; do not force a static hold. A different composition later in the same time block requires an explicit hard cut or uncited 补格/reverse-shot phase. Partial borrowing of identity, costume, prop, or background receives direct description but no formal citation.
 
-When adjacent panels explicitly supply successive phases of one continuous action, keep the source-continuous action unit in one generated clip whenever it fits the model limit. List crop references in phase order within the relevant numbered shot, using internal hard cuts only when viewpoint changes. Each cited composition must become readable at its own phase. Never bury a reference-analysis note such as “参考上一格” inside the generatable description.
+When adjacent panels explicitly supply successive phases of one continuous action, keep the source-continuous action unit in one generated clip whenever it fits the model limit. List crop references in phase order. Successive phases that share one uninterrupted camera shot may remain in the same numbered block; a viewpoint change or hard cut starts the next numbered block. Each cited composition must become readable at its own phase. Never bury a reference-analysis note such as “参考上一格” inside the generatable description.
 
 Judge vertical angle from camera position and visible perspective, never from head tilt or gaze. Keep horizontal viewing direction (`正面／略微斜侧面／斜侧面／纯侧面／背面`) separate from frame placement (`左侧三分之一／中央／右侧三分之一／边缘`). Never use `中央` as an uncertainty fallback.
 
 For a cited crop with multiple subjects, strong occlusion, asymmetric placement, strong foreshortening, or plausible left/right confusion, create one compact internal composition lock before drafting. Record only visible screen facts, for example: `A=左侧前景/占幅大；B=右侧中景/被A遮挡；道具=由中部斜向右上`. Screen-left/right, depth, overlap, and prop direction are independent from speaking order, story importance, facing direction, and inferred world-space orientation. Do not output this lock.
 
-Also trigger the composition lock for an unusual single-subject viewpoint such as floor-level, between-leg, extreme top-down, extreme low-angle, or strong foreshortening. For a complex creature, articulated object, unfamiliar tool, or adult prop, add a compact **topology lock**: count, connected parts, fixed and moving ends, visible gripping hand(s), contact point, and background type. Do not infer repeated parts, hidden hands, or connections from the object's story function.
+Also trigger the composition lock for an unusual single-subject viewpoint such as floor-level, between-leg, extreme top-down, extreme low-angle, or strong foreshortening. For a complex creature, articulated object, unfamiliar tool, adult prop, or a large cropped body part/effect shape in an action panel, add a compact **topology lock**: visible contour and taper, connected parts, entry/exit edges, fixed and moving ends, contact point, motion/debris direction, and background type. Use adjacent phases only when their geometry supports the same part and vector; do not classify a tail, wing, limb, body, shadow, or impact mass from plot expectation alone.
 
 After drafting that shot, mechanically compare every positional and action phrase in the compact description with the lock. Reject any swapped subject, reversed depth/occlusion, changed prop direction, or dialogue-order-based restaging. Use this gate selectively; ordinary single-subject or unambiguous crops need no lock.
 
@@ -59,13 +61,13 @@ When the source supports motion detail, state only the visible active hand, supp
 
 Treat emotion as another inference that needs evidence. Strong labels such as fear, rage, grief, or mixed extremes require support from at least two of dialogue meaning, facial performance, and adjacent story context. Punctuation, speed lines, or an exertion grimace alone are insufficient; prefer observable, lower-inference performance such as strained, confused, impatient, startled, or embarrassed.
 
-Long or dense dialogue may use a reverse shot, environment, prop, hand, or detail insert. Preserve event order and do not invent a new event.
+Detect long single-speaker turns primarily from the final Japanese text, excluding spaces, punctuation, and performance notes. At 28 meaningful characters, explicitly test whether one composition has enough evolving visual information; at 42 characters or three complete clauses, normally use at least two numbered shots unless a deliberate long take has sustained visible action or performance. Preserve the cited panel in one shot and use source-compatible reverse, creature reaction, environment, prop, hand, detail, or viewpoint coverage for the rest. Redistribute dialogue at natural clause boundaries, preserve event order, and do not invent a new event. Use source-language length only as a preliminary flag; estimate speech time after coverage is chosen.
 
 When one comic panel contains multiple dialogue turns, choose one coverage strategy before splitting: continuous shared composition, speaker/listener reverse coverage, or a source-compatible environment/prop/detail insert. Added coverage may clarify an already established action, space, emotion, or rhythm, but cannot create a new event or displace the source-important composition. A new numbered shot must change at least one of subject focus, scale, viewpoint, composition, visible information, or dramatic function. A speaker change alone is not a visual increment. If two adjacent shots repeat the same reference and camera purpose, merge them; if the second needs a new composition, make it an explicit uncited hard cut or cite a different matching crop.
 
 ## 3. Timing and segmentation
 
-Treat 15 seconds as a soft maximum. In each clip, reset shot numbering at 1 and label blocks `分镜N（X秒）`, where `X` is a positive integer duration. Sum durations instead of using start/end timecodes; split rather than accelerate.
+Treat 15 seconds as a soft maximum. A `片段` is one generated clip. In each clip, reset shot numbering at 1 and label every actual camera shot `分镜N（X秒）`, where `X` is that shot's positive integer duration. Sum all numbered-shot durations in the clip instead of using start/end timecodes; split rather than accelerate. A new viewpoint or a hard cut, reverse shot, microcut, insert, environment shot, or newly composed supplement is a new numbered shot. Speaker changes and continuous motion without a cut remain inside the current shot.
 
 Fallback non-dialogue timing:
 
@@ -92,20 +94,20 @@ Fallback Japanese speech timing:
 | Long explanation | 6–9s |
 | Two connected long clauses | 8–12s |
 
-Prefer boundaries at a location/time change, completed entrance/exit/reveal, dialogue turn, emotional reaction, or stable result. Never place a clip boundary inside a source-continuous physical action when the complete action unit fits within 15 seconds. Use hard cuts by default. A useful listener reaction absent from the speaker crop may be an uncited hard-cut sub-shot while dialogue continues off-screen.
+Prefer boundaries at a location/time change, completed entrance/exit/reveal, dialogue turn, emotional reaction, or stable result. Never place a clip boundary inside a source-continuous physical action when the complete action unit fits within 15 seconds. Use hard cuts by default. A useful listener reaction absent from the speaker crop may become the next uncited numbered reverse shot while dialogue continues off-screen.
 
 ## 4. Direct-prompt format
 
-Each numbered shot block is a timed shot group with one total integer duration. Internal microcuts and cited phases are deliberately untimed so the video model can distribute them according to the stated rhythm. The block contains optional phase-specific `分镜参考 [crop.jpg]` lines and compact, directly generatable prose. Write in this approximate order without field headings:
+Each numbered block is one actual camera shot with its own integer duration. A continuous generated clip may contain several consecutively numbered shots, but no cut is left untimed inside a block. The block contains optional phase-specific `分镜参考 [crop.jpg]` lines and compact, directly generatable prose. Write in this approximate order without field headings:
 
 1. vertical angle, meaningful horizontal direction, and scale;
 2. essential placement, depth, prop relation, and occlusion;
 3. one concise camera behavior, including a fixed camera when appropriate;
 4. visible start state, ordered motion and performance, dialogue, local background/light, admitted effects, and endpoint.
 
-Do not output separate `景别：`, `构图：`, `运镜：`, or `画面内容：` fields. For a real internal hard cut, microcut, reverse shot, environment shot, insert, or supplement inside the same generated clip, start a new line with `硬切：`, `碎切：`, `反打：`, `环境空镜：`, `插入镜头：`, or `补镜：`, then describe the new view directly. A speaker change alone does not justify a new cut.
+Do not output separate `景别：`, `构图：`, `运镜：`, or `画面内容：` fields. For a real hard cut, microcut, reverse shot, environment shot, insert, or supplement inside the same generated clip, start the next `分镜N（X秒）` block and describe the new view directly. A speaker change alone does not justify a new cut.
 
-State rhythm only where it changes decisions: where movement holds, where acceleration sharply increases, where in-betweens concentrate for legibility, where a brief slow-motion phase occurs, where impact compresses to one or two frames, and where the result settles. Internal sub-shots do not receive fixed durations. Descriptive phrases about speed, weight, impact, tension, pressure, or battle intensity are useful only when tied to visible staging or timing.
+State rhythm only where it changes decisions: where movement holds, where acceleration sharply increases, where in-betweens concentrate for legibility, where a brief slow-motion phase occurs, where impact compresses to one or two frames, and where the result settles. Continuous phases within one camera shot share that shot's duration; every actual cut receives its own numbered duration. Descriptive phrases about speed, weight, impact, tension, pressure, or battle intensity are useful only when tied to visible staging or timing.
 
 Every shot must describe all useful local background information actually visible in its framing. First classify it as physical environment or abstract comic background. For physical space, include whatever is present: foreground occluders, surfaces, objects, terrain, vegetation, architecture, depth layers, sky/weather, light/shadow, wear, and natural irregularities. For a source-supported solid, gradient, speed-line, or emotion background, preserve that function and do not restore the off-frame physical location. Detail is not capped; completeness is determined by visibility and generation value.
 
@@ -118,6 +120,8 @@ Use visually explicit creature and special-object names. When no matching refere
 Speed lines, solid backgrounds, and gradients are optional only when source-supported or genuinely useful to the beat. Monochrome manga effects may be colorized while preserving their visual purpose. Directional air distortion, screen wash, pressure ripples, brief black-white impact frames, camera response, and moving reflections require a matching speed, force, material, or light event and must preserve the cited pose and space. Rim light, lens flare, floating particles, glow, and volumetric beams require a visible source effect, an established physical light source, or a specific story need; never add them as generic beautification or subject separation.
 
 ## 5. Environments
+
+Begin every storyboard with `## 场景色彩基准`. This is a global look envelope, not a scene inventory. Describe only the reusable overall hue tendency, saturation and contrast behavior, 2D rendering/style, line and surface texture, light softness or hardness and general directional logic, and atmospheric depth or image clarity. Do not name a character, prop, building, terrain feature, creature, or other concrete object there, and do not prescribe object-specific colors. Put concrete visible colors and materials in the relevant environment prompt or shot instead.
 
 Provide a compact prompt for every location, including locations that also receive structural assets.
 
@@ -159,11 +163,12 @@ Manually audit:
 - source order, text, speakers, event, and result;
 - current-panel screen facts before continuity; reject any visible noun supported only by the surrounding story;
 - reference composition, angle, placement, hands/props, and occlusion at the exact declared phase; for a triggered composition lock, confirm screen-left/right, depth, overlap, and prop direction against the finished shot;
-- for a triggered topology lock, confirm count, connections, visible hands, fixed/moving ends, contact, and background type;
+- for a triggered topology lock, confirm contour/taper, count and visible connections, fixed/moving ends, travel vector, contact/overlap, scale, and background type; for cropped battle masses, confirm tail/wing/limb versus shadow/debris from current shape and adjacent motion geometry;
 - State/Action classification and every added A/B/C phase;
 - adjacent repeated references and whether every numbered shot has a real visual or dramatic increment;
 - complete visible local background;
 - natural speech/action time and clean hard-cut boundaries;
+- character-count dialogue trigger and whether long turns have sufficient visual coverage rather than one static composition;
 - dialogue-risk ledger count against the still-open panel, bubble order/speaker/kind, exact target mapping, and rounded-up speech time;
 - evidence for strong emotion and nontrivial lighting/effects;
 - stable prop naming plus visible hand/support/contact/direction/endpoint anchors;
