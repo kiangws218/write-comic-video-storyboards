@@ -39,11 +39,11 @@ Create an internal dialogue-risk entry before drafting when a panel has any of:
 - both spoken dialogue and inner speech/narration;
 - one speaker's continuous final Japanese turn reaches 28 meaningful characters after removing spaces, punctuation, and performance notes, or contains 3 complete clauses.
 
-Use source-language length only to flag a likely case before translation. For a 28–41-character turn, record whether the source composition has enough evolving action or performance to remain one shot. At 42 characters or three complete clauses, choose at least two genuinely different numbered shots unless the ledger records a deliberate long-take reason. Suitable coverage includes a source panel, listener or creature reaction, environment, prop/detail, or a new viewpoint that clarifies the established beat.
+Use source-language length only to flag a likely case before translation. For a 28–41-character turn, record whether the source composition has enough evolving action or performance to remain one shot. At 42 characters or three complete clauses, choose at least two genuinely different numbered shots unless the finished shot passes `gen2-5-cinematic-extension.md` §4 and the ledger records that enacted development. Suitable coverage includes a source panel, listener or creature reaction, environment, prop/detail, or a new viewpoint that clarifies the established beat.
 
 Inspect the panel at the drafting resolution and record every bubble in visual reading order. A small bubble, interjection, final reaction, or inner monologue is still a row. Do not infer speaker ownership from the later reply; establish it from bubble tails, placement, panel order, and the original page. Before leaving the batch, compare the declared `source_bubble_count` with the open image and compare each mapped `script_text` with its target shot.
 
-Use this compact JSON sidecar only for triggered panels; ordinary panels stay on the minimal ledger. It is an internal validation artifact and is not delivered unless requested.
+Use this compact JSON sidecar for triggered panels and the performance/timing cases required by `gen2-5-cinematic-extension.md` §4; ordinary short beats stay on the minimal ledger. A source bubble split across shots remains one bubble row: use ordered `segments` containing `script_text`, speech-only `seconds`, and `target`, and set the bubble-level `script_text` to their exact concatenation. Do not count segments as source bubbles or maintain a duplicate projection ledger. Existing single-target rows remain valid. It is an internal validation artifact and is not delivered unless requested.
 
 ```json
 {

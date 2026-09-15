@@ -67,17 +67,39 @@ Write these rhythm changes directly in the shot prose, for example `蓄力阶段
 
 Atmosphere and action-quality language such as `速度感强烈`, `力量感突出`, `冲击力集中`, `紧张逼迫`, `严肃压抑`, or `激烈近身交锋` is allowed when the visible staging, rhythm, light, or effects actually produce that quality. Attach it to the relevant phase; do not use it as a generic quality suffix.
 
-## 4. Performance enrichment
+## 4. Performance and timing gate
 
-Add performance only inside the visible freedom left by the panel:
+Use this gate after source locks and dialogue coverage planning. It is the single authority for performance density, long-take admission, and performance timing; other references link here rather than restating it.
 
-- eye target and focus shift;
-- one motivated blink at a thought transition;
-- small head/shoulder or weight change;
-- source-compatible hand or prop movement;
-- delayed hair/cloth response to a visible primary motion.
+### Visible performance scaled to speech
 
-Run compatible performance during speech. Do not change the source emotion, pose silhouette, facing, or composition merely to avoid stillness. A held look with subtle breathing can be the correct performance.
+Count all spoken and inner Japanese lines in one actual numbered shot, across speakers and bubbles; exclude spaces, punctuation, voice notes, and narration. Splitting quotes does not reduce this total.
+
+| Meaningful Japanese characters in the shot | Required performance treatment |
+|---|---|
+| 1–20 | Write 1–2 visible performance details suited to the line. |
+| 21–41 | Write 2–3 distinct visible performance details, distributed over semantic beats. |
+| 42+ | Default to genuinely different shots. A justified retained long take needs 3–4 supported details forming sustained visible development. |
+
+A detail is a readable change or explicitly sustained expressive state in eyes, face, head/body, or a visible hand/prop relation. Give it a speech/event trigger or a clear temporal role. Articulation alone, repeated wording of one gesture, camera movement, wind-driven hair, and scenery do not count as additional acting details. A held expressive state can count once; keep source-supported neutrality rather than inventing suppressed emotion. For multiple speakers, address each visible speaker and the listener where meaningful; off-screen speech may run over visible listener or hand performance.
+
+Do not turn the quota into simultaneous gesture stacking. Write the fewest qualifying details, ordered through the shot, and choose actions readable at the declared scale. If the crop leaves insufficient supported freedom, split coverage or shorten the shot after redistributing dialogue; never manufacture a grip, step, tears, hidden motive, or new event to fill time. Added coverage obeys the same performance gate.
+
+Internally establish source-supported purpose and trigger; finally write only directly visible behavior in compact prose. AU codes and a full eight-dimension table are optional analysis aids, not output fields. Use relative timing such as 开口前／说到「実際の日本語の語句」时／句末; precise subsecond scheduling belongs after voice alignment.
+
+When acting is triggered by dialogue, every word, phrase, or meaning from that dialogue mentioned in the visual prose must use the exact Japanese text spoken in that shot, normally inside `「」`. Never identify a Japanese trigger with a Chinese translation or paraphrase such as `说到爱她时`, `提到结婚纪念日时`, or `接着嘱咐别偷看时`; write `说到「愛してる」时`, `说到「結婚記念日」时`, or `说到「こっそり開けるなよ」时`. Generic timing that does not restate dialogue content—such as 开口前, 转入后半句, 回答后, or 句末—is allowed. Apply the same rule inside voice-direction parentheses. The cited Japanese trigger must occur verbatim in that shot's final dialogue; if translation or line segmentation changes, update its acting triggers too.
+
+### Long-take admission must be enacted
+
+The existing 42-character/three-clause continuous-turn trigger still plans coverage across source bubbles. An exception requires a source-supported start state → specific trigger → readable development → settled endpoint actually written in the shot. Lips moving, a stiff shoulder, a list of separately quoted sentences, or the phrase 持续表演 is insufficient. Check the finished shot, not the intention in the ledger. If development is absent, the exception fails and coverage must be replanned. Ordinary blinks or tiny gestures do not by themselves justify an extended take.
+
+### Estimate speech and acting together
+
+For one concurrent interval: required pre-action + max(sequential speech, concurrent performance) + required post-action. When one act must finish before the next line or action begins, estimate each interval separately and add them; do not hide serial acts inside one max. A pause already included in the speech estimate is not added twice. Round the complete shot upward to positive integer seconds, sum shots into clips, and split at a stable result when the natural unit exceeds the model limit.
+
+Keep an optional `performance` array in the existing dialogue ledger for every shot above 20 characters, every long-take exception, and any necessary serial/pre/post action. Each entry contains `target`, concise source `evidence`, `details` (exact visible-behavior excerpts occurring in that shot), and `intervals` with nonnegative `speech_seconds` and `acting_seconds`. Intervals are sequential; speech and acting inside each interval are concurrent. Speech-only and acting-only intervals use zero for the other value. Each mapped line's seconds remain speech-only. A long-take entry also has `long_take_reason`, which must describe the written development. Do not create another ledger or put estimates into generatable prose.
+
+The validator checks mappings, declared excerpts/counts, and interval arithmetic, not whether the acting is convincing, source-supported, or whether every prose paraphrase of dialogue was found. Manually verify evidence, readability, distinctness, exact-Japanese dialogue triggers, endpoint, and whether the density fits the duration. Visible breathing may be described when supported; breath sounds, added interjections, Foley, and ambient audio remain excluded.
 
 ## 5. Animation-effects gate
 

@@ -48,4 +48,12 @@ Read only when modifying or forward-testing this skill. These cases protect beha
 | One generated clip contains a speaker view, a reverse shot, and a prop insert | Output three consecutively numbered shots with a positive integer duration for each; do not hide the reverse shot or insert as an untimed line inside the first shot. |
 | A combat panel contains a large cropped black shape crossing buildings and adjacent geometry shows a sweeping tapered body part | Trigger the topology lock and identify the supported tail/wing/limb plus its vector; do not downgrade it to a generic shadow, wall, or impact mass when contour and debris direction establish the body part. |
 
+| One shot contains several short quotes totalling 21+ meaningful Japanese characters | Require 2–3 distinct supported acting details in the finished shot; quote splitting, lip articulation, wind, or camera changes do not satisfy the density. |
+| A long-take exception is claimed but the prose contains composition and dialogue only | Fail admission and replan real coverage; the ledger's claim cannot replace enacted acting. |
+| A neutral character receives a long line | Preserve neutrality; count one clearly held expressive state, then use source-compatible coverage if further acting is unsupported. Do not invent a hidden wish to cry. |
+| Speech takes 5 seconds, preceding recognition 1, concurrent facial development 3, and final hold 1 | Estimate sequential intervals as 1 + max(5,3) + 1 = 7 seconds, not 5 or 10. |
+| A hand-only crop carries speech | Write visible wrist/finger/arm behavior at semantic beats; keep face off-frame and source contact intact. |
+| One bubble continues over two shots | Keep one source bubble with ordered segments, verify exact joined Japanese text and both targets, and do not inflate source_bubble_count. |
+| Japanese dialogue says `こっそり開けるなよ` and the acting prose says “嘱咐别偷看时” | Replace the Chinese paraphrase with the exact trigger: `说到「こっそり開けるなよ」时`; update it whenever the final Japanese line changes. |
+
 Forward-test on raw panels and compare against these required results. Structural validation passing is insufficient; record a separate manual source-fidelity verdict.

@@ -142,6 +142,7 @@ def validate_dialogue_ledger(
     allowed_kinds = {"dialogue", "inner", "narration"}
     shot_map = build_shot_map(main_text)
     seconds_by_target: dict[str, float] = {}
+    acting_chars_by_target: dict[str, int] = {}
     seen_images: set[str] = set()
     available_images = (
         {path.name.casefold() for path in image_dir.iterdir() if path.is_file()}
@@ -225,22 +226,33 @@ def validate_dialogue_ledger(
                 errors.append(f"{bubble_label}的status必须是mapped或omitted。")
                 continue
 
-            target = bubble.get("target")
-            script_text = bubble.get("script_text")
-            seconds = bubble.get("seconds")
-            if not isinstance(target, str) or target not in shot_map:
-                errors.append(f"{bubble_label}的target不存在：{target}")
+            mappings = bubble.get("segments", [bubble])
+            if not isinstance(mappings, list) or not mappings or any(not isinstance(m, dict) for m in mappings):
+                errors.append(f"{bubble_label}的segments必须是非空对象数组。")
                 continue
-            if not isinstance(script_text, str) or not script_text.strip():
-                errors.append(f"{bubble_label}缺少script_text。")
-            elif compact_text(script_text) not in compact_text(shot_map[target][1]):
-                errors.append(f"{bubble_label}的script_text未出现在{target}。")
-            if not isinstance(seconds, (int, float)) or isinstance(seconds, bool) or seconds <= 0:
-                errors.append(f"{bubble_label}的seconds必须是正数。")
-            else:
-                seconds_by_target[target] = seconds_by_target.get(target, 0.0) + float(
-                    seconds
-                )
+            if "segments" in bubble and bubble.get("script_text") != "".join(str(m.get("script_text", "")) for m in mappings):
+                errors.append(f"{bubble_label}的完整script_text与segments拼接不一致。")
+            for mapping in mappings:
+                target = mapping.get("target")
+                script_text = mapping.get("script_text")
+                seconds = mapping.get("seconds")
+                if not isinstance(target, str) or target not in shot_map:
+                    errors.append(f"{bubble_label}的target不存在：{target}")
+                    continue
+                if not isinstance(script_text, str) or not script_text.strip():
+                    errors.append(f"{bubble_label}缺少script_text。")
+                else:
+                    block = shot_map[target][1]
+                    spoken = "".join(re.findall(r"“([^”]+)”\s*（[^）]*）", block))
+                    if compact_text(script_text) not in compact_text(block) and compact_text(script_text) not in compact_text(spoken):
+                        errors.append(f"{bubble_label}的script_text未出现在{target}。")
+                    if bubble.get("kind") != "narration":
+                        count = sum(char.isalnum() for char in script_text)
+                        acting_chars_by_target[target] = acting_chars_by_target.get(target, 0) + count
+                if not valid_seconds(seconds) or seconds <= 0:
+                    errors.append(f"{bubble_label}的seconds必须是正数。")
+                else:
+                    seconds_by_target[target] = seconds_by_target.get(target, 0.0) + float(seconds)
 
     for target, required_seconds in seconds_by_target.items():
         shot_seconds = shot_map[target][0]
@@ -249,7 +261,66 @@ def validate_dialogue_ledger(
                 f"{target}映射对白预计{required_seconds:g}秒，向上取整后超过"
                 f"分镜时长{shot_seconds}秒。"
             )
+    performance = ledger.get("performance", [])
+    if not isinstance(performance, list):
+        errors.append("对白台账performance必须是数组。")
+        performance = []
+    seen_performance: set[str] = set()
+    for entry in performance:
+        if not isinstance(entry, dict):
+            errors.append("performance条目必须是对象。")
+            continue
+        target = entry.get("target")
+        if not isinstance(target, str) or target not in shot_map:
+            errors.append(f"performance目标不存在：{target}")
+            continue
+        if target in seen_performance:
+            errors.append(f"performance重复目标：{target}")
+        seen_performance.add(target)
+        if not isinstance(entry.get("evidence"), str) or not entry["evidence"].strip():
+            errors.append(f"{target}缺少表演依据。")
+        count = acting_chars_by_target.get(target, 0)
+        minimum, maximum = (3, 4) if count >= 42 else (2, 3) if count > 20 else (1, 2)
+        details = entry.get("details")
+        if not isinstance(details, list) or not minimum <= len(details) <= maximum:
+            errors.append(f"{target}台词{count}字，需登记{minimum}–{maximum}个表演细节。")
+        else:
+            normalized = []
+            for detail in details:
+                if not isinstance(detail, str) or not detail.strip():
+                    errors.append(f"{target}表演细节必须是非空正文摘录。")
+                elif compact_text(detail) not in compact_text(shot_map[target][1]):
+                    errors.append(f"{target}登记的表演未写入正文：{detail}")
+                else:
+                    normalized.append(compact_text(detail))
+            if len(set(normalized)) != len(normalized):
+                errors.append(f"{target}重复登记同一表演细节。")
+        if count >= 42 and (not isinstance(entry.get("long_take_reason"), str) or not entry["long_take_reason"].strip()):
+            errors.append(f"{target}长台词保留单镜但缺少已兑现的长镜头理由。")
+        intervals = entry.get("intervals")
+        if not isinstance(intervals, list) or not intervals:
+            errors.append(f"{target}缺少串行/并行表演估时间隔。")
+            continue
+        duration, speech = 0.0, 0.0
+        for interval in intervals:
+            if not isinstance(interval, dict) or not all(valid_seconds(interval.get(k)) for k in ("speech_seconds", "acting_seconds")):
+                errors.append(f"{target}间隔估时必须为有限非负数。")
+                continue
+            speaking, acting = interval["speech_seconds"], interval["acting_seconds"]
+            duration += max(speaking, acting)
+            speech += speaking
+        if speech + 1e-6 < seconds_by_target.get(target, 0):
+            errors.append(f"{target}表演估时未覆盖全部映射对白。")
+        if math.ceil(duration) > shot_map[target][0]:
+            errors.append(f"{target}对白与表演共需{duration:g}秒，超过镜头时长。")
+    for target, count in acting_chars_by_target.items():
+        if count > 20 and target not in seen_performance:
+            errors.append(f"{target}台词合计{count}字，缺少表演与估时记录。")
     return errors
+
+
+def valid_seconds(value: object) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0
 
 
 def main() -> int:
