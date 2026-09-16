@@ -18,6 +18,9 @@ SAFE_SEGMENT_RE = re.compile(
 SHOT_RE = re.compile(
     r"\*\*分镜\s*(\d+)\s*[（(]\s*(\d+(?:\.\d+)?)\s*秒\s*[）)]\s*[：:]\*\*"
 )
+COMBAT_SEQUENCE_RE = re.compile(
+    r"\*\*战斗段\s*(\d+)\s*[（(]\s*(\d+(?:\.\d+)?)\s*秒\s*[·・\s]*自动分镜\s*[）)]\s*[：:]\*\*"
+)
 LEGACY_TIMECODE_RE = re.compile(r"\*\*\d+(?:\.\d+)?-\d+(?:\.\d+)?s[：:]\*\*")
 REFERENCE_RE = re.compile(
     r"(?:分镜参考|参考)?\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?",
@@ -106,7 +109,7 @@ def compact_text(value: str) -> str:
 
 
 def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
-    """Return target key -> (duration, full shot block)."""
+    """Return timed target key -> (duration, full block)."""
     shot_map: dict[str, tuple[int, str]] = {}
     for segment_number, chunk in segment_chunks(main_text):
         shots = list(SHOT_RE.finditer(chunk))
@@ -115,6 +118,19 @@ def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
             shot_number = int(match.group(1))
             duration = int(float(match.group(2)))
             shot_map[f"片段{segment_number}/分镜{shot_number}"] = (
+                duration,
+                chunk[match.start() : end],
+            )
+        combat_sequences = list(COMBAT_SEQUENCE_RE.finditer(chunk))
+        for index, match in enumerate(combat_sequences):
+            end = (
+                combat_sequences[index + 1].start()
+                if index + 1 < len(combat_sequences)
+                else len(chunk)
+            )
+            sequence_number = int(match.group(1))
+            duration = int(float(match.group(2)))
+            shot_map[f"片段{segment_number}/战斗段{sequence_number}"] = (
                 duration,
                 chunk[match.start() : end],
             )
@@ -358,12 +374,46 @@ def main() -> int:
 
     def validate_chunk(label: str, number: int, chunk: str) -> None:
         shots = list(SHOT_RE.finditer(chunk))
-        if not shots:
+        combat_sequences = list(COMBAT_SEQUENCE_RE.finditer(chunk))
+        if shots and combat_sequences:
+            errors.append(f"{label}{number}混用了逐镜时长与战斗自动分镜模式。")
+            return
+        if not shots and not combat_sequences:
             if LEGACY_TIMECODE_RE.search(chunk):
                 errors.append(f"{label}{number}仍使用旧时间段，应改为‘分镜1（3秒）’格式。")
             else:
                 errors.append(f"{label}{number}没有分镜时长块。")
             return
+
+        if combat_sequences:
+            sequence_numbers: list[int] = []
+            total_duration = 0
+            for match in combat_sequences:
+                sequence_raw, duration_raw = match.groups()
+                sequence_numbers.append(int(sequence_raw))
+                if "." in duration_raw:
+                    errors.append(f"{label}{number}含小数时长：{match.group(0)}")
+                    continue
+                duration = int(duration_raw)
+                if duration <= 0:
+                    errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
+                total_duration += duration
+            if sequence_numbers != [1]:
+                errors.append(
+                    f"{label}{number}自动分镜模式必须只含战斗段1：{sequence_numbers}"
+                )
+            if total_duration > args.max_seconds:
+                errors.append(
+                    f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                )
+            if "开局状态：" not in chunk or "战斗过程：" not in chunk or "结束状态：" not in chunk:
+                errors.append(
+                    f"{label}{number}战斗自动分镜缺少开局状态、战斗过程或结束状态。"
+                )
+            if len(re.findall(r"(?m)^\s*\d+[.、]\s*【[^】]+】", chunk)) < 2:
+                errors.append(
+                    f"{label}{number}战斗自动分镜至少需要两个带节奏/覆盖提示的有序动作节点。"
+                )
 
         shot_numbers: list[int] = []
         total_duration = 0
@@ -379,13 +429,14 @@ def main() -> int:
                 errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
             total_duration += duration
 
-        expected = list(range(1, len(shot_numbers) + 1))
-        if shot_numbers != expected:
-            errors.append(f"{label}{number}分镜编号应从1连续递增：{shot_numbers}")
-        if total_duration > args.max_seconds:
-            errors.append(
-                f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
-            )
+        if shots:
+            expected = list(range(1, len(shot_numbers) + 1))
+            if shot_numbers != expected:
+                errors.append(f"{label}{number}分镜编号应从1连续递增：{shot_numbers}")
+            if total_duration > args.max_seconds:
+                errors.append(
+                    f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                )
 
         for match in PRODUCTION_NOTE_RE.finditer(chunk):
             errors.append(
@@ -395,7 +446,8 @@ def main() -> int:
         environment_matches = list(ENVIRONMENT_RE.finditer(chunk))
         if len(environment_matches) > 1:
             errors.append(f"{label}{number}重复写了环境参考，应只在片段标题下写一次。")
-        if shots and any(match.start() > shots[0].start() for match in environment_matches):
+        first_timed_block = shots[0] if shots else combat_sequences[0]
+        if any(match.start() > first_timed_block.start() for match in environment_matches):
             errors.append(f"{label}{number}把环境参考写进了分镜块。")
 
         previous_references: tuple[str, ...] = ()

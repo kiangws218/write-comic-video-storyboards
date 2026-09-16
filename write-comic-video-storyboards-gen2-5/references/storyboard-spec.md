@@ -67,7 +67,9 @@ When one comic panel contains multiple dialogue turns, choose one coverage strat
 
 ## 3. Timing and segmentation
 
-Treat 15 seconds as a soft maximum. A `片段` is one generated clip. In each clip, reset shot numbering at 1 and label every actual camera shot `分镜N（X秒）`, where `X` is that shot's positive integer duration. Sum all numbered-shot durations in the clip instead of using start/end timecodes; split rather than accelerate. A new viewpoint or a hard cut, reverse shot, microcut, insert, environment shot, or newly composed supplement is a new numbered shot. Speaker changes and continuous motion without a cut remain inside the current shot.
+Treat 15 seconds as a soft maximum. A `片段` is one generated clip. The default timing mode resets shot numbering at 1 and labels every actual camera shot `分镜N（X秒）`, where `X` is that shot's positive integer duration. Sum all numbered-shot durations in the clip instead of using start/end timecodes; split rather than accelerate. A new viewpoint or a hard cut, reverse shot, microcut, insert, environment shot, or newly composed supplement is a new numbered shot. Speaker changes and continuous motion without a cut remain inside the current shot.
+
+The only exception is an action-led fight admitted by `2d-animation-execution.md`. That clip may use one `战斗段1（X秒·自动分镜）` block with a total positive integer duration and an ordered sequence of untimed combat beats. Seedance decides the exact internal cut allocation. Do not mix ordinary `分镜` blocks and `战斗段` blocks in one clip, and do not use auto-coverage to bypass dialogue timing, ambiguous combat geography, fragile contact topology, or mandatory source compositions.
 
 Fallback non-dialogue timing:
 
@@ -98,7 +100,7 @@ Prefer boundaries at a location/time change, completed entrance/exit/reveal, dia
 
 ## 4. Direct-prompt format
 
-Each numbered block is one actual camera shot with its own integer duration. A continuous generated clip may contain several consecutively numbered shots, but no cut is left untimed inside a block. The block contains optional phase-specific `分镜参考 [crop.jpg]` lines and compact, directly generatable prose. Write in this approximate order without field headings:
+In the default mode, each numbered block is one actual camera shot with its own integer duration. A continuous generated clip may contain several consecutively numbered shots, but no cut is left untimed inside a block. The block contains optional phase-specific `分镜参考 [crop.jpg]` lines and compact, directly generatable prose. Write in this approximate order without field headings:
 
 1. vertical angle, meaningful horizontal direction, and scale;
 2. essential placement, depth, prop relation, and occlusion;
@@ -106,6 +108,22 @@ Each numbered block is one actual camera shot with its own integer duration. A c
 4. visible start state, ordered motion and performance, dialogue, local background/light, admitted effects, and endpoint.
 
 Do not output separate `景别：`, `构图：`, `运镜：`, or `画面内容：` fields. For a real hard cut, microcut, reverse shot, environment shot, insert, or supplement inside the same generated clip, start the next `分镜N（X秒）` block and describe the new view directly. A speaker change alone does not justify a new cut.
+
+In combat auto-coverage mode, use this compact shape:
+
+```text
+**战斗段1（12秒·自动分镜）：**
+分镜参考 `[phase-a.jpg]`、`[phase-b.jpg]`
+开局状态：……
+战斗过程：
+1. 【中速·大全景跟拍】……动作、攻防结果与同一时刻发生的特效……
+2. 【急加速·侧向甩镜】……
+3. 【接触瞬间·极短慢镜】……
+4. 【恢复正常速度·中景】……
+结束状态：……
+```
+
+The total duration belongs to the complete generated clip; internal beats receive no seconds. Each beat states a meaningful rhythm or coverage instruction, ordered action causality, visible effect response, and resulting state. A cited crop belongs only to the beat whose composition it actually matches. The detailed admission, continuity, rhythm, and VFX rules live in `2d-animation-execution.md`.
 
 State rhythm only where it changes decisions: where movement holds, where acceleration sharply increases, where in-betweens concentrate for legibility, where a brief slow-motion phase occurs, where impact compresses to one or two frames, and where the result settles. Continuous phases within one camera shot share that shot's duration; every actual cut receives its own numbered duration. Descriptive phrases about speed, weight, impact, tension, pressure, or battle intensity are useful only when tied to visible staging or timing.
 

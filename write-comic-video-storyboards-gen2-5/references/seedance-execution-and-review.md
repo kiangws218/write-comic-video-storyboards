@@ -8,7 +8,7 @@ For each clip retain plot result, dialogue, timing, shot purpose, valid referenc
 
 Do not add sound effects, ambience, Foley, breath cues, silence cues, BGM, or music. Voice directions attached to dialogue remain.
 
-Choose one structure:
+Choose one structure. Default precise-shot structure:
 
 ```text
 〖分镜〗
@@ -18,6 +18,22 @@ Choose one structure:
 ```
 
 Use positive integer durations, reset numbering at 1 in every clip, and keep the summed duration at or below the clip ceiling. For a continuous take, blocks are phases of one camera/action path. For a true multishot clip, state `硬切` at the new block and give each shot one primary action, one camera behavior, visible local background, and endpoint. Split when combined load is too high.
+
+For an action-led fight that already passed the mother draft's combat auto-coverage gate, preserve its single total-duration structure:
+
+```text
+〖战斗自动分镜〗
+战斗段1（12秒·自动分镜）：
+开局状态：……
+战斗过程：
+1. 【中速·大全景跟拍】……
+2. 【急加速·侧向甩镜】……
+3. 【接触瞬间·极短慢镜】……
+4. 【恢复正常速度·中景】……
+结束状态：……
+```
+
+Do not invent per-shot seconds when compiling this mode. Keep the ordered source anchors, attack/defense causality, rhythm changes, integrated effects, and endpoint. Do not convert a dialogue-heavy or continuity-fragile clip into auto-coverage merely to shorten the prompt.
 
 ## Reference roles
 
