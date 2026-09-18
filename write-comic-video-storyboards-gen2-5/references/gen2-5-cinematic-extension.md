@@ -63,7 +63,7 @@ Design temporal contrast instead of giving every phase equal weight:
 - **Impact:** the contact instant may compress to one or two graphic frames, followed by a short readable recoil, deformation, debris, water, or camera-settle phase.
 - **Aftermath:** reduce motion and allow the result pose or changed environment to register before the next intention begins.
 
-Write these rhythm changes directly in the shot prose, for example `蓄力阶段动作细密缓慢；发力一刻中割骤减、速度陡升；空中展开时中割重新集中，使四肢和武器轨迹清楚；接触瞬间插入一至两帧黑白闪，随后短暂保持受力结果`. Use only the phases that materially help the beat.
+Write these rhythm changes directly in the shot prose, for example `蓄力阶段动作细密缓慢；发力一刻中割骤减、速度陡升；空中展开时中割重新集中，使四肢和武器轨迹清楚；接触瞬间插入一至两帧高反差冲击帧，色相服从已锁定配色，随后短暂保持受力结果`. Use only the phases that materially help the beat.
 
 Atmosphere and action-quality language such as `速度感强烈`, `力量感突出`, `冲击力集中`, `紧张逼迫`, `严肃压抑`, or `激烈近身交锋` is allowed when the visible staging, rhythm, light, or effects actually produce that quality. Attach it to the relevant phase; do not use it as a generic quality suffix.
 

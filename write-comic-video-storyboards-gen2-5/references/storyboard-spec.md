@@ -135,11 +135,20 @@ Write only directly generatable visuals. Exclude asset planning, estimates, oper
 
 Use visually explicit creature and special-object names. When no matching reference asset is provided, replace lore-only names with a stable description containing the most useful visible anchors—normally scale, dominant color, surface/material, body type, and defining anatomy. Repeat the full description at the first appearance of each independently generated clip; shorten it consistently only within that clip.
 
-Speed lines, solid backgrounds, and gradients are optional only when source-supported or genuinely useful to the beat. Monochrome manga effects may be colorized while preserving their visual purpose. Directional air distortion, screen wash, pressure ripples, brief black-white impact frames, camera response, and moving reflections require a matching speed, force, material, or light event and must preserve the cited pose and space. Rim light, lens flare, floating particles, glow, and volumetric beams require a visible source effect, an established physical light source, or a specific story need; never add them as generic beautification or subject separation.
+Speed lines, solid backgrounds, and gradients are optional only when source-supported or genuinely useful to the beat. Monochrome manga effects may be colorized while preserving their visual purpose. Directional air distortion, screen wash, pressure ripples, brief high-contrast impact frames, camera response, and moving reflections require a matching speed, force, material, or light event and must preserve the cited pose and space. Rim light, lens flare, floating particles, glow, and volumetric beams require a visible source effect, an established physical light source, or a specific story need; never add them as generic beautification or subject separation.
 
 ## 5. Environments
 
 Begin every storyboard with `## 场景色彩基准`. This is a global look envelope, not a scene inventory. Describe only the reusable overall hue tendency, saturation and contrast behavior, 2D rendering/style, line and surface texture, light softness or hardness and general directional logic, and atmospheric depth or image clarity. Do not name a character, prop, building, terrain feature, creature, or other concrete object there, and do not prescribe object-specific colors. Put concrete visible colors and materials in the relevant environment prompt or shot instead.
+
+Before writing that baseline, pass the **color-source gate**:
+
+1. **Explicit direction/reference:** obey the user's stated color mapping and supplied color reference assets. For characters, these references remain authoritative even when the comic is monochrome.
+2. **Colored comic:** preserve the visible source colors of characters, environments, architecture, props, natural elements, effects, and solid or gradient backgrounds, except where an explicit user direction or supplied color reference overrides them. Do not replace them with a newly invented palette merely to fit the global look. The baseline may harmonize rendering, contrast, and lighting, but cannot recolor source facts.
+3. **Monochrome comic:** read grayscale as value, material, depth, lighting, ink, or screentone evidence—not literal gray object color. Add `## 非人物上色锁定` immediately after `## 场景色彩基准`; assign coherent colors and materials to recurring environments, architecture, props, natural elements, effects, and abstract solid/gradient backgrounds. Do not infer character hair, skin, eye, or costume colors from black fills or screentones; use the supplied character references.
+4. **Mixed or partially colored source:** use a verified colored occurrence as the authority for the same recurring object, effect, or location in monochrome panels. Fill only genuinely uncolored elements. Do not transfer a color merely because two shapes look similar; identity and material must match.
+
+Keep `## 非人物上色锁定` compact and continuity-oriented rather than exhaustive. Record items whose color must survive across shots, clips, or batches, using stable names plus material and dominant color; optional hex values are useful only when tighter production matching is needed. State both endpoints of a gradient and the hue of a solid abstract background. Copy the relevant locked color into each environment prompt or shot where that item is visible, because a detached palette list alone is not a usable generation instruction. Once established, a recurring item keeps the same material and color unless the source or a visible lighting/effect event changes its appearance. Lighting may tint a surface temporarily but does not rewrite its base color.
 
 Provide a compact prompt for every location, including locations that also receive structural assets.
 
@@ -185,6 +194,7 @@ Manually audit:
 - State/Action classification and every added A/B/C phase;
 - adjacent repeated references and whether every numbered shot has a real visual or dramatic increment;
 - complete visible local background;
+- color-source classification; colored-source fidelity; monochrome `非人物上色锁定`; character-reference authority; recurring material/color continuity; explicit solid and gradient colors;
 - natural speech/action time and clean hard-cut boundaries;
 - character-count dialogue trigger and whether long turns have sufficient visual coverage rather than one static composition;
 - dialogue-risk ledger count against the still-open panel, bubble order/speaker/kind, exact target mapping, and rounded-up speech time;
