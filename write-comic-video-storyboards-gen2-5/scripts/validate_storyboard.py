@@ -52,6 +52,16 @@ SPEECH_HINT_RE = re.compile(
     r"旁白|说道|说着|说|喊道|喊|问道|问|答道|回答|解释|嘟囔|"
     r"低声|高声|叫道|念道|宣布|开口"
 )
+SPEAKER_QUOTE_RE = re.compile(
+    r"([A-Za-z0-9\u3400-\u9fff·]+?)(?:画外)?"
+    r"(?:说道|说|喊道|喊|问道|问|答道|回答|嘟囔|叫道|念道|宣布|开口)"
+    r"[：:]\s*“([^”]+)”"
+)
+HIDDEN_CUT_RE = re.compile(
+    r"(?:画面|镜头)?(?:末尾|随后|然后|再)?切(?:换)?(?:到|至|为)?"
+    r"(?=\s*(?:平视|仰视|俯视|斜俯视|低机位|高位|正面|侧面|背面|"
+    r"近景|中景|远景|特写|全景|反打|插入|手部|脸部|眼部|物件))"
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -106,6 +116,16 @@ def missing_voice_directions(chunk: str) -> list[str]:
 def compact_text(value: str) -> str:
     """Normalize whitespace for exact dialogue-presence checks."""
     return re.sub(r"\s+", "", value)
+
+
+def coverage_dialogue_metrics(block: str) -> tuple[int, int]:
+    """Return meaningful dialogue characters and distinct explicit speakers."""
+    matches = list(SPEAKER_QUOTE_RE.finditer(block))
+    meaningful_characters = sum(
+        sum(character.isalnum() for character in match.group(2)) for match in matches
+    )
+    speakers = {match.group(1) for match in matches}
+    return meaningful_characters, len(speakers)
 
 
 def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
@@ -461,6 +481,35 @@ def main() -> int:
             current_references = tuple(
                 reference.casefold() for reference in REFERENCE_RE.findall(block)
             )
+            shot_label = f"{label}{number}的分镜{shot.group(1)}"
+            duration = int(float(shot.group(2)))
+            dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
+            hidden_cut = HIDDEN_CUT_RE.search(block)
+            if hidden_cut:
+                errors.append(
+                    f"{shot_label}在一个编号块内隐藏了机位切换：{hidden_cut.group(0)}；"
+                    "请把新机位改为下一个编号分镜。"
+                )
+            if duration >= 7:
+                warnings.append(
+                    f"{shot_label}时长为{duration}秒；请确认存在持续可读的表演或连续动作，"
+                    "否则按视觉焦点拆镜。"
+                )
+            if dialogue_characters >= 42:
+                warnings.append(
+                    f"{shot_label}含{dialogue_characters}个有意义的台词字符；"
+                    "默认应按语义节点拆镜，保留长镜头需通过long_take_reason与表演发展审计。"
+                )
+            if speaker_count >= 2:
+                warnings.append(
+                    f"{shot_label}含{speaker_count}名明确说话人；"
+                    "请检查回答、反驳、揭示、包袱或态度变化是否需要反打或听者反应。"
+                )
+            if len(current_references) >= 2:
+                warnings.append(
+                    f"{shot_label}引用了{len(current_references)}张原图；"
+                    "请确认它们是同一机位的连续阶段，否则拆成独立编号分镜。"
+                )
             if current_references and current_references == previous_references:
                 warnings.append(
                     f"{label}{number}的相邻{shot.group(0)}重复同一参考图；"

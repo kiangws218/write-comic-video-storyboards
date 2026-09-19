@@ -75,11 +75,11 @@ Use this gate after source locks and dialogue coverage planning. It is the singl
 
 Count all spoken and inner Japanese lines in one actual numbered shot, across speakers and bubbles; exclude spaces, punctuation, voice notes, and narration. Splitting quotes does not reduce this total.
 
-| Meaningful Japanese characters in the shot | Required performance treatment |
-|---|---|
-| 1–20 | Write 1–2 visible performance details suited to the line. |
-| 21–41 | Write 2–3 distinct visible performance details, distributed over semantic beats. |
-| 42+ | Default to genuinely different shots. A justified retained long take needs 3–4 supported details forming sustained visible development. |
+| Meaningful Japanese characters in the shot | Required performance treatment | Default coverage |
+|---|---|---|
+| 1–20 | Write 1–2 visible performance details suited to the line. | Normally keep one shot unless the speaking turn changes the visual focus or lands a distinct response/punchline. |
+| 21–41 | Write 2–3 distinct visible performance details, distributed over semantic beats. | A single speaker may remain in one shot when the written performance develops; use a reverse or insert when the semantic target, observed object, or listener state changes. |
+| 42+ | A justified retained long take needs 3–4 supported details forming sustained visible development. | Default to genuinely different shots divided at semantic turns. Use the existing `long_take_reason` only when an unbroken supported action or relationship would be harmed by cutting. |
 
 A detail is a readable change or explicitly sustained expressive state in eyes, face, head/body, or a visible hand/prop relation. Give it a speech/event trigger or a clear temporal role. Articulation alone, repeated wording of one gesture, camera movement, wind-driven hair, and scenery do not count as additional acting details. A held expressive state can count once; keep source-supported neutrality rather than inventing suppressed emotion. For multiple speakers, address each visible speaker and the listener where meaningful; off-screen speech may run over visible listener or hand performance.
 
@@ -88,6 +88,19 @@ Do not turn the quota into simultaneous gesture stacking. Write the fewest quali
 Internally establish source-supported purpose and trigger; finally write only directly visible behavior in compact prose. AU codes and a full eight-dimension table are optional analysis aids, not output fields. Use relative timing such as 开口前／说到「実際の日本語の語句」时／句末; precise subsecond scheduling belongs after voice alignment.
 
 When acting is triggered by dialogue, every word, phrase, or meaning from that dialogue mentioned in the visual prose must use the exact Japanese text spoken in that shot, normally inside `「」`. Never identify a Japanese trigger with a Chinese translation or paraphrase such as `说到爱她时`, `提到结婚纪念日时`, or `接着嘱咐别偷看时`; write `说到「愛してる」时`, `说到「結婚記念日」时`, or `说到「こっそり開けるなよ」时`. Generic timing that does not restate dialogue content—such as 开口前, 转入后半句, 回答后, or 句末—is allowed. Apply the same rule inside voice-direction parentheses. The cited Japanese trigger must occur verbatim in that shot's final dialogue; if translation or line segmentation changes, update its acting triggers too.
+
+### Coverage gate
+
+Clip continuity and camera continuity are separate decisions. Keep a continuous physical action in one generated clip when required by §3, but give every speaker view, reverse, reaction, prop/environment insert, and other actual camera change its own consecutively numbered shot inside that clip. Never hide a cut in prose with `画面切到`, `再切到`, `切至`, or equivalent wording.
+
+Use the fewest shots that create real visual or dramatic increments:
+
+- A speaker change alone does not force a cut. When the next turn is an answer, rebuttal, reveal, joke landing, or clear attitude change, default to the new speaker or the listener reaction unless a source-supported shared action makes the unchanged composition more informative.
+- For a single 21–41-character turn, retain one shot only when its visible performance develops across the semantic beats. Camera movement, lip motion, wind, or repeated versions of one gesture do not supply coverage.
+- At 42+ characters, divide coverage at semantic turns by default. A retained long take must pass the existing enacted-development test and record `long_take_reason`; do not keep it merely because the character continues speaking.
+- For exposition or off-screen explanation, use source-compatible subject, prop, environment, process, or result inserts when they clarify the stated information. Do not let an unchanged wide shot carry the whole explanation, and do not invent illustrative events absent from the source.
+- Seven seconds is an audit trigger, not a universal cut point. Inspect any ordinary shot at or above it for a genuine developing performance or continuous action. Split when the visual focus changes; retain it when cutting would damage a supported unbroken action or relationship.
+- Multiple cited panels in one ordinary shot are acceptable only when they are phases of the same camera setup and continuous action. Different composition, scale, angle, subject focus, or overlap requires another numbered shot. Combat auto-coverage remains governed by its own admission gate.
 
 ### Long-take admission must be enacted
 
