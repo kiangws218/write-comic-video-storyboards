@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2.6"
+  short_description: "原图现场写作、可审计对白背景与电影化质量"
+  default_prompt: "Use $write-comic-video-storyboards-gen2-6 to write a source-grounded cinematic storyboard while each cited comic panel remains visually open and auditable."
