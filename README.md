@@ -24,6 +24,12 @@
 
 也可以从此 GitHub 仓库路径安装其中一个子目录。
 
+## Tests
+
+- `tests/fixtures/`：版本化的固定输入与旧版基线；不放进任何 Skill 发布目录。
+- `tests/results/<version>/`：对应版本的分镜、源图台账和评估报告。
+- `tests/build_ch15_gen26_fixture.py`：重建第15话第一批测试结果与文件校验清单，保证 A/B 可复现。
+
 ## Notes
 
 - 默认将 15 秒视为软上限，不强制硬切满 15 秒。
