@@ -359,6 +359,54 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("6秒对白镜头但可见动作只有", result.stdout)
 
+    def test_chinese_dialogue_trigger_paraphrase_fails(self) -> None:
+        line = "前は暗石区の入口だけだったのに、今は全部封鎖されてる。"
+        text = storyboard(line=line).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "提到暗石区入口时，人物视线收紧。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("用中文概括对白触发点", result.stdout)
+
+    def test_verbatim_japanese_dialogue_trigger_passes(self) -> None:
+        line = "前は暗石区の入口だけだったのに、今は全部封鎖されてる。"
+        text = storyboard(line=line).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "说到「暗石区の入口」时，人物视线收紧。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_unestablished_counted_gaze_target_fails(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物的视线落向对面的两名少女，手指随后放松。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("未在本镜建立的两名少女", result.stdout)
+
+    def test_directional_gaze_target_is_self_contained(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物的视线转向画面右侧外，手指随后放松。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_terminal_uncited_coverage_before_source_shot_warns(self) -> None:
+        base = storyboard().replace(
+            f"场景环境：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "场景环境：浅发少女位于画面左侧，木杯占据右前景，暖色墙面填满背景。",
+        ).replace("平视手部特写", "平视人物近景")
+        first = base.replace("分镜参考 `[panel.jpg]`\n", "")
+        second = base.split("## 【片段1】", 1)[1]
+        second = "## 【片段2】" + second.replace("测试", "下一格", 1)
+        result = self.run_validator(first + "\n" + second)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("末镜为无参考补镜", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

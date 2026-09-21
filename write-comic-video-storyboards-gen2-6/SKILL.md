@@ -39,7 +39,7 @@ Run scripts directly; inspect their code only when changing them.
 4. Before closing the panel, plan dialogue coverage and immediately write its `source_locked` shot. Add `source_supported_phase` or `uncited_coverage` shots only under their declared permissions. A genuine camera change receives a new numbered shot.
 5. With the same images still open, run the source-diff audit: map every visible noun and relation in the draft to current-panel evidence or an explicitly declared uncited-coverage basis; compare background, composition, hands/props, bubble mapping, and endpoint. Delete unsupported content instead of explaining why it seems plausible.
 6. After factual grounding passes, choreograph performance and sound, then add source-compatible camera, focus, lighting, atmosphere, and material response. Style names may set a global target; concrete visible and audible directions make it executable. Do not let polish add a new event or hidden motive.
-7. Validate the open batch with the version-2 ledger before advancing. Fix errors, inspect warnings, and record a manual source-audit pass for every shot. After all batches pass, run continuity, performance-diversity, sound, and cinematic-rendering passes across clip boundaries, then validate the complete deliverables.
+7. Validate the open batch with the version-2 ledger before advancing. Fix errors, inspect warnings, and record a manual source-audit pass for every shot. After all batches pass, run clip cold-start, boundary-coverage, continuity, performance-diversity, sound, and cinematic-rendering passes, then validate the complete deliverables.
 
 ## Shot authority
 
@@ -53,7 +53,7 @@ Do not hide a cut inside prose with `画面切到`, `再切到`, or equivalent w
 
 - Begin with `## 场景色彩基准`; add `## 非人物上色锁定` only for monochrome or partially uncolored source.
 - Use `分镜N（X秒）` for ordinary shots. Use one `战斗段N（X秒·自动分镜）` only when the combat admission gate passes; never mix modes in one clip.
-- Use the self-contained per-shot fields in `storyboard-format.md`: `场景环境`, `环境音`, `镜头设计`, `可见动作`, `台词与语气`, `光影布光`, and `声音设计`. Every clip may be submitted alone, so restate its actual starting pose, orientation, environment, and light positively; never use prior-shot pointers or negative control prose.
+- Use the self-contained per-shot fields in `storyboard-format.md`: `场景环境`, `环境音`, `镜头设计`, `可见动作`, `台词与语气`, `光影布光`, and `声音设计`. Every clip may be submitted alone, so restate its actual starting pose, orientation, environment, light, and executable gaze direction positively; never inherit an unseen person, count, or spatial relation from another clip.
 - Generate the Chinese SRT after storyboard approval unless requested earlier.
 - Report clip count, approximate runtime, reference count, structural validation, ledger validation, manual source-audit status, and absolute output paths separately.
 

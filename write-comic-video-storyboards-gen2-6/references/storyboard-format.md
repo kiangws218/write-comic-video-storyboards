@@ -45,6 +45,8 @@ Every ordinary numbered shot uses the following fields in this order. This follo
 
 每个片段会被单独提交给视频模型，因此每一镜必须自足。直接重述当前起始姿态、人物朝向、位置、接触、背景和光源，不写`保持原有`、`上一格`、`上一镜`、`同一场面继续`、`只放大上一格`、`沿用前镜`等跨块指代。生成字段中也不写`不新增`、`不要`、`不出现`、`不使用`、`避免`等否定控制句；删除不被允许的内容，并把保留下来的画面改成正向、可见、可执行描述。
 
+Apply a clip cold-start gate: reset visible people, counts, relationships, and off-screen targets at every clip heading. A gaze or gesture may name a person or counted group only when that same shot positively establishes them. Otherwise describe the executable direction—`看向镜头`, `看向画面右侧`, or `视线停在画面左侧外`—without inheriting `对面的两名少女`, `同伴`, or another identity from an earlier clip.
+
 Use stable prop and creature labels. When no creature or special-object reference is supplied, use a visible label containing useful scale, dominant color, surface/material, body type, and defining anatomy; repeat the full label at the first appearance of each independently generated clip.
 
 `环境音：`与`声音设计：`每镜必填。环境音只写空间底声与声像；声音设计只选一至两个最有作用的拟音、呼吸、静默或同步节点。让声音事件与可见原因同步，不在声音行藏入新的视觉动作。
@@ -95,4 +97,4 @@ Do not create a Markdown dialogue table unless requested.
 
 ## Final manual audit
 
-Confirm source order, event and result; exact cited composition; background type and content; color-source fidelity; dialogue completeness and ownership; natural speech/action time; stable prop naming; action continuity across clips; motivated effects; and unchanged adult master. Structural validation never substitutes for this visual verdict.
+Confirm source order, event and result; exact cited composition; background type and content; color-source fidelity; dialogue completeness and ownership; natural speech/action time; stable prop naming; clip cold-start validity; terminal added-coverage difference from the next source shot; action continuity across clips; motivated effects; and unchanged adult master. Structural validation never substitutes for this visual verdict.

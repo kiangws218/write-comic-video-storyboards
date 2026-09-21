@@ -64,7 +64,7 @@ A performance detail is a readable change or clearly sustained state in eyes, fa
 
 Choose the fewest supported details. Do not stack simultaneous gestures or invent tears, grips, steps, hidden motives, or new events to satisfy a quota. A neutral source performance may remain neutral; use coverage when further acting is unsupported.
 
-When visual prose names a dialogue trigger, quote the exact Japanese words spoken in that shot inside `「」`. Do not use a Chinese paraphrase. Generic timing such as `开口前`, `转入后半句`, or `句末` is allowed.
+When visual prose names a dialogue trigger, quote the exact Japanese words spoken in that shot inside `「」`. Do not use a Chinese paraphrase such as `提到暗石区入口时` or `监管信息到来时`; write `说到「暗石区の入口」时` or quote the relevant final Japanese substring. The quoted trigger must occur verbatim in that shot's final dialogue. Generic timing such as `开口前`, `转入后半句`, `重音处`, or `句末` is allowed.
 
 For a 4–6 second dialogue shot, require visible development at a minimum of two semantic stages in addition to the opening state and endpoint. Count supported changes in head/face orientation, eyes or asymmetric face, hand/prop relation, weight/posture, listener response, or environmental interaction. Camera movement, lighting drift, lip sync, wind, and decorative particles enrich the image but do not by themselves carry the speech. If the source cannot support this development, split coverage rather than stretching a static expression.
 
@@ -96,4 +96,5 @@ Before advancing:
 4. verify ordered targets preserve source dialogue order;
 5. verify speech and performance fit the integer shot durations;
 6. verify every additional shot creates a real visual or dramatic increment;
-7. verify long-take or shared-composition exceptions are enacted in the prose rather than merely asserted in the ledger.
+7. compare a terminal added-coverage shot with the next clip's first source composition; change or remove it when subject, scale, viewpoint, dominant prop, and dramatic function substantially repeat;
+8. verify long-take or shared-composition exceptions are enacted in the prose rather than merely asserted in the ledger.

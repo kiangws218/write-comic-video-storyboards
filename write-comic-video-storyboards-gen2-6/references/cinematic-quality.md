@@ -57,6 +57,8 @@ Use hard cuts by default. Select one primary camera behavior per actual shot: fi
 
 An added reverse, insert, environment pause, foot/hand microcut, or reaction earns its place only when it adds a distinct focus, scale, viewpoint, visible fact, or dramatic function. Keep the source-important composition as a recognizable phase; do not replace it with more attractive coverage.
 
+Audit terminal added coverage against the next clip's first source-locked composition, not only against the preceding shot. If both use substantially the same subject, scale, viewpoint, dominant prop, and dramatic function, remove or merge the added shot, or redesign it with at least two meaningful changes such as subject focus plus scale, or viewpoint plus visible information. Do not pre-repeat the next comic panel with a near-duplicate uncited shot.
+
 Seven seconds is an audit trigger, not a mandatory cut. Retain a longer shot when supported action or performance genuinely develops; split it when the visual focus changes or the frame would otherwise remain static.
 
 ## Effects and material response

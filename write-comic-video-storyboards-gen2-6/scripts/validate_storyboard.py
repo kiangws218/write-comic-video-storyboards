@@ -125,6 +125,22 @@ HIDDEN_CUT_RE = re.compile(
     r"(?=\s*(?:平视|仰视|俯视|斜俯视|低机位|高位|正面|侧面|背面|"
     r"近景|中景|远景|特写|全景|反打|插入|手部|脸部|眼部|物件))"
 )
+SEMANTIC_TRIGGER_CUE_RE = re.compile(
+    r"(?:提到|说到|谈到|讲到|问到|回答到)[^。；\r\n]{1,40}?(?:时|处)|"
+    r"(?:信息|结论|判断|名称|对象)(?:进入|到来|出现)(?:时|处)"
+)
+JAPANESE_TRIGGER_QUOTE_RE = re.compile(r"「([^」]+)」")
+COUNTED_GAZE_TARGET_RE = re.compile(
+    r"(?:视线|目光|眼神)[^。；\r\n]{0,24}?"
+    r"(?:落向|转向|看向|投向|停在)[^。；\r\n]{0,16}?"
+    r"(?P<count>两名|两位|两人|二人|三名|三位|三人)"
+    r"(?P<noun>少女|少年|女性|男性|人物|旅人|客人)"
+)
+SUBJECT_DESCRIPTOR_RE = re.compile(
+    r"[A-Za-z0-9\u3400-\u9fff·]{0,10}(?:少女|少年|女性|男性|旅人|客人|店员|厨师|人物)"
+)
+VIEWPOINT_TERMS = ("正面", "侧面", "背面", "三分之二", "俯视", "仰视", "平视")
+SALIENT_PROP_TERMS = ("木杯", "杯", "碗", "筷", "地图", "刀", "剑", "头盔", "吧台")
 
 
 def parse_args() -> argparse.Namespace:
@@ -220,6 +236,116 @@ def has_descriptive_background(block: str) -> bool:
         if meaningful >= 6 and clause.strip() not in {"背景", "森林背景", "实体背景"}:
             return True
     return False
+
+
+def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Require named dialogue beats to quote the final Japanese line verbatim."""
+    dialogue = fields.get("台词与语气", "")
+    dialogue_quotes = [compact_text(quote) for quote in QUOTE_RE.findall(dialogue)]
+    if not dialogue_quotes:
+        return []
+
+    errors: list[str] = []
+    for field_name in ("镜头设计", "可见动作", "光影布光", "声音设计"):
+        for clause in re.split(r"[，,。；;]", fields.get(field_name, "")):
+            cue = SEMANTIC_TRIGGER_CUE_RE.search(clause)
+            if not cue:
+                continue
+            triggers = JAPANESE_TRIGGER_QUOTE_RE.findall(clause)
+            if not triggers:
+                errors.append(
+                    f"{shot_label}的{field_name}用中文概括对白触发点：{cue.group(0)}；"
+                    "请改为说到「当前镜头日文原句片段」时，或使用句首/重音处/句末等通用时间节点。"
+                )
+                continue
+            for trigger in triggers:
+                normalized = compact_text(trigger)
+                if not any(normalized in quote for quote in dialogue_quotes):
+                    errors.append(
+                        f"{shot_label}的{field_name}引用了不属于当前台词的触发词：「{trigger}」。"
+                    )
+    return errors
+
+
+def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Reject counted gaze targets that the independently generated shot never establishes."""
+    environment = fields.get("场景环境", "")
+    action = fields.get("可见动作", "")
+    errors: list[str] = []
+    count_aliases = {
+        "两名": r"(?:两名|两位|两人|二人)",
+        "两位": r"(?:两名|两位|两人|二人)",
+        "两人": r"(?:两名|两位|两人|二人)",
+        "二人": r"(?:两名|两位|两人|二人)",
+        "三名": r"(?:三名|三位|三人)",
+        "三位": r"(?:三名|三位|三人)",
+        "三人": r"(?:三名|三位|三人)",
+    }
+    for match in COUNTED_GAZE_TARGET_RE.finditer(action):
+        count = match.group("count")
+        noun = match.group("noun")
+        established = re.search(
+            rf"{count_aliases[count]}[^，,。；;\r\n]{{0,8}}{re.escape(noun)}",
+            environment,
+        )
+        if not established:
+            errors.append(
+                f"{shot_label}的可见动作把视线指向未在本镜建立的{count}{noun}；"
+                "请在场景环境中正向建立该群体，或改写为看向镜头/画面左侧外/画面右侧外。"
+            )
+    return errors
+
+
+def boundary_fingerprint(block: str) -> tuple[set[str], str, set[str], set[str]]:
+    """Return a small, explainable fingerprint for cross-clip coverage review."""
+    fields = shot_field_values(block)
+    environment = fields.get("场景环境", "")
+    camera = fields.get("镜头设计", "")
+    primary_clause = re.split(r"[，,；;。]", environment, maxsplit=1)[0]
+    subjects = {match.group(0) for match in SUBJECT_DESCRIPTOR_RE.finditer(primary_clause)}
+    scale = (
+        "close"
+        if re.search(r"大特写|特写|近景", camera)
+        else "wide"
+        if re.search(r"远景|全景", camera)
+        else "medium"
+        if "中景" in camera
+        else ""
+    )
+    viewpoints = {term for term in VIEWPOINT_TERMS if term in camera}
+    props = {term for term in SALIENT_PROP_TERMS if term in environment or term in camera}
+    return subjects, scale, viewpoints, props
+
+
+def cross_clip_boundary_warnings(chunks: list[tuple[int, str]]) -> list[str]:
+    """Flag terminal uncited coverage before a new source composition for manual comparison."""
+    warnings: list[str] = []
+    for (number, chunk), (next_number, next_chunk) in zip(chunks, chunks[1:]):
+        shots = list(SHOT_RE.finditer(chunk))
+        next_shots = list(SHOT_RE.finditer(next_chunk))
+        if not shots or not next_shots:
+            continue
+        last = shots[-1]
+        next_first = next_shots[0]
+        last_block = chunk[last.end() :]
+        next_end = next_shots[1].start() if len(next_shots) > 1 else len(next_chunk)
+        next_block = next_chunk[next_first.end() : next_end]
+        if REFERENCE_RE.search(last_block) or not REFERENCE_RE.search(next_block):
+            continue
+        subjects, scale, viewpoints, props = boundary_fingerprint(last_block)
+        next_subjects, next_scale, next_viewpoints, next_props = boundary_fingerprint(next_block)
+        likely_overlap = (
+            bool(subjects & next_subjects)
+            and bool(scale)
+            and scale == next_scale
+            and (bool(viewpoints & next_viewpoints) or bool(props & next_props))
+        )
+        if likely_overlap:
+            warnings.append(
+                f"片段{number}末镜为无参考补镜，下一片段{next_number}首镜为漫画参考镜头；"
+                "请比较主体、景别、视角、主要道具与戏剧功能，若高度重合则删除、合并或至少改变两个维度。"
+            )
+    return warnings
 
 
 def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
@@ -794,6 +920,8 @@ def main() -> int:
             duration = int(float(shot.group(2)))
             dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
             fields = shot_field_values(block)
+            errors.extend(semantic_trigger_errors(fields, shot_label))
+            errors.extend(counted_gaze_target_errors(fields, shot_label))
             missing_fields = [name for name in SHOT_FIELD_NAMES if not fields.get(name)]
             if not fields.get("声音设计"):
                 missing_fields.append("声音设计")
@@ -887,6 +1015,7 @@ def main() -> int:
         [("片段", number, chunk) for number, chunk in chunks],
         require_contiguous_numbers=True,
     )
+    warnings.extend(cross_clip_boundary_warnings(chunks))
     warnings.extend(cinematic_quality_warnings(main_text))
 
     safe_chunks = segment_chunks(safe_text, SAFE_SEGMENT_RE) if safe_text else []
