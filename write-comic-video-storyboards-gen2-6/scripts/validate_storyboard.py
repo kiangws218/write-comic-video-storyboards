@@ -45,6 +45,7 @@ OPTICAL_CRAFT_RE = re.compile(
 PERFORMANCE_SIGNAL_GROUPS = (
     re.compile(r"视线|目光|瞳孔|眼神|注视|移开视线"),
     re.compile(r"眼皮|眼睑|眉|嘴角|嘴唇|下巴|鼻翼|面部肌肉|眨眼"),
+    re.compile(r"转头|回头|抬头|低头|偏头|头部|脸转向|面部朝向|侧脸|正脸|鼻尖朝向"),
     re.compile(r"呼吸|吸气|吐气|鼻息|吞咽|喉结"),
     re.compile(r"手指|指尖|指节|掌心|握法|抓握|捏住|收紧|松开"),
     re.compile(r"重心|肩膀|肩线|躯干|上身|俯身|后仰|前倾|停步"),
@@ -76,6 +77,17 @@ AUDIO_HIDDEN_VISUAL_RE = re.compile(
 ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
 ATMOSPHERE_BASIS_RE = re.compile(
     r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
+)
+SHOT_FIELD_NAMES = ("场景环境", "环境音", "镜头设计", "可见动作", "台词与语气", "光影布光")
+SHOT_FIELD_RE = re.compile(
+    r"(?ms)^\s*(场景环境|环境音|镜头设计|可见动作|台词与语气|光影布光|声音设计|音频)[：:]\s*"
+    r"(.*?)(?=^\s*(?:场景环境|环境音|镜头设计|可见动作|台词与语气|光影布光|声音设计|音频)[：:]|\Z)"
+)
+SELF_CONTAINED_META_RE = re.compile(
+    r"保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
+    r"上一(?:格|镜|镜头|片段)|前一(?:格|镜|镜头|片段)|"
+    r"沿用(?:上一|前一)|承接(?:上一|前一)|同一场面(?:继续|后续)|"
+    r"不新增|不增加|不出现|不使用|不改变|不补画|不另加|不要|无需|避免"
 )
 META_RE = re.compile(
     r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则|"
@@ -136,6 +148,15 @@ def parse_args() -> argparse.Namespace:
         help="Fail when no version-2 source ledger is supplied.",
     )
     return parser.parse_args()
+
+
+def shot_field_values(block: str) -> dict[str, str]:
+    """Return normalized re0-style fields from one ordinary shot."""
+    values: dict[str, str] = {}
+    for match in SHOT_FIELD_RE.finditer(block):
+        name = "声音设计" if match.group(1) == "音频" else match.group(1)
+        values[name] = match.group(2).strip()
+    return values
 
 
 def segment_chunks(
@@ -772,6 +793,23 @@ def main() -> int:
             shot_label = f"{label}{number}的分镜{shot.group(1)}"
             duration = int(float(shot.group(2)))
             dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
+            fields = shot_field_values(block)
+            missing_fields = [name for name in SHOT_FIELD_NAMES if not fields.get(name)]
+            if not fields.get("声音设计"):
+                missing_fields.append("声音设计")
+            if missing_fields:
+                errors.append(
+                    f"{shot_label}缺少独立字段：{', '.join(missing_fields)}；"
+                    "请按场景环境、环境音、镜头设计、可见动作、台词与语气、光影布光、声音设计输出。"
+                )
+            for field_name in ("场景环境", "环境音", "镜头设计", "可见动作", "光影布光", "声音设计"):
+                field_text = fields.get(field_name, "")
+                meta_match = SELF_CONTAINED_META_RE.search(field_text)
+                if meta_match:
+                    errors.append(
+                        f"{shot_label}的{field_name}含不可执行元措辞：{meta_match.group(0)}；"
+                        "请改写为当前镜头自足的正向姿态、对象、背景、光线或动作。"
+                    )
             hidden_cut = HIDDEN_CUT_RE.search(block)
             if hidden_cut:
                 errors.append(
@@ -793,6 +831,23 @@ def main() -> int:
                     f"{shot_label}含{speaker_count}名明确说话人；"
                     "请检查回答、反驳、揭示、包袱或态度变化是否需要反打或听者反应。"
                 )
+            if dialogue_characters > 0 and duration >= 5:
+                action_text = fields.get("可见动作", "")
+                action_phases = [
+                    clause.strip()
+                    for clause in re.split(r"[，,；;。]", action_text)
+                    if clause.strip()
+                    and any(pattern.search(clause) for pattern in PERFORMANCE_SIGNAL_GROUPS)
+                ]
+                action_signals = sum(
+                    bool(pattern.search(action_text)) for pattern in PERFORMANCE_SIGNAL_GROUPS
+                )
+                if len(action_phases) < 2 or action_signals < 2:
+                    warnings.append(
+                        f"{shot_label}为{duration}秒对白镜头但可见动作只有"
+                        f"{len(action_phases)}个发展阶段、{action_signals}类表演信号；"
+                        "请增加受支持的头面朝向、局部表情、手/道具、重心或听者反应，或拆镜。"
+                    )
             if len(current_references) >= 2:
                 warnings.append(
                     f"{shot_label}引用了{len(current_references)}张原图；"
@@ -808,7 +863,7 @@ def main() -> int:
                 errors.append(
                     f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"
                 )
-            if not has_descriptive_background(block):
+            if not has_descriptive_background(fields.get("场景环境", "")):
                 errors.append(
                     f"{shot_label}缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
                 )

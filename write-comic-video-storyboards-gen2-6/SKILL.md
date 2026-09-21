@@ -53,7 +53,7 @@ Do not hide a cut inside prose with `画面切到`, `再切到`, or equivalent w
 
 - Begin with `## 场景色彩基准`; add `## 非人物上色锁定` only for monochrome or partially uncolored source.
 - Use `分镜N（X秒）` for ordinary shots. Use one `战斗段N（X秒·自动分镜）` only when the combat admission gate passes; never mix modes in one clip.
-- Keep visual prose directly generatable. Include dialogue and narration with voice direction, plus a separate concise sound line for ambience, Foley, breath, silence, sound perspective, and BGM when requested. Do not include production notes or source-analysis language.
+- Use the self-contained per-shot fields in `storyboard-format.md`: `场景环境`, `环境音`, `镜头设计`, `可见动作`, `台词与语气`, `光影布光`, and `声音设计`. Every clip may be submitted alone, so restate its actual starting pose, orientation, environment, and light positively; never use prior-shot pointers or negative control prose.
 - Generate the Chinese SRT after storyboard approval unless requested earlier.
 - Report clip count, approximate runtime, reference count, structural validation, ledger validation, manual source-audit status, and absolute output paths separately.
 

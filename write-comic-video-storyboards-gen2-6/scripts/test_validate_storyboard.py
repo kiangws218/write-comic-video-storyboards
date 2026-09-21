@@ -16,11 +16,8 @@ BACKGROUND = "暖象牙色向淡天蓝渐变铺满背景"
 
 
 def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> str:
-    performance = (
-        "人物手指轻微收紧。"
-        if line is None
-        else f"人物：“{line}”（清晰的中性音色，平静语气）。"
-    )
+    action = "人物手指轻微收紧。" if line is None else "人物手掌朝上，手指稳定托住画外物件。"
+    speech = "无台词。" if line is None else f"人物：“{line}”（清晰的中性音色，平静语气）。"
     return f"""## 场景色彩基准
 二维手绘质感，中等对比。
 
@@ -28,7 +25,13 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 
 **分镜1（5秒）：**
 分镜参考 `[panel.jpg]`
-平视手部特写，固定镜头。{performance}{background}，深蓝灰放射线向外扩张。
+场景环境：{background}，深蓝灰放射线向外扩张。
+环境音：低环境底噪从画面后方持续传来。
+镜头设计：平视手部特写，固定镜头。
+可见动作：{action}
+台词与语气：{speech}
+光影布光：柔和侧光照亮手指轮廓，掌心保留浅影。
+声音设计：低环境底噪铺底，手指收紧时衣料轻响。
 """
 
 
@@ -233,7 +236,13 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-平视手部特写，手指保持不动。{BACKGROUND}，微尘漂浮。
+场景环境：{BACKGROUND}，微尘漂浮。
+环境音：低环境底噪从画面后方持续传来。
+镜头设计：50mm平视手部特写，固定镜头。
+可见动作：手掌朝上，手指稳定托住物件。
+台词与语气：无台词。
+光影布光：柔和侧光照亮手指，微尘停在暗部。
+声音设计：低环境底噪铺底，衣料发出轻响。
 """
             for i in range(1, 5)
         )
@@ -244,7 +253,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_three_second_micro_action_chain_has_no_capacity_warning(self) -> None:
         text = storyboard().replace(
-            "平视手部特写，固定镜头。",
+            "人物手掌朝上，手指稳定托住画外物件。",
             "平视近景，固定镜头。听见呼唤后先停住，眼睑微抬，嘴角放松，短吸气；"
             "指尖在衣料上收紧，衣摆随惯性晚半拍回落，视线最终留在说话者身上。",
         )
@@ -256,7 +265,7 @@ class ValidatorTests(unittest.TestCase):
     def test_sentence_end_settle_counts_as_performance_endpoint(self) -> None:
         long_line = "あ" * 30
         text = storyboard(line=long_line).replace(
-            "平视手部特写，固定镜头。",
+            "人物手掌朝上，手指稳定托住画外物件。",
             "平视近景，听见问话后先停顿，视线转向对方；眉梢稍后松开，"
             "短促吸气，指尖捏住衣角，句末松手并让肩线回落。",
         )
@@ -268,7 +277,7 @@ class ValidatorTests(unittest.TestCase):
         text = storyboard().replace(
             "分镜1（5秒）", "分镜1（2秒）"
         ).replace(
-            "平视手部特写，固定镜头。",
+            "人物手掌朝上，手指稳定托住画外物件。",
             "平视中景，人物起身转身迈步跑向门口推开门。",
         )
         result = self.run_validator(text)
@@ -277,7 +286,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_contextual_pointing_is_not_generic_gesture_warning(self) -> None:
         text = storyboard().replace(
-            "平视手部特写，固定镜头。",
+            "人物手掌朝上，手指稳定托住画外物件。",
             "平视中景，人物抬手指向桌上的晶石，视线随指尖落定。",
         )
         result = self.run_validator(text)
@@ -297,7 +306,13 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-窗边平视近景，逆光穿过蒸汽形成微尘可见的光束。{BACKGROUND}。
+场景环境：窗边蒸汽缓慢上升，{BACKGROUND}。
+环境音：窗边风声和蒸汽轻响从画面右侧传来。
+镜头设计：50mm平视近景，固定镜头。
+可见动作：手掌朝上，手指稳定托住物件。
+台词与语气：无台词。
+光影布光：逆光穿过蒸汽形成微尘可见的光束。
+声音设计：低环境底噪铺底，蒸汽发出轻响。
 """
             for i in range(1, 5)
         )
@@ -305,6 +320,44 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("多数缺少可见依据", result.stdout)
+
+    def test_re0_fields_are_required(self) -> None:
+        text = storyboard().replace("镜头设计：", "摄影设计：")
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少独立字段：镜头设计", result.stdout)
+
+    def test_cross_shot_and_negative_meta_prose_fail(self) -> None:
+        for phrase in ("保持原有构图", "上一格人物站在左侧", "不新增飞鸟", "不使用背景"):
+            text = storyboard().replace(
+                "人物手掌朝上，手指稳定托住画外物件。",
+                phrase + "。",
+            )
+            result = self.run_validator(text)
+            self.assertNotEqual(result.returncode, 0, phrase)
+            self.assertIn("不可执行元措辞", result.stdout)
+
+    def test_negative_words_inside_dialogue_do_not_fail_meta_gate(self) -> None:
+        text = storyboard(line="不要使用这个东西！")
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("不可执行元措辞", result.stdout)
+
+    def test_six_second_static_dialogue_warns_on_visible_density(self) -> None:
+        text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）")
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("6秒对白镜头但可见动作只有", result.stdout)
+
+    def test_six_second_staged_head_face_chain_passes_density(self) -> None:
+        text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物起幅为朝画面右侧的三分之二侧脸，听见问话后瞳孔先回到左侧；"
+            "随后下巴轻收、脸转向正面，一侧眉梢松开，句末肩线回落，视线停在说话者身上。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("6秒对白镜头但可见动作只有", result.stdout)
 
 
 if __name__ == "__main__":

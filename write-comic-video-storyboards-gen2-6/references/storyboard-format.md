@@ -25,19 +25,29 @@ Keep a source-continuous physical phrase—load→launch, swing→contact, fall�
 
 An action-led fight that passes `2d-animation-execution.md` may instead use one `战斗段1（12秒·自动分镜）` block with ordered untimed beats. Never mix ordinary and automatic-combat timing modes in one clip.
 
-## Compact direct prose
+## Per-shot executable format
 
-Write one paragraph in this approximate order:
+Every ordinary numbered shot uses the following fields in this order. This follows the useful separation in the supplied `re0` reference while retaining Gen2.6 source grounding:
 
-`angle/scale → placement/depth/overlap → camera/focus behavior → visible start → ordered action/performance → dialogue → local background/light/material → motivated effects → endpoint`
+```markdown
+**分镜1（6秒）：**
+分镜参考 `[00.jpg]`
+场景环境：当前镜头实际可见的空间、主体位置、前中后景、材质和环境运动。
+环境音：当前空间持续存在的底噪、远近层次、遮挡和左右声像。
+镜头设计：景别、焦段、机位高度与方位、构图、景深、焦点、起幅、单一运镜和落幅。
+可见动作：从自足的起始姿态开始，按语义节点写人物、道具、头面朝向、微表情、重心与延迟运动，最后落到明确状态。
+台词与语气：角色说：“……”（音色、语气、情绪、必要的停顿或重音）。无台词时写“无台词”。
+光影布光：依据本镜头环境、光源方向、人物位置、遮挡和材质，写主光、辅光/反射、明暗分区、局部高光与必要的空气效果。
+声音设计：可见动作拟音、呼吸/静默、台词距离与关键音画同步点。
+```
 
-Do not output separate `景别：`, `构图：`, `运镜：`, or `画面内容：` fields. Write directly generatable visuals, not source comparison, asset planning, estimates, operator notes, moderation reasoning, or negative control stacks.
+`环境音`、`镜头设计`与`光影布光`必须独立成行；不要把声音、摄影和布光藏在可见动作段。仍然不要恢复旧式的`景别：`、`构图：`、`运镜：`或`画面内容：`碎片字段。
 
-Forbidden examples include `保持原格姿势`, `按照原格处理`, `无独立背景`, `原格没有实景`, and `不补画树林`. Replace them with positive visible pose, subject set, background, motion, and endpoint.
+每个片段会被单独提交给视频模型，因此每一镜必须自足。直接重述当前起始姿态、人物朝向、位置、接触、背景和光源，不写`保持原有`、`上一格`、`上一镜`、`同一场面继续`、`只放大上一格`、`沿用前镜`等跨块指代。生成字段中也不写`不新增`、`不要`、`不出现`、`不使用`、`避免`等否定控制句；删除不被允许的内容，并把保留下来的画面改成正向、可见、可执行描述。
 
 Use stable prop and creature labels. When no creature or special-object reference is supplied, use a visible label containing useful scale, dominant color, surface/material, body type, and defining anatomy; repeat the full label at the first appearance of each independently generated clip.
 
-After the visible paragraph, add one compact `声音设计：` line when a beat has meaningful ambience, Foley, breath, silence, audio perspective, or BGM. Keep sound events ordered and synchronized to visible causes. Do not hide new visual actions in the sound line.
+`环境音：`与`声音设计：`每镜必填。环境音只写空间底声与声像；声音设计只选一至两个最有作用的拟音、呼吸、静默或同步节点。让声音事件与可见原因同步，不在声音行藏入新的视觉动作。
 
 ## Color-source gate
 

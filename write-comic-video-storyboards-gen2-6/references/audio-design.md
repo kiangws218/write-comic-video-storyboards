@@ -1,6 +1,6 @@
 # Audio design layer
 
-Keep audio in the same shot block as the visual prompt, but on a separate `声音设计：` line. Audio can reinforce timing, space, weight, and acting; it cannot add a visual event or change source facts. If the target tool accepts video-only prompts, retain this layer as a production note and omit it from the visual text.
+Keep audio in the same shot block as the visual prompt. Use a separate `环境音：` line for the continuous location bed, distance, occlusion, and stereo perspective; use `声音设计：` for action Foley, breath/body sound, silence, dialogue treatment, and synchronization. Audio can reinforce timing, space, weight, and acting; it cannot add a visual event or change source facts. If the target tool accepts video-only prompts, retain these layers as production notes and omit them from the visual text.
 
 ## Audio fields
 
@@ -15,7 +15,8 @@ Keep audio in the same shot block as the visual prompt, but on a separate `声�
 
 ```text
 画面：……
-声音设计：环境音……；动作拟音……；呼吸/台词音色……；声像……；在「原文短语」句末与可见动作同步……。
+环境音：林间风和远处叶声从画面右后方持续传来。
+声音设计：袖口与道具轻响；句前短吸气；在「原文短语」句末与可见动作同步。
 ```
 
 Use one or two salient layers per beat instead of an exhaustive sound inventory. Silence, a lowered ambience, or a delayed off-screen sound may be the primary audio choice when it clarifies attention or emotion. Do not put music, Foley, or ambience into visual clauses where the video model could interpret them as objects, light, or particles.

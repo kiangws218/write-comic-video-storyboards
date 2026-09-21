@@ -66,6 +66,8 @@ Choose the fewest supported details. Do not stack simultaneous gestures or inven
 
 When visual prose names a dialogue trigger, quote the exact Japanese words spoken in that shot inside `「」`. Do not use a Chinese paraphrase. Generic timing such as `开口前`, `转入后半句`, or `句末` is allowed.
 
+For a 4–6 second dialogue shot, require visible development at a minimum of two semantic stages in addition to the opening state and endpoint. Count supported changes in head/face orientation, eyes or asymmetric face, hand/prop relation, weight/posture, listener response, or environmental interaction. Camera movement, lighting drift, lip sync, wind, and decorative particles enrich the image but do not by themselves carry the speech. If the source cannot support this development, split coverage rather than stretching a static expression.
+
 ## Timing
 
 Estimate speech before clip boundaries. Use natural delivery; never accelerate dialogue to fill a preselected 15-second container.
