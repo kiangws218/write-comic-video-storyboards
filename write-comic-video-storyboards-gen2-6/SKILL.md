@@ -9,9 +9,9 @@ Create a source-faithful storyboard mother draft with cinematic performance and 
 
 ## Read by task
 
-- New episode or substantial rewrite: read [references/source-grounding.md](references/source-grounding.md), [references/dialogue-coverage.md](references/dialogue-coverage.md), and [references/storyboard-format.md](references/storyboard-format.md).
+- New episode or substantial rewrite: read [references/source-grounding.md](references/source-grounding.md), [references/dialogue-coverage.md](references/dialogue-coverage.md), [references/performance-choreography.md](references/performance-choreography.md), [references/audio-design.md](references/audio-design.md), and [references/storyboard-format.md](references/storyboard-format.md).
 - Small revision: reopen the target and adjacent panels, then read only the relevant sections of those references.
-- Performance, continuous action, or cinematic polish: also read [references/cinematic-quality.md](references/cinematic-quality.md).
+- Performance, continuous action, or cinematic polish: also read [references/cinematic-quality.md](references/cinematic-quality.md). For lens, focus, lighting, atmosphere, material, studio/work/director-style references, or premium rendering, also read [references/cinematic-rendering.md](references/cinematic-rendering.md).
 - Fight or complex fast action: also read [references/2d-animation-execution.md](references/2d-animation-execution.md). Its motion and effects grammar remains subordinate to source grounding.
 - Paste-ready Seedance prompt or failed-generation review: read [references/seedance-execution-and-review.md](references/seedance-execution-and-review.md).
 - When modifying or forward-testing this skill: read [references/regression-cases.md](references/regression-cases.md) and run the automated tests.
@@ -28,6 +28,8 @@ Run scripts directly; inspect their code only when changing them.
 6. **Dialogue is complete and naturally timed.** Preserve every bubble's meaning, owner, kind, and order in natural Japanese. Split coverage rather than compressing or dropping speech.
 7. **Added views have limited authority.** An uncited reverse, insert, environment view, or connective shot may clarify an existing beat but cannot introduce a new event, object, contact, route, identity, or result.
 8. **Fifteen seconds is a soft maximum, not a target.** Keep a source-continuous action phrase in one generated clip when it fits; end short beats naturally.
+9. **Performance is a causal chain, not a gesture checklist.** Develop supported stimulus, attention, asymmetric facial change, breath, fingers/prop contact, weight, delayed hair/cloth motion, and settle in the order the beat needs. Three seconds may contain many micro-actions when they belong to one intention.
+10. **Sound participates in the beat.** Include concise ambience, Foley, breath, silence, and audio perspective where useful. Keep sound on its own line so it supports rather than contaminates the visible prompt.
 
 ## Grounded batch workflow
 
@@ -36,7 +38,8 @@ Run scripts directly; inspect their code only when changing them.
 3. While each panel is open, create or update its compact version-2 source-ledger entry. Record exact bubbles, positive visible background, phase-specific source locks, forbidden inferences, and intended shot roles. Keep the ledger factual; do not turn it into replacement prose.
 4. Before closing the panel, plan dialogue coverage and immediately write its `source_locked` shot. Add `source_supported_phase` or `uncited_coverage` shots only under their declared permissions. A genuine camera change receives a new numbered shot.
 5. With the same images still open, run the source-diff audit: map every visible noun and relation in the draft to current-panel evidence or an explicitly declared uncited-coverage basis; compare background, composition, hands/props, bubble mapping, and endpoint. Delete unsupported content instead of explaining why it seems plausible.
-6. Validate the open batch with the version-2 ledger before advancing. Fix errors, inspect warnings, and record a manual source-audit pass for every shot. After all batches pass, run one continuity and cinematic-quality pass across clip boundaries, then validate the complete deliverables.
+6. After factual grounding passes, choreograph performance and sound, then add source-compatible camera, focus, lighting, atmosphere, and material response. Style names may set a global target; concrete visible and audible directions make it executable. Do not let polish add a new event or hidden motive.
+7. Validate the open batch with the version-2 ledger before advancing. Fix errors, inspect warnings, and record a manual source-audit pass for every shot. After all batches pass, run continuity, performance-diversity, sound, and cinematic-rendering passes across clip boundaries, then validate the complete deliverables.
 
 ## Shot authority
 
@@ -50,7 +53,7 @@ Do not hide a cut inside prose with `画面切到`, `再切到`, or equivalent w
 
 - Begin with `## 场景色彩基准`; add `## 非人物上色锁定` only for monochrome or partially uncolored source.
 - Use `分镜N（X秒）` for ordinary shots. Use one `战斗段N（X秒·自动分镜）` only when the combat admission gate passes; never mix modes in one clip.
-- Keep prose directly generatable. Include dialogue and narration with voice direction, but no sound effects, ambience, Foley, BGM, production notes, or source-analysis language.
+- Keep visual prose directly generatable. Include dialogue and narration with voice direction, plus a separate concise sound line for ambience, Foley, breath, silence, sound perspective, and BGM when requested. Do not include production notes or source-analysis language.
 - Generate the Chinese SRT after storyboard approval unless requested earlier.
 - Report clip count, approximate runtime, reference count, structural validation, ledger validation, manual source-audit status, and absolute output paths separately.
 

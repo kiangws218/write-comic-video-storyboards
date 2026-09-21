@@ -1,6 +1,6 @@
 # Storyboard format, color, and delivery
 
-Use this file for ordinary shot structure, timing, color, environment prompts, adult alternatives, and SRT delivery. Source permissions live in `source-grounding.md`; dialogue coverage lives in `dialogue-coverage.md`.
+Use this file for ordinary shot structure, timing, color, environment and sound prompts, adult alternatives, and SRT delivery. Source permissions live in `source-grounding.md`; dialogue coverage lives in `dialogue-coverage.md`; sound choices live in `audio-design.md`.
 
 ## Clip and shot timing
 
@@ -29,7 +29,7 @@ An action-led fight that passes `2d-animation-execution.md` may instead use one 
 
 Write one paragraph in this approximate order:
 
-`angle/scale → placement/depth/overlap → camera behavior → visible start → ordered action/performance → dialogue → local background/light → motivated effects → endpoint`
+`angle/scale → placement/depth/overlap → camera/focus behavior → visible start → ordered action/performance → dialogue → local background/light/material → motivated effects → endpoint`
 
 Do not output separate `景别：`, `构图：`, `运镜：`, or `画面内容：` fields. Write directly generatable visuals, not source comparison, asset planning, estimates, operator notes, moderation reasoning, or negative control stacks.
 
@@ -37,11 +37,11 @@ Forbidden examples include `保持原格姿势`, `按照原格处理`, `无独�
 
 Use stable prop and creature labels. When no creature or special-object reference is supplied, use a visible label containing useful scale, dominant color, surface/material, body type, and defining anatomy; repeat the full label at the first appearance of each independently generated clip.
 
-The storyboard contains dialogue and narration with voice directions, but no sound effects, ambience, Foley, breath cues, silence cues, BGM, or music instructions.
+After the visible paragraph, add one compact `声音设计：` line when a beat has meaningful ambience, Foley, breath, silence, audio perspective, or BGM. Keep sound events ordered and synchronized to visible causes. Do not hide new visual actions in the sound line.
 
 ## Color-source gate
 
-Begin every storyboard with `## 场景色彩基准`. This is a reusable look envelope only: overall hue tendency, saturation/contrast behavior, 2D rendering and texture, light softness/hardness and broad direction, atmospheric depth, and image clarity. Do not inventory concrete objects or assign named character, prop, building, terrain, or creature colors there.
+Begin every storyboard with `## 场景色彩基准`. This is a reusable look envelope only: source-compatible work/studio/director-style references supplied by the user or deliberately selected under `cinematic-rendering.md`, overall hue tendency, saturation/contrast behavior, 2D rendering and texture, light softness/hardness and broad direction, atmospheric depth, and image clarity. State the style stack once rather than repeating it in every shot. Do not inventory concrete objects or assign named character, prop, building, terrain, or creature colors there.
 
 Apply this precedence:
 

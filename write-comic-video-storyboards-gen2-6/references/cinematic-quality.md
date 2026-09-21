@@ -1,6 +1,6 @@
 # Cinematic quality without source drift
 
-Use this module when a beat needs performance development, continuous action, cinematic coverage, or effects. Source locks and shot-role permissions in `source-grounding.md` remain authoritative.
+Use this module when a beat needs continuous action, cinematic coverage, or effects. Read `performance-choreography.md` for character acting and `cinematic-rendering.md` for lens, focus, lighting, atmosphere, and material treatment. Source locks and shot-role permissions in `source-grounding.md` remain authoritative.
 
 ## Quality principle
 
@@ -47,9 +47,9 @@ State only rhythm changes that materially affect generation. Attach quality term
 
 Follow the character-count and coverage rules in `dialogue-coverage.md`. Performance must be visible, source-compatible, and readable at the declared scale.
 
-Use eyes, face, head/body, and visible hand/prop relations across semantic beats. A held expressive state may count once. Preserve supported neutrality instead of inventing suppressed grief, tears, rage, or other hidden motives.
+Build a source-supported causal performance chain rather than assigning one symbolic gesture per line. Use attention and gaze, asymmetric face changes, breath, fingers or prop contact, weight, and delayed hair/cloth/accessory response as the beat requires. A three-second shot may carry many micro-actions when they express one intention and remain physically compatible. A held expressive state may count once. Preserve supported neutrality instead of inventing suppressed grief, tears, rage, or other hidden motives.
 
-Run performance concurrently with speech when natural. Do not sum every gesture as serial time. For off-screen speech, use supported listener, hand, prop, or environment development. A long take is admitted only when its sustained action or relationship is enacted in the finished prose; a ledger reason alone is insufficient.
+Run performance concurrently with speech when natural. Do not sum every blink, breath, finger-pressure change, or cloth response as serial time. Prefer gestures that arise from the current task, prop, posture, or relationship over repeated generic pointing, nodding, folded arms, or open-palm explanation. For off-screen speech, use supported listener, hand, prop, or environment development. A long take is admitted only when its sustained action or relationship is enacted in the finished prose; a ledger reason alone is insufficient.
 
 ## Camera and coverage
 

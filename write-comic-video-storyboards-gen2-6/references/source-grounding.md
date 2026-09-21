@@ -41,6 +41,8 @@ Do not record decorative prose. A lock should make a contradiction obvious witho
 
 ## Shot roles and permissions
 
+Performance choreography, camera/focus, lighting, atmosphere, material response, and sound are rendering decisions, not new factual authority. They may develop timing and presentation only when the role below preserves its composition, contacts, visible subjects, background class, action vector, and endpoint. If polish changes any of those facts, reclassify the view or remove the addition.
+
 ### `source_locked`
 
 The cited panel composition must be recognizably present at its declared phase. Write it while the exact image is open. Source-supported micro-performance, cloth/hair response, medium response, and camera restraint are allowed; a different viewpoint, rearranged subject, invented hand/contact, or substituted background is not.

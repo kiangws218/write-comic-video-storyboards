@@ -33,9 +33,49 @@ PRODUCTION_NOTE_RE = re.compile(
 )
 LEGACY_FIELD_RE = re.compile(r"^(?:景别|构图|运镜|画面内容)[：:]", re.MULTILINE)
 ENVIRONMENT_RE = re.compile(r"^环境参考[：:]", re.MULTILINE)
-AUDIO_RE = re.compile(
-    r"(?:音效|环境声|动作声|拟音|BGM|配乐|背景音乐)[：:]",
+SOUND_DESIGN_RE = re.compile(
+    r"(?m)^\s*(?:声音设计|音频)[：:]\s*\S+",
     re.IGNORECASE,
+)
+OPTICAL_CRAFT_RE = re.compile(
+    r"(?:24|28|35|50|85|100|135)\s*mm|焦段|浅景深|大景深|全景深|焦平面|"
+    r"焦点(?:转移|后移|前移)|由虚转实|前景[^。；\r\n]{0,12}虚化|重度虚化|"
+    r"近大远小|空间压缩|消失点|引导线|光轴|视平线|起幅|落幅|甩摇"
+)
+PERFORMANCE_SIGNAL_GROUPS = (
+    re.compile(r"视线|目光|瞳孔|眼神|注视|移开视线"),
+    re.compile(r"眼皮|眼睑|眉|嘴角|嘴唇|下巴|鼻翼|面部肌肉|眨眼"),
+    re.compile(r"呼吸|吸气|吐气|鼻息|吞咽|喉结"),
+    re.compile(r"手指|指尖|指节|掌心|握法|抓握|捏住|收紧|松开"),
+    re.compile(r"重心|肩膀|肩线|躯干|上身|俯身|后仰|前倾|停步"),
+    re.compile(r"发梢|头发|衣摆|裙摆|袖口|衣料|包带|惯性|余势|延迟|晃动|摆动|颤动"),
+)
+GENERIC_GESTURE_RE = re.compile(
+    r"抬手(?:指向|指着|一指)|伸手(?:指向|指着)|竖起一根手指|"
+    r"摊开?手|摊手|掌心向上|点头|抱臂|握拳"
+)
+CONTEXTUAL_GESTURE_RE = re.compile(
+    r"(?:指向|指着)[^。；\r\n]{0,12}(?:前路|晶石|石头|工具|工作台|门|地图|物件|道具)"
+)
+PERFORMANCE_SEQUENCE_RE = re.compile(
+    r"先|随后|随即|再|之后|接着|句末|重音|停顿|半拍|同时|伴随|保持"
+)
+PERFORMANCE_ENDPOINT_RE = re.compile(
+    r"停住|落定|稳定|回落|恢复|收束|最后|最终|句末|说完后|"
+    r"保持(?:视线|姿态|重心)|视线[^。；\r\n]{0,10}(?:停在|留在|定住)"
+)
+MAJOR_ACTION_RE = re.compile(
+    r"起身|转身|迈步|跑向|跑开|跳起|俯身|回头|拿出|放入|"
+    r"推开|拉开|抓住|扔出|接住|撞上|倒下|站起|坐下"
+)
+CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|拉远|横移|环绕|手持")
+AUDIO_HIDDEN_VISUAL_RE = re.compile(
+    r"(?m)^\s*(?:声音设计|音频)[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
+    r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
+)
+ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
+ATMOSPHERE_BASIS_RE = re.compile(
+    r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
 )
 META_RE = re.compile(
     r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则|"
@@ -188,6 +228,90 @@ def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
                 chunk[match.start() : end],
             )
     return shot_map
+
+
+def cinematic_quality_warnings(main_text: str) -> list[str]:
+    """Return non-blocking acting, rendering, and sound heuristics."""
+    warnings: list[str] = []
+    shot_map = build_shot_map(main_text)
+    if not shot_map:
+        return warnings
+
+    if len(shot_map) >= 3 and not SOUND_DESIGN_RE.search(main_text):
+        warnings.append("全稿没有声音设计；请检查环境音、动作拟音、呼吸或静默是否能参与节奏。")
+    if len(shot_map) >= 4 and not any(
+        OPTICAL_CRAFT_RE.search(block) for _, block in shot_map.values()
+    ):
+        warnings.append("全稿缺少焦段、景深、焦点或空间透视调度；请确认画面质感并非只靠动作描述。")
+
+    generic_by_segment: dict[str, list[str]] = {}
+    for target, (_, block) in shot_map.items():
+        duration = shot_map[target][0]
+        dialogue_chars, _ = coverage_dialogue_metrics(block)
+        signal_count = sum(bool(pattern.search(block)) for pattern in PERFORMANCE_SIGNAL_GROUPS)
+        if dialogue_chars > 20 and signal_count < 3:
+            warnings.append(
+                f"{target}含{dialogue_chars}个台词字符但仅覆盖{signal_count}类表演信号；"
+                "可按源图加入视线、非对称表情、呼吸、手指/道具、重心或延迟运动。"
+            )
+        if dialogue_chars > 20 and signal_count >= 2 and (
+            not PERFORMANCE_SEQUENCE_RE.search(block) or not PERFORMANCE_ENDPOINT_RE.search(block)
+        ):
+            warnings.append(
+                f"{target}可能只有动作清单，缺少刺激、先后或收束；"
+                "请确认微动作形成同一条表演因果链。"
+            )
+        generic_match = GENERIC_GESTURE_RE.search(block)
+        if generic_match and not CONTEXTUAL_GESTURE_RE.search(block):
+            segment = target.split("/", 1)[0]
+            generic_by_segment.setdefault(segment, []).append(target)
+            if signal_count < 2:
+                warnings.append(
+                    f"{target}主要依赖抬手、指向、摊手、点头或抱臂等通用手势；"
+                    "请确认动作来自人物意图、道具或当前身体状态。"
+                )
+        major_actions = len(MAJOR_ACTION_RE.findall(block))
+        action_limit = 3 if duration <= 3 else 4 if duration <= 6 else 5
+        if major_actions > action_limit and not PERFORMANCE_SEQUENCE_RE.search(block):
+            warnings.append(
+                f"{target}在{duration}秒内包含{major_actions}个主要动作且缺少并发/先后组织；"
+                "微动作可并行，但请复核主要位移和物件操作的容量。"
+            )
+        if ("大光圈" in block and re.search(r"大景深|全景深|强景深", block)) or (
+            "浅景深" in block and re.search(r"大景深|全景深|强景深", block)
+        ):
+            warnings.append(f"{target}同时声明浅景深/大光圈与大景深；请明确焦点和景深意图。")
+        if "固定镜头" in block and CAMERA_MOTION_RE.search(block):
+            warnings.append(f"{target}同时声明固定镜头与摄影机运动；请明确起幅、运动和落幅。")
+        if re.search(r"85\s*mm[^。；\r\n]{0,24}广角|广角[^。；\r\n]{0,24}85\s*mm", block):
+            warnings.append(f"{target}同时声明85mm与广角；请明确焦段意图。")
+        if re.search(r"24\s*mm[^。；\r\n]{0,24}长焦|长焦[^。；\r\n]{0,24}24\s*mm", block):
+            warnings.append(f"{target}同时声明24mm与长焦；请明确焦段意图。")
+        if AUDIO_HIDDEN_VISUAL_RE.search(block):
+            warnings.append(f"{target}的声音设计疑似包含新的视觉动作；请把动作移回画面段并复核证据。")
+
+    for segment, targets in generic_by_segment.items():
+        if len(targets) >= 3:
+            warnings.append(
+                f"{segment}的相邻镜头重复通用手势：{targets}；请做动作多样性复核。"
+            )
+
+    blocks_by_segment: dict[str, list[str]] = {}
+    for target, (_, block) in shot_map.items():
+        blocks_by_segment.setdefault(target.split("/", 1)[0], []).append(block)
+    for segment, blocks in blocks_by_segment.items():
+        if len(blocks) < 3:
+            continue
+        threshold = math.ceil(len(blocks) * 0.75)
+        for effect in ATMOSPHERE_EFFECTS:
+            affected = [block for block in blocks if effect in block]
+            unsupported = [block for block in affected if not ATMOSPHERE_BASIS_RE.search(block)]
+            if len(affected) >= threshold and len(unsupported) >= math.ceil(len(affected) / 2):
+                warnings.append(
+                    f"{segment}的{effect}出现在{len(affected)}/{len(blocks)}个镜头且多数缺少可见依据；"
+                    "请复核光源、空气介质与叙事用途。"
+                )
+    return warnings
 
 
 def validate_source_ledger(
@@ -689,9 +813,6 @@ def main() -> int:
                     f"{shot_label}缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
                 )
 
-        for match in AUDIO_RE.finditer(chunk):
-            errors.append(f"{label}{number}含音效或音乐字段：{match.group(0)}")
-
         for match in META_RE.finditer(chunk):
             errors.append(
                 f"{label}{number}含参考分析元表述，请改写为可见画面：{match.group(0)}"
@@ -711,6 +832,7 @@ def main() -> int:
         [("片段", number, chunk) for number, chunk in chunks],
         require_contiguous_numbers=True,
     )
+    warnings.extend(cinematic_quality_warnings(main_text))
 
     safe_chunks = segment_chunks(safe_text, SAFE_SEGMENT_RE) if safe_text else []
     if safe_text and not safe_chunks:

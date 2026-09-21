@@ -1,0 +1,1295 @@
+{
+  "version": 2,
+  "panels": [
+    {
+      "image": "ch15_p01_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白云层和浅灰天空填满画面",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p02_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "黑白网点与人物衣料形成近景表面",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p02_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "白底冲击区与放射线填满画面",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p03_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "碎石路、树林与阴云构成林间道路",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p03_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "裂纹碎石路与人物衣摆构成贴地环境",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "脸部近景保持青侧脸贴在碎石地面的姿态：听见追问后，她紧闭的眼睑先轻颤，眉心略收，湿润呼吸从抿住的嘴唇间漏出",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p03_c002_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "知道错了吗？",
+          "status": "mapped",
+          "script_text": "反省しましたか？",
+          "target": "片段1/分镜1",
+          "seconds": 1.3
+        },
+        {
+          "id": "ch15_p03_c002_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "呜……至少告诉我为什么打屁股……",
+          "status": "mapped",
+          "script_text": "うううっ……せめて、どうしてお尻を叩いたのか教えてください……",
+          "target": "片段1/分镜1",
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "image": "ch15_p04_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白云层与浅灰天空填满画面",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p04_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "石路、岩块、草丛和树林形成通道",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p04_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "道路网点和眩晕线围住人物",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p05_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰树影和留白填满两人头肩之间，春子的头发与肩线形成前景遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "保持原有前后景双人构图：春子的正脸占据右侧前景，半垂眼睑和微启嘴唇平静追问",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p05_c001_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "没约会过又不是罪，为什么要为这种事撒谎？",
+          "status": "mapped",
+          "script_text": "デートしたことがないのは罪ではないのに、どうしてそんなことで嘘をついたんですか？",
+          "target": "片段2/分镜1",
+          "seconds": 4.7
+        },
+        {
+          "id": "ch15_p05_c001_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "因、因为……我以为你会一直拿这件事取笑我……",
+          "status": "mapped",
+          "script_text": "だ、だって……！ ずっとそのことで私をからかうと思ったんです……",
+          "target": "片段3/分镜1",
+          "seconds": 3.8
+        }
+      ],
+      "coverage_reason": "保留源图表演连续性，并用视线、非对称面部与道具接触维持信息可读性"
+    },
+    {
+      "image": "ch15_p05_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p05_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p06_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p06_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p06_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留白与手腕衣料填满晶石和双手外侧，接触处成为画面唯一高对比焦点。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "手部极近景保持原有接触关系：晶石落在青掌心，矮人的手稳住她的手腕。先让晶石重量压低她的掌根，青的无名指和小指逐渐收拢，拇指沿棱面确认触感",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": [
+        {
+          "id": "ch15_p06_c003_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "让能碰它的人拿着最好。你带着。",
+          "status": "mapped",
+          "script_text": "触れられる者が持つのが一番いい。お前が持っていけ。",
+          "target": "片段4/分镜1",
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "image": "ch15_p07_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "灰色渐变和速度线围住人物与晶石，手臂衣料在近景形成遮挡层。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "双人中近景以35mm保留两双手和晶石的关系：青先把掌中的晶石往回送，不是一次性甩开，而是手腕后撤、肩膀跟着缩起，连续摇头时发梢和衣摆因惯性向后拖。矮人的手从下方托住晶石，拇指避开她的指节",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p07_c001_b01",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "不要！不要！请拿回去！",
+          "status": "mapped",
+          "script_text": "いやあああっ！ いりません、いりません！ 持って帰ってください！",
+          "target": "片段5/分镜1",
+          "seconds": 3.7
+        }
+      ],
+      "long_take_reason": "源图把完整语义和听者反应锁在同一构图内，镜内动作沿台词逐层发展"
+    },
+    {
+      "image": "ch15_p07_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p08_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p08_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p09_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p09_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p10_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p10_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p11_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰云层与深色树冠填满三人轮廓之间，道路消失点从人物身后向远处收束。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "三人中景保持春子居中抱臂、青在左侧前景、矮人在右侧的关系。春子说到条件时，半垂的眼睑先收紧一点，视线从矮人移向青，交叠在胸前的手指只增加轻微压力",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p11_c001_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "而且活到那个岁数还保持条件的锻造大师，恐怕很难找。",
+          "status": "mapped",
+          "script_text": "その歳まで童貞の鍛冶の達人なんて、見つけるのは難しそうですね。",
+          "target": "片段6/分镜1",
+          "seconds": 3.0
+        },
+        {
+          "id": "ch15_p11_c001_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "哇……想得真现实。",
+          "status": "mapped",
+          "script_text": "わあ……ずいぶん現実的な考え方ですね。",
+          "target": "片段7/分镜1",
+          "seconds": 1.8
+        },
+        {
+          "id": "ch15_p11_c001_b03",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "确实，分析得好。",
+          "status": "mapped",
+          "script_text": "確かにな。いい分析だ。",
+          "target": "片段7/分镜1",
+          "seconds": 1.0
+        }
+      ],
+      "coverage_reason": "保留源图表演连续性，并用视线、非对称面部与道具接触维持信息可读性"
+    },
+    {
+      "image": "ch15_p11_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p11_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p12_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p12_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p12_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p12_c004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p13_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与上下两只手指围住圆形脸部，背景不增加画外环境。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "圆形怪物脸部近景保持上下手指托住的关系：它的巨大眼睑仍闭合，软质脸颊被指腹轻压，嘴部随着托举产生小幅回弹",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p13_c001_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "哦哦！这个！你们要把它送给我吗？",
+          "status": "mapped",
+          "script_text": "おおおおっ！ これは！ こいつを俺にくれるのか？",
+          "target": "片段8/分镜1",
+          "seconds": 2.6
+        }
+      ],
+      "long_take_reason": "源图把完整语义和听者反应锁在同一构图内，镜内动作沿台词逐层发展"
+    },
+    {
+      "image": "ch15_p13_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p13_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p14_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p14_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空和两只粗大拇指围住圆形脸部，所有视觉信息集中在眼睑与瞳孔。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "圆形怪物脸部特写，两只粗大拇指稳在脸侧",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p14_c002_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "醒醒，搭档。",
+          "status": "mapped",
+          "script_text": "起きろ、相棒。",
+          "target": "片段9/分镜1",
+          "seconds": 1.0
+        },
+        {
+          "id": "ch15_p14_c002_b02",
+          "speaker": "圆形怪物",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "伊尔琳……？",
+          "status": "mapped",
+          "script_text": "イールリン……？",
+          "target": "片段9/分镜1",
+          "seconds": 1.0
+        }
+      ]
+    },
+    {
+      "image": "ch15_p14_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留空与画面内可见物件共同构成背景",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "原格为纯对白或过渡信息格",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p14_c004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "灰白云层铺满天空，深色树冠从四周伸入并形成向上汇聚的引导线。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "仰视天空空镜保持原有树冠与云层构图，声音先进入：尖叫响起前云层仍缓慢横移，树梢叶片被风带动",
+        "visible_subjects": [
+          "仅保留原格中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按原格锁定"
+        ],
+        "forbidden_inferences": [
+          "不补造原格未显示的新人物、新道具、新地点或动作结果"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": [
+        {
+          "id": "ch15_p14_c004_b01",
+          "speaker": "圆形怪物",
+          "speaker_evidence": "气泡尾向、人物口型与相邻格连续关系共同确认",
+          "kind": "dialogue",
+          "source_text": "咿——！",
+          "status": "mapped",
+          "script_text": "キィィィィィィィッ!!!",
+          "target": "片段10/分镜1",
+          "seconds": 1.8
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p03_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：带裂纹的碎石地面铺在白发下，春子的腿与深色衣摆在后景形成遮挡层",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段2/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：浅灰树影和留白填满两人头肩之间，春子的头发与肩线形成前景遮挡",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段3/分镜1",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "viewed_while_writing": false,
+      "evidence": "前后格的人物站位与道具状态",
+      "purpose": "保持前后格关系并测试连续阶段表演",
+      "background_excerpt": "可见背景：浅灰树影与留白围住她的发丝和肩线，背景不增加新地点或物件",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段4/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p06_c003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：浅灰留白与手腕衣料填满晶石和双手外侧，接触处成为画面唯一高对比焦点",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段5/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p07_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：灰色渐变和速度线围住人物与晶石，手臂衣料在近景形成遮挡层",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段6/分镜1",
+      "role": "source_supported_phase",
+      "source_images": [
+        "ch15_p11_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前格的连续阶段",
+      "purpose": "拆分对白转折并测试连续阶段表演",
+      "background_excerpt": "可见背景：浅灰云层与深色树冠填满三人轮廓之间，道路消失点从人物身后向远处收束",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段7/分镜1",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "viewed_while_writing": false,
+      "evidence": "前后格的人物站位与道具状态",
+      "purpose": "保持前后格关系并测试连续阶段表演",
+      "background_excerpt": "可见背景：云层和树冠在头盔、白发与肩线外侧形成浅深分区",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段8/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p13_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：浅灰留空与上下两只手指围住圆形脸部，背景不增加画外环境",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段9/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p14_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：浅灰留空和两只粗大拇指围住圆形脸部，所有视觉信息集中在眼睑与瞳孔",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段10/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p14_c004.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现原格信息并测试电影化表演",
+      "background_excerpt": "可见背景：灰白云层铺满天空，深色树冠从四周伸入并形成向上汇聚的引导线",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    }
+  ],
+  "performance": [
+    {
+      "target": "片段1/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "紧闭的眼睑先轻颤",
+        "嘴角只松开一侧",
+        "压在脸侧的手指微微蜷紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 5.1,
+          "acting_seconds": 4.8999999999999995
+        }
+      ]
+    },
+    {
+      "target": "片段2/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "半垂眼睑和微启嘴唇平静追问",
+        "指尖先收紧",
+        "肩线缩起、视线偏开"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.7,
+          "acting_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "target": "片段3/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "左拇指摩挲布边",
+        "一侧嘴角僵住",
+        "指节再次收紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.8,
+          "acting_seconds": 3.5999999999999996
+        }
+      ]
+    },
+    {
+      "target": "片段4/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "无名指和小指逐渐收拢",
+        "拇指沿棱面确认触感",
+        "腕部衣料出现受力褶皱"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.8,
+          "acting_seconds": 3.5999999999999996
+        }
+      ]
+    },
+    {
+      "target": "片段5/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "手腕后撤、肩膀跟着缩起",
+        "视线在石头、矮人脸和出口方向之间快速折返",
+        "眼角含泪但嘴唇把拒绝咬得很紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.7,
+          "acting_seconds": 3.5
+        }
+      ]
+    },
+    {
+      "target": "片段6/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "半垂的眼睑先收紧一点",
+        "交叠在胸前的手指只增加轻微压力",
+        "矮人随后慢慢点头"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.0,
+          "acting_seconds": 2.8
+        }
+      ]
+    },
+    {
+      "target": "片段7/分镜1",
+      "evidence": "源图表情、手势、道具接触与对白顺序；电影化增强只细化反应过程",
+      "details": [
+        "先眨眼再把视线转向春子",
+        "下唇轻轻内收",
+        "肩线由紧到松"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.8,
+          "acting_seconds": 2.5999999999999996
+        }
+      ]
+    }
+  ]
+}

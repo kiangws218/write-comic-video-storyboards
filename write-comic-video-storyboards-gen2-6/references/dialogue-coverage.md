@@ -1,5 +1,7 @@
 # Dialogue recovery, timing, and coverage
 
+Use this module to preserve speech and plan coverage. Use `performance-choreography.md` after mapping the lines to turn each supported semantic beat into natural acting rather than a generic gesture.
+
 This file is authoritative for dialogue completeness and shot coverage. Perform the dialogue gate while the source panel is open and before final shot or clip boundaries are chosen.
 
 ## Recover every bubble
