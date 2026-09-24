@@ -226,6 +226,58 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("类表演信号", result.stdout)
 
+    def test_expressive_summary_fails_performance_fidelity_warnings(self) -> None:
+        text = storyboard(line="いりません、いりません！").replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手腕后撤、肩膀缩起，连续摇头时发梢向后拖；"
+            "视线在石头和对方之间折返，最后手指停住。",
+        ).replace(
+            "平视手部特写，固定镜头。",
+            "35mm双人中近景，摄影机小幅横移，焦点跟随手部。",
+        ).replace(
+            "低环境底噪铺底，手指收紧时衣料轻响。",
+            "晶石轻碰掌心，拒绝声与手腕后撤同步。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("表演保真槽缺少", result.stdout)
+        self.assertIn("没有镜头落幅", result.stdout)
+        self.assertIn("重复话语但声音设计没有区分", result.stdout)
+
+    def test_staged_expressive_performance_passes_fidelity_warnings(self) -> None:
+        text = storyboard(line="いりません、いりません！").replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物先把物件向前送出半掌，第一声拒绝时手腕迅速后撤，肩膀随后向内缩；"
+            "第二声拒绝时眼睑压紧，嘴唇先合拢再张开，头部连续摇动，"
+            "发梢晚半拍向反方向甩开后回弹，最后双手停在交接处。",
+        ).replace(
+            "平视手部特写，固定镜头。",
+            "35mm双人中近景，摄影机跟随物件往返移动，句末在双方交接处稳住。",
+        ).replace(
+            "低环境底噪铺底，手指收紧时衣料轻响。",
+            "第一声拒绝带短促回响，第二声与手腕后撤同步并迅速收干。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("表演保真槽缺少", result.stdout)
+        self.assertNotIn("没有镜头落幅", result.stdout)
+        self.assertNotIn("重复话语但声音设计没有区分", result.stdout)
+
+    def test_repeated_words_split_across_quotes_need_audio_contrast(self) -> None:
+        text = storyboard(line="いや！").replace(
+            '人物：“いや！”（清晰的中性音色，平静语气）。',
+            '人物：“いや！”（清晰的中性音色，急促语气）。\n'
+            '人物：“いや！”（清晰的中性音色，急促语气）。',
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("重复话语但声音设计没有区分", result.stdout)
+
+    def test_single_elongated_utterance_is_not_repetition(self) -> None:
+        result = self.run_validator(storyboard(line="うううっ……せめて教えてください……"))
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("重复话语但声音设计没有区分", result.stdout)
+
     def test_conflicting_depth_is_a_warning_not_error(self) -> None:
         text = storyboard().replace("固定镜头", "固定镜头，大光圈、全景深")
         result = self.run_validator(text)

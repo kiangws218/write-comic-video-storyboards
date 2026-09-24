@@ -16,6 +16,8 @@ Choose terms only when they change the image:
 - non-contradictory focal plane or supported focus transfer;
 - one primary movement—fixed, restrained push/pull, pan, follow, or motivated handheld—with readable opening and landing frames.
 
+When the camera moves during character performance, state what initiates the move, what relation or feature it follows, and where it settles. `小幅横移/轻推` alone is incomplete; the landing must preserve the performer or prop endpoint rather than merely naming a direction.
+
 Camera clarifies action, attention, space, relation, emotion, or result; it cannot substitute for performance. A cited composition remains recognizable at its declared phase. A changed viewpoint is separately justified coverage.
 
 For continuous action use temporal contrast: dense small changes/steady camera for anticipation; wider pose spacing and directional follow for acceleration; concentrated in-betweens for grip/balance/mechanics; selective slow motion only at supported realization/apex/near-contact; compact contact treatment; proportional response; readable settled result. Keep one intention and consequence together when duration allows.

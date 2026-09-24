@@ -31,6 +31,20 @@ Plan one chain per beat:
 
 Select only useful stages. Three seconds may contain many micro-actions serving one intention; it may not contain several unrelated complete actions. A neutral panel may stay neutral. If no supported stimulus or endpoint exists, do not fill time with a large gesture.
 
+### Performance fidelity floor
+
+Compression may shorten wording, but it must not collapse distinct visible beats into a summary. Before drafting, preserve the beat topology of the panel and dialogue: opening state; each meaning-changing phrase or repeated utterance; the body part or prop that carries it; response latency/inertia; and landing state. A clause such as `后撤、缩肩、摇头` is only a list until it states useful order, coupling, or overlap.
+
+For an expressive 4–6 second dialogue shot with a readable face and body, normally make these five slots executable in the prose:
+
+1. self-contained opening orientation/contact;
+2. at least two ordered or overlapping developments tied to the line;
+3. one local face change—eyes/eyelids/brow/mouth/chin—described as a transition, not a static emotion label;
+4. one coupled body, hand/prop, or delayed hair/cloth response;
+5. a specific endpoint for performer and camera.
+
+Use only visible or source-supported slots. When a face, hand, or body part is cropped, replace that slot with a supported listener, prop, material, or environment response instead of inventing anatomy. Repeated words are separate performance beats when delivery changes: distinguish the first and later utterance through pressure, breath, timing, or sound decay. Do not satisfy the floor with synonyms, particle motion, or camera drift.
+
 ## Head, face, and gaze
 
 When readable, establish opening face orientation (front, three-quarter, profile, back-turn), pitch, screen direction, gaze point, and head/shoulder relation. Distinguish eyes from face direction: eyes may move first; chin, nose line, facial midline, neck, shoulder, and hair can follow with latency. Name the final orientation and gaze point.
@@ -55,6 +69,8 @@ For 4–6 seconds of dialogue, include opening and endpoint plus at least two se
 For a short dense shot, use one stimulus, layered reaction, and one landing state. Allow overlapping eyes, head, face, fingers, weight, and delayed motion; reject unrelated `turn → wave → run` chains unless panels support the entire action.
 
 Synchronize acting with language: inhale/attention before the line; gaze/head/local face at a key phrase; task-related hand/weight at emphasis; breath, pressure release, or expression residue at the end. Off-screen speech may motivate only a supported listener, visible hand/prop, or environment response.
+
+Before delivery, run a local fidelity pass on every expressive or long dialogue shot. Read only `可见动作`, `镜头设计`, and `声音设计` together and ask: can an animator identify the opening, two meaningful changes, their order/overlap, and the final held state without consulting another shot? If not, restore the missing beat rather than adding decorative adjectives.
 
 ## Audit
 

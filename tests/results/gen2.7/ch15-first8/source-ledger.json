@@ -514,7 +514,7 @@
         "evidence": "current_panel"
       },
       "locks": {
-        "composition": "青把晶石往回送，手腕后撤、肩膀缩起，连续摇头时发梢和衣摆向后拖",
+        "composition": "青双眼紧闭，泪珠挂在眼角，双手竖在胸前隔开晶石",
         "visible_subjects": [
           "仅保留当前面板中可见人物、物件与图形元素"
         ],
@@ -891,20 +891,18 @@
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
-      "background_excerpt": "场景环境：灰色渐变与速度线围住人物、手臂衣料和晶石。",
+      "background_excerpt": "场景环境：青闭眼哭喊的正面上身占据右侧，矮人的汗湿侧脸压在左缘；双方前臂、张开的手掌与晶石围住下方交接区，浅灰渐变和弧形速度线填满人物之间。",
       "source_audit": "pass",
       "unsupported_additions": []
     },
     {
       "target": "片段11/分镜2",
-      "role": "source_locked",
-      "source_images": [
-        "ch15_p07_c001.jpg"
-      ],
-      "viewed_while_writing": true,
-      "evidence": "当前原格",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "viewed_while_writing": false,
+      "evidence": "前后格的人物站位与道具状态",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
-      "background_excerpt": "场景环境：灰色渐变、手臂衣料、速度线和晶石填满交叠手部周围。",
+      "background_excerpt": "场景环境：青的胸前衣料、竖起的双掌、矮人从下方伸入的承托手与青蓝晶石填满近景，浅灰弧形速度线在手臂外侧收束。",
       "source_audit": "pass",
       "unsupported_additions": []
     },
@@ -1044,8 +1042,9 @@
       "target": "片段11/分镜1",
       "evidence": "当前面板的表情、手势、道具接触与对白顺序",
       "details": [
-        "手腕后撤、肩膀缩起",
-        "视线在石头与矮人脸之间折返"
+        "第一声「いりません」时她的手腕向外推半掌",
+        "第二声拒绝前嘴唇短暂合拢换气",
+        "长发和袖口晚半拍向反方向甩开后回弹"
       ],
       "intervals": [
         {
@@ -1058,9 +1057,9 @@
       "target": "片段11/分镜2",
       "evidence": "当前面板的表情、手势、道具接触与对白顺序",
       "details": [
-        "眼角泛泪",
-        "右肩先缩",
-        "嘴唇在抱怨前短暂抿住"
+        "晶石从青张开的指间下滑半掌",
+        "矮人的警告与托底动作同时落下",
+        "下唇向内收、右肩再缩一点"
       ],
       "intervals": [
         {

@@ -62,7 +62,7 @@ PERFORMANCE_SEQUENCE_RE = re.compile(
     r"先|随后|随即|再|之后|接着|句末|重音|停顿|半拍|同时|伴随|保持"
 )
 PERFORMANCE_ENDPOINT_RE = re.compile(
-    r"停住|落定|稳定|回落|恢复|收束|最后|最终|句末|说完后|"
+    r"停住|落定|稳定|回落|落回|摊回|压实|恢复|收束|最后|最终|句末|说完后|"
     r"保持(?:视线|姿态|重心)|视线[^。；\r\n]{0,10}(?:停在|留在|定住)"
 )
 MAJOR_ACTION_RE = re.compile(
@@ -78,9 +78,32 @@ ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
 ATMOSPHERE_BASIS_RE = re.compile(
     r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
 )
+FACE_READABLE_RE = re.compile(r"视线|目光|瞳孔|眼神|眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部")
+FACE_TRANSITION_RE = re.compile(
+    r"(?:眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部)[^。；\r\n]{0,18}"
+    r"(?:先|随后|再|转为|变为|由[^，,。；;]{0,10}(?:到|转)|收紧|松开|压低|抬起|"
+    r"闭合|睁开|张开|合拢|抿住|微开|抽动|颤|回落|落回)|"
+    r"(?:先|随后|再)[^。；\r\n]{0,18}(?:眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部)"
+)
+COUPLED_RESPONSE_RE = re.compile(r"晚半拍|迟半拍|迟缓|滞后|惯性|回弹|余势|跟着|随(?:后|之|着|受力)|同时|同步|伴随")
+CAMERA_STAGING_MOTION_RE = re.compile(
+    r"(?:镜头|摄影机|机位)[^。；\r\n]{0,24}(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)|"
+    r"推近|前推|拉远|跟拍|甩摇|环绕|手持"
+)
+CAMERA_LANDING_RE = re.compile(
+    r"落幅|句末[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
+    r"最终[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
+    r"(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停在|落在|收束)"
+)
+EXPRESSIVE_DIALOGUE_RE = re.compile(r"[！!？?]{2,}|…{2,}|っ[！!]|だ、だ|不、?不")
+AUDIO_BEAT_DIFFERENTIATION_RE = re.compile(
+    r"第一次|第二次|第一声|第二声|前一次|后一次|先[^。；\r\n]{0,18}(?:再|随后)|"
+    r"随后|转折|改口|重复|重音|停顿|半拍|回响|收干|衰减"
+)
 PURE_OBJECT_SHOT_RE = re.compile(
     r"人物(?:与手|和手)?均未入画|人物未入画|画面(?:没有|不含)人物|物件特写|说明性物件镜头"
 )
+HAND_DETAIL_SHOT_RE = re.compile(r"手部(?:极近景|近景|特写)|交叠手部|画面只显示这一只手")
 SHOT_FIELD_NAMES = ("场景环境", "环境音", "镜头设计", "可见动作", "台词与语气", "光影布光")
 SHOT_FIELD_RE = re.compile(
     r"(?ms)^\s*(场景环境|环境音|镜头设计|可见动作|台词与语气|光影布光|声音设计|音频)[：:]\s*"
@@ -228,6 +251,28 @@ def coverage_dialogue_metrics(block: str) -> tuple[int, int]:
     )
     speakers = {match.group(1) for match in matches}
     return meaningful_characters, len(speakers)
+
+
+def has_repeated_utterance(dialogue: str) -> bool:
+    """Return whether one spoken quote repeats a meaningful 2+ character unit."""
+    normalized_quotes: list[str] = []
+    all_units: list[str] = []
+    for quote in QUOTE_RE.findall(dialogue):
+        normalized_quote = re.sub(r"[^\u3040-\u30ff\u3400-\u9fffA-Za-z]", "", quote)
+        if len(normalized_quote) >= 2:
+            normalized_quotes.append(normalized_quote)
+        all_units.extend(
+            re.findall(r"[\u3040-\u30ff\u3400-\u9fffA-Za-z]{2,}", quote)
+        )
+        if re.search(
+            r"([\u3040-\u30ff\u3400-\u9fffA-Za-z])[、，,…\s]+\1",
+            quote,
+        ):
+            return True
+    return (
+        len(normalized_quotes) != len(set(normalized_quotes))
+        or len(all_units) != len(set(all_units))
+    )
 
 
 def has_descriptive_background(block: str) -> bool:
@@ -398,19 +443,52 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
     for target, (_, block) in shot_map.items():
         duration = shot_map[target][0]
         dialogue_chars, _ = coverage_dialogue_metrics(block)
-        signal_count = sum(bool(pattern.search(block)) for pattern in PERFORMANCE_SIGNAL_GROUPS)
+        fields = shot_field_values(block)
+        action = fields.get("可见动作", "")
+        camera = fields.get("镜头设计", "")
+        sound = fields.get("声音设计", "")
+        dialogue = fields.get("台词与语气", "")
+        signal_count = sum(bool(pattern.search(action)) for pattern in PERFORMANCE_SIGNAL_GROUPS)
         pure_object_shot = bool(PURE_OBJECT_SHOT_RE.search(block))
-        if dialogue_chars > 20 and signal_count < 3 and not pure_object_shot:
+        minimum_signals = 2 if HAND_DETAIL_SHOT_RE.search(block) else 3
+        if dialogue_chars > 20 and signal_count < minimum_signals and not pure_object_shot:
             warnings.append(
                 f"{target}含{dialogue_chars}个台词字符但仅覆盖{signal_count}类表演信号；"
                 "可按源图加入视线、非对称表情、呼吸、手指/道具、重心或延迟运动。"
             )
         if dialogue_chars > 20 and signal_count >= 2 and (
-            not PERFORMANCE_SEQUENCE_RE.search(block) or not PERFORMANCE_ENDPOINT_RE.search(block)
+            not PERFORMANCE_SEQUENCE_RE.search(action) or not PERFORMANCE_ENDPOINT_RE.search(action)
         ):
             warnings.append(
                 f"{target}可能只有动作清单，缺少刺激、先后或收束；"
                 "请确认微动作形成同一条表演因果链。"
+            )
+        repeated_utterance = has_repeated_utterance(dialogue)
+        expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
+        face_readable = bool(FACE_READABLE_RE.search(action + camera))
+        if 4 <= duration <= 6 and expressive_dialogue and face_readable and not pure_object_shot:
+            missing_slots: list[str] = []
+            if not PERFORMANCE_SEQUENCE_RE.search(action):
+                missing_slots.append("动作先后/重叠")
+            if not FACE_TRANSITION_RE.search(action):
+                missing_slots.append("局部面部变化")
+            if not COUPLED_RESPONSE_RE.search(action):
+                missing_slots.append("身体或发衣延迟响应")
+            if not PERFORMANCE_ENDPOINT_RE.search(action):
+                missing_slots.append("具体表演落点")
+            if missing_slots:
+                warnings.append(
+                    f"{target}是{duration}秒强情绪对白镜头，但表演保真槽缺少"
+                    f"{', '.join(missing_slots)}；不要把分阶段表演压成动作关键词摘要。"
+                )
+        if CAMERA_STAGING_MOTION_RE.search(camera) and not CAMERA_LANDING_RE.search(camera):
+            warnings.append(
+                f"{target}声明了摄影机运动但没有镜头落幅；请写明运动跟随什么，并在何处稳定。"
+            )
+        if repeated_utterance and not AUDIO_BEAT_DIFFERENTIATION_RE.search(sound):
+            warnings.append(
+                f"{target}含重复话语但声音设计没有区分前后节拍；"
+                "请用呼吸、压力、停顿、回响或收干变化区分重复表达。"
             )
         generic_match = GENERIC_GESTURE_RE.search(block)
         if generic_match and not CONTEXTUAL_GESTURE_RE.search(block):
