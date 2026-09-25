@@ -1,0 +1,4 @@
+comic-workspace/**/*.png filter=lfs diff=lfs merge=lfs -text
+comic-workspace/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+comic-workspace/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
+comic-workspace/**/*.webp filter=lfs diff=lfs merge=lfs -text
