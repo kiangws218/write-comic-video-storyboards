@@ -30,6 +30,8 @@ Use stable descriptive labels for unsupported creatures/special props: useful sc
 
 A clip is one generated video; 15 seconds is a soft maximum. Keep a continuous physical phrase—load→launch, reach→grip→pull, swing→contact, fall→landing—in one clip when it fits. If split, end at a stable state and fully restate the next opening.
 
+After shot design, run a clip-assembly pass across adjacent clips. Merge short neighbors when they share one scene, continuous dialogue, prop handoff, reaction chain, or cause→result phrase and the combined duration fits 15 seconds. A hard cut or changed camera setup starts a new numbered shot, not automatically a new generated clip. Keep a short standalone clip only when its isolation has a real function—title beat, impact burst, silence, location transition, or a stable narrative break—and confirm that separate generation will not break pose, contact, prop state, or sound continuity.
+
 Each camera setup receives one numbered shot and positive integer duration. A hard cut, reverse, insert, reaction, environment view, or new composition starts another shot. Seven seconds triggers review, not an automatic cut. Added coverage must change focus, scale, viewpoint, visible information, or dramatic function. Compare a clip's terminal added shot with the next source shot and remove near-duplicates.
 
 ## Required output

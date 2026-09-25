@@ -939,6 +939,12 @@ def main() -> int:
                 errors.append(
                     f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
                 )
+            if total_duration <= 3:
+                warnings.append(
+                    f"{label}{number}总时长仅{total_duration}秒；请与前后片段执行连续性审计。"
+                    "若同场景对白、道具交接、反应或因果动作合计不超过上限，应合并为同一片段内的编号分镜；"
+                    "仅在标题、冲击、静默、转场或稳定叙事断点确需独立时保留。"
+                )
             if "开局状态：" not in chunk or "战斗过程：" not in chunk or "结束状态：" not in chunk:
                 errors.append(
                     f"{label}{number}战斗自动分镜缺少开局状态、战斗过程或结束状态。"
@@ -973,6 +979,12 @@ def main() -> int:
             if total_duration > args.max_seconds:
                 errors.append(
                     f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                )
+            if total_duration <= 3:
+                warnings.append(
+                    f"{label}{number}总时长仅{total_duration}秒；请与前后片段执行连续性审计。"
+                    "若同场景对白、道具交接、反应或因果动作合计不超过上限，应合并为同一片段内的编号分镜；"
+                    "仅在标题、冲击、静默、转场或稳定叙事断点确需独立时保留。"
                 )
 
         for match in PRODUCTION_NOTE_RE.finditer(chunk):

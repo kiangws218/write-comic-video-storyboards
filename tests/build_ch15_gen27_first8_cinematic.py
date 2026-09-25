@@ -3,9 +3,14 @@
 
 from __future__ import annotations
 
+import copy
+import json
+import re
+
 import build_ch15_gen26_first8_cinematic as base
 
 OUT = base.ROOT / "tests/results/gen2.7/ch15-first8"
+WORKSPACE_OUT = base.ROOT / "comic-workspace/episodes/ep-015/storyboards/gen2.7/part1-p001-p008"
 line, shot = base.line, base.shot
 YOUNG, COOL, DWARF = base.YOUNG, base.COOL, base.DWARF
 
@@ -143,6 +148,87 @@ SHOTS = [
 ]
 
 
+def merge_continuous_clips(shots: list[dict]) -> list[dict]:
+    """Group adjacent beats into complete generated clips of at most 15 seconds."""
+    clip_groups = (
+        (1, 2),          # title sky -> raised hand -> impact (9s)
+        (3,),            # confrontation -> grounded reply (12s)
+        (4,),            # sky pause -> walk -> dizzy reaction (11s)
+        (5,),            # question -> embarrassed answer (11s)
+        (6,),            # crystal explanation (9s)
+        (7, 8, 9, 10),  # offer/refusal -> retrieve -> present -> handoff (15s)
+        (11,),           # emphatic refusal -> catch (10s)
+        (12,),           # dwarf explanation (8s)
+        (13, 14),        # weapon concept -> Qing follow-up question (14s)
+    )
+    source_by_clip: dict[int, list[dict]] = {}
+    for item in shots:
+        source_by_clip.setdefault(item["clip"], []).append(item)
+
+    merged: list[dict] = []
+    for new_clip, source_clips in enumerate(clip_groups, start=1):
+        new_shot = 1
+        for source_clip in source_clips:
+            for item in source_by_clip[source_clip]:
+                current = copy.deepcopy(item)
+                current["clip"] = new_clip
+                current["number"] = new_shot
+                merged.append(current)
+                new_shot += 1
+    return merged
+
+
+SHOTS = merge_continuous_clips(SHOTS)
+
+
+def workspace_panel_name(name: str) -> str:
+    match = re.fullmatch(r"ch15_p(\d+)_c(\d+)\.jpg", name)
+    if not match:
+        return name
+    return f"第15话_{int(match.group(1)):03d}_{int(match.group(2)):03d}.jpg"
+
+
+def workspace_source_id(source_id: str) -> str:
+    """Convert stable panel/bubble ids to the comic-workspace naming scheme."""
+    match = re.fullmatch(r"ch15_p(\d+)_c(\d+)(.*)", source_id)
+    if not match:
+        return source_id
+    return (
+        f"第15话_{int(match.group(1)):03d}_{int(match.group(2)):03d}"
+        f"{match.group(3)}"
+    )
+
+
+def export_workspace_copy() -> None:
+    """Export the test script with filenames matching comic-workspace source assets."""
+    WORKSPACE_OUT.mkdir(parents=True, exist_ok=True)
+    storyboard = (OUT / "storyboard.md").read_text(encoding="utf-8")
+    storyboard = re.sub(
+        r"ch15_p\d+_c\d+\.jpg",
+        lambda match: workspace_panel_name(match.group(0)),
+        storyboard,
+    )
+    (WORKSPACE_OUT / "storyboard.md").write_text(storyboard, encoding="utf-8")
+
+    ledger = json.loads((OUT / "source-ledger.json").read_text(encoding="utf-8"))
+    for panel in ledger["panels"]:
+        panel["image"] = workspace_panel_name(panel["image"])
+        if "id" in panel:
+            panel["id"] = workspace_source_id(panel["id"])
+        for bubble in panel.get("bubbles", []):
+            if "id" in bubble:
+                bubble["id"] = workspace_source_id(bubble["id"])
+    for item in ledger["shots"]:
+        item["source_images"] = [workspace_panel_name(name) for name in item["source_images"]]
+        item["source_bubbles"] = [
+            workspace_source_id(source_id) for source_id in item.get("source_bubbles", [])
+        ]
+    (WORKSPACE_OUT / "source-ledger.json").write_text(
+        json.dumps(ledger, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     base.OUT = OUT
     base.SHOTS = SHOTS
@@ -152,6 +238,7 @@ def main() -> None:
         "# 第15话前八图｜Gen2.6电影化表演测试",
         "# 第15话前八图｜Gen2.7精简规则完整质量测试", 1)
     path.write_text(text, encoding="utf-8")
+    export_workspace_copy()
 
 
 if __name__ == "__main__":

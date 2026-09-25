@@ -226,6 +226,13 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("类表演信号", result.stdout)
 
+    def test_three_second_standalone_clip_requires_merge_review(self) -> None:
+        text = storyboard().replace("分镜1（5秒）", "分镜1（3秒）")
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("总时长仅3秒", result.stdout)
+        self.assertIn("连续性审计", result.stdout)
+
     def test_expressive_summary_fails_performance_fidelity_warnings(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
             "人物手掌朝上，手指稳定托住画外物件。",

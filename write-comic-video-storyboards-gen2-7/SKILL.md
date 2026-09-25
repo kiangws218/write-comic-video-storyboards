@@ -36,7 +36,7 @@ Run scripts directly. Inspect their implementation only when changing them.
 4. Plan dialogue coverage and immediately write the corresponding shot. Use `source_locked`, `source_supported_phase`, or `uncited_coverage` according to `core-authoring.md`.
 5. Compare every visible noun and relation in the draft with the same open image. Delete unsupported additions rather than explaining them with negative prompts.
 6. Add supported performance, sound, camera, focus, lighting, atmosphere, and material response. Complete the current batch before opening the next.
-7. Run the validator per batch and at delivery. Fix errors; inspect every warning. Finish with manual source, dialogue, clip-cold-start, cross-boundary, performance-diversity, sound, and cinematic audits.
+7. Run the validator per batch and at delivery. Fix errors; inspect every warning. Finish with manual source, dialogue, clip-assembly, clip-cold-start, cross-boundary, performance-diversity, sound, and cinematic audits.
 
 ## Output and validation
 

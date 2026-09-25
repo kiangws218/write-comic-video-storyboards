@@ -2,7 +2,7 @@
   "version": 2,
   "panels": [
     {
-      "image": "ch15_p01_c001.jpg",
+      "image": "第15话_001_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -27,7 +27,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p02_c001.jpg",
+      "image": "第15话_002_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -52,7 +52,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p02_c002.jpg",
+      "image": "第15话_002_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 1,
       "bubble_audit": "pass",
@@ -76,7 +76,7 @@
       "coverage": "none",
       "bubbles": [
         {
-          "id": "ch15_p02_c002_b01",
+          "id": "第15话_002_002_b01",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "image": "ch15_p03_c001.jpg",
+      "image": "第15话_003_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -113,7 +113,7 @@
       "coverage": "shared",
       "bubbles": [
         {
-          "id": "ch15_p03_c001_b01",
+          "id": "第15话_003_001_b01",
           "speaker": "春子",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -124,7 +124,7 @@
           "seconds": 2.4
         },
         {
-          "id": "ch15_p03_c001_b02",
+          "id": "第15话_003_001_b02",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -137,7 +137,7 @@
       ]
     },
     {
-      "image": "ch15_p03_c002.jpg",
+      "image": "第15话_003_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -161,7 +161,7 @@
       "coverage": "shared",
       "bubbles": [
         {
-          "id": "ch15_p03_c002_b01",
+          "id": "第15话_003_002_b01",
           "speaker": "春子",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -172,7 +172,7 @@
           "seconds": 1.3
         },
         {
-          "id": "ch15_p03_c002_b02",
+          "id": "第15话_003_002_b02",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "image": "ch15_p04_c001.jpg",
+      "image": "第15话_004_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -210,7 +210,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p04_c002.jpg",
+      "image": "第15话_004_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -235,7 +235,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p04_c003.jpg",
+      "image": "第15话_004_003.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -260,7 +260,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p05_c001.jpg",
+      "image": "第15话_005_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -284,7 +284,7 @@
       "coverage": "mixed",
       "bubbles": [
         {
-          "id": "ch15_p05_c001_b01",
+          "id": "第15话_005_001_b01",
           "speaker": "春子",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -295,7 +295,7 @@
           "seconds": 4.7
         },
         {
-          "id": "ch15_p05_c001_b02",
+          "id": "第15话_005_001_b02",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -309,7 +309,7 @@
       "coverage_reason": "保留当前面板的表演连续性，并用具体视线、呼吸和手部动作承载信息。"
     },
     {
-      "image": "ch15_p05_c002.jpg",
+      "image": "第15话_005_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -333,7 +333,7 @@
       "coverage": "shared",
       "bubbles": [
         {
-          "id": "ch15_p05_c002_b01",
+          "id": "第15话_005_002_b01",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -344,7 +344,7 @@
           "seconds": 3.0
         },
         {
-          "id": "ch15_p05_c002_b02",
+          "id": "第15话_005_002_b02",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -357,7 +357,7 @@
       ]
     },
     {
-      "image": "ch15_p05_c003.jpg",
+      "image": "第15话_005_003.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -381,7 +381,7 @@
       "coverage": "shared",
       "bubbles": [
         {
-          "id": "ch15_p05_c003_b01",
+          "id": "第15话_005_003_b01",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -392,7 +392,7 @@
           "seconds": 1.0
         },
         {
-          "id": "ch15_p05_c003_b02",
+          "id": "第15话_005_003_b02",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "image": "ch15_p06_c001.jpg",
+      "image": "第15话_006_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 0,
       "bubble_audit": "pass",
@@ -430,7 +430,7 @@
       "bubbles": []
     },
     {
-      "image": "ch15_p06_c002.jpg",
+      "image": "第15话_006_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 1,
       "bubble_audit": "pass",
@@ -454,7 +454,7 @@
       "coverage": "none",
       "bubbles": [
         {
-          "id": "ch15_p06_c002_b01",
+          "id": "第15话_006_002_b01",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "image": "ch15_p06_c003.jpg",
+      "image": "第15话_006_003.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 1,
       "bubble_audit": "pass",
@@ -491,7 +491,7 @@
       "coverage": "none",
       "bubbles": [
         {
-          "id": "ch15_p06_c003_b01",
+          "id": "第15话_006_003_b01",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -504,7 +504,7 @@
       ]
     },
     {
-      "image": "ch15_p07_c001.jpg",
+      "image": "第15话_007_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 3,
       "bubble_audit": "pass",
@@ -528,7 +528,7 @@
       "coverage": "mixed",
       "bubbles": [
         {
-          "id": "ch15_p07_c001_b01",
+          "id": "第15话_007_001_b01",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -539,7 +539,7 @@
           "seconds": 3.7
         },
         {
-          "id": "ch15_p07_c001_b02",
+          "id": "第15话_007_001_b02",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -550,7 +550,7 @@
           "seconds": 1.2
         },
         {
-          "id": "ch15_p07_c001_b03",
+          "id": "第15话_007_001_b03",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -565,7 +565,7 @@
       "long_take_reason": "当前面板的语义与听者反应在同一关系构图内沿台词逐层发展。"
     },
     {
-      "image": "ch15_p07_c002.jpg",
+      "image": "第15话_007_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 1,
       "bubble_audit": "pass",
@@ -589,7 +589,7 @@
       "coverage": "shared",
       "bubbles": [
         {
-          "id": "ch15_p07_c002_b01",
+          "id": "第15话_007_002_b01",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -603,7 +603,7 @@
       "long_take_reason": "当前面板的语义与听者反应在同一关系构图内沿台词逐层发展。"
     },
     {
-      "image": "ch15_p08_c001.jpg",
+      "image": "第15话_008_001.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 2,
       "bubble_audit": "pass",
@@ -627,7 +627,7 @@
       "coverage": "none",
       "bubbles": [
         {
-          "id": "ch15_p08_c001_b01",
+          "id": "第15话_008_001_b01",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -638,7 +638,7 @@
           "seconds": 3.8
         },
         {
-          "id": "ch15_p08_c001_b02",
+          "id": "第15话_008_001_b02",
           "speaker": "矮人",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -651,7 +651,7 @@
       ]
     },
     {
-      "image": "ch15_p08_c002.jpg",
+      "image": "第15话_008_002.jpg",
       "viewed_at_drafting": true,
       "source_bubble_count": 1,
       "bubble_audit": "pass",
@@ -675,7 +675,7 @@
       "coverage": "none",
       "bubbles": [
         {
-          "id": "ch15_p08_c002_b01",
+          "id": "第15话_008_002_b01",
           "speaker": "青",
           "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
           "kind": "dialogue",
@@ -693,170 +693,183 @@
       "target": "片段1/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p01_c001.jpg"
+        "第15话_001_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：层叠灰白云团占据中央天空，深色树冠从左侧、左下与右下边缘围出仰视开口。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段1/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p02_c001.jpg"
+        "第15话_002_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：摊开的右手从画面右侧占据主体，灰云天空铺在掌后，深色树冠沿左下边缘围住手腕。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段1/分镜3",
       "role": "source_locked",
       "source_images": [
-        "ch15_p02_c002.jpg"
+        "第15话_002_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：白底冲击区与黑色放射线铺满人物轮廓外侧。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段2/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p03_c001.jpg"
+        "第15话_003_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青趴在带裂纹的碎石路上占据右前景，春子从左后方俯身压入画面；两人之间露出灰云、深色树冠与狭窄路面。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段2/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p03_c002.jpg"
+        "第15话_003_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青的脸颊和白发铺在带细裂纹的碎石地面上，紧闭双眼与泪滴占据前景；春子的膝部、衣摆和一缕头发从右上后景压入。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段3/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p04_c001.jpg"
+        "第15话_004_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：灰白云层与浅灰天空填满整幅画面。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段3/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p04_c002.jpg"
+        "第15话_004_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：石路向远处收束，两侧草丛、岩石与树林形成通道。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段3/分镜3",
       "role": "source_locked",
       "source_images": [
-        "ch15_p04_c003.jpg"
+        "第15话_004_003.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青的正面胸像填满画面，背景为上深下浅的灰色渐变，螺旋瞳孔、脸颊斜线与汗滴构成抽象眩晕画面。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段4/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p05_c001.jpg"
+        "第15话_005_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：浅灰天空与远处树冠填满两人头肩之间。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段4/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p05_c001.jpg"
+        "第15话_005_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：浅灰天空与远处树冠填满两人头肩之间。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段5/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p05_c002.jpg"
+        "第15话_005_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青蓝透明晶石连着深蓝灰粗糙底座，悬在由深灰过渡到冷白的星屑图形背景中央；人物与手均未入画。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段6/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p05_c003.jpg"
+        "第15话_005_003.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：矮人的头盔、半垂眼睛与浓密黑胡须占满中近景，灰云与浅亮天空只从轮廓外侧露出；画面没有晶石和手。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段6/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p06_c001.jpg"
+        "第15话_006_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：深色背包布面、头盔和肩背填满半身画面，林路只从边缘露出。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段6/分镜3",
@@ -867,33 +880,36 @@
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：白色留白承载对白，林间石路、低矮草丛与灰白天空组成两人交接的关系背景。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段6/分镜4",
       "role": "source_locked",
       "source_images": [
-        "ch15_p06_c003.jpg"
+        "第15话_006_003.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：一只戴袖口的手掌从左侧托住青蓝晶石，晶体与粗糙底座占据中央，白色留白背景和黑色冲击线填满四周；画面只显示这一只手。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段7/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p07_c001.jpg"
+        "第15话_007_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青闭眼哭喊的正面上身占据右侧，矮人的汗湿侧脸压在左缘；双方前臂、张开的手掌与晶石围住下方交接区，浅灰渐变和弧形速度线填满人物之间。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段7/分镜2",
@@ -904,46 +920,50 @@
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青的胸前衣料、竖起的双掌、矮人从下方伸入的承托手与青蓝晶石填满近景，浅灰弧形速度线在手臂外侧收束。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段8/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p07_c002.jpg"
+        "第15话_007_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：矮人的头盔、半垂眼睛、鼻梁与浓密胡须占满竖幅，浅灰背景色块和白色留白围住轮廓；画面没有手和晶石。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段9/分镜1",
       "role": "source_locked",
       "source_images": [
-        "ch15_p08_c001.jpg"
+        "第15话_008_001.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：青蓝透明晶石悬在左侧，银蓝金属四孔指虎位于右侧；深灰颗粒渐变、冷白星点与两团柔亮光晕填满物件周围，人物和手均未入画。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     },
     {
       "target": "片段9/分镜2",
       "role": "source_locked",
       "source_images": [
-        "ch15_p08_c002.jpg"
+        "第15话_008_002.jpg"
       ],
       "viewed_while_writing": true,
       "evidence": "当前原格",
       "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
       "background_excerpt": "场景环境：白色留白背景和浅灰网点包围青的正面胸像，掌中晶石位于左下前景。",
       "source_audit": "pass",
-      "unsupported_additions": []
+      "unsupported_additions": [],
+      "source_bubbles": []
     }
   ],
   "performance": [
