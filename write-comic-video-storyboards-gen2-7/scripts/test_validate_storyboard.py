@@ -467,6 +467,35 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
+    def test_chinese_quoted_utterance_exit_trigger_fails(self) -> None:
+        line = "しっ。黙って。"
+        text = storyboard(line=line).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "“闭嘴”出口时，人物的嘴角压平。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("用中文概括对白触发点", result.stdout)
+
+    def test_chinese_semantic_action_trigger_fails(self) -> None:
+        line = "先に攻撃した方がよくない？"
+        text = storyboard(line=line).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "提出抢攻时，她的下巴朝目标送出。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("用中文概括对白触发点", result.stdout)
+
+    def test_generic_emphasis_timing_remains_valid(self) -> None:
+        line = "先に攻撃した方がよくない？"
+        text = storyboard(line=line).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "质问重音处，她的下巴朝目标送出。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def test_unestablished_counted_gaze_target_fails(self) -> None:
         text = storyboard().replace(
             "人物手掌朝上，手指稳定托住画外物件。",

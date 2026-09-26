@@ -19,7 +19,7 @@ A new target changes focus, scale, viewpoint, composition, visible information, 
 
 Estimate speech before clip boundaries: interjection 1–2s; short sentence 2–4s; medium 4–6s; long explanation 6–9s; two long clauses 8–12s. Concurrent speech and acting use the longer interval rather than being summed. Every spoken/narrated line includes local voice, delivery, emotion, and necessary pace/pause/emphasis; do not output calculations.
 
-If acting prose names a dialogue trigger, quote an exact Japanese substring spoken in that shot inside `「」`. Generic `开口前/转入后半句/重音处/句末` timing is allowed; a Chinese paraphrase of the trigger is not.
+If acting prose names a dialogue trigger, quote an exact Japanese substring spoken in that shot inside `「」`. Generic `开口前/转入后半句/重音处/句末` timing is allowed. Chinese semantic paraphrases are forbidden in every form, including `“闭嘴”出口时`, `提出抢攻时`, `提到入口时`, or similar wording without the verbatim Japanese substring.
 
 ## Performance contract
 

@@ -161,9 +161,15 @@ HIDDEN_CUT_RE = re.compile(
 )
 SEMANTIC_TRIGGER_CUE_RE = re.compile(
     r"(?:提到|说到|谈到|讲到|问到|回答到)[^。；\r\n]{1,40}?(?:时|处)|"
+    r"[“\"](?:[^”\"。；\r\n]{1,24})[”\"](?:出口|落下|响起|说出|喊出|问出|念出|重复)(?:时|处)|"
+    r"(?:提出|表达|表示|强调|拒绝|答应|承认|否认|改口|反问|质问|警告|命令|劝阻|安慰|解释)"
+    r"[^。；，,\r\n]{1,24}?(?:时|处)|"
     r"(?:信息|结论|判断|名称|对象)(?:进入|到来|出现)(?:时|处)"
 )
 JAPANESE_TRIGGER_QUOTE_RE = re.compile(r"「([^」]+)」")
+GENERIC_TIMING_CUE_RE = re.compile(
+    r"开口前|句首|句中|前半句|后半句|转折(?:处|后)?|重音处|句末|停顿处"
+)
 COUNTED_GAZE_TARGET_RE = re.compile(
     r"(?:视线|目光|眼神)[^。；\r\n]{0,24}?"
     r"(?:落向|转向|看向|投向|停在)[^。；\r\n]{0,16}?"
@@ -305,6 +311,8 @@ def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str
         for clause in re.split(r"[，,。；;]", fields.get(field_name, "")):
             cue = SEMANTIC_TRIGGER_CUE_RE.search(clause)
             if not cue:
+                continue
+            if GENERIC_TIMING_CUE_RE.search(cue.group(0)):
                 continue
             triggers = JAPANESE_TRIGGER_QUOTE_RE.findall(clause)
             if not triggers:

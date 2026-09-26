@@ -69,6 +69,7 @@ Read only when modifying or forward-testing this skill. These cases protect beha
 | A hand-only crop carries speech | Write visible wrist/finger/arm behavior at semantic beats; keep face off-frame and source contact intact. |
 | One bubble continues over two shots | Keep one source bubble with ordered segments, verify exact joined Japanese text and both targets, and do not inflate source_bubble_count. |
 | Japanese dialogue says `こっそり開けるなよ` and the acting prose says “嘱咐别偷看时” | Replace the Chinese paraphrase with the exact trigger: `说到「こっそり開けるなよ」时`; update it whenever the final Japanese line changes. |
+| Japanese dialogue says `黙って` or `先に攻撃した方がよくない？`, while acting prose says `“闭嘴”出口时` or `提出抢攻时` | Fail validation. Use `说到「黙って」时` / `说到「先に攻撃した方がよくない？」时`, or a generic node such as `重音处` when exact wording is unnecessary. |
 | Japanese dialogue contains `暗石区の入口`, while acting prose says `提到暗石区入口时` | Fail validation. Quote a verbatim final-dialogue substring such as `说到「暗石区の入口」时`; generic `句首`, `重音处`, and `句末` timing remains valid. |
 | A source-supported two-person fight forms one clear 12-second action chain with stable axis, no timed dialogue, and several useful camera changes | Allow one `战斗段1（12秒·自动分镜）` block. Give only the total duration, ordered rhythm/coverage beats, opening state, and ending state; let Seedance allocate internal cuts. |
 | One clip contains both `分镜1（3秒）` and `战斗段1（12秒·自动分镜）` | Fail structural validation. Choose one timing mode for the clip. |
