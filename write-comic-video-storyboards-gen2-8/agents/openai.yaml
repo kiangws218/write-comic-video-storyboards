@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2.8"
+  short_description: "逐格看图、风险路由与高密度人物表演"
+  default_prompt: "Use $write-comic-video-storyboards-gen2-8 to inspect each comic panel and write a source-grounded cinematic storyboard through selective dialogue, performance, and geometry routing."
