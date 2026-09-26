@@ -26,7 +26,7 @@ Run scripts directly. Inspect their implementation only when changing them.
 4. Make performance a supported causal chain, not a gesture quota: stimulus/semantic beat → attention and head/face change → local expression or task-related hand/weight response → delayed motion → explicit endpoint.
 5. Keep camera, focus, lighting, atmosphere, materials, and sound concrete and motivated. Polish may develop presentation but cannot add a fact, event, hidden motive, contact, route, or result.
 6. Every generated clip must cold-start independently with positive current pose, orientation, people/counts, contact, background, light, gaze direction, and stable prop labels. Never rely on an earlier clip.
-7. Retain the full seven-field output. Gen2.7 optimizes loaded rules, not storyboard detail.
+7. Retain the full six-field output. Gen2.7 merges audio fields, not storyboard detail.
 
 ## Compact workflow
 
@@ -42,7 +42,7 @@ Run scripts directly. Inspect their implementation only when changing them.
 
 - Begin with `## 场景色彩基准`; add `## 非人物上色锁定` only when the source is monochrome or partly uncolored.
 - Use `分镜N（X秒）` for ordinary shots. Use one `战斗段N（X秒·自动分镜）` only when the combat admission gate passes; never mix both timing modes in one clip.
-- Every ordinary shot uses, in order: `场景环境`, `环境音`, `镜头设计`, `可见动作`, `台词与语气`, `光影布光`, `声音设计`.
+- Every ordinary shot uses, in order: `【场景环境】`, `【镜头设计】`, `【可见动作】`, `【台词与语气】`, `【光影布光】`, `【声音设计】`. `【场景环境】` contains only the visible backing; put subjects, props, placement, overlap, and composition in `【可见动作】` or `【镜头设计】`. `【声音设计】` combines ambience, perspective, Foley, breath/silence, dialogue treatment, and synchronization without duplication.
 - A real hard cut, reverse, insert, reaction, or changed viewpoint receives a new numbered shot. Continuous phases in one camera setup remain one shot.
 - Keep each clip within 15 seconds when practical, but end with the beat rather than padding or cutting an unfinished physical phrase.
 - Generate the Chinese SRT after storyboard approval unless requested earlier.

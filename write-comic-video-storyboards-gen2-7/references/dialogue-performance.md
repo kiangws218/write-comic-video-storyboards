@@ -12,7 +12,7 @@ Coverage defaults:
 
 - 1–20 meaningful characters: normally one shot with one or two supported developments.
 - 21–41: one shot only when two or three distinct developments follow semantic beats; otherwise use genuinely different coverage.
-- 42+ or three clauses: normally at least two different shots. One shot requires `long_take_reason`, three or four enacted developments, and sufficient time.
+- 42+ meaningful Japanese characters in one numbered shot, or three complete clauses in one continuous turn: require at least two genuinely different numbered shots. Count all dialogue in the shot, combine adjacent bubbles from the same speaker, and do not waive this gate with `long_take_reason`.
 - At least two speakers plus three bubbles: normally at least two targets. Shared composition requires `shared_reason` and a supported relationship/action that improves readability.
 
 A new target changes focus, scale, viewpoint, composition, visible information, or dramatic function; speaker change alone is insufficient. One bubble continuing across shots keeps one row with ordered segments whose text concatenates exactly.
@@ -70,10 +70,10 @@ For a short dense shot, use one stimulus, layered reaction, and one landing stat
 
 Synchronize acting with language: inhale/attention before the line; gaze/head/local face at a key phrase; task-related hand/weight at emphasis; breath, pressure release, or expression residue at the end. Off-screen speech may motivate only a supported listener, visible hand/prop, or environment response.
 
-Before delivery, run a local fidelity pass on every expressive or long dialogue shot. Read only `可见动作`, `镜头设计`, and `声音设计` together and ask: can an animator identify the opening, two meaningful changes, their order/overlap, and the final held state without consulting another shot? If not, restore the missing beat rather than adding decorative adjectives.
+Before delivery, run a local fidelity pass on every expressive or long dialogue shot. Read only `【可见动作】`, `【镜头设计】`, and `【声音设计】` together and ask: can an animator identify the opening, two meaningful changes, their order/overlap, and the final held state without consulting another shot? If not, restore the missing beat rather than adding decorative adjectives.
 
 ## Audit
 
 Across adjacent shots avoid the same gesture, facial side, and gaze path as a default. Repetition is acceptable when the state intentionally persists and its cause is clear.
 
-Confirm every bubble/segment appears at its declared target in order; duration fits; coverage adds a real increment; long-take/shared reasons are enacted; acting is visible at scale and supported; head/face/gaze directions are executable; hand/contact and support remain legal; and the endpoint is stable/readable.
+Confirm every bubble/segment appears at its declared target in order; duration fits; 42+ character or three-clause turns are split across genuinely different shots; coverage adds a real increment; shared reasons are enacted; acting is visible at scale and supported; head/face/gaze directions are executable; hand/contact and support remain legal; and the endpoint is stable/readable.

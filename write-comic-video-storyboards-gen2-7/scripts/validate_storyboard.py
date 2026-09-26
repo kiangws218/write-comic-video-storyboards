@@ -34,8 +34,11 @@ PRODUCTION_NOTE_RE = re.compile(
 LEGACY_FIELD_RE = re.compile(r"^(?:景别|构图|运镜|画面内容)[：:]", re.MULTILINE)
 ENVIRONMENT_RE = re.compile(r"^环境参考[：:]", re.MULTILINE)
 SOUND_DESIGN_RE = re.compile(
-    r"(?m)^\s*(?:声音设计|音频)[：:]\s*\S+",
+    r"(?m)^\s*【声音设计】[：:]\s*\S+",
     re.IGNORECASE,
+)
+REMOVED_ENVIRONMENT_AUDIO_RE = re.compile(
+    r"(?m)^\s*(?:环境音[：:]|【环境音】[：:])"
 )
 OPTICAL_CRAFT_RE = re.compile(
     r"(?:24|28|35|50|85|100|135)\s*mm|焦段|浅景深|大景深|全景深|焦平面|"
@@ -71,7 +74,7 @@ MAJOR_ACTION_RE = re.compile(
 )
 CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|拉远|横移|环绕|手持")
 AUDIO_HIDDEN_VISUAL_RE = re.compile(
-    r"(?m)^\s*(?:声音设计|音频)[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
+    r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
     r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
 )
 ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
@@ -104,10 +107,15 @@ PURE_OBJECT_SHOT_RE = re.compile(
     r"人物(?:与手|和手)?均未入画|人物未入画|画面(?:没有|不含)人物|物件特写|说明性物件镜头"
 )
 HAND_DETAIL_SHOT_RE = re.compile(r"手部(?:极近景|近景|特写)|交叠手部|画面只显示这一只手")
-SHOT_FIELD_NAMES = ("场景环境", "环境音", "镜头设计", "可见动作", "台词与语气", "光影布光")
+SHOT_FIELD_NAMES = ("场景环境", "镜头设计", "可见动作", "台词与语气", "光影布光", "声音设计")
 SHOT_FIELD_RE = re.compile(
-    r"(?ms)^\s*(场景环境|环境音|镜头设计|可见动作|台词与语气|光影布光|声音设计|音频)[：:]\s*"
-    r"(.*?)(?=^\s*(?:场景环境|环境音|镜头设计|可见动作|台词与语气|光影布光|声音设计|音频)[：:]|\Z)"
+    r"(?ms)^\s*【(场景环境|镜头设计|可见动作|台词与语气|光影布光|声音设计)】[：:]\s*"
+    r"(.*?)(?=^\s*【(?:场景环境|镜头设计|可见动作|台词与语气|光影布光|声音设计)】[：:]|\Z)"
+)
+BACKGROUND_SUBJECT_COMPOSITION_RE = re.compile(
+    r"(?:人物|角色|少女|少年|女性|男性|男人|女人|手掌|手臂|脸部|侧脸|正脸|"
+    r"头盔|晶石|武器|道具)[^。；\r\n]{0,24}"
+    r"(?:位于画面|占据|压在|伸入|围住|遮挡|前景|主体|左侧|右侧|中央)"
 )
 SELF_CONTAINED_META_RE = re.compile(
     r"保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
@@ -196,8 +204,7 @@ def shot_field_values(block: str) -> dict[str, str]:
     """Return normalized re0-style fields from one ordinary shot."""
     values: dict[str, str] = {}
     for match in SHOT_FIELD_RE.finditer(block):
-        name = "声音设计" if match.group(1) == "音频" else match.group(1)
-        values[name] = match.group(2).strip()
+        values[match.group(1)] = match.group(2).strip()
     return values
 
 
@@ -317,7 +324,6 @@ def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str
 
 def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[str]:
     """Reject counted gaze targets that the independently generated shot never establishes."""
-    environment = fields.get("场景环境", "")
     action = fields.get("可见动作", "")
     errors: list[str] = []
     count_aliases = {
@@ -334,12 +340,12 @@ def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[
         noun = match.group("noun")
         established = re.search(
             rf"{count_aliases[count]}[^，,。；;\r\n]{{0,8}}{re.escape(noun)}",
-            environment,
+            action[: match.start()],
         )
         if not established:
             errors.append(
                 f"{shot_label}的可见动作把视线指向未在本镜建立的{count}{noun}；"
-                "请在场景环境中正向建立该群体，或改写为看向镜头/画面左侧外/画面右侧外。"
+                "请在【可见动作】开头正向建立该群体，或改写为看向镜头/画面左侧外/画面右侧外。"
             )
     return errors
 
@@ -347,9 +353,9 @@ def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[
 def boundary_fingerprint(block: str) -> tuple[set[str], str, set[str], set[str]]:
     """Return a small, explainable fingerprint for cross-clip coverage review."""
     fields = shot_field_values(block)
-    environment = fields.get("场景环境", "")
     camera = fields.get("镜头设计", "")
-    primary_clause = re.split(r"[，,；;。]", environment, maxsplit=1)[0]
+    action = fields.get("可见动作", "")
+    primary_clause = re.split(r"[，,；;。]", action, maxsplit=1)[0]
     subjects = {match.group(0) for match in SUBJECT_DESCRIPTOR_RE.finditer(primary_clause)}
     scale = (
         "close"
@@ -361,7 +367,7 @@ def boundary_fingerprint(block: str) -> tuple[set[str], str, set[str], set[str]]
         else ""
     )
     viewpoints = {term for term in VIEWPOINT_TERMS if term in camera}
-    props = {term for term in SALIENT_PROP_TERMS if term in environment or term in camera}
+    props = {term for term in SALIENT_PROP_TERMS if term in action or term in camera}
     return subjects, scale, viewpoints, props
 
 
@@ -433,7 +439,7 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
         return warnings
 
     if len(shot_map) >= 3 and not SOUND_DESIGN_RE.search(main_text):
-        warnings.append("全稿没有声音设计；请检查环境音、动作拟音、呼吸或静默是否能参与节奏。")
+        warnings.append("全稿没有【声音设计】；请检查环境底声、动作拟音、呼吸或静默是否能参与节奏。")
     if len(shot_map) >= 4 and not any(
         OPTICAL_CRAFT_RE.search(block) for _, block in shot_map.values()
     ):
@@ -728,8 +734,10 @@ def validate_source_ledger(
                 errors.append(f"{image}含多说话人且至少3个气泡；单镜需shared_reason。")
         for chars, clauses, targets in bubble_turns:
             if (chars >= 42 or clauses >= 3) and len(targets) < 2:
-                if not isinstance(panel.get("long_take_reason"), str) or not panel["long_take_reason"].strip():
-                    errors.append(f"{image}含{chars}字/{clauses}分句的长台词；必须至少两个目标分镜或登记long_take_reason。")
+                errors.append(
+                    f"{image}含{chars}字/{clauses}分句的长台词；必须拆到至少两个真正不同的目标分镜，"
+                    "long_take_reason不能豁免。"
+                )
             elif chars >= 28 and len(targets) < 2:
                 if not isinstance(panel.get("coverage_reason"), str) or not panel["coverage_reason"].strip():
                     errors.append(f"{image}的28–41字台词保留单镜时缺少coverage_reason。")
@@ -844,8 +852,8 @@ def validate_source_ledger(
                     normalized.append(compact_text(detail))
             if len(set(normalized)) != len(normalized):
                 errors.append(f"{target}重复登记同一表演细节。")
-        if count >= 42 and (not isinstance(entry.get("long_take_reason"), str) or not entry["long_take_reason"].strip()):
-            errors.append(f"{target}长台词保留单镜但缺少已兑现的长镜头理由。")
+        if count >= 42:
+            errors.append(f"{target}映射了{count}个有意义的日文台词字符；必须拆镜，不能登记长镜头例外。")
         intervals = entry.get("intervals")
         if not isinstance(intervals, list) or not intervals:
             errors.append(f"{target}缺少串行/并行表演估时间隔。")
@@ -1005,14 +1013,20 @@ def main() -> int:
             errors.extend(semantic_trigger_errors(fields, shot_label))
             errors.extend(counted_gaze_target_errors(fields, shot_label))
             missing_fields = [name for name in SHOT_FIELD_NAMES if not fields.get(name)]
-            if not fields.get("声音设计"):
-                missing_fields.append("声音设计")
             if missing_fields:
                 errors.append(
                     f"{shot_label}缺少独立字段：{', '.join(missing_fields)}；"
-                    "请按场景环境、环境音、镜头设计、可见动作、台词与语气、光影布光、声音设计输出。"
+                    "请按【场景环境】、【镜头设计】、【可见动作】、【台词与语气】、"
+                    "【光影布光】、【声音设计】输出。"
                 )
-            for field_name in ("场景环境", "环境音", "镜头设计", "可见动作", "光影布光", "声音设计"):
+            if REMOVED_ENVIRONMENT_AUDIO_RE.search(block):
+                errors.append(f"{shot_label}仍含已移除的环境音字段；请合并进【声音设计】并删除重复内容。")
+            if BACKGROUND_SUBJECT_COMPOSITION_RE.search(fields.get("场景环境", "")):
+                errors.append(
+                    f"{shot_label}的【场景环境】混入主体、道具位置或构图关系；"
+                    "这里只写可见背景，把相关内容移到【镜头设计】或【可见动作】。"
+                )
+            for field_name in ("场景环境", "镜头设计", "可见动作", "光影布光", "声音设计"):
                 field_text = fields.get(field_name, "")
                 meta_match = SELF_CONTAINED_META_RE.search(field_text)
                 if meta_match:
@@ -1032,9 +1046,9 @@ def main() -> int:
                     "否则按视觉焦点拆镜。"
                 )
             if dialogue_characters >= 42:
-                warnings.append(
+                errors.append(
                     f"{shot_label}含{dialogue_characters}个有意义的台词字符；"
-                    "默认应按语义节点拆镜，保留长镜头需通过long_take_reason与表演发展审计。"
+                    "必须按语义节点拆成至少两个真正不同的编号分镜，不能用long_take_reason豁免。"
                 )
             if speaker_count >= 2:
                 warnings.append(

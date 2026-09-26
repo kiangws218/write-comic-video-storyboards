@@ -25,13 +25,12 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 
 **分镜1（5秒）：**
 分镜参考 `[panel.jpg]`
-场景环境：{background}，深蓝灰放射线向外扩张。
-环境音：低环境底噪从画面后方持续传来。
-镜头设计：平视手部特写，固定镜头。
-可见动作：{action}
-台词与语气：{speech}
-光影布光：柔和侧光照亮手指轮廓，掌心保留浅影。
-声音设计：低环境底噪铺底，手指收紧时衣料轻响。
+【场景环境】：{background}，深蓝灰放射线向外扩张。
+【镜头设计】：平视手部特写，固定镜头。
+【可见动作】：{action}
+【台词与语气】：{speech}
+【光影布光】：柔和侧光照亮手指轮廓，掌心保留浅影。
+【声音设计】：低环境底噪从画面后方持续传来，手指收紧时衣料轻响。
 """
 
 
@@ -140,7 +139,7 @@ class ValidatorTests(unittest.TestCase):
     def test_official_template_quote_is_counted(self) -> None:
         long_line = "あ" * 50
         result = self.run_validator(storyboard(line=long_line))
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotEqual(result.returncode, 0)
         self.assertIn("含50个有意义的台词字符", result.stdout)
 
     def test_required_ledger_cannot_be_omitted(self) -> None:
@@ -148,12 +147,31 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("--source-ledger版本2", result.stdout)
 
-    def test_long_turn_requires_split_or_exception(self) -> None:
+    def test_long_turn_requires_split_without_exception(self) -> None:
         long_line = "あ" * 50
         ledger = valid_ledger(long_line)
+        ledger["panels"][0]["long_take_reason"] = "单镜内持续表演"
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "当前面板",
+            "details": ["手掌朝上", "手指稳定", "托住画外物件"],
+            "intervals": [{"speech_seconds": 2, "acting_seconds": 2}],
+            "long_take_reason": "单镜内持续表演",
+        }]
         result = self.run_validator(storyboard(line=long_line), ledger, True)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("必须至少两个目标分镜或登记long_take_reason", result.stdout)
+        self.assertIn("long_take_reason不能豁免", result.stdout)
+
+    def test_multiple_short_quotes_over_shot_limit_require_split(self) -> None:
+        line = "あ" * 22
+        original = f'人物：“{SHORT_LINE}”（清晰的中性音色，平静语气）。'
+        replacement = (
+            f'人物：“{line}”（清晰的中性音色，平静语气）。\n'
+            f'人物：“{line}”（清晰的中性音色，平静语气）。'
+        )
+        result = self.run_validator(storyboard().replace(original, replacement))
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("含44个有意义的台词字符", result.stdout)
 
     def test_source_locked_shot_requires_open_image_attestation(self) -> None:
         ledger = deepcopy(valid_ledger())
@@ -208,17 +226,27 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("单镜需shared_reason", result.stdout)
 
-    def test_sound_design_is_allowed(self) -> None:
-        text = storyboard().replace(
-            BACKGROUND,
-            BACKGROUND + "。\n声音设计：远处人声铺底，手指收紧时衣料轻响。",
-        )
-        result = self.run_validator(text, valid_ledger(), require_ledger=True)
+    def test_combined_sound_design_is_allowed(self) -> None:
+        result = self.run_validator(storyboard(), valid_ledger(), require_ledger=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("含音效或音乐字段", result.stdout)
-        audio_alias = text.replace("声音设计：", "音频：")
-        alias_result = self.run_validator(audio_alias, valid_ledger(), require_ledger=True)
-        self.assertEqual(alias_result.returncode, 0, alias_result.stdout + alias_result.stderr)
+
+    def test_removed_environment_audio_field_fails(self) -> None:
+        text = storyboard().replace(
+            "【镜头设计】：",
+            "环境音：低环境底噪从画面后方持续传来。\n【镜头设计】：",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("已移除的环境音字段", result.stdout)
+
+    def test_subject_composition_inside_environment_fails(self) -> None:
+        text = storyboard().replace(
+            f"【场景环境】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【场景环境】：少女位于画面左侧，暖色墙面填满背景。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("混入主体、道具位置或构图关系", result.stdout)
 
     def test_long_dialogue_with_thin_acting_emits_warning(self) -> None:
         long_line = "あ" * 30
@@ -235,7 +263,7 @@ class ValidatorTests(unittest.TestCase):
             "平视手部特写，固定镜头。",
             "35mm双人中近景，摄影机小幅横移，焦点跟随手部。",
         ).replace(
-            "低环境底噪铺底，手指收紧时衣料轻响。",
+            "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
             "晶石轻碰掌心，拒绝声与手腕后撤同步。",
         )
         result = self.run_validator(text)
@@ -254,7 +282,7 @@ class ValidatorTests(unittest.TestCase):
             "平视手部特写，固定镜头。",
             "35mm双人中近景，摄影机跟随物件往返移动，句末在双方交接处稳住。",
         ).replace(
-            "低环境底噪铺底，手指收紧时衣料轻响。",
+            "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
             "第一声拒绝带短促回响，第二声与手腕后撤同步并迅速收干。",
         )
         result = self.run_validator(text)
@@ -288,13 +316,12 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-场景环境：{BACKGROUND}，微尘漂浮。
-环境音：低环境底噪从画面后方持续传来。
-镜头设计：50mm平视手部特写，固定镜头。
-可见动作：手掌朝上，手指稳定托住物件。
-台词与语气：无台词。
-光影布光：柔和侧光照亮手指，微尘停在暗部。
-声音设计：低环境底噪铺底，衣料发出轻响。
+【场景环境】：{BACKGROUND}，微尘漂浮。
+【镜头设计】：50mm平视手部特写，固定镜头。
+【可见动作】：手掌朝上，手指稳定托住物件。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮手指，微尘停在暗部。
+【声音设计】：低环境底噪从画面后方持续传来，衣料发出轻响。
 """
             for i in range(1, 5)
         )
@@ -348,7 +375,7 @@ class ValidatorTests(unittest.TestCase):
     def test_audio_line_with_hidden_visual_action_warns(self) -> None:
         text = storyboard().replace(
             BACKGROUND,
-            BACKGROUND + "。\n声音设计：人物转身走向门并打开门，随后传来门轴声。",
+            BACKGROUND + "。\n【声音设计】：人物转身走向门并打开门，随后传来门轴声。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -358,13 +385,12 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-场景环境：窗边蒸汽缓慢上升，{BACKGROUND}。
-环境音：窗边风声和蒸汽轻响从画面右侧传来。
-镜头设计：50mm平视近景，固定镜头。
-可见动作：手掌朝上，手指稳定托住物件。
-台词与语气：无台词。
-光影布光：逆光穿过蒸汽形成微尘可见的光束。
-声音设计：低环境底噪铺底，蒸汽发出轻响。
+【场景环境】：窗边蒸汽缓慢上升，{BACKGROUND}。
+【镜头设计】：50mm平视近景，固定镜头。
+【可见动作】：手掌朝上，手指稳定托住物件。
+【台词与语气】：无台词。
+【光影布光】：逆光穿过蒸汽形成微尘可见的光束。
+【声音设计】：窗边风声从画面右侧传来，蒸汽发出轻响。
 """
             for i in range(1, 5)
         )
@@ -374,7 +400,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotIn("多数缺少可见依据", result.stdout)
 
     def test_re0_fields_are_required(self) -> None:
-        text = storyboard().replace("镜头设计：", "摄影设计：")
+        text = storyboard().replace("【镜头设计】：", "【摄影设计】：")
         result = self.run_validator(text)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("缺少独立字段：镜头设计", result.stdout)
@@ -460,8 +486,11 @@ class ValidatorTests(unittest.TestCase):
 
     def test_terminal_uncited_coverage_before_source_shot_warns(self) -> None:
         base = storyboard().replace(
-            f"场景环境：{BACKGROUND}，深蓝灰放射线向外扩张。",
-            "场景环境：浅发少女位于画面左侧，木杯占据右前景，暖色墙面填满背景。",
+            f"【场景环境】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【场景环境】：暖色墙面填满背景。",
+        ).replace(
+            "人物手掌朝上，手指稳定托住画外物件。",
+            "浅发少女位于画面左侧，木杯占据右前景；少女手指稳定托住杯柄。",
         ).replace("平视手部特写", "平视人物近景")
         first = base.replace("分镜参考 `[panel.jpg]`\n", "")
         second = base.split("## 【片段1】", 1)[1]

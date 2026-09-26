@@ -38,16 +38,15 @@ Each camera setup receives one numbered shot and positive integer duration. A ha
 ## 【片段1】
 **分镜1（6秒）：**
 分镜参考 `[00.jpg]`
-场景环境：当前可见空间/图形场/近景表面，主体位置、层次、材质和环境运动。
-环境音：连续空间底声、远近、遮挡和声像。
-镜头设计：景别/焦段、机位与轴线、构图、景深、焦点、起幅、一个主运镜和落幅。
-可见动作：自足起始姿态，经语义节点发展人物、道具、头脸、微表情、重心和延迟运动，落到明确状态。
-台词与语气：角色说：“……”（音色、语气、情绪及必要的语速、停顿、重音）；无台词写“无台词”。
-光影布光：光源方向、人物位置/遮挡、主辅光、明暗区、局部高光、材质和有依据的空气效果。
-声音设计：可见动作拟音、呼吸/静默、台词距离和关键音画同步。
+【场景环境】：只写镜头内可见的物理背景、图形场或铺满画面的表面，以及背景自身的材质、层次和运动；不写人物、动物、前景道具、主体位置、主体遮挡或构图关系。
+【镜头设计】：景别/焦段、机位与轴线、主体构图、景深、焦点、起幅、一个主运镜和落幅。
+【可见动作】：先建立人物、动物、道具、主体位置、前后层次、重叠遮挡和自足起始姿态，再经语义节点发展头脸、微表情、手/道具、重心和延迟运动，落到明确状态。
+【台词与语气】：角色说：“……”（音色、语气、情绪及必要的语速、停顿、重音）；无台词写“无台词”。
+【光影布光】：光源方向、人物位置/遮挡、主辅光、明暗区、局部高光、材质和有依据的空气效果。
+【声音设计】：把连续环境底声、远近/遮挡/声像、动作拟音、呼吸/静默、台词距离和关键音画同步写成一段；同一声音只出现一次。
 ```
 
-Keep all seven fields separate and complete. Do not output legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
+Keep all six bracketed fields separate and complete. Do not output the removed `环境音` field or legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
 
 ## Color, environment, and audio
 
@@ -57,7 +56,7 @@ Color precedence: explicit direction/reference; visible colored occurrence of th
 
 Environment reference assets contain space/material/weather/light, not people, equipment, routes, staging zones, or narrative functions.
 
-`环境音` establishes location bed and perspective. `声音设计` selects one or two useful Foley, breath/body, silence, dialogue-treatment, or synchronization events. Every emphasized sound needs a visible/supportable cause or established environment. Bind it to `句首`, exact Japanese in `「」`, `句末`, contact, or action completion. Audio cannot imply an unseen impact, object, injury, word, or event.
+`【声音设计】` opens with the continuous location bed and its perspective, then adds only useful Foley, breath/body, silence, dialogue treatment, or synchronization events. Do not restate the same wind, room tone, cloth, footsteps, or prop sound in separate clauses. Every emphasized sound needs a visible/supportable cause or established environment. Bind it to `句首`, exact Japanese in `「」`, `句末`, contact, or action completion. Audio cannot imply an unseen impact, object, injury, word, or event.
 
 ## Ledger minimum and final audit
 
