@@ -1,0 +1,2532 @@
+{
+  "version": 2,
+  "panels": [
+    {
+      "image": "第13话_16、17、18、19_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅色留白与春子深蓝衣料形成干净背景，领口布面占据画面下半部。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm肩颈近景固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "うん……これでいい。",
+          "status": "mapped",
+          "script_text": "うん……これでいい。",
+          "seconds": 1.35,
+          "target": "片段1/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "淡米色漫画留白与少量放射线包围黄色小魔物，画框边缘只露出深蓝衣料。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm手部与魔物中近景快速推近",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "さあ、ここで怒りをぶつけて。",
+          "status": "mapped",
+          "script_text": "さあ、ここで怒りをぶつけて。",
+          "seconds": 0.9,
+          "target": "片段1/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "キイイイイッ！",
+          "status": "mapped",
+          "script_text": "キイイイイッ！",
+          "seconds": 0.9,
+          "target": "片段1/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "淡米色漫画留白与少量放射线包围黄色小魔物，画框边缘只露出深蓝衣料。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm手部与魔物中近景快速推近",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_16、17、18、19_004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "淡米色漫画留白与少量放射线包围黄色小魔物，画框边缘只露出深蓝衣料。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm手部与魔物中近景快速推近",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_16、17、18、19_005.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅色留白与柔和粉色晕染填满春子脸侧，深蓝发丝和衣领围住下缘。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm正侧脸特写缓慢前推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "はぁ……効いてる。柔らかいものが、こつこつ当たる感じ。",
+          "status": "mapped",
+          "script_text": "はぁ……効いてる。柔らかいものが、こつこつ当たる感じ。",
+          "seconds": 1.8,
+          "target": "片段1/分镜3"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_006.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变与白色放射线填满画面，深蓝布面褶皱形成下缘暗区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm遮挡式近景从魔物皱起的脸轻移到春子的侧脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ハッ、ハッ……うえん……",
+          "status": "mapped",
+          "script_text": "ハッ、ハッ……うえん……",
+          "seconds": 1.12,
+          "target": "片段2/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "はぁ……すごい。もう少し強くして。",
+          "status": "mapped",
+          "script_text": "はぁ……すごい。もう少し強くして。",
+          "seconds": 1.12,
+          "target": "片段2/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_007.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变与白色放射线填满画面，深蓝布面褶皱形成下缘暗区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm遮挡式近景从魔物皱起的脸轻移到春子的侧脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_16、17、18、19_008.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变与白色放射线填满画面，深蓝布面褶皱形成下缘暗区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm遮挡式近景从魔物皱起的脸轻移到春子的侧脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_16、17、18、19_009.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "暮色森林与灰蓝漫画阴影铺在青身后，画外传来的声源方向留成深色空区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的胸上近景固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "もう、何なのよ……でも、そんなに気持ちいいの？",
+          "status": "mapped",
+          "script_text": "もう、何なのよ……でも、そんなに気持ちいいの？",
+          "seconds": 1.8,
+          "target": "片段3/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_010.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "灰白漫画留空与一圈暮色树林剪影围住人物侧脸，背景细节被压成柔暗色块。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的侧脸特写固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "この大陸では、魔物をこう使うのが普通なの？　変なのは私の方かも……",
+          "status": "mapped",
+          "script_text": "この大陸では、魔物をこう使うのが普通なの？　変なのは私の方かも……",
+          "seconds": 1.8,
+          "target": "片段3/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_011.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "湖岸草地与暮色树林围住人物，浅色对话留白把背景切成上下两层。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm双人中近景从春子掌中的疲惫小魔物移到青的正脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "私だけ使うのも不公平でしょ。四時間交代にしない？",
+          "status": "mapped",
+          "script_text": "私だけ使うのも不公平でしょ。四時間交代にしない？",
+          "seconds": 1.35,
+          "target": "片段4/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "いらない！　本当にいらないから！",
+          "status": "mapped",
+          "script_text": "いらない！　本当にいらないから！",
+          "seconds": 1.35,
+          "target": "片段4/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_16、17、18、19_012.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉色渐变和稀疏漫画汗滴符号填满两人之间，树林只剩画面边缘的暗色轮廓。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm过肩双人近景",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "もっと直接使うと楽になるよ。参考までに、かなり恥ずかしいけど……",
+          "status": "mapped",
+          "script_text": "もっと直接使うと楽になるよ。参考までに、かなり恥ずかしいけど……",
+          "seconds": 1.12,
+          "target": "片段4/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "うわっ、無理！　絶対に嫌！",
+          "status": "mapped",
+          "script_text": "うわっ、無理！　絶対に嫌！",
+          "seconds": 1.12,
+          "target": "片段4/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_20_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅色资料卡底、黄色香蕉形图示和整齐排版文字填满画面。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm正面图鉴式构图固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "旁白",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "narration",
+          "source_text": "ヤナナ。バナナに似た魔物。",
+          "status": "mapped",
+          "script_text": "ヤナナ。バナナに似た魔物。",
+          "seconds": 0.9,
+          "target": "片段5/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_20_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "靛蓝夜空压在浓密树冠上方，林间空隙有微弱月色，枝叶形成深浅层次。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "24mm森林大全景缓慢下摇",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_21_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "篝火照亮近处草地与树根，远层树林沉在靛蓝黑影中，一根斜枝横过画面上方。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "35mm营地中景先停在熟睡的春子",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "イルルン……",
+          "status": "mapped",
+          "script_text": "イルルン……",
+          "seconds": 2.25,
+          "target": "片段5/分镜4"
+        }
+      ]
+    },
+    {
+      "image": "第13话_21_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "篝火照亮近处草地与树根，远层树林沉在靛蓝黑影中，一根斜枝横过画面上方。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "35mm营地中景先停在熟睡的春子",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_22_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "粗糙树皮和交错枝干填满前后景，夜色林冠形成深绿黑背景。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm低机位中近景跟随小魔物沿树干下爬",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "イルルン！？",
+          "status": "mapped",
+          "script_text": "イルルン！？",
+          "seconds": 1.8,
+          "target": "片段6/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_22_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "粗糙树皮和交错枝干填满前后景，夜色林冠形成深绿黑背景。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm低机位中近景跟随小魔物沿树干下爬",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_22_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "月色树林、粗树干和斜枝构成封闭角落，远层叶片形成冷青散景。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm青与小魔物双人中近景轻推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ごめんね、つらかったでしょう。もう捕まらないでね、分かった？",
+          "status": "mapped",
+          "script_text": "ごめんね、つらかったでしょう。もう捕まらないでね、分かった？",
+          "seconds": 1.35,
+          "target": "片段6/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "イルルン！　イルルン！",
+          "status": "mapped",
+          "script_text": "イルルン！　イルルン！",
+          "seconds": 1.35,
+          "target": "片段6/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_23_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "月色树林、粗树干和斜枝构成封闭角落，远层叶片形成冷青散景。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm青与小魔物双人中近景轻推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_23_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "暖灰漫画渐变替代树林细节，青的深色衣袖和白发在边缘形成包围。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm青的脸部与掌中魔物近景缓慢前推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "でも……ほら。もう放してあげるから、さっき彼女にしたこと、私にも一度だけしてくれる？",
+          "status": "mapped",
+          "script_text": "でも……ほら。もう放してあげるから、さっき彼女にしたこと、私にも一度だけしてくれる？",
+          "seconds": 2.25,
+          "target": "片段7/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_23_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "暖灰漫画渐变替代树林细节，青的深色衣袖和白发在边缘形成包围。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm青的脸部与掌中魔物近景缓慢前推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_23_004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "暖棕色渐变与大片留白围住魔物和青的侧脸，树林细节完全退去。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm魔物正脸特写切到青的侧脸与它抬起的短肢",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "小魔物",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ぼ、僕は何も見てないよ……やっぱり、やめた方が……",
+          "status": "mapped",
+          "script_text": "ぼ、僕は何も見てないよ……やっぱり、やめた方が……",
+          "seconds": 0.9,
+          "target": "片段7/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "近くに来てくれるの？",
+          "status": "mapped",
+          "script_text": "近くに来てくれるの？",
+          "seconds": 0.9,
+          "target": "片段7/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_23_005.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "暖棕色渐变与大片留白围住魔物和青的侧脸，树林细节完全退去。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm魔物正脸特写切到青的侧脸与它抬起的短肢",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_23_006.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "暖棕色渐变与大片留白围住魔物和青的侧脸，树林细节完全退去。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm魔物正脸特写切到青的侧脸与它抬起的短肢",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_24_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "红白冲击底与深蓝衣料褶皱填满画面，黄色魔物被手臂和衣襟遮住大半。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm遮挡式手部特写快速推近",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "待って、何を――きゃっ！",
+          "status": "mapped",
+          "script_text": "待って、何を――きゃっ！",
+          "seconds": 1.35,
+          "target": "片段8/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_24_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "红白冲击底与深蓝衣料褶皱填满画面，黄色魔物被手臂和衣襟遮住大半。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm遮挡式手部特写快速推近",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_24_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变、白色留空和密集心跳线围住青的脸、双手与衣料遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm反应特写只在青的眼睛、手指和肩线之间轻移",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "何したの！　まだ心の準備が……これは反則よ！",
+          "status": "mapped",
+          "script_text": "何したの！　まだ心の準備が……これは反則よ！",
+          "seconds": 1.12,
+          "target": "片段8/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "息づかいまで分かる……私まで変になりそう……",
+          "status": "mapped",
+          "script_text": "息づかいまで分かる……私まで変になりそう……",
+          "seconds": 1.12,
+          "target": "片段8/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_24_004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变、白色留空和密集心跳线围住青的脸、双手与衣料遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm反应特写只在青的眼睛、手指和肩线之间轻移",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_24_005.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "粉红渐变、白色留空和密集心跳线围住青的脸、双手与衣料遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm反应特写只在青的眼睛、手指和肩线之间轻移",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_24_006.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "靛蓝夜林与稀疏树冠铺在人物后方，篝火暖光从画面外侧渗入。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "65mm双层构图",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "何してるの？",
+          "status": "mapped",
+          "script_text": "何してるの？",
+          "seconds": 0.68,
+          "target": "片段8/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ひっ！",
+          "status": "mapped",
+          "script_text": "ひっ！",
+          "seconds": 0.68,
+          "target": "片段8/分镜3"
+        }
+      ]
+    },
+    {
+      "image": "第13话_25_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "夜林暗绿树影围住两人，篝火暖光在画面下缘跳动，远处天空呈深靛蓝。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm双人中近景从青慌乱整理衣襟横移到春子冷静的侧脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "起きてたの！？　これは、その……あなたが思ってるようなことじゃない！",
+          "status": "mapped",
+          "script_text": "起きてたの！？　これは、その……あなたが思ってるようなことじゃない！",
+          "seconds": 1.8,
+          "target": "片段9/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_25_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "深蓝灰漫画渐变填满春子侧脸后方，篝火暖色只在画面下缘轻微跳动。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm春子侧脸特写固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "その子を持って、何してたの。今は午前三時よ。",
+          "status": "mapped",
+          "script_text": "その子を持って、何してたの。今は午前三時よ。",
+          "seconds": 1.35,
+          "target": "片段9/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_26_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "灰白漫画留空把人物从夜林中剥离，画面边缘残留少量深蓝树影。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的正脸特写固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "え？　それがどうしたの？",
+          "status": "mapped",
+          "script_text": "え？　それがどうしたの？",
+          "seconds": 1.35,
+          "target": "片段10/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_26_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅色漫画留白与少量深蓝夜林色块围住人物头肩，画面下方是深色衣料暗区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm春子中近景轻微后移",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "今度は私の番。四時間交代って言ったでしょ。",
+          "status": "mapped",
+          "script_text": "今度は私の番。四時間交代って言ったでしょ。",
+          "seconds": 1.8,
+          "target": "片段10/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_27_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白渐变和一小片深蓝夜林剪影围住人物侧脸，远去人影落在画面左缘。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的侧脸近景固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "もう一度だけ使ったら、戻って寝るから……",
+          "status": "mapped",
+          "script_text": "もう一度だけ使ったら、戻って寝るから……",
+          "seconds": 1.35,
+          "target": "片段10/分镜3"
+        }
+      ]
+    },
+    {
+      "image": "第13话_27_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "狭长画幅内是深蓝夜空、厚云与两侧黑色树冠，林下完全不可见。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "28mm仰角天空固定构图",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_28_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "靛蓝夜林与及腰高草连成暗色墙面，草叶之间露出一条不规则黑缝。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm双人近景先停在两人同步侧耳的脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "今の音、聞こえた？",
+          "status": "mapped",
+          "script_text": "今の音、聞こえた？",
+          "seconds": 0.75,
+          "target": "片段11/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "聞こえた。",
+          "status": "mapped",
+          "script_text": "聞こえた。",
+          "seconds": 0.75,
+          "target": "片段11/分镜1"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "あそこに何かいる！",
+          "status": "mapped",
+          "script_text": "あそこに何かいる！",
+          "seconds": 0.75,
+          "target": "片段11/分镜1"
+        }
+      ],
+      "shared_reason": "同一双人关系镜头内完成提问、回应与即时反应，轴线和接触连续"
+    },
+    {
+      "image": "第13话_28_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "靛蓝夜林与及腰高草连成暗色墙面，草叶之间露出一条不规则黑缝。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm双人近景先停在两人同步侧耳的脸",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_29_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "被压倒的高草、夜云和深色树墙形成倾斜纵深，枯叶悬在半空。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "24mm低机位广角从草缝仰看",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "えっ！？　あなたは、あの……！",
+          "status": "mapped",
+          "script_text": "えっ！？　あなたは、あの……！",
+          "seconds": 2.25,
+          "target": "片段12/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_29_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "被压倒的高草、夜云和深色树墙形成倾斜纵深，枯叶悬在半空。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "24mm低机位广角从草缝仰看",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_29_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "夜林树干和浓密灌木围住跪地的矮人，后方黑暗压成厚重阴影。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm矮人正面中近景缓慢前推",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "矮人",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "おお……あの日、魔物の素材で慰めていた娘か。",
+          "status": "mapped",
+          "script_text": "おお……あの日、魔物の素材で慰めていた娘か。",
+          "seconds": 1.12,
+          "target": "片段12/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ああっ！　その話はしないで！",
+          "status": "mapped",
+          "script_text": "ああっ！　その話はしないで！",
+          "seconds": 1.12,
+          "target": "片段12/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_30_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "狭窄林道穿过深色树墙，夜云压低天空，远处草木被看不见的重量连续推开。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "35mm三人侧向中景随矮人起跑横移",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "矮人",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "挨拶はあとだ。今は逃げるぞ！",
+          "status": "mapped",
+          "script_text": "挨拶はあとだ。今は逃げるぞ！",
+          "seconds": 1.35,
+          "target": "片段13/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_30_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "狭窄林道被深色树墙夹住，后方草木持续向两侧倾倒，夜云在树梢间快速掠过。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "50mm青的侧向跟拍近景在她回望时反向轻摇",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "矮人",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "後ろに厄介なのがいる！",
+          "status": "mapped",
+          "script_text": "後ろに厄介なのがいる！",
+          "seconds": 0.68,
+          "target": "片段13/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "魔物に追われてるの？",
+          "status": "mapped",
+          "script_text": "魔物に追われてるの？",
+          "seconds": 0.68,
+          "target": "片段13/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_31_001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "褐灰色粗糙表皮与湿亮褶皱填满整个画面，边缘没有可辨树林。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "100mm极近景固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_31_002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "褐灰色粗糙表皮与湿亮褶皱填满整个画面，边缘没有可辨树林。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "100mm极近景固定机位",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_31_003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝夜空、翻涌云层和黑色树冠围住从林后升起的巨大灰褐轮廓。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的侧眼特写起幅",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一语义节点内以动作和反应共同承载对白",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "普段は言わないけど……これは、あまりにもアレに似すぎてる！",
+          "status": "mapped",
+          "script_text": "普段は言わないけど……これは、あまりにもアレに似すぎてる！",
+          "seconds": 1.12,
+          "target": "片段13/分镜4"
+        },
+        {
+          "id": "b2",
+          "speaker": "巨兽",
+          "speaker_evidence": "当前原格气泡归属与连续镜头语义",
+          "kind": "dialogue",
+          "source_text": "ギャアアアッ！",
+          "status": "mapped",
+          "script_text": "ギャアアアッ！",
+          "seconds": 1.12,
+          "target": "片段13/分镜4"
+        }
+      ]
+    },
+    {
+      "image": "第13话_31_004.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝夜空、翻涌云层和黑色树冠围住从林后升起的巨大灰褐轮廓。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm青的侧眼特写起幅",
+        "visible_subjects": [
+          "当前原格可见主体"
+        ],
+        "relations": [
+          "主体位置、遮挡与接触关系按当前原格锁定"
+        ],
+        "forbidden_inferences": [
+          "原格未建立的新人物、新道具与新事件"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "浅色留白与春子深蓝衣料形成干净背景，领口布面占据画面下半部。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段1/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_002.jpg",
+        "第13话_16、17、18、19_003.jpg",
+        "第13话_16、17、18、19_004.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "淡米色漫画留白与少量放射线包围黄色小魔物，画框边缘只露出深蓝衣料。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "target": "片段1/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_005.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "浅色留白与柔和粉色晕染填满春子脸侧，深蓝发丝和衣领围住下缘。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段2/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_006.jpg",
+        "第13话_16、17、18、19_007.jpg",
+        "第13话_16、17、18、19_008.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "粉红渐变与白色放射线填满画面，深蓝布面褶皱形成下缘暗区。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "target": "片段3/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_009.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "暮色森林与灰蓝漫画阴影铺在青身后，画外传来的声源方向留成深色空区。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段3/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_010.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "灰白漫画留空与一圈暮色树林剪影围住人物侧脸，背景细节被压成柔暗色块。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段4/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_011.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "湖岸草地与暮色树林围住人物，浅色对话留白把背景切成上下两层。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段4/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_16、17、18、19_012.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "粉色渐变和稀疏漫画汗滴符号填满两人之间，树林只剩画面边缘的暗色轮廓。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段5/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_20_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "浅色资料卡底、黄色香蕉形图示和整齐排版文字填满画面。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段5/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "viewed_while_writing": true,
+      "evidence": "同片段标题资料卡提供的文字与图示",
+      "purpose": "拆分图鉴说明以满足对白时长并改变信息焦点",
+      "background_excerpt": "浅色资料卡底和整齐的功能说明文字填满画面，黄色图示缩在左上角。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段5/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_20_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "靛蓝夜空压在浓密树冠上方，林间空隙有微弱月色，枝叶形成深浅层次。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": []
+    },
+    {
+      "target": "片段5/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_21_001.jpg",
+        "第13话_21_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "篝火照亮近处草地与树根，远层树林沉在靛蓝黑影中，一根斜枝横过画面上方。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段6/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_22_001.jpg",
+        "第13话_22_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "粗糙树皮和交错枝干填满前后景，夜色林冠形成深绿黑背景。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段6/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_22_003.jpg",
+        "第13话_23_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "月色树林、粗树干和斜枝构成封闭角落，远层叶片形成冷青散景。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P",
+        "G"
+      ]
+    },
+    {
+      "target": "片段7/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_23_002.jpg",
+        "第13话_23_003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "暖灰漫画渐变替代树林细节，青的深色衣袖和白发在边缘形成包围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段7/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_23_004.jpg",
+        "第13话_23_005.jpg",
+        "第13话_23_006.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "暖棕色渐变与大片留白围住魔物和青的侧脸，树林细节完全退去。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P",
+        "G"
+      ]
+    },
+    {
+      "target": "片段8/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_24_001.jpg",
+        "第13话_24_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "红白冲击底与深蓝衣料褶皱填满画面，黄色魔物被手臂和衣襟遮住大半。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "target": "片段8/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_24_003.jpg",
+        "第13话_24_004.jpg",
+        "第13话_24_005.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "粉红渐变、白色留空和密集心跳线围住青的脸、双手与衣料遮挡。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P",
+        "G"
+      ]
+    },
+    {
+      "target": "片段8/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_24_006.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "靛蓝夜林与稀疏树冠铺在人物后方，篝火暖光从画面外侧渗入。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段9/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_25_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "夜林暗绿树影围住两人，篝火暖光在画面下缘跳动，远处天空呈深靛蓝。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段9/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_25_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "深蓝灰漫画渐变填满春子侧脸后方，篝火暖色只在画面下缘轻微跳动。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段10/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_26_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "灰白漫画留空把人物从夜林中剥离，画面边缘残留少量深蓝树影。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段10/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_26_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "浅色漫画留白与少量深蓝夜林色块围住人物头肩，画面下方是深色衣料暗区。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "target": "片段10/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_27_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "灰白渐变和一小片深蓝夜林剪影围住人物侧脸，远去人影落在画面左缘。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段10/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_27_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "狭长画幅内是深蓝夜空、厚云与两侧黑色树冠，林下完全不可见。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": []
+    },
+    {
+      "target": "片段11/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_28_001.jpg",
+        "第13话_28_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "靛蓝夜林与及腰高草连成暗色墙面，草叶之间露出一条不规则黑缝。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段12/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_29_001.jpg",
+        "第13话_29_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "被压倒的高草、夜云和深色树墙形成倾斜纵深，枯叶悬在半空。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ]
+    },
+    {
+      "target": "片段12/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_29_003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "夜林树干和浓密灌木围住跪地的矮人，后方黑暗压成厚重阴影。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    },
+    {
+      "target": "片段13/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_30_001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "狭窄林道穿过深色树墙，夜云压低天空，远处草木被看不见的重量连续推开。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段13/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_30_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "狭窄林道被深色树墙夹住，后方草木持续向两侧倾倒，夜云在树梢间快速掠过。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ]
+    },
+    {
+      "target": "片段13/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_31_001.jpg",
+        "第13话_31_002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "褐灰色粗糙表皮与湿亮褶皱填满整个画面，边缘没有可辨树林。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "G"
+      ]
+    },
+    {
+      "target": "片段13/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_31_003.jpg",
+        "第13话_31_004.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前打开原格及同组连续动作原格",
+      "purpose": "锁定原格构图、事件节点与可见表演",
+      "background_excerpt": "深蓝夜空、翻涌云层和黑色树冠围住从林后升起的巨大灰褐轮廓。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ]
+    }
+  ],
+  "performance": [
+    {
+      "target": "片段1/分镜3",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "春子先咬住下唇压住反应，眼睑随短吸气慢慢收紧，肩线迟半拍向内缩",
+        "beats": [
+          "春子先咬住下唇压住反应，眼睑随短吸气慢慢收紧，肩线迟半拍向内缩",
+          "说到「効いてる」时眉心随后松开，嘴角不自觉扬起一点，脸颊暖色加深，最后下巴微收、呼吸恢复均匀"
+        ],
+        "coupling": "说到「効いてる」时眉心随后松开，嘴角不自觉扬起一点，脸颊暖色加深，最后下巴微收、呼吸恢复均匀",
+        "landing": "说到「効いてる」时眉心随后松开，嘴角不自觉扬起一点，脸颊暖色加深，最后下巴微收、呼吸恢复均匀；镜头按正文落幅"
+      },
+      "details": [
+        "春子先咬住下唇压住反应，眼睑随短吸气慢慢收紧，肩线迟半拍向内缩",
+        "说到「効いてる」时眉心随后松开，嘴角不自觉扬起一点，脸颊暖色加深，最后下巴微收、呼吸恢复均匀"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.8,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段3/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青起初仍望向画外声源，随后缓慢垂下眼睛",
+        "beats": [
+          "青起初仍望向画外声源，随后缓慢垂下眼睛",
+          "她先吞咽一下，眉尾跟着软下来，嘴角从嫌弃的下压变成迟疑的平直，心声末尾把手从耳侧放下，指尖在衣领前停住"
+        ],
+        "coupling": "她先吞咽一下，眉尾跟着软下来，嘴角从嫌弃的下压变成迟疑的平直，心声末尾把手从耳侧放下，指尖在衣领前停住",
+        "landing": "她先吞咽一下，眉尾跟着软下来，嘴角从嫌弃的下压变成迟疑的平直，心声末尾把手从耳侧放下，指尖在衣领前停住；镜头按正文落幅"
+      },
+      "details": [
+        "青起初仍望向画外声源，随后缓慢垂下眼睛",
+        "她先吞咽一下，眉尾跟着软下来，嘴角从嫌弃的下压变成迟疑的平直，心声末尾把手从耳侧放下，指尖在衣领前停住"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.8,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段4/分镜1",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "春子托起瘫软的小魔物，拇指轻拍它的背，先看魔物再抬眼对青",
+        "beats": [
+          "春子托起瘫软的小魔物，拇指轻拍它的背，先看魔物再抬眼对青",
+          "说到「四時間交代」时她用四根手指比出时长"
+        ],
+        "coupling": "说到「四時間交代」时她用四根手指比出时长",
+        "landing": "青的瞳孔先放大，嘴角随后收紧，头和肩同时后撤，双掌连续向外推两次，第二次拒绝时发梢迟半拍向前摆，最后双掌停住在两人之间；镜头按正文落幅"
+      },
+      "details": [
+        "春子托起瘫软的小魔物，拇指轻拍它的背，先看魔物再抬眼对青",
+        "说到「四時間交代」时她用四根手指比出时长"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.7,
+          "acting_seconds": 6
+        }
+      ]
+    },
+    {
+      "target": "片段4/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "春子把小魔物拢在掌心，身体略向青倾近，眼睛先左右避开再回到她脸上",
+        "beats": [
+          "春子把小魔物拢在掌心，身体略向青倾近，眼睛先左右避开再回到她脸上",
+          "青听到建议后眨眼一次，鼻尖皱起，嘴角先向下再猛地张开，肩膀和上身同时后撤，发梢迟半拍扫过肩线，最后脚后跟落地、重心落定"
+        ],
+        "coupling": "青听到建议后眨眼一次，鼻尖皱起，嘴角先向下再猛地张开，肩膀和上身同时后撤，发梢迟半拍扫过肩线，最后脚后跟落地、重心落定",
+        "landing": "青听到建议后眨眼一次，鼻尖皱起，嘴角先向下再猛地张开，肩膀和上身同时后撤，发梢迟半拍扫过肩线，最后脚后跟落地、重心落定；镜头按正文落幅"
+      },
+      "details": [
+        "春子把小魔物拢在掌心，身体略向青倾近，眼睛先左右避开再回到她脸上",
+        "青听到建议后眨眼一次，鼻尖皱起，嘴角先向下再猛地张开，肩膀和上身同时后撤，发梢迟半拍扫过肩线，最后脚后跟落地、重心落定"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.24,
+          "acting_seconds": 5
+        }
+      ]
+    },
+    {
+      "target": "片段6/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青双手托住小魔物，把它举到视线高度",
+        "beats": [
+          "青双手托住小魔物，把它举到视线高度",
+          "她先皱眉确认它没有受伤，语气放软时拇指离开它的侧腹，白发随抬手迟半拍贴回肩侧"
+        ],
+        "coupling": "她先皱眉确认它没有受伤，语气放软时拇指离开它的侧腹，白发随抬手迟半拍贴回肩侧",
+        "landing": "小魔物听到「もう捕まらないで」后眼角聚泪，短肢并拢连续鞠躬两次，每次回正都偷看青的表情，最后身体仍微微前倾；镜头按正文落幅"
+      },
+      "details": [
+        "青双手托住小魔物，把它举到视线高度",
+        "她先皱眉确认它没有受伤，语气放软时拇指离开它的侧腹，白发随抬手迟半拍贴回肩侧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.7,
+          "acting_seconds": 6
+        }
+      ]
+    },
+    {
+      "target": "片段7/分镜1",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青先抿嘴，视线从魔物眼睛滑向一侧，脸颊逐渐泛红",
+        "beats": [
+          "青先抿嘴，视线从魔物眼睛滑向一侧，脸颊逐渐泛红",
+          "她说到「私にも一度」时手指在魔物背后悄悄收紧又立刻放松，嘴角勉强扬起，肩线跟着轻抬"
+        ],
+        "coupling": "她说到「私にも一度」时手指在魔物背后悄悄收紧又立刻放松，嘴角勉强扬起，肩线跟着轻抬",
+        "landing": "小魔物的眼皮先抬高，头向一侧歪去，短肢迟半拍举起，最后停住在半空；镜头按正文落幅"
+      },
+      "details": [
+        "青先抿嘴，视线从魔物眼睛滑向一侧，脸颊逐渐泛红",
+        "她说到「私にも一度」时手指在魔物背后悄悄收紧又立刻放松，嘴角勉强扬起，肩线跟着轻抬"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.25,
+          "acting_seconds": 5
+        }
+      ]
+    },
+    {
+      "target": "片段7/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "小魔物先抱住头，眼珠左右乱转，嘴唇先张开再合拢却说不成句",
+        "beats": [
+          "小魔物先抱住头，眼珠左右乱转，嘴唇先张开再合拢却说不成句",
+          "青等了半拍，头略向它靠近，眼睛从躲闪改为正视"
+        ],
+        "coupling": "青等了半拍，头略向它靠近，眼睛从躲闪改为正视",
+        "landing": "青随动作睁大眼，下巴最终停住；镜头按正文落幅"
+      },
+      "details": [
+        "小魔物先抱住头，眼珠左右乱转，嘴唇先张开再合拢却说不成句",
+        "青等了半拍，头略向它靠近，眼睛从躲闪改为正视"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.8,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段8/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青的手指先无措地张开，又立刻抓回衣料边缘",
+        "beats": [
+          "青的手指先无措地张开，又立刻抓回衣料边缘",
+          "她连摇两下头，发梢迟半拍扫过脸侧，眼睛由惊慌睁大转为用力闭紧"
+        ],
+        "coupling": "她连摇两下头，发梢迟半拍扫过脸侧，眼睛由惊慌睁大转为用力闭紧",
+        "landing": "第一句结束后肩线短暂落下，下一次触感又让她倒吸气、眉心收拢，最后把下巴压向胸口；镜头按正文落幅"
+      },
+      "details": [
+        "青的手指先无措地张开，又立刻抓回衣料边缘",
+        "她连摇两下头，发梢迟半拍扫过脸侧，眼睛由惊慌睁大转为用力闭紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.24,
+          "acting_seconds": 5
+        }
+      ]
+    },
+    {
+      "target": "片段9/分镜1",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青猛地把衣襟拢好，手指忙乱地扣住布边，先看春子再避开视线，散乱发梢迟半拍落回肩侧",
+        "beats": [
+          "青猛地把衣襟拢好，手指忙乱地扣住布边，先看春子再避开视线，散乱发梢迟半拍落回肩侧",
+          "春子眼睛沿青的手、小魔物、衣襟依次扫过，眉毛没有抬起，只缓慢吸气"
+        ],
+        "coupling": "春子眼睛沿青的手、小魔物、衣襟依次扫过，眉毛没有抬起，只缓慢吸气",
+        "landing": "青说完后肩膀仍绷紧，手掌停在扣好的衣襟上；镜头按正文落幅"
+      },
+      "details": [
+        "青猛地把衣襟拢好，手指忙乱地扣住布边，先看春子再避开视线，散乱发梢迟半拍落回肩侧",
+        "春子眼睛沿青的手、小魔物、衣襟依次扫过，眉毛没有抬起，只缓慢吸气"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.8,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段12/分镜2",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "矮人抬起沉重的头，眼皮先掀开一道缝，确认青后鼻翼扩张",
+        "beats": [
+          "矮人抬起沉重的头，眼皮先掀开一道缝，确认青后鼻翼扩张",
+          "他一手撑膝、一手压住滑落的行囊，勉强挤出笑容，胡须迟半拍贴回胸甲"
+        ],
+        "coupling": "他一手撑膝、一手压住滑落的行囊，勉强挤出笑容，胡须迟半拍贴回胸甲",
+        "landing": "说到「あの日」时目光闪向一侧，青的画外喝止让他的笑立刻僵住、肩膀缩起，最后视线停在青的方向；镜头按正文落幅"
+      },
+      "details": [
+        "矮人抬起沉重的头，眼皮先掀开一道缝，确认青后鼻翼扩张",
+        "他一手撑膝、一手压住滑落的行囊，勉强挤出笑容，胡须迟半拍贴回胸甲"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.24,
+          "acting_seconds": 5
+        }
+      ]
+    },
+    {
+      "target": "片段13/分镜4",
+      "evidence": "当前原格可见头面、手部、重心与道具接触",
+      "card": {
+        "opening": "青的瞳孔沿画面上方缓慢抬起，眉心先收紧，随后因看清轮廓而僵住",
+        "beats": [
+          "青的瞳孔沿画面上方缓慢抬起，眉心先收紧，随后因看清轮廓而僵住",
+          "镜头越过树冠时，巨大灰褐长形魔物抬起圆形端部，湿润边缘轻微收缩，林梢被它的移动压向两侧"
+        ],
+        "coupling": "镜头越过树冠时，巨大灰褐长形魔物抬起圆形端部，湿润边缘轻微收缩，林梢被它的移动压向两侧",
+        "landing": "巨兽随即张开狭长裂隙发出尖啸，青最后重心落定；镜头按正文落幅"
+      },
+      "details": [
+        "青的瞳孔沿画面上方缓慢抬起，眉心先收紧，随后因看清轮廓而僵住",
+        "镜头越过树冠时，巨大灰褐长形魔物抬起圆形端部，湿润边缘轻微收缩，林梢被它的移动压向两侧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.24,
+          "acting_seconds": 5
+        }
+      ]
+    }
+  ]
+}
