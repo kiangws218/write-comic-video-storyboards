@@ -1,0 +1,1794 @@
+{
+  "version": 3,
+  "source_language": "zh",
+  "migration_review_required": [],
+  "panels": [
+    {
+      "image": "第13话_24_006.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "两人之间露出深蓝夜空，黑色树冠从下方和右缘围入，叶缘带少量冷绿色层次。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青的左半脸压满左前景，春子胸像位于右后景",
+        "visible_subjects": [
+          "青",
+          "春子"
+        ],
+        "relations": [
+          "春子从青右后方看向青"
+        ],
+        "forbidden_inferences": [
+          "额外人物"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "短问与惊叫在同一前后景反应构图中连续落下",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾指向右后景春子",
+          "kind": "dialogue",
+          "source_text": "你在做什么",
+          "status": "mapped",
+          "script_text": "何してるの？",
+          "seconds": 2,
+          "target": "片段14/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "惊叫框对应左前景青的张口反应",
+          "kind": "dialogue",
+          "source_text": "EEEEEEK!!!!",
+          "status": "mapped",
+          "script_text": "ひっ！",
+          "seconds": 1,
+          "target": "片段14/分镜1"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "突然询问"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "受惊反应"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1",
+            "t2"
+          ],
+          "targets": [
+            "片段14/分镜1"
+          ],
+          "merge_basis": "两句合计不足三秒，原格前后景构图完整承载问声与惊叫"
+        }
+      ]
+    },
+    {
+      "image": "第13话_25_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "墨青树干竖在两人后方，深绿灌木填满下部，人物之间留有低对比蓝灰夜色。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青占左侧三分之二扭身回看，春子右侧脸从右缘切入",
+        "visible_subjects": [
+          "青",
+          "春子",
+          "黄色魔物局部"
+        ],
+        "relations": [
+          "春子直视抱住魔物的青"
+        ],
+        "forbidden_inferences": [
+          "新道具",
+          "第三人"
+        ]
+      },
+      "coverage": "mixed",
+      "coverage_reason": "先以原格双人构图承载解释，再用有差异的过肩关系镜头承载短质问与紧接否认",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "上方气泡尾指向左侧青",
+          "kind": "dialogue",
+          "source_text": "你...你醒了?!!!",
+          "status": "mapped",
+          "script_text": "起きてたの！？これは、その……",
+          "seconds": 3.42,
+          "target": "片段15/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "中部气泡尾指向右侧春子",
+          "kind": "dialogue",
+          "source_text": "你拿着那东西做什么还把胸露在外面",
+          "status": "mapped",
+          "script_text": "その子を持って、胸を出して何してたの。",
+          "seconds": 3.53,
+          "target": "片段15/分镜2"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "下方气泡对应青的慌乱否认",
+          "kind": "dialogue",
+          "source_text": "不!这不是你想的那样...!!",
+          "status": "mapped",
+          "script_text": "ち、違う！あなたが思ってるようなことじゃない！",
+          "seconds": 4.48,
+          "target": "片段15/分镜2"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "被撞见后的解释卡顿"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "直接质问"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "立即否认"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1"
+          ],
+          "targets": [
+            "片段15/分镜1"
+          ]
+        },
+        {
+          "id": "g2",
+          "turn_ids": [
+            "t2",
+            "t3"
+          ],
+          "targets": [
+            "片段15/分镜2"
+          ],
+          "merge_basis": "质问与否认构成紧接问答，合计约八秒，可由一次过肩焦点接力清楚承载"
+        }
+      ]
+    },
+    {
+      "image": "第13话_25_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "均匀的蓝灰夜色柔焦铺满左侧，深棕发丝以大片表面填满右侧。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm左向侧脸特写，春子额发被上缘裁切，半垂黑眼居中，棕发铺满右半",
+        "visible_subjects": [
+          "春子"
+        ],
+        "relations": [
+          "春子看向画面左外"
+        ],
+        "forbidden_inferences": [
+          "青入画"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "单句时间陈述",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾指向春子",
+          "kind": "dialogue",
+          "source_text": "现在已经凌晨三点了",
+          "status": "mapped",
+          "script_text": "今は午前三時よ。",
+          "seconds": 2,
+          "target": "片段16/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_26_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "右侧露出低饱和蓝灰夜色，左侧与下方由白发和肤色表面填满。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm正面脸部特写，青双眼占上半画面，白发从上缘与两侧裁入，尖耳伸出右缘",
+        "visible_subjects": [
+          "青"
+        ],
+        "relations": [
+          "青看向右侧画外"
+        ],
+        "forbidden_inferences": [
+          "其他人物"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "同一说话人的一段连续困惑问句",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "两气泡均对应青的连续口型",
+          "kind": "dialogue",
+          "source_text": "HUH?",
+          "status": "mapped",
+          "script_text": "え？",
+          "seconds": 1,
+          "target": "片段16/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "两气泡均对应青的连续口型",
+          "kind": "dialogue",
+          "source_text": "那怎么了..?",
+          "status": "mapped",
+          "script_text": "それがどうしたの？",
+          "seconds": 2,
+          "target": "片段16/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_26_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "均匀暖灰图形底仅沿人物轮廓四周显露，中央被春子的深色衣料和黄色魔物填满。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "45mm平视胸像中近景，春子居中，黄色魔物被右臂夹在胸前，左手从左缘伸入弹指",
+        "visible_subjects": [
+          "春子",
+          "黄色魔物",
+          "弹指手"
+        ],
+        "relations": [
+          "春子夹住魔物并弹指"
+        ],
+        "forbidden_inferences": [
+          "夜林实景"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "春子两句说明包围魔物抗议，动作与声源关系需要同镜连续可读",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "上方气泡尾指向春子",
+          "kind": "dialogue",
+          "source_text": "轮到我用了",
+          "status": "mapped",
+          "script_text": "今度は私の番。",
+          "seconds": 2,
+          "target": "片段16/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "尖叫框紧贴黄色魔物张口位置",
+          "kind": "dialogue",
+          "source_text": "KYEEEEEE!!",
+          "status": "mapped",
+          "script_text": "キイイイッ！",
+          "seconds": 2,
+          "target": "片段16/分镜3"
+        },
+        {
+          "id": "b3",
+          "speaker": "春子",
+          "speaker_evidence": "下方气泡尾指向春子",
+          "kind": "dialogue",
+          "source_text": "我说了四个小时换一次",
+          "status": "mapped",
+          "script_text": "四時間交代って言ったでしょ。",
+          "seconds": 2.62,
+          "target": "片段16/分镜3"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "宣布交班"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "魔物抗议"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "重申约定"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1",
+            "t2",
+            "t3"
+          ],
+          "targets": [
+            "片段16/分镜3"
+          ],
+          "merge_basis": "三轮均围绕夹抱与弹指这组共同动作，台词短且同一胸像可同时读清手、魔物和春子表情"
+        }
+      ]
+    },
+    {
+      "image": "第13话_27_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "灰蓝夜林以柔焦铺满画面，左上和右缘只留模糊树影，地面没有额外可见物件。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青侧脸占右前景，春子背影在左后景离开",
+        "visible_subjects": [
+          "青",
+          "春子",
+          "黄色魔物"
+        ],
+        "relations": [
+          "青看着春子抱魔物离开"
+        ],
+        "forbidden_inferences": [
+          "春子正脸"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "单句说明与两个非词汇反应共享离去构图",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "上方气泡尾指向离去的春子",
+          "kind": "dialogue",
+          "source_text": "再用一次我就回去补觉",
+          "status": "mapped",
+          "script_text": "もう一度使ったら、戻って寝るから。",
+          "seconds": 3.2,
+          "target": "片段17/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "尖叫框随春子怀中魔物离去",
+          "kind": "dialogue",
+          "source_text": "KYEEEEE!!!",
+          "status": "omitted",
+          "omission_reason": "非词汇抗议保留在声音设计并随距离减弱"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "省略号气泡对应右前景青",
+          "kind": "dialogue",
+          "source_text": "...",
+          "status": "omitted",
+          "omission_reason": "无词停顿转为青的鼻息和目送表演"
+        }
+      ]
+    },
+    {
+      "image": "第13话_27_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝夜空、冷灰厚云与四周近黑的夜林树冠构成狭长林间天井。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "28mm仰视远景，狭长竖向夜空居中，厚云在上中部，树冠从下缘和两侧围合",
+        "visible_subjects": [
+          "云",
+          "树冠"
+        ],
+        "relations": [
+          "树冠围住夜空"
+        ],
+        "forbidden_inferences": [
+          "飞鸟",
+          "人物"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_28_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝夜空位于上方，墨青树冠与黑绿灌木沿下缘和左侧层层堆叠，人物之间可见一小块暗蓝林隙。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青占右前景，春子侧身位于左后景，两人共同看向左外",
+        "visible_subjects": [
+          "青",
+          "春子"
+        ],
+        "relations": [
+          "两人视线指向同一画外声源"
+        ],
+        "forbidden_inferences": [
+          "声源实体"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "短问、短答和方向确认在同一双人警戒构图中自然完成",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "上方气泡尾指向右前景青",
+          "kind": "dialogue",
+          "source_text": "你听到那动静了吗?",
+          "status": "mapped",
+          "script_text": "今の音、聞こえた？",
+          "seconds": 2,
+          "target": "片段18/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "短答气泡尾指向左后景春子",
+          "kind": "dialogue",
+          "source_text": "听到了",
+          "status": "mapped",
+          "script_text": "聞こえた。",
+          "seconds": 1.12,
+          "target": "片段18/分镜1"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "下方气泡尾指向右前景青",
+          "kind": "dialogue",
+          "source_text": "有什么东西在那边!",
+          "status": "mapped",
+          "script_text": "あそこに何かいる！",
+          "seconds": 2,
+          "target": "片段18/分镜1"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "确认听觉"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "短答确认"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "锁定方向"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1",
+            "t2",
+            "t3"
+          ],
+          "targets": [
+            "片段18/分镜1"
+          ],
+          "merge_basis": "三句总时长约五秒并共享同一画外声源，双人构图可用眼神先后清楚交接"
+        }
+      ]
+    },
+    {
+      "image": "第13话_28_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "密集蓝灰高草、黑色灌木和中央极暗的林地空隙填满画面。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "35mm低机位近景，高草从左右前景和下缘层层夹住中央暗区，灌木压在后景",
+        "visible_subjects": [
+          "高草",
+          "灌木"
+        ],
+        "relations": [
+          "草叶围住暗道"
+        ],
+        "forbidden_inferences": [
+          "追兵外形"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_29_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "乌云密布的灰蓝夜空占上半，黑绿树冠与高草沿右下围住人物，左缘被冲开的叶片形成动态遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人以强透视占左前景，青与春子缩在右后景",
+        "visible_subjects": [
+          "矮人",
+          "青",
+          "春子",
+          "两只黄色小魔物"
+        ],
+        "relations": [
+          "矮人落地在前，两人在后撤"
+        ],
+        "forbidden_inferences": [
+          "额外追兵"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "共同惊呼与落地同拍",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青与春子",
+          "speaker_evidence": "惊叹框对应右后景两人的同步反应",
+          "kind": "dialogue",
+          "source_text": "?!",
+          "status": "mapped",
+          "script_text": "えっ！？",
+          "seconds": 1.23,
+          "target": "片段19/分镜1"
+        }
+      ]
+    },
+    {
+      "image": "第13话_29_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "左下露出黑绿灌木，右侧与上方为蓝黑树干和夜色，白发之外没有图形留白。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "85mm正面脸部特写，青白发从上缘和两侧裁入，双眼居中睁大，尖耳伸出右缘",
+        "visible_subjects": [
+          "青"
+        ],
+        "relations": [
+          "青看向左外矮人"
+        ],
+        "forbidden_inferences": [
+          "矮人入画"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "单句辨认",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾指向青",
+          "kind": "dialogue",
+          "source_text": "诶?!你是那个",
+          "status": "mapped",
+          "script_text": "えっ！？あなたは、あの……！",
+          "seconds": 3.53,
+          "target": "片段19/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_29_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深灰树干与黑绿灌木填满后方，倒伏高草从下缘刺入前景，背包遮住大部分林地层次。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人胸像近景，头盔横贯上半，背包撑满后方",
+        "visible_subjects": [
+          "矮人"
+        ],
+        "relations": [
+          "矮人看向右侧画外青"
+        ],
+        "forbidden_inferences": [
+          "青入画"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "矮人辨认与青画外打断形成同一表情转折",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "矮人",
+          "speaker_evidence": "上方气泡尾指向中央矮人",
+          "kind": "dialogue",
+          "source_text": "哦...!!你是那天用魔物材料自慰的小姑娘",
+          "status": "mapped",
+          "script_text": "おお……あの日、魔物の素材で慰めていた娘か。",
+          "seconds": 4.3,
+          "target": "片段19/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "下方打断气泡来自右侧画外青",
+          "kind": "dialogue",
+          "source_text": "啊...!! 别他妈提那事了!",
+          "status": "mapped",
+          "script_text": "ああっ！その話はしないで！",
+          "seconds": 2.73,
+          "target": "片段19/分镜3"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "辨认并说出糗事"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "羞恼打断"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1",
+            "t2"
+          ],
+          "targets": [
+            "片段19/分镜3"
+          ],
+          "merge_basis": "画外打断直接改变矮人表情，同一近景能清楚呈现说出与被制止的因果"
+        }
+      ]
+    },
+    {
+      "image": "第13话_30_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝云层和墨青树干铺在上方，黑绿灌木与高草沿下缘连续向左后移，夜林形成狭窄跑动通道。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人占左前景奔跑，青在右后景跟随",
+        "visible_subjects": [
+          "矮人",
+          "青"
+        ],
+        "relations": [
+          "两人共同向右逃跑"
+        ],
+        "forbidden_inferences": [
+          "追兵入画"
+        ]
+      },
+      "coverage": "mixed",
+      "coverage_reason": "命令以原格体量关系建立，警告与追问以反向侧跟突出信息交接",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "矮人",
+          "speaker_evidence": "左上气泡尾指向矮人",
+          "kind": "dialogue",
+          "source_text": "之后再打招呼现在是跑路要紧",
+          "status": "mapped",
+          "script_text": "挨拶はあとだ。今は逃げるぞ！",
+          "seconds": 2.9,
+          "target": "片段20/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "矮人",
+          "speaker_evidence": "中上气泡尾指向矮人",
+          "kind": "dialogue",
+          "source_text": "后面有个难缠的家伙...!",
+          "status": "mapped",
+          "script_text": "後ろに厄介なのがいる！",
+          "seconds": 2.12,
+          "target": "片段20/分镜2"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "下方气泡尾指向右后景青",
+          "kind": "dialogue",
+          "source_text": "你在被魔物追杀?",
+          "status": "mapped",
+          "script_text": "魔物に追われてるの？",
+          "seconds": 2,
+          "target": "片段20/分镜2"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "催促逃跑"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "说明追兵"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "确认危险性质"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1"
+          ],
+          "targets": [
+            "片段20/分镜1"
+          ]
+        },
+        {
+          "id": "g2",
+          "turn_ids": [
+            "t2",
+            "t3"
+          ],
+          "targets": [
+            "片段20/分镜2"
+          ],
+          "merge_basis": "警告与追问是短促奔跑问答，反向侧跟通过焦点与视线接力可完整承载"
+        }
+      ]
+    },
+    {
+      "image": "第13话_30_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "右侧露出深青树干与黑绿灌木，左侧和上缘被白发填满，树影因奔跑产生短促横移。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青右侧脸特写，白发包住左侧，夜林在右",
+        "visible_subjects": [
+          "青"
+        ],
+        "relations": [
+          "青奔跑中回望"
+        ],
+        "forbidden_inferences": [
+          "追兵外形"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "两个非词汇惊喘合并为一次反应",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "两反应框对应青的特写",
+          "kind": "dialogue",
+          "source_text": ".....!!!",
+          "status": "mapped",
+          "script_text": "……",
+          "seconds": 0.5,
+          "target": "片段20/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "两反应框对应青的特写",
+          "kind": "dialogue",
+          "source_text": "UGH..!!",
+          "status": "mapped",
+          "script_text": "っ！",
+          "seconds": 1,
+          "target": "片段20/分镜3"
+        }
+      ]
+    },
+    {
+      "image": "第13话_31_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "褐色皱褶组织和湿亮曲面完全铺满画面，边缘仅留很窄的浅色空区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "褐色皱褶组织从左侧铺满极近景",
+        "visible_subjects": [
+          "巨兽局部组织"
+        ],
+        "relations": [
+          "表面向右鼓起"
+        ],
+        "forbidden_inferences": [
+          "完整巨兽外形"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_31_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "褐色皱褶组织和湿亮曲面完全铺满画面，边缘仅留很窄的浅色空区。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "圆润凸起横贯中央并占据画面大半",
+        "visible_subjects": [
+          "巨兽局部组织"
+        ],
+        "relations": [
+          "褶皱围住中央凸起"
+        ],
+        "forbidden_inferences": [
+          "完整巨兽外形"
+        ]
+      },
+      "coverage": "none",
+      "coverage_reason": "无对白",
+      "bubbles": []
+    },
+    {
+      "image": "第13话_31_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "白发、暖肤色与眼白构成满幅表面，右上只露出一小块浅色亮面，不作为场景空间延伸。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青的右眼横贯中央，鼻梁朝右，白发包围",
+        "visible_subjects": [
+          "青"
+        ],
+        "relations": [
+          "青凝视右侧画外"
+        ],
+        "forbidden_inferences": [
+          "巨兽入画"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "单句迟疑评价",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡对应青的眼部反应",
+          "kind": "dialogue",
+          "source_text": "我平常真不怎么说但是这...",
+          "status": "mapped",
+          "script_text": "普段は言わないけど……これは、あまりにも……",
+          "seconds": 4.28,
+          "target": "片段21/分镜2"
+        }
+      ]
+    },
+    {
+      "image": "第13话_31_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深青夜空与厚云铺满上方，黑绿树冠围住下缘和两侧，巨兽从林冠中央突出并遮住大部分云层。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "24mm极低机位纵向全景，巨型长颈魔物沿中轴从下缘林冠升起，环状头部占上半并正对镜头",
+        "visible_subjects": [
+          "巨兽",
+          "树冠"
+        ],
+        "relations": [
+          "巨兽远高于树林"
+        ],
+        "forbidden_inferences": [
+          "人物入画"
+        ]
+      },
+      "coverage": "shared",
+      "coverage_reason": "画外吐槽与巨兽尖啸在揭示全景内连续落下",
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "上方圆气泡为青的画外续句",
+          "kind": "dialogue",
+          "source_text": "长得也太像了丁丁!",
+          "status": "mapped",
+          "script_text": "アレに似すぎてる！",
+          "seconds": 2,
+          "target": "片段21/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "巨兽",
+          "speaker_evidence": "尖叫框贴近巨兽头部",
+          "kind": "dialogue",
+          "source_text": "SCREEE...!!!",
+          "status": "mapped",
+          "script_text": "ギャアアアッ！",
+          "seconds": 2,
+          "target": "片段21/分镜3"
+        }
+      ],
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "直白吐槽"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "巨兽回应尖啸"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "id": "g1",
+          "turn_ids": [
+            "t1",
+            "t2"
+          ],
+          "targets": [
+            "片段21/分镜3"
+          ],
+          "merge_basis": "两句均依赖巨兽全貌揭示，合计四秒且画外吐槽自然被尖啸接续"
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段14/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_24_006.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "醒来询问与青的惊叫",
+      "background_excerpt": "两人之间露出深蓝夜空",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "双人两轮短对白，原格构图直接承载"
+    },
+    {
+      "target": "片段15/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_25_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "青被撞见后的解释卡顿",
+      "background_excerpt": "墨青树干竖在两人后方",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "三轮对白的首轮单独落镜"
+    },
+    {
+      "target": "片段15/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "derived_from": [
+        "第13话_25_001.jpg"
+      ],
+      "coverage_type": "relationship",
+      "coverage_changes": [
+        "subject_focus",
+        "dramatic_function",
+        "viewpoint_axis"
+      ],
+      "coverage_evidence": "当前格明确显示青与春子的左右关系、互看轴线和青怀中魔物，可在同轴内用过肩焦点接力承载问答",
+      "evidence": "current_panel",
+      "purpose": "短质问与立即否认",
+      "background_excerpt": "深蓝夜色填满两人之间",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "质问和否认同组，但机位与首镜显著区分"
+    },
+    {
+      "target": "片段16/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_25_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "春子陈述时间",
+      "background_excerpt": "均匀的蓝灰夜色柔焦铺满左侧",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "单人短句侧脸特写"
+    },
+    {
+      "target": "片段16/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_26_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "青的困惑",
+      "background_excerpt": "右侧露出低饱和蓝灰夜色",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "同一说话人连续短问"
+    },
+    {
+      "target": "片段16/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_26_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "交班、弹指和魔物抗议",
+      "background_excerpt": "均匀暖灰图形底铺满人物轮廓之外的区域",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "两说话人三轮与手部夹抱关系"
+    },
+    {
+      "target": "片段17/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_27_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "春子离开与青目送",
+      "background_excerpt": "灰蓝夜林以柔焦铺满画面",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "前后景离开反应需要细致表演"
+    },
+    {
+      "target": "片段17/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_27_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "三次远近闷响",
+      "background_excerpt": "深蓝夜空、冷灰厚云",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "720p足以确认狭长天井与树冠边界"
+    },
+    {
+      "target": "片段18/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_28_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "两人确认草丛声源",
+      "background_excerpt": "深蓝夜空位于上方",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "三轮短对白与双人先后反应",
+      "performance_card": {
+        "cause": "画外草响",
+        "internal_shift": "听见→互证→锁定方向",
+        "visible_chain": "青急停转眼→春子停步点头→青耳尖绷紧并前压",
+        "endpoint": "两人共同降低重心看向左外",
+        "restraint": "不显示声源实体"
+      },
+      "rendered_excerpts": {
+        "head_face": "青下巴压低，春子小幅点头",
+        "eyes": "青先转眼，春子余光交接",
+        "hands_props": "青右手停在胸前",
+        "posture_weight": "两人先后急停并降低肩线",
+        "secondary_motion": "发丝和草叶在停步后收住"
+      },
+      "performance_interval_seconds": 6
+    },
+    {
+      "target": "片段18/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_28_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "草丛内部逼近",
+      "background_excerpt": "密集蓝灰高草",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "720p清楚显示草叶层次与中央暗道"
+    },
+    {
+      "target": "片段19/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_29_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "矮人冲出落地",
+      "background_excerpt": "乌云密布的灰蓝夜空占上半",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "G",
+        "P"
+      ],
+      "risk_basis": "强透视落地、多主体遮挡和冲量",
+      "performance_card": {
+        "cause": "矮人从灌木冲出",
+        "internal_shift": "两人由警戒转为受惊后撤",
+        "visible_chain": "灌木爆开→前臂撑地→背包前压→两人后撤",
+        "endpoint": "矮人撑地，两人在右后景僵住",
+        "restraint": "不提前显示追兵"
+      },
+      "rendered_excerpts": {
+        "head_face": "矮人低头受冲击，两人惊呼",
+        "eyes": "两人同时锁定前景",
+        "hands_props": "前臂撑地，春子夹紧魔物",
+        "posture_weight": "矮人重量前压，两人后撤",
+        "secondary_motion": "飞叶与小魔物弹起后回落"
+      },
+      "performance_interval_seconds": 2
+    },
+    {
+      "target": "片段19/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_29_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "青辨认矮人",
+      "background_excerpt": "左下露出黑绿灌木",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "辨认与记忆接上需要微表情",
+      "performance_card": {
+        "cause": "看清矮人",
+        "internal_shift": "惊讶→辨认→想起糗事",
+        "visible_chain": "眼球扫描→瞳孔收紧→手腕抬起→手指蜷回",
+        "endpoint": "话尾僵住",
+        "restraint": "不用完整指人动作"
+      },
+      "rendered_excerpts": {
+        "head_face": "眉峰抬起后嘴形僵住",
+        "eyes": "从头盔扫到胡须",
+        "hands_props": "只抬半截手腕再蜷回",
+        "posture_weight": "下巴前送后停住",
+        "secondary_motion": "汗珠与落叶延续"
+      },
+      "performance_interval_seconds": 4
+    },
+    {
+      "target": "片段19/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_29_003.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "矮人认出青并被打断",
+      "background_excerpt": "深灰树干与黑绿灌木",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "双人跨画内外对白和明显表情转折",
+      "performance_card": {
+        "cause": "矮人认出青并说出糗事",
+        "internal_shift": "恍然带笑→被喝止后尴尬",
+        "visible_chain": "喘息抬眼→嘴角上扬→眼角缩紧→手指松草",
+        "endpoint": "视线避开只剩喘息",
+        "restraint": "青保持画外不新增反打"
+      },
+      "rendered_excerpts": {
+        "head_face": "笑意立刻收掉",
+        "eyes": "右看后避向左下",
+        "hands_props": "抓草手指松开一根",
+        "posture_weight": "肩膀向下塌",
+        "secondary_motion": "汗珠继续滑落"
+      },
+      "performance_interval_seconds": 8
+    },
+    {
+      "target": "片段20/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_30_001.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "矮人催促逃跑",
+      "background_excerpt": "深蓝云层和墨青树干铺在上方",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "奔跑中命令与双人体量关系",
+      "performance_card": {
+        "cause": "后方追兵逼近",
+        "internal_shift": "短暂相认→立即逃命",
+        "visible_chain": "回头确认→背包滞后→压低重心加速→青追上",
+        "endpoint": "两人继续向右逃跑",
+        "restraint": "追兵不入画"
+      },
+      "rendered_excerpts": {
+        "head_face": "矮人回头喊，青回望",
+        "eyes": "视线先交接再转后方",
+        "hands_props": "青双手收在胸前",
+        "posture_weight": "矮人前压加速",
+        "secondary_motion": "背包与白发滞后摆动"
+      },
+      "performance_interval_seconds": 4
+    },
+    {
+      "target": "片段20/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "derived_from": [
+        "第13话_30_001.jpg"
+      ],
+      "coverage_type": "relationship",
+      "coverage_changes": [
+        "viewpoint_axis",
+        "subject_focus",
+        "dramatic_function"
+      ],
+      "coverage_evidence": "当前格明确显示两人并跑的左右位置、奔跑方向、矮人回头与青跟随，可在同轴反向侧跟中交接警告和追问",
+      "evidence": "current_panel",
+      "purpose": "警告追兵与青追问",
+      "background_excerpt": "深蓝云层与墨青树干组成横向掠过的夜林通道",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "同格第二覆盖组，用反向侧跟与焦点接力避免近似增镜"
+    },
+    {
+      "target": "片段20/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_30_002.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "青听清追兵动静",
+      "background_excerpt": "右侧露出深青树干与黑绿灌木",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "极短镜头需用眼头分离完成反应",
+      "performance_card": {
+        "cause": "后方湿重声逼近",
+        "internal_shift": "判断→真实恐惧",
+        "visible_chain": "头朝前→瞳孔后转→牙关咬紧→惊喘",
+        "endpoint": "奔跑带走僵住肩线",
+        "restraint": "不回头做大幅动作"
+      },
+      "rendered_excerpts": {
+        "head_face": "眼皮撑开，牙关咬紧",
+        "eyes": "头眼分离向后急转",
+        "hands_props": "无手部入画",
+        "posture_weight": "肩线僵住后继续跑",
+        "secondary_motion": "汗珠与白发随跑动"
+      },
+      "performance_interval_seconds": 2
+    },
+    {
+      "target": "片段21/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_31_001.jpg",
+        "第13话_31_002.jpg"
+      ],
+      "evidence": "current_and_adjacent_panels",
+      "purpose": "巨兽局部表面连续滑过",
+      "background_excerpt": "褐色皱褶组织和湿亮曲面完全铺满画面",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "两格为同一表面连续形变，720p足以确认纹理和运动轴"
+    },
+    {
+      "target": "片段21/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_31_003.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "青对形状的震惊停顿",
+      "background_excerpt": "白发、暖肤色与眼白构成满幅表面",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "长停顿由眼神、吞咽和失声支撑",
+      "performance_card": {
+        "cause": "看清巨兽局部",
+        "internal_shift": "克制评价→无法回避联想",
+        "visible_chain": "屏息→瞳孔收紧→视线抖动→吞咽→失声",
+        "endpoint": "眼神钉在右外",
+        "restraint": "不用大幅摇头或指向"
+      },
+      "rendered_excerpts": {
+        "head_face": "眉心压低，下颌吞咽",
+        "eyes": "瞳孔收紧并下抖一次",
+        "hands_props": "无手部入画",
+        "posture_weight": "近景仅见面部张力",
+        "secondary_motion": "汗珠下滑，发梢贴脸"
+      },
+      "performance_interval_seconds": 5
+    },
+    {
+      "target": "片段21/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_31_004.jpg"
+      ],
+      "evidence": "current_panel",
+      "purpose": "巨兽全貌揭示、吐槽与尖啸",
+      "background_excerpt": "深青夜空与厚云铺满上方",
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "纵向全貌、巨大尺度与两声源关系在720p清楚"
+    }
+  ],
+  "performance": [
+    {
+      "target": "片段15/分镜2",
+      "evidence": "当前720p格可见两人互看、青的耳尖肩线与怀中魔物",
+      "card": {
+        "opening": "春子平静看向青，青在前景绷紧",
+        "beats": [
+          "春子轻抬下巴问完",
+          "青躲视后突然摇头否认"
+        ],
+        "coupling": "眼神躲闪带动耳尖后绷，摇头带动白发迟拍扫肩",
+        "landing": "青抬眼对上春子并抿住嘴唇"
+      },
+      "details": [
+        "青的耳尖先向后绷",
+        "白发晚半拍扫过肩膀"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 8.36,
+          "acting_seconds": 9
+        }
+      ]
+    },
+    {
+      "target": "片段16/分镜3",
+      "evidence": "当前720p格可见春子脸、弹指手、夹抱前臂和魔物全身",
+      "card": {
+        "opening": "春子半垂眼夹住魔物并预备弹指",
+        "beats": [
+          "弹指宣布交班",
+          "魔物挣动后被提稳"
+        ],
+        "coupling": "左手弹响触发魔物仰头，右前臂随即收紧",
+        "landing": "春子眼皮落回，手指放松"
+      },
+      "details": [
+        "腕部顺势轻甩后停在肩侧",
+        "眼皮微抬又落回"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 7,
+          "acting_seconds": 7
+        }
+      ]
+    },
+    {
+      "target": "片段17/分镜1",
+      "evidence": "当前720p格可见春子离去背影、怀中魔物和青的前景侧脸",
+      "card": {
+        "opening": "春子抱住魔物开始向左离开",
+        "beats": [
+          "春子边走边说明",
+          "青无言目送"
+        ],
+        "coupling": "春子的步幅带走魔物挣动与尖叫，青的视线同步左移",
+        "landing": "青肩线下沉并以鼻息收住"
+      },
+      "details": [
+        "魔物的短臂从她臂弯里伸出又缩回",
+        "肩膀一点点下沉"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.2,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段18/分镜1",
+      "evidence": "当前720p格可见青与春子前后景、共同画外视线和停步姿态",
+      "card": {
+        "opening": "青在迈步中听见异响",
+        "beats": [
+          "青先急停提问",
+          "春子点头后青锁定方向"
+        ],
+        "coupling": "眼睛先于头部转动，春子的短答接上青抬手和前压重心",
+        "landing": "两人共同降低肩线看向左外"
+      },
+      "details": [
+        "眼睛比头部更早转向左侧",
+        "最后两人同时降低肩线准备应对"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 6,
+          "acting_seconds": 6
+        }
+      ]
+    },
+    {
+      "target": "片段19/分镜1",
+      "evidence": "当前720p格可见矮人落地强透视、背包冲量和两人后撤",
+      "card": {
+        "opening": "灌木封住左侧前景",
+        "beats": [
+          "矮人破叶冲入",
+          "前臂撑地后两人惊退"
+        ],
+        "coupling": "撑地制动让肩背与背包继续前压，落地冲量带起叶片和小魔物",
+        "landing": "矮人撑地，两人停在右后景"
+      },
+      "details": [
+        "肩背和背包因惯性继续前压",
+        "青与春子同时后撤半步"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.23,
+          "acting_seconds": 2
+        }
+      ]
+    },
+    {
+      "target": "片段19/分镜2",
+      "evidence": "当前720p格可见青的双眼、嘴形、汗珠与画外注视方向",
+      "card": {
+        "opening": "青惊讶地扫视矮人",
+        "beats": [
+          "瞳孔收紧完成辨认",
+          "抬腕欲指又因记忆蜷回"
+        ],
+        "coupling": "辨认推动眉峰和下巴前送，记忆接上后手与嘴形同时僵住",
+        "landing": "青的视线停在矮人身上"
+      },
+      "details": [
+        "瞳孔随辨认略微收紧",
+        "手指蜷回"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.53,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段19/分镜3",
+      "evidence": "当前720p格可见矮人眼口、按草手、汗珠与沉重肩背",
+      "card": {
+        "opening": "矮人撑地喘息并抬眼认人",
+        "beats": [
+          "嘴角刚扬起并说出糗事",
+          "青画外打断后表情立刻收住"
+        ],
+        "coupling": "画外喊声先压缩眼角，再让笑意、肩线和抓草手依次松掉",
+        "landing": "矮人避开视线，只剩喘息"
+      },
+      "details": [
+        "嘴角随后落回",
+        "按地手指尴尬地松开一根"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 8,
+          "acting_seconds": 8
+        }
+      ]
+    },
+    {
+      "target": "片段20/分镜1",
+      "evidence": "当前720p格可见两人并跑、矮人回头、背包与青的追赶距离",
+      "card": {
+        "opening": "矮人领先，青在右后方追赶",
+        "beats": [
+          "矮人回头确认并下令",
+          "两人压低重心继续加速"
+        ],
+        "coupling": "转头让背包迟拍右晃，命令落下后青追上半步",
+        "landing": "两人步幅重新同步向右跑"
+      },
+      "details": [
+        "背包因惯性继续向右晃",
+        "随即压低重心加速"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.9,
+          "acting_seconds": 4
+        }
+      ]
+    },
+    {
+      "target": "片段20/分镜2",
+      "evidence": "当前720p格明确两人并跑轴线、回头方向和发背包运动",
+      "card": {
+        "opening": "矮人越肩看后方，青在右前景奔跑",
+        "beats": [
+          "矮人警告后转回",
+          "青乱步回望并追问"
+        ],
+        "coupling": "焦点随说话人交接，青的视线变化带动咬唇和步幅恢复",
+        "landing": "青继续回望但脚步跟齐"
+      },
+      "details": [
+        "白发随之向后拖",
+        "脚步重新跟齐"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 5,
+          "acting_seconds": 5
+        }
+      ]
+    },
+    {
+      "target": "片段20/分镜3",
+      "evidence": "当前720p格可见青的右侧脸、红眼、汗珠与奔跑方向",
+      "card": {
+        "opening": "青头朝前保持奔跑",
+        "beats": [
+          "后方声逼近使瞳孔急转",
+          "牙关咬紧后挤出惊喘"
+        ],
+        "coupling": "眼头分离先发生，汗珠与肩线随后响应",
+        "landing": "僵住的肩线被跑动带走"
+      },
+      "details": [
+        "瞳孔却猛地向左后方急转",
+        "牙关咬紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 1.5,
+          "acting_seconds": 2
+        }
+      ]
+    },
+    {
+      "target": "片段21/分镜2",
+      "evidence": "当前720p格可见青的眼部侧面、瞳孔、汗珠和发梢",
+      "card": {
+        "opening": "青屏息看向巨兽",
+        "beats": [
+          "瞳孔收紧并短暂下抖",
+          "吞咽后仍无法说完"
+        ],
+        "coupling": "克制评价推动眉心压低，联想成立后呼吸、下颌和发梢依次停住",
+        "landing": "青失声，视线钉在右外"
+      },
+      "details": [
+        "瞳孔从圆形收紧为细长竖线",
+        "汗珠向下滑"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.28,
+          "acting_seconds": 5
+        }
+      ]
+    }
+  ]
+}
