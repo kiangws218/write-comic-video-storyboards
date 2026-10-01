@@ -1,38 +1,30 @@
 # Core authoring contract
 
-This normal source, format, timing, color, and sound module contains only rules that change generation decisions.
+This file owns source evidence, clip boundaries, output fields, color, sound and the V3 ledger. Dialogue/performance decisions live in `dialogue-performance.md`.
 
 ## Evidence and batch discipline
 
-Use evidence in this order: current open panel; explicit supplied character/environment/prop/palette reference; adjacent panel only for chronology or continuous motion; story context only to decide what to inspect. An adjacent panel or ledger never proves current visibility.
+Evidence precedence is: current open panel; explicit supplied character/environment/prop/palette reference; adjacent panel only for chronology or continuous motion; story context only to decide what to inspect. An adjacent panel or ledger never proves current visibility.
 
-Draft one to three contiguous panels at a time. Generate and inspect 720p analysis proxies for the exact panels, and keep each proxy open while freezing locks, mapping dialogue, writing its cited shot, and comparing prose back to the image. A contact sheet is insufficient for exact composition. Open the 1080p/original asset only when 720p cannot reliably resolve small text, identity, hand/contact, overlap, topology, fast motion, or another decision-changing fact; record the concrete escalation reason instead of routinely loading both versions.
+Draft one to three contiguous panels at a time with their 720p proxies open. A contact sheet is insufficient for exact composition. Escalate only unresolved small text, identity, hand/contact, overlap, topology, perspective or fast motion to original resolution, and record the reason.
 
-Record only decision-changing facts: angle/scale; left-right and near-far placement; overlap/occlusion; pose/gaze/visible limbs; hand/prop/grip/contact/action vector; visible backing; source phase; bubble owner/order; role and evidence. The ledger is an audit index, not replacement prose.
+Freeze only decision-changing facts: angle/scale; left-right and near-far placement; overlap; pose/gaze/visible limbs; hand/prop/grip/contact/vector; visible backing; source phase; bubble owner/order. The ledger is an audit index, not replacement prose.
 
 ## Shot authority
 
-- `source_locked`: the cited composition is recognizably present at its declared opening, middle, contact, result, or endpoint. Supported micro-performance, cloth/hair response, restrained camera, light, materials, and sound may develop without changing anchors.
-- `source_supported_phase`: a missing phase of the same action visibly supported by current/adjacent panels. Record all evidence and preserve axis, grip, placement, topology, and endpoint.
-- `uncited_coverage`: a separately numbered reverse, reaction, insert, environment, or connective view with stated purpose/evidence. It cannot create an event, identity, object, route, contact, attack, recovery, or result. Cite a panel only when the full composition matches.
+- `source_locked`: restores a cited panel's complete composition at its declared opening, middle, contact, result or endpoint.
+- `source_supported_phase`: adds a missing phase visibly supported by current/adjacent panels while preserving axis, grip, topology and endpoint.
+- `uncited_coverage`: a separately numbered speaker, listener, relationship, object, environment, detail or action-phase view with stated source owner and purpose. It cannot create a new event, identity, object, route, contact or result.
 
-Before closing a batch, map every drafted noun, identity, spatial relation, hand/contact, motion phase, and strong emotion to allowed evidence. Delete unsupported claims.
+A formal citation is used only when the full composition matches. Adjacent numbered shots never repeat the same formal citation. Keep the matching view cited once; derived views are uncited and must be meaningfully different.
 
-## Background and clip cold start
+## Clip and coverage boundaries
 
-Every shot positively describes its visible backing as physical space, graphic field, or a frame-filling surface. Preserve an abstract panel backing rather than restoring the known location. Generic labels, source-comparison language, and negative exclusions are not executable.
+A clip is one generated video. Fifteen seconds is a hard ceiling. Keep a continuous physical phrase and one panel's complete coverage unit together when they fit.
 
-At every clip reset visible people/counts/relations, off-screen targets, pose, direction, grip/contact, background, and light. Name a gaze target only when the clip establishes it; otherwise use an executable screen direction. Never write cross-clip pointers such as `保持原有/上一格/上一镜/只放大上一格/沿用前镜`, or negative controls such as `不新增/不要/不出现/不使用`, in generatable fields.
+The cited view and every derived speaker/listener/object/environment/detail view owned by one panel stay in one clip. If correct semantic splitting and natural Japanese timing still make that single-panel unit exceed 15 seconds, it is the only allowed overflow: keep it together, mark `manual_overflow`, and surface a prominent manual warning for the user. The exception cannot combine several source panels, unrelated events or padded holds.
 
-Use stable descriptive labels for unsupported creatures/special props: useful scale, dominant color, material/surface, body type, and defining anatomy. Repeat the full label at first appearance in each clip.
-
-## Timing and coverage
-
-A clip is one generated video; 15 seconds is a soft maximum. Keep a continuous physical phrase—load→launch, reach→grip→pull, swing→contact, fall→landing—in one clip when it fits. If split, end at a stable state and fully restate the next opening.
-
-Before choosing camera setups, read bubbles in source order and mark dialogue turns. A speaker change and question→answer, accusation→denial, interruption, reveal→reaction or attitude reversal are separate semantic beats and normally receive separate coverage. Only after those required beats are fixed should similarity be evaluated. Each camera setup receives one numbered shot and positive integer duration. A hard cut, reverse, insert, reaction, environment view, or new composition starts another shot. Seven seconds triggers review, not an automatic cut. Adjacent numbered shots never formally cite the same panel. Keep the matching composition cited; each later turn-driven view is uncited coverage and changes at least two meaningful dimensions among subject focus, scale, viewpoint/axis, composition/overlap, visible information, and dramatic function. Small zoom, focus transfer, eye-only crop, focal-length change, or moving the same two faces between foreground and middle ground is insufficient differentiation, but that means redesign the required coverage—not delete a dialogue turn.
-
-Build a **panel coverage unit** before assigning clip boundaries. The source-locked shot, every source-supported phase, and every uncited reverse/insert/reaction derived from one comic panel belong to one clip. Finish that unit before advancing to another clip; never place its cited view at the end of one clip and a derived view at the beginning of the next. For multiple dialogue turns, first assign one readable speaker/listener/reaction coverage beat per turn, then vary the added views by at least two dimensions above while preserving order and eyelines. If an added view is too similar, redesign it as a true reverse, listener reaction, prop/hand insert or supported close-up; do not collapse the required turn back into a long two-shot. Merge only redundant coverage inside one continuous same-speaker/same-beat delivery. A new clip starts from a new source panel/coverage unit or a genuinely independent beat, not from the need to reset shot numbering.
+If a continuous physical phrase must split, end at a stable state and fully restate the next opening. Every clip resets visible people/counts/relations, off-screen direction, pose, grip/contact, backing, light and stable labels. Never use `保持原有/上一格/上一镜/只放大上一格/沿用前镜` or negative controls such as `不新增/不要/不出现` in generatable fields.
 
 ## Required output
 
@@ -40,41 +32,39 @@ Build a **panel coverage unit** before assigning clip boundaries. The source-loc
 ## 【片段1】
 **分镜1（6秒）：**
 分镜参考 `[00.jpg]`
-【镜头设计】：集中写拍摄角度与轴线、景别/焦段、裁切边界、主体位置、前中后景、重叠遮挡、负空间、景深/焦点、起幅、一个主运镜和落幅。
-【可见动作】：只写随时间发生的可见表演：由明确起态经语义节点发展头脸朝向、微表情、视线、手/道具接触、重心和延迟运动，落到明确终态；不重复静态景别、裁切和主体布局。
-【可见背景】：只写镜头内可见的物理背景、明确的图形场或铺满画面的表面，以及背景自身的材质、层次和运动；不写人物、动物、前景道具、主体位置、主体遮挡或构图关系。
-【台词与语气】：角色说：“……”（音色、语气、情绪及必要的语速、停顿、重音）；无台词写“无台词”。
-【光影布光】：光源方向、人物位置/遮挡、主辅光、明暗区、局部高光、材质和有依据的空气效果。
-【声音设计】：把连续环境底声、远近/遮挡/声像、动作拟音、呼吸/静默、台词距离和关键音画同步写成一段；同一声音只出现一次。
+【镜头设计】：角度与轴线、景别/焦段、裁切与主体布局、深度/遮挡、焦点、主运镜和落幅。
+【可见动作】：明确起态，经语义节点发展头脸、视线、手/道具、重心和延迟运动，落到明确终态。
+【可见背景】：镜头内可见的物理环境、明确图形场或铺满画面的表面及其层次和运动。
+【台词与语气】：角色说：“……”（音色、语气、情绪及必要节奏）；无台词写“无台词”。
+【光影布光】：光源、方向、遮挡、主辅光、局部高光、阴影和材质响应。
+【声音设计】：环境底声、声像/遮挡、动作拟音、呼吸/静默、对白距离和关键同步；不写BGM。
 ```
 
-Keep all six bracketed fields separate, complete, and in the shown order. Speech-bubble interiors and surrounding blank, page margins, panel gutters, and OCR gaps are layout artifacts, never `【可见背景】`. Do not output the removed `环境音` field or legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
+Keep all six fields separate and ordered. `【镜头设计】` alone contains static composition; `【可见动作】` contains only changing performance. Page margins, gutters, OCR gaps and speech-bubble whitespace are never background. Sound cannot imply an unseen event.
 
-When several panels are a true continuous action in the same camera setup, background, and axis, bind each source phase and its composition inside `【镜头设计】`, then use matching phase labels for action-only development inside `【可见动作】`:
+When several panels are successive phases of one camera setup, backing, axis and causal action, bind each panel to a separate phase bullet in `【镜头设计】` and use matching action-only bullets in `【可见动作】`. Otherwise create another numbered shot.
 
-```markdown
-【镜头设计】：
-- 参考 `[00.jpg]`（起幅）：平视双人中景，甲占左前景至胸口，乙在右后方露出半身；甲的前臂遮住乙的右肩，桌沿横切画面下四分之一。
-- 参考 `[01.jpg]`（结果）：维持同一轴线与景别，乙的右肩在右后方完整露出，甲的手位于画面中央；镜头轻跟手部后停稳。
-【可见动作】：
-- 起幅：甲的前臂压在桌沿，视线停在乙的手上。
-- 结果：乙退后半步，甲的手沿桌沿滑到中央，视线上抬并停在乙脸上。
-```
+## Look, color and sound
 
-Do not stack multiple references on one line above the fields or blend their facts into one paragraph. Each `【镜头设计】` bullet names its source phase and preserves that panel's crop, placement and depth/overlap; the correspondingly named `【可见动作】` bullet contains only the phase's changing performance. If setup, backing, axis, or causal continuity changes, create another numbered shot.
+State one reusable scene look with supplied or deliberately chosen work/studio/director references plus executable traits. Do not repeat the full style stack per shot.
 
-## Color, environment, and audio
+Color precedence is: explicit direction/reference; verified colored occurrence of the same item; coherent production choice only for genuinely uncolored non-character elements. Screentone proves value/material/light, not literal gray. Lighting may tint but not rewrite base color.
 
-State one reusable scene look: supplied or deliberately chosen work/studio/director references plus a few executable traits, hue/contrast/saturation, 2D texture, broad light, depth, and clarity. Do not repeat it per shot.
+`【声音设计】` starts with the continuous location bed, then adds useful Foley, breath/body, silence, dialogue treatment and synchronization. Preserve environment audio and sound effects in both mother draft and execution prompt when the target supports audio. BGM, score, melody and theme music are excluded.
 
-Color precedence: explicit direction/reference; visible colored occurrence of the same item; verified recurring colored occurrence; coherent production choice only for genuinely uncolored non-character elements. Monochrome proves value/material/depth/ink/light, not literal gray color. Lock recurring non-character colors once. Lighting may tint but not rewrite base color.
+## Source ledger V3
 
-Environment reference assets contain space/material/weather/light, not people, equipment, routes, staging zones, or narrative functions.
+Use `version: 3`. Create evidence before prose. The minimum is:
 
-`【声音设计】` opens with the continuous location bed and its perspective, then adds only useful Foley, breath/body, silence, dialogue treatment, or synchronization events. Do not restate the same wind, room tone, cloth, footsteps, or prop sound in separate clauses. Every emphasized sound needs a visible/supportable cause or established environment. Bind it to `句首`, exact Japanese in `「」`, `句末`, contact, or action completion. Audio cannot imply an unseen impact, object, injury, word, or event.
+- root: `source_language`, `panels`, `shots`, optional `performance`;
+- panel: image/viewing/resolution audit, background, concrete locks, bubbles and coverage;
+- dialogue-risk panel: ordered semantic `dialogue_turns` plus ordered `coverage_groups`;
+- shot: target, role, purpose/evidence, background excerpt, source audit, D/P/G flags and basis;
+- uncited shot: empty `source_images`, nonempty `derived_from`, `coverage_type`, at least two evidenced coverage changes;
+- `P` shot: one compact card plus exact rendered excerpts and interval estimate.
 
-## Ledger minimum and final audit
+`dialogue_turns` preserve story logic; `coverage_groups` decide camera economy. A group may combine consecutive short turns only when total speech fits naturally, one setup carries the handoff without a hidden cut, and no key reveal/reversal/reaction loses its landing. Record a concise `merge_basis` for a multi-turn group.
 
-Use version 2 with `panels`, `shots`, and optional `performance`. Declare the episode `source_language`; `source_text` preserves verbatim source-language text and `script_text` contains final Japanese. Panel rows record image, actual viewing attestations, `drafting_resolution` (`720p` by default or `original`), a concrete `resolution_escalation_reason` when original was necessary, bubble count/audit, positive background, compact locks, coverage, and mapped bubbles. A dialogue-risk panel with several bubbles/speakers also records ordered `dialogue_turns`; each item binds one semantic turn's consecutive `bubble_ids`, dramatic `function`, and target shot(s). Group only genuinely continuous prompt/reaction or overlapping delivery; question→answer, accusation→denial, interruption and reveal→reaction stay separate. Shot rows record target, role, evidence images, purpose, background excerpt, actual viewed/audit attestations, unsupported additions, compact risk flags, and a concise `risk_basis` showing why D/P/G were selected or cleared. An `uncited_coverage` row keeps `source_images` empty, records its owning panel in `derived_from`, and lists at least two concrete `coverage_changes` from `subject_focus`, `scale`, `viewpoint_axis`, `composition_overlap`, `visible_information`, and `dramatic_function`; all rows owned by one panel must target one clip. A `P` shot receives one performance entry containing its image-grounded card and exact rendered正文摘录; do not write cards for low-risk shots. Continuing bubbles use ordered segments whose text concatenates exactly. Validation proves consistency, not visual truth and never authorizes writing from the ledger after closing the image.
+`manual_overflow` is allowed only on one panel and names the target segment, natural estimated duration, reason and `manual_handling_required: true`. Validation must reject every other over-15-second clip.
 
-Confirm source order/event/result; cited composition/phase; background; color evidence; complete dialogue ownership/order; natural timing; stable labels; independent clip cold start; useful boundary coverage; supported performance; motivated camera/light/effects/sound; and unchanged adult master when applicable.
+Mechanical validation proves consistency, not visual truth. Final audit checks source order/result, composition, background, dialogue ownership/order, timing, clip cold start, supported coverage, performance, light/effects/sound and unchanged endpoint.

@@ -36,7 +36,7 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 
 def valid_ledger(line: str = SHORT_LINE) -> dict:
     return {
-        "version": 2,
+        "version": 3,
         "source_language": "zh",
         "panels": [
             {
@@ -149,7 +149,7 @@ class ValidatorTests(unittest.TestCase):
     def test_required_ledger_cannot_be_omitted(self) -> None:
         result = self.run_validator(storyboard(), require_ledger=True)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("--source-ledger版本2", result.stdout)
+        self.assertIn("--source-ledger版本3", result.stdout)
 
     def test_long_turn_requires_split_without_exception(self) -> None:
         long_line = "あ" * 50
@@ -239,7 +239,7 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(storyboard(line=None), ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
-    def test_three_ordered_speaker_turns_require_three_targets(self) -> None:
+    def test_multi_turn_panel_requires_coverage_groups(self) -> None:
         lines = [("甲", "はい"), ("乙", "いいえ"), ("甲", "そうです")]
         spoken = "".join(
             f"{speaker}：“{line}”（清晰的中性音色，平静语气）。"
@@ -269,14 +269,12 @@ class ValidatorTests(unittest.TestCase):
                 "id": f"t{index}",
                 "bubble_ids": [f"b{index}"],
                 "function": function,
-                "targets": ["片段1/分镜1"],
             }
             for index, function in enumerate(["提问", "回答", "反驳"], start=1)
         ]
         result = self.run_validator(text, ledger, True)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("3个独立语义轮次", result.stdout)
-        self.assertIn("必须至少映射到3个不同分镜", result.stdout)
+        self.assertIn("缺少coverage_groups", result.stdout)
 
     def test_three_semantic_turns_pass_with_three_shots_in_one_clip(self) -> None:
         text = storyboard(line="えっ。") + """
@@ -318,9 +316,14 @@ class ValidatorTests(unittest.TestCase):
             },
         ]
         panel["dialogue_turns"] = [
-            {"id": "t1", "bubble_ids": ["b1"], "function": "被撞见", "targets": ["片段1/分镜1"]},
-            {"id": "t2", "bubble_ids": ["b2"], "function": "质问", "targets": ["片段1/分镜2"]},
-            {"id": "t3", "bubble_ids": ["b3"], "function": "否认", "targets": ["片段1/分镜3"]},
+            {"id": "t1", "bubble_ids": ["b1"], "function": "被撞见"},
+            {"id": "t2", "bubble_ids": ["b2"], "function": "质问"},
+            {"id": "t3", "bubble_ids": ["b3"], "function": "否认"},
+        ]
+        panel["coverage_groups"] = [
+            {"id": "g1", "turn_ids": ["t1"], "targets": ["片段1/分镜1"]},
+            {"id": "g2", "turn_ids": ["t2"], "targets": ["片段1/分镜2"]},
+            {"id": "g3", "turn_ids": ["t3"], "targets": ["片段1/分镜3"]},
         ]
         for number, changes in [(2, ["subject_focus", "viewpoint_axis"]), (3, ["subject_focus", "scale"])]:
             ledger["shots"].append({
@@ -329,6 +332,8 @@ class ValidatorTests(unittest.TestCase):
                 "source_images": [],
                 "derived_from": ["panel.jpg"],
                 "coverage_changes": changes,
+                "coverage_type": "speaker",
+                "coverage_evidence": "当前面板明确显示两名说话人及相互视线方向",
                 "evidence": "current_panel",
                 "purpose": "多轮对白覆盖",
                 "background_excerpt": BACKGROUND,
@@ -341,6 +346,61 @@ class ValidatorTests(unittest.TestCase):
         ledger["shots"][0]["risk_basis"] = "多轮对白；构图关系清楚，无脆弱几何"
         result = self.run_validator(text, ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_short_question_and_denial_may_share_one_coverage_group(self) -> None:
+        text = storyboard(line="えっ。") + """
+**分镜2（6秒）：**
+【镜头设计】：70mm平视双人近景，乙占右前景，甲在左中景；焦点由乙转到甲后停住。
+【可见动作】：乙先抬眼发问；甲随即移开视线，随后摇头，最后抿住嘴唇。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：乙：“何してるの。”（清晰女声，短促质问）甲：“違う！”（清晰女声，慌乱否认）。
+【光影布光】：柔和侧光先照亮乙的眼缘，再落到甲的脸颊和发缘。
+【声音设计】：低环境底噪持续；质问后停半拍，否认句紧接着落下。
+"""
+        ledger = valid_ledger("えっ。")
+        panel = ledger["panels"][0]
+        panel["source_bubble_count"] = 3
+        panel["coverage"] = "shared"
+        panel["bubbles"] = [
+            {"id": "b1", "speaker": "甲", "speaker_evidence": "气泡尾指向甲", "kind": "dialogue", "source_text": "什么？", "status": "mapped", "script_text": "えっ。", "seconds": 1, "target": "片段1/分镜1"},
+            {"id": "b2", "speaker": "乙", "speaker_evidence": "气泡尾指向乙", "kind": "dialogue", "source_text": "你在做什么？", "status": "mapped", "script_text": "何してるの。", "seconds": 2, "target": "片段1/分镜2"},
+            {"id": "b3", "speaker": "甲", "speaker_evidence": "气泡尾指向甲", "kind": "dialogue", "source_text": "不是！", "status": "mapped", "script_text": "違う！", "seconds": 1, "target": "片段1/分镜2"},
+        ]
+        panel["dialogue_turns"] = [
+            {"id": "t1", "bubble_ids": ["b1"], "function": "被撞见"},
+            {"id": "t2", "bubble_ids": ["b2"], "function": "短促质问"},
+            {"id": "t3", "bubble_ids": ["b3"], "function": "立即否认"},
+        ]
+        panel["coverage_groups"] = [
+            {"id": "g1", "turn_ids": ["t1"], "targets": ["片段1/分镜1"]},
+            {"id": "g2", "turn_ids": ["t2", "t3"], "targets": ["片段1/分镜2"], "merge_basis": "两句合计短于四秒，双人近景以焦点转移承载问答"},
+        ]
+        ledger["shots"].append({
+            "target": "片段1/分镜2", "role": "uncited_coverage", "source_images": [],
+            "derived_from": ["panel.jpg"], "coverage_type": "relationship",
+            "coverage_changes": ["subject_focus", "dramatic_function"],
+            "coverage_evidence": "当前面板明确显示甲乙双方与相互视线，可在双人关系内转移焦点",
+            "evidence": "current_panel", "purpose": "短促质问与立即否认",
+            "background_excerpt": BACKGROUND, "source_audit": "pass", "unsupported_additions": [],
+            "risk_flags": ["D"], "risk_basis": "三轮对白分为两个覆盖组，后两句短促且共享双人关系",
+        })
+        ledger["shots"][0]["risk_flags"] = ["D"]
+        ledger["shots"][0]["risk_basis"] = "三轮对白；首轮单独建立被撞见反应"
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_single_panel_manual_overflow_is_warning_not_error(self) -> None:
+        text = storyboard().replace("分镜1（5秒）", "分镜1（16秒）")
+        ledger = valid_ledger()
+        ledger["panels"][0]["manual_overflow"] = {
+            "segment": "片段1",
+            "estimated_seconds": 16,
+            "reason": "同一原格长对白按自然语速与必要表演拆分后仍超过硬上限",
+            "manual_handling_required": True,
+        }
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("交由用户人工处理", result.stdout)
 
     def test_combined_sound_design_is_allowed(self) -> None:
         result = self.run_validator(storyboard(), valid_ledger(), require_ledger=True)
@@ -749,6 +809,8 @@ class ValidatorTests(unittest.TestCase):
             "source_images": [],
             "derived_from": ["panel.jpg"],
             "coverage_changes": ["scale"],
+            "coverage_type": "detail_insert",
+            "coverage_evidence": "当前面板明确显示手指与掌心，可裁取细节变化",
             "evidence": "current_panel",
             "purpose": "手指反应补镜",
             "background_excerpt": BACKGROUND,
@@ -784,6 +846,8 @@ class ValidatorTests(unittest.TestCase):
             "source_images": [],
             "derived_from": ["panel.jpg"],
             "coverage_changes": ["scale", "viewpoint_axis"],
+            "coverage_type": "detail_insert",
+            "coverage_evidence": "当前面板明确显示手指与掌心，可形成侧向细节",
             "evidence": "current_panel",
             "purpose": "手指反应补镜",
             "background_excerpt": BACKGROUND,
@@ -818,6 +882,8 @@ class ValidatorTests(unittest.TestCase):
             "source_images": [],
             "derived_from": ["panel.jpg"],
             "coverage_changes": ["scale", "viewpoint_axis"],
+            "coverage_type": "detail_insert",
+            "coverage_evidence": "当前面板明确显示手指与掌心，可形成侧向细节",
             "evidence": "current_panel",
             "purpose": "侧向手指反应插入",
             "background_excerpt": BACKGROUND,

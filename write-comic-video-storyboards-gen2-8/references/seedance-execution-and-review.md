@@ -6,7 +6,7 @@ Read this file only for paste-ready execution prompts or failed-generation revie
 
 For each clip retain plot result, dialogue, timing, shot purpose, valid reference role, visible action causality, local background, lighting, and endpoint. Remove duplicated static details, repeated atmosphere, empty quality adjectives, redundant negatives, and operator notes.
 
-Do not add sound effects, ambience, Foley, breath cues, silence cues, BGM, or music. Voice directions attached to dialogue remain.
+Preserve concise environment sound, Foley, breath, silence, dialogue treatment and important audio synchronization from the approved mother draft when the target supports audio. Do not add BGM, score, melody or theme music. When the target is video-only, export these cues to the companion audio plan instead of silently deleting them.
 
 Choose one structure. Default precise-shot structure:
 

@@ -221,17 +221,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--source-ledger",
         type=Path,
-        help="Version-2 JSON grounding, dialogue, shot-role, and audit ledger.",
+        help="Version-3 JSON grounding, dialogue, coverage, shot-role, and audit ledger.",
     )
     parser.add_argument(
         "--dialogue-ledger",
         type=Path,
-        help="Deprecated alias for --source-ledger; the file must use version 2.",
+        help="Deprecated alias for --source-ledger; the file must use version 3.",
     )
     parser.add_argument(
         "--require-source-ledger",
         action="store_true",
-        help="Fail when no version-2 source ledger is supplied.",
+        help="Fail when no version-3 source ledger is supplied.",
     )
     return parser.parse_args()
 
@@ -613,8 +613,16 @@ def validate_source_ledger(
     except (OSError, json.JSONDecodeError) as exc:
         return [f"源图台账无法读取：{exc}"]
 
-    if ledger.get("version") != 2:
-        errors.append("源图台账version必须为2。")
+    if ledger.get("version") != 3:
+        errors.append("源图台账version必须为3；旧台账请先运行migrate_source_ledger_v2_to_v3.py。")
+    migration_review = ledger.get("migration_review_required", [])
+    if not isinstance(migration_review, list):
+        errors.append("migration_review_required必须是数组。")
+    elif migration_review:
+        errors.append(
+            f"V2→V3迁移仍有{len(migration_review)}项需要逐图人工复核；"
+            "清空前不能作为通过的源图台账。"
+        )
     source_language = ledger.get("source_language")
     if not isinstance(source_language, str) or not source_language.strip():
         errors.append("源图台账缺少source_language；必须声明原漫画文字语言。")
@@ -843,7 +851,8 @@ def validate_source_ledger(
                 )
             else:
                 planned_ids: list[str] = []
-                turn_target_sets: list[set[str]] = []
+                turn_ids: list[str] = []
+                turn_bubbles: dict[str, list[str]] = {}
                 for turn_index, turn in enumerate(dialogue_turns, start=1):
                     turn_label = f"{image} dialogue_turns[{turn_index}]"
                     if not isinstance(turn, dict):
@@ -856,40 +865,69 @@ def validate_source_ledger(
                         errors.append(f"{turn_label}的bubble_ids必须是非空字符串数组。")
                         bubble_ids = []
                     planned_ids.extend(bubble_ids)
+                    turn_id = turn.get("id")
+                    if not isinstance(turn_id, str) or not turn_id.strip() or turn_id in turn_bubbles:
+                        errors.append(f"{turn_label}缺少唯一非空id。")
+                        turn_id = f"#invalid-{turn_index}"
+                    turn_ids.append(turn_id)
+                    turn_bubbles[turn_id] = list(bubble_ids)
                     if not isinstance(turn.get("function"), str) or not turn["function"].strip():
                         errors.append(f"{turn_label}缺少语义function。")
-                    targets = turn.get("targets")
-                    if not isinstance(targets, list) or not targets or any(
-                        not isinstance(item, str) or item not in shot_map for item in targets
-                    ):
-                        errors.append(f"{turn_label}的targets必须是非空且存在的分镜数组。")
-                        targets = []
-                    target_set = set(targets)
-                    turn_target_sets.append(target_set)
-                    for planned_bubble_id in bubble_ids:
-                        mapped_targets = bubble_targets_by_id.get(planned_bubble_id, set())
-                        if mapped_targets and not mapped_targets.issubset(target_set):
-                            errors.append(
-                                f"{turn_label}未覆盖气泡{planned_bubble_id}的实际目标{sorted(mapped_targets)}。"
-                            )
                 if planned_ids != mapped_dialogue_ids:
                     errors.append(
                         f"{image}的dialogue_turns未按源顺序完整覆盖气泡："
                         f"{planned_ids} != {mapped_dialogue_ids}。"
                     )
-                distinct_turn_targets = set().union(*turn_target_sets) if turn_target_sets else set()
-                if len(distinct_turn_targets) < len(turn_target_sets):
-                    errors.append(
-                        f"{image}含{len(turn_target_sets)}个独立语义轮次；必须至少映射到"
-                        f"{len(turn_target_sets)}个不同分镜，不能把后续问答/反驳压回同镜。"
-                    )
-                for turn_index in range(len(turn_target_sets) - 1):
-                    overlap = turn_target_sets[turn_index] & turn_target_sets[turn_index + 1]
-                    if overlap:
+                coverage_groups = panel.get("coverage_groups")
+                if not isinstance(coverage_groups, list) or not coverage_groups:
+                    errors.append(f"{image}缺少coverage_groups；语义轮次不能直接等同于镜头数。")
+                else:
+                    grouped_turn_ids: list[str] = []
+                    group_target_sets: list[set[str]] = []
+                    for group_index, group in enumerate(coverage_groups, start=1):
+                        group_label = f"{image} coverage_groups[{group_index}]"
+                        if not isinstance(group, dict):
+                            errors.append(f"{group_label}必须是对象。")
+                            continue
+                        group_turn_ids = group.get("turn_ids")
+                        if not isinstance(group_turn_ids, list) or not group_turn_ids or any(
+                            not isinstance(item, str) or item not in turn_bubbles for item in group_turn_ids
+                        ):
+                            errors.append(f"{group_label}的turn_ids必须引用已登记语义轮次。")
+                            group_turn_ids = []
+                        grouped_turn_ids.extend(group_turn_ids)
+                        targets = group.get("targets")
+                        if not isinstance(targets, list) or not targets or any(
+                            not isinstance(item, str) or item not in shot_map for item in targets
+                        ):
+                            errors.append(f"{group_label}的targets必须是非空且存在的分镜数组。")
+                            targets = []
+                        target_set = set(targets)
+                        group_target_sets.append(target_set)
+                        if len(group_turn_ids) > 1:
+                            merge_basis = group.get("merge_basis")
+                            if not isinstance(merge_basis, str) or sum(ch.isalnum() for ch in merge_basis) < 8:
+                                errors.append(f"{group_label}合并多个轮次但缺少具体merge_basis。")
+                        for group_turn_id in group_turn_ids:
+                            for planned_bubble_id in turn_bubbles.get(group_turn_id, []):
+                                mapped_targets = bubble_targets_by_id.get(planned_bubble_id, set())
+                                if mapped_targets and not mapped_targets.issubset(target_set):
+                                    errors.append(
+                                        f"{group_label}未覆盖气泡{planned_bubble_id}的实际目标"
+                                        f"{sorted(mapped_targets)}。"
+                                    )
+                    if grouped_turn_ids != turn_ids:
                         errors.append(
-                            f"{image}的相邻语义轮次共享分镜{sorted(overlap)}；"
-                            "独立问答/反驳必须使用不同覆盖。"
+                            f"{image}的coverage_groups未按顺序完整覆盖语义轮次："
+                            f"{grouped_turn_ids} != {turn_ids}。"
                         )
+                    for group_index in range(len(group_target_sets) - 1):
+                        overlap = group_target_sets[group_index] & group_target_sets[group_index + 1]
+                        if overlap:
+                            errors.append(
+                                f"{image}的相邻coverage_groups共享分镜{sorted(overlap)}；"
+                                "若同一机位承载两轮，应将它们合为一个覆盖组。"
+                            )
         for chars, clauses, targets in bubble_turns:
             if (chars >= 42 or clauses >= 3) and len(targets) < 2:
                 errors.append(
@@ -924,6 +962,15 @@ def validate_source_ledger(
         "composition_overlap",
         "visible_information",
         "dramatic_function",
+    }
+    allowed_coverage_types = {
+        "speaker",
+        "listener",
+        "relationship",
+        "object_insert",
+        "environment_insert",
+        "detail_insert",
+        "action_phase",
     }
     panel_images = {
         Path(panel.get("image", "")).name.casefold()
@@ -1040,7 +1087,15 @@ def validate_source_ledger(
                 )
                 coverage_changes = []
             if len(set(coverage_changes)) < 2:
-                errors.append(f"{target}是增镜但不足两项有效coverage_changes；应合并回原格镜头。")
+                errors.append(f"{target}是增镜但不足两项有效coverage_changes；请重新设计必要覆盖。")
+            coverage_type = shot.get("coverage_type")
+            if coverage_type not in allowed_coverage_types:
+                errors.append(
+                    f"{target}的coverage_type必须是{sorted(allowed_coverage_types)}之一。"
+                )
+            coverage_evidence = shot.get("coverage_evidence")
+            if not isinstance(coverage_evidence, str) or sum(ch.isalnum() for ch in coverage_evidence) < 8:
+                errors.append(f"{target}缺少具体coverage_evidence；标签本身不能证明增镜差异。")
             for source_image in derived_from:
                 image_key = Path(source_image).name.casefold()
                 if image_key not in panel_images:
@@ -1152,11 +1207,82 @@ def valid_seconds(value: object) -> bool:
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0
 
 
+def manual_overflow_segments(ledger_path: Path | None, max_seconds: int) -> tuple[set[int], list[str]]:
+    """Return strictly verified single-panel segments allowed to exceed the hard clip ceiling."""
+    if ledger_path is None:
+        return set(), []
+    try:
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError):
+        return set(), []
+    if ledger.get("version") != 3:
+        return set(), []
+    shots = ledger.get("shots")
+    panels = ledger.get("panels")
+    if not isinstance(shots, list) or not isinstance(panels, list):
+        return set(), []
+
+    allowed: set[int] = set()
+    errors: list[str] = []
+    for panel in panels:
+        if not isinstance(panel, dict) or not isinstance(panel.get("manual_overflow"), dict):
+            continue
+        image = panel.get("image")
+        overflow = panel["manual_overflow"]
+        segment = overflow.get("segment")
+        match = re.fullmatch(r"片段(\d+)", str(segment))
+        reason = overflow.get("reason")
+        estimated = overflow.get("estimated_seconds")
+        if (
+            not isinstance(image, str)
+            or not match
+            or overflow.get("manual_handling_required") is not True
+            or not valid_seconds(estimated)
+            or float(estimated) <= max_seconds
+            or not isinstance(reason, str)
+            or sum(ch.isalnum() for ch in reason) < 8
+        ):
+            errors.append(f"{image or '未知面板'}的manual_overflow字段不完整或未证明超过{max_seconds}秒。")
+            continue
+        number = int(match.group(1))
+        target_prefix = f"片段{number}/"
+        owned_rows = [
+            shot for shot in shots
+            if isinstance(shot, dict) and str(shot.get("target", "")).startswith(target_prefix)
+        ]
+        image_key = Path(image).name.casefold()
+        if not owned_rows:
+            errors.append(f"{image}的manual_overflow没有对应片段{number}镜头。")
+            continue
+        foreign_owner = False
+        for shot in owned_rows:
+            role = shot.get("role")
+            owners = shot.get("derived_from") if role == "uncited_coverage" else shot.get("source_images")
+            owner_keys = {
+                Path(item).name.casefold()
+                for item in owners or []
+                if isinstance(item, str) and item.strip()
+            }
+            if owner_keys != {image_key}:
+                foreign_owner = True
+                break
+        if foreign_owner:
+            errors.append(
+                f"片段{number}含多格或归属不明镜头，不能使用单格manual_overflow例外。"
+            )
+            continue
+        allowed.add(number)
+    return allowed, errors
+
+
 def main() -> int:
     args = parse_args()
     text = args.storyboard.read_text(encoding="utf-8")
     errors: list[str] = []
     warnings: list[str] = []
+    ledger_path = args.source_ledger or args.dialogue_ledger
+    overflow_segments, overflow_errors = manual_overflow_segments(ledger_path, args.max_seconds)
+    errors.extend(overflow_errors)
 
     safe_section_marker = text.find("# 附录：平台安全替换稿")
     if safe_section_marker >= 0:
@@ -1219,9 +1345,15 @@ def main() -> int:
                     f"{label}{number}自动分镜模式必须只含战斗段1：{sequence_numbers}"
                 )
             if total_duration > args.max_seconds:
-                errors.append(
-                    f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
-                )
+                if label == "片段" and number in overflow_segments:
+                    warnings.append(
+                        f"片段{number}为单格必要覆盖{total_duration}秒，超过硬上限{args.max_seconds}秒；"
+                        "已标记交由用户人工处理。"
+                    )
+                else:
+                    errors.append(
+                        f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                    )
             if "开局状态：" not in chunk or "战斗过程：" not in chunk or "结束状态：" not in chunk:
                 errors.append(
                     f"{label}{number}战斗自动分镜缺少开局状态、战斗过程或结束状态。"
@@ -1254,9 +1386,15 @@ def main() -> int:
             if shot_numbers != expected:
                 errors.append(f"{label}{number}分镜编号应从1连续递增：{shot_numbers}")
             if total_duration > args.max_seconds:
-                errors.append(
-                    f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
-                )
+                if label == "片段" and number in overflow_segments:
+                    warnings.append(
+                        f"片段{number}为单格必要覆盖{total_duration}秒，超过硬上限{args.max_seconds}秒；"
+                        "已标记交由用户人工处理。"
+                    )
+                else:
+                    errors.append(
+                        f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                    )
 
         for match in PRODUCTION_NOTE_RE.finditer(chunk):
             errors.append(
@@ -1390,7 +1528,7 @@ def main() -> int:
             if current_references and current_references == previous_references:
                 errors.append(
                     f"{label}{number}的相邻{shot.group(0)}重复同一参考图；"
-                    "请合并镜头；若后镜确有新构图，移除重复正式引用并登记为uncited_coverage，"
+                    "若无独立覆盖功能则合并；若对白/反应需要该镜头，移除重复正式引用并重新设计为uncited_coverage，"
                     "且至少改变主体焦点、景别、视角/轴线、构图/遮挡、可见信息或戏剧功能中的两项。"
                 )
             previous_references = current_references
@@ -1469,9 +1607,8 @@ def main() -> int:
 
     if args.source_ledger and args.dialogue_ledger:
         errors.append("请只使用--source-ledger；不要同时传入--dialogue-ledger。")
-    ledger_path = args.source_ledger or args.dialogue_ledger
     if args.require_source_ledger and not ledger_path:
-        errors.append("完整验证要求--source-ledger版本2台账。")
+        errors.append("完整验证要求--source-ledger版本3台账。")
     if ledger_path:
         errors.extend(
             validate_source_ledger(ledger_path, main_text, args.image_dir)
