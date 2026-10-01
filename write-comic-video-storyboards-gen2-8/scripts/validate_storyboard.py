@@ -718,6 +718,8 @@ def validate_source_ledger(
         seen_ids: set[str] = set()
         panel_targets: set[str] = set()
         bubble_turns: list[tuple[int, int, set[str]]] = []
+        mapped_dialogue_ids: list[str] = []
+        bubble_targets_by_id: dict[str, set[str]] = {}
         panel_speakers = {
             bubble.get("speaker")
             for bubble in bubbles
@@ -814,6 +816,9 @@ def validate_source_ledger(
                     seconds_by_target[target] = seconds_by_target.get(target, 0.0) + estimated
 
             bubble_turns.append((turn_characters, turn_clauses, turn_targets))
+            if bubble.get("kind") != "narration" and isinstance(bubble_id, str) and bubble_id.strip():
+                mapped_dialogue_ids.append(bubble_id)
+                bubble_targets_by_id[bubble_id] = set(turn_targets)
 
         kinds = {
             bubble.get("kind") for bubble in bubbles if isinstance(bubble, dict)
@@ -826,9 +831,65 @@ def validate_source_ledger(
         )
         if is_risk and coverage not in {"shared", "reverse", "insert", "mixed"}:
             errors.append(f"{image}是对白风险面板，必须登记coverage。")
-        if len(panel_speakers) >= 2 and len(bubbles) >= 3 and len(panel_targets) < 2:
-            if not isinstance(panel.get("shared_reason"), str) or not panel["shared_reason"].strip():
-                errors.append(f"{image}含多说话人且至少3个气泡；单镜需shared_reason。")
+        needs_turn_plan = len(mapped_dialogue_ids) >= 2 and (
+            len(panel_speakers) >= 2 or len(mapped_dialogue_ids) >= 3
+        )
+        if needs_turn_plan:
+            dialogue_turns = panel.get("dialogue_turns")
+            if not isinstance(dialogue_turns, list) or len(dialogue_turns) < 2:
+                errors.append(
+                    f"{image}是多轮对白面板，必须先按源顺序登记至少两个dialogue_turns，"
+                    "再决定增镜和片段边界。"
+                )
+            else:
+                planned_ids: list[str] = []
+                turn_target_sets: list[set[str]] = []
+                for turn_index, turn in enumerate(dialogue_turns, start=1):
+                    turn_label = f"{image} dialogue_turns[{turn_index}]"
+                    if not isinstance(turn, dict):
+                        errors.append(f"{turn_label}必须是对象。")
+                        continue
+                    bubble_ids = turn.get("bubble_ids")
+                    if not isinstance(bubble_ids, list) or not bubble_ids or any(
+                        not isinstance(item, str) or not item.strip() for item in bubble_ids
+                    ):
+                        errors.append(f"{turn_label}的bubble_ids必须是非空字符串数组。")
+                        bubble_ids = []
+                    planned_ids.extend(bubble_ids)
+                    if not isinstance(turn.get("function"), str) or not turn["function"].strip():
+                        errors.append(f"{turn_label}缺少语义function。")
+                    targets = turn.get("targets")
+                    if not isinstance(targets, list) or not targets or any(
+                        not isinstance(item, str) or item not in shot_map for item in targets
+                    ):
+                        errors.append(f"{turn_label}的targets必须是非空且存在的分镜数组。")
+                        targets = []
+                    target_set = set(targets)
+                    turn_target_sets.append(target_set)
+                    for planned_bubble_id in bubble_ids:
+                        mapped_targets = bubble_targets_by_id.get(planned_bubble_id, set())
+                        if mapped_targets and not mapped_targets.issubset(target_set):
+                            errors.append(
+                                f"{turn_label}未覆盖气泡{planned_bubble_id}的实际目标{sorted(mapped_targets)}。"
+                            )
+                if planned_ids != mapped_dialogue_ids:
+                    errors.append(
+                        f"{image}的dialogue_turns未按源顺序完整覆盖气泡："
+                        f"{planned_ids} != {mapped_dialogue_ids}。"
+                    )
+                distinct_turn_targets = set().union(*turn_target_sets) if turn_target_sets else set()
+                if len(distinct_turn_targets) < len(turn_target_sets):
+                    errors.append(
+                        f"{image}含{len(turn_target_sets)}个独立语义轮次；必须至少映射到"
+                        f"{len(turn_target_sets)}个不同分镜，不能把后续问答/反驳压回同镜。"
+                    )
+                for turn_index in range(len(turn_target_sets) - 1):
+                    overlap = turn_target_sets[turn_index] & turn_target_sets[turn_index + 1]
+                    if overlap:
+                        errors.append(
+                            f"{image}的相邻语义轮次共享分镜{sorted(overlap)}；"
+                            "独立问答/反驳必须使用不同覆盖。"
+                        )
         for chars, clauses, targets in bubble_turns:
             if (chars >= 42 or clauses >= 3) and len(targets) < 2:
                 errors.append(

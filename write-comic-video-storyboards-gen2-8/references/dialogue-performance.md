@@ -19,7 +19,8 @@ Record every bubble/box in visual order while the image is open. Determine owner
 - 1–20 meaningful characters: normally one shot with one or two supported developments.
 - 21–41: one shot only when two or three supported developments follow semantic beats; otherwise use genuinely different coverage.
 - 42+ meaningful characters in one numbered shot, or three complete clauses in one continuous turn: at least two genuinely different numbered shots; no long-take waiver.
-- At least two speakers plus three bubbles: normally at least two targets. A shared source composition needs a supported relationship/action and `shared_reason`.
+- Determine ordered semantic turns before shot count and record them compactly as `dialogue_turns` (`bubble_ids`, `function`, `targets`). Consecutive bubbles may share a turn only when they form one continuous delivery, overlap, or a prompt with an inseparable short reaction. Speaker change is a strong boundary signal, while question→answer, accusation→denial, interruption, reveal→reaction and attitude reversals are always separate turns even when one speaker continues. Map every independent turn to different coverage, so A解释→B质问→A否认 has three turns/targets in source order, not two shots with B and the final A compressed together.
+- When several turns originate from one panel, keep all of their source-locked and uncited coverage in one clip. Restore the panel composition once, then use genuinely different reverses, listener reactions, inserts or supported close-ups for later turns; never solve an overly similar cut by deleting the required coverage beat.
 
 New coverage changes focus, scale, viewpoint, composition, visible information, or dramatic function. Speaker change alone is insufficient. Continuing one bubble across shots uses ordered segments whose Japanese concatenates exactly.
 

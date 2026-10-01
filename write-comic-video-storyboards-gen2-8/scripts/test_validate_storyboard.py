@@ -239,7 +239,7 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(storyboard(line=None), ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
-    def test_three_bubbles_two_speakers_need_split_or_shared_reason(self) -> None:
+    def test_three_ordered_speaker_turns_require_three_targets(self) -> None:
         lines = [("甲", "はい"), ("乙", "いいえ"), ("甲", "そうです")]
         spoken = "".join(
             f"{speaker}：“{line}”（清晰的中性音色，平静语气）。"
@@ -250,7 +250,6 @@ class ValidatorTests(unittest.TestCase):
         ledger = deepcopy(valid_ledger())
         panel = ledger["panels"][0]
         panel["source_bubble_count"] = 3
-        panel.pop("shared_reason", None)
         panel["bubbles"] = [
             {
                 "id": f"b{index}",
@@ -265,9 +264,83 @@ class ValidatorTests(unittest.TestCase):
             }
             for index, (speaker, line) in enumerate(lines, start=1)
         ]
+        panel["dialogue_turns"] = [
+            {
+                "id": f"t{index}",
+                "bubble_ids": [f"b{index}"],
+                "function": function,
+                "targets": ["片段1/分镜1"],
+            }
+            for index, function in enumerate(["提问", "回答", "反驳"], start=1)
+        ]
         result = self.run_validator(text, ledger, True)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("单镜需shared_reason", result.stdout)
+        self.assertIn("3个独立语义轮次", result.stdout)
+        self.assertIn("必须至少映射到3个不同分镜", result.stdout)
+
+    def test_three_semantic_turns_pass_with_three_shots_in_one_clip(self) -> None:
+        text = storyboard(line="えっ。") + """
+**分镜2（3秒）：**
+【镜头设计】：85mm侧向脸部特写，乙占画面右侧，固定镜头。
+【可见动作】：乙先抬眼，嘴唇张开后停住。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：乙：“何してるの。”（清晰女声，直接质问）。
+【光影布光】：柔和侧光照亮眼缘，脸侧保留浅影。
+【声音设计】：低环境底噪持续，句末短暂停顿。
+
+**分镜3（3秒）：**
+【镜头设计】：70mm正面脸部近景，甲占画面左侧，镜头轻推后停住。
+【可见动作】：甲先躲开视线，随后急促摇头，最后抿住嘴唇。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：甲：“違う！”（清晰女声，慌乱否认）。
+【光影布光】：柔和侧光照亮发缘，脸颊保留浅影。
+【声音设计】：低环境底噪持续，摇头时发丝轻响。
+"""
+        ledger = valid_ledger("えっ。")
+        panel = ledger["panels"][0]
+        panel["source_bubble_count"] = 3
+        panel["coverage"] = "reverse"
+        panel["bubbles"] = [
+            {
+                "id": "b1", "speaker": "甲", "speaker_evidence": "气泡尾指向甲",
+                "kind": "dialogue", "source_text": "什么？", "status": "mapped",
+                "script_text": "えっ。", "seconds": 1, "target": "片段1/分镜1",
+            },
+            {
+                "id": "b2", "speaker": "乙", "speaker_evidence": "气泡尾指向乙",
+                "kind": "dialogue", "source_text": "你在做什么？", "status": "mapped",
+                "script_text": "何してるの。", "seconds": 2, "target": "片段1/分镜2",
+            },
+            {
+                "id": "b3", "speaker": "甲", "speaker_evidence": "气泡尾指向甲",
+                "kind": "dialogue", "source_text": "不是！", "status": "mapped",
+                "script_text": "違う！", "seconds": 1, "target": "片段1/分镜3",
+            },
+        ]
+        panel["dialogue_turns"] = [
+            {"id": "t1", "bubble_ids": ["b1"], "function": "被撞见", "targets": ["片段1/分镜1"]},
+            {"id": "t2", "bubble_ids": ["b2"], "function": "质问", "targets": ["片段1/分镜2"]},
+            {"id": "t3", "bubble_ids": ["b3"], "function": "否认", "targets": ["片段1/分镜3"]},
+        ]
+        for number, changes in [(2, ["subject_focus", "viewpoint_axis"]), (3, ["subject_focus", "scale"])]:
+            ledger["shots"].append({
+                "target": f"片段1/分镜{number}",
+                "role": "uncited_coverage",
+                "source_images": [],
+                "derived_from": ["panel.jpg"],
+                "coverage_changes": changes,
+                "evidence": "current_panel",
+                "purpose": "多轮对白覆盖",
+                "background_excerpt": BACKGROUND,
+                "source_audit": "pass",
+                "unsupported_additions": [],
+                "risk_flags": ["D"],
+                "risk_basis": "多轮对白；构图关系清楚，无脆弱几何",
+            })
+        ledger["shots"][0]["risk_flags"] = ["D"]
+        ledger["shots"][0]["risk_basis"] = "多轮对白；构图关系清楚，无脆弱几何"
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
     def test_combined_sound_design_is_allowed(self) -> None:
         result = self.run_validator(storyboard(), valid_ledger(), require_ledger=True)
