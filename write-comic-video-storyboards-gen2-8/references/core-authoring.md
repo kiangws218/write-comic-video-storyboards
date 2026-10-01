@@ -38,15 +38,25 @@ Each camera setup receives one numbered shot and positive integer duration. A ha
 ## 【片段1】
 **分镜1（6秒）：**
 分镜参考 `[00.jpg]`
-【场景环境】：只写镜头内可见的物理背景、图形场或铺满画面的表面，以及背景自身的材质、层次和运动；不写人物、动物、前景道具、主体位置、主体遮挡或构图关系。
 【镜头设计】：景别/焦段、机位与轴线、主体构图、景深、焦点、起幅、一个主运镜和落幅。
-【可见动作】：先建立人物、动物、道具、主体位置、前后层次、重叠遮挡和自足起始姿态，再经语义节点发展头脸、微表情、手/道具、重心和延迟运动，落到明确状态。
+【可见动作】：先按原格具体锁定景别与裁切边界、主体位置、前中后景、重叠遮挡、道具接触、视线轴和负空间；再经语义节点发展头脸、微表情、手/道具、重心和延迟运动，落到明确状态。
+【可见背景】：只写镜头内可见的物理背景、明确的图形场或铺满画面的表面，以及背景自身的材质、层次和运动；不写人物、动物、前景道具、主体位置、主体遮挡或构图关系。
 【台词与语气】：角色说：“……”（音色、语气、情绪及必要的语速、停顿、重音）；无台词写“无台词”。
 【光影布光】：光源方向、人物位置/遮挡、主辅光、明暗区、局部高光、材质和有依据的空气效果。
 【声音设计】：把连续环境底声、远近/遮挡/声像、动作拟音、呼吸/静默、台词距离和关键音画同步写成一段；同一声音只出现一次。
 ```
 
-Keep all six bracketed fields separate and complete. Do not output the removed `环境音` field or legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
+Keep all six bracketed fields separate, complete, and in the shown order. Speech-bubble interiors and surrounding blank, page margins, panel gutters, and OCR gaps are layout artifacts, never `【可见背景】`. Do not output the removed `环境音` field or legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
+
+When several panels are a true continuous action in the same camera setup, background, and axis, share the other five fields but bind composition and action one panel at a time inside `【可见动作】`:
+
+```markdown
+【可见动作】：
+- 参考 `[00.jpg]`（起幅）：平视双人中景，甲占左前景至胸口，乙在右后方露出半身；甲的前臂遮住乙的右肩，桌沿横切画面下四分之一。
+- 参考 `[01.jpg]`（结果）：同一轴线下乙退后半步，右肩退出遮挡；甲的手沿桌沿滑到画面中央，视线停在乙脸上。
+```
+
+Do not stack multiple references on one line above the fields or blend their facts into one paragraph. Each bullet names its source phase and preserves that panel's crop, placement, depth/overlap and corresponding action. If setup, backing, axis, or causal continuity changes, create another numbered shot.
 
 ## Color, environment, and audio
 

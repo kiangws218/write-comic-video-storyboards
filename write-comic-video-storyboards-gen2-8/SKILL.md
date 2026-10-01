@@ -40,7 +40,8 @@ Work on one to three contiguous panels. Keep each cited image open from evidence
 ## Delivery
 
 - Ordinary shots use `分镜N（X秒）`; eligible combat uses one `战斗段N（X秒·自动分镜）`. Keep a clip within 15 seconds when practical; every real cut gets a number.
-- Field order is `【场景环境】`, `【镜头设计】`, `【可见动作】`, `【台词与语气】`, `【光影布光】`, `【声音设计】`. Background contains backing only; sound combines ambience, Foley, breath/silence, dialogue treatment, and synchronization once.
+- Field order is `【镜头设计】`, `【可见动作】`, `【可见背景】`, `【台词与语气】`, `【光影布光】`, `【声音设计】`. `【可见动作】` first locks the cited panel's scale/crop, placement, depth, overlap and negative space, then stages performance. `【可见背景】` contains only physical backing, an intentional graphic field, or a frame-filling surface; speech-bubble/page/gutter whitespace is never scenery. Sound combines ambience, Foley, breath/silence, dialogue treatment, and synchronization once.
+- Cite one source normally. If one numbered shot legitimately merges several same-setup panels, do not stack references above the fields: bind each image to a separate bullet inside `【可见动作】` (`参考 [image]（起幅/发展/结果）：...`). The bullets share camera, background, dialogue, light and sound, while each preserves its panel-specific composition and action. Split the shot when camera setup, background, axis, or action continuity changes.
 - Keep the ledger compact: mechanically derive mappings/excerpts where possible; model only source locks, evidence, risk flags, and `P` cards.
 - Structural errors and `P`-performance errors block delivery. Repeated-reference/multi-speaker advisories may remain only after image-based review confirms a real coverage change or supported shared composition.
 

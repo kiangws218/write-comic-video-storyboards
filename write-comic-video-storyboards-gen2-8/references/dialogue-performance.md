@@ -23,7 +23,7 @@ Record every bubble/box in visual order while the image is open. Determine owner
 
 New coverage changes focus, scale, viewpoint, composition, visible information, or dramatic function. Speaker change alone is insufficient. Continuing one bubble across shots uses ordered segments whose Japanese concatenates exactly.
 
-Estimate speech before clip boundaries: interjection 1–2s; short sentence 2–4s; medium 4–6s; long explanation 6–9s; two long clauses 8–12s. Concurrent speech and acting use the longer interval. Every line includes local voice, delivery, emotion, and useful pace/pause/emphasis.
+Estimate speech before clip boundaries from the final Japanese, not from a desired shot duration. Use about six meaningful Japanese characters per second as a neutral baseline, then add roughly 0.25s for `、`, 0.45s for `。！？`, 0.6s for `……/…`, and 0.35s when the speaker changes inside one target. Preserve natural floors: interjection 1–2s; short sentence 2–4s; medium 4–6s; long explanation 6–9s; two long clauses 8–12s. The ledger's `seconds` is only an author estimate; validation independently recomputes the line and rejects material underestimation. Concurrent speech and acting use the longer interval. Every line includes local voice, delivery, emotion, and useful pace/pause/emphasis.
 
 If prose names a spoken trigger, quote an exact Japanese substring from that shot inside `「」`. Otherwise use `开口前/转折后/重音处/句末`. Chinese paraphrases such as `“闭嘴”出口时`, `提出抢攻时`, or `提到入口时` are invalid.
 
@@ -72,4 +72,4 @@ Do not force a neutral or cropped shot to invent missing anatomy or emotion. Rec
 
 Repeated reference images, multiple speakers, or long takes are advisories when the planned shots genuinely change viewpoint/function or preserve a supported shared composition. Inspect them; do not add decorative actions merely to silence a warning.
 
-Before leaving each batch, read only `【镜头设计】`, `【可见动作】`, `【台词与语气】`, and `【声音设计】`. An animator must recover opening, ordered changes, overlap/latency, and final held state without another shot. Then compare those claims with the still-open source image.
+Before leaving each batch, read only `【镜头设计】`, `【可见动作】`, `【可见背景】`, `【台词与语气】`, and `【声音设计】`. An animator must recover the panel-specific composition, opening, ordered changes, overlap/latency, final held state, and renderable backing without another shot. Then compare those claims with the still-open source image.

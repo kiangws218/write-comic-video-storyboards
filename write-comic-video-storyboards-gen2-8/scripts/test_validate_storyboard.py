@@ -17,6 +17,7 @@ BACKGROUND = "暖象牙色向淡天蓝渐变铺满背景"
 
 def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> str:
     action = "人物手指轻微收紧。" if line is None else "人物手掌朝上，手指稳定托住画外物件。"
+    action += " 手腕由画面下缘入画并被边缘裁切，掌心占中央前景。"
     speech = "无台词。" if line is None else f"人物：“{line}”（清晰的中性音色，平静语气）。"
     return f"""## 场景色彩基准
 二维手绘质感，中等对比。
@@ -25,9 +26,9 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 
 **分镜1（5秒）：**
 分镜参考 `[panel.jpg]`
-【场景环境】：{background}，深蓝灰放射线向外扩张。
 【镜头设计】：平视手部特写，固定镜头。
 【可见动作】：{action}
+【可见背景】：{background}，深蓝灰放射线向外扩张。
 【台词与语气】：{speech}
 【光影布光】：柔和侧光照亮手指轮廓，掌心保留浅影。
 【声音设计】：低环境底噪从画面后方持续传来，手指收紧时衣料轻响。
@@ -49,7 +50,7 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
                     "evidence": "current_panel",
                 },
                 "locks": {
-                    "composition": "平视手部特写",
+                    "composition": "平视手部特写，手腕从画面下缘裁切，掌心占中央前景",
                     "visible_subjects": ["一只手"],
                     "relations": ["手位于画面下方"],
                     "forbidden_inferences": ["第二只手"],
@@ -199,7 +200,7 @@ class ValidatorTests(unittest.TestCase):
             "target": "片段1/分镜1",
             "evidence": "当前面板可见脸部、手掌和袖口",
             "details": ["眉尾先抬起", "袖口迟半拍回落"],
-            "intervals": [{"speech_seconds": 2, "acting_seconds": 3}],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
         }]
         result = self.run_validator(text, ledger, True)
         self.assertNotEqual(result.returncode, 0)
@@ -222,7 +223,7 @@ class ValidatorTests(unittest.TestCase):
                 "landing": "视线停在掌心，固定镜头",
             },
             "details": ["眉尾先抬起", "袖口迟半拍回落"],
-            "intervals": [{"speech_seconds": 2, "acting_seconds": 3}],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
         }]
         result = self.run_validator(text, ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -281,8 +282,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_subject_composition_inside_environment_fails(self) -> None:
         text = storyboard().replace(
-            f"【场景环境】：{BACKGROUND}，深蓝灰放射线向外扩张。",
-            "【场景环境】：少女位于画面左侧，暖色墙面填满背景。",
+            f"【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【可见背景】：少女位于画面左侧，暖色墙面填满背景。",
         )
         result = self.run_validator(text)
         self.assertNotEqual(result.returncode, 0)
@@ -356,9 +357,9 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-【场景环境】：{BACKGROUND}，微尘漂浮。
 【镜头设计】：50mm平视手部特写，固定镜头。
-【可见动作】：手掌朝上，手指稳定托住物件。
+【可见动作】：手腕从画面下缘入画并被裁切，手掌占中央前景，手指稳定托住物件。
+【可见背景】：{BACKGROUND}，微尘漂浮。
 【台词与语气】：无台词。
 【光影布光】：柔和侧光照亮手指，微尘停在暗部。
 【声音设计】：低环境底噪从画面后方持续传来，衣料发出轻响。
@@ -414,8 +415,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_audio_line_with_hidden_visual_action_warns(self) -> None:
         text = storyboard().replace(
-            BACKGROUND,
-            BACKGROUND + "。\n【声音设计】：人物转身走向门并打开门，随后传来门轴声。",
+            "【声音设计】：低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
+            "【声音设计】：人物转身走向门并打开门，随后传来门轴声。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -425,9 +426,9 @@ class ValidatorTests(unittest.TestCase):
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
 分镜参考 `[panel.jpg]`
-【场景环境】：窗边蒸汽缓慢上升，{BACKGROUND}。
 【镜头设计】：50mm平视近景，固定镜头。
-【可见动作】：手掌朝上，手指稳定托住物件。
+【可见动作】：手腕从画面下缘入画并被裁切，手掌占中央前景，手指稳定托住物件。
+【可见背景】：窗边蒸汽缓慢上升，{BACKGROUND}。
 【台词与语气】：无台词。
 【光影布光】：逆光穿过蒸汽形成微尘可见的光束。
 【声音设计】：窗边风声从画面右侧传来，蒸汽发出轻响。
@@ -555,8 +556,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_terminal_uncited_coverage_before_source_shot_warns(self) -> None:
         base = storyboard().replace(
-            f"【场景环境】：{BACKGROUND}，深蓝灰放射线向外扩张。",
-            "【场景环境】：暖色墙面填满背景。",
+            f"【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【可见背景】：暖色墙面填满背景。",
         ).replace(
             "人物手掌朝上，手指稳定托住画外物件。",
             "浅发少女位于画面左侧，木杯占据右前景；少女手指稳定托住杯柄。",
@@ -567,6 +568,42 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(first + "\n" + second)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("末镜为无参考补镜", result.stdout)
+
+    def test_page_or_bubble_whitespace_is_not_visible_background(self) -> None:
+        text = storyboard().replace(
+            f"【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【可见背景】：浅色对话留白把背景切成上下两层。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("气泡/页面/格间空白", result.stdout)
+
+    def test_ledger_cannot_underreport_japanese_speech_time(self) -> None:
+        line = "これはとても長い説明なので最後までちゃんと聞いてください。"
+        text = storyboard(line=line).replace("分镜1（5秒）", "分镜1（8秒）")
+        ledger = valid_ledger(line)
+        ledger["panels"][0]["bubbles"][0]["seconds"] = 1
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("低于独立日文估时", result.stdout)
+
+    def test_multi_reference_requires_source_bound_action_rows(self) -> None:
+        text = storyboard().replace(
+            "分镜参考 `[panel.jpg]`",
+            "分镜参考 `[panel.jpg]`、`[panel2.jpg]`",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("逐条绑定", result.stdout)
+
+    def test_action_requires_concrete_panel_composition(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上，手指稳定托住画外物件。 手腕由画面下缘入画并被边缘裁切，掌心占中央前景。",
+            "人物手指轻微收紧。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少原格构图锁", result.stdout)
 
 
 if __name__ == "__main__":

@@ -107,10 +107,10 @@ PURE_OBJECT_SHOT_RE = re.compile(
     r"人物(?:与手|和手)?均未入画|人物未入画|画面(?:没有|不含)人物|物件特写|说明性物件镜头"
 )
 HAND_DETAIL_SHOT_RE = re.compile(r"手部(?:极近景|近景|特写)|交叠手部|画面只显示这一只手")
-SHOT_FIELD_NAMES = ("场景环境", "镜头设计", "可见动作", "台词与语气", "光影布光", "声音设计")
+SHOT_FIELD_NAMES = ("镜头设计", "可见动作", "可见背景", "台词与语气", "光影布光", "声音设计")
 SHOT_FIELD_RE = re.compile(
-    r"(?ms)^\s*【(场景环境|镜头设计|可见动作|台词与语气|光影布光|声音设计)】[：:]\s*"
-    r"(.*?)(?=^\s*【(?:场景环境|镜头设计|可见动作|台词与语气|光影布光|声音设计)】[：:]|\Z)"
+    r"(?ms)^\s*【(镜头设计|可见动作|可见背景|台词与语气|光影布光|声音设计)】[：:]\s*"
+    r"(.*?)(?=^\s*【(?:镜头设计|可见动作|可见背景|台词与语气|光影布光|声音设计)】[：:]|\Z)"
 )
 BACKGROUND_SUBJECT_COMPOSITION_RE = re.compile(
     r"(?:人物|角色|少女|少年|女性|男性|男人|女人|手掌|手臂|脸部|侧脸|正脸|"
@@ -135,8 +135,9 @@ BACKGROUND_VISUAL_RE = re.compile(
     r"背景|天空|云(?:层|影|体)?|树(?:冠|林|木|影)?|森林|草(?:地|坡|丛|叶)?|地面|地板|"
     r"墙(?:面|壁)?|室内|走廊|房间|街道|屋顶|山(?:体|坡|脊)?|灌木|"
     r"水面|湖面|海面|河面|岩(?:壁|地|石)?|洞穴|速度(?:线|带|场)|"
-    r"放射线|冲击底|渐变|纯色|留白|光幕|雾|烟尘|尘土|雨幕|雪地|"
+    r"放射线|冲击底|渐变|图形底|纯色|纯白图形底|色块|亮区|夜色|阴影|光幕|雾|烟尘|尘土|雨幕|雪地|"
     r"箱壁|盒壁|内衬|布面|衣料[^。；\r\n]{0,12}(?:铺满|填满|遮满)|"
+    r"(?:皮肤|肤色|发丝|头发|白发|棕发|表面)[^。；\r\n]{0,16}(?:铺满|填满|构成|形成)|"
     r"(?:铺满|填满|遮满)(?:画面|背景)"
 )
 NEGATIVE_PROMPT_RE = re.compile(
@@ -165,6 +166,26 @@ SEMANTIC_TRIGGER_CUE_RE = re.compile(
     r"(?:提出|表达|表示|强调|拒绝|答应|承认|否认|改口|反问|质问|警告|命令|劝阻|安慰|解释)"
     r"[^。；，,\r\n]{1,24}?(?:时|处)|"
     r"(?:信息|结论|判断|名称|对象)(?:进入|到来|出现)(?:时|处)"
+)
+BACKGROUND_PAGE_ARTIFACT_RE = re.compile(
+    r"漫画留白|对话留白|气泡留白|画面留白|页面留白|页边|格间留白|"
+    r"气泡(?:内部|周边|旁边|后的?)空白|OCR(?:空白|缺口)|画外传来的声源方向留成|"
+    r"留白把背景|空白把背景"
+)
+GENERIC_LOCK_RE = re.compile(
+    r"当前原格|当前面板|当前图|按原格|依照原格|原格(?:主体|构图|位置)|"
+    r"主体位置(?:不变|锁定)|构图关系(?:不变|锁定)|可见主体|画面主体"
+)
+COMPOSITION_SIGNAL_GROUPS = (
+    re.compile(r"近景|中景|远景|全景|特写|极近景|半身|胸像|肩部|腰部|膝上"),
+    re.compile(r"左(?:侧|边|缘|前景|后方|半)|右(?:侧|边|缘|前景|后方|半)|中央|中部|上方|下方|上缘|下缘|画面[左右上下]|占据|占满"),
+    re.compile(r"前景|中景|后景|纵深|前后层次|景深"),
+    re.compile(r"遮挡|重叠|露出|压住|穿过|贴住|接触|裁切|切到|切入|出画|入画|边缘|负空间|填满|围住|横贯|斜穿"),
+)
+MULTI_REF_BULLET_RE = re.compile(
+    r"(?m)^\s*[-*]\s*参考\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?"
+    r"\s*[（(]([^）)]+)[）)]\s*[：:]\s*(\S.+)$",
+    re.IGNORECASE,
 )
 JAPANESE_TRIGGER_QUOTE_RE = re.compile(r"「([^」]+)」")
 GENERIC_TIMING_CUE_RE = re.compile(
@@ -253,6 +274,21 @@ def missing_voice_directions(chunk: str) -> list[str]:
 def compact_text(value: str) -> str:
     """Normalize whitespace for exact dialogue-presence checks."""
     return re.sub(r"\s+", "", value)
+
+
+def estimated_japanese_speech_seconds(value: str) -> float:
+    """Independently estimate natural speech time from the final Japanese text."""
+    meaningful = re.findall(r"[A-Za-z0-9\u3040-\u30ff\u3400-\u9fff々ー]", value)
+    if not meaningful:
+        return 0.0
+    duration = len(meaningful) / 6.0
+    duration += 0.25 * len(re.findall(r"[、，,]", value))
+    duration += 0.45 * len(re.findall(r"[。！？!?]", value))
+    duration += 0.6 * len(re.findall(r"……|…", value))
+    # Even a short interjection needs an attack and release; ordinary lines need
+    # enough time to remain intelligible instead of being fitted to the shot.
+    floor = 1.0 if len(meaningful) <= 4 else 2.0 if len(meaningful) <= 16 else 0.0
+    return round(max(duration, floor), 2)
 
 
 def coverage_dialogue_metrics(block: str) -> tuple[int, int]:
@@ -578,6 +614,7 @@ def validate_source_ledger(
     allowed_kinds = {"dialogue", "inner", "narration"}
     shot_map = build_shot_map(main_text)
     seconds_by_target: dict[str, float] = {}
+    speakers_by_target: dict[str, set[str]] = {}
     acting_chars_by_target: dict[str, int] = {}
     seen_images: set[str] = set()
     available_images = (
@@ -616,18 +653,29 @@ def validate_source_ledger(
             description = background.get("description")
             if not isinstance(description, str) or sum(ch.isalnum() for ch in description) < 6:
                 errors.append(f"{image}的background.description过短或缺失。")
+            elif BACKGROUND_PAGE_ARTIFACT_RE.search(description):
+                errors.append(f"{image}的background.description把页面/气泡空白误作背景。")
             if background.get("evidence") != "current_panel":
                 errors.append(f"{image}的背景必须以current_panel为证据。")
         locks = panel.get("locks")
         if not isinstance(locks, dict):
             errors.append(f"{image}缺少phase-specific locks。")
         else:
-            if not isinstance(locks.get("composition"), str) or not locks["composition"].strip():
+            composition = locks.get("composition")
+            if not isinstance(composition, str) or not composition.strip():
                 errors.append(f"{image}缺少简洁构图锁定。")
+            elif GENERIC_LOCK_RE.search(composition) or sum(
+                bool(pattern.search(composition)) for pattern in COMPOSITION_SIGNAL_GROUPS
+            ) < 2:
+                errors.append(
+                    f"{image}的构图锁定过于泛化；必须具体写景别/裁切、位置及深度/遮挡中的至少两类。"
+                )
             for field in ("visible_subjects", "relations", "forbidden_inferences"):
                 value = locks.get(field)
                 if not isinstance(value, list) or any(not isinstance(item, str) or not item.strip() for item in value):
                     errors.append(f"{image}的locks.{field}必须是字符串数组。")
+                elif field != "forbidden_inferences" and any(GENERIC_LOCK_RE.search(item) for item in value):
+                    errors.append(f"{image}的locks.{field}含泛化占位语，必须改为当前图的具体事实。")
 
         coverage = panel.get("coverage")
         if coverage not in allowed_coverage:
@@ -719,10 +767,19 @@ def validate_source_ledger(
                     if bubble.get("kind") != "narration":
                         count = sum(char.isalnum() for char in script_text)
                         acting_chars_by_target[target] = acting_chars_by_target.get(target, 0) + count
+                        speaker = bubble.get("speaker")
+                        if isinstance(speaker, str) and speaker.strip():
+                            speakers_by_target.setdefault(target, set()).add(speaker.strip())
                 if not valid_seconds(seconds) or seconds <= 0:
                     errors.append(f"{bubble_label}的seconds必须是正数。")
                 else:
-                    seconds_by_target[target] = seconds_by_target.get(target, 0.0) + float(seconds)
+                    estimated = estimated_japanese_speech_seconds(str(script_text))
+                    if float(seconds) + 0.35 < estimated:
+                        errors.append(
+                            f"{bubble_label}台账估时{float(seconds):g}秒低于独立日文估时{estimated:g}秒；"
+                            "请按最终日文重估、延长或拆镜。"
+                        )
+                    seconds_by_target[target] = seconds_by_target.get(target, 0.0) + estimated
 
             bubble_turns.append((turn_characters, turn_clauses, turn_targets))
 
@@ -749,6 +806,10 @@ def validate_source_ledger(
             elif chars >= 28 and len(targets) < 2:
                 if not isinstance(panel.get("coverage_reason"), str) or not panel["coverage_reason"].strip():
                     errors.append(f"{image}的28–41字台词保留单镜时缺少coverage_reason。")
+
+    for target, speakers in speakers_by_target.items():
+        if len(speakers) > 1:
+            seconds_by_target[target] = seconds_by_target.get(target, 0.0) + 0.35 * (len(speakers) - 1)
 
     for target, required_seconds in seconds_by_target.items():
         shot_seconds = shot_map[target][0]
@@ -829,6 +890,21 @@ def validate_source_ledger(
                     errors.append(f"{target}引用了未登记面板：{source_image}")
                 if role == "source_locked" and image_key not in block_references:
                     errors.append(f"{target}的source_locked正文未引用：{source_image}")
+            if len(source_images) >= 2:
+                action = shot_field_values(shot_map[target][1]).get("可见动作", "")
+                phase_rows = list(MULTI_REF_BULLET_RE.finditer(action))
+                phase_images = [Path(row.group(1)).name.casefold() for row in phase_rows]
+                for source_image in source_images:
+                    if Path(source_image).name.casefold() not in phase_images:
+                        errors.append(
+                            f"{target}合并多张参考图，但【可见动作】缺少与{source_image}绑定的独立阶段条目。"
+                        )
+                for row in phase_rows:
+                    description = row.group(3)
+                    if sum(bool(pattern.search(description)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
+                        errors.append(
+                            f"{target}的{row.group(1)}阶段缺少具体构图；需写裁切/景别、位置及深度/遮挡中的至少两类。"
+                        )
         elif role == "uncited_coverage" and source_images:
             errors.append(f"{target}是uncited_coverage，source_images应为空数组。")
 
@@ -1066,17 +1142,35 @@ def main() -> int:
             if missing_fields:
                 errors.append(
                     f"{shot_label}缺少独立字段：{', '.join(missing_fields)}；"
-                    "请按【场景环境】、【镜头设计】、【可见动作】、【台词与语气】、"
+                    "请按【镜头设计】、【可见动作】、【可见背景】、【台词与语气】、"
                     "【光影布光】、【声音设计】输出。"
+                )
+            present_field_order = [match.group(1) for match in SHOT_FIELD_RE.finditer(block)]
+            expected_present_order = [name for name in SHOT_FIELD_NAMES if name in present_field_order]
+            if present_field_order != expected_present_order:
+                errors.append(
+                    f"{shot_label}字段顺序错误；请按【镜头设计】、【可见动作】、【可见背景】、"
+                    "【台词与语气】、【光影布光】、【声音设计】排列。"
                 )
             if REMOVED_ENVIRONMENT_AUDIO_RE.search(block):
                 errors.append(f"{shot_label}仍含已移除的环境音字段；请合并进【声音设计】并删除重复内容。")
-            if BACKGROUND_SUBJECT_COMPOSITION_RE.search(fields.get("场景环境", "")):
+            if BACKGROUND_SUBJECT_COMPOSITION_RE.search(fields.get("可见背景", "")):
                 errors.append(
-                    f"{shot_label}的【场景环境】混入主体、道具位置或构图关系；"
-                    "这里只写可见背景，把相关内容移到【镜头设计】或【可见动作】。"
+                    f"{shot_label}的【可见背景】混入主体、道具位置或构图关系；"
+                    "这里只写可生成背景，把相关内容移到【可见动作】。"
                 )
-            for field_name in ("场景环境", "镜头设计", "可见动作", "光影布光", "声音设计"):
+            if BACKGROUND_PAGE_ARTIFACT_RE.search(fields.get("可见背景", "")):
+                errors.append(
+                    f"{shot_label}把气泡/页面/格间空白误写成【可见背景】；"
+                    "请回看原图，只写物理环境、明确图形场或铺满画面的表面。"
+                )
+            action_text = fields.get("可见动作", "")
+            if sum(bool(pattern.search(action_text)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
+                errors.append(
+                    f"{shot_label}的【可见动作】缺少原格构图锁；"
+                    "请写景别/裁切、画面位置及深度/遮挡中的至少两类。"
+                )
+            for field_name in ("可见背景", "镜头设计", "可见动作", "光影布光", "声音设计"):
                 field_text = fields.get(field_name, "")
                 meta_match = SELF_CONTAINED_META_RE.search(field_text)
                 if meta_match:
@@ -1106,7 +1200,6 @@ def main() -> int:
                     "请检查回答、反驳、揭示、包袱或态度变化是否需要反打或听者反应。"
                 )
             if dialogue_characters > 0 and duration >= 5 and not PURE_OBJECT_SHOT_RE.search(block):
-                action_text = fields.get("可见动作", "")
                 action_phases = [
                     clause.strip()
                     for clause in re.split(r"[，,；;。]", action_text)
@@ -1123,9 +1216,19 @@ def main() -> int:
                         "请增加受支持的头面朝向、局部表情、手/道具、重心或听者反应，或拆镜。"
                     )
             if len(current_references) >= 2:
+                phase_images = {
+                    Path(match.group(1)).name.casefold()
+                    for match in MULTI_REF_BULLET_RE.finditer(action_text)
+                }
+                missing_phase_images = sorted(set(current_references) - phase_images)
+                if missing_phase_images:
+                    errors.append(
+                        f"{shot_label}引用多张原图却未在【可见动作】逐条绑定：{missing_phase_images}；"
+                        "每张图须以参考阶段条目结合其构图与动作，或拆成独立编号分镜。"
+                    )
                 warnings.append(
                     f"{shot_label}引用了{len(current_references)}张原图；"
-                    "请确认它们是同一机位的连续阶段，否则拆成独立编号分镜。"
+                    "已要求逐图阶段绑定，仍请确认同一机位、背景、轴线和连续动作。"
                 )
             if current_references and current_references == previous_references:
                 warnings.append(
@@ -1137,9 +1240,21 @@ def main() -> int:
                 errors.append(
                     f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"
                 )
-            if not has_descriptive_background(fields.get("场景环境", "")):
+            if not has_descriptive_background(fields.get("可见背景", "")):
                 errors.append(
                     f"{shot_label}缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
+                )
+            if dialogue_characters == 0 and duration > 4 and not (
+                MAJOR_ACTION_RE.search(action_text) or PERFORMANCE_SEQUENCE_RE.search(action_text)
+            ):
+                warnings.append(
+                    f"{shot_label}为{duration}秒无台词镜头且缺少可见发展；"
+                    "若只是短促反应/静态构图，请缩短，否则补足有依据的连续动作。"
+                )
+            camera_text = fields.get("镜头设计", "")
+            if dialogue_characters == 0 and duration > 3 and re.search(r"特写|近景", camera_text) and not PERFORMANCE_SEQUENCE_RE.search(action_text):
+                warnings.append(
+                    f"{shot_label}为{duration}秒静态近景/特写；请复核是否应缩短到1–3秒。"
                 )
 
         for match in META_RE.finditer(chunk):
