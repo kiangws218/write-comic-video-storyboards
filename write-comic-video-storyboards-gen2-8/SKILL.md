@@ -37,6 +37,7 @@ Create source evidence and risk decisions before prose. Never generate a success
 - A `P` shot renders its card into an opening state, ordered semantic developments, local face/head/gaze transition, coupled hand/prop/weight/listener or delayed response, performer endpoint, and camera landing. Cropped anatomy uses a visible substitute.
 - Many related micro-actions may fit three seconds; unrelated complete actions may not. Do not collapse causal acting into a gesture list or inflate a neutral panel.
 - Adjacent numbered shots never formally cite the same comic panel. A later genuine cut is uncited coverage and changes at least two meaningful visual/dramatic dimensions; otherwise merge it into the cited shot.
+- Treat every comic panel and all shots derived from it as one coverage unit: its cited shot and any uncited reverse/insert/reaction stay in the same clip. Do not start a new clip merely to continue dialogue or add a near-identical crop from that panel.
 - Every clip cold-starts with positive current pose, orientation, counts, contact, backing, light, gaze direction, and stable labels. No cross-shot pointers or negative controls.
 - Save tokens through routing and mechanical extraction, never by shortening the six-field storyboard.
 

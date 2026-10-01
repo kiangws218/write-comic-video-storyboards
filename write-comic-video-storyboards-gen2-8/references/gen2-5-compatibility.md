@@ -14,6 +14,8 @@ A formal citation belongs only to the camera phase that matches the panel's full
 
 Adjacent numbered shots must not formally cite the same comic panel. Merge them, or keep the source-matching shot cited and make the genuinely different later view uncited. The uncited view must change at least two meaningful dimensions among subject focus, scale, viewpoint/axis, composition/overlap, visible information, or dramatic function. Speaker change, a small zoom, focus transfer, eye-only crop, or camera motion alone is insufficient.
 
+The cited view and every added view derived from that panel form one indivisible panel coverage unit and stay in one clip. Do not end a clip on the cited composition and reopen the next clip with the same subjects/axis/layout to continue its dialogue. Merge a near-duplicate into the cited shot; keep a justified reverse/insert/reaction as another numbered shot inside the same clip.
+
 Several different panels may share one numbered shot only when they are successive phases of one camera setup, backing, axis, and causal action. Bind each panel to its own `【镜头设计】` phase bullet for crop/layout and use matching `【可见动作】` phase bullets for changing performance only. A setup, backing, axis, focus-subject, or discontinuous-action change starts another numbered shot.
 
 ## Beat, action, emotion, and duration

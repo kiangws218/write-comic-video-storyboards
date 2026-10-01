@@ -856,6 +856,14 @@ def validate_source_ledger(
         errors.append("源图台账shots必须是非空数组。")
         shots = []
     allowed_roles = {"source_locked", "source_supported_phase", "uncited_coverage"}
+    allowed_coverage_changes = {
+        "subject_focus",
+        "scale",
+        "viewpoint_axis",
+        "composition_overlap",
+        "visible_information",
+        "dramatic_function",
+    }
     panel_images = {
         Path(panel.get("image", "")).name.casefold()
         for panel in panels
@@ -863,6 +871,7 @@ def validate_source_ledger(
     }
     seen_shot_targets: set[str] = set()
     performance_risk_targets: set[str] = set()
+    coverage_segments_by_panel: dict[str, set[str]] = {}
     for index, shot in enumerate(shots, start=1):
         label = f"shots[{index}]"
         if not isinstance(shot, dict):
@@ -924,6 +933,7 @@ def validate_source_ledger(
             }
             for source_image in source_images:
                 image_key = Path(source_image).name.casefold()
+                coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
                 if image_key not in panel_images:
                     errors.append(f"{target}引用了未登记面板：{source_image}")
                 if role == "source_locked" and image_key not in block_references:
@@ -951,8 +961,37 @@ def validate_source_ledger(
                     phase = compact_text(row.group(2))
                     if phase not in action_phases:
                         errors.append(f"{target}的【可见动作】缺少与构图阶段“{row.group(2)}”对应的动作条目。")
-        elif role == "uncited_coverage" and source_images:
-            errors.append(f"{target}是uncited_coverage，source_images应为空数组。")
+        elif role == "uncited_coverage":
+            if source_images:
+                errors.append(f"{target}是uncited_coverage，source_images应为空数组。")
+            derived_from = shot.get("derived_from")
+            if not isinstance(derived_from, list) or not derived_from or any(
+                not isinstance(item, str) or not item.strip() for item in derived_from
+            ):
+                errors.append(f"{target}是uncited_coverage，必须用derived_from登记所属原格。")
+                derived_from = []
+            coverage_changes = shot.get("coverage_changes")
+            if not isinstance(coverage_changes, list) or any(
+                item not in allowed_coverage_changes for item in coverage_changes
+            ):
+                errors.append(
+                    f"{target}的coverage_changes必须只使用{sorted(allowed_coverage_changes)}。"
+                )
+                coverage_changes = []
+            if len(set(coverage_changes)) < 2:
+                errors.append(f"{target}是增镜但不足两项有效coverage_changes；应合并回原格镜头。")
+            for source_image in derived_from:
+                image_key = Path(source_image).name.casefold()
+                if image_key not in panel_images:
+                    errors.append(f"{target}的derived_from未登记面板：{source_image}")
+                coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
+
+    for image_key, segments in coverage_segments_by_panel.items():
+        if len(segments) > 1:
+            errors.append(
+                f"原格{image_key}的正式镜头与增镜跨越多个片段：{sorted(segments)}；"
+                "同一原格的全部覆盖必须放在一个片段内。"
+            )
 
     missing_shots = sorted(set(shot_map) - seen_shot_targets)
     if missing_shots:

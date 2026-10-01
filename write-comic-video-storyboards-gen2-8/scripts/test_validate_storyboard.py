@@ -654,6 +654,108 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("缺少risk_basis", result.stdout)
 
+    def test_uncited_coverage_requires_two_meaningful_changes(self) -> None:
+        first = storyboard(line=None)
+        second = """
+**分镜2（3秒）：**
+【镜头设计】：85mm平视手部极近景，指尖占画面右侧，固定镜头。
+【可见动作】：手指先收紧，随后放松并停住。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮指尖，指缝保留浅影。
+【声音设计】：低环境底噪持续，指尖放松时衣料轻响。
+"""
+        ledger = valid_ledger()
+        panel = ledger["panels"][0]
+        panel["source_bubble_count"] = 0
+        panel["coverage"] = "none"
+        panel["bubbles"] = []
+        ledger["shots"].append({
+            "target": "片段1/分镜2",
+            "role": "uncited_coverage",
+            "source_images": [],
+            "derived_from": ["panel.jpg"],
+            "coverage_changes": ["scale"],
+            "evidence": "current_panel",
+            "purpose": "手指反应补镜",
+            "background_excerpt": BACKGROUND,
+            "source_audit": "pass",
+            "unsupported_additions": [],
+            "risk_flags": [],
+            "risk_basis": "无对白；手部关系明确，无脆弱几何",
+        })
+        result = self.run_validator(first + second, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("不足两项有效coverage_changes", result.stdout)
+
+    def test_same_panel_coverage_cannot_cross_clip_boundary(self) -> None:
+        first = storyboard(line=None)
+        second = """
+## 【片段2】补镜
+**分镜1（3秒）：**
+【镜头设计】：85mm侧向手部极近景，指尖占画面右侧，固定镜头。
+【可见动作】：手指先收紧，随后放松并停住。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮指尖，指缝保留浅影。
+【声音设计】：低环境底噪持续，指尖放松时衣料轻响。
+"""
+        ledger = valid_ledger()
+        panel = ledger["panels"][0]
+        panel["source_bubble_count"] = 0
+        panel["coverage"] = "none"
+        panel["bubbles"] = []
+        ledger["shots"].append({
+            "target": "片段2/分镜1",
+            "role": "uncited_coverage",
+            "source_images": [],
+            "derived_from": ["panel.jpg"],
+            "coverage_changes": ["scale", "viewpoint_axis"],
+            "evidence": "current_panel",
+            "purpose": "手指反应补镜",
+            "background_excerpt": BACKGROUND,
+            "source_audit": "pass",
+            "unsupported_additions": [],
+            "risk_flags": [],
+            "risk_basis": "无对白；手部关系明确，无脆弱几何",
+        })
+        result = self.run_validator(first + second, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("同一原格的全部覆盖必须放在一个片段内", result.stdout)
+
+    def test_genuinely_different_coverage_passes_inside_same_clip(self) -> None:
+        first = storyboard(line=None)
+        second = """
+**分镜2（3秒）：**
+【镜头设计】：85mm侧向手部极近景，指尖占画面右侧，固定镜头。
+【可见动作】：手指先收紧，随后放松并停住。
+【可见背景】：暖象牙色向淡天蓝渐变铺满背景，深蓝灰放射线向外扩张。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮指尖，指缝保留浅影。
+【声音设计】：低环境底噪持续，指尖放松时衣料轻响。
+"""
+        ledger = valid_ledger()
+        panel = ledger["panels"][0]
+        panel["source_bubble_count"] = 0
+        panel["coverage"] = "none"
+        panel["bubbles"] = []
+        ledger["shots"].append({
+            "target": "片段1/分镜2",
+            "role": "uncited_coverage",
+            "source_images": [],
+            "derived_from": ["panel.jpg"],
+            "coverage_changes": ["scale", "viewpoint_axis"],
+            "evidence": "current_panel",
+            "purpose": "侧向手指反应插入",
+            "background_excerpt": BACKGROUND,
+            "source_audit": "pass",
+            "unsupported_additions": [],
+            "risk_flags": [],
+            "risk_basis": "无对白；手部关系明确，无脆弱几何",
+        })
+        result = self.run_validator(first + second, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()
