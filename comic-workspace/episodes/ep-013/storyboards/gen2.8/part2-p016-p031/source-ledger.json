@@ -4,7 +4,7 @@
     {
       "image": "第13话_16、17、18、19_001.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
@@ -27,20 +27,30 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "うーん……これでいいかな。",
+          "source_text": "HMM...",
           "status": "mapped",
-          "script_text": "うーん……これでいいかな。",
-          "seconds": 2.72,
+          "script_text": "うーん……",
+          "seconds": 1.1,
+          "target": "片段1/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "这样 应该就可以了",
+          "status": "mapped",
+          "script_text": "これでいいかな。",
+          "seconds": 2.0,
           "target": "片段1/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_002.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 2,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -63,9 +73,9 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ほら、ここで怒りをぶつけて。",
+          "source_text": "来吧.对着 这里释放怒火吧.",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "ほら、ここで怒りをぶつけて。",
           "seconds": 2.7,
@@ -74,15 +84,28 @@
         {
           "id": "b2",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "キイッ！　キイッ！",
+          "source_text": "SKREE!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "キイッ！　キイッ！",
-          "seconds": 2,
+          "script_text": "キイッ！",
+          "seconds": 1.0,
+          "target": "片段1/分镜2"
+        },
+        {
+          "id": "b3",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "SKREE!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "キイッ！",
+          "seconds": 1.0,
           "target": "片段1/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_16、17、18、19_003.jpg",
@@ -110,15 +133,15 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "キイイイイッ！",
+          "source_text": "KYEEEEEEEH!!!!",
           "status": "mapped",
           "script_text": "キイイイイッ！",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段1/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_004.jpg",
@@ -146,20 +169,20 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "あっ……！",
+          "source_text": "AH...!",
           "status": "mapped",
           "script_text": "あっ……！",
           "seconds": 1.38,
           "target": "片段1/分镜4"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_005.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -182,20 +205,30 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "はぁ……本当に効く。柔らかいものが、こつこつ当たる感じ……",
+          "source_text": "哈..真有感觉...",
           "status": "mapped",
-          "script_text": "はぁ……本当に効く。柔らかいものが、こつこつ当たる感じ……",
-          "seconds": 5.73,
+          "script_text": "はぁ……本当に効く。",
+          "seconds": 2.22,
+          "target": "片段2/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "就像是有什么 黏黏软软的东西 啄上来.",
+          "status": "mapped",
+          "script_text": "柔らかいものが、こつこつ当たる感じ……",
+          "seconds": 3.52,
           "target": "片段2/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_006.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -218,15 +251,25 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ハッ、ハッ……キイッ！",
+          "source_text": "HA!! HA!!",
           "status": "mapped",
-          "script_text": "ハッ、ハッ……キイッ！",
-          "seconds": 2.47,
+          "script_text": "ハッ、ハッ……",
+          "seconds": 1.52,
+          "target": "片段2/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "—！二！ —！二！ —！二！",
+          "status": "mapped",
+          "script_text": "キイッ！",
+          "seconds": 1.0,
           "target": "片段2/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_007.jpg",
@@ -254,20 +297,20 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "んんっ……！",
+          "source_text": "UENN..!!",
           "status": "mapped",
           "script_text": "んんっ……！",
           "seconds": 1.55,
           "target": "片段2/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_008.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
@@ -290,20 +333,30 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "はぁ……すごい。もう少し強くして……",
+          "source_text": "哈啊啊... 太棒了",
           "status": "mapped",
-          "script_text": "はぁ……すごい。もう少し強くして……",
-          "seconds": 3.82,
+          "script_text": "はぁ……すごい。",
+          "seconds": 2.0,
+          "target": "片段2/分镜4"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "再更加 用力一点...",
+          "status": "mapped",
+          "script_text": "もう少し強くして……",
+          "seconds": 2.0,
           "target": "片段2/分镜4"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_009.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 4,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -325,16 +378,47 @@
       "bubbles": [
         {
           "id": "b1",
-          "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
+          "speaker": "春子（画外）",
           "kind": "dialogue",
-          "source_text": "もう、何なのよ……でも、本当にそんなに気持ちいいの？",
+          "source_text": "HYAANG..",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "omitted",
+          "omission_reason": "非词汇呻吟已作为画外断续叫声保留在声音设计"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子（画外）",
+          "kind": "dialogue",
+          "source_text": "ANG...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "omitted",
+          "omission_reason": "非词汇呻吟已作为画外断续叫声保留在声音设计"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "呃...这都什么 乱七八糟的.",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "もう、何なのよ……でも、本当にそんなに気持ちいいの？",
-          "seconds": 5.05,
+          "script_text": "もう、何なのよ……",
+          "seconds": 2.0,
+          "target": "片段3/分镜1"
+        },
+        {
+          "id": "b4",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "但是真有 那么舒服吗?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "でも、本当にそんなに気持ちいいの？",
+          "seconds": 3.2,
           "target": "片段3/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_16、17、18、19_010.jpg",
@@ -362,20 +446,20 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "inner",
-          "source_text": "この大陸では、魔物をこう使うのが普通なのかな……。変なのは、むしろ私の方かも。",
+          "source_text": "这片大陆的人这样 使用魔物似乎很常见... 也许我才比较奇怪.",
           "status": "mapped",
           "script_text": "この大陸では、魔物をこう使うのが普通なのかな……。変なのは、むしろ私の方かも。",
           "seconds": 7.5,
           "target": "片段3/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_16、17、18、19_011.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 2,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -398,31 +482,44 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "私だけ使うのも不公平でしょ。四時間ごとに交代しない？",
+          "source_text": "HEY,",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "ねえ。",
+          "seconds": 1.0,
+          "target": "片段4/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "只有我一个人用 好像不太公平? 咱俩轮着用 四小时换一次吧?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "私だけ使うのも不公平でしょ。四時間ごとに交代しない？",
           "seconds": 4.9,
           "target": "片段4/分镜1"
         },
         {
-          "id": "b2",
+          "id": "b3",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "いらない！　本当にいらないから！",
+          "source_text": "我不需要!好吗?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "いらない！　本当にいらないから！",
+          "script_text": "いらない！本当にいらないから！",
           "seconds": 3.07,
           "target": "片段4/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_16、17、18、19_012.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 2,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
@@ -445,26 +542,39 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "もっと直接使えば、ずっと楽になるよ。参考までにね……かなり恥ずかしいけど。",
+          "source_text": "把它黏黏软软的身体 放进去会很舒服哦",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "もっと直接使えば、ずっと楽になるよ。参考までにね……かなり恥ずかしいけど。",
-          "seconds": 7.08,
+          "script_text": "もっと直接使えば、ずっと楽になるよ。",
+          "seconds": 3.37,
           "target": "片段5/分镜1"
         },
         {
           "id": "b2",
-          "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
+          "speaker": "春子",
           "kind": "dialogue",
-          "source_text": "うわっ、無理！　絶対に嫌！",
+          "source_text": "仅供参考哦, 这样做很害羞呢...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "うわっ、無理！　絶対に嫌！",
+          "script_text": "参考までにね……かなり恥ずかしいけど。",
+          "seconds": 3.72,
+          "target": "片段5/分镜1"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "EEEWWW!!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "うわっ、無理！絶対に嫌！",
           "seconds": 2.65,
           "target": "片段5/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_20_001.jpg",
@@ -492,26 +602,35 @@
         {
           "id": "b1",
           "speaker": "旁白",
-          "speaker_evidence": "原图气泡顺序与旁白可见发声位置对应",
           "kind": "narration",
-          "source_text": "ヤナナ。バナナに似た姿の魔物で、愛らしい見た目と幅広い用途から親しまれている。",
+          "source_text": "淫那那 / YANANA",
           "status": "mapped",
-          "script_text": "ヤナナ。バナナに似た姿の魔物で、愛らしい見た目と幅広い用途から親しまれている。",
-          "seconds": 7.15,
+          "script_text": "ヤナナ。",
+          "seconds": 1.0,
           "target": "片段6/分镜1"
         },
         {
           "id": "b2",
           "speaker": "旁白",
-          "speaker_evidence": "原图气泡顺序与旁白可见发声位置对应",
           "kind": "narration",
-          "source_text": "驚くことに、今回は本人の希望で役を引き受けた。",
+          "source_text": "长得像香蕉的魔物 它因为可爱外表和多用功能而受人们喜爱，令人惊讶的是，它在自己的要求下客串了一个角色",
           "status": "mapped",
-          "script_text": "驚くことに、今回は本人の希望で役を引き受けた。",
-          "seconds": 4.2,
-          "target": "片段6/分镜2"
+          "script_text": "バナナに似た姿の魔物で、愛らしい見た目と幅広い用途から親しまれている。驚くことに、今回は本人の希望で役を引き受けた。",
+          "segments": [
+            {
+              "script_text": "バナナに似た姿の魔物で、愛らしい見た目と幅広い用途から親しまれている。",
+              "seconds": 6.2,
+              "target": "片段6/分镜1"
+            },
+            {
+              "script_text": "驚くことに、今回は本人の希望で役を引き受けた。",
+              "seconds": 4.2,
+              "target": "片段6/分镜2"
+            }
+          ]
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_20_002.jpg",
@@ -535,12 +654,13 @@
       },
       "coverage": "none",
       "coverage_reason": "无对白",
-      "bubbles": []
+      "bubbles": [],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_21_001.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -563,15 +683,25 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "すぅ……すぅ……",
+          "source_text": "ZZZ...",
           "status": "mapped",
-          "script_text": "すぅ……すぅ……",
-          "seconds": 1.87,
+          "script_text": "すぅ……",
+          "seconds": 1.0,
+          "target": "片段7/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "ZZZ...",
+          "status": "mapped",
+          "script_text": "すぅ……",
+          "seconds": 1.0,
           "target": "片段7/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_21_002.jpg",
@@ -599,15 +729,15 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "イルルン……",
+          "source_text": "怡露铃...",
           "status": "mapped",
           "script_text": "イルルン……",
           "seconds": 1.27,
           "target": "片段7/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_22_001.jpg",
@@ -635,15 +765,15 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ん……？",
+          "source_text": "?!",
           "status": "mapped",
           "script_text": "ん……？",
           "seconds": 1.22,
           "target": "片段7/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_22_002.jpg",
@@ -671,15 +801,15 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "イルルン！？",
+          "source_text": "怡露铃?!",
           "status": "mapped",
           "script_text": "イルルン！？",
           "seconds": 1.57,
           "target": "片段7/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_22_003.jpg",
@@ -707,9 +837,9 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ごめんね。つらかったでしょう？",
+          "source_text": "真是抱歉... 你很难受吧?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "ごめんね。つらかったでしょう？",
           "seconds": 3.07,
@@ -718,32 +848,33 @@
         {
           "id": "b2",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "もう捕まらないでね、分かった？",
+          "source_text": "别再被抓住了. 记住了吗?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "もう捕まらないでね、分かった？",
           "seconds": 2.87,
-          "target": "片段8/分镜2"
+          "target": "片段8/分镜1"
         },
         {
           "id": "b3",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "イルルン！",
+          "source_text": "怡露铃!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "イルルン！",
           "seconds": 1.12,
-          "target": "片段8/分镜2"
+          "target": "片段8/分镜1"
         }
       ],
-      "shared_reason": "原格同时建立发言者与听者，分镜以同一关系构图承接短促交替"
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读",
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_23_001.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
@@ -766,15 +897,25 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "イルルン！　イルルン！",
+          "source_text": "怡露铃!",
           "status": "mapped",
-          "script_text": "イルルン！　イルルン！",
-          "seconds": 2.23,
-          "target": "片段8/分镜3"
+          "script_text": "イルルン！",
+          "seconds": 1.12,
+          "target": "片段8/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "怡露铃!",
+          "status": "mapped",
+          "script_text": "イルルン！",
+          "seconds": 1.12,
+          "target": "片段8/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_23_002.jpg",
@@ -802,20 +943,20 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "で、でも……ほら。",
+          "source_text": "但...但是你看啊",
           "status": "mapped",
           "script_text": "で、でも……ほら。",
           "seconds": 2.13,
           "target": "片段9/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_23_003.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 2,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -838,31 +979,54 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "私が放してあげたんだから……さっき彼女にしたことを、",
+          "source_text": "我都放你走了...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "私が放してあげたんだから……さっき彼女にしたことを、",
-          "seconds": 4.68,
+          "script_text": "私が放してあげたんだから……",
+          "seconds": 2.6,
           "target": "片段9/分镜2"
         },
         {
           "id": "b2",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "私にも一度だけ、してくれない？",
+          "source_text": "刚才对她做过的 也对我做一次吧?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "私にも一度だけ、してくれない？",
-          "seconds": 2.87,
+          "script_text": "さっき彼女にしたことを、私にも一度だけ、してくれない？",
+          "segments": [
+            {
+              "script_text": "さっき彼女にしたことを、",
+              "seconds": 2.08,
+              "target": "片段9/分镜2"
+            },
+            {
+              "script_text": "私にも一度だけ、してくれない？",
+              "seconds": 2.87,
+              "target": "片段9/分镜3"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "?!...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "えっ……？",
+          "seconds": 1.38,
           "target": "片段9/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_23_004.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
@@ -885,15 +1049,25 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ぼ、僕は何も見てないよ……。つまり、その……やっぱり、やめた方が……",
+          "source_text": "我...我可不知道你都做了啥 我一点都没看见!",
           "status": "mapped",
-          "script_text": "ぼ、僕は何も見てないよ……。つまり、その……やっぱり、やめた方が……",
-          "seconds": 7.0,
+          "script_text": "ぼ、僕は何も見てないよ……。",
+          "seconds": 2.97,
+          "target": "片段10/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "我的意思是... 算了,还是不用...",
+          "status": "mapped",
+          "script_text": "つまり、その……やっぱり、やめた方が……",
+          "seconds": 4.03,
           "target": "片段10/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_23_005.jpg",
@@ -921,20 +1095,20 @@
         {
           "id": "b1",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "こっちへ……",
+          "source_text": "呼咻...",
           "status": "mapped",
           "script_text": "こっちへ……",
           "seconds": 1.27,
           "target": "片段11/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_23_006.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -957,15 +1131,25 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "えっ？　もっと近くに来てほしいの？",
+          "source_text": "HUH?",
           "status": "mapped",
-          "script_text": "えっ？　もっと近くに来てほしいの？",
-          "seconds": 3.23,
+          "script_text": "えっ？",
+          "seconds": 1.0,
+          "target": "片段11/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "你想让我靠近点?",
+          "status": "mapped",
+          "script_text": "もっと近くに来てほしいの？",
+          "seconds": 2.45,
           "target": "片段11/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_001.jpg",
@@ -993,15 +1177,15 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "待って、何を――",
+          "source_text": "等下!你要做什...",
           "status": "mapped",
           "script_text": "待って、何を――",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段11/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_002.jpg",
@@ -1029,20 +1213,20 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "きゃっ！",
+          "source_text": "KYA!!!",
           "status": "mapped",
           "script_text": "きゃっ！",
-          "seconds": 1,
+          "seconds": 1.0,
           "target": "片段11/分镜4"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_003.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
@@ -1065,20 +1249,30 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "な、何したの！　まだ心の準備ができてないのに！",
+          "source_text": "你...你都做了什么! 我还没有准备好!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "な、何したの！　まだ心の準備ができてないのに！",
+          "script_text": "な、何したの！まだ心の準備ができてないのに！",
           "seconds": 4.32,
           "target": "片段12/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "NYEEH...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "omitted",
+          "omission_reason": "非词汇闷声已作为魔物含混细叫保留在声音设计"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_004.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -1101,20 +1295,30 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "これは反則よ！　少し試したかっただけなのに……もう二度としない！",
+          "source_text": "这真的太超过了...!!",
           "status": "mapped",
-          "script_text": "これは反則よ！　少し試したかっただけなのに……もう二度としない！",
-          "seconds": 6.0,
+          "script_text": "これは反則よ！",
+          "seconds": 2.0,
+          "target": "片段12/分镜2"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "啊..!!我只是想 感受一下,以后我再也 不要这样做了...!!!",
+          "status": "mapped",
+          "script_text": "少し試したかっただけなのに……もう二度としない！",
+          "seconds": 4.55,
           "target": "片段12/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_005.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
@@ -1137,15 +1341,25 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "inner",
-          "source_text": "息づかいまで分かる……私まで変になりそう……。こんなの、初めて……",
+          "source_text": "啊...!! 能感受到它的呼吸... 我也要变得奇怪了...",
           "status": "mapped",
-          "script_text": "息づかいまで分かる……私まで変になりそう……。こんなの、初めて……",
-          "seconds": 6.67,
+          "script_text": "息づかいまで分かる……私まで変になりそう……。",
+          "seconds": 4.65,
+          "target": "片段13/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "inner",
+          "source_text": "我从没有被 这样舔过...!",
+          "status": "mapped",
+          "script_text": "こんなの、初めて……",
+          "seconds": 2.02,
           "target": "片段13/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_24_006.jpg",
@@ -1173,26 +1387,27 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "何してるの？",
+          "source_text": "你在做什么",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "何してるの？",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段14/分镜1"
         },
         {
           "id": "b2",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ひっ！",
+          "source_text": "EEEEEEK!!!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "ひっ！",
-          "seconds": 1,
+          "seconds": 1.0,
           "target": "片段14/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_25_001.jpg",
@@ -1220,20 +1435,20 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "起きてたの！？　これは、その……",
+          "source_text": "你...你醒了?!!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "起きてたの！？　これは、その……",
+          "script_text": "起きてたの！？これは、その……",
           "seconds": 3.42,
           "target": "片段14/分镜2"
         },
         {
           "id": "b2",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "その子を持って、胸を出して何してたの。",
+          "source_text": "你拿着那东西 做什么还把胸露在 外面.",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "その子を持って、胸を出して何してたの。",
           "seconds": 3.53,
@@ -1242,16 +1457,17 @@
         {
           "id": "b3",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ち、違う！　あなたが思ってるようなことじゃない！",
+          "source_text": "不!这不是 你想的那样...!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "ち、違う！　あなたが思ってるようなことじゃない！",
+          "script_text": "ち、違う！あなたが思ってるようなことじゃない！",
           "seconds": 4.48,
           "target": "片段15/分镜1"
         }
       ],
-      "shared_reason": "原格同时建立发言者与听者，分镜以同一关系构图承接短促交替"
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读",
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_25_002.jpg",
@@ -1279,20 +1495,20 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "その子を持って、何してたの。今は午前三時よ。",
+          "source_text": "现在已经 凌晨三点了",
           "status": "mapped",
-          "script_text": "その子を持って、何してたの。今は午前三時よ。",
-          "seconds": 4.32,
+          "script_text": "今は午前三時よ。",
+          "seconds": 2.0,
           "target": "片段15/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_26_001.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
@@ -1315,20 +1531,30 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "え？　それがどうしたの？",
+          "source_text": "HUH?",
           "status": "mapped",
-          "script_text": "え？　それがどうしたの？",
-          "seconds": 2.4,
+          "script_text": "え？",
+          "seconds": 1.0,
+          "target": "片段16/分镜1"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "那怎么了..?",
+          "status": "mapped",
+          "script_text": "それがどうしたの？",
+          "seconds": 2.0,
           "target": "片段16/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_26_002.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 2,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
@@ -1351,31 +1577,44 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "今度は私の番。四時間交代って言ったでしょ。",
+          "source_text": "轮到我用了",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "今度は私の番。四時間交代って言ったでしょ。",
-          "seconds": 4.07,
+          "script_text": "今度は私の番。",
+          "seconds": 2.0,
           "target": "片段16/分镜2"
         },
         {
           "id": "b2",
           "speaker": "黄色魔物",
-          "speaker_evidence": "原图气泡顺序与黄色魔物可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "キイイイッ！",
+          "source_text": "KYEEEEEE!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "キイイイッ！",
-          "seconds": 2,
+          "seconds": 2.0,
+          "target": "片段16/分镜2"
+        },
+        {
+          "id": "b3",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "我说了四个小时 换一次",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "mapped",
+          "script_text": "四時間交代って言ったでしょ。",
+          "seconds": 2.62,
           "target": "片段16/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_27_001.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -1398,15 +1637,35 @@
         {
           "id": "b1",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "もう一度使ったら、戻って寝るから。",
+          "source_text": "再用一次 我就回去补觉",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "もう一度使ったら、戻って寝るから。",
           "seconds": 3.2,
           "target": "片段16/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "黄色魔物",
+          "kind": "dialogue",
+          "source_text": "KYEEEEE!!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "omitted",
+          "omission_reason": "非词汇抗议已作为随距离减弱的叫声保留在声音设计"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
+          "status": "omitted",
+          "omission_reason": "无词停顿已作为青的无言反应保留"
         }
-      ]
+      ],
+      "drafting_resolution": "720p",
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读"
     },
     {
       "image": "第13话_27_002.jpg",
@@ -1430,7 +1689,8 @@
       },
       "coverage": "none",
       "coverage_reason": "无对白",
-      "bubbles": []
+      "bubbles": [],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_28_001.jpg",
@@ -1458,20 +1718,20 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "今の音、聞こえた？",
+          "source_text": "你听到 那动静了吗?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "今の音、聞こえた？",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段18/分镜1"
         },
         {
           "id": "b2",
           "speaker": "春子",
-          "speaker_evidence": "原图气泡顺序与春子可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "聞こえた。",
+          "source_text": "听到了",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "聞こえた。",
           "seconds": 1.12,
@@ -1480,16 +1740,17 @@
         {
           "id": "b3",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "あそこに何かいる！",
+          "source_text": "有什么东西 在那边!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "あそこに何かいる！",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段18/分镜1"
         }
       ],
-      "shared_reason": "原格同时建立发言者与听者，分镜以同一关系构图承接短促交替"
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读",
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_28_002.jpg",
@@ -1513,7 +1774,8 @@
       },
       "coverage": "none",
       "coverage_reason": "无对白",
-      "bubbles": []
+      "bubbles": [],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_29_001.jpg",
@@ -1540,16 +1802,16 @@
       "bubbles": [
         {
           "id": "b1",
-          "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
+          "speaker": "青与春子",
           "kind": "dialogue",
-          "source_text": "えっ！？",
+          "source_text": "?!",
           "status": "mapped",
           "script_text": "えっ！？",
           "seconds": 1.23,
           "target": "片段19/分镜1"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_29_002.jpg",
@@ -1577,15 +1839,15 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "えっ！？　あなたは、あの……！",
+          "source_text": "诶?!你是那个",
           "status": "mapped",
-          "script_text": "えっ！？　あなたは、あの……！",
+          "script_text": "えっ！？あなたは、あの……！",
           "seconds": 3.53,
           "target": "片段19/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_29_003.jpg",
@@ -1613,9 +1875,9 @@
         {
           "id": "b1",
           "speaker": "矮人",
-          "speaker_evidence": "原图气泡顺序与矮人可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "おお……あの日、魔物の素材で慰めていた娘か。",
+          "source_text": "哦...!!你是那天用 魔物材料自慰的小姑娘",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "おお……あの日、魔物の素材で慰めていた娘か。",
           "seconds": 4.3,
@@ -1624,15 +1886,16 @@
         {
           "id": "b2",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ああっ！　その話はしないで！",
+          "source_text": "啊...!! 别他妈提那事了!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
-          "script_text": "ああっ！　その話はしないで！",
+          "script_text": "ああっ！その話はしないで！",
           "seconds": 2.73,
-          "target": "片段19/分镜4"
+          "target": "片段19/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_30_001.jpg",
@@ -1660,9 +1923,9 @@
         {
           "id": "b1",
           "speaker": "矮人",
-          "speaker_evidence": "原图气泡顺序与矮人可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "挨拶はあとだ。今は逃げるぞ！",
+          "source_text": "之后再打招呼 现在是跑路要紧.",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "挨拶はあとだ。今は逃げるぞ！",
           "seconds": 2.9,
@@ -1671,9 +1934,9 @@
         {
           "id": "b2",
           "speaker": "矮人",
-          "speaker_evidence": "原图气泡顺序与矮人可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "後ろに厄介なのがいる！",
+          "source_text": "后面有个 难缠的家伙...!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "後ろに厄介なのがいる！",
           "seconds": 2.12,
@@ -1682,21 +1945,22 @@
         {
           "id": "b3",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "魔物に追われてるの？",
+          "source_text": "你在被 魔物追杀?",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "魔物に追われてるの？",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段20/分镜2"
         }
       ],
-      "shared_reason": "原格同时建立发言者与听者，分镜以同一关系构图承接短促交替"
+      "shared_reason": "同一原格内问答或打断关系与共同动作同时可读",
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_30_002.jpg",
       "viewed_at_drafting": true,
-      "source_bubble_count": 1,
+      "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
@@ -1719,15 +1983,25 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "……っ！",
+          "source_text": ".....!!!",
           "status": "mapped",
-          "script_text": "……っ！",
-          "seconds": 1.22,
+          "script_text": "……",
+          "seconds": 0.5,
+          "target": "片段20/分镜3"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "UGH..!!",
+          "status": "mapped",
+          "script_text": "っ！",
+          "seconds": 1.0,
           "target": "片段20/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_31_001.jpg",
@@ -1751,7 +2025,8 @@
       },
       "coverage": "none",
       "coverage_reason": "无对白",
-      "bubbles": []
+      "bubbles": [],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_31_002.jpg",
@@ -1775,7 +2050,8 @@
       },
       "coverage": "none",
       "coverage_reason": "无对白",
-      "bubbles": []
+      "bubbles": [],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_31_003.jpg",
@@ -1803,15 +2079,15 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "普段は言わないけど……これは、あまりにも……",
+          "source_text": "我平常真不怎么说 但是这...",
           "status": "mapped",
           "script_text": "普段は言わないけど……これは、あまりにも……",
           "seconds": 4.28,
           "target": "片段21/分镜2"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     },
     {
       "image": "第13话_31_004.jpg",
@@ -1839,26 +2115,27 @@
         {
           "id": "b1",
           "speaker": "青",
-          "speaker_evidence": "原图气泡顺序与青可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "アレに似すぎてる！",
+          "source_text": "长得也太像了丁丁!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "アレに似すぎてる！",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段21/分镜3"
         },
         {
           "id": "b2",
           "speaker": "巨兽",
-          "speaker_evidence": "原图气泡顺序与巨兽可见发声位置对应",
           "kind": "dialogue",
-          "source_text": "ギャアアアッ！",
+          "source_text": "SCREEE...!!!",
+          "speaker_evidence": "依据当前720p图中气泡尾向、人物发声姿态与阅读顺序确认",
           "status": "mapped",
           "script_text": "ギャアアアッ！",
-          "seconds": 2,
+          "seconds": 2.0,
           "target": "片段21/分镜3"
         }
-      ]
+      ],
+      "drafting_resolution": "720p"
     }
   ],
   "shots": [
@@ -1868,13 +2145,16 @@
       "source_images": [
         "第13话_16、17、18、19_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "蓝天占上方窄带，浓绿树冠贴着肩线与发丝两侧延伸。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段1/分镜2",
@@ -1882,15 +2162,17 @@
       "source_images": [
         "第13话_16、17、18、19_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "浅青天空铺满上半部，深绿树冠沿下缘形成低矮林线。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "D"
-      ]
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段1/分镜3",
@@ -1898,13 +2180,16 @@
       "source_images": [
         "第13话_16、17、18、19_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "黄绿色放射线图形底从拳头后方铺满右侧，左缘保留一窄条冷青色块。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段1/分镜4",
@@ -1912,13 +2197,17 @@
       "source_images": [
         "第13话_16、17、18、19_004.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "画面被暖肤色表面与黄色魔物身体填满，仅右下露出一小块黑色衣料。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段2/分镜1",
@@ -1926,15 +2215,18 @@
       "source_images": [
         "第13话_16、17、18、19_005.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "左右仅露出浅蓝天空与极窄的远处树影，主体后方被棕发大面积遮住。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段2/分镜2",
@@ -1942,13 +2234,17 @@
       "source_images": [
         "第13话_16、17、18、19_006.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "粉红放射线与小型心形图形铺满四周缝隙，中心亮、边缘略暗。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段2/分镜3",
@@ -1956,13 +2252,17 @@
       "source_images": [
         "第13话_16、17、18、19_007.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "暖肤色表面与黄色魔物填满画面，右下只露出一小片深色衣料。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段2/分镜4",
@@ -1970,13 +2270,17 @@
       "source_images": [
         "第13话_16、17、18、19_008.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "粉红到浅桃色渐变图形底铺满左侧与发丝之间。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段3/分镜1",
@@ -1984,15 +2288,18 @@
       "source_images": [
         "第13话_16、17、18、19_009.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "高饱和蓝天占上半部，右下与左缘露出日照下的浓绿树冠。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段3/分镜2",
@@ -2000,8 +2307,8 @@
       "source_images": [
         "第13话_16、17、18、19_010.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "纯白图形底铺满画面，中央是带柔灰边缘的白色椭圆思绪框。",
       "viewed_while_writing": true,
       "source_audit": "pass",
@@ -2009,7 +2316,8 @@
       "risk_flags": [
         "D",
         "P"
-      ]
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；空间关系清楚"
     },
     {
       "target": "片段4/分镜1",
@@ -2017,16 +2325,18 @@
       "source_images": [
         "第13话_16、17、18、19_011.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "明亮蓝天占画面中上部，白云横过上方，绿色树冠压在右下角。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
         "D",
-        "P"
-      ]
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段5/分镜1",
@@ -2034,30 +2344,34 @@
       "source_images": [
         "第13话_16、17、18、19_012.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "脸部与棕色发丝填满画面，发缝间仅有暗褐色柔焦阴影。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
         "D",
-        "P"
-      ]
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段5/分镜2",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_16、17、18、19_012.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
-      "background_excerpt": "春子的暖肤色与深棕发丝构成满幅表面，左侧保留窄条暗褐焦外区。",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "evidence": "由相邻已核面板支持的同一动作覆盖",
+      "purpose": "补充不同焦点/景别/遮挡的反应覆盖",
+      "background_excerpt": "浅青天空与深绿树冠在青身后形成柔焦色块，右前景仅保留春子的棕发暗影。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段6/分镜1",
@@ -2065,27 +2379,27 @@
       "source_images": [
         "第13话_20_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "均匀纯白图形底铺满画面，黑色线稿与排版文字构成平面图鉴。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [],
+      "risk_basis": "无对白覆盖；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段6/分镜2",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_20_001.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "evidence": "由相邻已核面板支持的同一动作覆盖",
+      "purpose": "补充不同焦点/景别/遮挡的反应覆盖",
       "background_excerpt": "纯白图形底继续铺满画面，黑色排版文字与线稿边缘保持清晰。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [],
+      "risk_basis": "无对白覆盖；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段6/分镜3",
@@ -2093,13 +2407,16 @@
       "source_images": [
         "第13话_20_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "层叠树冠、灰蓝夜空与稀疏云团构成深夜森林上空。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "无对白覆盖；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段7/分镜1",
@@ -2107,13 +2424,17 @@
       "source_images": [
         "第13话_21_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "浅灰粗糙地面铺满画面后部，左侧橙黄火堆与黑色柴枝清晰可见。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段7/分镜2",
@@ -2122,15 +2443,17 @@
         "第13话_21_002.jpg",
         "第13话_22_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "墨青与深绿色树冠填满林间空隙，灰蓝树干和斜枝交叠形成明确纵深。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "D"
-      ]
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段7/分镜3",
@@ -2138,13 +2461,17 @@
       "source_images": [
         "第13话_22_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "灰白树皮纹理横过上方，右下露出一块深色灌木纹理。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段8/分镜1",
@@ -2152,43 +2479,36 @@
       "source_images": [
         "第13话_22_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "粗树干立在左缘，灰色斜枝横贯中景，后方是深绿夜林与少量蓝色夜空。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段8/分镜2",
       "role": "source_locked",
       "source_images": [
-        "第13话_22_003.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
-      "background_excerpt": "左侧粗树干、斜向灰枝与深绿夜林层层交叠，远处留有少量蓝色夜空。",
-      "viewed_while_writing": true,
-      "source_audit": "pass",
-      "unsupported_additions": [],
-      "risk_flags": [
-        "D"
-      ]
-    },
-    {
-      "target": "片段8/分镜3",
-      "role": "source_locked",
-      "source_images": [
         "第13话_23_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "暖米黄色渐变图形底铺满魔物轮廓周围，边缘带细密速度线。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段9/分镜1",
@@ -2196,13 +2516,16 @@
       "source_images": [
         "第13话_23_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "左侧为冷蓝到灰紫的柔焦林间色块，右侧被白发与肤色表面填满。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段9/分镜2",
@@ -2210,29 +2533,34 @@
       "source_images": [
         "第13话_23_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深灰褐夜林与黑色灌木贴在头发和肩线后方，背景虚化但保留树叶纹理。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段9/分镜3",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_23_003.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "evidence": "由相邻已核面板支持的同一动作覆盖",
+      "purpose": "补充不同焦点/景别/遮挡的反应覆盖",
       "background_excerpt": "白发间的深灰褐林影铺在脸部两侧，远处树叶只形成模糊暗纹。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "P"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；空间关系清楚"
     },
     {
       "target": "片段10/分镜1",
@@ -2240,15 +2568,18 @@
       "source_images": [
         "第13话_23_004.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "棕褐到暗金色渐变图形底铺满画面，右上亮、左下暗。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段11/分镜1",
@@ -2256,13 +2587,17 @@
       "source_images": [
         "第13话_23_005.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "暖棕色渐变图形底填满脸与手势之间的空隙，中央略亮。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段11/分镜2",
@@ -2270,13 +2605,16 @@
       "source_images": [
         "第13话_23_006.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "左缘为深蓝灰夜色，脸部与白发填满其余区域。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段11/分镜3",
@@ -2284,13 +2622,17 @@
       "source_images": [
         "第13话_24_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深蓝衣料与白色饰边铺满画面，后方仅见一块暗灰褐色柔焦区。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段11/分镜4",
@@ -2298,13 +2640,16 @@
       "source_images": [
         "第13话_24_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "人物身体与深蓝衣料填满大部分画面，边缘只露出浅灰图形底。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段12/分镜1",
@@ -2312,13 +2657,17 @@
       "source_images": [
         "第13话_24_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "暖粉肤色表面、黄色魔物与一小段深色衣料填满画面。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段12/分镜2",
@@ -2326,15 +2675,18 @@
       "source_images": [
         "第13话_24_004.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "青的红晕脸部与白发填满画面，发缝只见暗红褐阴影。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段13/分镜1",
@@ -2342,15 +2694,18 @@
       "source_images": [
         "第13话_24_005.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "暖粉色表面和左侧深色衣料构成满幅近景，中央间隙呈柔白图形亮区。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "P"
-      ]
+        "D",
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段14/分镜1",
@@ -2358,15 +2713,17 @@
       "source_images": [
         "第13话_24_006.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深蓝夜空与黑色树冠填满两人之间，右侧树叶带少量冷绿色细节。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "D"
-      ]
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段14/分镜2",
@@ -2374,22 +2731,24 @@
       "source_images": [
         "第13话_25_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "墨青树干和深绿灌木构成夜林，中部保留一块低对比蓝灰空间。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段15/分镜1",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_25_001.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "evidence": "由相邻已核面板支持的同一动作覆盖",
+      "purpose": "补充不同焦点/景别/遮挡的反应覆盖",
       "background_excerpt": "深蓝夜色和墨青灌木填满两人之间，远处树干形成低对比竖纹。",
       "viewed_while_writing": true,
       "source_audit": "pass",
@@ -2397,7 +2756,8 @@
       "risk_flags": [
         "D",
         "P"
-      ]
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；空间关系清楚"
     },
     {
       "target": "片段15/分镜2",
@@ -2405,13 +2765,16 @@
       "source_images": [
         "第13话_25_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "均匀蓝灰夜色柔焦铺满左侧，棕发填满右侧。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段16/分镜1",
@@ -2419,13 +2782,17 @@
       "source_images": [
         "第13话_26_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "右侧为低饱和蓝灰夜色，左侧被白发与肤色表面填满。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段16/分镜2",
@@ -2433,16 +2800,18 @@
       "source_images": [
         "第13话_26_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "均匀暖灰图形底沿四周边缘显露，中央区域由深色衣料表面铺满。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
         "D",
-        "P"
-      ]
+        "P",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段16/分镜3",
@@ -2450,13 +2819,16 @@
       "source_images": [
         "第13话_27_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "灰蓝夜林柔焦铺满画面，左上与右缘只见模糊树影。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段17/分镜1",
@@ -2464,13 +2836,16 @@
       "source_images": [
         "第13话_27_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深蓝夜空、厚云与四周夜林树冠构成狭长林间天井。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "无对白覆盖；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段18/分镜1",
@@ -2478,15 +2853,17 @@
       "source_images": [
         "第13话_28_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深蓝夜空位于上方，墨青树冠与灌木沿下缘和左侧堆叠。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "D"
-      ]
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段18/分镜2",
@@ -2494,13 +2871,16 @@
       "source_images": [
         "第13话_28_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "密集蓝灰高草、黑色灌木和极暗的林地空隙填满画面。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "无对白覆盖；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段19/分镜1",
@@ -2508,13 +2888,17 @@
       "source_images": [
         "第13话_29_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "乌云密布的灰蓝夜空占上半，黑绿树冠与高草沿右下围住人物。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段19/分镜2",
@@ -2522,13 +2906,16 @@
       "source_images": [
         "第13话_29_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "左下露出黑绿灌木，右侧与上方为蓝黑树干和夜色。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段19/分镜3",
@@ -2536,27 +2923,18 @@
       "source_images": [
         "第13话_29_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深灰树干与黑绿灌木填满后方，倒伏高草从下缘刺入前景。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
-    },
-    {
-      "target": "片段19/分镜4",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_29_003.jpg"
+      "risk_flags": [
+        "D",
+        "P",
+        "G"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
-      "background_excerpt": "左侧深灰树干和黑绿灌木构成夜林，前景草叶横切下方。",
-      "viewed_while_writing": true,
-      "source_audit": "pass",
-      "unsupported_additions": [],
-      "risk_flags": []
+      "risk_basis": "对白覆盖需核对；表演链或长句需预规划；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段20/分镜1",
@@ -2564,29 +2942,32 @@
       "source_images": [
         "第13话_30_001.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深蓝云层和墨青树干铺在上方，黑绿灌木与高草沿下缘连续后移。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段20/分镜2",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_30_001.jpg"
-      ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "evidence": "由相邻已核面板支持的同一动作覆盖",
+      "purpose": "补充不同焦点/景别/遮挡的反应覆盖",
       "background_excerpt": "深蓝云层、墨青树干和连续后移的黑绿灌木构成夜林通道。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
         "D"
-      ]
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段20/分镜3",
@@ -2594,13 +2975,16 @@
       "source_images": [
         "第13话_30_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "右侧露出深青树干与黑绿灌木，左侧被白发填满。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；空间关系清楚"
     },
     {
       "target": "片段21/分镜1",
@@ -2609,13 +2993,16 @@
         "第13话_31_001.jpg",
         "第13话_31_002.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "褐色皱褶皮肤与湿亮表面铺满画面，仅边缘有窄条深褐暗区。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "G"
+      ],
+      "risk_basis": "无对白覆盖；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段21/分镜2",
@@ -2623,13 +3010,17 @@
       "source_images": [
         "第13话_31_003.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "白发、暖肤色与一小段纯白图形亮区构成极简近景。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
-      "risk_flags": []
+      "risk_flags": [
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     },
     {
       "target": "片段21/分镜3",
@@ -2637,79 +3028,81 @@
       "source_images": [
         "第13话_31_004.jpg"
       ],
-      "evidence": "current_panel",
-      "purpose": "锁定原格构图、动作阶段与对白归属",
+      "evidence": "当前720p面板逐项核对",
+      "purpose": "还原原格构图与表演",
       "background_excerpt": "深青夜空与厚云铺满上方，黑绿树冠围住下缘和两侧，巨兽从林冠中央突出。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [
-        "D"
-      ]
+        "D",
+        "G"
+      ],
+      "risk_basis": "对白覆盖需核对；表演负荷低；接触/遮挡/极端视角需锁定"
     }
   ],
   "performance": [
     {
       "target": "片段2/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "春子的脸占满中央，下巴被下缘裁切，双眼闭合，红晕横跨两颊，棕发从左右重叠在脸缘形成窄框",
+        "opening": "她先咬住下唇",
         "beats": [
-          "春子的脸占满中央，下巴被下缘裁切，双眼闭合，红晕横跨两颊，棕发从左右重叠在脸缘形成窄框",
-          "她先咬住下唇，随后眉心松开，吐气时嘴角轻颤，头部向下沉半寸后停住"
+          "她先咬住下唇",
+          "随后眉心松开"
         ],
-        "coupling": "她先咬住下唇，随后眉心松开，吐气时嘴角轻颤，头部向下沉半寸后停住",
-        "landing": "她先咬住下唇，随后眉心松开，吐气时嘴角轻颤，头部向下沉半寸后停住；70mm正面脸部近景，春子的下巴切到下边缘，额发贴近上边缘；缓慢推近并在闭合的眼睛处稳住。"
+        "coupling": "随后眉心松开",
+        "landing": "头部向下沉半寸后停住。；70mm正面脸部近景，春子的下巴切到下边缘，额发贴近上边缘；缓慢推近并在闭合的眼睛处稳住；春子的脸占满中央，下巴被下缘裁切，双眼闭合，红晕横跨两颊，棕发从左右重叠在脸缘形成窄框。"
       },
       "details": [
-        "春子的脸占满中央，下巴被下缘裁切，双眼闭合，红晕横跨两颊，棕发从左右重叠在脸缘形成窄框",
-        "她先咬住下唇，随后眉心松开，吐气时嘴角轻颤，头部向下沉半寸后停住"
+        "她先咬住下唇",
+        "随后眉心松开"
       ],
       "intervals": [
         {
-          "speech_seconds": 5.73,
-          "acting_seconds": 5.73
+          "speech_seconds": 5.74,
+          "acting_seconds": 5.74
         }
       ]
     },
     {
       "target": "片段3/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "青的白发铺满两肩并被下缘裁切，红眼半垂，双手掌根压在耳后，肘部从左右边缘出画",
+        "opening": "青以半垂红眼皱眉抿嘴，双手掌根压住耳后",
         "beats": [
-          "青的白发铺满两肩并被下缘裁切，红眼半垂，双手掌根压在耳后，肘部从左右边缘出画",
-          "她先皱眉抿嘴，把噪声挡在耳外，随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住"
+          "青以半垂红眼皱眉抿嘴，双手掌根压住耳后",
+          "随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住"
         ],
-        "coupling": "她先皱眉抿嘴，把噪声挡在耳外，随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住",
-        "landing": "她先皱眉抿嘴，把噪声挡在耳外，随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住；50mm正面胸像近景，青居中，双手从左右贴住耳侧；固定镜头在她眼神变化时轻推半步。"
+        "coupling": "青以半垂红眼皱眉抿嘴，双手掌根压住耳后",
+        "landing": "随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住；50mm正面胸像近景，青居中，白发铺满两肩并被下缘裁切，双手从左右贴住耳侧，肘部从两侧出画；固定镜头在她眼神变化时轻推半步。"
       },
       "details": [
-        "青的白发铺满两肩并被下缘裁切，红眼半垂，双手掌根压在耳后，肘部从左右边缘出画",
-        "她先皱眉抿嘴，把噪声挡在耳外，随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住"
+        "青以半垂红眼皱眉抿嘴，双手掌根压住耳后",
+        "随后瞳孔斜向右下，眉间压力松开一线，最后指尖在发侧停住"
       ],
       "intervals": [
         {
-          "speech_seconds": 5.05,
-          "acting_seconds": 5.05
+          "speech_seconds": 5.2,
+          "acting_seconds": 5.2
         }
       ]
     },
     {
       "target": "片段3/分镜2",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "黑边椭圆占画面中央约三分之二，内部文字块与椭圆重叠",
+        "opening": "文字先从上方逐行显出",
         "beats": [
-          "文字先从上方逐行显出，随后下方句子同时加深，最后一行亮度轻抬后停住",
-          "椭圆外四角保留均匀纯白图形底，推近在最后一行处落定"
+          "文字先从上方逐行显出",
+          "随后下方句子同时加深"
         ],
-        "coupling": "椭圆外四角保留均匀纯白图形底，推近在最后一行处落定",
-        "landing": "椭圆外四角保留均匀纯白图形底，推近在最后一行处落定；85mm抽象文字插入镜头，以椭圆思绪框居中央；镜头从框外缓慢推向文字中心。"
+        "coupling": "随后下方句子同时加深",
+        "landing": "最后一行亮度轻抬后停住。；85mm说明性文字插入镜头，人物未入画；黑边椭圆占画面中央约三分之二，内部文字块与椭圆重叠，四角留出纯白图形底；镜头从框外缓慢推向文字中心，在最后一行处落定。"
       },
       "details": [
-        "黑边椭圆占画面中央约三分之二，内部文字块与椭圆重叠",
-        "文字先从上方逐行显出，随后下方句子同时加深，最后一行亮度轻抬后停住"
+        "文字先从上方逐行显出",
+        "随后下方句子同时加深"
       ],
       "intervals": [
         {
@@ -2720,30 +3113,30 @@
     },
     {
       "target": "片段4/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "青的白发与尖耳从左侧大面积入画，脸朝右、嘴张开，右手悬在下方中央",
+        "opening": "春子先把魔物抬高到肩侧并以半垂眼看向青",
         "beats": [
-          "春子在右后景从胸口以上入画，右手托着黄色魔物，半垂眼平静看向青",
-          "春子先把魔物抬高到肩侧，青随即闭眼后仰，手指蜷起并高声拒绝"
+          "春子先把魔物抬高到肩侧并以半垂眼看向青",
+          "青随即让眼皮先收紧再闭合并后仰，右手手指蜷起、高声拒绝，白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚"
         ],
-        "coupling": "白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚",
-        "landing": "白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚；40mm双人中近景，青占左前景大侧脸，春子在右后方半身并托着小魔物；焦点从春子转到青张开的嘴。"
+        "coupling": "青随即让眼皮先收紧再闭合并后仰，右手手指蜷起、高声拒绝，白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚",
+        "landing": "青随即让眼皮先收紧再闭合并后仰，右手手指蜷起、高声拒绝，白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚；40mm双人中近景，青占左前景大侧脸，春子在右后方半身并托着小魔物；焦点从春子转到青张开的嘴。"
       },
       "details": [
-        "青的白发与尖耳从左侧大面积入画，脸朝右、嘴张开，右手悬在下方中央",
-        "春子在右后景从胸口以上入画，右手托着黄色魔物，半垂眼平静看向青"
+        "春子先把魔物抬高到肩侧并以半垂眼看向青",
+        "青随即让眼皮先收紧再闭合并后仰，右手手指蜷起、高声拒绝，白发晚半拍扫过肩头，最后手指停在胸前、重心落回后脚"
       ],
       "intervals": [
         {
-          "speech_seconds": 8.32,
-          "acting_seconds": 8.32
+          "speech_seconds": 9.32,
+          "acting_seconds": 9.32
         }
       ]
     },
     {
       "target": "片段5/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
         "opening": "春子的两只黑眼横贯画面中央，右侧刘海垂直遮住部分额头，左右各一滴汗沿脸颊下滑",
         "beats": [
@@ -2759,26 +3152,49 @@
       ],
       "intervals": [
         {
-          "speech_seconds": 7.08,
-          "acting_seconds": 7.08
+          "speech_seconds": 7.09,
+          "acting_seconds": 7.09
+        }
+      ]
+    },
+    {
+      "target": "片段8/分镜1",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
+      "card": {
+        "opening": "左手从下方托起魔物，魔物在左下张开短臂仰视她",
+        "beats": [
+          "左手从下方托起魔物，魔物在左下张开短臂仰视她",
+          "青先把它举到胸口高度，眉眼在侧轮廓里放软"
+        ],
+        "coupling": "左手从下方托起魔物，魔物在左下张开短臂仰视她",
+        "landing": "魔物晚半拍点头，回应时抬高双臂，最后手掌、视线和身体轻摆一同停住；40mm青肩后双主体中景，青的白发与右肩占右前景，黄色魔物被托在左下；镜头沿手臂缓慢推近，句末停在两者视线和相接手掌之间；青背向镜头站在右前景，白发垂到下缘并遮住部分身体。"
+      },
+      "details": [
+        "左手从下方托起魔物，魔物在左下张开短臂仰视她",
+        "青先把它举到胸口高度，眉眼在侧轮廓里放软"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 7.41,
+          "acting_seconds": 7.41
         }
       ]
     },
     {
       "target": "片段9/分镜2",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "青居中央，白发从两侧垂到底部，黑蓝上衣和银色纽扣形成竖向中轴，黄色魔物被交叠双手包在下前景",
+        "opening": "她低眼盯着魔物，眉峰先向内收、嘴唇抿紧，双手指节相互压紧",
         "beats": [
           "她低眼盯着魔物，眉峰先向内收、嘴唇抿紧，双手指节相互压紧",
           "说到「放してあげた」时肩线内收，随后嘴角迟疑地松开、勉强抬眼看向下方目标，最后视线与手指一起停住"
         ],
-        "coupling": "说到「放してあげた」时肩线内收，随后嘴角迟疑地松开、勉强抬眼看向下方目标，最后视线与手指一起停住",
-        "landing": "说到「放してあげた」时肩线内收，随后嘴角迟疑地松开、勉强抬眼看向下方目标，最后视线与手指一起停住；35mm低机位青的半身近景，胸口至头顶完整入画，双手在下前景交叠并托着魔物；轻推至发红的眼神。"
+        "coupling": "她低眼盯着魔物，眉峰先向内收、嘴唇抿紧，双手指节相互压紧",
+        "landing": "说到「放してあげた」时肩线内收，随后嘴角迟疑地松开、勉强抬眼看向下方目标，最后视线与手指一起停住；35mm低机位青的半身近景，胸口至头顶完整入画，双手在下前景交叠并托着魔物；轻推至发红的眼神；青居中央，白发从两侧垂到底部，黑蓝上衣和银色纽扣形成竖向中轴，黄色魔物被交叠双手包在下前景。"
       },
       "details": [
-        "青居中央，白发从两侧垂到底部，黑蓝上衣和银色纽扣形成竖向中轴，黄色魔物被交叠双手包在下前景",
-        "她低眼盯着魔物，眉峰先向内收、嘴唇抿紧，双手指节相互压紧"
+        "她低眼盯着魔物，眉峰先向内收、嘴唇抿紧，双手指节相互压紧",
+        "说到「放してあげた」时肩线内收，随后嘴角迟疑地松开、勉强抬眼看向下方目标，最后视线与手指一起停住"
       ],
       "intervals": [
         {
@@ -2788,66 +3204,88 @@
       ]
     },
     {
-      "target": "片段10/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "target": "片段9/分镜3",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "黄色魔物被左缘和下缘裁切，巨大双眼向右上斜看，嘴巴张成小黑口，短臂贴在身体两侧",
+        "opening": "青的脸从额发到下巴填满画面，红晕横过双颊，视线由下方慢慢抬到镜头下侧",
+        "beats": [
+          "青的脸从额发到下巴填满画面，红晕横过双颊，视线由下方慢慢抬到镜头下侧",
+          "她先咬住下唇，随后嘴角勉强松开，句末瞳孔转向画面右侧外并停住"
+        ],
+        "coupling": "青的脸从额发到下巴填满画面，红晕横过双颊，视线由下方慢慢抬到镜头下侧",
+        "landing": "她先咬住下唇，随后嘴角勉强松开，句末瞳孔转向画面右侧外并停住；70mm同源脸部近景，青的双眼与嘴角占画面中央，白发从左右裁切；镜头在抬眼时轻推并稳住。"
+      },
+      "details": [
+        "青的脸从额发到下巴填满画面，红晕横过双颊，视线由下方慢慢抬到镜头下侧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.6,
+          "acting_seconds": 4.6
+        }
+      ]
+    },
+    {
+      "target": "片段10/分镜1",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
+      "card": {
+        "opening": "它先缩紧肩部，眼皮下压、嘴角由圆口收成发颤的小缝，瞳孔左右扫动",
         "beats": [
           "它先缩紧肩部，眼皮下压、嘴角由圆口收成发颤的小缝，瞳孔左右扫动",
           "随后抬起一只短臂想解释，手臂到胸口高度又慢慢垂下，最后身体向左缩并避开青的视线"
         ],
-        "coupling": "随后抬起一只短臂想解释，手臂到胸口高度又慢慢垂下，最后身体向左缩并避开青的视线",
-        "landing": "随后抬起一只短臂想解释，手臂到胸口高度又慢慢垂下，最后身体向左缩并避开青的视线；70mm低机位魔物胸像近景，魔物从左下占据大半画面，右上留出台词方向；固定机位让眼神与手臂变化完整可读。"
+        "coupling": "它先缩紧肩部，眼皮下压、嘴角由圆口收成发颤的小缝，瞳孔左右扫动",
+        "landing": "随后抬起一只短臂想解释，手臂到胸口高度又慢慢垂下，最后身体向左缩并避开青的视线；70mm低机位魔物胸像近景，魔物从左下占据大半画面，右上留出台词方向；固定机位让眼神与手臂变化完整可读；黄色魔物被左缘和下缘裁切，巨大双眼向右上斜看，嘴巴张成小黑口，短臂贴在身体两侧。"
       },
       "details": [
-        "黄色魔物被左缘和下缘裁切，巨大双眼向右上斜看，嘴巴张成小黑口，短臂贴在身体两侧",
-        "它先缩紧肩部，眼皮下压、嘴角由圆口收成发颤的小缝，瞳孔左右扫动"
+        "它先缩紧肩部，眼皮下压、嘴角由圆口收成发颤的小缝，瞳孔左右扫动",
+        "随后抬起一只短臂想解释，手臂到胸口高度又慢慢垂下，最后身体向左缩并避开青的视线"
       ],
       "intervals": [
         {
           "speech_seconds": 7.0,
-          "acting_seconds": 7
+          "acting_seconds": 7.0
         }
       ]
     },
     {
       "target": "片段12/分镜2",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "青的双眼与眉间占满中央并被四周裁切，额发重叠遮住上方，脸颊红晕延伸到下缘，白发从左右垂入",
+        "opening": "她先用力闭眼",
         "beats": [
-          "青的双眼与眉间占满中央并被四周裁切，额发重叠遮住上方，脸颊红晕延伸到下缘，白发从左右垂入",
-          "她先用力闭眼，眉头向中央压紧，随后头部连续小幅摇动，发梢晚半拍扫过脸侧，最后咬住下唇停住"
+          "她先用力闭眼",
+          "眉头向中央压紧"
         ],
-        "coupling": "她先用力闭眼，眉头向中央压紧，随后头部连续小幅摇动，发梢晚半拍扫过脸侧，最后咬住下唇停住",
-        "landing": "她先用力闭眼，眉头向中央压紧，随后头部连续小幅摇动，发梢晚半拍扫过脸侧，最后咬住下唇停住；85mm正面眼部极近景，青的额发贴住上缘，紧闭双眼横贯中央；轻微手持随头部颤动，最终在眉心处稳住。"
+        "coupling": "随后头部连续小幅摇动",
+        "landing": "最后咬住下唇停住。；85mm正面眼部极近景，青的额发贴住上缘，紧闭双眼横贯中央；轻微手持随头部颤动，最终在眉心处稳住；青的双眼与眉间占满中央并被四周裁切，额发重叠遮住上方，脸颊红晕延伸到下缘，白发从左右垂入。"
       },
       "details": [
-        "青的双眼与眉间占满中央并被四周裁切，额发重叠遮住上方，脸颊红晕延伸到下缘，白发从左右垂入",
-        "她先用力闭眼，眉头向中央压紧，随后头部连续小幅摇动，发梢晚半拍扫过脸侧，最后咬住下唇停住"
+        "她先用力闭眼",
+        "眉头向中央压紧"
       ],
       "intervals": [
         {
-          "speech_seconds": 6.0,
-          "acting_seconds": 6
+          "speech_seconds": 6.55,
+          "acting_seconds": 6.55
         }
       ]
     },
     {
       "target": "片段13/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "青的侧脸只保留左侧唇线与下颌，右侧大面积曲面被上下边缘裁切，中央留出窄长间隙",
+        "opening": "她的嘴角先收紧",
         "beats": [
-          "青的侧脸只保留左侧唇线与下颌，右侧大面积曲面被上下边缘裁切，中央留出窄长间隙",
-          "她的嘴角先收紧，唇缝由微张收成细线，随后下颌向后缩，身体表面随呼吸起伏一次，最后唇线与身体都保持僵直"
+          "她的嘴角先收紧",
+          "唇缝由微张收成细线"
         ],
-        "coupling": "她的嘴角先收紧，唇缝由微张收成细线，随后下颌向后缩，身体表面随呼吸起伏一次，最后唇线与身体都保持僵直",
-        "landing": "她的嘴角先收紧，唇缝由微张收成细线，随后下颌向后缩，身体表面随呼吸起伏一次，最后唇线与身体都保持僵直；100mm纵向侧面接触极近景，青的唇与下颌从左侧入画，身体曲面占右侧；镜头沿中央间隙缓慢下移后停住。"
+        "coupling": "随后下颌向后缩",
+        "landing": "最后唇线与身体都保持僵直。；100mm纵向侧面接触极近景，青的唇与下颌从左侧入画，身体曲面占右侧；镜头沿中央间隙缓慢下移后停住；青的侧脸只保留左侧唇线与下颌，右侧大面积曲面被上下边缘裁切，中央留出窄长间隙。"
       },
       "details": [
-        "青的侧脸只保留左侧唇线与下颌，右侧大面积曲面被上下边缘裁切，中央留出窄长间隙",
-        "她的嘴角先收紧，唇缝由微张收成细线，随后下颌向后缩，身体表面随呼吸起伏一次，最后唇线与身体都保持僵直"
+        "她的嘴角先收紧",
+        "唇缝由微张收成细线"
       ],
       "intervals": [
         {
@@ -2858,19 +3296,19 @@
     },
     {
       "target": "片段15/分镜1",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "春子的鼻尖与棕发从右前景切入并遮住画面右缘，半垂眼看向青手中的魔物",
+        "opening": "春子问完后眼皮不动",
         "beats": [
-          "青在左中景从胸口以上入画，肩膀缩起、双手把魔物挡在身侧",
-          "春子问完后眼皮不动，青先移开视线，随后猛摇头，白发晚半拍扫过肩膀，最后嘴唇抿住"
+          "春子问完后眼皮不动",
+          "青先移开视线"
         ],
-        "coupling": "春子问完后眼皮不动，青先移开视线，随后猛摇头，白发晚半拍扫过肩膀，最后嘴唇抿住",
-        "landing": "春子问完后眼皮不动，青先移开视线，随后猛摇头，白发晚半拍扫过肩膀，最后嘴唇抿住；70mm同源双人侧向近景，春子右侧脸占右前景，青在左中景回头；焦点先在春子平直的眼神，再转到青慌乱的嘴角并稳住。"
+        "coupling": "随后猛摇头",
+        "landing": "最后嘴唇抿住。；70mm同源双人侧向近景，春子右侧脸占右前景，青在左中景回头；焦点先在春子平直的眼神，再转到青慌乱的嘴角并稳住；春子的鼻尖与棕发从右前景切入并遮住画面右缘，半垂眼看向青手中的魔物；青在左中景从胸口以上入画，肩膀缩起、双手把魔物挡在身侧。"
       },
       "details": [
-        "春子的鼻尖与棕发从右前景切入并遮住画面右缘，半垂眼看向青手中的魔物",
-        "青在左中景从胸口以上入画，肩膀缩起、双手把魔物挡在身侧"
+        "春子问完后眼皮不动",
+        "青先移开视线"
       ],
       "intervals": [
         {
@@ -2881,26 +3319,50 @@
     },
     {
       "target": "片段16/分镜2",
-      "evidence": "当前引用面板中的脸部、手部、道具与重心关系",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
       "card": {
-        "opening": "春子从胸口以上占中央，棕发沿右侧垂落，黄色魔物被右臂夹在胸前并仰头尖叫",
+        "opening": "春子先以半垂眼看向青，眼皮微抬后又回落，下巴随弹指轻点一下",
         "beats": [
-          "她的左手从左前景伸入，拇指与中指弹响后收回",
-          "春子先看向青，随后把魔物向怀里提稳，句末眼皮仍半垂"
+          "春子先以半垂眼看向青，眼皮微抬后又回落，下巴随弹指轻点一下",
+          "左手拇指与中指弹响后收回，随后右臂把魔物向怀里提稳，身体重心落回后脚"
         ],
-        "coupling": "魔物短臂向外挣动后停住",
-        "landing": "魔物短臂向外挣动后停住；45mm平视春子胸像中近景，春子居中，右臂夹住黄色魔物，左手从左缘弹指；轻推后落在她平直的眼神。"
+        "coupling": "左手拇指与中指弹响后收回，随后右臂把魔物向怀里提稳，身体重心落回后脚",
+        "landing": "魔物仰头尖叫，短臂向外挣动后停住，春子句末恢复半垂眼；45mm平视春子胸像中近景，春子居中，右臂夹住黄色魔物，左手从左缘弹指；轻推后落在她平直的眼神。"
       },
       "details": [
-        "春子从胸口以上占中央，棕发沿右侧垂落，黄色魔物被右臂夹在胸前并仰头尖叫",
-        "她的左手从左前景伸入，拇指与中指弹响后收回"
+        "春子先以半垂眼看向青，眼皮微抬后又回落，下巴随弹指轻点一下",
+        "左手拇指与中指弹响后收回，随后右臂把魔物向怀里提稳，身体重心落回后脚"
       ],
       "intervals": [
         {
-          "speech_seconds": 6.42,
-          "acting_seconds": 6.42
+          "speech_seconds": 6.97,
+          "acting_seconds": 6.97
+        }
+      ]
+    },
+    {
+      "target": "片段19/分镜3",
+      "evidence": "当前720p面板可见的头面、视线、手/道具、重心及延迟响应",
+      "card": {
+        "opening": "矮人按住草地，胸口先剧烈起伏，随后抬眼看向画面右侧，嘴角勉强上扬",
+        "beats": [
+          "矮人按住草地，胸口先剧烈起伏，随后抬眼看向画面右侧，嘴角勉强上扬",
+          "青的喊声从右侧外打断他时，他先缩起眼角，嘴角立刻收平，肩膀向下沉"
+        ],
+        "coupling": "矮人按住草地，胸口先剧烈起伏，随后抬眼看向画面右侧，嘴角勉强上扬",
+        "landing": "按地手指抓紧草叶，汗珠继续滑落，最后视线停向右侧声源；50mm低机位矮人胸像近景，银色角盔横贯上半，黑胡须占中央，下方前景是压倒的高草；镜头随喘息轻微起伏。"
+      },
+      "details": [
+        "矮人按住草地，胸口先剧烈起伏，随后抬眼看向画面右侧，嘴角勉强上扬",
+        "青的喊声从右侧外打断他时，他先缩起眼角，嘴角立刻收平，肩膀向下沉"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 7.38,
+          "acting_seconds": 7.38
         }
       ]
     }
-  ]
+  ],
+  "source_language": "zh-mixed"
 }
