@@ -16,8 +16,7 @@ BACKGROUND = "暖象牙色向淡天蓝渐变铺满背景"
 
 
 def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> str:
-    action = "人物手指轻微收紧。" if line is None else "人物手掌朝上，手指稳定托住画外物件。"
-    action += " 手腕由画面下缘入画并被边缘裁切，掌心占中央前景。"
+    action = "人物手指轻微收紧后停住。" if line is None else "人物手掌朝上托住物件，手指先放松再轻微收紧。"
     speech = "无台词。" if line is None else f"人物：“{line}”（清晰的中性音色，平静语气）。"
     return f"""## 场景色彩基准
 二维手绘质感，中等对比。
@@ -26,7 +25,7 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 
 **分镜1（5秒）：**
 分镜参考 `[panel.jpg]`
-【镜头设计】：平视手部特写，固定镜头。
+【镜头设计】：50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。
 【可见动作】：{action}
 【可见背景】：{background}，深蓝灰放射线向外扩张。
 【台词与语气】：{speech}
@@ -38,10 +37,12 @@ def storyboard(line: str | None = SHORT_LINE, background: str = BACKGROUND) -> s
 def valid_ledger(line: str = SHORT_LINE) -> dict:
     return {
         "version": 2,
+        "source_language": "zh",
         "panels": [
             {
                 "image": "panel.jpg",
                 "viewed_at_drafting": True,
+                "drafting_resolution": "720p",
                 "source_bubble_count": 1,
                 "bubble_audit": "pass",
                 "background": {
@@ -83,6 +84,7 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
                 "source_audit": "pass",
                 "unsupported_additions": [],
                 "risk_flags": [],
+                "risk_basis": "单气泡短句；手部关系清楚，无脆弱几何",
             }
         ],
         "performance": [],
@@ -191,7 +193,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_p_risk_requires_compact_performance_card(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物先看向掌心，眉尾先抬起，嘴角随后压平；手指跟着收紧，袖口迟半拍回落，最后视线停在掌心。",
         )
         ledger = valid_ledger()
@@ -208,7 +210,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_p_risk_with_card_and_rendered_chain_passes(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物先看向掌心，眉尾先抬起，嘴角随后压平；手指跟着收紧，袖口迟半拍回落，最后视线停在掌心。",
         )
         ledger = valid_ledger()
@@ -255,7 +257,7 @@ class ValidatorTests(unittest.TestCase):
                 "speaker": speaker,
                 "speaker_evidence": f"气泡尾指向{speaker}",
                 "kind": "dialogue",
-                "source_text": line,
+                "source_text": f"原文{index}",
                 "status": "mapped",
                 "script_text": line,
                 "seconds": 1,
@@ -297,12 +299,12 @@ class ValidatorTests(unittest.TestCase):
 
     def test_expressive_summary_fails_performance_fidelity_warnings(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物手腕后撤、肩膀缩起，连续摇头时发梢向后拖；"
             "视线在石头和对方之间折返，最后手指停住。",
         ).replace(
-            "平视手部特写，固定镜头。",
-            "35mm双人中近景，摄影机小幅横移，焦点跟随手部。",
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "35mm双人中近景，人物分居左右中景，交接的双手叠在中央前景；摄影机小幅横移，焦点跟随手部。",
         ).replace(
             "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
             "晶石轻碰掌心，拒绝声与手腕后撤同步。",
@@ -315,13 +317,13 @@ class ValidatorTests(unittest.TestCase):
 
     def test_staged_expressive_performance_passes_fidelity_warnings(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物先把物件向前送出半掌，第一声拒绝时手腕迅速后撤，肩膀随后向内缩；"
             "第二声拒绝时眼睑压紧，嘴唇先合拢再张开，头部连续摇动，"
             "发梢晚半拍向反方向甩开后回弹，最后双手停在交接处。",
         ).replace(
-            "平视手部特写，固定镜头。",
-            "35mm双人中近景，摄影机跟随物件往返移动，句末在双方交接处稳住。",
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "35mm双人中近景，人物分居左右中景，交接的双手叠在中央前景；摄影机跟随物件往返移动，句末在双方交接处稳住。",
         ).replace(
             "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
             "第一声拒绝带短促回响，第二声与手腕后撤同步并迅速收干。",
@@ -356,9 +358,9 @@ class ValidatorTests(unittest.TestCase):
     def test_repeated_atmosphere_effect_emits_warning(self) -> None:
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
-分镜参考 `[panel.jpg]`
-【镜头设计】：50mm平视手部特写，固定镜头。
-【可见动作】：手腕从画面下缘入画并被裁切，手掌占中央前景，手指稳定托住物件。
+{"分镜参考 `[panel.jpg]`" if i == 1 else ""}
+【镜头设计】：50mm平视手部特写，手腕被下缘裁切，手掌占中央前景；固定镜头。
+【可见动作】：手掌稳定托住物件，手指先放松再轻微收紧。
 【可见背景】：{BACKGROUND}，微尘漂浮。
 【台词与语气】：无台词。
 【光影布光】：柔和侧光照亮手指，微尘停在暗部。
@@ -373,8 +375,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_three_second_micro_action_chain_has_no_capacity_warning(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "平视近景，固定镜头。听见呼唤后先停住，眼睑微抬，嘴角放松，短吸气；"
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "听见呼唤后先停住，眼睑微抬，嘴角放松，短吸气；"
             "指尖在衣料上收紧，衣摆随惯性晚半拍回落，视线最终留在说话者身上。",
         )
         result = self.run_validator(text)
@@ -385,8 +387,8 @@ class ValidatorTests(unittest.TestCase):
     def test_sentence_end_settle_counts_as_performance_endpoint(self) -> None:
         long_line = "あ" * 30
         text = storyboard(line=long_line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "平视近景，听见问话后先停顿，视线转向对方；眉梢稍后松开，"
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "听见问话后先停顿，视线转向对方；眉梢稍后松开，"
             "短促吸气，指尖捏住衣角，句末松手并让肩线回落。",
         )
         result = self.run_validator(text)
@@ -397,8 +399,8 @@ class ValidatorTests(unittest.TestCase):
         text = storyboard().replace(
             "分镜1（5秒）", "分镜1（2秒）"
         ).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "平视中景，人物起身转身迈步跑向门口推开门。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物起身、转身、迈步跑向门口并推开门。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -406,8 +408,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_contextual_pointing_is_not_generic_gesture_warning(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "平视中景，人物抬手指向桌上的晶石，视线随指尖落定。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物抬手指向桌上的晶石，视线随指尖落定。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -425,9 +427,9 @@ class ValidatorTests(unittest.TestCase):
     def test_atmosphere_with_visible_source_does_not_warn(self) -> None:
         blocks = "\n".join(
             f"""**分镜{i}（2秒）：**
-分镜参考 `[panel.jpg]`
-【镜头设计】：50mm平视近景，固定镜头。
-【可见动作】：手腕从画面下缘入画并被裁切，手掌占中央前景，手指稳定托住物件。
+{"分镜参考 `[panel.jpg]`" if i == 1 else ""}
+【镜头设计】：50mm平视近景，手腕被下缘裁切，手掌占中央前景；固定镜头。
+【可见动作】：手掌稳定托住物件，手指先放松再轻微收紧。
 【可见背景】：窗边蒸汽缓慢上升，{BACKGROUND}。
 【台词与语气】：无台词。
 【光影布光】：逆光穿过蒸汽形成微尘可见的光束。
@@ -449,7 +451,7 @@ class ValidatorTests(unittest.TestCase):
     def test_cross_shot_and_negative_meta_prose_fail(self) -> None:
         for phrase in ("保持原有构图", "上一格人物站在左侧", "不新增飞鸟", "不使用背景"):
             text = storyboard().replace(
-                "人物手掌朝上，手指稳定托住画外物件。",
+                "人物手掌朝上托住物件，手指先放松再轻微收紧。",
                 phrase + "。",
             )
             result = self.run_validator(text)
@@ -470,7 +472,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_six_second_staged_head_face_chain_passes_density(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物起幅为朝画面右侧的三分之二侧脸，听见问话后瞳孔先回到左侧；"
             "随后下巴轻收、脸转向正面，一侧眉梢松开，句末肩线回落，视线停在说话者身上。",
         )
@@ -480,9 +482,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_pure_object_explanation_does_not_require_body_signals(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "说明性物件镜头，人物未入画；晶石亮点沿棱线逐层显现，"
-            "随后焦点移向金属边缘，最后两件物体稳定在并置构图。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物未入画；晶石亮点沿棱线逐层显现，随后金属边缘泛起亮点，最后两件物体的反光同时稳定。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
@@ -492,7 +493,7 @@ class ValidatorTests(unittest.TestCase):
     def test_chinese_dialogue_trigger_paraphrase_fails(self) -> None:
         line = "前は暗石区の入口だけだったのに、今は全部封鎖されてる。"
         text = storyboard(line=line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "提到暗石区入口时，人物视线收紧。",
         )
         result = self.run_validator(text)
@@ -502,7 +503,7 @@ class ValidatorTests(unittest.TestCase):
     def test_verbatim_japanese_dialogue_trigger_passes(self) -> None:
         line = "前は暗石区の入口だけだったのに、今は全部封鎖されてる。"
         text = storyboard(line=line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "说到「暗石区の入口」时，人物视线收紧。",
         )
         result = self.run_validator(text)
@@ -511,7 +512,7 @@ class ValidatorTests(unittest.TestCase):
     def test_chinese_quoted_utterance_exit_trigger_fails(self) -> None:
         line = "しっ。黙って。"
         text = storyboard(line=line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "“闭嘴”出口时，人物的嘴角压平。",
         )
         result = self.run_validator(text)
@@ -521,7 +522,7 @@ class ValidatorTests(unittest.TestCase):
     def test_chinese_semantic_action_trigger_fails(self) -> None:
         line = "先に攻撃した方がよくない？"
         text = storyboard(line=line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "提出抢攻时，她的下巴朝目标送出。",
         )
         result = self.run_validator(text)
@@ -531,7 +532,7 @@ class ValidatorTests(unittest.TestCase):
     def test_generic_emphasis_timing_remains_valid(self) -> None:
         line = "先に攻撃した方がよくない？"
         text = storyboard(line=line).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "质问重音处，她的下巴朝目标送出。",
         )
         result = self.run_validator(text)
@@ -539,7 +540,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_unestablished_counted_gaze_target_fails(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物的视线落向对面的两名少女，手指随后放松。",
         )
         result = self.run_validator(text)
@@ -548,7 +549,7 @@ class ValidatorTests(unittest.TestCase):
 
     def test_directional_gaze_target_is_self_contained(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物的视线转向画面右侧外，手指随后放松。",
         )
         result = self.run_validator(text)
@@ -559,9 +560,12 @@ class ValidatorTests(unittest.TestCase):
             f"【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。",
             "【可见背景】：暖色墙面填满背景。",
         ).replace(
-            "人物手掌朝上，手指稳定托住画外物件。",
-            "浅发少女位于画面左侧，木杯占据右前景；少女手指稳定托住杯柄。",
-        ).replace("平视手部特写", "平视人物近景")
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "浅发少女的手指先扣紧杯柄，随后放松并停住。",
+        ).replace(
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "50mm平视人物近景，浅发少女位于画面左侧，木杯占据右前景；固定镜头。",
+        )
         first = base.replace("分镜参考 `[panel.jpg]`\n", "")
         second = base.split("## 【片段1】", 1)[1]
         second = "## 【片段2】" + second.replace("测试", "下一格", 1)
@@ -587,7 +591,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("低于独立日文估时", result.stdout)
 
-    def test_multi_reference_requires_source_bound_action_rows(self) -> None:
+    def test_multi_reference_requires_source_bound_camera_rows(self) -> None:
         text = storyboard().replace(
             "分镜参考 `[panel.jpg]`",
             "分镜参考 `[panel.jpg]`、`[panel2.jpg]`",
@@ -596,14 +600,59 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("逐条绑定", result.stdout)
 
-    def test_action_requires_concrete_panel_composition(self) -> None:
+    def test_camera_requires_concrete_panel_composition(self) -> None:
         text = storyboard().replace(
-            "人物手掌朝上，手指稳定托住画外物件。 手腕由画面下缘入画并被边缘裁切，掌心占中央前景。",
-            "人物手指轻微收紧。",
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "平视固定镜头。",
         )
         result = self.run_validator(text)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("缺少原格构图锁", result.stdout)
+
+    def test_action_rejects_static_composition(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物占据画面中央前景，手掌朝上托住物件，手指先放松再轻微收紧。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("混入静态构图/摄影信息", result.stdout)
+
+    def test_original_resolution_requires_escalation_reason(self) -> None:
+        ledger = valid_ledger()
+        ledger["panels"][0]["drafting_resolution"] = "original"
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("resolution_escalation_reason", result.stdout)
+
+    def test_non_japanese_source_cannot_be_copied_from_final_script(self) -> None:
+        ledger = valid_ledger()
+        ledger["panels"][0]["bubbles"][0]["source_text"] = SHORT_LINE
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("禁止从成稿反向生成台账", result.stdout)
+
+    def test_adjacent_shots_cannot_repeat_formal_reference(self) -> None:
+        first = storyboard()
+        second_block = first.split("**分镜1（5秒）：**", 1)[1]
+        text = first + "\n**分镜2（5秒）：**" + second_block
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("重复同一参考图", result.stdout)
+
+    def test_adjacent_segments_cannot_repeat_formal_reference(self) -> None:
+        first = storyboard()
+        second = storyboard().replace("## 【片段1】测试", "## 【片段2】测试")
+        result = self.run_validator(first + "\n" + second)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("重复同一参考图", result.stdout)
+
+    def test_risk_decision_requires_pre_draft_basis(self) -> None:
+        ledger = valid_ledger()
+        ledger["shots"][0].pop("risk_basis")
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少risk_basis", result.stdout)
 
 
 if __name__ == "__main__":

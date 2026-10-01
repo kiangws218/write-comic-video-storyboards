@@ -96,9 +96,9 @@ CAMERA_STAGING_MOTION_RE = re.compile(
 CAMERA_LANDING_RE = re.compile(
     r"落幅|句末[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
     r"最终[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
-    r"(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停在|落在|收束)"
+    r"(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停住|停在|落在|收束)"
 )
-EXPRESSIVE_DIALOGUE_RE = re.compile(r"[！!？?]{2,}|…{2,}|っ[！!]|だ、だ|不、?不")
+EXPRESSIVE_DIALOGUE_RE = re.compile(r"[！!？?]{2,}|っ[！!]|だ、だ|不、?不")
 AUDIO_BEAT_DIFFERENTIATION_RE = re.compile(
     r"第一次|第二次|第一声|第二声|前一次|后一次|先[^。；\r\n]{0,18}(?:再|随后)|"
     r"随后|转折|改口|重复|重音|停顿|半拍|回响|收干|衰减"
@@ -186,6 +186,15 @@ MULTI_REF_BULLET_RE = re.compile(
     r"(?m)^\s*[-*]\s*参考\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?"
     r"\s*[（(]([^）)]+)[）)]\s*[：:]\s*(\S.+)$",
     re.IGNORECASE,
+)
+ACTION_PHASE_BULLET_RE = re.compile(
+    r"(?m)^\s*[-*]\s*([^：:\r\n]{1,20})\s*[：:]\s*(\S.+)$"
+)
+ACTION_CAMERA_COMPOSITION_RE = re.compile(
+    r"(?:\d{2,3}\s*mm|焦段|景深|机位|轴线|构图|负空间|"
+    r"(?:大|极)?特写|近景|中景|远景|全景|半身|胸像|膝上|"
+    r"前景|中景|后景|裁切|被(?:上|下|左|右)缘(?:裁|切)|"
+    r"(?:占据|占满)(?:画面|左|右|中央|中部)|画面(?:上|下|左|右)三分之一)"
 )
 JAPANESE_TRIGGER_QUOTE_RE = re.compile(r"「([^」]+)」")
 GENERIC_TIMING_CUE_RE = re.compile(
@@ -606,6 +615,12 @@ def validate_source_ledger(
 
     if ledger.get("version") != 2:
         errors.append("源图台账version必须为2。")
+    source_language = ledger.get("source_language")
+    if not isinstance(source_language, str) or not source_language.strip():
+        errors.append("源图台账缺少source_language；必须声明原漫画文字语言。")
+        source_language = ""
+    else:
+        source_language = source_language.strip().casefold()
     panels = ledger.get("panels")
     if not isinstance(panels, list):
         return errors + ["对白台账panels必须是数组。"]
@@ -642,6 +657,13 @@ def validate_source_ledger(
 
         if panel.get("viewed_at_drafting") is not True:
             errors.append(f"{image}未确认在写作时打开原图（viewed_at_drafting）。")
+        drafting_resolution = panel.get("drafting_resolution")
+        if drafting_resolution not in {"720p", "original"}:
+            errors.append(f"{image}的drafting_resolution必须是720p或original。")
+        if drafting_resolution == "original":
+            escalation_reason = panel.get("resolution_escalation_reason")
+            if not isinstance(escalation_reason, str) or sum(ch.isalnum() for ch in escalation_reason) < 6:
+                errors.append(f"{image}查看original但未记录具体resolution_escalation_reason。")
         if panel.get("bubble_audit") != "pass":
             errors.append(f"{image}未通过原图气泡数与顺序复核。")
         background = panel.get("background")
@@ -745,6 +767,16 @@ def validate_source_ledger(
             if "segments" in bubble and bubble.get("script_text") != "".join(str(m.get("script_text", "")) for m in mappings):
                 errors.append(f"{bubble_label}的完整script_text与segments拼接不一致。")
             turn_text = str(bubble.get("script_text", ""))
+            source_text = str(bubble.get("source_text", ""))
+            if (
+                source_language
+                and source_language not in {"ja", "jp", "japanese"}
+                and compact_text(source_text) == compact_text(turn_text)
+            ):
+                errors.append(
+                    f"{bubble_label}的source_text与日文script_text完全相同；"
+                    "非日文源必须保留原语言逐字文本，禁止从成稿反向生成台账。"
+                )
             turn_characters = sum(character.isalnum() for character in turn_text)
             turn_clauses = len(re.findall(r"[。！？!?]+", turn_text))
             turn_targets: set[str] = set()
@@ -866,6 +898,12 @@ def validate_source_ledger(
             risk_flags = []
         if len(risk_flags) != len(set(risk_flags)):
             errors.append(f"{target}的risk_flags不得重复。")
+        risk_basis = shot.get("risk_basis")
+        if not isinstance(risk_basis, str) or sum(ch.isalnum() for ch in risk_basis) < 6:
+            errors.append(
+                f"{target}缺少risk_basis；请在看图时简述D/P/G为何触发或清除，"
+                "不得从成稿字数反推。"
+            )
         if "P" in risk_flags:
             performance_risk_targets.add(target)
 
@@ -891,20 +929,28 @@ def validate_source_ledger(
                 if role == "source_locked" and image_key not in block_references:
                     errors.append(f"{target}的source_locked正文未引用：{source_image}")
             if len(source_images) >= 2:
-                action = shot_field_values(shot_map[target][1]).get("可见动作", "")
-                phase_rows = list(MULTI_REF_BULLET_RE.finditer(action))
+                fields = shot_field_values(shot_map[target][1])
+                camera = fields.get("镜头设计", "")
+                action = fields.get("可见动作", "")
+                phase_rows = list(MULTI_REF_BULLET_RE.finditer(camera))
                 phase_images = [Path(row.group(1)).name.casefold() for row in phase_rows]
                 for source_image in source_images:
                     if Path(source_image).name.casefold() not in phase_images:
                         errors.append(
-                            f"{target}合并多张参考图，但【可见动作】缺少与{source_image}绑定的独立阶段条目。"
+                            f"{target}合并多张参考图，但【镜头设计】缺少与{source_image}绑定的独立构图阶段。"
                         )
+                action_phases = {
+                    compact_text(row.group(1)) for row in ACTION_PHASE_BULLET_RE.finditer(action)
+                }
                 for row in phase_rows:
                     description = row.group(3)
                     if sum(bool(pattern.search(description)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
                         errors.append(
                             f"{target}的{row.group(1)}阶段缺少具体构图；需写裁切/景别、位置及深度/遮挡中的至少两类。"
                         )
+                    phase = compact_text(row.group(2))
+                    if phase not in action_phases:
+                        errors.append(f"{target}的【可见动作】缺少与构图阶段“{row.group(2)}”对应的动作条目。")
         elif role == "uncited_coverage" and source_images:
             errors.append(f"{target}是uncited_coverage，source_images应为空数组。")
 
@@ -1039,7 +1085,10 @@ def main() -> int:
         for label, number, chunk in labeled_chunks:
             validate_chunk(label, number, chunk)
 
+    previous_references_across_chunks: tuple[str, ...] = ()
+
     def validate_chunk(label: str, number: int, chunk: str) -> None:
+        nonlocal previous_references_across_chunks
         shots = list(SHOT_RE.finditer(chunk))
         combat_sequences = list(COMBAT_SEQUENCE_RE.finditer(chunk))
         if shots and combat_sequences:
@@ -1121,7 +1170,7 @@ def main() -> int:
         if any(match.start() > first_timed_block.start() for match in environment_matches):
             errors.append(f"{label}{number}把环境参考写进了分镜块。")
 
-        previous_references: tuple[str, ...] = ()
+        previous_references = previous_references_across_chunks
         for index, shot in enumerate(shots):
             block_end = (
                 shots[index + 1].start()
@@ -1157,18 +1206,25 @@ def main() -> int:
             if BACKGROUND_SUBJECT_COMPOSITION_RE.search(fields.get("可见背景", "")):
                 errors.append(
                     f"{shot_label}的【可见背景】混入主体、道具位置或构图关系；"
-                    "这里只写可生成背景，把相关内容移到【可见动作】。"
+                    "这里只写可生成背景，把静态构图移到【镜头设计】，动态表演移到【可见动作】。"
                 )
             if BACKGROUND_PAGE_ARTIFACT_RE.search(fields.get("可见背景", "")):
                 errors.append(
                     f"{shot_label}把气泡/页面/格间空白误写成【可见背景】；"
                     "请回看原图，只写物理环境、明确图形场或铺满画面的表面。"
                 )
+            camera_text = fields.get("镜头设计", "")
             action_text = fields.get("可见动作", "")
-            if sum(bool(pattern.search(action_text)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
+            if sum(bool(pattern.search(camera_text)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
                 errors.append(
-                    f"{shot_label}的【可见动作】缺少原格构图锁；"
+                    f"{shot_label}的【镜头设计】缺少原格构图锁；"
                     "请写景别/裁切、画面位置及深度/遮挡中的至少两类。"
+                )
+            action_composition = ACTION_CAMERA_COMPOSITION_RE.search(action_text)
+            if action_composition:
+                errors.append(
+                    f"{shot_label}的【可见动作】混入静态构图/摄影信息：{action_composition.group(0)}；"
+                    "请移到【镜头设计】，这里只保留随时间变化的可见表演。"
                 )
             for field_name in ("可见背景", "镜头设计", "可见动作", "光影布光", "声音设计"):
                 field_text = fields.get(field_name, "")
@@ -1216,26 +1272,29 @@ def main() -> int:
                         "请增加受支持的头面朝向、局部表情、手/道具、重心或听者反应，或拆镜。"
                     )
             if len(current_references) >= 2:
+                camera_text = fields.get("镜头设计", "")
                 phase_images = {
                     Path(match.group(1)).name.casefold()
-                    for match in MULTI_REF_BULLET_RE.finditer(action_text)
+                    for match in MULTI_REF_BULLET_RE.finditer(camera_text)
                 }
                 missing_phase_images = sorted(set(current_references) - phase_images)
                 if missing_phase_images:
                     errors.append(
-                        f"{shot_label}引用多张原图却未在【可见动作】逐条绑定：{missing_phase_images}；"
-                        "每张图须以参考阶段条目结合其构图与动作，或拆成独立编号分镜。"
+                        f"{shot_label}引用多张原图却未在【镜头设计】逐条绑定：{missing_phase_images}；"
+                        "每张图须以参考阶段条目锁定构图，并在【可见动作】写匹配阶段，或拆成独立编号分镜。"
                     )
                 warnings.append(
                     f"{shot_label}引用了{len(current_references)}张原图；"
                     "已要求逐图阶段绑定，仍请确认同一机位、背景、轴线和连续动作。"
                 )
             if current_references and current_references == previous_references:
-                warnings.append(
+                errors.append(
                     f"{label}{number}的相邻{shot.group(0)}重复同一参考图；"
-                    "请确认存在新的主体、景别、视角、构图、画面信息或戏剧功能，否则合并。"
+                    "请合并镜头；若后镜确有新构图，移除重复正式引用并登记为uncited_coverage，"
+                    "且至少改变主体焦点、景别、视角/轴线、构图/遮挡、可见信息或戏剧功能中的两项。"
                 )
             previous_references = current_references
+            previous_references_across_chunks = current_references
             if LEGACY_FIELD_RE.search(block):
                 errors.append(
                     f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"

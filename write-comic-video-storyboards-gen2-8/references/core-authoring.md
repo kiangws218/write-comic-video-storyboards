@@ -6,7 +6,7 @@ This normal source, format, timing, color, and sound module contains only rules 
 
 Use evidence in this order: current open panel; explicit supplied character/environment/prop/palette reference; adjacent panel only for chronology or continuous motion; story context only to decide what to inspect. An adjacent panel or ledger never proves current visibility.
 
-Draft one to three contiguous panels at a time. Keep each image open at drafting resolution while freezing locks, mapping dialogue, writing its cited shot, and comparing prose back to the image. A contact sheet is insufficient for exact composition.
+Draft one to three contiguous panels at a time. Generate and inspect 720p analysis proxies for the exact panels, and keep each proxy open while freezing locks, mapping dialogue, writing its cited shot, and comparing prose back to the image. A contact sheet is insufficient for exact composition. Open the 1080p/original asset only when 720p cannot reliably resolve small text, identity, hand/contact, overlap, topology, fast motion, or another decision-changing fact; record the concrete escalation reason instead of routinely loading both versions.
 
 Record only decision-changing facts: angle/scale; left-right and near-far placement; overlap/occlusion; pose/gaze/visible limbs; hand/prop/grip/contact/action vector; visible backing; source phase; bubble owner/order; role and evidence. The ledger is an audit index, not replacement prose.
 
@@ -30,7 +30,7 @@ Use stable descriptive labels for unsupported creatures/special props: useful sc
 
 A clip is one generated video; 15 seconds is a soft maximum. Keep a continuous physical phrase—load→launch, reach→grip→pull, swing→contact, fall→landing—in one clip when it fits. If split, end at a stable state and fully restate the next opening.
 
-Each camera setup receives one numbered shot and positive integer duration. A hard cut, reverse, insert, reaction, environment view, or new composition starts another shot. Seven seconds triggers review, not an automatic cut. Added coverage must change focus, scale, viewpoint, visible information, or dramatic function. Compare a clip's terminal added shot with the next source shot and remove near-duplicates.
+Each camera setup receives one numbered shot and positive integer duration. A hard cut, reverse, insert, reaction, environment view, or new composition starts another shot. Seven seconds triggers review, not an automatic cut. Adjacent numbered shots never formally cite the same panel. Keep the matching composition cited; a later genuine view is uncited coverage and changes at least two meaningful dimensions among focus, scale, viewpoint/axis, composition/overlap, visible information, and dramatic function. Speaker change, small zoom, focus transfer, or eye-only crop alone is insufficient. Compare a clip's terminal added shot with the next source shot and remove near-duplicates.
 
 ## Required output
 
@@ -38,8 +38,8 @@ Each camera setup receives one numbered shot and positive integer duration. A ha
 ## 【片段1】
 **分镜1（6秒）：**
 分镜参考 `[00.jpg]`
-【镜头设计】：景别/焦段、机位与轴线、主体构图、景深、焦点、起幅、一个主运镜和落幅。
-【可见动作】：先按原格具体锁定景别与裁切边界、主体位置、前中后景、重叠遮挡、道具接触、视线轴和负空间；再经语义节点发展头脸、微表情、手/道具、重心和延迟运动，落到明确状态。
+【镜头设计】：集中写拍摄角度与轴线、景别/焦段、裁切边界、主体位置、前中后景、重叠遮挡、负空间、景深/焦点、起幅、一个主运镜和落幅。
+【可见动作】：只写随时间发生的可见表演：由明确起态经语义节点发展头脸朝向、微表情、视线、手/道具接触、重心和延迟运动，落到明确终态；不重复静态景别、裁切和主体布局。
 【可见背景】：只写镜头内可见的物理背景、明确的图形场或铺满画面的表面，以及背景自身的材质、层次和运动；不写人物、动物、前景道具、主体位置、主体遮挡或构图关系。
 【台词与语气】：角色说：“……”（音色、语气、情绪及必要的语速、停顿、重音）；无台词写“无台词”。
 【光影布光】：光源方向、人物位置/遮挡、主辅光、明暗区、局部高光、材质和有依据的空气效果。
@@ -48,15 +48,18 @@ Each camera setup receives one numbered shot and positive integer duration. A ha
 
 Keep all six bracketed fields separate, complete, and in the shown order. Speech-bubble interiors and surrounding blank, page margins, panel gutters, and OCR gaps are layout artifacts, never `【可见背景】`. Do not output the removed `环境音` field or legacy `景别/构图/运镜/画面内容` fragments. Keep sound out of visual facts and new visual actions out of sound lines.
 
-When several panels are a true continuous action in the same camera setup, background, and axis, share the other five fields but bind composition and action one panel at a time inside `【可见动作】`:
+When several panels are a true continuous action in the same camera setup, background, and axis, bind each source phase and its composition inside `【镜头设计】`, then use matching phase labels for action-only development inside `【可见动作】`:
 
 ```markdown
-【可见动作】：
+【镜头设计】：
 - 参考 `[00.jpg]`（起幅）：平视双人中景，甲占左前景至胸口，乙在右后方露出半身；甲的前臂遮住乙的右肩，桌沿横切画面下四分之一。
-- 参考 `[01.jpg]`（结果）：同一轴线下乙退后半步，右肩退出遮挡；甲的手沿桌沿滑到画面中央，视线停在乙脸上。
+- 参考 `[01.jpg]`（结果）：维持同一轴线与景别，乙的右肩在右后方完整露出，甲的手位于画面中央；镜头轻跟手部后停稳。
+【可见动作】：
+- 起幅：甲的前臂压在桌沿，视线停在乙的手上。
+- 结果：乙退后半步，甲的手沿桌沿滑到中央，视线上抬并停在乙脸上。
 ```
 
-Do not stack multiple references on one line above the fields or blend their facts into one paragraph. Each bullet names its source phase and preserves that panel's crop, placement, depth/overlap and corresponding action. If setup, backing, axis, or causal continuity changes, create another numbered shot.
+Do not stack multiple references on one line above the fields or blend their facts into one paragraph. Each `【镜头设计】` bullet names its source phase and preserves that panel's crop, placement and depth/overlap; the correspondingly named `【可见动作】` bullet contains only the phase's changing performance. If setup, backing, axis, or causal continuity changes, create another numbered shot.
 
 ## Color, environment, and audio
 
@@ -70,6 +73,6 @@ Environment reference assets contain space/material/weather/light, not people, e
 
 ## Ledger minimum and final audit
 
-Use version 2 with `panels`, `shots`, and optional `performance`. Panel rows record image, actual viewing attestations, bubble count/audit, positive background, compact locks, coverage, and mapped bubbles. Shot rows record target, role, evidence images, purpose, background excerpt, actual viewed/audit attestations, unsupported additions, and compact risk flags. A `P` shot receives one performance entry containing its image-grounded card and exact rendered正文摘录; do not write cards for low-risk shots. Continuing bubbles use ordered segments whose text concatenates exactly. Validation proves consistency, not visual truth and never authorizes writing from the ledger after closing the image.
+Use version 2 with `panels`, `shots`, and optional `performance`. Declare the episode `source_language`; `source_text` preserves verbatim source-language text and `script_text` contains final Japanese. Panel rows record image, actual viewing attestations, `drafting_resolution` (`720p` by default or `original`), a concrete `resolution_escalation_reason` when original was necessary, bubble count/audit, positive background, compact locks, coverage, and mapped bubbles. Shot rows record target, role, evidence images, purpose, background excerpt, actual viewed/audit attestations, unsupported additions, compact risk flags, and a concise `risk_basis` showing why D/P/G were selected or cleared. A `P` shot receives one performance entry containing its image-grounded card and exact rendered正文摘录; do not write cards for low-risk shots. Continuing bubbles use ordered segments whose text concatenates exactly. Validation proves consistency, not visual truth and never authorizes writing from the ledger after closing the image.
 
 Confirm source order/event/result; cited composition/phase; background; color evidence; complete dialogue ownership/order; natural timing; stable labels; independent clip cold start; useful boundary coverage; supported performance; motivated camera/light/effects/sound; and unchanged adult master when applicable.
