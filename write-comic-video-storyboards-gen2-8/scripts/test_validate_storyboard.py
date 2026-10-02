@@ -440,13 +440,13 @@ class ValidatorTests(unittest.TestCase):
             "35mm双人中近景，人物分居左右中景，交接的双手叠在中央前景；摄影机小幅横移，焦点跟随手部。",
         ).replace(
             "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
-            "晶石轻碰掌心，拒绝声与手腕后撤同步。",
+            "晶石轻碰掌心，衣料轻响与动作落点同步。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("表演保真槽缺少", result.stdout)
         self.assertIn("没有镜头落幅", result.stdout)
-        self.assertIn("重复话语但声音设计没有区分", result.stdout)
+        self.assertIn("重复话语但【台词与语气】没有区分", result.stdout)
 
     def test_staged_expressive_performance_passes_fidelity_warnings(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
@@ -458,14 +458,17 @@ class ValidatorTests(unittest.TestCase):
             "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
             "35mm双人中近景，人物分居左右中景，交接的双手叠在中央前景；摄影机跟随物件往返移动，句末在双方交接处稳住。",
         ).replace(
+            '人物：“いりません、いりません！”（清晰的中性音色，平静语气）。',
+            '人物：“いりません、いりません！”（清晰的中性音色，第一次短促，第二次压力加重后收尾）。',
+        ).replace(
             "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
-            "第一声拒绝带短促回响，第二声与手腕后撤同步并迅速收干。",
+            "晶石轻碰掌心，衣料急响与动作落点同步，句末声场收静。",
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("表演保真槽缺少", result.stdout)
         self.assertNotIn("没有镜头落幅", result.stdout)
-        self.assertNotIn("重复话语但声音设计没有区分", result.stdout)
+        self.assertNotIn("重复话语但【台词与语气】没有区分", result.stdout)
 
     def test_repeated_words_split_across_quotes_need_audio_contrast(self) -> None:
         text = storyboard(line="いや！").replace(
@@ -475,12 +478,12 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("重复话语但声音设计没有区分", result.stdout)
+        self.assertIn("重复话语但【台词与语气】没有区分", result.stdout)
 
     def test_single_elongated_utterance_is_not_repetition(self) -> None:
         result = self.run_validator(storyboard(line="うううっ……せめて教えてください……"))
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("重复话语但声音设计没有区分", result.stdout)
+        self.assertNotIn("重复话语但【台词与语气】没有区分", result.stdout)
 
     def test_conflicting_depth_is_a_warning_not_error(self) -> None:
         text = storyboard().replace("固定镜头", "固定镜头，大光圈、全景深")
@@ -554,8 +557,48 @@ class ValidatorTests(unittest.TestCase):
             "【声音设计】：人物转身走向门并打开门，随后传来门轴声。",
         )
         result = self.run_validator(text)
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("重新断言了主体动作", result.stdout)
         self.assertIn("声音设计疑似包含新的视觉动作", result.stdout)
+
+    def test_sound_rejects_dialogue_delivery_duplication(self) -> None:
+        for phrase in (
+            "青的喊声从右侧近距离冲入并盖过喘息。",
+            "对白随奔跑轻微起伏。",
+        ):
+            text = storyboard().replace(
+                "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
+                phrase,
+            )
+            result = self.run_validator(text)
+            self.assertNotEqual(result.returncode, 0, phrase)
+            self.assertIn("重复了对白表演", result.stdout)
+
+    def test_sound_rejects_reasserted_subject_action(self) -> None:
+        text = storyboard().replace(
+            "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
+            "人物转身时衣料急响。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("重新断言了主体动作", result.stdout)
+
+    def test_non_dialogue_sound_and_neutral_sync_pass(self) -> None:
+        text = storyboard().replace(
+            "低环境底噪从画面后方持续传来，手指收紧时衣料轻响。",
+            "低环境底噪持续，衣料轻响与动作落点同步，句末声场收静。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_camera_rejects_temporal_subject_action(self) -> None:
+        text = storyboard().replace(
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "50mm平视人物近景，人物占中央前景；镜头轻推，人物随后转身跑向出口。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("混入了时序性主体动作", result.stdout)
 
     def test_atmosphere_with_visible_source_does_not_warn(self) -> None:
         blocks = "\n".join(

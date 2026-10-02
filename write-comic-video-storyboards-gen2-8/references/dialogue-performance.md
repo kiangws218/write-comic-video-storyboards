@@ -48,7 +48,7 @@ C=<coupled face/head + hand/prop/weight/listener or delayed response>
 L=<performer endpoint>|<camera landing>
 ```
 
-Every item must be visible in the panel or a modest continuous transition between visible anchors. Render rather than copy labels:
+Every item must be visible in the panel or a modest continuous transition between visible anchors. A named target used by a gaze, gesture, touch or movement must itself be established in the current shot; otherwise render only the visible screen-relative direction. Render rather than copy labels:
 
 - `O`: face orientation, gaze direction, visible contact/support and weight;
 - `B`: distinct local eye/brow/mouth/head changes tied to exact Japanese or generic semantic nodes;
@@ -61,6 +61,6 @@ Repeated words become separate beats only when pressure changes. Differentiate w
 
 ## Quality gate
 
-A `P` shot is blocked when it lacks a self-contained opening, ordered supported development, local face/head/gaze transition, coupled response/substitute, performer endpoint, or camera landing when moving. Card details must appear in the final camera/action/sound fields.
+A `P` shot is blocked when it lacks a self-contained opening, ordered supported development, local face/head/gaze transition, coupled response/substitute, performer endpoint, or camera landing when moving. Render each card detail only in its owning field: static composition/camera landing in `【镜头设计】`, all subject/object motion in `【可见动作】`, and only evidenced non-dialogue audio in `【声音设计】`.
 
 Before leaving the batch, an animator reading only the six fields must recover panel-specific composition, opening, ordered changes, overlap/latency, final held state and renderable backing. Compare those claims with the still-open source image.

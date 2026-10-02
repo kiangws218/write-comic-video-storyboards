@@ -77,6 +77,20 @@ AUDIO_HIDDEN_VISUAL_RE = re.compile(
     r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
     r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
 )
+SOUND_DIALOGUE_DUPLICATION_RE = re.compile(
+    r"对白|台词|话音|喊声|问话声|回答声|说话声|嗓音|"
+    r"声线|音色|语气|语速|吐字|尾音|(?:拒绝|质问|回答|解释|否认)声"
+)
+SOUND_SUBJECT_ACTION_RE = re.compile(
+    r"边跑边|随(?:着)?(?:奔跑|跑动|行走|走动|转身|摇头|抬手|伸手)|"
+    r"(?:人物|角色|他|她|两人|少女|少年)[^。；\r\n]{0,16}"
+    r"(?:跑向|跑开|转身|摇头|抬手|伸手|迈步|起身|俯身|后仰|前倾|抓住|拿起|放下|推开|拉开)"
+)
+NON_ACTION_TEMPORAL_MOTION_RE = re.compile(
+    r"(?:先|随后|随即|然后|开始|继续|逐渐|猛地|迅速|突然|最后)"
+    r"[^。；\r\n]{0,18}(?:起身|转身|迈步|跑向|跑开|摇头|抬手|伸手|"
+    r"俯身|后仰|前倾|抓住|拿起|放下|推开|拉开|抛出|接住)"
+)
 ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
 ATMOSPHERE_BASIS_RE = re.compile(
     r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
@@ -375,6 +389,33 @@ def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str
     return errors
 
 
+def field_ownership_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Keep dialogue treatment and subject/object motion in their owning fields."""
+    errors: list[str] = []
+    sound = fields.get("声音设计", "")
+    duplicated_dialogue = SOUND_DIALOGUE_DUPLICATION_RE.search(sound)
+    if duplicated_dialogue:
+        errors.append(
+            f"{shot_label}的【声音设计】重复了对白表演：{duplicated_dialogue.group(0)}；"
+            "说话者、音色、语气、语速、重音、距离与声像只写在【台词与语气】，"
+            "此处只保留环境音、拟音、呼吸/身体声与静默。"
+        )
+    leaked_sound_action = SOUND_SUBJECT_ACTION_RE.search(sound)
+    if leaked_sound_action:
+        errors.append(
+            f"{shot_label}的【声音设计】重新断言了主体动作：{leaked_sound_action.group(0)}；"
+            "把人物/物体运动只写在【可见动作】，此处改为音效本身及“与动作落点同步”等中性同步。"
+        )
+    for field_name in ("镜头设计", "可见背景", "台词与语气", "光影布光"):
+        leaked_motion = NON_ACTION_TEMPORAL_MOTION_RE.search(fields.get(field_name, ""))
+        if leaked_motion:
+            errors.append(
+                f"{shot_label}的【{field_name}】混入了时序性主体动作：{leaked_motion.group(0)}；"
+                "人物/物体动作只写在【可见动作】，本栏只保留自身职责。"
+            )
+    return errors
+
+
 def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[str]:
     """Reject counted gaze targets that the independently generated shot never establishes."""
     action = fields.get("可见动作", "")
@@ -544,10 +585,10 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
             warnings.append(
                 f"{target}声明了摄影机运动但没有镜头落幅；请写明运动跟随什么，并在何处稳定。"
             )
-        if repeated_utterance and not AUDIO_BEAT_DIFFERENTIATION_RE.search(sound):
+        if repeated_utterance and not AUDIO_BEAT_DIFFERENTIATION_RE.search(dialogue):
             warnings.append(
-                f"{target}含重复话语但声音设计没有区分前后节拍；"
-                "请用呼吸、压力、停顿、回响或收干变化区分重复表达。"
+                f"{target}含重复话语但【台词与语气】没有区分前后节拍；"
+                "请在台词栏用压力、停顿、重音或收尾变化区分重复表达。"
             )
         generic_match = GENERIC_GESTURE_RE.search(block)
         if generic_match and not CONTEXTUAL_GESTURE_RE.search(block):
@@ -1424,6 +1465,7 @@ def main() -> int:
             dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
             fields = shot_field_values(block)
             errors.extend(semantic_trigger_errors(fields, shot_label))
+            errors.extend(field_ownership_errors(fields, shot_label))
             errors.extend(counted_gaze_target_errors(fields, shot_label))
             missing_fields = [name for name in SHOT_FIELD_NAMES if not fields.get(name)]
             if missing_fields:

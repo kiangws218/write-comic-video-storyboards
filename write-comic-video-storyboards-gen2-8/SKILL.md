@@ -32,6 +32,7 @@ Work on one to three contiguous panels. Keep the exact panel open until its shot
 
 - Preserve every bubble's meaning, owner, kind, order and natural Japanese. A named speech trigger quotes exact final Japanese inside `「」`; otherwise use a generic timing node such as `重音处` or `句末`.
 - Restore a cited composition at its declared phase. Polish cannot invent a person, object, hand/contact, route, event, result, hidden motive or stronger unsupported emotion.
+- Close every renderable target against the current shot. A named target of gaze, gesture, touch, movement, camera tracking, light/effect or sound must be visibly established by that shot's source/approved derived view; story continuity and dialogue meaning do not establish it. When only direction is visible, use screen-relative wording such as `看向画面左侧外/镜头下方` and omit the unseen name.
 - Preserve semantic turns first, then group adjacent short turns when one setup can carry them without hiding a cut or burying an important reaction. Similar required coverage is redesigned, not deleted.
 - A panel's cited shot and derived speaker/listener/object/environment/detail coverage stay in one clip. Fifteen seconds is a hard ceiling; only a single-panel coverage unit that still exceeds it after correct splitting may be marked for manual handling.
 - A `P` shot has a self-contained opening, ordered meaning-changing development, local head/face/gaze transition, supported coupling or delayed response, performer endpoint and camera landing when moving.
@@ -42,8 +43,8 @@ Work on one to three contiguous panels. Keep the exact panel open until its shot
 
 - Ordinary shots use `分镜N（X秒）`; eligible combat may use one `战斗段N（X秒·自动分镜）`. Every real cut is numbered.
 - Field order is `【镜头设计】`, `【可见动作】`, `【可见背景】`, `【台词与语气】`, `【光影布光】`, `【声音设计】`.
-- `【镜头设计】` owns angle/axis, scale/focal length, crop/layout, depth/overlap/negative space, focus, camera move and landing. `【可见动作】` owns only time-varying performance and endpoints. `【可见背景】` owns only renderable backing.
-- Preserve environment sound, Foley, breath, silence and dialogue treatment in `【声音设计】`; do not add BGM, score or theme music.
+- `【镜头设计】` owns angle/axis, scale/focal length, crop/layout, depth/overlap/negative space, focus, camera move and landing. `【可见动作】` is the single owner of subject/object motion, performance and endpoints. Other fields must not restate or newly assert that motion. `【可见背景】` owns only renderable backing.
+- `【台词与语气】` alone owns speech, speaker, voice, emotion, pace, pause, stress, distance and dialogue spatial treatment. `【声音设计】` contains only environment sound, Foley, breath/body sound and silence; it may use `句末/重音后` only as a synchronization marker, never restate a voice or dialogue delivery. Do not add BGM, score or theme music.
 - Structural/source/performance blockers stop delivery. Heuristic advisories may remain only with a per-shot image-based disposition.
 
 ```powershell

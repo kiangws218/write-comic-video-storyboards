@@ -10,6 +10,8 @@ Draft one to three contiguous panels at a time with their 720p proxies open. A c
 
 Freeze only decision-changing facts: angle/scale; left-right and near-far placement; overlap; pose/gaze/visible limbs; hand/prop/grip/contact/vector; visible backing; source phase; bubble owner/order. The ledger is an audit index, not replacement prose.
 
+Treat those facts as a current-shot closure. Every named target of gaze, gesture, touch, transfer, movement, camera tracking, light/effect or sound must be established in the current source-locked or approved derived view. A person/object known only from adjacent panels, dialogue or story context is not renderable in this shot. If the image proves only direction, write `看向画面左侧外/镜头下方/画面右侧` rather than naming the unseen target. Apply this to all targets, not gaze alone.
+
 ## Shot authority
 
 - `source_locked`: restores a cited panel's complete composition at its declared opening, middle, contact, result or endpoint.
@@ -35,12 +37,12 @@ If a continuous physical phrase must split, end at a stable state and fully rest
 【镜头设计】：角度与轴线、景别/焦段、裁切与主体布局、深度/遮挡、焦点、主运镜和落幅。
 【可见动作】：明确起态，经语义节点发展头脸、视线、手/道具、重心和延迟运动，落到明确终态。
 【可见背景】：镜头内可见的物理环境、明确图形场或铺满画面的表面及其层次和运动。
-【台词与语气】：角色说：“……”（音色、语气、情绪及必要节奏）；无台词写“无台词”。
+【台词与语气】：角色说：“……”（音色、语气、情绪、语速、停顿、重音、距离及必要声像）；无台词写“无台词”。
 【光影布光】：光源、方向、遮挡、主辅光、局部高光、阴影和材质响应。
-【声音设计】：环境底声、声像/遮挡、动作拟音、呼吸/静默、对白距离和关键同步；不写BGM。
+【声音设计】：环境底声、动作拟音、呼吸/身体声、静默及必要同步；不复述对白表演，不写BGM。
 ```
 
-Keep all six fields separate and ordered. `【镜头设计】` alone contains static composition; `【可见动作】` contains only changing performance. Page margins, gutters, OCR gaps and speech-bubble whitespace are never background. Sound cannot imply an unseen event.
+Keep all six fields separate and ordered. `【镜头设计】` alone contains static composition and camera behavior; `【可见动作】` is the single source of truth for subject/object motion and changing performance. Camera, background, dialogue, light and sound may describe only their own result and cannot restate or newly assert that motion. Page margins, gutters, OCR gaps and speech-bubble whitespace are never background. Sound cannot imply an unseen event or name its unseen source.
 
 When several panels are successive phases of one camera setup, backing, axis and causal action, bind each panel to a separate phase bullet in `【镜头设计】` and use matching action-only bullets in `【可见动作】`. Otherwise create another numbered shot.
 
@@ -50,7 +52,7 @@ State one reusable scene look with supplied or deliberately chosen work/studio/d
 
 Color precedence is: explicit direction/reference; verified colored occurrence of the same item; coherent production choice only for genuinely uncolored non-character elements. Screentone proves value/material/light, not literal gray. Lighting may tint but not rewrite base color.
 
-`【声音设计】` starts with the continuous location bed, then adds useful Foley, breath/body, silence, dialogue treatment and synchronization. Preserve environment audio and sound effects in both mother draft and execution prompt when the target supports audio. BGM, score, melody and theme music are excluded.
+`【台词与语气】` owns all speech treatment, including voice, emotion, pace, pause, stress, distance, direction and occlusion/reverb when relevant. `【声音设计】` starts with the continuous location bed, then adds only useful Foley, breath/body sound, silence and synchronization. It may say `句末/重音后` to place a non-dialogue cue, but must not say `喊声/对白/话音/尾音/语气/语速/音色` or otherwise repeat how a line sounds. Preserve environment audio and sound effects in both mother draft and execution prompt when the target supports audio. BGM, score, melody and theme music are excluded.
 
 ## Source ledger V3
 
