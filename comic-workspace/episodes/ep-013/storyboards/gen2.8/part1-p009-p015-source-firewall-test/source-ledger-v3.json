@@ -10,32 +10,38 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "浅色平面图形背景与黑色韩文拟声字",
+        "description": "浅色平面图形底",
         "evidence": "current_panel"
       },
-      "composition_lock": "图形特写；黑色粗笔画位于中央并斜向覆盖浅色背景",
+      "composition_lock": "",
       "source_facts": {
-        "entities": [
-          "黑色韩文拟声字",
-          "浅色图形背景"
-        ],
-        "actions": [
-          "黑色韩文拟声字位于画面中央"
-        ],
-        "relations": [
-          "黑色字形覆盖浅色图形背景中央"
-        ]
+        "entities": [],
+        "actions": [],
+        "relations": []
       },
       "story_context": [
-        "拟声字承接进食声"
+        "咀嚼声承接下一张可见进食画面"
       ],
       "non_renderable_terms": [
-        "黄色魔物",
-        "人物"
+        "덥석",
+        "쩝쩝",
+        "韩文拟声字",
+        "黑色字形"
       ],
       "source_bubble_count": 0,
       "bubbles": [],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": false,
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "덥석 쩝쩝",
+          "render": false,
+          "audio_meaning": "连续湿润咀嚼与米粒挤压",
+          "audio_target": "片段1/分镜1",
+          "audio_excerpt": "连续的湿润咀嚼和米粒挤压从画面下方传来"
+        }
+      ]
     },
     {
       "image": "第13话_5、6、7、8、9_010.jpg",
@@ -76,7 +82,7 @@
           "source_text": "와, 바나나 같은 마물이야!",
           "status": "mapped",
           "script_text": "わあ、バナナみたいな魔物！",
-          "target": "片段1/分镜2",
+          "target": "片段1/分镜1",
           "seconds": 7.0
         },
         {
@@ -87,7 +93,7 @@
           "source_text": "위험하지 않아?",
           "status": "mapped",
           "script_text": "危なくないの？",
-          "target": "片段1/分镜2",
+          "target": "片段1/分镜1",
           "seconds": 7.0
         },
         {
@@ -98,7 +104,7 @@
           "source_text": "응, 해는 없어.",
           "status": "mapped",
           "script_text": "うん、害はないよ。",
-          "target": "片段1/分镜2",
+          "target": "片段1/分镜1",
           "seconds": 7.0
         }
       ],
@@ -134,11 +140,13 @@
             "t3"
           ],
           "targets": [
-            "片段1/分镜2"
+            "片段1/分镜1"
           ],
           "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_5、6、7、8、9_011.jpg",
@@ -147,15 +155,14 @@
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
-        "description": "低对比灰色表面与韩文咀嚼拟声字",
+        "description": "低对比灰色表面",
         "evidence": "current_panel"
       },
       "composition_lock": "魔物脸部近景；两只黑眼占上半幅、寿司横向遮住嘴部、短肢从左侧托住寿司",
       "source_facts": {
         "entities": [
           "黄色魔物",
-          "寿司",
-          "韩文咀嚼拟声字"
+          "寿司"
         ],
         "actions": [
           "黄色魔物抱住寿司进食"
@@ -176,11 +183,22 @@
           "source_text": "일룰룬!",
           "status": "mapped",
           "script_text": "イルルン！",
-          "target": "片段1/分镜3",
+          "target": "片段1/分镜2",
           "seconds": 3.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "우걱（重复）",
+          "render": false,
+          "audio_meaning": "连续湿润咀嚼",
+          "audio_target": "片段1/分镜2",
+          "audio_excerpt": "湿润咀嚼、米粒挤压和软肢摩擦近距离叠加"
+        }
+      ]
     },
     {
       "image": "第13话_5、6、7、8、9_012.jpg",
@@ -218,11 +236,13 @@
           "source_text": "꺄악!!",
           "status": "mapped",
           "script_text": "ギャアッ！！",
-          "target": "片段1/分镜4",
+          "target": "片段1/分镜3",
           "seconds": 2.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_10、11_001.jpg",
@@ -265,7 +285,9 @@
           "seconds": 3.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_10、11_002.jpg",
@@ -346,7 +368,9 @@
           ],
           "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_10、11_003.jpg",
@@ -400,7 +424,9 @@
           "seconds": 5.0
         }
       ],
-      "coverage": "shared"
+      "coverage": "shared",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_10、11_004.jpg",
@@ -441,7 +467,9 @@
           "seconds": 2.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_10、11_005.jpg",
@@ -529,7 +557,9 @@
             "片段3/分镜2"
           ]
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_001.jpg",
@@ -685,7 +715,9 @@
           ],
           "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_002.jpg",
@@ -725,7 +757,9 @@
           "seconds": 4.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_003.jpg",
@@ -769,7 +803,9 @@
           "seconds": 4.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_004.jpg",
@@ -812,7 +848,9 @@
           "seconds": 2.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_005.jpg",
@@ -824,17 +862,14 @@
         "description": "蓝天白云与从左右下缘围合的森林树冠",
         "evidence": "current_panel"
       },
-      "composition_lock": "仰拍天空空镜；树冠从左右下缘围住中央蓝天、两组乌鸦拟声字位于上方",
+      "composition_lock": "仰拍天空空镜；树冠从左右下缘围住中央蓝天",
       "source_facts": {
         "entities": [
           "蓝天",
           "白云",
-          "森林树冠",
-          "乌鸦拟声字"
+          "森林树冠"
         ],
-        "actions": [
-          "乌鸦拟声字位于天空上方"
-        ],
+        "actions": [],
         "relations": [
           "树冠围住中央天空"
         ]
@@ -846,7 +881,18 @@
       ],
       "source_bubble_count": 0,
       "bubbles": [],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "CAW… / 까악…（两处）",
+          "render": false,
+          "audio_meaning": "两声远近错开的乌鸦叫",
+          "audio_target": "片段5/分镜4",
+          "audio_excerpt": "两声乌鸦叫一近一远"
+        }
+      ]
     },
     {
       "image": "第13话_12、13、14、15_006.jpg",
@@ -881,7 +927,9 @@
       ],
       "source_bubble_count": 0,
       "bubbles": [],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_007.jpg",
@@ -924,7 +972,9 @@
           "seconds": 3.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_008.jpg",
@@ -967,7 +1017,9 @@
           "seconds": 4.0
         }
       ],
-      "coverage": "none"
+      "coverage": "none",
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_009.jpg",
@@ -1084,7 +1136,9 @@
             "片段7/分镜3"
           ]
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_010.jpg",
@@ -1169,7 +1223,9 @@
             "片段8/分镜2"
           ]
         }
-      ]
+      ],
+      "renderable_visual": true,
+      "page_overlays": []
     },
     {
       "image": "第13话_12、13、14、15_011.jpg",
@@ -1222,40 +1278,14 @@
           "seconds": 6.0
         }
       ],
-      "coverage": "mixed"
+      "coverage": "mixed",
+      "renderable_visual": true,
+      "page_overlays": []
     }
   ],
   "shots": [
     {
       "target": "片段1/分镜1",
-      "role": "source_locked",
-      "source_images": [
-        "第13话_5、6、7、8、9_009.jpg"
-      ],
-      "purpose": "锁定当前原格的构图、可见主体与表演边界",
-      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
-      "background_excerpt": "浅色平面图形背景铺满黑色笔画外围。",
-      "source_audit": "pass",
-      "unsupported_additions": [],
-      "risk_flags": [],
-      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
-      "fact_claims": {
-        "entities": [
-          "黑色韩文拟声字",
-          "浅色图形背景"
-        ],
-        "actions": [
-          "黑色韩文拟声字位于画面中央"
-        ],
-        "relations": [
-          "黑色字形覆盖浅色图形背景中央"
-        ]
-      },
-      "action_admissions": [],
-      "viewed_while_writing": true
-    },
-    {
-      "target": "片段1/分镜2",
       "role": "source_locked",
       "source_images": [
         "第13话_5、6、7、8、9_010.jpg"
@@ -1289,14 +1319,14 @@
       "viewed_while_writing": true
     },
     {
-      "target": "片段1/分镜3",
+      "target": "片段1/分镜2",
       "role": "source_locked",
       "source_images": [
         "第13话_5、6、7、8、9_011.jpg"
       ],
       "purpose": "锁定当前原格的构图、可见主体与表演边界",
       "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
-      "background_excerpt": "低对比灰色表面填满黄色轮廓外围，周围排布多个深色韩文咀嚼拟声字。",
+      "background_excerpt": "低对比灰色表面填满黄色轮廓外围。",
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [],
@@ -1304,8 +1334,7 @@
       "fact_claims": {
         "entities": [
           "黄色魔物",
-          "寿司",
-          "韩文咀嚼拟声字"
+          "寿司"
         ],
         "actions": [
           "黄色魔物抱住寿司进食"
@@ -1318,7 +1347,7 @@
       "viewed_while_writing": true
     },
     {
-      "target": "片段1/分镜4",
+      "target": "片段1/分镜3",
       "role": "source_locked",
       "source_images": [
         "第13话_5、6、7、8、9_012.jpg"
@@ -1519,10 +1548,18 @@
       ],
       "coverage_changes": [
         "scale",
-        "subject_focus"
+        "subject_focus",
+        "visible_information"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜从整只魔物与按压手改为腹部、舌尖和后肢细节。",
+      "next_source_image": "第13话_12、13、14、15_001.jpg",
+      "next_source_changes": [
+        "subject_focus",
+        "scale",
+        "composition_overlap"
+      ],
+      "next_source_evidence": "本镜是无脸物件极近景；下一原格是春子胸像并由青的白发遮挡右前景。"
     },
     {
       "target": "片段4/分镜1",
@@ -1564,7 +1601,7 @@
       "source_images": [],
       "purpose": "在同一原格内提供差异化对白覆盖",
       "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
-      "background_excerpt": "亮蓝天空与深浅树冠从两人头肩之间露出，其余画面由棕发、白发和深色衣料构成表面层次。",
+      "background_excerpt": "亮蓝天空和深绿树冠化为手与黄色身体外围的低对比色面。",
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [],
@@ -1584,11 +1621,19 @@
         "第13话_12、13、14、15_001.jpg"
       ],
       "coverage_changes": [
-        "scale",
-        "subject_focus"
+        "subject_focus",
+        "viewpoint_axis",
+        "visible_information"
       ],
-      "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_type": "object_insert",
+      "coverage_evidence": "相对前镜的春子胸像改为高位俯拍手与魔物，人物脸部全部退出画面。",
+      "next_source_image": "第13话_12、13、14、15_002.jpg",
+      "next_source_changes": [
+        "subject_focus",
+        "viewpoint_axis",
+        "visible_information"
+      ],
+      "next_source_evidence": "本镜只见手与魔物的俯拍接触；下一原格是青的正面脸部特写。"
     },
     {
       "target": "片段4/分镜3",
@@ -1596,7 +1641,7 @@
       "source_images": [],
       "purpose": "在同一原格内提供差异化对白覆盖",
       "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
-      "background_excerpt": "白云与蓝天填满两人发缘之间，下缘露出深绿树冠。",
+      "background_excerpt": "浅蓝天空形成黄色尖端外围的干净色面，右下仅露一小块深绿树冠。",
       "source_audit": "pass",
       "unsupported_additions": [],
       "risk_flags": [],
@@ -1617,10 +1662,19 @@
       ],
       "coverage_changes": [
         "scale",
-        "subject_focus"
+        "viewpoint_axis",
+        "dramatic_function",
+        "visible_information"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜的俯拍手与身体改为侧向头顶尖端极近景，信息收束到魔物反应。",
+      "next_source_image": "第13话_12、13、14、15_002.jpg",
+      "next_source_changes": [
+        "subject_focus",
+        "composition_overlap",
+        "visible_information"
+      ],
+      "next_source_evidence": "本镜以魔物尖端和左缘指尖为主体；下一原格以青正面双眼和嘴为主体。"
     },
     {
       "target": "片段5/分镜1",
@@ -1727,12 +1781,9 @@
         "entities": [
           "蓝天",
           "白云",
-          "森林树冠",
-          "乌鸦拟声字"
+          "森林树冠"
         ],
-        "actions": [
-          "乌鸦拟声字位于天空上方"
-        ],
+        "actions": [],
         "relations": [
           "树冠围住中央天空"
         ]
@@ -1888,11 +1939,19 @@
         "第13话_12、13、14、15_009.jpg"
       ],
       "coverage_changes": [
+        "subject_focus",
         "scale",
-        "subject_focus"
+        "visible_information"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜的双人中景改为春子脸部、双臂和挤水手部中近景。",
+      "next_source_image": "第13话_12、13、14、15_010.jpg",
+      "next_source_changes": [
+        "scale",
+        "composition_overlap",
+        "visible_information"
+      ],
+      "next_source_evidence": "本镜保留手和魔物及左侧青；下一原格仅以春子侧脸为主体。"
     },
     {
       "target": "片段7/分镜3",
@@ -1920,11 +1979,19 @@
         "第13话_12、13、14、15_009.jpg"
       ],
       "coverage_changes": [
-        "scale",
-        "subject_focus"
+        "subject_focus",
+        "viewpoint_axis",
+        "dramatic_function"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜的春子手部回答改为青的关系反应，焦点与对白落点均转移。",
+      "next_source_image": "第13话_12、13、14、15_010.jpg",
+      "next_source_changes": [
+        "subject_focus",
+        "composition_overlap",
+        "visible_information"
+      ],
+      "next_source_evidence": "本镜以青为对话主体并保留双人关系；下一原格是春子单人侧脸特写。"
     },
     {
       "target": "片段8/分镜1",
@@ -1979,10 +2046,18 @@
       ],
       "coverage_changes": [
         "scale",
-        "subject_focus"
+        "visible_information",
+        "dramatic_function"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜的完整春子侧脸改为眼睛与嘴角极近景，用于承接画外回应。",
+      "next_source_image": "第13话_12、13、14、15_011.jpg",
+      "next_source_changes": [
+        "subject_focus",
+        "composition_overlap",
+        "visible_information"
+      ],
+      "next_source_evidence": "本镜仍是春子局部侧脸；下一原格以青正面和春子背影构成双人关系。"
     },
     {
       "target": "片段9/分镜1",
@@ -2040,15 +2115,16 @@
       ],
       "coverage_changes": [
         "scale",
-        "subject_focus"
+        "subject_focus",
+        "visible_information"
       ],
       "coverage_type": "detail_insert",
-      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+      "coverage_evidence": "相对前镜的双人头肩关系改为青的眼睛与手部细节，春子只留焦外遮挡。"
     }
   ],
   "performance": [
     {
-      "target": "片段1/分镜2",
+      "target": "片段1/分镜1",
       "evidence": "表演细节均来自当前原格可见人物、姿态与接触关系。",
       "card": {
         "opening": "沿用当前原格起始姿态与视线",
