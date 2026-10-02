@@ -22,10 +22,10 @@ Run validators without loading their implementation unless changing them.
 
 Work on one to three contiguous panels. Keep the exact panel open until its shot text is compared back to it. Use cached 720p proxies by default; open 1080p/original only when a decision-changing detail remains unresolved and record why.
 
-1. Freeze source facts: composition/backing, subjects/props, overlap, pose, head/face/gaze, hand/contact, action phase and bubbles.
+1. Freeze `composition_lock` and atomic `source_facts` (`entities/actions/relations`) from the open image. Put plot meaning, identities inferred only from continuity and dialogue intent in `story_context`; list their tempting but invisible render words in `non_renderable_terms`. Context is never render evidence.
 2. While the panel is open, assign `D` dialogue/coverage, `P` expressive performance and `G` fragile geometry only where needed.
 3. Resolve ordered dialogue turns and coverage groups before camera count. Build one compact image-grounded card for each `P` shot. Escalate a `G` detail beyond 720p only when necessary.
-4. Immediately write the six-field shot, then compare every noun, relation, beat and endpoint with the still-open panel.
+4. Before adding a substantive action, pass all three gates: visible image evidence, visibility in the declared crop, and anchor safety. Dialogue/story meaning alone fails the evidence gate. Immediately write the six-field shot, record exact `fact_claims` and major-action admissions, then compare every noun, relation, beat and endpoint with the still-open panel.
 5. Validate the small batch and fix blockers before advancing. Never reconstruct source evidence from completed prose.
 
 ## Non-negotiable outcomes
@@ -33,6 +33,7 @@ Work on one to three contiguous panels. Keep the exact panel open until its shot
 - Preserve every bubble's meaning, owner, kind, order and natural Japanese. A named speech trigger quotes exact final Japanese inside `「」`; otherwise use a generic timing node such as `重音处` or `句末`.
 - Restore a cited composition at its declared phase. Polish cannot invent a person, object, hand/contact, route, event, result, hidden motive or stronger unsupported emotion.
 - Close every renderable target against the current shot. A named target of gaze, gesture, touch, movement, camera tracking, light/effect or sound must be visibly established by that shot's source/approved derived view; story continuity and dialogue meaning do not establish it. When only direction is visible, use screen-relative wording such as `看向画面左侧外/镜头下方` and omit the unseen name.
+- A dialogue verb or intention never proves matching visible motion: `快跑/攻击/给我` does not authorize running, attacking or handing over. Admit a substantive action only when the image supplies its pose/vector/contact or an adjacent panel supplies a continuous visible phase, the declared crop can show it, and it preserves source anchors.
 - Preserve semantic turns first, then group adjacent short turns when one setup can carry them without hiding a cut or burying an important reaction. Similar required coverage is redesigned, not deleted.
 - A panel's cited shot and derived speaker/listener/object/environment/detail coverage stay in one clip. Fifteen seconds is a hard ceiling; only a single-panel coverage unit that still exceeds it after correct splitting may be marked for manual handling.
 - A `P` shot has a self-contained opening, ordered meaning-changing development, local head/face/gaze transition, supported coupling or delayed response, performer endpoint and camera landing when moving.

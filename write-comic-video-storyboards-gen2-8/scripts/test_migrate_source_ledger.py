@@ -18,6 +18,11 @@ class LedgerMigrationTests(unittest.TestCase):
             "source_language": "zh",
             "panels": [{
                 "image": "panel.jpg",
+                "locks": {
+                    "composition": "平视双人中景，甲乙分居画面左右",
+                    "visible_subjects": ["甲", "乙"],
+                    "relations": ["甲乙面对"],
+                },
                 "bubbles": [
                     {"id": "b1", "speaker": "甲", "kind": "dialogue", "status": "mapped", "target": "片段1/分镜1"},
                     {"id": "b2", "speaker": "乙", "kind": "dialogue", "status": "mapped", "target": "片段1/分镜2"},
@@ -48,6 +53,8 @@ class LedgerMigrationTests(unittest.TestCase):
             self.assertEqual([t["bubble_ids"] for t in migrated["panels"][0]["dialogue_turns"]], [["b1"], ["b2"]])
             self.assertTrue(migrated["migration_review_required"])
             self.assertEqual(migrated["shots"][0]["coverage_type"], "MIGRATION_REVIEW")
+            self.assertEqual(migrated["panels"][0]["source_facts"]["entities"], ["甲", "乙"])
+            self.assertEqual(migrated["shots"][0]["fact_claims"]["actions"], [])
 
 
 if __name__ == "__main__":

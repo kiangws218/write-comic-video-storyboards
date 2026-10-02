@@ -77,6 +77,7 @@ AUDIO_HIDDEN_VISUAL_RE = re.compile(
     r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
     r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
 )
+DIALOGUE_ONLY_EVIDENCE_RE = re.compile(r"台词|对白|气泡|剧情|语义|意图|翻译|剧本")
 SOUND_DIALOGUE_DUPLICATION_RE = re.compile(
     r"对白|台词|话音|喊声|问话声|回答声|说话声|嗓音|"
     r"声线|音色|语气|语速|吐字|尾音|(?:拒绝|质问|回答|解释|否认)声"
@@ -681,6 +682,7 @@ def validate_source_ledger(
     speakers_by_target: dict[str, set[str]] = {}
     acting_chars_by_target: dict[str, int] = {}
     seen_images: set[str] = set()
+    panel_by_image: dict[str, dict[str, object]] = {}
     available_images = (
         {path.name.casefold() for path in image_dir.iterdir() if path.is_file()}
         if image_dir
@@ -701,6 +703,7 @@ def validate_source_ledger(
             if key in seen_images:
                 errors.append(f"对白台账重复登记图片：{image}")
             seen_images.add(key)
+            panel_by_image[key] = panel
             if available_images is not None and key not in available_images:
                 errors.append(f"对白台账图片不存在：{image}")
 
@@ -728,25 +731,35 @@ def validate_source_ledger(
                 errors.append(f"{image}的background.description把页面/气泡空白误作背景。")
             if background.get("evidence") != "current_panel":
                 errors.append(f"{image}的背景必须以current_panel为证据。")
-        locks = panel.get("locks")
-        if not isinstance(locks, dict):
-            errors.append(f"{image}缺少phase-specific locks。")
+        composition = panel.get("composition_lock")
+        if not isinstance(composition, str) or not composition.strip():
+            errors.append(f"{image}缺少简洁composition_lock。")
+        elif GENERIC_LOCK_RE.search(composition) or sum(
+            bool(pattern.search(composition)) for pattern in COMPOSITION_SIGNAL_GROUPS
+        ) < 2:
+            errors.append(
+                f"{image}的composition_lock过于泛化；必须具体写景别/裁切、位置及深度/遮挡中的至少两类。"
+            )
+        source_facts = panel.get("source_facts")
+        if not isinstance(source_facts, dict):
+            errors.append(f"{image}缺少source_facts，不能把剧情理解当画面事实。")
         else:
-            composition = locks.get("composition")
-            if not isinstance(composition, str) or not composition.strip():
-                errors.append(f"{image}缺少简洁构图锁定。")
-            elif GENERIC_LOCK_RE.search(composition) or sum(
-                bool(pattern.search(composition)) for pattern in COMPOSITION_SIGNAL_GROUPS
-            ) < 2:
-                errors.append(
-                    f"{image}的构图锁定过于泛化；必须具体写景别/裁切、位置及深度/遮挡中的至少两类。"
-                )
-            for field in ("visible_subjects", "relations", "forbidden_inferences"):
-                value = locks.get(field)
-                if not isinstance(value, list) or any(not isinstance(item, str) or not item.strip() for item in value):
-                    errors.append(f"{image}的locks.{field}必须是字符串数组。")
-                elif field != "forbidden_inferences" and any(GENERIC_LOCK_RE.search(item) for item in value):
-                    errors.append(f"{image}的locks.{field}含泛化占位语，必须改为当前图的具体事实。")
+            for field in ("entities", "actions", "relations"):
+                value = source_facts.get(field)
+                if not isinstance(value, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in value
+                ):
+                    errors.append(f"{image}的source_facts.{field}必须是原子字符串数组。")
+                elif len(value) != len(set(value)):
+                    errors.append(f"{image}的source_facts.{field}含重复事实。")
+                elif any(GENERIC_LOCK_RE.search(item) for item in value):
+                    errors.append(f"{image}的source_facts.{field}含泛化占位语。")
+        for field in ("story_context", "non_renderable_terms"):
+            value = panel.get(field)
+            if not isinstance(value, list) or any(
+                not isinstance(item, str) or not item.strip() for item in value
+            ):
+                errors.append(f"{image}的{field}必须是字符串数组，没有则写空数组。")
 
         coverage = panel.get("coverage")
         if coverage not in allowed_coverage:
@@ -1071,7 +1084,9 @@ def validate_source_ledger(
         ):
             errors.append(f"{target}的source_images必须是字符串数组。")
             source_images = []
+        owner_images: list[str] = []
         if role in {"source_locked", "source_supported_phase"}:
+            owner_images = source_images
             if shot.get("viewed_while_writing") is not True:
                 errors.append(f"{target}未确认在原图打开时写作。")
             if not source_images:
@@ -1119,6 +1134,7 @@ def validate_source_ledger(
             ):
                 errors.append(f"{target}是uncited_coverage，必须用derived_from登记所属原格。")
                 derived_from = []
+            owner_images = derived_from
             coverage_changes = shot.get("coverage_changes")
             if not isinstance(coverage_changes, list) or any(
                 item not in allowed_coverage_changes for item in coverage_changes
@@ -1142,6 +1158,95 @@ def validate_source_ledger(
                 if image_key not in panel_images:
                     errors.append(f"{target}的derived_from未登记面板：{source_image}")
                 coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
+
+        owner_panels = [
+            panel_by_image[Path(item).name.casefold()]
+            for item in owner_images
+            if Path(item).name.casefold() in panel_by_image
+        ]
+        allowed_facts: dict[str, set[str]] = {name: set() for name in ("entities", "actions", "relations")}
+        forbidden_terms: set[str] = set()
+        for owner_panel in owner_panels:
+            facts = owner_panel.get("source_facts")
+            if isinstance(facts, dict):
+                for fact_type in allowed_facts:
+                    values = facts.get(fact_type)
+                    if isinstance(values, list):
+                        allowed_facts[fact_type].update(
+                            item for item in values if isinstance(item, str) and item.strip()
+                        )
+            terms = owner_panel.get("non_renderable_terms")
+            if isinstance(terms, list):
+                forbidden_terms.update(
+                    item for item in terms if isinstance(item, str) and item.strip()
+                )
+
+        fact_claims = shot.get("fact_claims")
+        if not isinstance(fact_claims, dict):
+            errors.append(f"{target}缺少fact_claims，无法对账成稿中的人物、动作和关系。")
+        else:
+            for fact_type in allowed_facts:
+                claims = fact_claims.get(fact_type)
+                if not isinstance(claims, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in claims
+                ):
+                    errors.append(f"{target}的fact_claims.{fact_type}必须是字符串数组。")
+                    continue
+                unsupported = sorted(set(claims) - allowed_facts[fact_type])
+                if unsupported:
+                    errors.append(
+                        f"{target}的fact_claims.{fact_type}不在源图允许表中：{unsupported}；"
+                        "剧情理解不能升格为可生成画面事实。"
+                    )
+
+        fields = shot_field_values(shot_map[target][1])
+        renderable_text = "\n".join(
+            fields.get(name, "") for name in ("镜头设计", "可见动作", "可见背景", "光影布光", "声音设计")
+        )
+        leaked_terms = sorted(term for term in forbidden_terms if term in renderable_text)
+        if leaked_terms:
+            errors.append(
+                f"{target}把仅属story_context的内容泄漏进可生成字段：{leaked_terms}。"
+            )
+
+        action_text = fields.get("可见动作", "")
+        major_actions = set(MAJOR_ACTION_RE.findall(action_text))
+        admissions = shot.get("action_admissions")
+        if not isinstance(admissions, list):
+            errors.append(f"{target}的action_admissions必须是数组，无主要动作时写空数组。")
+            admissions = []
+        admitted_actions: set[str] = set()
+        for admission in admissions:
+            if not isinstance(admission, dict):
+                errors.append(f"{target}的action_admissions条目必须是对象。")
+                continue
+            claim = admission.get("claim")
+            source_image = admission.get("source_image")
+            visual_evidence = admission.get("visual_evidence")
+            if not isinstance(claim, str) or not claim.strip():
+                errors.append(f"{target}的action_admission缺少claim。")
+                continue
+            admitted_actions.add(claim)
+            if not isinstance(source_image, str) or Path(source_image).name.casefold() not in {
+                Path(item).name.casefold() for item in owner_images
+            }:
+                errors.append(f"{target}的动作“{claim}”没有绑定所属源图。")
+            if not isinstance(visual_evidence, str) or sum(ch.isalnum() for ch in visual_evidence) < 4:
+                errors.append(f"{target}的动作“{claim}”缺少具体visual_evidence。")
+            elif DIALOGUE_ONLY_EVIDENCE_RE.search(visual_evidence):
+                errors.append(
+                    f"{target}的动作“{claim}”仅用台词/剧情作证；"
+                    "台词意思不能证明画面正在发生该动作。"
+                )
+            if admission.get("visible_in_framing") is not True:
+                errors.append(f"{target}的动作“{claim}”未证明当前景别能看见。")
+            if admission.get("anchor_safe") is not True:
+                errors.append(f"{target}的动作“{claim}”未证明不破坏原格锚点。")
+        for action in sorted(major_actions):
+            if not any(action in claim or claim in action for claim in admitted_actions):
+                errors.append(
+                    f"{target}的主要动作“{action}”未通过图像证据/景别可见/锚点安全三问准入。"
+                )
 
     for image_key, segments in coverage_segments_by_panel.items():
         if len(segments) > 1:

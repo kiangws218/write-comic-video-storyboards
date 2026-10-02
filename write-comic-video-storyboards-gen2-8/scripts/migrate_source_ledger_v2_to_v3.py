@@ -71,6 +71,16 @@ def migrate(data: dict[str, object]) -> dict[str, object]:
     for panel in result.get("panels", []):
         if not isinstance(panel, dict):
             continue
+        locks = panel.pop("locks", {})
+        panel["composition_lock"] = locks.get("composition", "MIGRATION_REVIEW") if isinstance(locks, dict) else "MIGRATION_REVIEW"
+        panel["source_facts"] = {
+            "entities": locks.get("visible_subjects", []) if isinstance(locks, dict) else [],
+            "actions": [],
+            "relations": locks.get("relations", []) if isinstance(locks, dict) else [],
+        }
+        panel["story_context"] = []
+        panel["non_renderable_terms"] = []
+        review.append(f"{panel.get('image')}:重新看图拆分source_facts/story_context/non_renderable_terms")
         bubbles = panel.get("bubbles")
         speakers = {
             bubble.get("speaker")
@@ -88,7 +98,12 @@ def migrate(data: dict[str, object]) -> dict[str, object]:
             review.append(f"{panel.get('image')}:复核语义轮次、覆盖分组与合镜依据")
 
     for shot in result.get("shots", []):
-        if not isinstance(shot, dict) or shot.get("role") != "uncited_coverage":
+        if not isinstance(shot, dict):
+            continue
+        shot["fact_claims"] = {"entities": [], "actions": [], "relations": []}
+        shot["action_admissions"] = []
+        review.append(f"{shot.get('target')}:复核fact_claims与主要动作三问准入")
+        if shot.get("role") != "uncited_coverage":
             continue
         shot.setdefault("derived_from", [])
         shot.setdefault("coverage_type", "MIGRATION_REVIEW")

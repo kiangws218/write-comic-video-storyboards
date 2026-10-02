@@ -24,9 +24,10 @@ Token proxy uses the repository's CJK/ASCII comparison method and is not an API 
 
 ## Deterministic checks
 
-- 64 validator tests pass.
+- 68 validator tests pass.
 - Chinese semantic trigger paraphrases such as `“闭嘴”出口时` and `提出抢攻时` fail.
 - Dialogue delivery duplicated into `【声音设计】`, subject motion asserted outside `【可见动作】`, and hidden visual action written as sound now fail.
+- `source_facts` and `story_context` are separated; context-only render terms, unsupported `fact_claims`, dialogue-only motion evidence, and major actions without the three-gate admission now fail.
 - Explicit `P` risk without a compact card fails.
 - A valid `P` card requires opening, at least two beats, coupling, and landing.
 - `P` prose must contain ordering, supported face transition when readable, coupled/delayed response, endpoint, and camera landing when moving.

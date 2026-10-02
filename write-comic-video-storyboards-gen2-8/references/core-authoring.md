@@ -8,9 +8,11 @@ Evidence precedence is: current open panel; explicit supplied character/environm
 
 Draft one to three contiguous panels at a time with their 720p proxies open. A contact sheet is insufficient for exact composition. Escalate only unresolved small text, identity, hand/contact, overlap, topology, perspective or fast motion to original resolution, and record the reason.
 
-Freeze only decision-changing facts: angle/scale; left-right and near-far placement; overlap; pose/gaze/visible limbs; hand/prop/grip/contact/vector; visible backing; source phase; bubble owner/order. The ledger is an audit index, not replacement prose.
+Freeze only decision-changing image facts before interpreting the scene. `composition_lock` records angle/scale, crop/layout, depth and overlap. `source_facts.entities/actions/relations` are short atomic allowlists copied from visible evidence. `story_context` records plot meaning, continuity-only identity and dialogue intent for reasoning only; `non_renderable_terms` names context words that would create unsupported people, objects or actions if they leaked into generatable fields. Never move an item from context into source facts without reopening image evidence.
 
 Treat those facts as a current-shot closure. Every named target of gaze, gesture, touch, transfer, movement, camera tracking, light/effect or sound must be established in the current source-locked or approved derived view. A person/object known only from adjacent panels, dialogue or story context is not renderable in this shot. If the image proves only direction, write `看向画面左侧外/镜头下方/画面右侧` rather than naming the unseen target. Apply this to all targets, not gaze alone.
+
+Dialogue and plot intention are lookup hints, never motion evidence. A line meaning `快跑/抢攻/把它给我` cannot by itself authorize running, attacking or handing over. Before writing any substantive displacement, body reorientation, contact change or prop operation, record a compact action admission proving all three: `visual_evidence` from the current image or a continuous adjacent visual phase, `visible_in_framing: true`, and `anchor_safe: true`. If any gate fails, keep only the supported pose, expression or screen-relative direction.
 
 ## Shot authority
 
@@ -59,9 +61,9 @@ Color precedence is: explicit direction/reference; verified colored occurrence o
 Use `version: 3`. Create evidence before prose. The minimum is:
 
 - root: `source_language`, `panels`, `shots`, optional `performance`;
-- panel: image/viewing/resolution audit, background, concrete locks, bubbles and coverage;
+- panel: image/viewing/resolution audit, background, `composition_lock`, atomic `source_facts`, separate `story_context`, `non_renderable_terms`, bubbles and coverage;
 - dialogue-risk panel: ordered semantic `dialogue_turns` plus ordered `coverage_groups`;
-- shot: target, role, purpose/evidence, background excerpt, source audit, D/P/G flags and basis;
+- shot: target, role, purpose/evidence, background excerpt, D/P/G flags and basis, exact `fact_claims`, and one three-gate `action_admission` for each major action;
 - uncited shot: empty `source_images`, nonempty `derived_from`, `coverage_type`, at least two evidenced coverage changes;
 - `P` shot: one compact card plus exact rendered excerpts and interval estimate.
 
@@ -70,3 +72,5 @@ Use `version: 3`. Create evidence before prose. The minimum is:
 `manual_overflow` is allowed only on one panel and names the target segment, natural estimated duration, reason and `manual_handling_required: true`. Validation must reject every other over-15-second clip.
 
 Mechanical validation proves consistency, not visual truth. Final audit checks source order/result, composition, background, dialogue ownership/order, timing, clip cold start, supported coverage, performance, light/effects/sound and unchanged endpoint.
+
+`fact_claims.entities/actions/relations` must copy atomic entries from the owning panels' `source_facts`; prose cannot use `non_renderable_terms`. Major action verbs in `【可见动作】` must have a matching admission whose evidence is visual rather than dialogue/story-derived. This turns `source_audit: pass` from self-approval into a program-checkable source-to-prose ledger.

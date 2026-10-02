@@ -50,12 +50,14 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
                     "description": BACKGROUND,
                     "evidence": "current_panel",
                 },
-                "locks": {
-                    "composition": "平视手部特写，手腕从画面下缘裁切，掌心占中央前景",
-                    "visible_subjects": ["一只手"],
+                "composition_lock": "平视手部特写，手腕从画面下缘裁切，掌心占中央前景",
+                "source_facts": {
+                    "entities": ["一只手"],
+                    "actions": [],
                     "relations": ["手位于画面下方"],
-                    "forbidden_inferences": ["第二只手"],
                 },
+                "story_context": ["店员正在向画外客人说话"],
+                "non_renderable_terms": ["客人"],
                 "coverage": "shared",
                 "coverage_reason": "单句台词与手部动作同步",
                 "bubbles": [
@@ -83,6 +85,12 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
                 "viewed_while_writing": True,
                 "source_audit": "pass",
                 "unsupported_additions": [],
+                "fact_claims": {
+                    "entities": ["一只手"],
+                    "actions": [],
+                    "relations": ["手位于画面下方"],
+                },
+                "action_admissions": [],
                 "risk_flags": [],
                 "risk_basis": "单气泡短句；手部关系清楚，无脆弱几何",
             }
@@ -183,6 +191,55 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(storyboard(), ledger, True)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("未确认在原图打开时写作", result.stdout)
+
+    def test_story_context_term_cannot_leak_into_renderable_fields(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物手指先放松再轻微收紧，随后看向客人。",
+        )
+        result = self.run_validator(text, valid_ledger(), True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("仅属story_context的内容泄漏", result.stdout)
+
+    def test_fact_claim_outside_source_allowlist_fails(self) -> None:
+        ledger = valid_ledger()
+        ledger["shots"][0]["fact_claims"]["entities"].append("矮人")
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("不在源图允许表中", result.stdout)
+
+    def test_dialogue_meaning_cannot_admit_major_action(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物先转身，随后停住。",
+        )
+        ledger = valid_ledger()
+        ledger["panels"][0]["source_facts"]["actions"] = ["人物:转身"]
+        ledger["shots"][0]["fact_claims"]["actions"] = ["人物:转身"]
+        ledger["shots"][0]["action_admissions"] = [{
+            "claim": "转身", "source_image": "panel.jpg",
+            "visual_evidence": "台词说现在快跑",
+            "visible_in_framing": True, "anchor_safe": True,
+        }]
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("仅用台词/剧情作证", result.stdout)
+
+    def test_visual_three_gate_action_admission_passes(self) -> None:
+        text = storyboard().replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "人物先转身，随后停住。",
+        )
+        ledger = valid_ledger()
+        ledger["panels"][0]["source_facts"]["actions"] = ["人物:转身"]
+        ledger["shots"][0]["fact_claims"]["actions"] = ["人物:转身"]
+        ledger["shots"][0]["action_admissions"] = [{
+            "claim": "转身", "source_image": "panel.jpg",
+            "visual_evidence": "当前格肩线与头部朝向发生连续变化",
+            "visible_in_framing": True, "anchor_safe": True,
+        }]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
     def test_background_excerpt_must_appear_in_shot(self) -> None:
         ledger = deepcopy(valid_ledger())
@@ -339,6 +396,8 @@ class ValidatorTests(unittest.TestCase):
                 "background_excerpt": BACKGROUND,
                 "source_audit": "pass",
                 "unsupported_additions": [],
+                "fact_claims": {"entities": ["一只手"], "actions": [], "relations": ["手位于画面下方"]},
+                "action_admissions": [],
                 "risk_flags": ["D"],
                 "risk_basis": "多轮对白；构图关系清楚，无脆弱几何",
             })
@@ -382,6 +441,8 @@ class ValidatorTests(unittest.TestCase):
             "coverage_evidence": "当前面板明确显示甲乙双方与相互视线，可在双人关系内转移焦点",
             "evidence": "current_panel", "purpose": "短促质问与立即否认",
             "background_excerpt": BACKGROUND, "source_audit": "pass", "unsupported_additions": [],
+            "fact_claims": {"entities": ["一只手"], "actions": [], "relations": ["手位于画面下方"]},
+            "action_admissions": [],
             "risk_flags": ["D"], "risk_basis": "三轮对白分为两个覆盖组，后两句短促且共享双人关系",
         })
         ledger["shots"][0]["risk_flags"] = ["D"]
@@ -859,6 +920,8 @@ class ValidatorTests(unittest.TestCase):
             "background_excerpt": BACKGROUND,
             "source_audit": "pass",
             "unsupported_additions": [],
+            "fact_claims": {"entities": ["一只手"], "actions": [], "relations": ["手位于画面下方"]},
+            "action_admissions": [],
             "risk_flags": [],
             "risk_basis": "无对白；手部关系明确，无脆弱几何",
         })
@@ -896,6 +959,8 @@ class ValidatorTests(unittest.TestCase):
             "background_excerpt": BACKGROUND,
             "source_audit": "pass",
             "unsupported_additions": [],
+            "fact_claims": {"entities": ["一只手"], "actions": [], "relations": ["手位于画面下方"]},
+            "action_admissions": [],
             "risk_flags": [],
             "risk_basis": "无对白；手部关系明确，无脆弱几何",
         })
@@ -932,6 +997,8 @@ class ValidatorTests(unittest.TestCase):
             "background_excerpt": BACKGROUND,
             "source_audit": "pass",
             "unsupported_additions": [],
+            "fact_claims": {"entities": ["一只手"], "actions": [], "relations": ["手位于画面下方"]},
+            "action_admissions": [],
             "risk_flags": [],
             "risk_basis": "无对白；手部关系明确，无脆弱几何",
         })
