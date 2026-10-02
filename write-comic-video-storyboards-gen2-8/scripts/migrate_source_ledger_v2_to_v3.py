@@ -80,7 +80,9 @@ def migrate(data: dict[str, object]) -> dict[str, object]:
         }
         panel["story_context"] = []
         panel["non_renderable_terms"] = []
-        review.append(f"{panel.get('image')}:重新看图拆分source_facts/story_context/non_renderable_terms")
+        panel["renderable_visual"] = True
+        panel["page_overlays"] = []
+        review.append(f"{panel.get('image')}:重新看图拆分source_facts/story_context/non_renderable_terms/page_overlays")
         bubbles = panel.get("bubbles")
         speakers = {
             bubble.get("speaker")
@@ -109,7 +111,10 @@ def migrate(data: dict[str, object]) -> dict[str, object]:
         shot.setdefault("coverage_type", "MIGRATION_REVIEW")
         shot.setdefault("coverage_changes", [])
         shot.setdefault("coverage_evidence", "MIGRATION_REVIEW")
-        review.append(f"{shot.get('target')}:复核增镜所属原格、类型、差异与证据")
+        shot.setdefault("next_source_image", "MIGRATION_REVIEW")
+        shot.setdefault("next_source_changes", [])
+        shot.setdefault("next_source_evidence", "MIGRATION_REVIEW")
+        review.append(f"{shot.get('target')}:复核增镜所属原格、前镜差异、下一原格差异与证据")
 
     result["migration_review_required"] = review
     return result

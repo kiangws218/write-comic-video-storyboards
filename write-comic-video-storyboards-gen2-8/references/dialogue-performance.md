@@ -25,7 +25,7 @@ Then create ordered coverage groups. One group may contain adjacent turns when a
 
 Thus `解释→质问→否认` may be three shots or `解释 | 质问+短否认`; the semantic order never changes. Similar required coverage is redesigned rather than deleted.
 
-Each group maps to numbered shots in the same panel-owned clip. Restore the source composition once, then use supported speaker/listener/relationship/object/environment/detail coverage. Person-free object or environment inserts are allowed with off-screen dialogue when the item/space and sound direction are established. An uncited view may not invent the unseen reverse side of a room, hidden pose, new object or contact.
+Each group maps to numbered shots in the same panel-owned clip. Restore the source composition once, then use supported speaker/listener/relationship/object/environment/detail coverage. Before prose, assign every added shot a distinct visual function and compare `dominant subject | scale | viewpoint/axis | placement/overlap | visible information` with both the preceding planned shot and the next source-panel composition. At least two meaningful dimensions must change against each available neighbor; a new focal length, focus transfer or tighter crop alone is insufficient. Redesign or merge before writing if this cannot be achieved from visible evidence. Person-free object or environment inserts are allowed with off-screen dialogue when the item/space and sound direction are established. An uncited view may not invent the unseen reverse side of a room, hidden pose, new object or contact.
 
 ## Timing
 

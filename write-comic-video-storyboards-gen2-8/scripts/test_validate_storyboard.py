@@ -43,6 +43,8 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
                 "image": "panel.jpg",
                 "viewed_at_drafting": True,
                 "drafting_resolution": "720p",
+                "renderable_visual": True,
+                "page_overlays": [],
                 "source_bubble_count": 1,
                 "bubble_audit": "pass",
                 "background": {
@@ -112,6 +114,7 @@ class ValidatorTests(unittest.TestCase):
             storyboard_path.write_text(text, encoding="utf-8")
             image_path = root / "panel.jpg"
             image_path.write_bytes(b"fixture")
+            (root / "panel2.jpg").write_bytes(b"fixture")
             command = [
                 sys.executable,
                 str(SCRIPT),
@@ -819,6 +822,15 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("气泡/页面/格间空白", result.stdout)
 
+    def test_manga_typography_is_not_renderable_video_content(self) -> None:
+        text = storyboard().replace(
+            f"【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。",
+            "【可见背景】：低对比灰色表面铺满背景，周围排布多个深色韩文咀嚼拟声字。",
+        )
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("把漫画排字写进可生成内容", result.stdout)
+
     def test_ledger_cannot_underreport_japanese_speech_time(self) -> None:
         line = "これはとても長い説明なので最後までちゃんと聞いてください。"
         text = storyboard(line=line).replace("分镜1（5秒）", "分镜1（8秒）")
@@ -984,6 +996,10 @@ class ValidatorTests(unittest.TestCase):
         panel["source_bubble_count"] = 0
         panel["coverage"] = "none"
         panel["bubbles"] = []
+        next_panel = deepcopy(panel)
+        next_panel["image"] = "panel2.jpg"
+        next_panel["composition_lock"] = "正面人物脸部近景，人物占画面右侧，左前景由门框遮挡"
+        ledger["panels"].append(next_panel)
         ledger["shots"].append({
             "target": "片段1/分镜2",
             "role": "uncited_coverage",
@@ -992,6 +1008,9 @@ class ValidatorTests(unittest.TestCase):
             "coverage_changes": ["scale", "viewpoint_axis"],
             "coverage_type": "detail_insert",
             "coverage_evidence": "当前面板明确显示手指与掌心，可形成侧向细节",
+            "next_source_image": "panel2.jpg",
+            "next_source_changes": ["subject_focus", "composition_overlap"],
+            "next_source_evidence": "本镜只呈现手指细节；下一原格以人物脸部和门框遮挡为主。",
             "evidence": "current_panel",
             "purpose": "侧向手指反应插入",
             "background_excerpt": BACKGROUND,

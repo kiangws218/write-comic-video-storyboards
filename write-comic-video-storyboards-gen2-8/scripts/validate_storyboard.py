@@ -187,6 +187,11 @@ BACKGROUND_PAGE_ARTIFACT_RE = re.compile(
     r"气泡(?:内部|周边|旁边|后的?)空白|OCR(?:空白|缺口)|画外传来的声源方向留成|"
     r"留白把背景|空白把背景"
 )
+PAGE_OVERLAY_VISUAL_RE = re.compile(
+    r"(?:韩文|日文|中文|英文)(?:拟声字|文字|字样|排字)|"
+    r"拟声字|字形|漫画排字|文字排布|字幕|页码|"
+    r"(?:对白|旁白|台词|说明)(?:框|文字框)|气泡尾|漫画格线"
+)
 GENERIC_LOCK_RE = re.compile(
     r"当前原格|当前面板|当前图|按原格|依照原格|原格(?:主体|构图|位置)|"
     r"主体位置(?:不变|锁定)|构图关系(?:不变|锁定)|可见主体|画面主体"
@@ -683,6 +688,7 @@ def validate_source_ledger(
     acting_chars_by_target: dict[str, int] = {}
     seen_images: set[str] = set()
     panel_by_image: dict[str, dict[str, object]] = {}
+    panel_order: list[str] = []
     available_images = (
         {path.name.casefold() for path in image_dir.iterdir() if path.is_file()}
         if image_dir
@@ -704,6 +710,7 @@ def validate_source_ledger(
                 errors.append(f"对白台账重复登记图片：{image}")
             seen_images.add(key)
             panel_by_image[key] = panel
+            panel_order.append(key)
             if available_images is not None and key not in available_images:
                 errors.append(f"对白台账图片不存在：{image}")
 
@@ -718,6 +725,29 @@ def validate_source_ledger(
                 errors.append(f"{image}查看original但未记录具体resolution_escalation_reason。")
         if panel.get("bubble_audit") != "pass":
             errors.append(f"{image}未通过原图气泡数与顺序复核。")
+        renderable_visual = panel.get("renderable_visual", True)
+        if not isinstance(renderable_visual, bool):
+            errors.append(f"{image}的renderable_visual必须是布尔值。")
+            renderable_visual = True
+        page_overlays = panel.get("page_overlays", [])
+        if not isinstance(page_overlays, list):
+            errors.append(f"{image}的page_overlays必须是数组，没有则写空数组。")
+            page_overlays = []
+        for overlay_index, overlay in enumerate(page_overlays, start=1):
+            overlay_label = f"{image} page_overlays[{overlay_index}]"
+            if not isinstance(overlay, dict):
+                errors.append(f"{overlay_label}必须是对象。")
+                continue
+            if overlay.get("kind") not in {"sfx", "speech_balloon", "caption", "label", "page_number", "border"}:
+                errors.append(f"{overlay_label}的kind无效。")
+            if not isinstance(overlay.get("source_text"), str) or not overlay["source_text"].strip():
+                errors.append(f"{overlay_label}缺少source_text。")
+            if overlay.get("render") is not False:
+                errors.append(f"{overlay_label}必须明确render:false；漫画排字不可生成进视频画面。")
+            if overlay.get("kind") == "sfx" and not isinstance(overlay.get("audio_meaning"), str):
+                errors.append(f"{overlay_label}的SFX缺少audio_meaning。")
+        if renderable_visual is False and not page_overlays:
+            errors.append(f"{image}标记为无可生成画面但未登记page_overlays。")
         background = panel.get("background")
         if not isinstance(background, dict):
             errors.append(f"{image}缺少background对象。")
@@ -729,11 +759,17 @@ def validate_source_ledger(
                 errors.append(f"{image}的background.description过短或缺失。")
             elif BACKGROUND_PAGE_ARTIFACT_RE.search(description):
                 errors.append(f"{image}的background.description把页面/气泡空白误作背景。")
+            elif PAGE_OVERLAY_VISUAL_RE.search(description):
+                errors.append(f"{image}的background.description把漫画排字误作可生成背景。")
             if background.get("evidence") != "current_panel":
                 errors.append(f"{image}的背景必须以current_panel为证据。")
         composition = panel.get("composition_lock")
-        if not isinstance(composition, str) or not composition.strip():
+        if renderable_visual is False and composition in {None, ""}:
+            pass
+        elif not isinstance(composition, str) or not composition.strip():
             errors.append(f"{image}缺少简洁composition_lock。")
+        elif PAGE_OVERLAY_VISUAL_RE.search(composition):
+            errors.append(f"{image}的composition_lock把漫画排字误作可生成构图。")
         elif GENERIC_LOCK_RE.search(composition) or sum(
             bool(pattern.search(composition)) for pattern in COMPOSITION_SIGNAL_GROUPS
         ) < 2:
@@ -754,6 +790,8 @@ def validate_source_ledger(
                     errors.append(f"{image}的source_facts.{field}含重复事实。")
                 elif any(GENERIC_LOCK_RE.search(item) for item in value):
                     errors.append(f"{image}的source_facts.{field}含泛化占位语。")
+                elif any(PAGE_OVERLAY_VISUAL_RE.search(item) for item in value):
+                    errors.append(f"{image}的source_facts.{field}混入漫画排字；请移到page_overlays。")
         for field in ("story_context", "non_renderable_terms"):
             value = panel.get(field)
             if not isinstance(value, list) or any(
@@ -1004,6 +1042,24 @@ def validate_source_ledger(
                 f"分镜时长{shot_seconds}秒。"
             )
 
+    for panel in panels:
+        if not isinstance(panel, dict):
+            continue
+        for overlay in panel.get("page_overlays", []):
+            if not isinstance(overlay, dict) or overlay.get("kind") != "sfx":
+                continue
+            target = overlay.get("audio_target")
+            excerpt = overlay.get("audio_excerpt")
+            if panel.get("renderable_visual", True) is False and (
+                not isinstance(target, str) or target not in shot_map
+            ):
+                errors.append(f"{panel.get('image')}是纯排字/SFX格但未把声音映射到相邻可见分镜。")
+                continue
+            if isinstance(target, str) and target in shot_map:
+                sound = shot_field_values(shot_map[target][1]).get("声音设计", "")
+                if not isinstance(excerpt, str) or not excerpt.strip() or compact_text(excerpt) not in compact_text(sound):
+                    errors.append(f"{panel.get('image')}的SFX audio_excerpt未出现在{target}的【声音设计】。")
+
     shots = ledger.get("shots")
     if not isinstance(shots, list) or not shots:
         errors.append("源图台账shots必须是非空数组。")
@@ -1031,6 +1087,13 @@ def validate_source_ledger(
         for panel in panels
         if isinstance(panel, dict) and isinstance(panel.get("image"), str)
     }
+    next_renderable_by_image: dict[str, str] = {}
+    for panel_index, image_key in enumerate(panel_order):
+        for later_key in panel_order[panel_index + 1:]:
+            later_panel = panel_by_image.get(later_key, {})
+            if later_panel.get("renderable_visual", True) is not False:
+                next_renderable_by_image[image_key] = later_key
+                break
     seen_shot_targets: set[str] = set()
     performance_risk_targets: set[str] = set()
     coverage_segments_by_panel: dict[str, set[str]] = {}
@@ -1100,6 +1163,8 @@ def validate_source_ledger(
                 coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
                 if image_key not in panel_images:
                     errors.append(f"{target}引用了未登记面板：{source_image}")
+                elif panel_by_image.get(image_key, {}).get("renderable_visual", True) is False:
+                    errors.append(f"{target}引用了纯漫画排字面板：{source_image}；请只映射声音并省略独立画面。")
                 if role == "source_locked" and image_key not in block_references:
                     errors.append(f"{target}的source_locked正文未引用：{source_image}")
             if len(source_images) >= 2:
@@ -1157,7 +1222,26 @@ def validate_source_ledger(
                 image_key = Path(source_image).name.casefold()
                 if image_key not in panel_images:
                     errors.append(f"{target}的derived_from未登记面板：{source_image}")
+                elif panel_by_image.get(image_key, {}).get("renderable_visual", True) is False:
+                    errors.append(f"{target}不能从纯漫画排字面板派生可生成画面：{source_image}")
                 coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
+            expected_next = None
+            for source_image in derived_from:
+                expected_next = next_renderable_by_image.get(Path(source_image).name.casefold())
+                if expected_next:
+                    break
+            if expected_next:
+                next_source_image = shot.get("next_source_image")
+                if not isinstance(next_source_image, str) or Path(next_source_image).name.casefold() != expected_next:
+                    errors.append(f"{target}缺少正确next_source_image；增镜必须在初稿时对比下一漫画格。")
+                next_changes = shot.get("next_source_changes")
+                if not isinstance(next_changes, list) or any(
+                    item not in allowed_coverage_changes for item in next_changes
+                ) or len(set(next_changes)) < 2:
+                    errors.append(f"{target}与下一漫画格不足两项有效next_source_changes；请重设计或合并。")
+                next_evidence = shot.get("next_source_evidence")
+                if not isinstance(next_evidence, str) or sum(ch.isalnum() for ch in next_evidence) < 8:
+                    errors.append(f"{target}缺少具体next_source_evidence；不能只填差异标签。")
 
         owner_panels = [
             panel_by_image[Path(item).name.casefold()]
@@ -1598,6 +1682,13 @@ def main() -> int:
                     f"{shot_label}把气泡/页面/格间空白误写成【可见背景】；"
                     "请回看原图，只写物理环境、明确图形场或铺满画面的表面。"
                 )
+            for field_name in ("镜头设计", "可见动作", "可见背景", "光影布光", "声音设计"):
+                overlay_match = PAGE_OVERLAY_VISUAL_RE.search(fields.get(field_name, ""))
+                if overlay_match:
+                    errors.append(
+                        f"{shot_label}的{field_name}把漫画排字写进可生成内容：{overlay_match.group(0)}；"
+                        "拟声字只转为具体声音，其他页面文字只用于理解。"
+                    )
             camera_text = fields.get("镜头设计", "")
             action_text = fields.get("可见动作", "")
             if sum(bool(pattern.search(camera_text)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
