@@ -8,6 +8,9 @@
 character-references/
   turnarounds/       角色三视图与补充设定图
 episodes/
+  ep-009/
+    source/panels/   已切分的上色单格漫画
+    STATUS.md        本话任务状态
   ep-013/
     source/panels/   已切分的上色单格漫画
     STATUS.md        本话任务状态
@@ -17,7 +20,7 @@ episodes/
     STATUS.md        本话任务状态
 ```
 
-第16、17、18话使用相同的漫画目录结构；有已交付分镜时再建立 `storyboards/`。
+第10、16、17、18话使用相同的漫画目录结构；有已交付分镜时再建立 `storyboards/`。
 
 ## 使用方式
 
