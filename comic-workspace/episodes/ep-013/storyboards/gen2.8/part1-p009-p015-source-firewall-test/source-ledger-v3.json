@@ -1,0 +1,2143 @@
+{
+  "version": 3,
+  "migration_review_required": [],
+  "source_language": "ko",
+  "panels": [
+    {
+      "image": "第13话_5、6、7、8、9_009.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅色平面图形背景与黑色韩文拟声字",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "图形特写；黑色粗笔画位于中央并斜向覆盖浅色背景",
+      "source_facts": {
+        "entities": [
+          "黑色韩文拟声字",
+          "浅色图形背景"
+        ],
+        "actions": [
+          "黑色韩文拟声字位于画面中央"
+        ],
+        "relations": [
+          "黑色字形覆盖浅色图形背景中央"
+        ]
+      },
+      "story_context": [
+        "拟声字承接进食声"
+      ],
+      "non_renderable_terms": [
+        "黄色魔物",
+        "人物"
+      ],
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_5、6、7、8、9_010.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云、森林树冠与湖岸草地",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "三者中景；春子在左侧、青在右侧、黄色魔物背对镜头位于下方中央",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [
+          "黄色魔物背对镜头进食",
+          "青蹲在画面右侧",
+          "春子站在画面左侧"
+        ],
+        "relations": [
+          "青和春子共同看向下方黄色魔物"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 3,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "와, 바나나 같은 마물이야!",
+          "status": "mapped",
+          "script_text": "わあ、バナナみたいな魔物！",
+          "target": "片段1/分镜2",
+          "seconds": 7.0
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "위험하지 않아?",
+          "status": "mapped",
+          "script_text": "危なくないの？",
+          "target": "片段1/分镜2",
+          "seconds": 7.0
+        },
+        {
+          "id": "b3",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "응, 해는 없어.",
+          "status": "mapped",
+          "script_text": "うん、害はないよ。",
+          "target": "片段1/分镜2",
+          "seconds": 7.0
+        }
+      ],
+      "coverage": "shared",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1",
+            "t2",
+            "t3"
+          ],
+          "targets": [
+            "片段1/分镜2"
+          ],
+          "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
+        }
+      ]
+    },
+    {
+      "image": "第13话_5、6、7、8、9_011.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "surface",
+        "description": "低对比灰色表面与韩文咀嚼拟声字",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "魔物脸部近景；两只黑眼占上半幅、寿司横向遮住嘴部、短肢从左侧托住寿司",
+      "source_facts": {
+        "entities": [
+          "黄色魔物",
+          "寿司",
+          "韩文咀嚼拟声字"
+        ],
+        "actions": [
+          "黄色魔物抱住寿司进食"
+        ],
+        "relations": [
+          "寿司遮住黄色魔物嘴部"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "일룰룬!",
+          "status": "mapped",
+          "script_text": "イルルン！",
+          "target": "片段1/分镜3",
+          "seconds": 3.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_5、6、7、8、9_012.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白冲击背景与右侧密集竖线",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "魔物脸部极近景；巨眼被上缘裁切、寿司斜压嘴部、竖线集中在右侧",
+      "source_facts": {
+        "entities": [
+          "黄色魔物",
+          "寿司",
+          "冲击竖线"
+        ],
+        "actions": [
+          "黄色魔物含着寿司露出惊恐表情"
+        ],
+        "relations": [
+          "寿司压在黄色魔物嘴部"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "꺄악!!",
+          "status": "mapped",
+          "script_text": "ギャアッ！！",
+          "target": "片段1/分镜4",
+          "seconds": 2.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_10、11_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅黄草地表面与放射速度线",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "侧向关系近景；青的脸在左侧、寿司盒和倒伏黄色魔物在右下",
+      "source_facts": {
+        "entities": [
+          "青",
+          "黄色魔物",
+          "寿司盒"
+        ],
+        "actions": [
+          "黄色魔物倒伏在寿司盒上",
+          "青看向右下方"
+        ],
+        "relations": [
+          "青面对寿司盒中的黄色魔物"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "갑자기 왜 그래!?",
+          "status": "mapped",
+          "script_text": "急にどうしたの！？",
+          "target": "片段2/分镜1",
+          "seconds": 3.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_10、11_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云与森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "双人头肩近景；春子侧脸占左前景、青正面位于右侧中景",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子"
+        ],
+        "actions": [
+          "青面向左侧春子",
+          "春子侧脸面向右侧青"
+        ],
+        "relations": [
+          "春子和青形成对话轴"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "안에 독을 넣었어?",
+          "status": "mapped",
+          "script_text": "毒を入れたの？",
+          "target": "片段2/分镜2",
+          "seconds": 5.0
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "안 넣었는데?",
+          "status": "mapped",
+          "script_text": "入れてない。",
+          "target": "片段2/分镜2",
+          "seconds": 5.0
+        }
+      ],
+      "coverage": "shared",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1",
+            "t2"
+          ],
+          "targets": [
+            "片段2/分镜2"
+          ],
+          "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
+        }
+      ]
+    },
+    {
+      "image": "第13话_10、11_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅黄草地、方形寿司盒与盒内暖黄表面",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "高位俯视物件中近景；寿司盒斜放中央、黄色魔物横跨盒内与左缘、寿司位于右侧",
+      "source_facts": {
+        "entities": [
+          "黄色魔物",
+          "寿司盒",
+          "寿司",
+          "草地"
+        ],
+        "actions": [
+          "黄色魔物倒伏在寿司盒内"
+        ],
+        "relations": [
+          "黄色魔物与右侧寿司同处盒内"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "항상 이렇게 돼.",
+          "status": "mapped",
+          "script_text": "いつもこう。",
+          "target": "片段2/分镜3",
+          "seconds": 5.0
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "초밥은 좋아하지만 와사비는 못 먹어.",
+          "status": "mapped",
+          "script_text": "寿司は好きでも、わさびは無理。",
+          "target": "片段2/分镜3",
+          "seconds": 5.0
+        }
+      ],
+      "coverage": "shared"
+    },
+    {
+      "image": "第13话_10、11_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "低饱和蓝灰渐变背景",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "青正面脸部特写；白发从上缘和两侧裁入、闭眼与嘴角位于中央、汗滴在右颊",
+      "source_facts": {
+        "entities": [
+          "青",
+          "汗滴"
+        ],
+        "actions": [
+          "青闭眼露出尴尬笑容"
+        ],
+        "relations": [
+          "汗滴位于青的右脸颊"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "뭐야 그게…….",
+          "status": "mapped",
+          "script_text": "なにそれ……。",
+          "target": "片段2/分镜4",
+          "seconds": 2.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_10、11_005.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "高亮浅色图形背景与少量草屑",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "手与魔物近景；人手从上缘压住黄色魔物、身体横向填满中幅、短肢向下伸出",
+      "source_facts": {
+        "entities": [
+          "人手",
+          "黄色魔物",
+          "草屑"
+        ],
+        "actions": [
+          "人手压住黄色魔物背部",
+          "黄色魔物短肢下垂"
+        ],
+        "relations": [
+          "人手与黄色魔物背部直接接触"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그래도 생각보다 쉽게 잡혔네.",
+          "status": "mapped",
+          "script_text": "でも、思ったより簡単に捕まったね。",
+          "target": "片段3/分镜1",
+          "seconds": 4.0
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "정말 잡는 거야? 비싸게 팔려?",
+          "status": "mapped",
+          "script_text": "本当に捕まえるの？　高く売れるの？",
+          "target": "片段3/分镜2",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "mixed",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1"
+          ],
+          "targets": [
+            "片段3/分镜1"
+          ]
+        },
+        {
+          "turn_ids": [
+            "t2"
+          ],
+          "targets": [
+            "片段3/分镜2"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "第13话_12、13、14、15_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云与中远层森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "春子胸像近景；春子在左侧、黄色魔物局部和手指在左下、青的白发遮挡右侧前景",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "青的白发",
+          "黄色魔物",
+          "春子的手"
+        ],
+        "actions": [
+          "春子手指压住黄色魔物局部",
+          "春子面向画面右侧"
+        ],
+        "relations": [
+          "青的白发位于春子右侧前景",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 5,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "이 녀석은 거의 가치가 없어.",
+          "status": "mapped",
+          "script_text": "こいつはほとんど価値がない。",
+          "target": "片段4/分镜1",
+          "seconds": 6.0
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "헌터의 불문율이야.",
+          "status": "mapped",
+          "script_text": "ハンターの不文律でね。",
+          "target": "片段4/分镜1",
+          "seconds": 6.0
+        },
+        {
+          "id": "b3",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "잡아서 썼으면 사흘 안에 놓아줘.",
+          "status": "mapped",
+          "script_text": "捕まえて使ったら、三日以内に放す。",
+          "target": "片段4/分镜2",
+          "seconds": 5.0
+        },
+        {
+          "id": "b4",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "일룰룬…….",
+          "status": "mapped",
+          "script_text": "ルルン……。",
+          "target": "片段4/分镜3",
+          "seconds": 4.0
+        },
+        {
+          "id": "b5",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그래도 크고 귀엽네.",
+          "status": "mapped",
+          "script_text": "大きくてかわいい。",
+          "target": "片段4/分镜3",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "mixed",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t4",
+          "bubble_ids": [
+            "b4"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t5",
+          "bubble_ids": [
+            "b5"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1",
+            "t2"
+          ],
+          "targets": [
+            "片段4/分镜1"
+          ],
+          "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
+        },
+        {
+          "turn_ids": [
+            "t3"
+          ],
+          "targets": [
+            "片段4/分镜2"
+          ]
+        },
+        {
+          "turn_ids": [
+            "t4",
+            "t5"
+          ],
+          "targets": [
+            "片段4/分镜3"
+          ],
+          "merge_basis": "同一原格内短促连续问答，共享人物关系与视线轴。"
+        }
+      ]
+    },
+    {
+      "image": "第13话_12、13、14、15_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云与左右森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "青正面脸部特写；白发从上缘和两侧裁入、双眼与嘴位于中央",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "青正面睁大双眼"
+        ],
+        "relations": [
+          "青面向镜头"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "잠깐…… 쓴다고? 어떻게 써?",
+          "status": "mapped",
+          "script_text": "待って……使うって？　どう使うの？",
+          "target": "片段5/分镜1",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天与森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "春子正面头肩近景；棕发环绕脸部、黄色魔物局部与手指在左下、白发窄条遮挡左缘",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "黄色魔物",
+          "春子的手",
+          "青的白发"
+        ],
+        "actions": [
+          "春子指尖压住黄色魔物局部"
+        ],
+        "relations": [
+          "白发位于左缘前景",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "쓰면 엄청 기분 좋아?",
+          "status": "mapped",
+          "script_text": "使うと、すごく気持ちいいんだよ？",
+          "target": "片段5/分镜2",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "大片蓝天、稀疏云层与周边森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "双人全景；春子在左侧下方手持黄色魔物、青背对镜头站在右侧、天空占上方大部",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "青",
+          "黄色魔物"
+        ],
+        "actions": [
+          "春子站在左侧手持黄色魔物",
+          "青背对镜头站在右侧"
+        ],
+        "relations": [
+          "春子和青隔着天空负空间相对"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "아…….",
+          "status": "mapped",
+          "script_text": "ああ……。",
+          "target": "片段5/分镜3",
+          "seconds": 2.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_005.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云与从左右下缘围合的森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "仰拍天空空镜；树冠从左右下缘围住中央蓝天、两组乌鸦拟声字位于上方",
+      "source_facts": {
+        "entities": [
+          "蓝天",
+          "白云",
+          "森林树冠",
+          "乌鸦拟声字"
+        ],
+        "actions": [
+          "乌鸦拟声字位于天空上方"
+        ],
+        "relations": [
+          "树冠围住中央天空"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [
+        "人物",
+        "黄色魔物"
+      ],
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_006.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "深蓝至青蓝的水下渐变、环形水纹与中央水面高亮",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "水下仰拍大全景；环形水纹从四周旋入中央、气泡沿右下至中上对角线排列",
+      "source_facts": {
+        "entities": [
+          "水下旋流",
+          "气泡",
+          "中央水面高亮"
+        ],
+        "actions": [
+          "气泡沿水下旋流上升"
+        ],
+        "relations": [
+          "气泡位于旋流右下至中上方向"
+        ]
+      },
+      "story_context": [
+        "下一格出现魔物"
+      ],
+      "non_renderable_terms": [
+        "黄色魔物",
+        "人物"
+      ],
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_007.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "青蓝水面、白色浪花与浅色速度线",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "魔物中近景；黄色魔物位于中央、浪花和水滴围成环形、水面横贯下缘",
+      "source_facts": {
+        "entities": [
+          "黄色魔物",
+          "水面",
+          "浪花",
+          "水滴"
+        ],
+        "actions": [
+          "黄色魔物从水面窜出"
+        ],
+        "relations": [
+          "浪花围住黄色魔物下部"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "꾸보보봇!!",
+          "status": "mapped",
+          "script_text": "グボボボボッ！！",
+          "target": "片段6/分镜2",
+          "seconds": 3.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_008.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "青蓝水面、白色浪花、水滴与竖向速度线",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "手与魔物近景；人手从右上握住黄色魔物、身体垂向中央、水面横贯下缘",
+      "source_facts": {
+        "entities": [
+          "人手",
+          "黄色魔物",
+          "水面",
+          "水滴"
+        ],
+        "actions": [
+          "人手握住黄色魔物离开水面"
+        ],
+        "relations": [
+          "人手与黄色魔物身体上部直接接触"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "黄色魔物",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "히야앗!!",
+          "status": "mapped",
+          "script_text": "ヒャアアッ！！",
+          "target": "片段6/分镜3",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "none"
+    },
+    {
+      "image": "第13话_12、13、14、15_009.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云、森林树冠、湖岸草地与浅色泥土",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "双人中景；青在左侧前倾、春子蹲在右侧、湿润黄色魔物位于春子手中右下",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [
+          "青在左侧前倾张口",
+          "春子蹲在右侧握住黄色魔物",
+          "水从黄色魔物表面滴落"
+        ],
+        "relations": [
+          "青面向右侧春子",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 3,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그만해! 양심도 안 아파?",
+          "status": "mapped",
+          "script_text": "やめて！　良心が痛まないの？",
+          "target": "片段7/分镜1",
+          "seconds": 3.0
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "아직 아무것도 시작 안 했는데?",
+          "status": "mapped",
+          "script_text": "まだ何も始めてないけど？",
+          "target": "片段7/分镜2",
+          "seconds": 3.0
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그럼 내 양심은 왜 아픈데?",
+          "status": "mapped",
+          "script_text": "じゃあ、私の良心はなんで痛むの？",
+          "target": "片段7/分镜3",
+          "seconds": 4.0
+        }
+      ],
+      "coverage": "mixed",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t3",
+          "bubble_ids": [
+            "b3"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1"
+          ],
+          "targets": [
+            "片段7/分镜1"
+          ]
+        },
+        {
+          "turn_ids": [
+            "t2"
+          ],
+          "targets": [
+            "片段7/分镜2"
+          ]
+        },
+        {
+          "turn_ids": [
+            "t3"
+          ],
+          "targets": [
+            "片段7/分镜3"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "第13话_12、13、14、15_010.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云与右下森林树冠",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "春子侧脸特写；棕发从左缘和上缘裁入、半垂眼睑位于中部、嘴靠近右下",
+      "source_facts": {
+        "entities": [
+          "春子"
+        ],
+        "actions": [
+          "春子侧脸面向画面右侧"
+        ],
+        "relations": [
+          "春子的视线朝向画面右侧"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그냥 마물이야. 고기를 먹을 때 돼지나 소를 위해 슬퍼해?",
+          "status": "mapped",
+          "script_text": "ただの魔物だよ。肉を食べる時、豚や牛のために悲しむの？",
+          "target": "片段8/分镜1",
+          "seconds": 6.0
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "그, 그건 다르지…….",
+          "status": "mapped",
+          "script_text": "そ、それは違うよ……。",
+          "target": "片段8/分镜2",
+          "seconds": 3.0
+        }
+      ],
+      "coverage": "mixed",
+      "dialogue_turns": [
+        {
+          "id": "t1",
+          "bubble_ids": [
+            "b1"
+          ],
+          "function": "按原气泡顺序推进对白"
+        },
+        {
+          "id": "t2",
+          "bubble_ids": [
+            "b2"
+          ],
+          "function": "按原气泡顺序推进对白"
+        }
+      ],
+      "coverage_groups": [
+        {
+          "turn_ids": [
+            "t1"
+          ],
+          "targets": [
+            "片段8/分镜1"
+          ]
+        },
+        {
+          "turn_ids": [
+            "t2"
+          ],
+          "targets": [
+            "片段8/分镜2"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "第13话_12、13、14、15_011.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "蓝天白云、中远层森林树冠与浅绿草地",
+        "evidence": "current_panel"
+      },
+      "composition_lock": "双人头肩中近景；青正面位于左侧、春子背对镜头位于右侧前景",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子"
+        ],
+        "actions": [
+          "青面向镜头",
+          "春子背对镜头"
+        ],
+        "relations": [
+          "春子的背影位于青的右侧前景"
+        ]
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "dialogue",
+          "source_text": "네네, 이제 방해 안 할게.",
+          "status": "mapped",
+          "script_text": "はいはい、もう邪魔しない。",
+          "target": "片段9/分镜1",
+          "seconds": 3.0
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向与当前格人物位置、上下文顺序共同确认",
+          "kind": "inner",
+          "source_text": "……그래, 계속하게 해야 해. 치료를 위해서니까.",
+          "status": "mapped",
+          "script_text": "……そう、続けてもらうべきなんだ。治療のためだもの。",
+          "target": "片段9/分镜2",
+          "seconds": 6.0
+        }
+      ],
+      "coverage": "mixed"
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_5、6、7、8、9_009.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "浅色平面图形背景铺满黑色笔画外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "黑色韩文拟声字",
+          "浅色图形背景"
+        ],
+        "actions": [
+          "黑色韩文拟声字位于画面中央"
+        ],
+        "relations": [
+          "黑色字形覆盖浅色图形背景中央"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段1/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_5、6、7、8、9_010.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云和深浅树冠填满人物之间，下缘是湖岸草地。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [
+          "黄色魔物背对镜头进食",
+          "青蹲在画面右侧",
+          "春子站在画面左侧"
+        ],
+        "relations": [
+          "青和春子共同看向下方黄色魔物"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段1/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_5、6、7、8、9_011.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "低对比灰色表面填满黄色轮廓外围，周围排布多个深色韩文咀嚼拟声字。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "黄色魔物",
+          "寿司",
+          "韩文咀嚼拟声字"
+        ],
+        "actions": [
+          "黄色魔物抱住寿司进食"
+        ],
+        "relations": [
+          "寿司遮住黄色魔物嘴部"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段1/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_5、6、7、8、9_012.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "灰白冲击表面与右侧密集竖线填满黄色脸部外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "黄色魔物",
+          "寿司",
+          "冲击竖线"
+        ],
+        "actions": [
+          "黄色魔物含着寿司露出惊恐表情"
+        ],
+        "relations": [
+          "寿司压在黄色魔物嘴部"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段2/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_10、11_001.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "浅黄草地表面与向上放射的细速度线填满青和寿司盒之间。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "黄色魔物",
+          "寿司盒"
+        ],
+        "actions": [
+          "黄色魔物倒伏在寿司盒上",
+          "青看向右下方"
+        ],
+        "relations": [
+          "青面对寿司盒中的黄色魔物"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段2/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_10、11_002.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "亮蓝天空、白云与深绿树冠填满两人肩颈外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子"
+        ],
+        "actions": [
+          "青面向左侧春子",
+          "春子侧脸面向右侧青"
+        ],
+        "relations": [
+          "春子和青形成对话轴"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段2/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_10、11_003.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "浅黄草地表面填满寿司盒外围，盒内是暖黄平面和短小接触阴影。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "黄色魔物",
+          "寿司盒",
+          "寿司",
+          "草地"
+        ],
+        "actions": [
+          "黄色魔物倒伏在寿司盒内"
+        ],
+        "relations": [
+          "黄色魔物与右侧寿司同处盒内"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段2/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_10、11_004.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "低饱和蓝灰渐变填满白发轮廓外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "汗滴"
+        ],
+        "actions": [
+          "青闭眼露出尴尬笑容"
+        ],
+        "relations": [
+          "汗滴位于青的右脸颊"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段3/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_10、11_005.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "高亮浅色图形场填满魔物轮廓外围，只保留少量掉落的草屑与短小接触阴影。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "人手",
+          "黄色魔物",
+          "草屑"
+        ],
+        "actions": [
+          "人手压住黄色魔物背部",
+          "黄色魔物短肢下垂"
+        ],
+        "relations": [
+          "人手与黄色魔物背部直接接触"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段3/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "浅色图形场围住黄色腹部与后肢，下缘只留两粒下落草屑和短小柔影。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "人手",
+          "黄色魔物",
+          "草屑"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_10、11_005.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段4/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_001.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云和中远层树冠填满春子头肩后方，右侧由青的白发构成大面积前景表面。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子",
+          "青的白发",
+          "黄色魔物",
+          "春子的手"
+        ],
+        "actions": [
+          "春子手指压住黄色魔物局部",
+          "春子面向画面右侧"
+        ],
+        "relations": [
+          "青的白发位于春子右侧前景",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段4/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "亮蓝天空与深浅树冠从两人头肩之间露出，其余画面由棕发、白发和深色衣料构成表面层次。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子",
+          "青的白发",
+          "黄色魔物",
+          "春子的手"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_001.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段4/分镜3",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "白云与蓝天填满两人发缘之间，下缘露出深绿树冠。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子",
+          "青的白发",
+          "黄色魔物",
+          "春子的手"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_001.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段5/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_002.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "明亮蓝天、白云与左右深绿树冠填满白发外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "青正面睁大双眼"
+        ],
+        "relations": [
+          "青面向镜头"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段5/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_003.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "明亮蓝天与树冠从棕发左右边缘露出，其余画面由棕发、脸部和深色衣料填满。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子",
+          "黄色魔物",
+          "春子的手",
+          "青的白发"
+        ],
+        "actions": [
+          "春子指尖压住黄色魔物局部"
+        ],
+        "relations": [
+          "白发位于左缘前景",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段5/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_004.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "浅蓝天空与稀疏云层占据大部分画面，左右与下缘由深绿树冠围合。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子",
+          "青",
+          "黄色魔物"
+        ],
+        "actions": [
+          "春子站在左侧手持黄色魔物",
+          "青背对镜头站在右侧"
+        ],
+        "relations": [
+          "春子和青隔着天空负空间相对"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段5/分镜4",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_005.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云与多层绿色树冠构成开阔林间天空。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "蓝天",
+          "白云",
+          "森林树冠",
+          "乌鸦拟声字"
+        ],
+        "actions": [
+          "乌鸦拟声字位于天空上方"
+        ],
+        "relations": [
+          "树冠围住中央天空"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段6/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_006.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "深蓝至青蓝的水下渐变、环形水纹与中央水面高亮填满画面。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "水下旋流",
+          "气泡",
+          "中央水面高亮"
+        ],
+        "actions": [
+          "气泡沿水下旋流上升"
+        ],
+        "relations": [
+          "气泡位于旋流右下至中上方向"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段6/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_007.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "青蓝水面、白色浪花和浅色速度线填满黄色轮廓外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "黄色魔物",
+          "水面",
+          "浪花",
+          "水滴"
+        ],
+        "actions": [
+          "黄色魔物从水面窜出"
+        ],
+        "relations": [
+          "浪花围住黄色魔物下部"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段6/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_008.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "青蓝水面、白色浪花、向下垂落的水滴与浅色竖向速度线填满黄色身体外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "人手",
+          "黄色魔物",
+          "水面",
+          "水滴"
+        ],
+        "actions": [
+          "人手握住黄色魔物离开水面"
+        ],
+        "relations": [
+          "人手与黄色魔物身体上部直接接触"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段7/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_009.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云、深绿树冠和湖岸草地填满两人与黄色魔物外围。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [
+          "青在左侧前倾张口",
+          "春子蹲在右侧握住黄色魔物",
+          "水从黄色魔物表面滴落"
+        ],
+        "relations": [
+          "青面向右侧春子",
+          "春子的手与黄色魔物接触"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段7/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云、深绿树冠与近处草地填满人物之间，水滴下方是浅色泥土。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_009.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段7/分镜3",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云、树冠和草地构成明亮湖岸背景，两人之间留出浅蓝空气层。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子",
+          "黄色魔物",
+          "湖岸草地"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_009.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段8/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_010.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "蓝天、白云与右下的深绿树冠构成湖岸远景。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子"
+        ],
+        "actions": [
+          "春子侧脸面向画面右侧"
+        ],
+        "relations": [
+          "春子的视线朝向画面右侧"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段8/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "右缘露出一小块蓝天与深绿树冠，其余远景化为低对比色面。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "春子"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_010.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    },
+    {
+      "target": "片段9/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "第13话_12、13、14、15_011.jpg"
+      ],
+      "purpose": "锁定当前原格的构图、可见主体与表演边界",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "明亮蓝天、白云和中远层树冠填满两人头肩之间，下缘是浅绿草地。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子"
+        ],
+        "actions": [
+          "青面向镜头",
+          "春子背对镜头"
+        ],
+        "relations": [
+          "春子的背影位于青的右侧前景"
+        ]
+      },
+      "action_admissions": [],
+      "viewed_while_writing": true
+    },
+    {
+      "target": "片段9/分镜2",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "在同一原格内提供差异化对白覆盖",
+      "evidence": "写作时逐图查看720p代理图，并对照当前镜头正文复核",
+      "background_excerpt": "一条浅蓝天空和远处深绿树冠构成窄幅湖岸远景。",
+      "source_audit": "pass",
+      "unsupported_additions": [],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "已逐项核对人物、物件、动作目标与背景；未用台词含义补造画面事实。",
+      "fact_claims": {
+        "entities": [
+          "青",
+          "春子"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "action_admissions": [],
+      "derived_from": [
+        "第13话_12、13、14、15_011.jpg"
+      ],
+      "coverage_changes": [
+        "scale",
+        "subject_focus"
+      ],
+      "coverage_type": "detail_insert",
+      "coverage_evidence": "只裁取所属原格已可见的脸部、手部或物件局部，并改变景别与视觉焦点。"
+    }
+  ],
+  "performance": [
+    {
+      "target": "片段1/分镜2",
+      "evidence": "表演细节均来自当前原格可见人物、姿态与接触关系。",
+      "card": {
+        "opening": "沿用当前原格起始姿态与视线",
+        "beats": [
+          "台词刺激后产生局部表情或视线变化",
+          "以受支持的停顿或接触关系收束"
+        ],
+        "coupling": "嘴形、眼神与手部动作按语义顺序串联",
+        "landing": "在当前原格可见锚点上稳定结束"
+      },
+      "details": [
+        "黄色魔物背部随咀嚼小幅起伏，头顶尖端晚半拍轻摇",
+        "青的起幅为闭眼大笑，双手指尖压在黑色长靴上，说到「バナナみたい」时她睁眼望向画面下方，嘴角随后收窄"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 7.0,
+          "acting_seconds": 7.0
+        }
+      ]
+    },
+    {
+      "target": "片段4/分镜1",
+      "evidence": "表演细节均来自当前原格可见人物、姿态与接触关系。",
+      "card": {
+        "opening": "沿用当前原格起始姿态与视线",
+        "beats": [
+          "台词刺激后产生局部表情或视线变化",
+          "以受支持的停顿或接触关系收束"
+        ],
+        "coupling": "嘴形、眼神与手部动作按语义顺序串联",
+        "landing": "在当前原格可见锚点上稳定结束"
+      },
+      "details": [
+        "春子起幅面向画面右侧，指腹稳定压住魔物局部",
+        "第一句中她只让眼珠向右移动，说到「不文律」时眼睑随之轻微压低，嘴唇合拢后留半拍停顿，鼻翼伴随一次浅呼吸轻缩"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 6.0,
+          "acting_seconds": 6.0
+        }
+      ]
+    },
+    {
+      "target": "片段8/分镜1",
+      "evidence": "表演细节均来自当前原格可见人物、姿态与接触关系。",
+      "card": {
+        "opening": "沿用当前原格起始姿态与视线",
+        "beats": [
+          "台词刺激后产生局部表情或视线变化",
+          "以受支持的停顿或接触关系收束"
+        ],
+        "coupling": "嘴形、眼神与手部动作按语义顺序串联",
+        "landing": "在当前原格可见锚点上稳定结束"
+      },
+      "details": [
+        "春子起幅就是面向画面右侧的侧脸，眼珠位于眼睑左下",
+        "说到「ただの魔物」时眼睑缓慢压低，第一句结束后嘴唇合拢半拍，发尾晚半拍贴回颈侧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 6.0,
+          "acting_seconds": 6.0
+        }
+      ]
+    },
+    {
+      "target": "片段9/分镜2",
+      "evidence": "表演细节均来自当前原格可见人物、姿态与接触关系。",
+      "card": {
+        "opening": "沿用当前原格起始姿态与视线",
+        "beats": [
+          "台词刺激后产生局部表情或视线变化",
+          "以受支持的停顿或接触关系收束"
+        ],
+        "coupling": "嘴形、眼神与手部动作按语义顺序串联",
+        "landing": "在当前原格可见锚点上稳定结束"
+      },
+      "details": [
+        "青的视线停在画面右下，眉尾慢慢下垂，指尖先压紧胸前衣料",
+        "说到「治療」时指节随后一点点松开，衣料跟着回弹，肩线仍略微僵硬，末帧红瞳没有重新看向镜头"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 6.0,
+          "acting_seconds": 6.0
+        }
+      ]
+    }
+  ]
+}
