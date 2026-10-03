@@ -184,7 +184,7 @@ BACKGROUND_VISUAL_RE = re.compile(
     r"墙(?:面|壁)?|室内|走廊|房间|街道|屋顶|山(?:体|坡|脊)?|灌木|"
     r"水面|湖面|海面|河面|岩(?:壁|地|石)?|洞穴|速度(?:线|带|场)|"
     r"放射线|冲击底|渐变|图形底|纯色|纯白图形底|色块|亮区|夜色|阴影|光幕|雾|烟尘|尘土|雨幕|雪地|"
-    r"箱壁|盒壁|内衬|布景|帘布|布面|"
+    r"箱壁|盒壁|内衬|布景|帘布|布面|木(?:板|构|纹|梁|柱|墙|地|柜台)|柜台|炊汽|蒸汽|底场|"
     r"(?:铺满|填满|遮满)(?:画面|背景)"
 )
 NEGATIVE_PROMPT_RE = re.compile(
@@ -230,7 +230,7 @@ GENERIC_LOCK_RE = re.compile(
 )
 COMPOSITION_SIGNAL_GROUPS = (
     re.compile(r"近景|中景|远景|全景|特写|极近景|半身|胸像|肩部|腰部|膝上"),
-    re.compile(r"左(?:侧|边|缘|前景|后方|半)|右(?:侧|边|缘|前景|后方|半)|中央|中部|上方|下方|上缘|下缘|画面[左右上下]|占据|占满"),
+    re.compile(r"左(?:侧|边|缘|前|后|半|中)|右(?:侧|边|缘|前|后|半|中)|中央|中部|上中|下中|上方|下方|上缘|下缘|画面[左右上下]|占据|占满"),
     re.compile(r"前景|中景|后景|纵深|前后层次|景深"),
     re.compile(r"遮挡|重叠|露出|压住|穿过|贴住|接触|裁切|切到|切入|出画|入画|边缘|负空间|填满|围住|横贯|斜穿"),
 )
@@ -795,11 +795,59 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
     return warnings
 
 
+def validate_overflow_split(
+    panel: dict, segments: set[str], shots: list[dict],
+    shot_map: dict[str, tuple[int, str]], max_seconds: int = 15,
+) -> list[str]:
+    """Verify a narrow ownership exception; normal clip/turn/source checks still apply."""
+    image_key = Path(panel.get("image", "")).name.casefold()
+    label = f"原格{image_key}的overflow_split"
+    split = panel.get("overflow_split")
+    if not isinstance(split, dict):
+        return [f"{label}必须是对象。"]
+    errors = []
+    estimate = split.get("estimated_seconds")
+    if not valid_seconds(estimate) or float(estimate) <= max_seconds:
+        errors.append(f"{label}未证明自然完整单格超过{max_seconds}秒。")
+    numbers = split.get("segments")
+    if (
+        not isinstance(numbers, list) or len(numbers) < 2
+        or any(type(n) is not int or n < 1 for n in numbers)
+        or any(b != a + 1 for a, b in zip(numbers, numbers[1:]))
+        or {f"片段{n}" for n in numbers} != segments
+    ):
+        errors.append(f"{label}的segments必须与实际连续片段编号完全一致。")
+    for field in ("boundary_reason", "continuity_state"):
+        value = split.get(field)
+        if not isinstance(value, str) or sum(ch.isalnum() for ch in value) < 6:
+            errors.append(f"{label}缺少具体{field}。")
+    owners = {}
+    for shot in shots:
+        if not isinstance(shot, dict):
+            continue
+        refs = shot.get("derived_from") if shot.get("role") == "uncited_coverage" else shot.get("source_images")
+        if isinstance(refs, list):
+            owners[shot.get("target")] = {Path(ref).name.casefold() for ref in refs if isinstance(ref, str)}
+    owned = [target for target in shot_map if image_key in owners.get(target, set())]
+    duration = sum(shot_map[target][0] for target in owned)
+    if duration <= max_seconds:
+        errors.append(f"{label}的实际单格覆盖仅{duration:g}秒，不能使用超限拆分。")
+    if valid_seconds(estimate) and float(estimate) > duration + 0.35:
+        errors.append(f"{label}的自然估时超过实际覆盖时长，不能靠压缩表演或语速实现拆分。")
+    indexes = [i for i, target in enumerate(shot_map) if target in owned]
+    if indexes and indexes != list(range(indexes[0], indexes[-1] + 1)):
+        errors.append(f"{label}两部分之间插入了非本格覆盖，破坏连续单元。")
+    if any(owners[target] != {image_key} for target in owned):
+        errors.append(f"{label}必须证明本格独立超限，不能借其他原格凑时。")
+    return errors
+
+
 def validate_source_ledger(
     ledger_path: Path,
     main_text: str,
     image_dir: Path | None,
     warnings: list[str] | None = None,
+    max_seconds: int = 15,
 ) -> list[str]:
     errors: list[str] = []
     try:
@@ -1523,11 +1571,18 @@ def validate_source_ledger(
 
     for image_key, segments in coverage_segments_by_panel.items():
         if len(segments) > 1:
-            errors.append(
-                f"原格{image_key}的正式镜头与增镜跨越多个片段：{sorted(segments)}；"
-                "同一原格的全部覆盖必须放在一个片段内；该片段可以同时容纳其他连续原格，"
-                "这不是每格独占一个片段。"
-            )
+            panel = panel_by_image.get(image_key, {})
+            if panel.get("overflow_split") is None:
+                errors.append(
+                    f"原格{image_key}的正式镜头与增镜跨越多个片段：{sorted(segments)}；"
+                    "通常同一原格的全部覆盖必须放在一个片段内；该片段可以同时容纳其他连续原格，"
+                    "这不是每格独占一个片段。自然超限单格需完整overflow_split记录。"
+                )
+            else:
+                errors.extend(validate_overflow_split(panel, segments, shots, shot_map, max_seconds))
+    for image_key, panel in panel_by_image.items():
+        if panel.get("overflow_split") is not None and len(coverage_segments_by_panel.get(image_key, set())) < 2:
+            errors.append(f"原格{image_key}的overflow_split未对应实际跨片段覆盖。")
 
     missing_shots = sorted(set(shot_map) - seen_shot_targets)
     if missing_shots:
@@ -2022,7 +2077,7 @@ def main() -> int:
         errors.append("完整验证要求--source-ledger版本3台账。")
     if ledger_path:
         errors.extend(
-            validate_source_ledger(ledger_path, main_text, args.image_dir, warnings)
+            validate_source_ledger(ledger_path, main_text, args.image_dir, warnings, args.max_seconds)
         )
 
     print(f"片段数：{len(chunks)}")

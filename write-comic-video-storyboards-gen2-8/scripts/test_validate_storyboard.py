@@ -131,6 +131,104 @@ def pose_admission(claim: str, evidence: str = "原格胸肩与头位清楚，�
 
 
 class ValidatorTests(unittest.TestCase):
+    def overflow_fixture(self) -> tuple[dict, set[str], list[dict], dict]:
+        panel = {"image": "panel.jpg", "overflow_split": {
+            "estimated_seconds": 17.5, "segments": [1, 2],
+            "boundary_reason": "点餐回复完成后切开完整说明，避免打断句子",
+            "continuity_state": "手仍放在柜台上，头保持参与谈话的朝向",
+        }}
+        shots = [
+            {"target": "片段1/分镜1", "role": "source_locked", "source_images": ["panel.jpg"]},
+            {"target": "片段2/分镜1", "role": "uncited_coverage", "derived_from": ["panel.jpg"]},
+        ]
+        return panel, {"片段1", "片段2"}, shots, {"片段1/分镜1": (9, ""), "片段2/分镜1": (9, "")}
+
+    def test_natural_overflow_split_accepts_contiguous_full_coverage(self) -> None:
+        self.assertEqual(VALIDATOR.validate_overflow_split(*self.overflow_fixture()), [])
+
+    def test_recorded_overflow_split_passes_cli_without_waiving_clip_limit(self) -> None:
+        first = storyboard(line=None).replace("分镜1（5秒）", "分镜1（9秒）")
+        second = first.split("## 【片段1】测试", 1)[1]
+        second = "## 【片段2】继续" + second.replace("分镜参考 `[panel.jpg]`\n", "")
+        second = second.replace(
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景",
+            "85mm侧向手指近景，指尖占右侧，手腕被下缘裁切",
+        )
+        ledger = valid_ledger()
+        ledger["panels"][0].update(source_bubble_count=0, coverage="none", bubbles=[])
+        ledger["panels"][0]["overflow_split"] = self.overflow_fixture()[0]["overflow_split"]
+        derived = deepcopy(ledger["shots"][0])
+        derived.update(target="片段2/分镜1", role="uncited_coverage", source_images=[],
+                       derived_from=["panel.jpg"], coverage_changes=["subject_focus", "composition_overlap"],
+                       coverage_type="detail_insert", coverage_evidence="由掌心关系切到右侧指尖的局部任务，指尖轮廓主导画面")
+        ledger["shots"].append(derived)
+        result = self.run_validator(first + second, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        # An ownership exception must never exempt an individual video from the ceiling.
+        result = self.run_validator(first.replace("分镜1（9秒）", "分镜1（16秒）") + second, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("超过", result.stdout)
+
+    def test_below_limit_panel_cannot_use_overflow_label(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        panel["overflow_split"]["estimated_seconds"] = 8
+        shot_map["片段1/分镜1"] = (5, "")
+        shot_map["片段2/分镜1"] = (3, "")
+        errors = VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map)
+        self.assertEqual(len(errors), 2)
+
+    def test_overflow_split_requires_actual_consecutive_segments(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        for numbers in ([1, 3], [1, 1], [1, 2, 3], [True, 2], None):
+            with self.subTest(numbers=numbers):
+                panel["overflow_split"]["segments"] = numbers
+                self.assertTrue(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map))
+
+    def test_overflow_split_requires_boundary_and_continuation(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        panel["overflow_split"].pop("boundary_reason")
+        panel["overflow_split"]["continuity_state"] = "接着"
+        self.assertEqual(len(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map)), 2)
+
+    def test_overflow_split_rejects_unrelated_interleaved_coverage(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        shot_map = {"片段1/分镜1": (9, ""), "片段1/分镜2": (2, ""), "片段2/分镜1": (9, "")}
+        shots.append({"target": "片段1/分镜2", "role": "source_locked", "source_images": ["other.jpg"]})
+        self.assertTrue(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map))
+
+    def test_overflow_split_cannot_borrow_other_panel_duration(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        shots[0]["source_images"].append("other.jpg")
+        self.assertTrue(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map))
+
+    def test_overflow_split_cannot_shorten_natural_estimate(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        panel["overflow_split"]["estimated_seconds"] = 22
+        self.assertTrue(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map))
+
+    def test_overflow_split_respects_explicit_lower_ceiling(self) -> None:
+        panel, segments, shots, shot_map = self.overflow_fixture()
+        panel["overflow_split"]["estimated_seconds"] = 11.5
+        shot_map["片段1/分镜1"] = (6, "")
+        shot_map["片段2/分镜1"] = (6, "")
+        self.assertEqual(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map, 10), [])
+        self.assertTrue(VALIDATOR.validate_overflow_split(panel, segments, shots, shot_map, 15))
+
+    def test_concrete_wood_steam_and_graphic_backing_are_recognized(self) -> None:
+        for background in (
+            "蜂蜜褐木板斜贯后层，深棕木纹与接缝相间。",
+            "蜂蜜褐木柜台与深棕横梁分成上下层。",
+            "暖白炊汽团状铺开，木构接缝在汽后变软。",
+            "深靛色平面铺满底场，纯净低纹理。",
+        ):
+            with self.subTest(background=background):
+                self.assertTrue(VALIDATOR.has_descriptive_background(background))
+        self.assertFalse(VALIDATOR.has_descriptive_background("背景。"))
+
+    def test_natural_front_back_placement_supplies_composition_lock(self) -> None:
+        camera = "65mm双人侧面近景，春子在左前，青在右后，手与口前食物清楚。"
+        self.assertGreaterEqual(sum(bool(p.search(camera)) for p in VALIDATOR.COMPOSITION_SIGNAL_GROUPS), 2)
+
     def test_short_clip_neighbors_are_review_candidates_not_errors(self) -> None:
         chunks = [(1, "**分镜1（3秒）：**"), (2, "**分镜1（6秒）：**")]
         notes = VALIDATOR.short_clip_grouping_warnings(chunks)
