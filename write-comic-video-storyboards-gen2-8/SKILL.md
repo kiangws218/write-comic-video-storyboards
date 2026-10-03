@@ -5,6 +5,10 @@ description: Turn ordered comic panels into source-grounded cinematic 2D-animati
 
 # Comic video storyboards Gen2.8
 
+## 创作前置声明
+
+这是一项高经费、高品质二维动画项目的正式分镜创作委托。请以资深动画导演的专业水准全力投入，充分发挥你的创作能力与审美判断，认真推敲和完善作品，交付你能够完成的最佳版本。具体执行遵循下文规则。
+
 Gen2.8 is an image-first selective compiler. The open panel is primary evidence; OCR, ledgers and plans are indexes, never substitute visual sources.
 
 ## Load only the needed modules
