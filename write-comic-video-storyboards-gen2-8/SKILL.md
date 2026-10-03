@@ -49,6 +49,7 @@ When character references are supplied, resolve their names under the identity g
 - Field order is `【镜头设计】`, `【可见动作】`, `【可见背景】`, `【台词与语气】`, `【光影布光】`, `【声音设计】`.
 - `【镜头设计】` owns angle/axis, scale/focal length, crop/layout, depth/overlap/negative space, focus, camera move and landing. `【可见动作】` is the single owner of subject/object motion, performance and endpoints. Other fields must not restate or newly assert that motion. `【可见背景】` owns only renderable backing.
 - `【台词与语气】` alone owns speech, speaker, voice, emotion, pace, pause, stress, distance and dialogue spatial treatment. `【声音设计】` contains only environment sound, Foley, breath/body sound and silence; it may use `句末/重音后` only as a synchronization marker, never restate a voice or dialogue delivery. Do not add BGM, score or theme music.
+- Keep all evidence explanations, inference/admission reasons, performance cards and review results in the internal source ledger, not the formal script's fields, notes or appendix. Rich short-shot acting is valid when its actual serial/concurrent timing fits; no action-count or body-part quota.
 - Structural/source/performance blockers stop delivery. Heuristic advisories may remain only with a per-shot image-based disposition.
 
 ```powershell

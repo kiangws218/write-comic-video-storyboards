@@ -101,6 +101,31 @@ def valid_ledger(line: str = SHORT_LINE) -> dict:
     }
 
 
+def body_fixture(action: str) -> tuple[str, dict]:
+    """A static body anchor with room for admitted local pose development."""
+    text = storyboard().replace(
+        "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+        "50mm平视半身中景，人物位于中央，胸肩轮廓清楚，头发压住后层；固定镜头。",
+    ).replace(
+        "人物手掌朝上托住物件，手指先放松再轻微收紧。", action,
+    ).replace("手指轮廓，掌心保留浅影", "胸肩轮廓，下颌保留浅影").replace(
+        "手指收紧时衣料轻响", "衣料发出轻响",
+    )
+    ledger = valid_ledger()
+    ledger["panels"][0]["composition_lock"] = "平视半身中景，人物位于中央，胸肩轮廓清楚，头发压住后层"
+    facts = {"entities": ["人物"], "actions": [], "relations": ["人物胸肩与头部可见"]}
+    ledger["panels"][0]["source_facts"] = facts
+    ledger["shots"][0]["fact_claims"] = deepcopy(facts)
+    return text, ledger
+
+
+def pose_admission(claim: str, evidence: str = "原格胸肩与头位清楚，局部姿态发展在指定阶段恢复可见关系") -> dict:
+    return {
+        "claim": claim, "source_image": "panel.jpg", "visual_evidence": evidence,
+        "visible_in_framing": True, "anchor_safe": True,
+    }
+
+
 class ValidatorTests(unittest.TestCase):
     def run_validator(
         self,
@@ -243,6 +268,113 @@ class ValidatorTests(unittest.TestCase):
         }]
         result = self.run_validator(text, ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_pose_wording_families_require_the_same_admission(self) -> None:
+        for action in ("人物上半身前倾，随后停住。", "人物俯身，随后停住。",
+                       "人物后仰，随后落定。", "人物上身后倾，随后落定。",
+                       "人物回头，随后停住。", "人物转头，随后停住。",
+                       "人物重心向前移，随后落定。", "人物调整重心，随后落定。"):
+            with self.subTest(action=action):
+                text, ledger = body_fixture(action)
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("未通过图像证据/景别可见/锚点安全", result.stdout)
+
+    def test_alias_admission_covers_local_pose_without_faking_observed_action(self) -> None:
+        for action, claim in (("人物俯身，随后停住。", "上半身前倾"),
+                              ("人物上半身前倾，随后停住。", "俯身"),
+                              ("人物上身后倾，随后落定。", "后仰"),
+                              ("人物转头，随后停住。", "回头"),
+                              ("人物重心向前移，随后落定。", "调整重心")):
+            with self.subTest(action=action, claim=claim):
+                text, ledger = body_fixture(action)
+                ledger["shots"][0]["action_admissions"] = [pose_admission(claim)]
+                result = self.run_validator(text, ledger, True)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertEqual(ledger["panels"][0]["source_facts"]["actions"], [])
+
+    def test_different_action_family_does_not_share_an_admission(self) -> None:
+        text, ledger = body_fixture("人物上半身前倾，随后停住。")
+        ledger["shots"][0]["action_admissions"] = [pose_admission("后仰")]
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("主要动作“前倾”未通过", result.stdout)
+
+    def test_held_weight_is_not_a_weight_shift(self) -> None:
+        text, ledger = body_fixture("人物胸肩落稳，重心稳定，句末停住。")
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_upper_and_lower_body_are_anatomy_not_camera_scales(self) -> None:
+        for action in ("人物上半身前倾，随后落定。", "人物下半身扭转，随后停住。"):
+            with self.subTest(action=action):
+                text, _ = body_fixture(action)
+                result = self.run_validator(text)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertNotIn("混入静态构图/摄影信息", result.stdout)
+
+    def test_negated_and_mixed_text_context_does_not_block_visual_admission(self) -> None:
+        for evidence in (
+            "原格胸肩与头位清楚，局部前倾恢复指定姿态，并非仅根据台词推断。",
+            "原格胸肩轮廓可见；不是单凭剧情，局部前倾在指定阶段恢复。",
+            "对白提供节拍；源图中胸肩姿态可见，局部前倾保留当前支撑与落定关系。",
+        ):
+            with self.subTest(evidence=evidence):
+                text, ledger = body_fixture("人物上半身前倾，随后落定。")
+                ledger["shots"][0]["action_admissions"] = [pose_admission("前倾", evidence)]
+                result = self.run_validator(text, ledger, True)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertNotIn("错误：", result.stdout)
+                self.assertIn("语义复查图像依据", result.stdout)
+
+    def test_explicit_text_only_pose_evidence_still_fails(self) -> None:
+        for evidence in ("台词说要靠近", "仅根据剧情中的关心意图", "对白说要靠近；剧情要求前倾"):
+            with self.subTest(evidence=evidence):
+                text, ledger = body_fixture("人物上半身前倾，随后落定。")
+                ledger["shots"][0]["action_admissions"] = [pose_admission("前倾", evidence)]
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("仅用台词/剧情作证", result.stdout)
+
+    def test_local_pose_still_requires_visible_framing_and_anchor_safety(self) -> None:
+        for gate in ("visible_in_framing", "anchor_safe"):
+            with self.subTest(gate=gate):
+                text, ledger = body_fixture("人物上半身前倾，随后停住。")
+                admission = pose_admission("前倾")
+                admission[gate] = False
+                ledger["shots"][0]["action_admissions"] = [admission]
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+
+    def test_formal_script_rejects_evidence_notes_inside_and_outside_fields(self) -> None:
+        for note in ("证据说明：源图肩线清楚。", "<!-- 推断依据：当前姿态允许局部变化。 -->",
+                     '```json\n{"visual_evidence": "肩线清楚"}\n```',
+                     "## 附录\n保真复查：通过。"):
+            with self.subTest(note=note):
+                for text in (storyboard().replace("手指先放松", note + "手指先放松"),
+                             storyboard() + "\n" + note):
+                    result = self.run_validator(text)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn("正式分镜含内部证据/复查说明", result.stdout)
+
+    def test_internal_ledger_evidence_does_not_leak_into_formal_script(self) -> None:
+        text, ledger = body_fixture("人物俯身，随后停住。")
+        ledger["shots"][0]["action_admissions"] = [pose_admission("前倾", "证据说明：原格胸肩可见，恢复指定姿态")]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("正式分镜含内部", result.stdout)
+
+    def test_actual_dialogue_can_discuss_evidence_without_becoming_an_author_note(self) -> None:
+        text = storyboard(line="これはvisual_evidenceです。")
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("正式分镜含内部", result.stdout)
+
+    def test_quoted_author_note_in_voice_direction_is_not_masked_as_dialogue(self) -> None:
+        text = storyboard().replace("平静语气", "平静语气，旁注“证据说明：原格可见”")
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("正式分镜含内部证据/复查说明", result.stdout)
 
     def test_background_excerpt_must_appear_in_shot(self) -> None:
         ledger = deepcopy(valid_ledger())
@@ -680,7 +812,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("需表演语义复查", result.stdout)
 
-    def test_major_action_overload_is_soft_warning(self) -> None:
+    def test_short_shot_has_no_action_count_capacity_warning(self) -> None:
         text = storyboard().replace(
             "分镜1（5秒）", "分镜1（2秒）"
         ).replace(
@@ -689,7 +821,8 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("主要动作", result.stdout)
+        self.assertNotIn("主要动作", result.stdout)
+        self.assertNotIn("容量", result.stdout)
 
     def test_contextual_pointing_is_not_generic_gesture_warning(self) -> None:
         text = storyboard().replace(
@@ -698,7 +831,39 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("主要依赖抬手", result.stdout)
+        self.assertNotIn("出现通用手势", result.stdout)
+
+    def test_more_body_part_words_do_not_clear_generic_gesture_review(self) -> None:
+        for action in ("人物点头，随后停住。",
+                       "人物点头，目光收回，嘴角松开，肩线回落，随后停住。"):
+            with self.subTest(action=action):
+                text = storyboard().replace("人物手掌朝上托住物件，手指先放松再轻微收紧。", action)
+                result = self.run_validator(text)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertIn("出现通用手势", result.stdout)
+
+    def test_dense_short_performance_uses_concurrency_not_detail_count(self) -> None:
+        action = "人物肩线松落，下巴抬起，嘴张开，短促吐气；发束随肩线回落，视线最后停在画面左侧。"
+        text, ledger = body_fixture(action)
+        text = text.replace("分镜1（5秒）", "分镜1（3秒）")
+        ledger["shots"][0]["risk_flags"] = ["P"]
+        ledger["performance"] = [{
+            "target": "片段1/分镜1", "evidence": "当前可见胸肩、头部与发束",
+            "card": {"opening": "胸肩提起，头朝左", "beats": ["吐气时肩线松落与抬头交叠", "发束回落后持态"],
+                     "coupling": "发束跟随肩线", "landing": "头朝左，胸肩落稳"},
+            "details": ["肩线松落", "下巴抬起", "嘴张开", "短促吐气", "发束随肩线回落", "视线最后停在画面左侧"],
+            "intervals": [{"speech_seconds": 2.2, "acting_seconds": 3}],
+        }]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("容量", result.stdout)
+        ledger["performance"][0]["intervals"] = [
+            {"speech_seconds": 2.2, "acting_seconds": 3},
+            {"speech_seconds": 0, "acting_seconds": 1},
+        ]
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("超过镜头时长", result.stdout)
 
     def test_audio_line_with_hidden_visual_action_warns(self) -> None:
         text = storyboard().replace(

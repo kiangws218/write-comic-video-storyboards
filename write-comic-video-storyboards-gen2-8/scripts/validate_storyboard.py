@@ -45,15 +45,6 @@ OPTICAL_CRAFT_RE = re.compile(
     r"焦点(?:转移|后移|前移)|由虚转实|前景[^。；\r\n]{0,12}虚化|重度虚化|"
     r"近大远小|空间压缩|消失点|引导线|光轴|视平线|起幅|落幅|甩摇"
 )
-PERFORMANCE_SIGNAL_GROUPS = (
-    re.compile(r"视线|目光|瞳孔|眼神|注视|移开视线"),
-    re.compile(r"眼皮|眼睑|眉|嘴角|嘴唇|下巴|鼻翼|面部肌肉|眨眼"),
-    re.compile(r"转头|回头|抬头|低头|偏头|头部|脸转向|面部朝向|侧脸|正脸|鼻尖朝向"),
-    re.compile(r"呼吸|吸气|吐气|鼻息|吞咽|喉结"),
-    re.compile(r"手指|指尖|指节|掌心|握法|抓握|捏住|收紧|松开"),
-    re.compile(r"重心|肩膀|肩线|躯干|上身|俯身|后仰|前倾|停步"),
-    re.compile(r"发梢|头发|衣摆|裙摆|袖口|衣料|包带|惯性|余势|延迟|晃动|摆动|颤动"),
-)
 GENERIC_GESTURE_RE = re.compile(
     r"抬手(?:指向|指着|一指)|伸手(?:指向|指着)|竖起一根手指|"
     r"摊开?手|摊手|掌心向上|点头|抱臂|握拳"
@@ -68,16 +59,53 @@ PERFORMANCE_ENDPOINT_RE = re.compile(
     r"停住|落定|稳定|回落|落回|摊回|压实|恢复|收束|最后|最终|句末|说完后|"
     r"保持(?:视线|姿态|重心)|视线[^。；\r\n]{0,10}(?:停在|留在|定住)"
 )
-MAJOR_ACTION_RE = re.compile(
-    r"起身|转身|迈步|跑向|跑开|跳起|俯身|回头|拿出|放入|"
-    r"推开|拉开|抓住|扔出|接住|撞上|倒下|站起|坐下"
-)
+# Local wording families for admission bookkeeping, not proof of visual meaning.
+MAJOR_ACTION_PATTERNS = {
+    name: re.compile(pattern)
+    for name, pattern in {
+        "起身": r"起身|站起",
+        "转身": r"转身",
+        "迈步": r"迈步",
+        "跑向": r"跑向",
+        "跑开": r"跑开",
+        "跳起": r"跳起",
+        "前倾": r"前倾|俯身",
+        "后仰": r"后仰|后倾",
+        "转头": r"转头|回头",
+        "重心转移": (
+            r"(?:转移|移动|调整|收回|降低|放低)(?:身体)?重心|"
+            r"重心[^。；，,\r\n]{0,8}(?:转移|调整|前移|后移|侧移|下沉|回落|移回|移向|移到|落回|向[前后左右]移)"
+        ),
+        "拿出": r"拿出",
+        "放入": r"放入",
+        "推开": r"推开",
+        "拉开": r"拉开",
+        "抓住": r"抓住",
+        "扔出": r"扔出",
+        "接住": r"接住",
+        "撞上": r"撞上",
+        "倒下": r"倒下",
+        "坐下": r"坐下",
+    }.items()
+}
 CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|拉远|横移|环绕|手持")
 AUDIO_HIDDEN_VISUAL_RE = re.compile(
     r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
     r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
 )
-DIALOGUE_ONLY_EVIDENCE_RE = re.compile(r"台词|对白|气泡|剧情|语义|意图|翻译|剧本")
+TEXTUAL_EVIDENCE_RE = re.compile(r"台词|对白|气泡|剧情|语义|意图|翻译|剧本")
+TEXT_ONLY_CLAUSE_RE = re.compile(
+    r"^(?:(?:仅|只)(?:根据|依据|凭|据)?|根据|依据|基于)?"
+    r"(?:台词|对白|气泡|剧情|语义|意图|翻译|剧本)"
+    r"(?:说|写|要求|提到|表示|说明|表明|中|里|的|意思|推断|判断|[：:]|$)"
+)
+VISUAL_SOURCE_RE = re.compile(r"原格|源图|画面|当前格|面板|图中|参考图|图像|可见")
+AUTHORING_METADATA_RE = re.compile(
+    r"\b(?:visual_evidence|action_admissions?|fact_claims|motion_decision|"
+    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing)\b|"
+    r"证据说明|推断依据|准入依据|准入通过|图像证据|图像支持|保真复查|"
+    r"(?:证据|推断|准入|复查)(?:来源|说明|理由|结果)[：:]"
+)
 SOUND_DIALOGUE_DUPLICATION_RE = re.compile(
     r"对白|台词|话音|喊声|问话声|回答声|说话声|嗓音|"
     r"声线|音色|语气|语速|吐字|尾音|(?:拒绝|质问|回答|解释|否认)声"
@@ -203,7 +231,7 @@ ACTION_PHASE_BULLET_RE = re.compile(
 )
 ACTION_CAMERA_COMPOSITION_RE = re.compile(
     r"(?:\d{2,3}\s*mm|焦段|景深|机位|轴线|构图|负空间|"
-    r"(?:大|极)?特写|近景|中景|远景|全景|半身|胸像|膝上|"
+    r"(?:大|极)?特写|近景|中景|远景|全景|(?<![上下])半身|胸像|膝上|"
     r"前景|中景|后景|裁切|被(?:上|下|左|右)缘(?:裁|切)|"
     r"(?:占据|占满)(?:画面|左|右|中央|中部)|画面(?:上|下|左|右)三分之一)"
 )
@@ -253,6 +281,49 @@ def shot_field_values(block: str) -> dict[str, str]:
     for match in SHOT_FIELD_RE.finditer(block):
         values[match.group(1)] = match.group(2).strip()
     return values
+
+
+def major_action_kinds(text: str) -> set[str]:
+    """Normalize supported wording families; unknown wording still needs review."""
+    return {name for name, pattern in MAJOR_ACTION_PATTERNS.items() if pattern.search(text)}
+
+
+def is_explicitly_text_only_evidence(evidence: str) -> bool:
+    """Reject only clearly textual clauses, not negation or mixed visual evidence."""
+    clauses = [part.strip() for part in re.split(r"[。；;，,\r\n]+", evidence) if part.strip()]
+    return bool(clauses) and all(
+        TEXT_ONLY_CLAUSE_RE.search(clause) and not VISUAL_SOURCE_RE.search(clause)
+        for clause in clauses
+    )
+
+
+def delivery_metadata_errors(text: str) -> list[str]:
+    """Keep authoring evidence in the ledger, including outside the six fields."""
+    def mask_spoken_quotes(field: re.Match[str]) -> str:
+        value = field.group(0)
+        if field.group(1) != "台词与语气":
+            return value
+
+        def mask_quote(quote: re.Match[str]) -> str:
+            prefix = value[:quote.start()]
+            # Mask speaker-colon utterances, not quoted author notes or voice directions.
+            if prefix.count("（") == prefix.count("）") and re.search(
+                r"[A-Za-z0-9\u3400-\u9fff·]+[：:]\s*$", prefix,
+            ):
+                return ""
+            return quote.group(0)
+
+        return QUOTE_RE.sub(mask_quote, value)
+
+    # Actual spoken quotes may legitimately discuss evidence in the story.
+    scanned = SHOT_FIELD_RE.sub(
+        mask_spoken_quotes, text,
+    )
+    leaked = sorted({match.group(0) for match in AUTHORING_METADATA_RE.finditer(scanned)})
+    return [
+        f"正式分镜含内部证据/复查说明：{term}；只放内部源图台账，不写入六字段、旁注或附录。"
+        for term in leaked
+    ]
 
 
 def segment_chunks(
@@ -543,9 +614,7 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
         fields = shot_field_values(block)
         action = fields.get("可见动作", "")
         camera = fields.get("镜头设计", "")
-        sound = fields.get("声音设计", "")
         dialogue = fields.get("台词与语气", "")
-        signal_count = sum(bool(pattern.search(action)) for pattern in PERFORMANCE_SIGNAL_GROUPS)
         pure_object_shot = bool(PURE_OBJECT_SHOT_RE.search(block))
         repeated_utterance = has_repeated_utterance(dialogue)
         expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
@@ -567,21 +636,13 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
                 f"{target}含重复话语但【台词与语气】没有区分前后节拍；"
                 "请在台词栏用压力、停顿、重音或收尾变化区分重复表达。"
             )
-        generic_match = GENERIC_GESTURE_RE.search(block)
-        if generic_match and not CONTEXTUAL_GESTURE_RE.search(block):
+        generic_match = GENERIC_GESTURE_RE.search(action)
+        if generic_match and not CONTEXTUAL_GESTURE_RE.search(action):
             segment = target.split("/", 1)[0]
             generic_by_segment.setdefault(segment, []).append(target)
-            if signal_count < 2:
-                warnings.append(
-                    f"{target}主要依赖抬手、指向、摊手、点头或抱臂等通用手势；"
-                    "请确认动作来自人物意图、道具或当前身体状态。"
-                )
-        major_actions = len(MAJOR_ACTION_RE.findall(block))
-        action_limit = 3 if duration <= 3 else 4 if duration <= 6 else 5
-        if major_actions > action_limit and not PERFORMANCE_SEQUENCE_RE.search(block):
             warnings.append(
-                f"{target}在{duration}秒内包含{major_actions}个主要动作且缺少并发/先后组织；"
-                "微动作可并行，但请复核主要位移和物件操作的容量。"
+                f"{target}出现通用手势；请复查它是否服务当前任务/交流。"
+                "增加身体部位关键词不能代替情境依据，短镜头的丰富交叠表演无需按数量删减。"
             )
         if ("大光圈" in block and re.search(r"大景深|全景深|强景深", block)) or (
             "浅景深" in block and re.search(r"大景深|全景深|强景深", block)
@@ -599,7 +660,7 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
     for segment, targets in generic_by_segment.items():
         if len(targets) >= 3:
             warnings.append(
-                f"{segment}的相邻镜头重复通用手势：{targets}；请做动作多样性复核。"
+                f"{segment}多个镜头出现通用手势：{targets}；请复核情境差异，而非按动作数量删减。"
             )
 
     blocks_by_segment: dict[str, list[str]] = {}
@@ -624,6 +685,7 @@ def validate_source_ledger(
     ledger_path: Path,
     main_text: str,
     image_dir: Path | None,
+    warnings: list[str] | None = None,
 ) -> list[str]:
     errors: list[str] = []
     try:
@@ -1265,7 +1327,7 @@ def validate_source_ledger(
             )
 
         action_text = fields.get("可见动作", "")
-        major_actions = set(MAJOR_ACTION_RE.findall(action_text))
+        major_actions = major_action_kinds(action_text)
         admissions = shot.get("action_admissions")
         if not isinstance(admissions, list):
             errors.append(f"{target}的action_admissions必须是数组，无主要动作时写空数组。")
@@ -1281,24 +1343,29 @@ def validate_source_ledger(
             if not isinstance(claim, str) or not claim.strip():
                 errors.append(f"{target}的action_admission缺少claim。")
                 continue
-            admitted_actions.add(claim)
+            admitted_actions.update(major_action_kinds(claim))
             if not isinstance(source_image, str) or Path(source_image).name.casefold() not in {
                 Path(item).name.casefold() for item in owner_images
             }:
                 errors.append(f"{target}的动作“{claim}”没有绑定所属源图。")
             if not isinstance(visual_evidence, str) or sum(ch.isalnum() for ch in visual_evidence) < 4:
                 errors.append(f"{target}的动作“{claim}”缺少具体visual_evidence。")
-            elif DIALOGUE_ONLY_EVIDENCE_RE.search(visual_evidence):
+            elif is_explicitly_text_only_evidence(visual_evidence):
                 errors.append(
                     f"{target}的动作“{claim}”仅用台词/剧情作证；"
                     "台词意思不能证明画面正在发生该动作。"
+                )
+            elif warnings is not None and TEXTUAL_EVIDENCE_RE.search(visual_evidence):
+                warnings.append(
+                    f"{target}的动作“{claim}”证据说明涉及文本语境；请语义复查图像依据与推断边界。"
+                    "提及台词、否定仅凭台词或图像/文本混合说明不自动判错；复查结果只记内部台账。"
                 )
             if admission.get("visible_in_framing") is not True:
                 errors.append(f"{target}的动作“{claim}”未证明当前景别能看见。")
             if admission.get("anchor_safe") is not True:
                 errors.append(f"{target}的动作“{claim}”未证明不破坏原格锚点。")
         for action in sorted(major_actions):
-            if not any(action in claim or claim in action for claim in admitted_actions):
+            if action not in admitted_actions:
                 errors.append(
                     f"{target}的主要动作“{action}”未通过图像证据/景别可见/锚点安全三问准入。"
                 )
@@ -1467,6 +1534,7 @@ def main() -> int:
     text = args.storyboard.read_text(encoding="utf-8")
     errors: list[str] = []
     warnings: list[str] = []
+    errors.extend(delivery_metadata_errors(text))
     ledger_path = args.source_ledger or args.dialogue_ledger
     overflow_segments, overflow_errors = manual_overflow_segments(ledger_path, args.max_seconds)
     errors.extend(overflow_errors)
@@ -1721,7 +1789,7 @@ def main() -> int:
                     f"{shot_label}缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
                 )
             if dialogue_characters == 0 and duration > 4 and not (
-                MAJOR_ACTION_RE.search(action_text) or PERFORMANCE_SEQUENCE_RE.search(action_text)
+                major_action_kinds(action_text) or PERFORMANCE_SEQUENCE_RE.search(action_text)
             ):
                 warnings.append(
                     f"{shot_label}为{duration}秒无台词镜头且缺少可见发展；"
@@ -1790,7 +1858,7 @@ def main() -> int:
         errors.append("完整验证要求--source-ledger版本3台账。")
     if ledger_path:
         errors.extend(
-            validate_source_ledger(ledger_path, main_text, args.image_dir)
+            validate_source_ledger(ledger_path, main_text, args.image_dir, warnings)
         )
 
     print(f"片段数：{len(chunks)}")
