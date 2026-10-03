@@ -28,6 +28,8 @@ When the camera moves during character performance, state what initiates the mov
 
 Camera clarifies action, attention, space, relation, emotion, or result; it cannot substitute for performance. A cited composition remains recognizable at its declared phase. A changed viewpoint is separately justified coverage; moving within one setup is not a hidden cut or automatically a new numbered shot.
 
+Plan acting before an optional tightening of the view. Preserve visible shoulders, torso, existing gesture and partner response when they carry its readable change. Do not repeatedly select face, back-of-head, hair or ear inserts just because their geometry is easy or their subject differs from the next panel: a coverage difference is necessary but not a dramatic purpose. A supported detail insert can reveal pressure, hesitation or information; a source-imposed facial crop can carry clear facial acting. Choose from those actual functions rather than forcing wider shots or camera motion.
+
 For continuous action use temporal contrast: dense small changes/steady camera for anticipation; wider pose spacing and directional follow for acceleration; concentrated in-betweens for grip/balance/mechanics; selective slow motion only at supported realization/apex/near-contact; compact contact treatment; proportional response; readable settled result. Keep one intention and consequence together when duration allows.
 
 ## Lighting and materials

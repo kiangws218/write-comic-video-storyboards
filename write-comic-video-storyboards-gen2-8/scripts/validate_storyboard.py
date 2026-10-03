@@ -380,6 +380,57 @@ def compact_text(value: str) -> str:
     return re.sub(r"\s+", "", value)
 
 
+def performance_bookkeeping_warnings(
+    performance: list, shots: list, shot_map: dict[str, tuple[int, str]],
+) -> list[str]:
+    """Expose copied planning/timing records, not infer creative quality or quotas."""
+    warnings: list[str] = []
+    source_shots = {
+        shot["target"]: shot for shot in shots
+        if isinstance(shot, dict) and isinstance(shot.get("target"), str)
+    }
+    whole_shot_timing: dict[str, bool] = {}
+    for entry in performance:
+        if not isinstance(entry, dict):
+            continue
+        target = entry.get("target")
+        if not isinstance(target, str) or target not in shot_map:
+            continue
+        shot = source_shots.get(target, {})
+        card = entry.get("card")
+        if "P" in (shot.get("risk_flags") or []) and isinstance(card, dict):
+            coupling = card.get("coupling")
+            if isinstance(coupling, str) and coupling.strip() and any(
+                isinstance(shot.get(field), str)
+                and compact_text(coupling) == compact_text(shot[field])
+                for field in ("motion_decision", "risk_basis")
+            ):
+                warnings.append(
+                    f"{target}需表演卡语义复查：coupling复制了动作准入/风险说明；"
+                    "核查是否实际设计了任务或人物互动。一个真实节拍或有意持态仍有效，"
+                    "此提示不要求增加手势或改写同义词。"
+                )
+        intervals = entry.get("intervals")
+        whole_shot_timing[target] = bool(
+            isinstance(intervals, list) and len(intervals) == 1
+            and isinstance(intervals[0], dict)
+            and intervals[0].get("concurrent", True) is True
+            and all(
+                valid_seconds(intervals[0].get(field))
+                and intervals[0][field] == shot_map[target][0]
+                for field in ("speech_seconds", "acting_seconds")
+            )
+        )
+    # Three repeated records trigger review, not a required acting density.
+    if len(whole_shot_timing) >= 3 and all(whole_shot_timing.values()):
+        warnings.append(
+            "表演估时需批量复查：全部登记镜头均把对白与表演设为整镜等长并行；"
+            "核查是否遗漏独立前置、停顿或尾持态。真正全程并行可保留，"
+            "不按此模式判定表演质量或要求新增动作。"
+        )
+    return warnings
+
+
 def estimated_japanese_speech_seconds(value: str) -> float:
     """Independently estimate natural speech time from the final Japanese text."""
     meaningful = re.findall(r"[A-Za-z0-9\u3040-\u30ff\u3400-\u9fff々ー]", value)
@@ -1518,7 +1569,11 @@ def validate_source_ledger(
                 errors.append(f"{target}间隔估时必须为有限非负数。")
                 continue
             speaking, acting = interval["speech_seconds"], interval["acting_seconds"]
-            duration += max(speaking, acting)
+            concurrent = interval.get("concurrent", True)
+            if not isinstance(concurrent, bool):
+                errors.append(f"{target}间隔concurrent必须为布尔值。")
+                continue
+            duration += max(speaking, acting) if concurrent else speaking + acting
             speech += speaking
         if speech + 1e-6 < seconds_by_target.get(target, 0):
             errors.append(f"{target}表演估时未覆盖全部映射对白。")
@@ -1533,6 +1588,8 @@ def validate_source_ledger(
             continue
         # Temporal meaning and acting quality require the image-grounded semantic
         # review. Vocabulary heuristics remain advisories, never P-slot blockers.
+    if warnings is not None:
+        warnings.extend(performance_bookkeeping_warnings(performance, shots, shot_map))
     return errors
 
 

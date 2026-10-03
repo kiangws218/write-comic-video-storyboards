@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 import os
 import subprocess
 import sys
@@ -11,6 +12,9 @@ from pathlib import Path
 
 
 SCRIPT = Path(__file__).with_name("validate_storyboard.py")
+VALIDATOR_SPEC = importlib.util.spec_from_file_location("storyboard_validator", SCRIPT)
+VALIDATOR = importlib.util.module_from_spec(VALIDATOR_SPEC)
+VALIDATOR_SPEC.loader.exec_module(VALIDATOR)
 SHORT_LINE = "あの……お客さん？"
 BACKGROUND = "暖象牙色向淡天蓝渐变铺满背景"
 
@@ -972,6 +976,71 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(text, ledger, True)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("超过镜头时长", result.stdout)
+
+    def test_explicit_sequential_interval_adds_speech_and_acting(self) -> None:
+        ledger = valid_ledger()
+        ledger["performance"] = [{
+            "target": "片段1/分镜1", "evidence": "当前可见手部",
+            "details": ["手指先放松再轻微收紧"],
+            "intervals": [{"speech_seconds": 3, "acting_seconds": 3, "concurrent": False}],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("共需6秒", result.stdout)
+        ledger["performance"][0]["intervals"][0]["concurrent"] = True
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_serial_intervals_with_concurrent_layers_fit(self) -> None:
+        ledger = valid_ledger()
+        ledger["performance"] = [{
+            "target": "片段1/分镜1", "evidence": "当前可见手部",
+            "details": ["手指先放松再轻微收紧"],
+            "intervals": [
+                {"speech_seconds": 0, "acting_seconds": 1, "concurrent": False},
+                {"speech_seconds": 2.2, "acting_seconds": 3, "concurrent": True},
+                {"speech_seconds": 0, "acting_seconds": 1, "concurrent": False},
+            ],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_interval_rejects_nonboolean_concurrency(self) -> None:
+        ledger = valid_ledger()
+        ledger["performance"] = [{
+            "target": "片段1/分镜1", "evidence": "当前可见手部",
+            "details": ["手指先放松再轻微收紧"],
+            "intervals": [{"speech_seconds": 2.2, "acting_seconds": 3, "concurrent": "false"}],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("concurrent必须为布尔值", result.stdout)
+
+    def test_copied_coupling_is_advisory_not_gesture_requirement(self) -> None:
+        basis = "当前指腹与掌心托举关系支持减压，接触不变。"
+        entries = [{"target": "片段1/分镜1", "card": {"coupling": "  " + basis + "\n"}}]
+        shots = [{"target": "片段1/分镜1", "risk_flags": ["P"], "motion_decision": basis}]
+        notes = VALIDATOR.performance_bookkeeping_warnings(entries, shots, {"片段1/分镜1": (5, "")})
+        self.assertEqual(len(notes), 1)
+        self.assertIn("coupling复制", notes[0])
+        entries[0]["card"]["coupling"] = "指腹减压时仍然托牢物件，回应保持在这个接触中。"
+        self.assertEqual(VALIDATOR.performance_bookkeeping_warnings(entries, shots, {"片段1/分镜1": (5, "")}), [])
+
+    def test_full_shot_timing_pattern_warns_only_as_batch_review(self) -> None:
+        shot_map = {f"片段{i}/分镜1": (5, "") for i in range(1, 4)}
+        entries = [{
+            "target": target, "intervals": [{"speech_seconds": 5, "acting_seconds": 5, "concurrent": True}],
+        } for target in shot_map]
+        self.assertEqual(VALIDATOR.performance_bookkeeping_warnings(entries[:2], [], shot_map), [])
+        notes = VALIDATOR.performance_bookkeeping_warnings(entries, [], shot_map)
+        self.assertEqual(len(notes), 1)
+        self.assertIn("真正全程并行可保留", notes[0])
+        entries[0]["intervals"][0]["acting_seconds"] = 3
+        self.assertEqual(VALIDATOR.performance_bookkeeping_warnings(entries, [], shot_map), [])
+
+    def test_bookkeeping_handles_invalid_records_without_crashing(self) -> None:
+        entries = [None, {}, {"target": []}, {"target": "t", "intervals": [None]}, {"target": "t", "card": {"coupling": []}}]
+        self.assertEqual(VALIDATOR.performance_bookkeeping_warnings(entries, [None, {}], {"t": (5, "")}), [])
 
     def test_audio_line_with_hidden_visual_action_warns(self) -> None:
         text = storyboard().replace(
