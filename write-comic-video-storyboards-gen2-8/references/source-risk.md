@@ -10,7 +10,7 @@ Refine the phase lock defined in `core-authoring.md`: angle/scale; left-right/de
 - Overlap: preserve contour ownership and depth at the anchor. An admitted approach may change overlap as the source relation forms; do not separate silhouettes at the anchor for convenience.
 - Topology: preserve connections, holes, straps, chains, articulated parts, clothing openings, and anatomy; do not normalize unusual objects.
 - Fast action: lock axis, direction, contact phase, and result. Apply core authoring's connective-phase admission; do not auto-complete wind-up, rebound, recovery, or another attack.
-- Abstract background: retain gradient, speed/impact field, texture, or white space instead of restoring the known location.
+- Backing uncertainty: distinguish deliberate emotional/impact abstraction from an omitted manga environment under core authoring's background authority gate. Do not preserve every gray gradient automatically, or restore scenery into every deliberate graphic. Inspect only neighboring environment views actually needed; preserve crop/axis/occlusion and record reconstruction as inferred production design, not current-panel visibility.
 
 An uncited view declares purpose/evidence. It may clarify an established beat but cannot reveal an unproven person, surface, room side, route, contact, emotion, or result. Compare it with both neighboring source shots; remove near-duplicates or change at least two meaningful dimensions.
 

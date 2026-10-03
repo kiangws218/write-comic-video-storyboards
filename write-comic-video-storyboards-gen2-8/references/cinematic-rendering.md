@@ -4,6 +4,8 @@ Read after grounding and performance planning when cinematic finish is requested
 
 ## Visual baseline
 
+Resolve backing authority under `core-authoring.md` before polishing it. For omitted scenery, graphic emotion fields or background palette/effects, read `background-design.md`; mood grading does not replace a continuous environment. Its non-diegetic graphic effects are distinct from the physical atmosphere below.
+
 Use supplied references first. Otherwise choose at most one work, one studio, and one director-style reference only when each clarifies a compatible target. Translate names into a few executable properties—2D acting density, line/background treatment, warm-cool contrast, depth, or light behavior—and state the stack once.
 
 ## Camera and rhythm
@@ -43,6 +45,8 @@ Atmosphere is conditional:
 - bloom/glow/overexposure: local peak followed by decay.
 
 Use only effects with a job; do not stack them by habit.
+
+A graphic star, flat stripe or soft-focus color patch in an admitted emotion field is not a physical light source, fog bank or magic event. It needs dramatic purpose and a researched visual form, not invented weather or automatic light spill onto the performer. Physical atmosphere still needs the visible cause above.
 
 ## Effects and finish gate
 

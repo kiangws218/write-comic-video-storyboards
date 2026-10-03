@@ -102,7 +102,7 @@ TEXT_ONLY_CLAUSE_RE = re.compile(
 VISUAL_SOURCE_RE = re.compile(r"原格|源图|画面|当前格|面板|图中|参考图|图像|可见")
 AUTHORING_METADATA_RE = re.compile(
     r"\b(?:visual_evidence|action_admissions?|fact_claims|motion_decision|"
-    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing)\b|"
+    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing|background_decision)\b|"
     r"证据说明|推断依据|准入依据|准入通过|图像证据|图像支持|保真复查|"
     r"(?:证据|推断|准入|复查)(?:来源|说明|理由|结果)[：:]"
 )
@@ -151,6 +151,20 @@ BACKGROUND_SUBJECT_COMPOSITION_RE = re.compile(
     r"头盔|晶石|武器|道具)[^。；\r\n]{0,24}"
     r"(?:位于画面|占据|压在|伸入|围住|遮挡|前景|主体|左侧|右侧|中央)"
 )
+# Narrow assertions fail; body vocabulary alone only asks for semantic review.
+BACKGROUND_BODY_RE = re.compile(
+    r"脸部|面颊|贴布|发束|长发|头发|发丝|皮肤|口腔|指缝|衣领|袖口|甲片|额甲|眼窝"
+)
+BACKGROUND_BODY_AS_BACKING_RE = re.compile(
+    r"(?:脸部|面颊|贴布|发束|长发|头发|发丝|皮肤|口腔|指缝|衣领|袖口|甲片|额甲|眼窝)"
+    r"[^。；\r\n]{0,60}(?:(?:填充|填满|铺满|占满|构成|形成)[^。；\r\n]{0,10}背景|"
+    r"构成(?:两侧|左右|画面)?边界|(?:占满|铺满|填满)画面)"
+)
+BACKGROUND_DEPICTION_RE = re.compile(r"壁画|海报|肖像|照片|画像|广告画")
+BACKGROUND_OCCLUSION_RE = re.compile(
+    r"(?:独立|可见)?背景(?:完全|全部)?被(?:满幅)?(?:主体|人物|物体)"
+    r"(?:完全|全部)?遮(?:住|挡)|背景(?:完全|全部)?为(?:满幅)?主体所遮(?:住|挡)"
+)
 SELF_CONTAINED_META_RE = re.compile(
     r"保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
     r"上一(?:格|镜|镜头|片段)|前一(?:格|镜|镜头|片段)|"
@@ -170,8 +184,7 @@ BACKGROUND_VISUAL_RE = re.compile(
     r"墙(?:面|壁)?|室内|走廊|房间|街道|屋顶|山(?:体|坡|脊)?|灌木|"
     r"水面|湖面|海面|河面|岩(?:壁|地|石)?|洞穴|速度(?:线|带|场)|"
     r"放射线|冲击底|渐变|图形底|纯色|纯白图形底|色块|亮区|夜色|阴影|光幕|雾|烟尘|尘土|雨幕|雪地|"
-    r"箱壁|盒壁|内衬|布面|衣料[^。；\r\n]{0,12}(?:铺满|填满|遮满)|"
-    r"(?:皮肤|肤色|发丝|头发|白发|棕发|表面)[^。；\r\n]{0,16}(?:铺满|填满|构成|形成)|"
+    r"箱壁|盒壁|内衬|布景|帘布|布面|"
     r"(?:铺满|填满|遮满)(?:画面|背景)"
 )
 NEGATIVE_PROMPT_RE = re.compile(
@@ -424,6 +437,35 @@ def has_descriptive_background(block: str) -> bool:
         if meaningful >= 6 and clause.strip() not in {"背景", "森林背景", "实体背景"}:
             return True
     return False
+
+
+def background_field_issues(background: str, shot_label: str) -> tuple[list[str], list[str]]:
+    """Check ownership, without treating every body/object noun as a hard ban."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    for clause in re.split(r"[\n。；;]", background):
+        if not clause.strip():
+            continue
+        # A painted face is scenery, not the present performer's anatomy.
+        if BACKGROUND_DEPICTION_RE.search(clause):
+            continue
+        if BACKGROUND_BODY_AS_BACKING_RE.search(clause):
+            errors.append(
+                f"{shot_label}的【可见背景】把人物身体/衣饰表面冒充背景；"
+                "构图遮挡移到镜头设计，材质明暗移到光影布光。"
+                "满幅主体确实挡住背景时陈述可见性，不凑造背景。"
+            )
+        elif BACKGROUND_SUBJECT_COMPOSITION_RE.search(clause):
+            errors.append(
+                f"{shot_label}的【可见背景】混入主体、道具位置或构图关系；"
+                "这里只写可生成背景，把静态构图移到【镜头设计】，动态表演移到【可见动作】。"
+            )
+        elif BACKGROUND_BODY_RE.search(clause):
+            warnings.append(
+                f"{shot_label}需背景字段语义复查：疑似混入身体、衣饰或遮挡关系；"
+                "按当前画面判定字段归属，实景布置或画中图像不因单个词被禁用。"
+            )
+    return errors, warnings
 
 
 def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str]:
@@ -785,8 +827,8 @@ def validate_source_ledger(
         if not isinstance(background, dict):
             errors.append(f"{image}缺少background对象。")
         else:
-            if background.get("type") not in {"physical", "graphic", "surface"}:
-                errors.append(f"{image}的background.type必须是physical/graphic/surface。")
+            if background.get("type") not in {"physical", "graphic", "surface", "omitted", "occluded"}:
+                errors.append(f"{image}的background.type必须是physical/graphic/surface/omitted/occluded。")
             description = background.get("description")
             if not isinstance(description, str) or sum(ch.isalnum() for ch in description) < 6:
                 errors.append(f"{image}的background.description过短或缺失。")
@@ -1152,8 +1194,45 @@ def validate_source_ledger(
         excerpt = shot.get("background_excerpt")
         if not isinstance(excerpt, str) or sum(ch.isalnum() for ch in excerpt) < 6:
             errors.append(f"{target}的background_excerpt过短或缺失。")
-        elif compact_text(excerpt) not in compact_text(shot_map[target][1]):
-            errors.append(f"{target}的background_excerpt未出现在分镜正文。")
+        elif compact_text(excerpt) not in compact_text(shot_field_values(shot_map[target][1]).get("可见背景", "")):
+            errors.append(f"{target}的background_excerpt未出现在分镜正文的【可见背景】字段。")
+        decision = shot.get("background_decision")
+        owner_refs = shot.get("source_images") or shot.get("derived_from") or []
+        owner_refs = owner_refs if isinstance(owner_refs, list) else []
+        needs_decision = any(
+            isinstance(ref, str) and isinstance(panel_by_image.get(Path(ref).name.casefold(), {}).get("background"), dict)
+            and panel_by_image[Path(ref).name.casefold()]["background"].get("type") in {"omitted", "occluded"}
+            for ref in owner_refs
+        )
+        if decision is None and needs_decision:
+            errors.append(f"{target}的省略/遮住背景缺少background_decision；不能自动路由为抽象底。")
+        if decision is not None:
+            if not isinstance(decision, dict):
+                errors.append(f"{target}的background_decision必须是对象。")
+            else:
+                mode = decision.get("mode")
+                if not isinstance(mode, str) or mode not in {"physical", "continuity", "graphic", "occluded"}:
+                    errors.append(f"{target}的background_decision.mode无效。")
+                if not isinstance(decision.get("basis"), str) or not decision["basis"].strip():
+                    errors.append(f"{target}的background_decision缺少basis。")
+                if mode == "continuity":
+                    refs = decision.get("source_refs")
+                    if not isinstance(refs, list) or not refs:
+                        errors.append(f"{target}的实景延续缺少source_refs。")
+                    else:
+                        for ref in refs:
+                            known = False
+                            if isinstance(ref, str) and ref.strip():
+                                try:
+                                    reference_path = Path(ref)
+                                    known = reference_path.is_file() if reference_path.is_absolute() else reference_path.name.casefold() in panel_by_image
+                                except (OSError, ValueError):
+                                    known = False
+                            if not known:
+                                errors.append(f"{target}的实景延续引用不存在：{ref}")
+                if mode == "occluded" and isinstance(excerpt, str) and not BACKGROUND_OCCLUSION_RE.search(excerpt):
+                    if warnings is not None:
+                        warnings.append(f"{target}需背景遮挡语义复查：occluded与背景正文是否一致。")
         if shot.get("source_audit") != "pass":
             errors.append(f"{target}未通过原图语义复核。")
         if shot.get("unsupported_additions") != []:
@@ -1583,6 +1662,11 @@ def main() -> int:
             return
 
         if combat_sequences:
+            background_errors, background_warnings = background_field_issues(
+                shot_field_values(chunk).get("可见背景", ""), f"{label}{number}的战斗段"
+            )
+            errors.extend(background_errors)
+            warnings.extend(background_warnings)
             sequence_numbers: list[int] = []
             total_duration = 0
             for match in combat_sequences:
@@ -1619,7 +1703,8 @@ def main() -> int:
                 )
             if not has_descriptive_background(chunk):
                 errors.append(
-                    f"{label}{number}的战斗段缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
+                    f"{label}{number}的战斗段缺少可见背景；请写实景、图形底场或环境表面；"
+                    "满幅遮挡按背景可见性处理。"
                 )
 
         shot_numbers: list[int] = []
@@ -1678,6 +1763,9 @@ def main() -> int:
             duration = int(float(shot.group(2)))
             dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
             fields = shot_field_values(block)
+            background_errors, background_warnings = background_field_issues(fields.get("可见背景", ""), shot_label)
+            errors.extend(background_errors)
+            warnings.extend(background_warnings)
             errors.extend(semantic_trigger_errors(fields, shot_label))
             errors.extend(field_ownership_errors(fields, shot_label))
             errors.extend(counted_gaze_target_errors(fields, shot_label))
@@ -1697,15 +1785,10 @@ def main() -> int:
                 )
             if REMOVED_ENVIRONMENT_AUDIO_RE.search(block):
                 errors.append(f"{shot_label}仍含已移除的环境音字段；请合并进【声音设计】并删除重复内容。")
-            if BACKGROUND_SUBJECT_COMPOSITION_RE.search(fields.get("可见背景", "")):
-                errors.append(
-                    f"{shot_label}的【可见背景】混入主体、道具位置或构图关系；"
-                    "这里只写可生成背景，把静态构图移到【镜头设计】，动态表演移到【可见动作】。"
-                )
             if BACKGROUND_PAGE_ARTIFACT_RE.search(fields.get("可见背景", "")):
                 errors.append(
                     f"{shot_label}把气泡/页面/格间空白误写成【可见背景】；"
-                    "请回看原图，只写物理环境、明确图形场或铺满画面的表面。"
+                    "请回看原图，按背景依据描述环境、图形底场或实际完整遮挡。"
                 )
             for field_name in ("镜头设计", "可见动作", "可见背景", "光影布光", "声音设计"):
                 overlay_match = PAGE_OVERLAY_VISUAL_RE.search(fields.get(field_name, ""))
@@ -1786,7 +1869,8 @@ def main() -> int:
                 )
             if not has_descriptive_background(fields.get("可见背景", "")):
                 errors.append(
-                    f"{shot_label}缺少可见背景；请写出实体环境、图形背景或填满画面的近景表面。"
+                    f"{shot_label}缺少可见背景；请写实景、图形底场或环境表面；"
+                    "背景确被满幅主体遮住时陈述该可见性状态。"
                 )
             if dialogue_characters == 0 and duration > 4 and not (
                 major_action_kinds(action_text) or PERFORMANCE_SEQUENCE_RE.search(action_text)

@@ -4,7 +4,7 @@ This file owns source evidence, phase-specific anchors, temporal action design, 
 
 ## Evidence and batch discipline
 
-Evidence precedence is: current open panel; explicit supplied character/environment/prop/palette reference; adjacent panel only for chronology or continuous motion; story context only to decide what to inspect. An adjacent panel or ledger never proves current visibility.
+Evidence precedence is: current open panel; explicit supplied character/environment/prop/palette reference; adjacent panel for chronology/continuous motion and the bounded background-continuity admission below; story context only to decide what to inspect. An adjacent panel or ledger never proves current visibility. Admitted environment reconstruction is a production decision, not a claim that the current manga panel draws it.
 
 Draft one to three contiguous panels at a time with their 720p proxies open. A contact sheet is insufficient for exact composition. Escalate only unresolved small text, identity, hand/contact, overlap, topology, perspective or fast motion to original resolution, and record the reason.
 
@@ -15,6 +15,21 @@ An SFX overlay may supply only a concrete audio cue. Do not describe its languag
 Treat those facts as a current-shot closure. Every named target of gaze, gesture, touch, transfer, movement, camera tracking, light/effect or sound must be established in the current source-locked or approved derived view. A person/object known only from adjacent panels, dialogue or story context is not renderable in this shot. If the image proves only direction, write `看向画面左侧外/镜头下方/画面右侧` rather than naming the unseen target. Apply this to all targets, not gaze alone.
 
 Dialogue and plot intention are lookup hints, never motion evidence. A line meaning `快跑/抢攻/把它给我` cannot by itself authorize running, attacking or handing over. Admit substantive displacement, body reorientation, contact change or prop operation through the temporal action design below; a failed candidate is rejected, not a reason to freeze all other supported movement.
+
+## Background authority and field boundary
+
+`【可见背景】` describes physical environment or non-diegetic graphic backing: location surfaces/landscape, useful layers, palette/texture and their own movement. Performer faces, skin, hair, costume, hands and the main prop are not background merely because they sit behind another body part. Static occlusion/layout belongs to camera; subject motion to action; highlights/shadows/material response to lighting. A wall or ground may fill a shot; a face or armor surface does not become environment by filling it. Established set furnishings may be scenery when they serve that role; do not ban every object or every cloth surface by vocabulary alone.
+
+Resolve one of four modes before writing:
+
+- **Physical:** retain the current panel's actual environment and geometry. Mood grading respects established base colors, rather than repainting known objects at each line.
+- **Continuity:** when manga omits scenery during a continuous scene, prefer restrained reconstruction from inspected adjacent same-location views or a supplied environment reference. Admit only already established environmental portions compatible with current axis, crop, depth and occlusion. Preserve foreground placement/count/silhouette/contact. Do not expose an unseen room side, door, route, new furnishing or interaction target; dialogue alone cannot establish location. If geometry is uncertain, narrow to an established soft/distant plane and record the limit, or request the missing reference when it matters. This exception grants backing only, not new people, props, actions or named gaze/contact targets.
+- **Graphic:** preserve or design an intentional emotional/comedic/impact field when this beat supports it. Gray gradients or blank areas alone cannot distinguish deliberate abstraction from manga economy; assess the scene and neighboring drawn environment. Physical scenery is the usual baseline, but there is no real/abstract percentage quota; a supported sustained stylized sequence remains legitimate.
+- **Occluded:** when the established crop leaves no independent backing visible, write the factual visibility statement `独立背景完全被主体遮住。` (equivalent natural wording is valid). Keep subject detail in its owning fields. This is not a negative instruction; do not invent a colored sliver, widen the crop or mislabel a cheek/hair/armor as background to fill the field. Verify the full-frame crop semantically; the sentence itself is not proof.
+
+For reconstruction, graphic selection/recoloring, occlusion or an ambiguous backing decision, record compact `background_decision` in the existing V3 shot: `mode` (`physical/continuity/graphic/occluded`), `basis`, and `source_refs` for continuity (registered inspected panel filenames, or absolute local paths to inspected adjacent-panel/environment references). Reuse `background_excerpt` for rendered text. Keep current-panel `background` and `source_facts` observational: `omitted` and `occluded` are valid panel background types. Do not backfill reconstructed scenery, production colors or decorative effects as drawn facts; do not relabel an intentional source graphic as an omission for convenience.
+
+A cited foreground composition can remain source-locked with admitted omitted-background reconstruction or production palette choice; record the limited backing adaptation internally instead of claiming exact backing fidelity. Foreground/camera rearrangement still needs justified uncited coverage. Read `background-design.md` for treatments and research. No parallel background ledger or new ledger version.
 
 ## Source locks and temporal action design
 
@@ -121,13 +136,15 @@ If a continuous physical phrase must split, end at a stable state and fully rest
 分镜参考 `[00.jpg]`
 【镜头设计】：角度与轴线、景别/焦段、裁切与主体布局、深度/遮挡、焦点、主运镜和落幅。
 【可见动作】：明确当前姿态与已建立的任务/接触，写出回应此情境的获准主动作或可读姿态变化，交代必要衔接、顺序/交叠和清楚的落定状态；表情与次级运动按需补充。
-【可见背景】：镜头内可见的物理环境、明确图形场或铺满画面的表面及其层次和运动。
+【可见背景】：实景环境或有段落目的的图形底场，写清必要层次、配色与自身运动；满幅主体确实遮住背景时只陈述这一可见性状态。
 【台词与语气】：角色说：“……”（音色、语气、情绪、语速、停顿、重音、距离及必要声像）；无台词写“无台词”。
 【光影布光】：光源、方向、遮挡、主辅光、局部高光、阴影和材质响应。
 【声音设计】：环境底声、动作拟音、呼吸/身体声、静默及必要同步；不复述对白表演，不写BGM。
 ```
 
 Keep all six fields separate and ordered. `【镜头设计】` alone contains static composition and camera behavior; `【可见动作】` is the single source of truth for subject/object motion and changing performance. Camera, background, dialogue, light and sound may describe only their own result and cannot restate or newly assert that motion. Page margins, gutters, OCR gaps, speech-bubble whitespace and all printed manga overlays are never background or video content. Sound cannot imply an unseen event or name its unseen source.
+
+Background ownership and complete occlusion follow the section above; a mandatory field does not require visible scenery in every crop.
 
 When several panels are successive phases of one camera setup, backing, axis and causal action, bind each panel to a separate phase bullet in `【镜头设计】` and use matching action-only bullets in `【可见动作】`. Otherwise create another numbered shot.
 

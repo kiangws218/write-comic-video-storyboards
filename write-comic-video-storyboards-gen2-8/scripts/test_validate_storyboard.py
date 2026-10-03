@@ -704,6 +704,114 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("混入主体、道具位置或构图关系", result.stdout)
 
+    def test_performer_surfaces_are_not_background(self) -> None:
+        for background in (
+            "青脸部亮面、贴布下缘与下垂发束填充背景，口腔及指缝形成局部暗面。",
+            "均匀浅灰背景，长发亮面构成两侧边界。",
+            "眼窝深暗面和紧邻额甲占满背景。",
+        ):
+            with self.subTest(background=background):
+                text = storyboard(background=background)
+                result = self.run_validator(text)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("冒充背景", result.stdout)
+
+    def test_mixed_anatomy_requests_review_not_keyword_block(self) -> None:
+        result = self.run_validator(storyboard(background="远处树冠淡绿，近处袖口细线清楚"))
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("背景字段语义复查", result.stdout)
+
+    def test_occlusion_statement_does_not_hide_body_filler(self) -> None:
+        result = self.run_validator(storyboard(background="独立背景完全被主体遮住，长发亮面填充背景。"))
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("冒充背景", result.stdout)
+
+    def test_real_gray_wall_and_graphic_animation_are_not_banned(self) -> None:
+        for background in (
+            "浅灰混凝土墙铺满背景，横向施工缝清楚。",
+            "奶油黄图形底场上，白色四角闪光逐渐明暗交替，句末收为稀疏亮点。",
+        ):
+            with self.subTest(background=background):
+                result = self.run_validator(storyboard(background=background))
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertNotIn("背景字段语义复查", result.stdout)
+
+    def test_background_decision_stays_out_of_formal_script(self) -> None:
+        text = storyboard(background='奶油黄图形底场。background_decision: {"mode":"graphic"}')
+        result = self.run_validator(text)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("正式分镜含内部证据/复查说明", result.stdout)
+
+    def test_environment_surface_and_painted_face_are_allowed(self) -> None:
+        for background in (
+            "深蓝帘布铺满背景，折纹竖向排列",
+            "石墙上的壁画以脸部亮面构成背景图案",
+            "石墙上的壁画中，脸部位于画面左侧，图案底色为赭红。",
+        ):
+            with self.subTest(background=background):
+                result = self.run_validator(storyboard(background=background))
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertNotIn("背景字段语义复查", result.stdout)
+
+    def test_complete_background_occlusion_is_valid_visibility(self) -> None:
+        for background in ("独立背景完全被主体遮住。", "背景全部为满幅主体所遮挡。"):
+            with self.subTest(background=background):
+                text = storyboard(background=background).replace("，深蓝灰放射线向外扩张", "")
+                ledger = valid_ledger()
+                ledger["panels"][0]["background"] = {"type":"occluded", "description":"满幅主体裁切遮住独立背景", "evidence":"current_panel"}
+                ledger["shots"][0]["background_excerpt"] = background
+                ledger["shots"][0]["background_decision"] = {"mode":"occluded", "basis":"当前极近裁切完全覆盖独立底场"}
+                result = self.run_validator(text, ledger, True)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_omitted_backing_requires_a_decision_not_automatic_graphic(self) -> None:
+        ledger = valid_ledger()
+        ledger["panels"][0]["background"]["type"] = "omitted"
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少background_decision", result.stdout)
+        ledger["shots"][0]["background_decision"] = {"mode":"graphic", "basis":"经场景复查选择的独立表现段落"}
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_continuity_requires_real_reference_without_changing_source_facts(self) -> None:
+        ledger = valid_ledger()
+        original_facts = deepcopy(ledger["panels"][0]["source_facts"])
+        decision = {"mode":"continuity", "basis":"同场景机位可见的远景平面经环境图核对"}
+        ledger["shots"][0]["background_decision"] = decision
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少source_refs", result.stdout)
+        decision["source_refs"] = ["not-a-real-reference.jpg"]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("引用不存在", result.stdout)
+        decision["source_refs"] = ["panel.jpg"]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        with tempfile.TemporaryDirectory() as folder:
+            environment = Path(folder) / "environment.jpg"
+            environment.write_bytes(b"reference existence fixture; not visual evidence")
+            decision["source_refs"] = [str(environment)]
+            result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(ledger["panels"][0]["source_facts"], original_facts)
+
+    def test_background_decision_mode_and_basis_are_checked(self) -> None:
+        for decision in ({"mode":"automatic"}, {"mode":[], "basis":"复查后的背景选择"}, {"mode":"graphic", "basis":""}, "graphic"):
+            ledger = valid_ledger()
+            ledger["shots"][0]["background_decision"] = decision
+            result = self.run_validator(storyboard(), ledger, True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("background_decision", result.stdout)
+
+    def test_background_excerpt_cannot_hide_in_another_field(self) -> None:
+        ledger = valid_ledger()
+        ledger["shots"][0]["background_excerpt"] = "掌心保留浅影"
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("background_excerpt未出现在分镜正文", result.stdout)
+
     def test_long_dialogue_with_thin_acting_emits_warning(self) -> None:
         long_line = "あ" * 30
         result = self.run_validator(storyboard(line=long_line))
