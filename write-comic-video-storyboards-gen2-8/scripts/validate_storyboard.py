@@ -96,14 +96,6 @@ ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
 ATMOSPHERE_BASIS_RE = re.compile(
     r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
 )
-FACE_READABLE_RE = re.compile(r"视线|目光|瞳孔|眼神|眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部")
-FACE_TRANSITION_RE = re.compile(
-    r"(?:眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部)[^。；\r\n]{0,18}"
-    r"(?:先|随后|再|转为|变为|由[^，,。；;]{0,10}(?:到|转)|收紧|松开|压低|抬起|"
-    r"闭合|睁开|张开|合拢|抿住|微开|抽动|颤|回落|落回)|"
-    r"(?:先|随后|再)[^。；\r\n]{0,18}(?:眼皮|眼睑|眉|嘴角|嘴唇|口型|下巴|脸|面部)"
-)
-COUPLED_RESPONSE_RE = re.compile(r"晚半拍|迟半拍|迟缓|滞后|惯性|回弹|余势|跟着|随(?:后|之|着|受力)|同时|同步|伴随")
 CAMERA_STAGING_MOTION_RE = re.compile(
     r"(?:镜头|摄影机|机位)[^。；\r\n]{0,24}(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)|"
     r"推近|前推|拉远|跟拍|甩摇|环绕|手持"
@@ -121,7 +113,6 @@ AUDIO_BEAT_DIFFERENTIATION_RE = re.compile(
 PURE_OBJECT_SHOT_RE = re.compile(
     r"人物(?:与手|和手)?均未入画|人物未入画|画面(?:没有|不含)人物|物件特写|说明性物件镜头"
 )
-HAND_DETAIL_SHOT_RE = re.compile(r"手部(?:极近景|近景|特写)|交叠手部|画面只显示这一只手")
 SHOT_FIELD_NAMES = ("镜头设计", "可见动作", "可见背景", "台词与语气", "光影布光", "声音设计")
 SHOT_FIELD_RE = re.compile(
     r"(?ms)^\s*【(镜头设计|可见动作|可见背景|台词与语气|光影布光|声音设计)】[：:]\s*"
@@ -556,37 +547,17 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
         dialogue = fields.get("台词与语气", "")
         signal_count = sum(bool(pattern.search(action)) for pattern in PERFORMANCE_SIGNAL_GROUPS)
         pure_object_shot = bool(PURE_OBJECT_SHOT_RE.search(block))
-        minimum_signals = 2 if HAND_DETAIL_SHOT_RE.search(block) else 3
-        if dialogue_chars > 20 and signal_count < minimum_signals and not pure_object_shot:
-            warnings.append(
-                f"{target}含{dialogue_chars}个台词字符但仅覆盖{signal_count}类表演信号；"
-                "可按源图加入视线、非对称表情、呼吸、手指/道具、重心或延迟运动。"
-            )
-        if dialogue_chars > 20 and signal_count >= 2 and (
+        repeated_utterance = has_repeated_utterance(dialogue)
+        expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
+        if not pure_object_shot and (
+            dialogue_chars > 20 or (duration >= 5 and dialogue_chars > 0) or (4 <= duration <= 6 and expressive_dialogue)
+        ) and (
             not PERFORMANCE_SEQUENCE_RE.search(action) or not PERFORMANCE_ENDPOINT_RE.search(action)
         ):
             warnings.append(
-                f"{target}可能只有动作清单，缺少刺激、先后或收束；"
-                "请确认微动作形成同一条表演因果链。"
+                f"{target}需表演语义复查：文本启发式未识别完整时序或落点；"
+                "检查主动作、任务/关系响应和有意持态是否可读。同义表达有效，不要求增加手势、面部变化或延迟词。"
             )
-        repeated_utterance = has_repeated_utterance(dialogue)
-        expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
-        face_readable = bool(FACE_READABLE_RE.search(action + camera))
-        if 4 <= duration <= 6 and expressive_dialogue and face_readable and not pure_object_shot:
-            missing_slots: list[str] = []
-            if not PERFORMANCE_SEQUENCE_RE.search(action):
-                missing_slots.append("动作先后/重叠")
-            if not FACE_TRANSITION_RE.search(action):
-                missing_slots.append("局部面部变化")
-            if not COUPLED_RESPONSE_RE.search(action):
-                missing_slots.append("身体或发衣延迟响应")
-            if not PERFORMANCE_ENDPOINT_RE.search(action):
-                missing_slots.append("具体表演落点")
-            if missing_slots:
-                warnings.append(
-                    f"{target}是{duration}秒强情绪对白镜头，但表演保真槽缺少"
-                    f"{', '.join(missing_slots)}；不要把分阶段表演压成动作关键词摘要。"
-                )
         if CAMERA_STAGING_MOTION_RE.search(camera) and not CAMERA_LANDING_RE.search(camera):
             warnings.append(
                 f"{target}声明了摄影机运动但没有镜头落幅；请写明运动跟随什么，并在何处稳定。"
@@ -1370,15 +1341,14 @@ def validate_source_ledger(
                     if not isinstance(card.get(field), str) or not card[field].strip():
                         errors.append(f"{target}的performance.card.{field}缺失。")
                 beats = card.get("beats")
-                if not isinstance(beats, list) or len(beats) < 2 or any(
+                if not isinstance(beats, list) or not beats or any(
                     not isinstance(beat, str) or not beat.strip() for beat in beats
                 ):
-                    errors.append(f"{target}的performance.card.beats至少需要两个非空节拍。")
+                    errors.append(f"{target}的performance.card.beats必须记录非空的实际节拍。")
         count = acting_chars_by_target.get(target, 0)
-        minimum, maximum = (3, 4) if count >= 42 else (2, 3) if count > 20 else (1, 2)
         details = entry.get("details")
-        if not isinstance(details, list) or not minimum <= len(details) <= maximum:
-            errors.append(f"{target}台词{count}字，需登记{minimum}–{maximum}个表演细节。")
+        if not isinstance(details, list) or not details:
+            errors.append(f"{target}需登记非空的表演正文摘录；不按台词字数规定动作数量。")
         else:
             normalized = []
             for detail in details:
@@ -1411,25 +1381,12 @@ def validate_source_ledger(
     for target, count in acting_chars_by_target.items():
         if count > 20 and target not in seen_performance:
             errors.append(f"{target}台词合计{count}字，缺少表演与估时记录。")
-        if count > 20 and target not in performance_risk_targets:
-            errors.append(f"{target}台词合计{count}字，必须标记P并在看图时先做紧凑表演卡。")
     for target in performance_risk_targets:
         if target not in seen_performance:
             errors.append(f"{target}标记P但缺少performance条目。")
             continue
-        fields = shot_field_values(shot_map[target][1])
-        action = fields.get("可见动作", "")
-        camera = fields.get("镜头设计", "")
-        if not PERFORMANCE_SEQUENCE_RE.search(action):
-            errors.append(f"{target}标记P但可见动作缺少明确先后或重叠。")
-        if FACE_READABLE_RE.search(action + camera) and not FACE_TRANSITION_RE.search(action):
-            errors.append(f"{target}标记P但缺少局部面部转变。")
-        if not COUPLED_RESPONSE_RE.search(action):
-            errors.append(f"{target}标记P但缺少耦合或延迟响应。")
-        if not PERFORMANCE_ENDPOINT_RE.search(action):
-            errors.append(f"{target}标记P但缺少表演落点。")
-        if CAMERA_STAGING_MOTION_RE.search(camera) and not CAMERA_LANDING_RE.search(camera):
-            errors.append(f"{target}标记P且摄影机运动缺少明确落幅。")
+        # Temporal meaning and acting quality require the image-grounded semantic
+        # review. Vocabulary heuristics remain advisories, never P-slot blockers.
     return errors
 
 
@@ -1731,22 +1688,6 @@ def main() -> int:
                     f"{shot_label}含{speaker_count}名明确说话人；"
                     "请检查回答、反驳、揭示、包袱或态度变化是否需要反打或听者反应。"
                 )
-            if dialogue_characters > 0 and duration >= 5 and not PURE_OBJECT_SHOT_RE.search(block):
-                action_phases = [
-                    clause.strip()
-                    for clause in re.split(r"[，,；;。]", action_text)
-                    if clause.strip()
-                    and any(pattern.search(clause) for pattern in PERFORMANCE_SIGNAL_GROUPS)
-                ]
-                action_signals = sum(
-                    bool(pattern.search(action_text)) for pattern in PERFORMANCE_SIGNAL_GROUPS
-                )
-                if len(action_phases) < 2 or action_signals < 2:
-                    warnings.append(
-                        f"{shot_label}为{duration}秒对白镜头但可见动作只有"
-                        f"{len(action_phases)}个发展阶段、{action_signals}类表演信号；"
-                        "请增加受支持的头面朝向、局部表情、手/道具、重心或听者反应，或拆镜。"
-                    )
             if len(current_references) >= 2:
                 camera_text = fields.get("镜头设计", "")
                 phase_images = {
@@ -1865,6 +1806,7 @@ def main() -> int:
         print(f"验证失败：{len(errors)}个错误，{len(warnings)}个警告。")
         return 1
     print(f"结构验证通过：0个错误，{len(warnings)}个警告。")
+    print("结构/台账校验不判定自然表演；主动作兑现、源图保真与表演因果仍须语义复查。")
     return 0
 
 

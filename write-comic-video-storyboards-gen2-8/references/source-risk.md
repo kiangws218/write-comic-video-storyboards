@@ -2,14 +2,14 @@
 
 Read only for ambiguous hands/props, occlusion/topology, fast action, mixed color evidence, or added viewpoints.
 
-Inspect original resolution when small text, perspective, contact, overlap, grip, action vector, topology, or identity is uncertain. Adjacent panels explain continuity but never prove current visibility.
+Inspect the cached 720p proxy first when small text, perspective, contact, overlap, grip, action vector, topology, or identity is uncertain. Open 1080p/original only when a decision-changing detail remains unresolved, and record the reason. Adjacent panels explain continuity but never prove current visibility. For an approved batch, use the change-scoped reinspection rules in `core-authoring.md` rather than restarting a full visual pass.
 
-Freeze a phase lock: angle/scale; left-right/depth; overlap/occlusion; pose/gaze/visible limbs; grounded state; hand/prop/grip/contact; action vector; backing; opening/middle/contact/result/endpoint. A cited shot may move into/out of this lock only with evidence.
+Refine the phase lock defined in `core-authoring.md`: angle/scale; left-right/depth; overlap/occlusion; pose/gaze/visible limbs; grounded state; hand/prop/grip/contact; action vector; backing; declared middle/contact/result/endpoint. The comic is a process/result reference, not a first-frame control. Exact pose/overlap/contact matches at that phase; it is not an all-frame stillness instruction. Assess supported transitions under core authoring while preserving persistent constraints. Ambiguity rejects the uncertain transition, not all clearly evidenced motion.
 
-- Hands/props: count visible hands; preserve owner, side, grip, palm/finger orientation, contact, support, and occlusion. Never invent off-frame bracing, hand-off, release, second hand, or grip change.
-- Overlap: preserve which contour covers which and depth; do not separate silhouettes for convenience.
+- Hands/props: lock visible count, owner, side, grip, palm/finger orientation, contact, support and occlusion at the cited phase. The same established hand may enter the crop and form its source contact under core authoring's necessary-transition gate; visibility count need not be constant throughout. Never invent off-frame bracing, hand-off, release, a different/extra hand, or a grip change.
+- Overlap: preserve contour ownership and depth at the anchor. An admitted approach may change overlap as the source relation forms; do not separate silhouettes at the anchor for convenience.
 - Topology: preserve connections, holes, straps, chains, articulated parts, clothing openings, and anatomy; do not normalize unusual objects.
-- Fast action: lock axis, direction, contact phase, and result. Add only one supported adjacent phase; do not auto-complete wind-up, rebound, recovery, or another attack.
+- Fast action: lock axis, direction, contact phase, and result. Apply core authoring's connective-phase admission; do not auto-complete wind-up, rebound, recovery, or another attack.
 - Abstract background: retain gradient, speed/impact field, texture, or white space instead of restoring the known location.
 
 An uncited view declares purpose/evidence. It may clarify an established beat but cannot reveal an unproven person, surface, room side, route, contact, emotion, or result. Compare it with both neighboring source shots; remove near-duplicates or change at least two meaningful dimensions.

@@ -8,6 +8,12 @@ Use supplied references first. Otherwise choose at most one work, one studio, an
 
 ## Camera and rhythm
 
+Decide the shot's visual purpose before selecting movement. Fixed framing is useful for a held reaction, contrast, awkward pause or fragile contact; a restrained push/pull can concentrate or release attention; pan/follow can clarify an already evidenced path or relation. Keep fixed when motion has no concrete job. Do not impose either a fixed-camera default or an episode-wide movement quota, and do not add actor actions merely to justify moving the camera.
+
+Before rendering, record a compact `camera_decision` in the existing shot entry: `mode`, `reason`, `anchor_phase`, `opening`, `landing`, and evidence for the visible path. Use one primary behavior per shot. Restore the comic composition at the declared middle/contact/result/endpoint, not necessarily throughout the shot; design `opening` separately under core authoring, never as a raw-comic first-frame lock. A source-safe 2D reframe may traverse only already established image content; parallax or viewpoint changes cannot reveal invented sides, hidden people, new geometry or surfaces. Preserve visible contact and the framing needed to read the unchanged performance through the landing.
+
+In a camera-only revision, edit `【镜头设计】` and its camera metadata/excerpts, not performance beats, dialogue, timing, light or sound. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing prompts a purpose check, not an automatic failure; intentional stillness remains valid. A moving shot with no evidenced path or useful landing should be fixed instead.
+
 Choose terms only when they change the image:
 
 - lens/scale and function: wide for depth, normal for natural relations, telephoto for compression/intimacy, macro/long lens for supported detail;
@@ -18,7 +24,7 @@ Choose terms only when they change the image:
 
 When the camera moves during character performance, state what initiates the move, what relation or feature it follows, and where it settles. `小幅横移/轻推` alone is incomplete; the landing must preserve the performer or prop endpoint rather than merely naming a direction.
 
-Camera clarifies action, attention, space, relation, emotion, or result; it cannot substitute for performance. A cited composition remains recognizable at its declared phase. A changed viewpoint is separately justified coverage.
+Camera clarifies action, attention, space, relation, emotion, or result; it cannot substitute for performance. A cited composition remains recognizable at its declared phase. A changed viewpoint is separately justified coverage; moving within one setup is not a hidden cut or automatically a new numbered shot.
 
 For continuous action use temporal contrast: dense small changes/steady camera for anticipation; wider pose spacing and directional follow for acceleration; concentrated in-betweens for grip/balance/mechanics; selective slow motion only at supported realization/apex/near-contact; compact contact treatment; proportional response; readable settled result. Keep one intention and consequence together when duration allows.
 

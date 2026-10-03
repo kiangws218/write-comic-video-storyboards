@@ -1,10 +1,10 @@
 # Gen2.5 non-regression contract
 
-Read this file for every new episode, substantial rewrite, or final delivery. It contains source-fidelity and timing decisions that Gen2.8 must not trade away for token savings.
+Read only for skill maintenance or compatibility audits, as routed by `SKILL.md`. Ordinary authoring must not depend on discovering a rule here. Source locks, beat/phase decisions, action admission and non-dialogue timing are owned by `core-authoring.md`; dialogue coverage and acting by `dialogue-performance.md`; camera behavior by `cinematic-rendering.md`.
 
 ## Episode prepass and source evidence
 
-Before drafting, review the ordered episode at low resolution only to establish panel order, locations/time changes, recurring subjects, color-source class, and risk candidates. Then draft one to three contiguous panels with exact 720p proxies open. Escalate perspective, contact, overlap, topology, fast action, identity, or unreadable text to 1080p/original resolution only when the 720p view is inconclusive, and record why.
+Use core authoring's image-first, one-to-three-panel 720p batches with conditional escalation. Gen2.5's global low-resolution preview is not a Gen2.8 prerequisite; do not add a contact-sheet/overview pass when the user declines it.
 
 The source ledger is created from the open images before prose. `source_text` is the verbatim source-language bubble/box text; `script_text` is the final Japanese. Never reconstruct locks, bubbles, risk flags, viewing attestations, or performance cards from the completed storyboard. Mechanical extraction may copy filenames and final excerpts after drafting, but it cannot fabricate source evidence or an audit result.
 
@@ -20,27 +20,7 @@ Several different panels may share one numbered shot only when they are successi
 
 ## Beat, action, emotion, and duration
 
-Classify the source beat before extending it:
-
-- `State`: continue an established condition with restrained supported change.
-- `Action`: identify the visible preparation, execution, response, result, or settled phase.
-- `Reaction`: add only the minimum useful perception/response/recovery/decision phase.
-- `Mixed`: preserve the primary and secondary function without completing an inferred chain.
-
-For visible action B, add at most one supported A or C phase when it improves continuity. Evidence, visibility in the declared framing, and anchor safety are all required. Never invent off-frame bracing, grip/contact, route, hand-off, follow-through, rebound, recovery, or a new result.
-
-Strong emotion requires support from at least two of dialogue meaning, visible face/body performance, and adjacent story context. Prefer observable lower-inference behavior when evidence is incomplete.
-
-Use these non-dialogue timing anchors before assigning integer duration:
-
-| Beat | Typical duration |
-|---|---:|
-| Micro-reaction, glance, discovery | 1–2s |
-| Single reveal, fall, pull-out, sudden vocal burst | 2–4s |
-| Sustained effort or repeated struggle | 3–6s |
-| Evolving state or atmosphere | 4–8s only with visible development |
-
-End when the beat is complete. Do not stretch a short event with static holding, repeated shaking/screaming, particles, or camera drift to approach 15 seconds. Keep a source-continuous physical phrase in one clip when it fits; split only at a stable state and fully restate the next opening.
+Audit `core-authoring.md` §Source locks and temporal action design and §Clip and coverage boundaries. Verify that ordinary routing exposes necessary-transition admission before P-card/camera polish, that an undrawn lead-in is not automatically rejected, and that the cited pose is restored at its declared phase rather than frozen for the whole shot. Also verify that inferred transitions are not mislabeled as observed facts and do not authorize additional mechanics/events. Maintain those rules there, not in a second compatibility-only implementation.
 
 ## Color, delivery, and audit
 
@@ -48,4 +28,4 @@ Start with `## 场景色彩基准`. For monochrome or mixed sources, add `## 非
 
 After storyboard approval, generate the Chinese SRT unless the user declines or requests it earlier. Preserve the complete adult master and keep any safe replacements separate with matching timing unless turn count genuinely changes.
 
-Final delivery is not defined by `0 errors` alone. Resolve every adjacent-reference, source-citation, dialogue-coverage, performance-density, camera-landing, long-shot, and multi-panel advisory against the open images. Record a concrete disposition for every remaining advisory; do not waive a class of warnings in bulk. A repeated-reference advisory cannot remain because adjacent repeated formal citations are prohibited.
+Final delivery is not defined by `0 errors` alone. Classify every adjacent-reference, source-citation, dialogue-coverage, performance-density, camera-landing, long-shot, and multi-panel advisory. Resolve image-dependent issues against the affected images under `core-authoring.md`'s change-scoped review; check purely lexical or arithmetic false positives mechanically. Record a concrete disposition for every remaining advisory; do not waive a class of warnings in bulk. A repeated-reference advisory cannot remain because adjacent repeated formal citations are prohibited.

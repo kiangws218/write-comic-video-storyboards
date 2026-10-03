@@ -39,6 +39,8 @@ Do not invent per-shot seconds when compiling this mode. Keep the ordered source
 
 Assign each asset one role: exact composition/pose, environment geometry, style/palette, or another supported control role. Character identity and costume are handled by supplied character references, not repeatedly restated in the storyboard.
 
+A comic panel/crop supplies an in-process/contact/result composition/pose anchor, never a first-frame/start-keyframe control. Preserve the approved opening-to-anchor action when compiling. Check the actual input mode before submission: follow core authoring's compatibility gate if it would bind the comic to frame zero. Do not silently remove a lead-in to make the tool accept that image; a separately approved opening asset has a different role.
+
 Only call a crop a formal storyboard reference when the full referenced sub-shot matches it. If it provides only a local detail, omit the citation and describe the target directly.
 
 ## Character budget

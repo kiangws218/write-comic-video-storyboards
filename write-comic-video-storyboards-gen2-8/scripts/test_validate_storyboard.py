@@ -290,6 +290,90 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(text, ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
+    def test_p_card_accepts_one_actual_beat_without_keyword_slots(self) -> None:
+        action = "指腹的压力一点点退去，掌上的物件仍被托牢。"
+        text = storyboard().replace("人物手掌朝上托住物件，手指先放松再轻微收紧。", action)
+        ledger = valid_ledger()
+        ledger["shots"][0]["risk_flags"] = ["P"]
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "手部特写中已有的托举关系和指腹",
+            "card": {
+                "opening": "掌心托住物件，指腹受压",
+                "beats": ["指腹减压但保留托举"],
+                "coupling": "减压没有改变物件支撑关系",
+                "landing": "物件被托牢，镜头固定",
+            },
+            "details": [action],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
+        }]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("标记P但缺少", result.stdout)
+
+    def test_p_card_still_rejects_empty_beats(self) -> None:
+        ledger = valid_ledger()
+        ledger["shots"][0]["risk_flags"] = ["P"]
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "当前可见手部",
+            "card": {"opening": "托举", "beats": [], "coupling": "指压", "landing": "托住"},
+            "details": ["手指先放松再轻微收紧"],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("必须记录非空的实际节拍", result.stdout)
+
+    def test_long_neutral_hold_can_clear_p_without_detail_quota(self) -> None:
+        line = "あ" * 21
+        action = "掌心持续平稳托住物件，指腹的支撑压力在整句中恒定。"
+        text = storyboard(line=line).replace("人物手掌朝上托住物件，手指先放松再轻微收紧。", action)
+        ledger = valid_ledger(line)
+        ledger["panels"][0]["bubbles"][0]["seconds"] = 4
+        ledger["shots"][0]["risk_basis"] = "单个中性说明句；图像支持平稳托举，没有态度变化，P清除；手部接触清楚。"
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "当前手部特写中的持续托举关系",
+            "details": [action],
+            "intervals": [{"speech_seconds": 4.2, "acting_seconds": 5}],
+        }]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("必须标记P", result.stdout)
+        self.assertNotIn("类表演信号", result.stdout)
+
+    def test_long_delivery_still_requires_timing_evidence(self) -> None:
+        line = "あ" * 21
+        ledger = valid_ledger(line)
+        ledger["panels"][0]["bubbles"][0]["seconds"] = 4
+        result = self.run_validator(storyboard(line=line), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("缺少表演与估时记录", result.stdout)
+
+    def test_performance_excerpts_still_must_reach_prose(self) -> None:
+        ledger = valid_ledger()
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "当前手部特写",
+            "details": ["人物松手把物件扔出"],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("登记的表演未写入正文", result.stdout)
+
+    def test_rendered_details_have_no_gesture_maximum(self) -> None:
+        ledger = valid_ledger()
+        ledger["performance"] = [{
+            "target": "片段1/分镜1",
+            "evidence": "当前手部特写",
+            "details": ["人物手掌朝上", "托住物件", "手指先放松", "再轻微收紧"],
+            "intervals": [{"speech_seconds": 2.1, "acting_seconds": 3}],
+        }]
+        result = self.run_validator(storyboard(), ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
     def test_panel_without_dialogue_uses_none_coverage(self) -> None:
         ledger = deepcopy(valid_ledger())
         panel = ledger["panels"][0]
@@ -492,7 +576,8 @@ class ValidatorTests(unittest.TestCase):
         long_line = "あ" * 30
         result = self.run_validator(storyboard(line=long_line))
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("类表演信号", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
+        self.assertNotIn("类表演信号", result.stdout)
 
     def test_expressive_summary_fails_performance_fidelity_warnings(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
@@ -508,7 +593,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("表演保真槽缺少", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
         self.assertIn("没有镜头落幅", result.stdout)
         self.assertIn("重复话语但【台词与语气】没有区分", result.stdout)
 
@@ -530,7 +615,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("表演保真槽缺少", result.stdout)
+        self.assertNotIn("需表演语义复查", result.stdout)
         self.assertNotIn("没有镜头落幅", result.stdout)
         self.assertNotIn("重复话语但【台词与语气】没有区分", result.stdout)
 
@@ -593,7 +678,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("可能只有动作清单", result.stdout)
+        self.assertNotIn("需表演语义复查", result.stdout)
 
     def test_major_action_overload_is_soft_warning(self) -> None:
         text = storyboard().replace(
@@ -704,13 +789,14 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("不可执行元措辞", result.stdout)
 
-    def test_six_second_static_dialogue_warns_on_visible_density(self) -> None:
+    def test_six_second_dialogue_without_lexical_endpoint_prompts_semantic_review(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）")
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("6秒对白镜头但可见动作只有", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
+        self.assertNotIn("类表演信号", result.stdout)
 
-    def test_six_second_staged_head_face_chain_passes_density(self) -> None:
+    def test_six_second_staged_head_face_chain_has_readable_order_and_endpoint(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
             "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物起幅为朝画面右侧的三分之二侧脸，听见问话后瞳孔先回到左侧；"
@@ -718,7 +804,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("6秒对白镜头但可见动作只有", result.stdout)
+        self.assertNotIn("需表演语义复查", result.stdout)
 
     def test_pure_object_explanation_does_not_require_body_signals(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
@@ -727,7 +813,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("6秒对白镜头但可见动作只有", result.stdout)
+        self.assertNotIn("需表演语义复查", result.stdout)
         self.assertNotIn("类表演信号", result.stdout)
 
     def test_chinese_dialogue_trigger_paraphrase_fails(self) -> None:
