@@ -131,6 +131,37 @@ def pose_admission(claim: str, evidence: str = "原格胸肩与头位清楚，�
 
 
 class ValidatorTests(unittest.TestCase):
+    def test_short_clip_neighbors_are_review_candidates_not_errors(self) -> None:
+        chunks = [(1, "**分镜1（3秒）：**"), (2, "**分镜1（6秒）：**")]
+        notes = VALIDATOR.short_clip_grouping_warnings(chunks)
+        self.assertEqual(len(notes), 1)
+        self.assertIn("合计9秒", notes[0])
+        self.assertIn("可保留", notes[0])
+        self.assertEqual(VALIDATOR.short_clip_grouping_warnings(chunks, 8), [])
+
+    def test_grouping_review_sums_all_shots_not_only_first(self) -> None:
+        chunks = [(1, "**分镜1（3秒）：**\n**分镜2（4秒）：**"), (2, "**分镜1（4秒）：**")]
+        self.assertEqual(VALIDATOR.short_clip_grouping_warnings(chunks), [])
+        self.assertEqual(len(VALIDATOR.short_clip_grouping_warnings(chunks, 12)), 1)
+        self.assertEqual(VALIDATOR.short_clip_grouping_warnings([(1, ""), (2, "**分镜1（4秒）：**")]), [])
+
+    def test_two_distinct_complete_panel_units_can_share_one_clip(self) -> None:
+        text = storyboard()
+        second = storyboard().split("**分镜1（5秒）：**", 1)[1]
+        text += "\n**分镜2（5秒）：**" + second.replace("panel.jpg", "panel2.jpg")
+        ledger = valid_ledger()
+        panel2 = deepcopy(ledger["panels"][0])
+        panel2["image"] = "panel2.jpg"
+        panel2["bubbles"][0]["target"] = "片段1/分镜2"
+        shot2 = deepcopy(ledger["shots"][0])
+        shot2["target"] = "片段1/分镜2"
+        shot2["source_images"] = ["panel2.jpg"]
+        ledger["panels"].append(panel2)
+        ledger["shots"].append(shot2)
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("跨越多个片段", result.stdout)
+
     def run_validator(
         self,
         text: str,

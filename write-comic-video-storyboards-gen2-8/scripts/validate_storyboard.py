@@ -269,6 +269,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("storyboard", type=Path)
     parser.add_argument("--max-seconds", type=int, default=15)
+    parser.add_argument("--target-seconds", type=int, default=10, help="Planning target for adjacent-clip grouping review, not a minimum duration.")
     parser.add_argument("--image-dir", type=Path)
     parser.add_argument(
         "--source-ledger",
@@ -653,6 +654,26 @@ def cross_clip_boundary_warnings(chunks: list[tuple[int, str]]) -> list[str]:
             warnings.append(
                 f"片段{number}末镜为无参考补镜，下一片段{next_number}首镜为漫画参考镜头；"
                 "请比较主体、景别、视角、主要道具与戏剧功能，若高度重合则删除、合并或至少改变两个维度。"
+            )
+    return warnings
+
+
+def short_clip_grouping_warnings(
+    chunks: list[tuple[int, str]], target_seconds: int = 10,
+) -> list[str]:
+    """Find timing-compatible neighbors; continuity and dramatic boundaries need review."""
+    warnings: list[str] = []
+    for (number, chunk), (next_number, next_chunk) in zip(chunks, chunks[1:]):
+        durations = []
+        for block in (chunk, next_chunk):
+            matches = list(SHOT_RE.finditer(block)) + list(COMBAT_SEQUENCE_RE.finditer(block))
+            durations.append(sum(float(match.group(2)) for match in matches))
+        if all(duration > 0 for duration in durations) and sum(durations) <= target_seconds:
+            warnings.append(
+                f"片段{number}与片段{next_number}合计{sum(durations):g}秒，需跨格合并复查："
+                "若属连续动作/反应、短问短答或同一场景节拍，应合为一个片段并保留编号分镜；"
+                "若有场景/时间断点或独立戏剧落点，可保留并在内部台账说明。"
+                "时长只是候选提示，不自动证明连续性，不要求凑时或删减表演。"
             )
     return warnings
 
@@ -1504,7 +1525,8 @@ def validate_source_ledger(
         if len(segments) > 1:
             errors.append(
                 f"原格{image_key}的正式镜头与增镜跨越多个片段：{sorted(segments)}；"
-                "同一原格的全部覆盖必须放在一个片段内。"
+                "同一原格的全部覆盖必须放在一个片段内；该片段可以同时容纳其他连续原格，"
+                "这不是每格独占一个片段。"
             )
 
     missing_shots = sorted(set(shot_map) - seen_shot_targets)
@@ -1962,6 +1984,7 @@ def main() -> int:
         require_contiguous_numbers=True,
     )
     warnings.extend(cross_clip_boundary_warnings(chunks))
+    warnings.extend(short_clip_grouping_warnings(chunks, min(args.target_seconds, args.max_seconds)))
     warnings.extend(cinematic_quality_warnings(main_text))
 
     safe_chunks = segment_chunks(safe_text, SAFE_SEGMENT_RE) if safe_text else []

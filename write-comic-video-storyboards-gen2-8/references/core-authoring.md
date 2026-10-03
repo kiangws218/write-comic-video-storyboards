@@ -126,9 +126,19 @@ Before writing an `uncited_coverage` shot, make one compact internal coverage st
 
 ## Clip and coverage boundaries
 
-A clip is one generated video. Fifteen seconds is a hard ceiling. Keep a continuous physical phrase and one panel's complete coverage unit together when they fit.
+A **panel** is a source anchor, a **shot** is one camera setup, and a **clip** is one generated video containing one or more numbered shots. Their boundaries are independent: a change of camera setup starts a shot, not automatically a clip; a new panel is not automatically either boundary.
 
-The cited view and every derived speaker/listener/object/environment/detail view owned by one panel stay in one clip. If correct semantic splitting and natural Japanese timing still make that single-panel unit exceed 15 seconds, it is the only allowed overflow: keep it together, mark `manual_overflow`, and surface a prominent manual warning for the user. The exception cannot combine several source panels, unrelated events or padded holds.
+One panel's cited view and all its derived speaker/listener/object/environment/detail coverage must stay in the same clip. This is a one-way non-fragmentation constraint: **each panel unit belongs to one clip; one clip may contain multiple consecutive complete panel units.** Never interpret it as each panel exclusively owning a separate clip. Preserve distinct formal references for distinct source panels even when their shots share a clip.
+
+Before opening the next clip, inspect the immediate chronological neighbor and choose the boundary from the enacted scene beat and natural timing:
+
+- Prefer grouping an uninterrupted action and its immediate response/result, a short question/answer or stimulus/reaction, or compatible establishing/details within the same scene beat. Retain all source anchors and dialogue turns; use multiple numbered shots when camera setups differ. Do not silently fuse different compositions into one shot.
+- Assemble consecutive complete units toward roughly 8–10 seconds where natural; 10 seconds is a planning target, not a minimum or an excuse to pad. A 3-second prompt plus a 6-second answer can be one 9-second clip with two shots. A fully supported 2+3+4-second continuous phrase can also be one clip. Do not shorten acting, accelerate dialogue or append a static tail to hit the target.
+- Start another clip at a supported scene/time/causal discontinuity, a purposeful dramatic landing, or when the next complete unit would exceed the applicable limit. Short standalone clips are legitimate for these concrete reasons, not merely because a panel or drafting batch ended. When a continuous unit naturally needs 11–15 seconds, prefer preserving it under the default ceiling over fragmenting it to match the 10-second target; an explicit user ceiling of 10 seconds instead requires a stable, source-faithful boundary.
+
+Fifteen seconds is the default hard ceiling; use a lower explicit user ceiling when provided. If natural Japanese timing and necessary coverage still make a **single-panel** unit exceed the applicable ceiling, retain it only as `manual_overflow` with a prominent manual warning, not as a compliant clip. The exception cannot combine several panels, unrelated events or padded holds.
+
+Inspection batches of one to three panels control working memory only. Keep the current clip tentative across batch boundaries and finalize it after the immediate neighbor is assessed; already audited prose need not be rewritten or every image reopened for this bookkeeping. At final review, audit adjacent short clips and an episode-wide one-panel-per-clip pattern for missed grouping. Record actual merge/retain reasons and affected targets in the existing `revision_audit` or `final_audit`, not the formal script. Duration-only validator hints identify candidates, not proof of scene continuity or an automatic merge instruction.
 
 If a continuous physical phrase must split, end at a stable state and fully restate the next opening. Every clip resets visible people/counts/relations, off-screen direction, pose, grip/contact, backing, light and stable labels. Never use `保持原有/上一格/上一镜/只放大上一格/沿用前镜` or negative controls such as `不新增/不要/不出现` in generatable fields.
 
