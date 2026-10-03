@@ -141,7 +141,8 @@ class ValidatorTests(unittest.TestCase):
 
     def test_grouping_review_sums_all_shots_not_only_first(self) -> None:
         chunks = [(1, "**分镜1（3秒）：**\n**分镜2（4秒）：**"), (2, "**分镜1（4秒）：**")]
-        self.assertEqual(VALIDATOR.short_clip_grouping_warnings(chunks), [])
+        self.assertEqual(VALIDATOR.short_clip_grouping_warnings(chunks, 10), [])
+        self.assertEqual(len(VALIDATOR.short_clip_grouping_warnings(chunks)), 1)
         self.assertEqual(len(VALIDATOR.short_clip_grouping_warnings(chunks, 12)), 1)
         self.assertEqual(VALIDATOR.short_clip_grouping_warnings([(1, ""), (2, "**分镜1（4秒）：**")]), [])
 

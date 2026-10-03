@@ -269,7 +269,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("storyboard", type=Path)
     parser.add_argument("--max-seconds", type=int, default=15)
-    parser.add_argument("--target-seconds", type=int, default=10, help="Planning target for adjacent-clip grouping review, not a minimum duration.")
+    parser.add_argument("--target-seconds", type=int, default=15, help="Planning target for adjacent-clip grouping review, not a minimum duration.")
     parser.add_argument("--image-dir", type=Path)
     parser.add_argument(
         "--source-ledger",
@@ -659,7 +659,7 @@ def cross_clip_boundary_warnings(chunks: list[tuple[int, str]]) -> list[str]:
 
 
 def short_clip_grouping_warnings(
-    chunks: list[tuple[int, str]], target_seconds: int = 10,
+    chunks: list[tuple[int, str]], target_seconds: int = 15,
 ) -> list[str]:
     """Find timing-compatible neighbors; continuity and dramatic boundaries need review."""
     warnings: list[str] = []
