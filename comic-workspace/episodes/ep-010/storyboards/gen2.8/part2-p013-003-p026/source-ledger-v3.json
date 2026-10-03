@@ -2,7 +2,7 @@
   "version": 3,
   "source_language": "zh",
   "source_commit": "a3e93ff0c6b6838296fe0eed3a2ab0e91db614f8",
-  "skill_commit": "12f708c",
+  "skill_commit": "5c618f8cdd04b457ba5378ccf25c56e450d4e263",
   "panels": [
     {
       "image": "第10话_13_003.jpg",
@@ -15,7 +15,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "深靛夜空铺满上部，冷青云带与零星星点层次疏落；暗蓝楼体的拱窗透出琥珀亮色，下部树冠为深青绿。",
+        "description": "深蓝夜空、青蓝云带与圆月位于上部，暗楼体有暖黄拱窗，两侧绿色树冠围住下部。",
         "evidence": "current_panel"
       },
       "composition_lock": "低机位仰视，28mm纵深外景；月亮置上方偏左，楼体居中下方，两侧树冠围出向上空间。固定镜头，焦点覆盖月面与楼体层次，落幅保留窗光。",
@@ -77,7 +77,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
-        "description": "浅灰水面、银白反光与柔灰蒸汽构成完整的中性灰场，深处水纹被蒸汽淡化。",
+        "description": "当前单色格有横向水纹与上部薄水汽，明暗层次由近处清楚纹理过渡到远处柔亮区域。",
         "evidence": "current_panel"
       },
       "composition_lock": "贴水面的80mm近景，低俯角；前景长条水纹横贯画面，焦点落在中部交错纹理，固定落幅。",
@@ -143,7 +143,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "浅灰方格顶棚、圆形灯面、竖向隔断帘与方格地砖形成中性室内空间，下缘为柔亮水面。",
+        "description": "当前单色格画出方格顶棚、圆灯、高窗隔断及深色横带、竖帘、地砖和前缘水面。",
         "evidence": "current_panel"
       },
       "composition_lock": "24mm低位纵深全景；顶棚格线向上汇聚，圆灯均匀分布；帘后剪影压在中下部，水面占前景薄层。固定镜头，帘面为主焦。",
@@ -207,7 +207,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "浅灰瓷砖墙面、深灰横带与搁架铺满背景；篮纹斜向交织，毛巾边缘呈柔软白灰纤维层。",
+        "description": "当前单色格后层为分块瓷砖墙、两条深色横带与水平搁架。衣篮、衣物和毛巾是当前镜头的主体。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm搁架近景；篮子压左下、毛巾叠层占右下，上方留横向墙砖。固定镜头，焦点置篮沿和毛巾的交界。",
@@ -306,7 +306,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "淡灰蓝墙砖与镜面竖框形成浅纵深，暖白顶光在镜面留下柔和亮区。",
+        "description": "上部灰蓝墙砖及深色横带、镜面边框和低对比镜面色区可见。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm肩线以上双人近景；白发背面和抬起的双臂侧缘占左后，春子侧脸占右前，镜框竖线分开层次。固定镜头，焦点在前景眼线，后景轮廓保持可读。",
@@ -401,8 +401,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "柔白至淡灰的渐变色块铺满人物轮廓之间，层次低而干净。",
+        "type": "omitted",
+        "description": "人物轮廓外为柔白至浅灰色区，没有画出浴室结构；这种简化不能单独证明有意抽象。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm肩线以上双人近景，青右前景占主要面积，春子左后景保留完整眼线。固定镜头，双层脸部焦点均可读。",
@@ -527,7 +527,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "浅米灰渐变色块铺满脸缘间隙，棕色发束形成深浅边线。",
+        "description": "当前正面脸部两侧为低对比米灰白色场，半垂眼和短疑问形成停顿；图形选择的目的另记于镜头决策。",
         "evidence": "current_panel"
       },
       "composition_lock": "100mm春子正面脸部特写，双眼与口部占满横向画面，额发从上缘垂入。固定镜头，焦点在双眼。",
@@ -614,8 +614,8 @@
       "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "淡白至浅冷灰的渐变色块包围白发，左侧发束用低对比淡紫灰分层。",
+        "type": "omitted",
+        "description": "当前轮廓外为白至浅冷灰色区，没有画出浴室结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm青回望面部近景，脸占画面右侧，肩线从下缘裁切，尖耳和白发向左展开；镜头从脸侧可见区域缓推至双眼与口部，回望在中段恢复，最后稳停。",
@@ -740,8 +740,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至淡冷灰渐变色块填满头侧与发缘间隙，层次平缓。",
+        "type": "omitted",
+        "description": "狭窄竖格的轮廓外为白至浅冷灰色区，未画出浴室结构；页面空白和气泡区域另行排除。",
         "evidence": "current_panel"
       },
       "composition_lock": "70mm正面人物近景，春子居左中，青的白发与肩线遮住右下前景；春子手指保留在下缘。固定镜头，焦点在春子眼线。",
@@ -857,8 +857,8 @@
       "source_bubble_count": 1,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块铺满白发外缘，平滑低对比。",
+        "type": "omitted",
+        "description": "轮廓外有白至浅灰色区，未画出浴室结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm青回望脸部特写，脸占中央偏右，左尖耳贴近左侧，肩线从下缘截断；固定镜头，双眼为焦点。",
@@ -953,7 +953,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "深靛天空带稀疏星点，黑蓝楼体亮窗呈柔黄点列，两侧树冠为暗青绿色。",
+        "description": "深蓝天空有细星点与淡云，底部暗楼体的窗面呈暖黄，青绿树冠围住两侧。",
         "evidence": "current_panel"
       },
       "composition_lock": "24mm低位仰视广角，楼体横压下缘，两侧树冠前景夹出大块夜空。固定镜头，楼体轮廓与亮窗清晰，天空保持深远。",
@@ -1050,8 +1050,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块铺满发缘外部，脸侧有很浅的暖灰层次。",
+        "type": "omitted",
+        "description": "本次安全脸臂子区域外为白至浅灰色区，未画出浴室结构；惊叫的图形色场是另记的制作选择。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm脸部与抬臂近景，青的脸占上中部，手臂沿下缘斜向右上，白发在左侧形成纵向轮廓。固定镜头，焦点锁住双眼和口部。",
@@ -1169,8 +1169,8 @@
       "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "浅灰白渐变色块铺满两人脸缘之间，暖灰局部过渡与白发暗面分离。",
+        "type": "omitted",
+        "description": "安全脸臂裁切外为白至浅灰色区，未画出浴室结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm肩线以上双人近景，青的脸与头侧弯臂占右前景，春子左后景完整眼线；固定镜头，双人眼部均在可读焦深内。",
@@ -1309,7 +1309,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "白至浅灰渐变色块铺满棕发外侧窄缝，暖棕发束形成柔暗边界。",
+        "description": "源格正面大脸外侧只有窄小白灰色区，半垂眼与冷淡脸形明确；制作选择的冷场功能另记。",
         "evidence": "current_panel"
       },
       "composition_lock": "100mm春子正面脸部特写，双眼在画面上半部，额发从上缘遮下，脸占中央，下巴接近下缘。固定镜头，焦点在眼线。",
@@ -1431,7 +1431,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "surface",
-        "description": "中性灰地砖与黑灰砖缝铺满画面，左部水迹呈银白反光，右部灰白蒸汽柔化表面。",
+        "description": "单色格地砖斜向接缝清楚，左部湿亮水迹疏密交错，右部水汽软化砖面。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm俯视地砖近景，砖缝从左下斜向右上，左侧湿亮纹理与右侧蒸汽形成前后层次。固定镜头，砖缝为主焦。",
@@ -1547,8 +1547,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至淡灰渐变色块填满脸侧，右侧有一小层柔白水汽。",
+        "type": "omitted",
+        "description": "狭窄源格的轮廓外为白灰色区，右侧有可见水汽，没有画出墙面结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "80mm青侧脸与双手近景，脸居左上朝右，双手和折布在右下，裁切收在肩线与可见手部。固定镜头，脸与手同在可读焦深。",
@@ -1663,8 +1663,8 @@
       "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块覆盖两人轮廓之间，淡暖灰分隔前后脸线。",
+        "type": "omitted",
+        "description": "轮廓外为浅灰白色区，左下有可见水汽，没有画出浴室墙面结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm肩线以上双人近景，青占右前景，春子在左后，搭布只保留肩头一段；固定镜头，青双眼与口部为主焦。",
@@ -1804,7 +1804,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "背景由棕色木板和深褐板缝铺满，木面光泽柔和；白发在木板前形成淡紫灰长束。",
+        "description": "安全发束与木板子区域的后层为暖褐横向木板及深色板缝。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm局部近景，青的长白发沿左侧斜向下展开，木质横板占右后层；裁切集中于发束与木板，固定镜头，焦点在发束边缘。",
@@ -1913,7 +1913,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "中性灰石墙围住亮灰拱窗，黑窗格构成硬线，深灰树冠以复杂叶缘遮挡两侧。",
+        "description": "单色格上半拱窗有黑格条、粗石墙面和树叶，窗面较亮。只复核无人窗区。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm外墙拱窗上半部近景，黑窗格斜横切开亮窗，拱顶位于上中部；树叶前景从左边和右下遮进。固定镜头，焦点在拱顶和窗格。",
@@ -2070,7 +2070,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "背景由木质书架、暗绿色窗面和黄亮灯面铺满；左侧书架有浅黄绿书脊和灰色支架，右侧窗格分隔低亮窗面，下方为深色纹理表面。",
+        "description": "左侧浅黄褐木架有柔绿、米黄书脊与灰色支架；右侧黑窗格后为暗绿色窗面，窗前灯为黄亮色，下部纹理面较暗。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm春心正面面部特写，脸居画面中央，浅发分成两侧束，书架左后、窗格右后；固定镜头，焦点在睁大的双眼，背景轻虚。",
@@ -2183,8 +2183,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块铺满两侧发缘之间，右缘浅发形成淡金色的垂直界线。",
+        "type": "omitted",
+        "description": "当前安全脸肩裁切外为白至浅灰色区，未画出书窗区结构；右缘人物局部不属于背景。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。",
@@ -2300,8 +2300,8 @@
       "source_bubble_count": 1,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "无可生成的视觉内容，仅对白气泡与页面空白。",
+        "type": "omitted",
+        "description": "本格只有对白气泡和页面空白，没有可生成的环境或主体。",
         "evidence": "current_panel"
       },
       "composition_lock": "称呼气泡位于画面右侧的页面空白中，近景视图不存在，无可生成的前景/后景；整格为页内排字。",
@@ -2384,8 +2384,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅暖灰渐变色块铺满左侧负空间，右缘为浅金棕发束的柔暗层。",
+        "type": "omitted",
+        "description": "当前狭窄侧脸格轮廓外为白至浅暖灰色区，未画出环境结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "100mm春心朝左侧脸特写，脸贴画面右侧，鼻梁和口部清楚，左侧留大块低对比空间，头发从上缘遮下。固定镜头，眼与唇线为焦点。",
@@ -2492,7 +2492,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "黑褐灰云纹图形场填满白发外侧，明暗块软边交叠，整体保持阴沉。",
+        "description": "当前源格明确有浓黑褐、灰褐云状软边图形底场。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm青面部近景，脸在画面中央向左倾，白发从两侧包围，眼部处于画面上半部。固定镜头，焦点落在抬高的眼线。",
@@ -2580,7 +2580,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "背景由灰白窗面和黑色窗格填满；木纹台面为浅灰色，下方书脊为柔白灰面，左侧灯面明亮。",
+        "description": "单色格有黑窗格、较暗窗面及月色亮区、左侧亮灯面、水平木质台面和下部书脊。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm窗台与书架近景，灯体占画面左侧前层、黑窗格占右侧后景、窗把横在木质台面上，下部书脊排成竖向节奏。固定镜头，焦点在窗把与台面木纹。",
@@ -2672,7 +2672,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "冷蓝砖栏在下后层横排，暗青树冠压住深靛夜空的下缘，远处云色柔蓝。",
+        "description": "灰蓝砖栏横贯下部，远处墨青树冠与深靛夜空形成分层。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm侧向双人肩上中景，青左侧朝右，春心右侧朝左，春心摊掌保留在两人之间；砖栏后层横贯下部，天空留上方空间。固定镜头，两人侧脸同在焦深内。",
@@ -2831,8 +2831,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块填满右侧空间，蓝衣和白领形成下缘的冷暖明度对比。",
+        "type": "omitted",
+        "description": "狭窄近景轮廓外为白至浅灰色区，未画出露台环境。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm青肩上近景，脸占左侧朝右稍倾，白发从上方与两侧遮入，蓝衣白领露在下缘；固定镜头，焦点在右上偏移的眼神。",
@@ -2940,7 +2940,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "冷蓝夜空铺满上部，右后深青树冠形成低对比影层，露台光色以蓝为主。",
+        "description": "暗青蓝夜空占上部，右后有墨青树冠影层。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm双人肩上近景，春心左前景占较大面积，青右后景露完整脸线和白领；固定镜头，春心眼部主焦，青仍清晰。",
@@ -3086,7 +3086,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "深靛至蓝紫天空铺满画面，淡蓝云影有低对比软边，下缘窄带为暗红褐。",
+        "description": "狭窄夜空格有深蓝、蓝紫云色与下缘暗红褐窄带。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm仰望夜空环境近景，深蓝云影占画面中央上部，蓝紫暗层在下方，红褐云带仅留窄下缘；固定镜头，焦点在云影层次。",
@@ -3208,7 +3208,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "褐色方格顶棚和金褐墙面铺满画面，米白檐条横向斜切，空间色调温暖。",
+        "description": "褐色方格顶棚、米白檐条和金褐墙面构成走廊上部。",
         "evidence": "current_panel"
       },
       "composition_lock": "35mm斜向仰看走廊顶棚近景，米白檐条从左上穿向右下，顶棚方格居上层，檐条经过画面中央，金褐墙面填下层。固定镜头，焦点在檐条。",
@@ -3299,7 +3299,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "physical",
-        "description": "左侧灰蓝墙面与竖框、右侧暖灰墙面与米白檐条形成走廊纵深，褐色顶棚格线汇向后方。",
+        "description": "走廊两侧墙面为灰蓝及灰绿，深色横带、米白竖框和檐条分层；褐色方格顶棚向后汇聚。",
         "evidence": "current_panel"
       },
       "composition_lock": "45mm正面双人中景，青在左、春心在右，肩线形成高低差，走廊墙面与顶棚向后汇聚；镜头缓缓后拉，沿当前可见墙面与顶棚范围展开，落幅维持两人完整脸线和衣着。",
@@ -3420,8 +3420,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "暖黄至淡米白渐变色块铺满发缘之外，蓝衣与白领结在下缘形成清楚层次。",
+        "type": "omitted",
+        "description": "源格上部露出暖黄色面，几乎全部后层被主体遮挡，未画出走廊结构；色面本身不能证明情绪放大。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm青正面肩上近景，脸居中央，蓝衣白领结占下层，白发两侧围出脸线。固定镜头，焦点在双眼，背景轻虚。",
@@ -3528,8 +3528,8 @@
       "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "淡灰白渐变色块铺满左侧负空间，右侧浅发形成浅金棕层次。",
+        "type": "omitted",
+        "description": "狭窄侧脸格的轮廓外为淡灰白色区，未画出走廊结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。",
@@ -3678,7 +3678,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "浅冷灰渐变色块铺满后层，深灰放射纹理在左上疏密变化，人物轮廓清楚。",
+        "description": "源格后层为冷青灰至淡灰色面，左上有指向主体的深色放射细线；标点叠字不属于线场。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm青正面肩上近景，脸居中央，尖耳向右外伸，白发与蓝衣占下部；固定镜头，眼与口部共同清晰。",
@@ -3790,8 +3790,8 @@
       "source_bubble_count": 3,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至淡灰蓝渐变色块铺满两人间隙，服装为白衣与深蓝衣的明度分层。",
+        "type": "omitted",
+        "description": "双人后层为白至淡灰蓝色面，未画出走廊结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "65mm双人肩上中景，春心左侧朝右侧脸，青右侧背向镜头，白发覆住后脑与背面；固定镜头，春心侧眼主焦，青尖耳与发线可读。",
@@ -3927,8 +3927,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "浅灰白渐变色块铺满右侧，浅金棕发束在左形成柔暗层，面部与背景分离。",
+        "type": "omitted",
+        "description": "侧脸格外缘为浅冷灰色面，未画出走廊结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留灰白空间；固定镜头，焦点在侧眼与嘴角。",
@@ -4041,8 +4041,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "physical",
-        "description": "白衣的暖白表面与浅灰褶影铺满口手后方，右前景白发为淡紫灰分束。",
+        "type": "omitted",
+        "description": "当前口手局部几乎被主体完全覆盖，上缘轮廓间只有极窄浅色间隙；衣料及头发不属于环境。",
         "evidence": "current_panel"
       },
       "composition_lock": "100mm唇侧与手部近景，春心口部位于左上，掌边竖在中部，青的白发遮住右前景；白衣铺后层。固定镜头，唇侧与手轮廓清楚。",
@@ -4157,8 +4157,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "中性浅灰渐变色块铺满后层，白发淡紫灰影与蓝衣暗面层次清楚。",
+        "type": "omitted",
+        "description": "当前后层为中性浅灰至浅灰紫色区，未画出走廊结构；反应场选择另记。",
         "evidence": "current_panel"
       },
       "composition_lock": "85mm青正面肩上近景，脸占中央偏右，白发在两侧形成长线，尖耳横伸，白领结从下缘露入；固定镜头，双眼与口部清晰。",
@@ -4273,7 +4273,7 @@
       "bubble_audit": "pass",
       "background": {
         "type": "graphic",
-        "description": "白至浅灰渐变色块铺满画面，人物周围保留大块明亮空场，下部灰阶稍深。",
+        "description": "格内为白至浅灰色面，两人缩成左下Q版，余下为大块空场；页面边界、气泡与动作字叠层不计入底场。",
         "evidence": "current_panel"
       },
       "composition_lock": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块白灰空间。固定镜头，人物轮廓与抓肩点同时清楚。",
@@ -4413,8 +4413,8 @@
       "source_bubble_count": 2,
       "bubble_audit": "pass",
       "background": {
-        "type": "graphic",
-        "description": "白至浅灰渐变色块铺满后层，白衣亮面和浅发淡金棕暗层清楚，整体安静柔和。",
+        "type": "omitted",
+        "description": "轮廓外为白至浅灰色面，未画出走廊结构。",
         "evidence": "current_panel"
       },
       "composition_lock": "75mm春心正面肩上近景，脸居画面中央，两侧浅发扎束垂到下缘，白衣与下缘可见的一只手构成低部层次；首句后缓慢推近，在既有脸肩范围内将双眼保持于上方三分线，落幅稳住眼线与微笑。",
@@ -4516,7 +4516,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "把热闹对白切入安静夜景，建立室内时间",
-      "background_excerpt": "深靛夜空铺满上部，冷青云带与零星星点层次疏落；暗蓝楼体的拱窗透出琥珀亮色，下部树冠为深青绿。",
+      "background_excerpt": "深靛天空中，圆月为柔淡的青白色，冷青云带与疏落星点围出高处的开阔层次；下部暗蓝楼体的拱窗呈琥珀黄，两侧树冠由近处青绿渐入远处墨绿。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4555,6 +4555,12 @@
         "opening": "低机位仰视，28mm纵深外景；月亮置上方偏左，楼体居中下方，两侧树冠围出向上空间。固定镜头，焦点覆盖月面与楼体层次，落幅保留窗光。",
         "landing": "低机位仰视，28mm纵深外景；月亮置上方偏左，楼体居中下方，两侧树冠围出向上空间。固定镜头，焦点覆盖月面与楼体层次，落幅保留窗光。",
         "evidence": "低机位仰视，28mm纵深外景；月亮置上方偏左，楼体居中下方，两侧树冠围出向上空间。固定镜头，焦点覆盖月面与楼体层次，落幅保留窗光。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -4566,7 +4572,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "由外景的冷静切至热水的近距离质感",
-      "background_excerpt": "浅灰水面、银白反光与柔灰蒸汽构成完整的中性灰场，深处水纹被蒸汽淡化。",
+      "background_excerpt": "淡青灰水面铺满画面，横向水纹在近层清楚、远层疏淡；上部的薄层水汽呈暖象牙白，水纹与水汽的边界柔和交融。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4602,6 +4608,12 @@
         "opening": "贴水面的80mm近景，低俯角；前景长条水纹横贯画面，焦点落在中部交错纹理，固定落幅。",
         "landing": "贴水面的80mm近景，低俯角；前景长条水纹横贯画面，焦点落在中部交错纹理，固定落幅。",
         "evidence": "贴水面的80mm近景，低俯角；前景长条水纹横贯画面，焦点落在中部交错纹理，固定落幅。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -4613,7 +4625,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "建立浴室空间并用遮挡保留生活气息",
-      "background_excerpt": "浅灰方格顶棚、圆形灯面、竖向隔断帘与方格地砖形成中性室内空间，下缘为柔亮水面。",
+      "background_excerpt": "象牙白方格顶棚分布柔白圆灯，浅灰蓝高窗隔断下横贯一条深青灰带；乳白帘面竖向垂落，下部淡灰蓝地砖与前缘青灰水面形成连续的室内层次。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4656,6 +4668,12 @@
         "opening": "24mm低位纵深全景；顶棚格线向上汇聚，圆灯均匀分布；帘后剪影压在中下部，水面占前景薄层。固定镜头，帘面为主焦。",
         "landing": "24mm低位纵深全景；顶棚格线向上汇聚，圆灯均匀分布；帘后剪影压在中下部，水面占前景薄层。固定镜头，帘面为主焦。",
         "evidence": "24mm低位纵深全景；顶棚格线向上汇聚，圆灯均匀分布；帘后剪影压在中下部，水面占前景薄层。固定镜头，帘面为主焦。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -4667,7 +4685,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "以安稳物件延续哼唱，给人物场景留呼吸",
-      "background_excerpt": "浅灰瓷砖墙面、深灰横带与搁架铺满背景；篮纹斜向交织，毛巾边缘呈柔软白灰纤维层。",
+      "background_excerpt": "后层浅灰蓝瓷砖墙面以疏朗接缝分块，两条深青灰横带穿过上部；浅暖灰搁架把下层收成一条稳定的水平面。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4706,6 +4724,12 @@
         "opening": "50mm搁架近景；篮子压左下、毛巾叠层占右下，上方留横向墙砖。固定镜头，焦点置篮沿和毛巾的交界。",
         "landing": "50mm搁架近景；篮子压左下、毛巾叠层占右下，上方留横向墙砖。固定镜头，焦点置篮沿和毛巾的交界。",
         "evidence": "50mm搁架近景；篮子压左下、毛巾叠层占右下，上方留横向墙砖。固定镜头，焦点置篮沿和毛巾的交界。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -4717,7 +4741,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用后景放松与前景淡然构成不同步的人物节奏",
-      "background_excerpt": "淡灰蓝墙砖与镜面竖框形成浅纵深，暖白顶光在镜面留下柔和亮区。",
+      "background_excerpt": "淡灰蓝墙砖与浅米灰镜框保留清楚的竖向分隔，镜面远层呈低对比的灰蓝与淡暖白色面；上部深色横带压住背景明度。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4759,6 +4783,12 @@
         "opening": "50mm肩线以上双人近景；白发背面和抬起的双臂侧缘占左后，春子侧脸占右前，镜框竖线分开层次。固定镜头，焦点在前景眼线，后景轮廓保持可读。",
         "landing": "50mm肩线以上双人近景；白发背面和抬起的双臂侧缘占左后，春子侧脸占右前，镜框竖线分开层次。固定镜头，焦点在前景眼线，后景轮廓保持可读。",
         "evidence": "50mm肩线以上双人近景；白发背面和抬起的双臂侧缘占左后，春子侧脸占右前，镜框竖线分开层次。固定镜头，焦点在前景眼线，后景轮廓保持可读。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -4770,7 +4800,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让感谢落在双人态度反差上",
-      "background_excerpt": "柔白至淡灰的渐变色块铺满人物轮廓之间，层次低而干净。",
+      "background_excerpt": "淡灰蓝瓷砖墙面作为柔焦后层铺在轮廓间，稀疏横向砖缝化为浅青灰线；边缘过渡到暖象牙白，环境层次低于面部。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4810,6 +4840,15 @@
         "opening": "65mm肩线以上双人近景，青右前景占主要面积，春子左后景保留完整眼线。固定镜头，双层脸部焦点均可读。",
         "landing": "65mm肩线以上双人近景，青右前景占主要面积，春子左后景保留完整眼线。固定镜头，双层脸部焦点均可读。",
         "evidence": "65mm肩线以上双人近景，青右前景占主要面积，春子左后景保留完整眼线。固定镜头，双层脸部焦点均可读。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -4821,7 +4860,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "感谢的后半句用已可见的闭眼脸部承载，不与下一张春子特写重复",
-      "background_excerpt": "均匀淡灰白渐变色块从白发外缘延伸，保留浴室漫射色温。",
+      "background_excerpt": "画面边角仅露出柔焦的淡灰蓝瓷砖墙面，细淡砖缝隐入暖象牙白的明度过渡。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4868,7 +4907,16 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：85mm青的单人面部特写，右侧尖耳及脸颊完整，白发包住两侧；较双人镜改变主体范围与布局。固定镜头，焦点在眼睑与唇线。；下一原格：100mm春子正面脸部特写，双眼与口部占满横向画面，额发从上缘垂入。固定镜头，焦点在双眼。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
+      }
     },
     {
       "target": "片段7/分镜1",
@@ -4879,7 +4927,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "从感谢切到短促的疑问，保留漫画笑点停顿",
-      "background_excerpt": "浅米灰渐变色块铺满脸缘间隙，棕色发束形成深浅边线。",
+      "background_excerpt": "米灰至淡象牙白的渐变色块铺满图形背景，色面平整，窄小底场保持静止。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4916,6 +4964,13 @@
         "opening": "100mm春子正面脸部特写，双眼与口部占满横向画面，额发从上缘垂入。固定镜头，焦点在双眼。",
         "landing": "100mm春子正面脸部特写，双眼与口部占满横向画面，额发从上缘垂入。固定镜头，焦点在双眼。",
         "evidence": "100mm春子正面脸部特写，双眼与口部占满横向画面，额发从上缘垂入。固定镜头，焦点在双眼。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "2秒疑问采用静止的米灰空场，把突然停顿与平直神态作为冷场；片段8返回浴室软墙面。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p"
       }
     },
     {
@@ -4927,7 +4982,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让指责先到，回头的抵抗随后到达",
-      "background_excerpt": "淡白至浅冷灰的渐变色块包围白发，左侧发束用低对比淡紫灰分层。",
+      "background_excerpt": "淡灰蓝瓷砖墙面留在后层，横向接缝虚化成宽而淡的青灰线；上缘较亮，下部为柔和的暖灰蓝。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -4965,6 +5020,15 @@
         "opening": "75mm青回望面部近景，脸占画面右侧，肩线从下缘裁切，尖耳和白发向左展开；镜头从脸侧可见区域缓推至双眼与口部，回望在中段恢复，最后稳停。",
         "landing": "75mm青回望面部近景，脸占画面右侧，肩线从下缘裁切，尖耳和白发向左展开；镜头从脸侧可见区域缓推至双眼与口部，回望在中段恢复，最后稳停。",
         "evidence": "75mm青回望面部近景，脸占画面右侧，肩线从下缘裁切，尖耳和白发向左展开；镜头从脸侧可见区域缓推至双眼与口部，回望在中段恢复，最后稳停。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -4976,7 +5040,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "将争执转成具体疑问，保持手指与肩线的近距离关系",
-      "background_excerpt": "白至淡冷灰渐变色块填满头侧与发缘间隙，层次平缓。",
+      "background_excerpt": "背景由柔焦的淡灰蓝瓷砖墙面铺满可见间隙，窄小区域保留一段疏淡横缝；色面由上部象牙白过渡到下部浅青灰。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5018,6 +5082,15 @@
         "opening": "70mm正面人物近景，春子居左中，青的白发与肩线遮住右下前景；春子手指保留在下缘。固定镜头，焦点在春子眼线。",
         "landing": "70mm正面人物近景，春子居左中，青的白发与肩线遮住右下前景；春子手指保留在下缘。固定镜头，焦点在春子眼线。",
         "evidence": "70mm正面人物近景，春子居左中，青的白发与肩线遮住右下前景；春子手指保留在下缘。固定镜头，焦点在春子眼线。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5029,7 +5102,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "将随口的重复推进成不安的确认",
-      "background_excerpt": "白至浅灰渐变色块铺满白发外缘，平滑低对比。",
+      "background_excerpt": "后层为柔焦的淡灰蓝浴室墙面，横向砖缝只有很低的对比，上部暖象牙白、下部浅青灰的明度关系稳定。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5066,6 +5139,15 @@
         "opening": "85mm青回望脸部特写，脸占中央偏右，左尖耳贴近左侧，肩线从下缘截断；固定镜头，双眼为焦点。",
         "landing": "85mm青回望脸部特写，脸占中央偏右，左尖耳贴近左侧，肩线从下缘截断；固定镜头，双眼为焦点。",
         "evidence": "85mm青回望脸部特写，脸占中央偏右，左尖耳贴近左侧，肩线从下缘截断；固定镜头，双眼为焦点。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5077,7 +5159,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用外景容纳突然爆发，避免立即重复脸部反应",
-      "background_excerpt": "深靛天空带稀疏星点，黑蓝楼体亮窗呈柔黄点列，两侧树冠为暗青绿色。",
+      "background_excerpt": "深靛夜空保留稀疏星点和低对比青蓝云层；下缘楼体为浓黑蓝，暖黄亮窗疏落成列，两侧暗青绿树冠围出中央开阔天空。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5117,6 +5199,12 @@
         "opening": "24mm低位仰视广角，楼体横压下缘，两侧树冠前景夹出大块夜空。固定镜头，楼体轮廓与亮窗清晰，天空保持深远。",
         "landing": "24mm低位仰视广角，楼体横压下缘，两侧树冠前景夹出大块夜空。固定镜头，楼体轮廓与亮窗清晰，天空保持深远。",
         "evidence": "24mm低位仰视广角，楼体横压下缘，两侧树冠前景夹出大块夜空。固定镜头，楼体轮廓与亮窗清晰，天空保持深远。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -5128,7 +5216,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让惊声落实到人物的确认与失措",
-      "background_excerpt": "白至浅灰渐变色块铺满发缘外部，脸侧有很浅的暖灰层次。",
+      "background_excerpt": "冷蓝灰至淡青白的渐变色块铺满图形背景，外缘明度略低，中央色面平净，底场保持静止。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5168,6 +5256,13 @@
         "opening": "75mm脸部与抬臂近景，青的脸占上中部，手臂沿下缘斜向右上，白发在左侧形成纵向轮廓。固定镜头，焦点锁住双眼和口部。",
         "landing": "75mm脸部与抬臂近景，青的脸占上中部，手臂沿下缘斜向右上，白发在左侧形成纵向轮廓。固定镜头，焦点锁住双眼和口部。",
         "evidence": "75mm脸部与抬臂近景，青的脸占上中部，手臂沿下缘斜向右上，白发在左侧形成纵向轮廓。固定镜头，焦点锁住双眼和口部。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "惊叫、睁眼和张口形成明确的情绪放大；简洁冷蓝灰到青白色面支持瞬间惊讶，不新增线场或粒子；片段13返回浴室。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p"
       }
     },
     {
@@ -5179,7 +5274,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "冷静追问对上尚未平复的惊讶",
-      "background_excerpt": "浅灰白渐变色块铺满两人脸缘之间，暖灰局部过渡与白发暗面分离。",
+      "background_excerpt": "柔焦的淡灰蓝瓷砖墙面露在上部与轮廓间，疏淡接缝呈浅青灰，底色带有稳定的象牙白暖度。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5222,6 +5317,15 @@
         "opening": "65mm肩线以上双人近景，青的脸与头侧弯臂占右前景，春子左后景完整眼线；固定镜头，双人眼部均在可读焦深内。",
         "landing": "65mm肩线以上双人近景，青的脸与头侧弯臂占右前景，春子左后景完整眼线；固定镜头，双人眼部均在可读焦深内。",
         "evidence": "65mm肩线以上双人近景，青的脸与头侧弯臂占右前景，春子左后景完整眼线；固定镜头，双人眼部均在可读焦深内。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5233,7 +5337,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "用已可见的青眼部细节把否认压实",
-      "background_excerpt": "白发的淡紫灰束影与浅灰渐变色块填满眼部裁切的边角。",
+      "background_excerpt": "独立背景完全被主体遮住。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5281,7 +5385,12 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm青的眼眉与鼻梁局部特写，双眼横占画面，头侧弯臂仅留一段上缘遮挡，脸部信息集中于眉眼。固定镜头，眼角水光为焦点。；下一原格：100mm春子正面脸部特写，双眼在画面上半部，额发从上缘遮下，脸占中央，下巴接近下缘。固定镜头，焦点在眼线。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "occluded",
+        "basis": "已对照当前源图与获准细节裁切：眉眼/鼻梁或抓肩接触点被主体及自身遮挡满幅，独立环境不在这个裁切中。主体细节保留在镜头、动作和光影各栏，不增补背景边缝。",
+        "inspected_resolution": "720p"
+      }
     },
     {
       "target": "片段14/分镜1",
@@ -5292,7 +5401,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "以平淡脸线给误会留下反差",
-      "background_excerpt": "白至浅灰渐变色块铺满棕发外侧窄缝，暖棕发束形成柔暗边界。",
+      "background_excerpt": "两侧窄小底场为象牙白至浅米灰的平缓渐变，色面静止、明度均匀。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5329,6 +5438,13 @@
         "opening": "100mm春子正面脸部特写，双眼在画面上半部，额发从上缘遮下，脸占中央，下巴接近下缘。固定镜头，焦点在眼线。",
         "landing": "100mm春子正面脸部特写，双眼在画面上半部，额发从上缘遮下，脸占中央，下巴接近下缘。固定镜头，焦点在眼线。",
         "evidence": "100mm春子正面脸部特写，双眼在画面上半部，额发从上缘遮下，脸占中央，下巴接近下缘。固定镜头，焦点在眼线。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "正面扁平的半垂眼与不相称的安慰形成持续冷面喜剧；以低饱和米灰空场保持其停顿，细节镜完全遮挡，片段15返回地砖。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p"
       }
     },
     {
@@ -5340,7 +5456,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "把画外反驳的压力落在春子的未被说动上",
-      "background_excerpt": "暖棕额发与淡象牙白脸部表面填满细节画面边角，明度差柔和。",
+      "background_excerpt": "独立背景完全被主体遮住。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5387,7 +5503,12 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：135mm春子单眼、眉与一小段额发的细节插入，眼线横贯画面，下方脸部裁出；固定镜头，焦点置眼睑边缘。；下一原格：50mm俯视地砖近景，砖缝从左下斜向右上，左侧湿亮纹理与右侧蒸汽形成前后层次。固定镜头，砖缝为主焦。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "occluded",
+        "basis": "已对照当前源图与获准细节裁切：眉眼/鼻梁或抓肩接触点被主体及自身遮挡满幅，独立环境不在这个裁切中。主体细节保留在镜头、动作和光影各栏，不增补背景边缝。",
+        "inspected_resolution": "720p"
+      }
     },
     {
       "target": "片段15/分镜1",
@@ -5398,7 +5519,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用地面插入把清理过程放在听觉中，保留节奏而不重复人物",
-      "background_excerpt": "中性灰地砖与黑灰砖缝铺满画面，左部水迹呈银白反光，右部灰白蒸汽柔化表面。",
+      "background_excerpt": "淡灰蓝方形地砖及深青灰砖缝铺满画面，左部水迹形成疏密交错的薄层纹理，右部乳白水汽软化地砖层次。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5438,6 +5559,12 @@
         "opening": "50mm俯视地砖近景，砖缝从左下斜向右上，左侧湿亮纹理与右侧蒸汽形成前后层次。固定镜头，砖缝为主焦。",
         "landing": "50mm俯视地砖近景，砖缝从左下斜向右上，左侧湿亮纹理与右侧蒸汽形成前后层次。固定镜头，砖缝为主焦。",
         "evidence": "50mm俯视地砖近景，砖缝从左下斜向右上，左侧湿亮纹理与右侧蒸汽形成前后层次。固定镜头，砖缝为主焦。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -5449,7 +5576,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "侧脸与攥布构成一段完整的忍耐，不用重复抽动堆叠痛感",
-      "background_excerpt": "白至淡灰渐变色块填满脸侧，右侧有一小层柔白水汽。",
+      "background_excerpt": "柔焦的淡灰蓝浴室墙面铺在脸侧可见区，疏淡砖缝隐入暖象牙白底色；右侧原有水汽保持薄而通透的乳白层。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5490,6 +5617,15 @@
         "opening": "80mm青侧脸与双手近景，脸居左上朝右，双手和折布在右下，裁切收在肩线与可见手部。固定镜头，脸与手同在可读焦深。",
         "landing": "80mm青侧脸与双手近景，脸居左上朝右，双手和折布在右下，裁切收在肩线与可见手部。固定镜头，脸与手同在可读焦深。",
         "evidence": "80mm青侧脸与双手近景，脸居左上朝右，双手和折布在右下，裁切收在肩线与可见手部。固定镜头，脸与手同在可读焦深。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5501,7 +5637,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "叫停时让声息和姿态同时从紧绷转到喘息",
-      "background_excerpt": "白至浅灰渐变色块覆盖两人轮廓之间，淡暖灰分隔前后脸线。",
+      "background_excerpt": "淡灰蓝瓷砖墙面作为柔焦后层，接缝疏淡，左下已有乳白水汽使墙面边界更软；上部底色保持暖象牙白。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5544,6 +5680,15 @@
         "opening": "65mm肩线以上双人近景，青占右前景，春子在左后，搭布只保留肩头一段；固定镜头，青双眼与口部为主焦。",
         "landing": "65mm肩线以上双人近景，青占右前景，春子在左后，搭布只保留肩头一段；固定镜头，青双眼与口部为主焦。",
         "evidence": "65mm肩线以上双人近景，青占右前景，春子在左后，搭布只保留肩头一段；固定镜头，青双眼与口部为主焦。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查14_003浴室墙砖，当前连续浴室近景省略结构；仅承接同一淡灰蓝软墙面和疏淡横缝，不重建镜框、帘、灯或未见房间侧面。当前方向、前景裁切及遮挡保留；砖面暖度是场景制作配色。",
+        "source_refs": [
+          "第10话_14_003.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5555,7 +5700,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "用春子可见的平淡眼部回应，不新增反打空间",
-      "background_excerpt": "棕发暗面、淡象牙白脸部表面与右缘白发淡紫灰层填满画面。",
+      "background_excerpt": "独立背景完全被主体遮住。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5602,7 +5747,12 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm春子眼眉与鼻梁的细节近景，棕发从上缘遮下，青的白发仅在右侧留窄边；固定镜头，春子眼线清楚。；下一原格：85mm局部近景，青的长白发沿左侧斜向下展开，木质横板占右后层；裁切集中于发束与木板，固定镜头，焦点在发束边缘。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "occluded",
+        "basis": "已对照当前源图与获准细节裁切：眉眼/鼻梁或抓肩接触点被主体及自身遮挡满幅，独立环境不在这个裁切中。主体细节保留在镜头、动作和光影各栏，不增补背景边缝。",
+        "inspected_resolution": "720p"
+      }
     },
     {
       "target": "片段18/分镜1",
@@ -5613,7 +5763,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用头发与横板子区域承载结果确认，停下过度清理",
-      "background_excerpt": "背景由棕色木板和深褐板缝铺满，木面光泽柔和；白发在木板前形成淡紫灰长束。",
+      "background_excerpt": "背景由暖褐木质横板和深褐板缝铺满，板缝按原有间距平行展开；木面色差低，窄条纹理保持清楚。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5650,6 +5800,12 @@
         "opening": "85mm局部近景，青的长白发沿左侧斜向下展开，木质横板占右后层；裁切集中于发束与木板，固定镜头，焦点在发束边缘。",
         "landing": "85mm局部近景，青的长白发沿左侧斜向下展开，木质横板占右后层；裁切集中于发束与木板，固定镜头，焦点在发束边缘。",
         "evidence": "85mm局部近景，青的长白发沿左侧斜向下展开，木质横板占右后层；裁切集中于发束与木板，固定镜头，焦点在发束边缘。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -5661,7 +5817,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "从近距离失措抽离到拱窗外，扩大人物问题的余波",
-      "background_excerpt": "中性灰石墙围住亮灰拱窗，黑窗格构成硬线，深灰树冠以复杂叶缘遮挡两侧。",
+      "background_excerpt": "低饱和蓝灰石墙围住拱窗，墨黑窗格分隔暖象牙白窗面；两侧树冠由近处深青绿渐入暗墨绿，细小叶缘层次清楚。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5701,6 +5857,12 @@
         "opening": "50mm外墙拱窗上半部近景，黑窗格斜横切开亮窗，拱顶位于上中部；树叶前景从左边和右下遮进。固定镜头，焦点在拱顶和窗格。",
         "landing": "50mm外墙拱窗上半部近景，黑窗格斜横切开亮窗，拱顶位于上中部；树叶前景从左边和右下遮进。固定镜头，焦点在拱顶和窗格。",
         "evidence": "50mm外墙拱窗上半部近景，黑窗格斜横切开亮窗，拱顶位于上中部；树叶前景从左边和右下遮进。固定镜头，焦点在拱顶和窗格。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -5712,7 +5874,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "用已可见的石墙树影细节承载解决办法，避免相似窗景重切",
-      "background_excerpt": "粗糙灰石面、暗灰石缝与柔黑叶影填满画面，左缘有浅灰亮窗边。",
+      "background_excerpt": "蓝灰粗石面与深青灰石缝铺满画面，深青绿叶片遮进边角，左缘保留一窄段暖象牙白窗面。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5759,7 +5921,13 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：90mm石墙与叶缘细节插入，主体变为石块接缝，树叶前景遮住右下与左上角；亮窗只在左缘保留一条光边。固定镜头，焦点在石缝。；下一原格：65mm春心正面面部特写，脸居画面中央，浅发分成两侧束，书架左后、窗格右后；固定镜头，焦点在睁大的双眼，背景轻虚。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
+      }
     },
     {
       "target": "片段20/分镜1",
@@ -5770,7 +5938,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "姐姐的反应使喜剧节奏停顿，第一次显出不寻常",
-      "background_excerpt": "背景由木质书架、暗绿色窗面和黄亮灯面铺满；左侧书架有浅黄绿书脊和灰色支架，右侧窗格分隔低亮窗面，下方为深色纹理表面。",
+      "background_excerpt": "背景由浅黄褐木质书架与暗青绿夜窗铺满；左后柔绿与米黄书脊并列，灰青支架斜向贯穿；右后墨黑窗格分隔窗面，暖黄灯面占窗前一角，下部纹理面保持浓褐暗色。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5813,6 +5981,12 @@
         "opening": "65mm春心正面面部特写，脸居画面中央，浅发分成两侧束，书架左后、窗格右后；固定镜头，焦点在睁大的双眼，背景轻虚。",
         "landing": "65mm春心正面面部特写，脸居画面中央，浅发分成两侧束，书架左后、窗格右后；固定镜头，焦点在睁大的双眼，背景轻虚。",
         "evidence": "65mm春心正面面部特写，脸居画面中央，浅发分成两侧束，书架左后、窗格右后；固定镜头，焦点在睁大的双眼，背景轻虚。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -5824,7 +5998,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让姐姐的反应感染青的追问，但保持有限回望",
-      "background_excerpt": "白至浅灰渐变色块铺满两侧发缘之间，右缘浅发形成淡金色的垂直界线。",
+      "background_excerpt": "后层保留柔焦的浅黄褐木质色面，上部与右侧可见区为低对比暗青绿窗面色块；环境细节收成柔和的大层次。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5863,6 +6037,16 @@
         "opening": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。",
         "landing": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。",
         "evidence": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "当前格没有环境结构。前后已检查的书窗区确认同一连续对话场景；仅承接浅木色远平面与暗青绿窗面色值，全部软化，轴线不足以支持精确物件布局，故不重建书脊、窗格、灯或新室内侧面。当前前景人数、方向及遮挡保留。",
+        "source_refs": [
+          "第10话_19_003.jpg",
+          "第10话_21_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5874,7 +6058,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "给姐姐尚未回答的空隙，不新增她的反面机位",
-      "background_excerpt": "淡灰渐变色块铺满左侧，右侧为浅金色发束与下缘黑色扎结，层次清楚。",
+      "background_excerpt": "左侧窄小可见区为柔焦的浅黄褐木质背景面，上部带有低对比暗青绿色过渡。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5902,9 +6086,10 @@
         "mode": "fixed",
         "reason": "给姐姐尚未回答的空隙，不新增她的反面机位",
         "anchor_phase": "endpoint",
-        "opening": "100mm春心已可见的浅发扎束特写，浅发从画面右侧竖落，灰白渐变色块留在左侧，扎结接近下缘；固定镜头，焦点在发束扎结。",
-        "landing": "100mm春心已可见的浅发扎束特写，浅发从画面右侧竖落，灰白渐变色块留在左侧，扎结接近下缘；固定镜头，焦点在发束扎结。",
-        "evidence": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。"
+        "opening": "100mm春心已可见的浅发扎束特写，浅发从画面右侧竖落，柔焦的木质环境后层留在左侧，扎结接近下缘；固定镜头，焦点在发束扎结。",
+        "landing": "100mm春心已可见的浅发扎束特写，浅发从画面右侧竖落，柔焦的木质环境后层留在左侧，扎结接近下缘；固定镜头，焦点在发束扎结。",
+        "evidence": "75mm青肩线以上回望近景，脸占左侧，春心的浅发与肩线仅从右缘切入；固定镜头，青双眼为焦点，后层浅虚。",
+        "background_compatibility_review": "仅更正底场名称，机位、尺度、运镜、落幅及前景遮挡未改变。"
       },
       "coverage_type": "detail_insert",
       "coverage_changes": [
@@ -5919,7 +6104,17 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm春心已可见的浅发扎束特写，浅发从画面右侧竖落，灰白渐变色块留在左侧，扎结接近下缘；固定镜头，焦点在发束扎结。；下一原格：100mm春心朝左侧脸特写，脸贴画面右侧，鼻梁和口部清楚，左侧留大块低对比空间，头发从上缘遮下。固定镜头，眼与唇线为焦点。",
-      "claim_scope": "仅浅发扎束与扎结；肩线在本细节镜裁外。人物身份由该格可见发束连续性确认。"
+      "claim_scope": "仅浅发扎束与扎结；肩线在本细节镜裁外。人物身份由该格可见发束连续性确认。",
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "当前格没有环境结构。前后已检查的书窗区确认同一连续对话场景；仅承接浅木色远平面与暗青绿窗面色值，全部软化，轴线不足以支持精确物件布局，故不重建书脊、窗格、灯或新室内侧面。当前前景人数、方向及遮挡保留。",
+        "source_refs": [
+          "第10话_19_003.jpg",
+          "第10话_21_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
+      }
     },
     {
       "target": "片段22/分镜1",
@@ -5930,7 +6125,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "认真开口却落入同一个误会，让反转由停顿而非夸张动作承担",
-      "background_excerpt": "白至浅暖灰渐变色块铺满左侧负空间，右缘为浅金棕发束的柔暗层。",
+      "background_excerpt": "左侧后层为柔焦的浅黄褐木质色面，上部暗青绿夜窗色块压低明度，暖冷两层的交界平缓。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -5968,6 +6163,16 @@
         "opening": "100mm春心朝左侧脸特写，脸贴画面右侧，鼻梁和口部清楚，左侧留大块低对比空间，头发从上缘遮下。固定镜头，眼与唇线为焦点。",
         "landing": "100mm春心朝左侧脸特写，脸贴画面右侧，鼻梁和口部清楚，左侧留大块低对比空间，头发从上缘遮下。固定镜头，眼与唇线为焦点。",
         "evidence": "100mm春心朝左侧脸特写，脸贴画面右侧，鼻梁和口部清楚，左侧留大块低对比空间，头发从上缘遮下。固定镜头，眼与唇线为焦点。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "当前格没有环境结构。前后已检查的书窗区确认同一连续对话场景；仅承接浅木色远平面与暗青绿窗面色值，全部软化，轴线不足以支持精确物件布局，故不重建书脊、窗格、灯或新室内侧面。当前前景人数、方向及遮挡保留。",
+        "source_refs": [
+          "第10话_19_003.jpg",
+          "第10话_21_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -5979,7 +6184,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "把两次误会的压力落成可读的疲惫与无奈",
-      "background_excerpt": "黑褐灰云纹图形场填满白发外侧，明暗块软边交叠，整体保持阴沉。",
+      "background_excerpt": "浓黑褐至灰褐的图形底场铺满后层，云状软边色块疏密交叠；深色集中在上部与两侧，较浅灰褐留在下部。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6016,6 +6221,14 @@
         "opening": "85mm青面部近景，脸在画面中央向左倾，白发从两侧包围，眼部处于画面上半部。固定镜头，焦点落在抬高的眼线。",
         "landing": "85mm青面部近景，脸在画面中央向左倾，白发从两侧包围，眼部处于画面上半部。固定镜头，焦点落在抬高的眼线。",
         "evidence": "85mm青面部近景，脸在画面中央向左倾，白发从两侧包围，眼部处于画面上半部。固定镜头，焦点落在抬高的眼线。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "当前源格明确画出黑褐云状图形底场，翻眼、塌眉与无奈呼气支持心理压迫；保留已检查的源图软边形态，不作为实际烟雾；片段24返回书窗实景。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p",
+        "form_reference": "第10话_21_001.jpg"
       }
     },
     {
@@ -6027,7 +6240,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用窗边物件重建平静，把误会转入信息整理",
-      "background_excerpt": "背景由灰白窗面和黑色窗格填满；木纹台面为浅灰色，下方书脊为柔白灰面，左侧灯面明亮。",
+      "background_excerpt": "墨黑窗格分隔暗青绿夜窗，窗面中央保留淡青白月色亮区；浅黄褐木质台面横贯中层，下部米白、淡黄与柔绿书脊并列，左侧灯面为暖象牙黄。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6068,6 +6281,12 @@
         "opening": "65mm窗台与书架近景，灯体占画面左侧前层、黑窗格占右侧后景、窗把横在木质台面上，下部书脊排成竖向节奏。固定镜头，焦点在窗把与台面木纹。",
         "landing": "65mm窗台与书架近景，灯体占画面左侧前层、黑窗格占右侧后景、窗把横在木质台面上，下部书脊排成竖向节奏。固定镜头，焦点在窗把与台面木纹。",
         "evidence": "65mm窗台与书架近景，灯体占画面左侧前层、黑窗格占右侧后景、窗把横在木质台面上，下部书脊排成竖向节奏。固定镜头，焦点在窗把与台面木纹。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6079,7 +6298,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "在相向姿态中交代可能性，手掌展开形成解释节拍",
-      "background_excerpt": "冷蓝砖栏在下后层横排，暗青树冠压住深靛夜空的下缘，远处云色柔蓝。",
+      "background_excerpt": "冷蓝砖栏在下层横排，砖面底色为低饱和灰蓝，砖缝深青灰；远处墨青树冠压住深靛夜空下缘，淡蓝云色融入高处暗场。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6124,6 +6343,12 @@
         "opening": "50mm侧向双人肩上中景，青左侧朝右，春心右侧朝左，春心摊掌保留在两人之间；砖栏后层横贯下部，天空留上方空间。固定镜头，两人侧脸同在焦深内。",
         "landing": "50mm侧向双人肩上中景，青左侧朝右，春心右侧朝左，春心摊掌保留在两人之间；砖栏后层横贯下部，天空留上方空间。固定镜头，两人侧脸同在焦深内。",
         "evidence": "50mm侧向双人肩上中景，青左侧朝右，春心右侧朝左，春心摊掌保留在两人之间；砖栏后层横贯下部，天空留上方空间。固定镜头，两人侧脸同在焦深内。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6135,7 +6360,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "转向被问者的已见眼部，给下一段回答留下入口",
-      "background_excerpt": "深蓝天空和一条冷蓝砖栏带形成低对比后层，白发暗面与尖耳边缘清楚。",
+      "background_excerpt": "深靛至暗青蓝天空填入可见后层，下缘砖栏缩成一条低对比灰蓝横带。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6183,7 +6408,13 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm青的侧脸眼部与尖耳特写，脸占左侧朝右，尖耳与白发向左伸出；砖栏仅保留下方冷蓝横带。固定镜头，焦点在眼线。；下一原格：85mm青肩上近景，脸占左侧朝右稍倾，白发从上方与两侧遮入，蓝衣白领露在下缘；固定镜头，焦点在右上偏移的眼神。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
+      }
     },
     {
       "target": "片段26/分镜1",
@@ -6194,7 +6425,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让回想具有等待与未确定的落点",
-      "background_excerpt": "白至浅灰渐变色块填满右侧空间，蓝衣和白领形成下缘的冷暖明度对比。",
+      "background_excerpt": "右侧窄小后层延续深靛夜空，底部露出柔焦的墨青树冠色面；天空与树冠的交界松软，夜色深度稳定。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6233,6 +6464,16 @@
         "opening": "85mm青肩上近景，脸占左侧朝右稍倾，白发从上方与两侧遮入，蓝衣白领露在下缘；固定镜头，焦点在右上偏移的眼神。",
         "landing": "85mm青肩上近景，脸占左侧朝右稍倾，白发从上方与两侧遮入，蓝衣白领露在下缘；固定镜头，焦点在右上偏移的眼神。",
         "evidence": "85mm青肩上近景，脸占左侧朝右稍倾，白发从上方与两侧遮入，蓝衣白领露在下缘；固定镜头，焦点在右上偏移的眼神。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "前后已检查的露台夜景确认同一连续对话；当前近景只承接天空与远处树冠软平面，不引入下方不在裁切内的砖栏。保持原前景裁切、方向和人物数。",
+        "source_refs": [
+          "第10话_21_003.jpg",
+          "第10话_22_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6244,7 +6485,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "姐姐放松下来，安慰落在原格双人关系中",
-      "background_excerpt": "冷蓝夜空铺满上部，右后深青树冠形成低对比影层，露台光色以蓝为主。",
+      "background_excerpt": "暗青蓝夜空占上部，右后墨青树冠以松散叶缘收住下层，天空与树冠维持低对比的远近层次。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6286,6 +6527,12 @@
         "opening": "65mm双人肩上近景，春心左前景占较大面积，青右后景露完整脸线和白领；固定镜头，春心眼部主焦，青仍清晰。",
         "landing": "65mm双人肩上近景，春心左前景占较大面积，青右后景露完整脸线和白领；固定镜头，春心眼部主焦，青仍清晰。",
         "evidence": "65mm双人肩上近景，春心左前景占较大面积，青右后景露完整脸线和白领；固定镜头，春心眼部主焦，青仍清晰。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6297,7 +6544,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "把真正困扰留给青的单人脸部回应",
-      "background_excerpt": "均匀冷蓝渐变色块与低对比深青影层填满发缘外部，白领为下缘亮面。",
+      "background_excerpt": "暗青蓝夜空填入边角，低对比的墨青树冠在下部形成柔焦色面，夜色明度稳定。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6344,7 +6591,13 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm青的闭眼面部特写，脸居中稍低，尖耳与长白发从两侧围住，白领露在下缘；固定镜头，焦点在眼睑和唇线。；下一原格：50mm仰望夜空环境近景，深蓝云影占画面中央上部，蓝紫暗层在下方，红褐云带仅留窄下缘；固定镜头，焦点在云影层次。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
+      }
     },
     {
       "target": "片段28/分镜1",
@@ -6355,7 +6608,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "用安静夜空接住安慰，声音完成关系回暖",
-      "background_excerpt": "深靛至蓝紫天空铺满画面，淡蓝云影有低对比软边，下缘窄带为暗红褐。",
+      "background_excerpt": "深靛至暗蓝紫天空铺满画面，淡蓝云影软边疏落，下缘暗红褐窄带保持低亮度。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6392,6 +6645,12 @@
         "opening": "50mm仰望夜空环境近景，深蓝云影占画面中央上部，蓝紫暗层在下方，红褐云带仅留窄下缘；固定镜头，焦点在云影层次。",
         "landing": "50mm仰望夜空环境近景，深蓝云影占画面中央上部，蓝紫暗层在下方，红褐云带仅留窄下缘；固定镜头，焦点在云影层次。",
         "evidence": "50mm仰望夜空环境近景，深蓝云影占画面中央上部，蓝紫暗层在下方，红褐云带仅留窄下缘；固定镜头，焦点在云影层次。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6403,7 +6662,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "从夜露台切到室内，笑声先到、人物后到",
-      "background_excerpt": "褐色方格顶棚和金褐墙面铺满画面，米白檐条横向斜切，空间色调温暖。",
+      "background_excerpt": "低饱和褐色方格顶棚居上层，米白檐条斜切其下，金褐墙面以疏淡色差铺满低部；深褐格线保持细而清楚。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6439,6 +6698,12 @@
         "opening": "35mm斜向仰看走廊顶棚近景，米白檐条从左上穿向右下，顶棚方格居上层，檐条经过画面中央，金褐墙面填下层。固定镜头，焦点在檐条。",
         "landing": "35mm斜向仰看走廊顶棚近景，米白檐条从左上穿向右下，顶棚方格居上层，檐条经过画面中央，金褐墙面填下层。固定镜头，焦点在檐条。",
         "evidence": "35mm斜向仰看走廊顶棚近景，米白檐条从左上穿向右下，顶棚方格居上层，檐条经过画面中央，金褐墙面填下层。固定镜头，焦点在檐条。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6450,7 +6715,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让走路与讲述交叠，青的尴尬和姐姐的轻松先后发生",
-      "background_excerpt": "左侧灰蓝墙面与竖框、右侧暖灰墙面与米白檐条形成走廊纵深，褐色顶棚格线汇向后方。",
+      "background_excerpt": "两侧灰蓝墙面以低对比深色横带分层，米白竖框与檐条构成连续边界；低饱和褐色顶棚格线汇向后方，中后层墙面渐入柔暗青灰。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6494,6 +6759,12 @@
         "opening": "45mm正面双人中景，青在左、春心在右，肩线形成高低差，走廊墙面与顶棚向后汇聚；镜头缓缓后拉，沿当前可见墙面与顶棚范围展开，落幅维持两人完整脸线和衣着。",
         "landing": "45mm正面双人中景，青在左、春心在右，肩线形成高低差，走廊墙面与顶棚向后汇聚；镜头缓缓后拉，沿当前可见墙面与顶棚范围展开，落幅维持两人完整脸线和衣着。",
         "evidence": "45mm正面双人中景，青在左、春心在右，肩线形成高低差，走廊墙面与顶棚向后汇聚；镜头缓缓后拉，沿当前可见墙面与顶棚范围展开，落幅维持两人完整脸线和衣着。"
+      },
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
       }
     },
     {
@@ -6505,7 +6776,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "把笑意落在姐姐脸上，不演出回忆内容",
-      "background_excerpt": "暖灰墙面和一条浅亮檐边形成低对比后层，浅发外缘层次清楚。",
+      "background_excerpt": "后层为柔焦的灰蓝走廊墙面，一段浅米白檐边横过上部，墙面下层的深青灰色带对比很低。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6552,7 +6823,13 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：90mm春心面部近景，脸占画面右侧偏中，浅发从两边包围，白衣领在下缘；固定镜头，焦点在闭起的笑眼与唇线。；下一原格：75mm青正面肩上近景，脸居中央，蓝衣白领结占下层，白发两侧围出脸线。固定镜头，焦点在双眼，背景轻虚。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "physical",
+        "basis": "当前源图或其已批准环境子区域直接建立环境层与几何；保留原有空间边界。单色环境只证明明暗及材质，未着色部分采用统一制作配色，不回填为漫画上色事实。",
+        "inspected_resolution": "720p",
+        "palette_basis": "有色源格保留已确认基色；单色浴室采用象牙白/灰蓝/深青灰，夜外石墙采用蓝灰/青绿/暖白窗，书窗采用浅木色/暗青绿/暖黄灯。"
+      }
     },
     {
       "target": "片段31/分镜1",
@@ -6563,7 +6840,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "将尴尬回忆换成好奇，让面部和上身参与询问",
-      "background_excerpt": "暖黄至淡米白渐变色块铺满发缘之外，蓝衣与白领结在下缘形成清楚层次。",
+      "background_excerpt": "柔焦的灰蓝走廊墙面露在上部与两侧，米白檐边形成疏淡的浅亮分层；上部受暖光呈浅米灰蓝，下部保留较深青灰。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6602,6 +6879,15 @@
         "opening": "75mm青正面肩上近景，脸居中央，蓝衣白领结占下层，白发两侧围出脸线。固定镜头，焦点在双眼，背景轻虚。",
         "landing": "75mm青正面肩上近景，脸居中央，蓝衣白领结占下层，白发两侧围出脸线。固定镜头，焦点在双眼，背景轻虚。",
         "evidence": "75mm青正面肩上近景，脸居中央，蓝衣白领结占下层，白发两侧围出脸线。固定镜头，焦点在双眼，背景轻虚。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6613,7 +6899,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "姐姐的轻松语气中留出回忆的距离",
-      "background_excerpt": "淡灰白渐变色块铺满左侧负空间，右侧浅发形成浅金棕层次。",
+      "background_excerpt": "侧后层露出柔焦的灰蓝走廊墙面，上部米白檐边收成一条低对比浅亮色面；墙面下部的深青灰横带隐入虚焦。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6651,6 +6937,15 @@
         "opening": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。",
         "landing": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。",
         "evidence": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6662,7 +6957,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "用当前可见的发束与扎结细节承接比较，不虚构童年画面",
-      "background_excerpt": "淡灰渐变色块铺满左侧，浅金棕发束与黑色扎结形成下右层次。",
+      "background_excerpt": "左侧柔焦后层为灰蓝走廊墙面，一小段米白框线接近边缘，下部深青灰色带平缓收暗。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6692,9 +6987,10 @@
         "mode": "fixed",
         "reason": "用当前可见的发束与扎结细节承接比较，不虚构童年画面",
         "anchor_phase": "endpoint",
-        "opening": "110mm春心长发扎束特写，黑扎结在画面下右，浅金发束竖向铺开，浅灰空间留左；固定镜头，焦点在扎结及发束交织处。",
-        "landing": "110mm春心长发扎束特写，黑扎结在画面下右，浅金发束竖向铺开，浅灰空间留左；固定镜头，焦点在扎结及发束交织处。",
-        "evidence": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。"
+        "opening": "110mm春心长发扎束特写，黑扎结在画面下右，浅金发束竖向铺开，柔焦的走廊墙面留左；固定镜头，焦点在扎结及发束交织处。",
+        "landing": "110mm春心长发扎束特写，黑扎结在画面下右，浅金发束竖向铺开，柔焦的走廊墙面留左；固定镜头，焦点在扎结及发束交织处。",
+        "evidence": "90mm春心朝右侧脸近景，脸占右侧，浅发从上缘包围侧轮廓，长束垂向下方；固定镜头，焦点在侧眼与唇线。",
+        "background_compatibility_review": "仅更正底场名称，机位、尺度、运镜、落幅及前景遮挡未改变。"
       },
       "coverage_type": "detail_insert",
       "coverage_changes": [
@@ -6709,7 +7005,16 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：110mm春心长发扎束特写，黑扎结在画面下右，浅金发束竖向铺开，浅灰空间留左；固定镜头，焦点在扎结及发束交织处。；下一原格：75mm青正面肩上近景，脸居中央，尖耳向右外伸，白发与蓝衣占下部；固定镜头，眼与口部共同清晰。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
+      }
     },
     {
       "target": "片段33/分镜1",
@@ -6720,7 +7025,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "让信息先落下，青的反应随后真正展开",
-      "background_excerpt": "浅冷灰渐变色块铺满后层，深灰放射纹理在左上疏密变化，人物轮廓清楚。",
+      "background_excerpt": "冷青灰向淡青白过渡的图形底场铺满后层，左上保留疏密有别的深青灰放射细线；线场静止，中央明亮色面平整。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6757,6 +7062,14 @@
         "opening": "75mm青正面肩上近景，脸居中央，尖耳向右外伸，白发与蓝衣占下部；固定镜头，眼与口部共同清晰。",
         "landing": "75mm青正面肩上近景，脸居中央，尖耳向右外伸，白发与蓝衣占下部；固定镜头，眼与口部共同清晰。",
         "evidence": "75mm青正面肩上近景，脸居中央，尖耳向右外伸，白发与蓝衣占下部；固定镜头，眼与口部共同清晰。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "源格内冷青灰放射线场与睁大双眼、张口反应构成明确冲击；沿用已检视的源图图形而非新增动画效果族；片段34返回走廊。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p",
+        "form_reference": "第10话_24_001.jpg"
       }
     },
     {
@@ -6768,7 +7081,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "先以背面姿态表演急切，不凭对白补出未见脸部",
-      "background_excerpt": "白至淡灰蓝渐变色块铺满两人间隙，服装为白衣与深蓝衣的明度分层。",
+      "background_excerpt": "灰蓝走廊墙面横贯后层，上部米白檐条与下部低对比深青灰横带保留连续关系；墙面和线条轻虚，近层表演保持清楚。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6808,6 +7121,15 @@
         "opening": "65mm双人肩上中景，春心左侧朝右侧脸，青右侧背向镜头，白发覆住后脑与背面；固定镜头，春心侧眼主焦，青尖耳与发线可读。",
         "landing": "65mm双人肩上中景，春心左侧朝右侧脸，青右侧背向镜头，白发覆住后脑与背面；固定镜头，春心侧眼主焦，青尖耳与发线可读。",
         "evidence": "65mm双人肩上中景，春心左侧朝右侧脸，青右侧背向镜头，白发覆住后脑与背面；固定镜头，春心侧眼主焦，青尖耳与发线可读。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6819,7 +7141,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "保持背面信息，让后续纠正拥有独立的春心脸部落点",
-      "background_excerpt": "浅灰蓝渐变色块铺满后层，淡紫灰发束暗面形成清楚竖向纹理。",
+      "background_excerpt": "灰蓝走廊墙面留在窄小后层，上部一段米白框线轻虚，下部深青灰墙带隐入低对比暗面。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6866,7 +7188,16 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm青后脑白发与一侧尖耳特写，白发占中央下方，尖耳从画面左侧外伸；固定镜头，焦点置尖耳与发束交界。；下一原格：85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留灰白空间；固定镜头，焦点在侧眼与嘴角。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
+      }
     },
     {
       "target": "片段35/分镜1",
@@ -6877,7 +7208,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "姐姐温和纠正，青的追问先安静下来",
-      "background_excerpt": "浅灰白渐变色块铺满右侧，浅金棕发束在左形成柔暗层，面部与背景分离。",
+      "background_excerpt": "右侧后层露出柔焦的灰蓝走廊墙面，上部米白檐边呈疏淡浅亮带，下部深青灰墙带平缓收暗。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6912,9 +7243,19 @@
         "mode": "fixed",
         "reason": "姐姐温和纠正，青的追问先安静下来",
         "anchor_phase": "middle",
-        "opening": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留灰白空间；固定镜头，焦点在侧眼与嘴角。",
-        "landing": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留灰白空间；固定镜头，焦点在侧眼与嘴角。",
-        "evidence": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留灰白空间；固定镜头，焦点在侧眼与嘴角。"
+        "opening": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留柔焦墙面空间；固定镜头，焦点在侧眼与嘴角。",
+        "landing": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留柔焦墙面空间；固定镜头，焦点在侧眼与嘴角。",
+        "evidence": "85mm春心三分之二侧脸近景，脸占画面左侧朝右，浅发从上与左缘包住，右侧留柔焦墙面空间；固定镜头，焦点在侧眼与嘴角。",
+        "background_compatibility_review": "仅更正底场名称，机位、尺度、运镜、落幅及前景遮挡未改变。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6926,7 +7267,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "形成亲近的悄声动作，句子留在未说完的位置",
-      "background_excerpt": "白衣的暖白表面与浅灰褶影铺满口手后方，右前景白发为淡紫灰分束。",
+      "background_excerpt": "上缘轮廓间仅露出一窄段柔焦的灰蓝墙面，表面带有浅米灰的暖度。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -6968,6 +7309,15 @@
         "opening": "100mm唇侧与手部近景，春心口部位于左上，掌边竖在中部，青的白发遮住右前景；白衣铺后层。固定镜头，唇侧与手轮廓清楚。",
         "landing": "100mm唇侧与手部近景，春心口部位于左上，掌边竖在中部，青的白发遮住右前景；白衣铺后层。固定镜头，唇侧与手轮廓清楚。",
         "evidence": "100mm唇侧与手部近景，春心口部位于左上，掌边竖在中部，青的白发遮住右前景；白衣铺后层。固定镜头，唇侧与手轮廓清楚。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     },
     {
@@ -6979,7 +7329,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "给倾听留下完整反应，不补出私语未提供的细节",
-      "background_excerpt": "中性浅灰渐变色块铺满后层，白发淡紫灰影与蓝衣暗面层次清楚。",
+      "background_excerpt": "低饱和蓝灰至淡灰紫的渐变色块铺满图形背景，两层色面边界柔软、明度平缓，底场保持静止。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -7018,6 +7368,13 @@
         "opening": "85mm青正面肩上近景，脸占中央偏右，白发在两侧形成长线，尖耳横伸，白领结从下缘露入；固定镜头，双眼与口部清晰。",
         "landing": "85mm青正面肩上近景，脸占中央偏右，白发在两侧形成长线，尖耳横伸，白领结从下缘露入；固定镜头，双眼与口部清晰。",
         "evidence": "85mm青正面肩上近景，脸占中央偏右，白发在两侧形成长线，尖耳横伸，白领结从下缘露入；固定镜头，双眼与口部清晰。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "当前睁大的泪眼、张口及短吸气形成夸张反应；采用简洁蓝灰至淡灰紫空场暂停实景，未把灰网点当强制灰色输出；片段38以Q版喜剧底接续，片段39返回走廊。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p"
       }
     },
     {
@@ -7029,7 +7386,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "先形成抓肩接触，再由身体摇动完成急切追问",
-      "background_excerpt": "白至浅灰渐变色块铺满画面，人物周围保留大块明亮空场，下部灰阶稍深。",
+      "background_excerpt": "奶油白至浅麦黄色的图形底场铺满画面，上部淡而均匀，下部色调稍暖，大片空场保持静止。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -7070,9 +7427,18 @@
         "mode": "fixed",
         "reason": "先形成抓肩接触，再由身体摇动完成急切追问",
         "anchor_phase": "middle",
-        "opening": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块白灰空间。固定镜头，人物轮廓与抓肩点同时清楚。",
-        "landing": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块白灰空间。固定镜头，人物轮廓与抓肩点同时清楚。",
-        "evidence": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块白灰空间。固定镜头，人物轮廓与抓肩点同时清楚。"
+        "opening": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块奶油白至浅麦黄色空场。固定镜头，人物轮廓与抓肩点同时清楚。",
+        "landing": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块奶油白至浅麦黄色空场。固定镜头，人物轮廓与抓肩点同时清楚。",
+        "evidence": "50mm小比例双人中全景，两人压画面下部偏左，春心在左，青从右侧背向镜头前倾，青横伸手臂处于两人前层；上方保留大块奶油白至浅麦黄色空场。固定镜头，人物轮廓与抓肩点同时清楚。",
+        "background_compatibility_review": "仅更正底场名称，机位、尺度、运镜、落幅及前景遮挡未改变。"
+      },
+      "background_decision": {
+        "mode": "graphic",
+        "basis": "当前源格把两人缩成左下Q版，抓肩摇动和迫切追问形成明确的喜剧缩尺；选择静止奶油白至浅麦黄空场保留尺度反差；片段39的既有切镜返回走廊，不新增隐切。",
+        "palette_basis": "保留当前已核验图形的形态，或选择简单场景兼容色面；不把网点当固定输出色。",
+        "motion_basis": "静态底场，无新增图形运动、光源、天气或物理事件。",
+        "inspected_resolution": "720p",
+        "form_reference": "第10话_25_003.jpg"
       }
     },
     {
@@ -7084,7 +7450,7 @@
       ],
       "evidence": "current_panel",
       "purpose": "把后续追问落在已经建立的接触点，不与下一张姐姐脸部重复",
-      "background_excerpt": "春心白衣表面与浅灰褶影铺满手部后方，蓝袖为前层深色横带，边角为淡灰图形底。",
+      "background_excerpt": "独立背景完全被主体遮住。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -7132,7 +7498,12 @@
         "composition_overlap"
       ],
       "next_source_evidence": "本镜：100mm抓肩手部与白衣局部特写，青的手占画面左中，蓝袖从右侧横入，春心肩部白衣铺后层；固定镜头，焦点在指节与衣料受压处。；下一原格：75mm春心正面肩上近景，脸居画面中央，两侧浅发扎束垂到下缘，白衣与下缘可见的一只手构成低部层次；首句后缓慢推近，在既有脸肩范围内将双眼保持于上方三分线，落幅稳住眼线与微笑。",
-      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。"
+      "claim_scope": "该源图已见的局部子区域；人物名包含其可见局部，不建立画外完整身体。动作展开以本镜action_admissions和motion_decision为准。",
+      "background_decision": {
+        "mode": "occluded",
+        "basis": "已对照当前源图与获准细节裁切：眉眼/鼻梁或抓肩接触点被主体及自身遮挡满幅，独立环境不在这个裁切中。主体细节保留在镜头、动作和光影各栏，不增补背景边缝。",
+        "inspected_resolution": "720p"
+      }
     },
     {
       "target": "片段39/分镜1",
@@ -7143,7 +7514,7 @@
       "derived_from": [],
       "evidence": "current_panel",
       "purpose": "以愿意讲述的柔和落点结束本话范围，让停顿通向下一段故事",
-      "background_excerpt": "白至浅灰渐变色块铺满后层，白衣亮面和浅发淡金棕暗层清楚，整体安静柔和。",
+      "background_excerpt": "柔焦的灰蓝走廊墙面围住后层，米白檐边在上部形成低对比浅亮带，下部墙面渐入深青灰；暖光下的墙色柔和而稳定。",
       "viewed_while_writing": true,
       "source_audit": "pass",
       "unsupported_additions": [],
@@ -7183,6 +7554,15 @@
         "opening": "75mm春心正面肩上近景，脸居画面中央，两侧浅发扎束垂到下缘，白衣与下缘可见的一只手构成低部层次；首句后缓慢推近，在既有脸肩范围内将双眼保持于上方三分线，落幅稳住眼线与微笑。",
         "landing": "75mm春心正面肩上近景，脸居画面中央，两侧浅发扎束垂到下缘，白衣与下缘可见的一只手构成低部层次；首句后缓慢推近，在既有脸肩范围内将双眼保持于上方三分线，落幅稳住眼线与微笑。",
         "evidence": "75mm春心正面肩上近景，脸居画面中央，两侧浅发扎束垂到下缘，白衣与下缘可见的一只手构成低部层次；首句后缓慢推近，在既有脸肩范围内将双眼保持于上方三分线，落幅稳住眼线与微笑。"
+      },
+      "background_decision": {
+        "mode": "continuity",
+        "basis": "已检查23_002两侧灰蓝墙面、米白框线与檐条、深色墙带，连续走廊对话未改变地点；只在当前可见间隙承接柔焦的侧墙平面和低对比既有线层，保持当前轴线、裁切、前景与遮挡，不露出新的门、走道或房间侧面。",
+        "source_refs": [
+          "第10话_23_002.jpg"
+        ],
+        "inspected_resolution": "720p",
+        "geometry_limit": "只用已确认的软远平面及低对比既有线层，服从当前轴线、裁切和遮挡。"
       }
     }
   ],
@@ -8184,13 +8564,13 @@
     "modules": [
       {
         "path": "SKILL.md",
-        "utf8_bytes": 10707,
-        "characters": 10278
+        "utf8_bytes": 11485,
+        "characters": 11056
       },
       {
         "path": "references/core-authoring.md",
-        "utf8_bytes": 27447,
-        "characters": 26481
+        "utf8_bytes": 31431,
+        "characters": 30387
       },
       {
         "path": "references/dialogue-performance.md",
@@ -8199,18 +8579,23 @@
       },
       {
         "path": "references/cinematic-rendering.md",
-        "utf8_bytes": 5457,
-        "characters": 5395
+        "utf8_bytes": 6093,
+        "characters": 6031
       },
       {
         "path": "references/source-risk.md",
-        "utf8_bytes": 2996,
-        "characters": 2996
+        "utf8_bytes": 3307,
+        "characters": 3307
+      },
+      {
+        "path": "references/background-design.md",
+        "utf8_bytes": 8425,
+        "characters": 8313
       }
     ],
-    "total_utf8_bytes": 62652,
-    "total_characters": 61017,
-    "token_count": "未测量；不以字符数冒充模型token用量"
+    "total_utf8_bytes": 76786,
+    "total_characters": 74961,
+    "token_count": "未测量；不把字符数冒充模型token数量"
   },
   "source_audit_scope": "非露骨改编稿；source_locked指台账reference_scope定义的源图子区域，不声明恢复被排除的裸露/性化原始全幅。正式脚本不描写这些内容。",
   "adaptations": [
@@ -8298,6 +8683,63 @@
       "resolution": "自然日语重估并补足呼吸/停顿，保持每片段不超过15秒；只作语词和时长修正",
       "decision": "corrected",
       "reviewed_scope": "文本、编号、算术，不宣称新增视觉检查"
+    },
+    {
+      "date": "2026-10-03",
+      "skill_commit": "5c618f8cdd04b457ba5378ccf25c56e450d4e263",
+      "reason": "用户要求同步最新Gen2.8并优化背景",
+      "images": [
+        "第10话_13_003.jpg",
+        "第10话_13_004.jpg",
+        "第10话_14_001.jpg",
+        "第10话_14_002.jpg",
+        "第10话_14_003.jpg",
+        "第10话_14_004.jpg",
+        "第10话_15_001.jpg",
+        "第10话_15_002.jpg",
+        "第10话_15_003.jpg",
+        "第10话_16_001.jpg",
+        "第10话_16_002.jpg",
+        "第10话_16_003.jpg",
+        "第10话_16_004.jpg",
+        "第10话_17_001.jpg",
+        "第10话_18_001.jpg",
+        "第10话_18_002.jpg",
+        "第10话_18_003.jpg",
+        "第10话_19_001.jpg",
+        "第10话_19_002.jpg",
+        "第10话_19_003.jpg",
+        "第10话_20_001.jpg",
+        "第10话_20_003.jpg",
+        "第10话_21_001.jpg",
+        "第10话_21_002.jpg",
+        "第10话_21_003.jpg",
+        "第10话_22_001.jpg",
+        "第10话_22_002.jpg",
+        "第10话_22_003.jpg",
+        "第10话_23_001.jpg",
+        "第10话_23_002.jpg",
+        "第10话_23_003.jpg",
+        "第10话_23_004.jpg",
+        "第10话_24_001.jpg",
+        "第10话_24_002.jpg",
+        "第10话_24_003.jpg",
+        "第10话_25_001.jpg",
+        "第10话_25_002.jpg",
+        "第10话_25_003.jpg",
+        "第10话_26_001.jpg"
+      ],
+      "resolution": "39格720p逐格复核；浴室敏感格仅复核已批准非露骨子区域。20_002无视觉内容，维持既有处置。",
+      "decision": "corrected",
+      "reviewed_scope": "51个背景字段；7个相关光影字段；4个镜头字段中的底场名称；场景色彩基准。对白、动作、声音、时长、分镜次序与人设不变。",
+      "background_modes": {
+        "physical": 20,
+        "continuity": 20,
+        "graphic": 7,
+        "occluded": 4
+      },
+      "source_vs_production": "panel.background保持源图观察；shot.background_decision登记有界环境延续、制作配色、图形目的/返回点与完全遮挡，未把重建写为源事实。",
+      "research_scope": "未新增星形、几何图案或复杂运动效果；沿用当前已检视的漫画云状/放射/Q版形态与简单静止色面，不宣称看过未打开的动画参考。"
     }
   ],
   "advisory_dispositions": [
@@ -8697,6 +9139,21 @@
     "scope_complete": true,
     "raw_full_frame_fidelity": false,
     "adaptation_scope_documented": true,
-    "semantic_review": "作者逐格审查；未进行独立评审或动画成片验证"
+    "semantic_review": "作者逐格审查；未进行独立评审或动画成片验证",
+    "background_review": {
+      "skill_commit": "5c618f8cdd04b457ba5378ccf25c56e450d4e263",
+      "shot_count": 51,
+      "modes": {
+        "physical": 20,
+        "continuity": 20,
+        "graphic": 7,
+        "occluded": 4
+      },
+      "scoped_field_purity": "背景不含人物皮肤、头发、服装或主道具填充；完全遮挡4镜。",
+      "continuity": "重建只承接已检视环境的软平面与低对比线层；无新增门、室内反侧、道具或人物。",
+      "palette": "单色环境按统一场景配色，不强制灰色动画；已有上色环境基色稳定。",
+      "unchanged_fields_verified_against": "581125e: 动作、对白、声音、所有镜头时长与引用次序逐项一致。",
+      "installed_skill_files_verified": 18
+    }
   }
 }
