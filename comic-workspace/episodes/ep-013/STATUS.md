@@ -1,6 +1,7 @@
 # 第13话
 
-- 状态：已完成整话分镜（前半 Gen2.7，后半 Gen2.8）
-- 负责人：Codex / Gen2.7 + Gen2.8
-- 上色单格：85张
-- 备注：`storyboards/gen2.7/part1-p001-p015/` 覆盖前半37张源图；`storyboards/gen2.8/part2-p016-p031/` 覆盖后半48张源图，并附 Gen2.8 version 2 台账与校验说明。
+- 上色单格：85张。
+- 当前分镜：`storyboards/current/` 内第一批Gen2.7、第二批Gen2.8。
+- 覆盖状态：按01—15与16—31两批交付。
+- 既有正式交付：`storyboards/deliveries/`；局部验证与重构稿：`storyboards/experiments/`；旧Gen2.5稿：`storyboards/archive/`。
+- 本次未新增漫画图片。
