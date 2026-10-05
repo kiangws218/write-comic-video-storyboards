@@ -1,0 +1,21 @@
+{
+  "episode": "ep-017",
+  "script_duration_seconds": 351.0,
+  "full_duration_seconds": 404.161,
+  "script_cues": 102,
+  "full_cues": 123,
+  "estimated_cues": 21,
+  "estimated_panels": 19,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第17话_中文_脚本范围01.srt",
+      "script": "第17话_制作分镜_Gen2.8.md",
+      "duration_seconds": 351.0,
+      "cues": 102
+    }
+  ],
+  "review_hints": 2,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

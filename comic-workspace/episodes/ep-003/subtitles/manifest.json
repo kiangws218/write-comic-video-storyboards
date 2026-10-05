@@ -1,0 +1,21 @@
+{
+  "episode": "ep-003",
+  "script_duration_seconds": 247.0,
+  "full_duration_seconds": 287.567,
+  "script_cues": 117,
+  "full_cues": 117,
+  "estimated_cues": 25,
+  "estimated_panels": 3,
+  "expanded_dialogue_shots": 7,
+  "dialogue_extension_seconds": 34.567,
+  "parts": [
+    {
+      "file": "第03话_中文_脚本范围01.srt",
+      "script": "第三集_结构化分镜脚本_gen2_R18主版_附平台安全替换.md",
+      "duration_seconds": 247.0,
+      "cues": 117
+    }
+  ],
+  "review_hints": 47,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

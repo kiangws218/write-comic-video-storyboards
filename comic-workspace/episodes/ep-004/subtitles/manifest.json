@@ -1,0 +1,14 @@
+{
+  "episode": "ep-004",
+  "script_duration_seconds": 0,
+  "full_duration_seconds": 210.434,
+  "script_cues": 0,
+  "full_cues": 75,
+  "estimated_cues": 75,
+  "estimated_panels": 63,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [],
+  "review_hints": 3,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

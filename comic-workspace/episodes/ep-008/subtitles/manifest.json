@@ -1,0 +1,27 @@
+{
+  "episode": "ep-008",
+  "script_duration_seconds": 192.0,
+  "full_duration_seconds": 203.833,
+  "script_cues": 48,
+  "full_cues": 48,
+  "estimated_cues": 3,
+  "estimated_panels": 4,
+  "expanded_dialogue_shots": 1,
+  "dialogue_extension_seconds": 3.833,
+  "parts": [
+    {
+      "file": "第08话_中文_脚本范围01.srt",
+      "script": "第8集_2.5测试2_高还原动画分镜.md",
+      "duration_seconds": 76.0,
+      "cues": 21
+    },
+    {
+      "file": "第08话_中文_脚本范围02.srt",
+      "script": "第8集_剩余部分_高还原动画分镜_gen2.5.md",
+      "duration_seconds": 116.0,
+      "cues": 27
+    }
+  ],
+  "review_hints": 7,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

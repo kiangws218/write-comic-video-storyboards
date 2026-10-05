@@ -1,0 +1,21 @@
+{
+  "episode": "ep-007",
+  "script_duration_seconds": 185.0,
+  "full_duration_seconds": 189.0,
+  "script_cues": 62,
+  "full_cues": 62,
+  "estimated_cues": 0,
+  "estimated_panels": 2,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第07话_中文_脚本范围01.srt",
+      "script": "第七集_结构化分镜脚本_gen2_R18主版_附平台安全替换.md",
+      "duration_seconds": 185.0,
+      "cues": 62
+    }
+  ],
+  "review_hints": 2,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

@@ -1,0 +1,21 @@
+{
+  "episode": "ep-018",
+  "script_duration_seconds": 188.0,
+  "full_duration_seconds": 277.471,
+  "script_cues": 58,
+  "full_cues": 94,
+  "estimated_cues": 36,
+  "estimated_panels": 26,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第18话_中文_脚本范围01.srt",
+      "script": "第18话_制作分镜_Gen2.8.md",
+      "duration_seconds": 188.0,
+      "cues": 58
+    }
+  ],
+  "review_hints": 0,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

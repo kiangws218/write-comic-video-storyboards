@@ -1,0 +1,21 @@
+{
+  "episode": "ep-005",
+  "script_duration_seconds": 308.0,
+  "full_duration_seconds": 312.944,
+  "script_cues": 134,
+  "full_cues": 134,
+  "estimated_cues": 3,
+  "estimated_panels": 1,
+  "expanded_dialogue_shots": 1,
+  "dialogue_extension_seconds": 2.944,
+  "parts": [
+    {
+      "file": "第05话_中文_脚本范围01.srt",
+      "script": "第五集_结构化分镜脚本_gen2_全量重置版_R18主版_附平台安全替换.md",
+      "duration_seconds": 308.0,
+      "cues": 134
+    }
+  ],
+  "review_hints": 23,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}
