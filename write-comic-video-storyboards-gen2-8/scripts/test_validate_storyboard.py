@@ -130,6 +130,62 @@ def pose_admission(claim: str, evidence: str = "原格胸肩与头位清楚，�
     }
 
 
+def bridge_fixture() -> tuple[str, dict]:
+    """Synthetic interface fixture: one owner, two inspected endpoint sources."""
+    text, ledger = body_fixture("人物头朝画面右侧，右手垂在腰侧，身体停稳。")
+    text = text.replace('人物：“あの……お客さん？”（清晰的中性音色，平静语气）。', "无台词。")
+    text = text.replace("**分镜1（5秒）：**", "**分镜1（2秒）：**")
+    text += f"""
+**分镜2（3秒）：**
+【镜头设计】：85mm侧向右手特写，手指占画面左前景，门把位于右侧，固定镜头。
+【可见动作】：人物右手从下缘抬起，手指向前合拢抓住门把，随后停住。
+【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮指尖，接触边保留浅影。
+【声音设计】：低环境底噪持续，衣料轻响。
+
+**分镜3（2秒）：**
+分镜参考 `[panel2.jpg]`
+【镜头设计】：75mm正面脸部近景，脸占画面右侧，长发遮住左后层，右手和门把局部露在下缘，固定镜头。
+【可见动作】：人物头朝画面右侧，右手握在门把上，目光停稳。
+【可见背景】：{BACKGROUND}，深蓝灰放射线向外扩张。
+【台词与语气】：无台词。
+【光影布光】：柔和侧光照亮面部，指缝保留浅影。
+【声音设计】：低环境底噪持续。
+"""
+    first = ledger["panels"][0]
+    first.update(source_bubble_count=0, coverage="none", bubbles=[], story_context=[], non_renderable_terms=[])
+    first["source_facts"] = {"entities": ["人物", "右手"], "actions": [], "relations": ["右手在腰侧"]}
+    second = deepcopy(first)
+    second.update(image="panel2.jpg", composition_lock="正面脸部近景，人物占右侧，长发遮住左后层，门把露在下缘")
+    second["source_facts"] = {"entities": ["人物", "右手", "门把"], "actions": [], "relations": ["右手与门把接触"]}
+    shot1 = ledger["shots"][0]
+    shot1["fact_claims"] = deepcopy(first["source_facts"])
+    shot1["motion_decision"] = "右手在腰侧，头朝右，站定"
+    shot2 = deepcopy(shot1)
+    shot2.update(
+        target="片段1/分镜2", role="uncited_coverage", source_images=[], derived_from=["panel.jpg"],
+        evidence_images=["panel.jpg", "panel2.jpg"], coverage_type="action_phase",
+        coverage_changes=["subject_focus", "scale"], coverage_evidence="半身人物改为手和门把接触细节",
+        next_source_image="panel2.jpg", next_source_changes=["subject_focus", "composition_overlap"],
+        next_source_evidence="手部特写不同于脸部近景及下缘手部遮挡布局",
+        evidence="已检查的panel.jpg手在腰侧与panel2.jpg手在门把接触边",
+        purpose="用最短手部衔接连接两格接触状态",
+        motion_decision="前镜手在腰侧 → 右手入画形成已建立门把接触 → 后镜握持延续",
+        fact_claims={"entities": ["人物", "右手", "门把"], "actions": [], "relations": []},
+        action_admissions=[{
+            "claim": "抓住", "source_image": "panel2.jpg",
+            "visual_evidence": "前格右手在腰侧，后格门把接触明确；手部入画形成接触是有界推断而非已画中间帧",
+            "visible_in_framing": True, "anchor_safe": True,
+        }],
+    )
+    shot3 = deepcopy(shot1)
+    shot3.update(target="片段1/分镜3", source_images=["panel2.jpg"], fact_claims=deepcopy(second["source_facts"]),
+                 motion_decision="右手已经握住门把，头朝右，延续接触")
+    ledger.update(panels=[first, second], shots=[shot1, shot2, shot3])
+    return text, ledger
+
+
 class ValidatorTests(unittest.TestCase):
     def overflow_fixture(self) -> tuple[dict, set[str], list[dict], dict]:
         panel = {"image": "panel.jpg", "overflow_split": {
@@ -953,7 +1009,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertIn("需表演语义复查", result.stdout)
         self.assertNotIn("类表演信号", result.stdout)
 
-    def test_expressive_summary_fails_performance_fidelity_warnings(self) -> None:
+    def test_expressive_summary_queues_review_and_independent_craft_hints(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
             "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物手腕后撤、肩膀缩起，连续摇头时发梢向后拖；"
@@ -971,7 +1027,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertIn("没有镜头落幅", result.stdout)
         self.assertIn("重复话语但【台词与语气】没有区分", result.stdout)
 
-    def test_staged_expressive_performance_passes_fidelity_warnings(self) -> None:
+    def test_staged_expressive_candidate_still_requires_semantic_review(self) -> None:
         text = storyboard(line="いりません、いりません！").replace(
             "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物先把物件向前送出半掌，第一声拒绝时手腕迅速后撤，肩膀随后向内缩；"
@@ -989,7 +1045,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("需表演语义复查", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
         self.assertNotIn("没有镜头落幅", result.stdout)
         self.assertNotIn("重复话语但【台词与语气】没有区分", result.stdout)
 
@@ -1043,7 +1099,7 @@ class ValidatorTests(unittest.TestCase):
         self.assertNotIn("主要动作", result.stdout)
         self.assertNotIn("类表演信号", result.stdout)
 
-    def test_sentence_end_settle_counts_as_performance_endpoint(self) -> None:
+    def test_settlement_words_do_not_clear_performance_review(self) -> None:
         long_line = "あ" * 30
         text = storyboard(line=long_line).replace(
             "人物手掌朝上托住物件，手指先放松再轻微收紧。",
@@ -1052,7 +1108,72 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("需表演语义复查", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
+
+    def test_performance_review_is_independent_of_sequence_and_hold_words(self) -> None:
+        actions = (
+            "人物先抬头，随后嘴保持轻合，眼睛留在交谈方向，最后停在等待的位置。",
+            "人物仰起脸；唇闭拢，目光朝向画面左侧，发梢垂在肩边。",
+            "人物脸朝画面左侧，听到声音抬眉，眨眼中把脸偏向正面，发束跟着颈部摆动。",
+        )
+        hints = []
+        for action in actions:
+            text = storyboard().replace("人物手掌朝上托住物件，手指先放松再轻微收紧。", action)
+            hints.append([hint for hint in VALIDATOR.cinematic_quality_warnings(text)
+                          if "需表演语义复查" in hint])
+        self.assertEqual(len(hints[0]), 1)
+        self.assertEqual(hints[0], hints[1])
+        self.assertEqual(hints[0], hints[2])
+
+    def test_silent_listening_and_deliberate_hold_receive_same_nonblocking_review(self) -> None:
+        for action in (
+            "人物先抬头，随后保持正面，最后停住等待。",
+            "人物脸朝画面左侧，长睫毛眨过，歪着头听画面左侧外的声音，唇线松开。",
+            "人物脸朝正面，嘴轻合，视线朝画面左側外，等待回答的静默持续至镜尾。",
+        ):
+            with self.subTest(action=action):
+                text = storyboard(line=None).replace("人物手指轻微收紧后停住。", action)
+                result = self.run_validator(text)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertEqual(result.stdout.count("需表演语义复查"), 1)
+                self.assertNotIn("缺少可见发展", result.stdout)
+                self.assertNotIn("缩短到1–3秒", result.stdout)
+
+    def test_continuing_motion_at_cut_does_not_require_settlement(self) -> None:
+        text = storyboard(line=None).replace(
+            "人物手指轻微收紧后停住。",
+            "人物沿画面左侧行走，双臂随步伐交替摆动，镜尾右腿仍向前迈出。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("需表演语义复查", result.stdout)
+        self.assertNotIn("未识别完整时序或落点", result.stdout)
+
+    def test_long_take_and_generic_gesture_share_one_per_shot_review(self) -> None:
+        text = storyboard().replace("分镜1（5秒）", "分镜1（8秒）").replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。", "人物点头，随后停住。",
+        )
+        hints = VALIDATOR.cinematic_quality_warnings(text)
+        self.assertEqual(len(hints), 1, hints)
+        self.assertIn("需表演语义复查", hints[0])
+        self.assertIn("出现通用手势", hints[0])
+
+    def test_long_object_hold_has_no_actor_review_or_forced_cut(self) -> None:
+        text = storyboard(line=None).replace("分镜1（5秒）", "分镜1（8秒）").replace(
+            "人物手指轻微收紧后停住。", "人物未入画；晶石棱面呈现稳定反光。",
+        )
+        hints = VALIDATOR.cinematic_quality_warnings(text)
+        self.assertEqual(len(hints), 1, hints)
+        self.assertNotIn("需表演语义复查", hints[0])
+        self.assertIn("不因时长自动拆镜", hints[0])
+
+    def test_four_second_silent_face_crop_queues_review_without_word_gate(self) -> None:
+        text = storyboard(line=None).replace("分镜1（5秒）", "分镜1（4秒）").replace(
+            "人物手指轻微收紧后停住。", "人物先眨眼，随后保持微笑，最后视线停在左侧。",
+        )
+        result = self.run_validator(text)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(result.stdout.count("需表演语义复查"), 1)
 
     def test_short_shot_has_no_action_count_capacity_warning(self) -> None:
         text = storyboard().replace(
@@ -1261,14 +1382,14 @@ class ValidatorTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("不可执行元措辞", result.stdout)
 
-    def test_six_second_dialogue_without_lexical_endpoint_prompts_semantic_review(self) -> None:
+    def test_six_second_dialogue_schedules_semantic_review(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）")
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("需表演语义复查", result.stdout)
         self.assertNotIn("类表演信号", result.stdout)
 
-    def test_six_second_staged_head_face_chain_has_readable_order_and_endpoint(self) -> None:
+    def test_six_second_staged_head_face_candidate_is_not_machine_certified(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
             "人物手掌朝上托住物件，手指先放松再轻微收紧。",
             "人物起幅为朝画面右侧的三分之二侧脸，听见问话后瞳孔先回到左侧；"
@@ -1276,7 +1397,7 @@ class ValidatorTests(unittest.TestCase):
         )
         result = self.run_validator(text)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("需表演语义复查", result.stdout)
+        self.assertIn("需表演语义复查", result.stdout)
 
     def test_pure_object_explanation_does_not_require_body_signals(self) -> None:
         text = storyboard().replace("分镜1（5秒）", "分镜1（6秒）").replace(
@@ -1581,6 +1702,159 @@ class ValidatorTests(unittest.TestCase):
         })
         result = self.run_validator(first + second, ledger, True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+
+    def test_bridge_two_endpoint_evidence_passes_without_backfilling_facts(self) -> None:
+        text, ledger = bridge_fixture()
+        original_facts = deepcopy([panel["source_facts"] for panel in ledger["panels"]])
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual([panel["source_facts"] for panel in ledger["panels"]], original_facts)
+        self.assertEqual(ledger["shots"][1]["derived_from"], ["panel.jpg"])
+
+    def test_bridge_evidence_does_not_expand_clip_ownership(self) -> None:
+        text, ledger = bridge_fixture()
+        text = text.replace("**分镜3（2秒）：**", "## 【片段2】继续\n\n**分镜1（2秒）：**")
+        ledger["shots"][2]["target"] = "片段2/分镜1"
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("跨越多个片段", result.stdout)
+
+    def test_bridge_incoming_owner_compares_with_incoming_endpoint(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["derived_from"] = ["panel2.jpg"]
+        ledger["shots"][1]["action_admissions"][0]["source_image"] = "panel.jpg"
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_bridge_wrong_next_source_composition_fails(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["derived_from"] = ["panel2.jpg"]
+        ledger["shots"][1]["next_source_image"] = "panel.jpg"
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("next_source_image", result.stdout)
+
+    def test_bridge_multiple_coverage_owners_fail(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["derived_from"] = ["panel.jpg", "panel2.jpg"]
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("只有一个derived_from", result.stdout)
+
+    def test_bridge_invalid_endpoint_lists_fail_closed(self) -> None:
+        for refs in (None, {}, [], ["panel.jpg"], ["panel.jpg", 4],
+                     ["panel.jpg", "PANEL.jpg"], ["panel.jpg", "missing.jpg"],
+                     ["panel.jpg", "panel2.jpg", "other.jpg"]):
+            with self.subTest(refs=refs):
+                text, ledger = bridge_fixture()
+                ledger["shots"][1]["evidence_images"] = refs
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("evidence_images", result.stdout)
+
+    def test_bridge_nonadjacent_sources_fail(self) -> None:
+        _, ledger = bridge_fixture()
+        panel_map = {panel["image"]: panel for panel in ledger["panels"]}
+        panel_map["between.jpg"] = deepcopy(panel_map["panel.jpg"])
+        evidence, errors = VALIDATOR.resolve_bridge_evidence(
+            ledger["shots"][1], ["panel.jpg"], panel_map, ["panel.jpg", "between.jpg", "panel2.jpg"],
+        )
+        self.assertEqual(evidence, [])
+        self.assertTrue(any("相邻" in error for error in errors), errors)
+
+    def test_bridge_uninspected_or_typography_sources_fail(self) -> None:
+        for field, value in (("viewed_at_drafting", False), ("renderable_visual", False)):
+            with self.subTest(field=field):
+                _, ledger = bridge_fixture()
+                ledger["panels"][1][field] = value
+                panel_map = {panel["image"]: panel for panel in ledger["panels"]}
+                evidence, errors = VALIDATOR.resolve_bridge_evidence(
+                    ledger["shots"][1], ["panel.jpg"], panel_map, ["panel.jpg", "panel2.jpg"],
+                )
+                self.assertEqual(evidence, [])
+                self.assertTrue(any("evidence_images" in error for error in errors), errors)
+
+    def test_bridge_evidence_cannot_expand_other_roles_or_coverage(self) -> None:
+        for role, coverage in (("source_locked", "action_phase"), ("uncited_coverage", "detail_insert")):
+            with self.subTest(role=role):
+                text, ledger = bridge_fixture()
+                ledger["shots"][1].update(role=role, coverage_type=coverage)
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("仅用于uncited_coverage/action_phase", result.stdout)
+                self.assertIn("源图允许表", result.stdout)
+
+    def test_bridge_observed_neighbor_entity_resolves_only_that_context_term(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["panels"][0]["non_renderable_terms"] = ["门把", "法师"]
+        ledger["panels"][0]["story_context"] = ["邻近情境提到门把及法师，当前格只画人物"]
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        text = text.replace("手指向前合拢抓住门把", "手指向前合拢抓住门把，视线转向法师")
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("法师", result.stdout)
+        self.assertIn("story_context", result.stdout)
+
+    def test_bridge_inferred_action_cannot_be_claimed_as_observed_fact(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["fact_claims"]["actions"] = ["人物:抓住门把"]
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("fact_claims.actions不在源图允许表", result.stdout)
+
+    def test_bridge_action_admission_gates_are_preserved(self) -> None:
+        for field, value in (("visible_in_framing", False), ("anchor_safe", False),
+                             ("visual_evidence", "台词要求人物抓住门把")):
+            with self.subTest(field=field):
+                text, ledger = bridge_fixture()
+                ledger["shots"][1]["action_admissions"][0][field] = value
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["action_admissions"] = []
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("三问准入", result.stdout)
+
+    def test_bridge_requires_existing_motion_decision_record(self) -> None:
+        for value in (None, " ", {}, []):
+            with self.subTest(value=value):
+                text, ledger = bridge_fixture()
+                ledger["shots"][1]["motion_decision"] = value
+                result = self.run_validator(text, ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("缺少motion_decision", result.stdout)
+
+    def test_bridge_action_cannot_bind_an_undeclared_source(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1]["action_admissions"][0]["source_image"] = "other.jpg"
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("没有绑定已登记的镜头证据源图", result.stdout)
+
+    def test_legacy_uncited_view_keeps_its_owner_fact_allowlist(self) -> None:
+        text, ledger = bridge_fixture()
+        ledger["shots"][1].pop("evidence_images")
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("源图允许表", result.stdout)
+        self.assertIn("没有绑定所属源图", result.stdout)
+
+    def test_bridge_evidence_metadata_stays_out_of_formal_script(self) -> None:
+        text, ledger = bridge_fixture()
+        text += '\nevidence_images: ["panel.jpg", "panel2.jpg"]\n'
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("证据", result.stdout)
+
+    def test_bridge_evidence_cannot_waive_the_clip_ceiling(self) -> None:
+        text, ledger = bridge_fixture()
+        text = text.replace("**分镜3（2秒）：**", "**分镜3（20秒）：**")
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("超过", result.stdout)
 
 
 if __name__ == "__main__":

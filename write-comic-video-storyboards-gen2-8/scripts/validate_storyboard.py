@@ -52,13 +52,6 @@ GENERIC_GESTURE_RE = re.compile(
 CONTEXTUAL_GESTURE_RE = re.compile(
     r"(?:指向|指着)[^。；\r\n]{0,12}(?:前路|晶石|石头|工具|工作台|门|地图|物件|道具)"
 )
-PERFORMANCE_SEQUENCE_RE = re.compile(
-    r"先|随后|随即|再|之后|接着|句末|重音|停顿|半拍|同时|伴随|保持"
-)
-PERFORMANCE_ENDPOINT_RE = re.compile(
-    r"停住|落定|稳定|回落|落回|摊回|压实|恢复|收束|最后|最终|句末|说完后|"
-    r"保持(?:视线|姿态|重心)|视线[^。；\r\n]{0,10}(?:停在|留在|定住)"
-)
 # Local wording families for admission bookkeeping, not proof of visual meaning.
 MAJOR_ACTION_PATTERNS = {
     name: re.compile(pattern)
@@ -102,7 +95,7 @@ TEXT_ONLY_CLAUSE_RE = re.compile(
 VISUAL_SOURCE_RE = re.compile(r"原格|源图|画面|当前格|面板|图中|参考图|图像|可见")
 AUTHORING_METADATA_RE = re.compile(
     r"\b(?:visual_evidence|action_admissions?|fact_claims|motion_decision|"
-    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing|background_decision)\b|"
+    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing|background_decision|evidence_images)\b|"
     r"证据说明|推断依据|准入依据|准入通过|图像证据|图像支持|保真复查|"
     r"(?:证据|推断|准入|复查)(?:来源|说明|理由|结果)[：:]"
 )
@@ -708,7 +701,11 @@ def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
 
 
 def cinematic_quality_warnings(main_text: str) -> list[str]:
-    """Return non-blocking acting, rendering, and sound heuristics."""
+    """Schedule semantic acting review; return other non-blocking craft hints.
+
+    Time/dialogue select review targets, not quality verdicts. Action sequence
+    and settlement words cannot certify acting or exempt a static paragraph.
+    """
     warnings: list[str] = []
     shot_map = build_shot_map(main_text)
     if not shot_map:
@@ -732,14 +729,27 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
         pure_object_shot = bool(PURE_OBJECT_SHOT_RE.search(block))
         repeated_utterance = has_repeated_utterance(dialogue)
         expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
-        if not pure_object_shot and (
-            dialogue_chars > 20 or (duration >= 5 and dialogue_chars > 0) or (4 <= duration <= 6 and expressive_dialogue)
-        ) and (
-            not PERFORMANCE_SEQUENCE_RE.search(action) or not PERFORMANCE_ENDPOINT_RE.search(action)
-        ):
+        generic_match = GENERIC_GESTURE_RE.search(action)
+        generic_gesture = bool(generic_match and not CONTEXTUAL_GESTURE_RE.search(action))
+        silent_review = dialogue_chars == 0 and (
+            duration > 4 or (duration > 3 and re.search(r"特写|近景", camera))
+        )
+        performance_review = not pure_object_shot and (
+            dialogue_chars > 20 or (duration >= 5 and dialogue_chars > 0)
+            or (4 <= duration <= 6 and expressive_dialogue) or silent_review
+        )
+        if performance_review:
+            gesture_note = "出现通用手势；核对它是否回应当前任务/交流。" if generic_gesture else ""
             warnings.append(
-                f"{target}需表演语义复查：文本启发式未识别完整时序或落点；"
-                "检查主动作、任务/关系响应和有意持态是否可读。同义表达有效，不要求增加手势、面部变化或延迟词。"
+                f"{target}需表演语义复查：按台词/情境推进核对全程参与与任务/互动响应；"
+                "若保留停顿/持态，说明具体阶段、用途与时长。镜尾可以继续动作。"
+                f"{gesture_note}这是复查排程，不是低质量判定；时序/停姿词不免审，"
+                "不强制加手势、身体位移或拆镜；结论记入现有审阅记录。"
+            )
+        elif pure_object_shot and duration >= 7:
+            warnings.append(
+                f"{target}时长为{duration}秒的物件/说明镜头；复核可见发展或有目的停留及自然时长，"
+                "不要求人物表演，也不因时长自动拆镜。"
             )
         if CAMERA_STAGING_MOTION_RE.search(camera) and not CAMERA_LANDING_RE.search(camera):
             warnings.append(
@@ -750,14 +760,14 @@ def cinematic_quality_warnings(main_text: str) -> list[str]:
                 f"{target}含重复话语但【台词与语气】没有区分前后节拍；"
                 "请在台词栏用压力、停顿、重音或收尾变化区分重复表达。"
             )
-        generic_match = GENERIC_GESTURE_RE.search(action)
-        if generic_match and not CONTEXTUAL_GESTURE_RE.search(action):
+        if generic_gesture:
             segment = target.split("/", 1)[0]
             generic_by_segment.setdefault(segment, []).append(target)
-            warnings.append(
-                f"{target}出现通用手势；请复查它是否服务当前任务/交流。"
-                "增加身体部位关键词不能代替情境依据，短镜头的丰富交叠表演无需按数量删减。"
-            )
+            if not performance_review:
+                warnings.append(
+                    f"{target}出现通用手势；请复查它是否服务当前任务/交流。"
+                    "增加身体部位关键词不能代替情境依据，短镜头的丰富交叠表演无需按数量删减。"
+                )
         if ("大光圈" in block and re.search(r"大景深|全景深|强景深", block)) or (
             "浅景深" in block and re.search(r"大景深|全景深|强景深", block)
         ):
@@ -840,6 +850,52 @@ def validate_overflow_split(
     if any(owners[target] != {image_key} for target in owned):
         errors.append(f"{label}必须证明本格独立超限，不能借其他原格凑时。")
     return errors
+
+
+def resolve_bridge_evidence(
+    shot: dict,
+    owner_images: list[str],
+    panel_by_image: dict[str, dict[str, object]],
+    renderable_order: list[str],
+) -> tuple[list[str], list[str]]:
+    """Resolve an opt-in bridge's evidence without changing coverage ownership."""
+    if "evidence_images" not in shot:
+        return [], []
+    target = shot.get("target", "未知镜头")
+    errors: list[str] = []
+    if shot.get("role") != "uncited_coverage" or shot.get("coverage_type") != "action_phase":
+        errors.append(f"{target}的evidence_images仅用于uncited_coverage/action_phase跨镜头衔接。")
+    owners = {Path(item).name.casefold() for item in owner_images}
+    if len(owner_images) != 1 or len(owners) != 1:
+        errors.append(f"{target}的跨镜头衔接必须只有一个derived_from覆盖归属；取证不能增加覆盖归属。")
+    refs = shot.get("evidence_images")
+    if not isinstance(refs, list) or len(refs) != 2 or any(
+        not isinstance(ref, str) or not ref.strip() for ref in refs
+    ):
+        return [], errors + [f"{target}的evidence_images必须登记前后两个端点源图文件名。"]
+    keys = [Path(ref.strip()).name.casefold() for ref in refs]
+    if len(set(keys)) != 2:
+        errors.append(f"{target}的evidence_images端点不能重复。")
+    if not owners.issubset(keys):
+        errors.append(f"{target}的evidence_images必须包含其覆盖归属源图。")
+    for key in keys:
+        panel = panel_by_image.get(key)
+        if panel is None:
+            errors.append(f"{target}的evidence_images引用了未登记面板：{key}")
+        elif panel.get("renderable_visual", True) is False:
+            errors.append(f"{target}的evidence_images不能使用纯漫画排字面板：{key}")
+        elif panel.get("viewed_at_drafting") is not True:
+            errors.append(f"{target}的evidence_images源图未确认已检查：{key}")
+    if all(key in renderable_order for key in keys):
+        positions = sorted(renderable_order.index(key) for key in keys)
+        if positions[1] - positions[0] != 1:
+            errors.append(f"{target}的evidence_images必须是相邻的可生成画面端点，不能借远处源图扩张事实。")
+    decision = shot.get("motion_decision")
+    if not ((isinstance(decision, str) and decision.strip()) or (isinstance(decision, dict) and decision)):
+        errors.append(f"{target}的跨镜头衔接缺少motion_decision；需记录实际前镜结尾、后镜开头及连接选择。")
+    if errors:
+        return [], errors
+    return sorted(keys, key=renderable_order.index), []
 
 
 def validate_source_ledger(
@@ -1283,6 +1339,10 @@ def validate_source_ledger(
         if isinstance(panel, dict) and isinstance(panel.get("image"), str)
     }
     next_renderable_by_image: dict[str, str] = {}
+    renderable_order = [
+        key for key in panel_order
+        if panel_by_image[key].get("renderable_visual", True) is not False
+    ]
     for panel_index, image_key in enumerate(panel_order):
         for later_key in panel_order[panel_index + 1:]:
             later_panel = panel_by_image.get(later_key, {})
@@ -1380,6 +1440,7 @@ def validate_source_ledger(
             errors.append(f"{target}的source_images必须是字符串数组。")
             source_images = []
         owner_images: list[str] = []
+        evidence_images: list[str] = []
         if role in {"source_locked", "source_supported_phase"}:
             owner_images = source_images
             if shot.get("viewed_while_writing") is not True:
@@ -1432,6 +1493,10 @@ def validate_source_ledger(
                 errors.append(f"{target}是uncited_coverage，必须用derived_from登记所属原格。")
                 derived_from = []
             owner_images = derived_from
+            evidence_images, bridge_errors = resolve_bridge_evidence(
+                shot, owner_images, panel_by_image, renderable_order,
+            )
+            errors.extend(bridge_errors)
             coverage_changes = shot.get("coverage_changes")
             if not isinstance(coverage_changes, list) or any(
                 item not in allowed_coverage_changes for item in coverage_changes
@@ -1457,11 +1522,12 @@ def validate_source_ledger(
                 elif panel_by_image.get(image_key, {}).get("renderable_visual", True) is False:
                     errors.append(f"{target}不能从纯漫画排字面板派生可生成画面：{source_image}")
                 coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
-            expected_next = None
-            for source_image in derived_from:
-                expected_next = next_renderable_by_image.get(Path(source_image).name.casefold())
-                if expected_next:
-                    break
+            expected_next = evidence_images[-1] if evidence_images else None
+            if not expected_next:
+                for source_image in derived_from:
+                    expected_next = next_renderable_by_image.get(Path(source_image).name.casefold())
+                    if expected_next:
+                        break
             if expected_next:
                 next_source_image = shot.get("next_source_image")
                 if not isinstance(next_source_image, str) or Path(next_source_image).name.casefold() != expected_next:
@@ -1475,15 +1541,19 @@ def validate_source_ledger(
                 if not isinstance(next_evidence, str) or sum(ch.isalnum() for ch in next_evidence) < 8:
                     errors.append(f"{target}缺少具体next_source_evidence；不能只填差异标签。")
 
-        owner_panels = [
+        if role != "uncited_coverage" and "evidence_images" in shot:
+            _, bridge_errors = resolve_bridge_evidence(shot, owner_images, panel_by_image, renderable_order)
+            errors.extend(bridge_errors)
+        fact_source_images = owner_images + evidence_images
+        evidence_panels = [
             panel_by_image[Path(item).name.casefold()]
-            for item in owner_images
+            for item in fact_source_images
             if Path(item).name.casefold() in panel_by_image
         ]
         allowed_facts: dict[str, set[str]] = {name: set() for name in ("entities", "actions", "relations")}
         forbidden_terms: set[str] = set()
-        for owner_panel in owner_panels:
-            facts = owner_panel.get("source_facts")
+        for evidence_panel in evidence_panels:
+            facts = evidence_panel.get("source_facts")
             if isinstance(facts, dict):
                 for fact_type in allowed_facts:
                     values = facts.get(fact_type)
@@ -1491,11 +1561,14 @@ def validate_source_ledger(
                         allowed_facts[fact_type].update(
                             item for item in values if isinstance(item, str) and item.strip()
                         )
-            terms = owner_panel.get("non_renderable_terms")
+            terms = evidence_panel.get("non_renderable_terms")
             if isinstance(terms, list):
                 forbidden_terms.update(
                     item for item in terms if isinstance(item, str) and item.strip()
                 )
+        if evidence_images:
+            # An exact entity now observed in the approved bridge is no longer context-only.
+            forbidden_terms.difference_update(allowed_facts["entities"])
 
         fact_claims = shot.get("fact_claims")
         if not isinstance(fact_claims, dict):
@@ -1544,9 +1617,10 @@ def validate_source_ledger(
                 continue
             admitted_actions.update(major_action_kinds(claim))
             if not isinstance(source_image, str) or Path(source_image).name.casefold() not in {
-                Path(item).name.casefold() for item in owner_images
+                Path(item).name.casefold() for item in fact_source_images
             }:
-                errors.append(f"{target}的动作“{claim}”没有绑定所属源图。")
+                binding = "已登记的镜头证据源图" if evidence_images else "所属源图"
+                errors.append(f"{target}的动作“{claim}”没有绑定{binding}。")
             if not isinstance(visual_evidence, str) or sum(ch.isalnum() for ch in visual_evidence) < 4:
                 errors.append(f"{target}的动作“{claim}”缺少具体visual_evidence。")
             elif is_explicitly_text_only_evidence(visual_evidence):
@@ -1958,11 +2032,6 @@ def main() -> int:
                     f"{shot_label}在一个编号块内隐藏了机位切换：{hidden_cut.group(0)}；"
                     "请把新机位改为下一个编号分镜。"
                 )
-            if duration >= 7:
-                warnings.append(
-                    f"{shot_label}时长为{duration}秒；请确认存在持续可读的表演或连续动作，"
-                    "否则按视觉焦点拆镜。"
-                )
             if dialogue_characters >= 42:
                 errors.append(
                     f"{shot_label}含{dialogue_characters}个有意义的台词字符；"
@@ -2005,18 +2074,6 @@ def main() -> int:
                 errors.append(
                     f"{shot_label}缺少可见背景；请写实景、图形底场或环境表面；"
                     "背景确被满幅主体遮住时陈述该可见性状态。"
-                )
-            if dialogue_characters == 0 and duration > 4 and not (
-                major_action_kinds(action_text) or PERFORMANCE_SEQUENCE_RE.search(action_text)
-            ):
-                warnings.append(
-                    f"{shot_label}为{duration}秒无台词镜头且缺少可见发展；"
-                    "若只是短促反应/静态构图，请缩短，否则补足有依据的连续动作。"
-                )
-            camera_text = fields.get("镜头设计", "")
-            if dialogue_characters == 0 and duration > 3 and re.search(r"特写|近景", camera_text) and not PERFORMANCE_SEQUENCE_RE.search(action_text):
-                warnings.append(
-                    f"{shot_label}为{duration}秒静态近景/特写；请复核是否应缩短到1–3秒。"
                 )
 
         for match in META_RE.finditer(chunk):
