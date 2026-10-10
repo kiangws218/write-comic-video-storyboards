@@ -1,0 +1,30 @@
+{
+  "episode": 18,
+  "clips": 21,
+  "shots": 57,
+  "seconds": 242,
+  "reviewed_images": 30,
+  "changed_shots": 14,
+  "changed_fields": 20,
+  "baseline_sha256": "12c63bda26188974c8efd611ff426bfbcab47102811b926e54c60e4b1503d78b",
+  "revised_sha256": "4d797d4da8aa5992e5c06cf47d1bd483b9bf21ca9a2108b92de350e65e0f924d",
+  "dialogue_field_byte_equal": true,
+  "timings_and_references_equal": true,
+  "delivery": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-018\\storyboards\\deliveries\\2026-10-10_Gen2.8_眉形表演修订",
+  "current": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-018\\storyboards\\current\\第18话_制作分镜_Gen2.8.md",
+  "structural_errors": 0,
+  "warning_count": 91,
+  "warning_classes": {
+    "multiple_speakers": 5,
+    "background_field": 2,
+    "performance_semantics": 29,
+    "repeated_dialogue": 3,
+    "mixed_evidence": 8,
+    "background_occlusion": 10,
+    "performance_card": 34
+  },
+  "formal_reference_count": 28,
+  "source_dialogue_mapping_equal": true,
+  "skill_commit": "f32442ba40113ae45e450b50810232b71ab2eda9",
+  "video_generated": false
+}

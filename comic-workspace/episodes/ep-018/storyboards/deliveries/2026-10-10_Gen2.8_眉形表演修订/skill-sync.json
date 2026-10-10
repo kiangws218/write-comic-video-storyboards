@@ -1,0 +1,21 @@
+{
+  "branch": "codex/gen2.8-performance-router",
+  "baseline_commit": "72a89198d6660479631d45be21f49dabad0316d0",
+  "commit": "f32442ba40113ae45e450b50810232b71ab2eda9",
+  "status": "pushed_and_remote_verified",
+  "files": [
+    {
+      "file": "write-comic-video-storyboards-gen2-8/references/core-authoring.md",
+      "sha256": "f7725111b22141a4c002c469876182184bafd9e4cd0055befaa7468026016b52"
+    },
+    {
+      "file": "write-comic-video-storyboards-gen2-8/references/dialogue-performance.md",
+      "sha256": "b207a464c93afcdef512f012768e429128f1e46cfd48c7d25cfe91305f16dd38"
+    },
+    {
+      "file": "write-comic-video-storyboards-gen2-8/references/regression-cases.md",
+      "sha256": "fbe03decf2608fd7cd11799875e89eb1cb34e194d9b5cc3b8cba4a554574fd82"
+    }
+  ],
+  "validation": "quick_validate passed; existing 143 Python unit tests passed; image-based review recorded separately; no generated video"
+}
