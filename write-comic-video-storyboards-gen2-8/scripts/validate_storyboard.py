@@ -81,7 +81,7 @@ MAJOR_ACTION_PATTERNS = {
         "坐下": r"坐下",
     }.items()
 }
-CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|拉远|横移|环绕|手持")
+CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|缓推|后拉|拉远|横移|弧移|环绕|上摇|下摇|升降|镜头升起|镜头下降|手持")
 AUDIO_HIDDEN_VISUAL_RE = re.compile(
     r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
     r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
@@ -118,13 +118,13 @@ ATMOSPHERE_BASIS_RE = re.compile(
     r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
 )
 CAMERA_STAGING_MOTION_RE = re.compile(
-    r"(?:镜头|摄影机|机位)[^。；\r\n]{0,24}(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)|"
-    r"推近|前推|拉远|跟拍|甩摇|环绕|手持"
+    r"(?:镜头|摄影机|机位)[^。；\r\n]{0,24}(?:横移|跟随|跟拍|推近|缓推|前推|后拉|拉远|甩摇|弧移|环绕|上摇|下摇|升起|下降|手持)|"
+    r"推近|缓推|前推|后拉|拉远|跟拍|甩摇|弧移|环绕|上摇|下摇|手持"
 )
 CAMERA_LANDING_RE = re.compile(
     r"落幅|句末[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
     r"最终[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
-    r"(?:横移|跟随|跟拍|推近|前推|拉远|甩摇|环绕|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停住|停在|落在|收束)"
+    r"(?:横移|跟随|跟拍|推近|缓推|前推|后拉|拉远|甩摇|弧移|环绕|上摇|下摇|升起|下降|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停住|停在|落在|收束)"
 )
 EXPRESSIVE_DIALOGUE_RE = re.compile(r"[！!？?]{2,}|っ[！!]|だ、だ|不、?不")
 AUDIO_BEAT_DIFFERENTIATION_RE = re.compile(
@@ -700,6 +700,76 @@ def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
     return shot_map
 
 
+def camera_source_review_issues(
+    shot: dict, panels: list[dict], fields: dict[str, str],
+) -> tuple[list[str], list[str]]:
+    """Check records, queue visual discrepancies; never infer pitch from a head pose."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    target = shot.get("target", "镜头")
+    camera = fields.get("镜头设计", "")
+    action = fields.get("可见动作", "")
+    decision = shot.get("camera_decision")
+    if decision is not None:
+        if not isinstance(decision, dict):
+            errors.append(f"{target}的camera_decision必须是对象。")
+        elif "mode" in decision:
+            for key in ("mode", "reason", "anchor_phase", "opening", "landing"):
+                if not isinstance(decision.get(key), str) or not decision[key].strip():
+                    errors.append(f"{target}的camera_decision缺少{key}。")
+            if decision.get("mode") not in {"fixed", "固定", "固定镜头"} and not decision.get("path_basis"):
+                errors.append(f"{target}的移动camera_decision缺少path_basis；填写实际路径依据。")
+        else:
+            warnings.append(f"{target}的既有camera_decision未分开模式、路径与落幅；修改镜头时补齐，不据此否定旧稿。")
+    if shot.get("role") == "source_locked":
+        composition = "；".join(str(p.get("composition_lock", "")) for p in panels)
+        for label, pattern in (("俯拍", r"高俯|略俯|俯拍|俯视"), ("仰拍", r"低仰|略仰|仰拍|仰视")):
+            if re.search(pattern, composition) and not re.search(pattern, camera):
+                warnings.append(f"{target}需摄影机俯仰复查：来源构图含{label}线索而镜头字段未明确；区分人物抬低头、机位高度和光轴，勿自动改角度。")
+        source_relations = "；".join(
+            str(item) for panel in panels
+            for item in panel.get("source_facts", {}).get("relations", [])
+        )
+        lens_gaze = r"(?:目光|视线|眼睛)?(?:直视|看向|望向|看着|注视)(?:摄影机|镜头)"
+        if re.search(lens_gaze, source_relations) and not re.search(lens_gaze, action):
+            warnings.append(f"{target}需镜头注视复查：已记录的直视镜头未落实到动作；面朝前方不是等义视线，不为闭眼/遮挡眼强补注视。")
+    if re.search(r"把关注集中|让[^。；]{0,24}读清楚|确保[^。；]{0,18}可读|呈现源格|保留源图", camera):
+        warnings.append(f"{target}需镜头字段精简：将目的/源格核对理由留内部，保留实际构图、焦点、路径和落幅；不是删除具体裁切约束。")
+    return errors, warnings
+
+
+def character_profile_review_issues(
+    registry: object, shot_map: dict[str, tuple[int, str]],
+) -> tuple[list[str], list[str]]:
+    """Profiles are supplied project facts, not inferred from names or emotion words."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    if registry is None:
+        return errors, warnings
+    # Legacy external-registry references carry no embedded profiles to inspect.
+    if not isinstance(registry, list):
+        return errors, warnings
+    for entry in registry:
+        if not isinstance(entry, dict) or "performance_profile" not in entry:
+            continue
+        name = entry.get("canonical_name")
+        profile = entry.get("performance_profile")
+        if not isinstance(name, str) or not name.strip():
+            errors.append("含performance_profile的人物条目缺少canonical_name。")
+            continue
+        if not isinstance(profile, dict) or any(
+            not isinstance(profile.get(key), str) or not profile[key].strip()
+            for key in ("baseline", "source")
+        ):
+            errors.append(f"{name}的performance_profile须有baseline及明确source；不能从人设图表情推导性格。")
+            continue
+        for target, (_, block) in shot_map.items():
+            fields = shot_field_values(block)
+            if name in fields.get("可见动作", "") or name in fields.get("台词与语气", ""):
+                warnings.append(f"{target}需角色基调语义复查（{name}）：对照已确认profile检查动作与语气、源图例外及持续任务；不按情绪词或动作数量自动判错。")
+    return errors, warnings
+
+
 def cinematic_quality_warnings(main_text: str) -> list[str]:
     """Schedule semantic acting review; return other non-blocking craft hints.
 
@@ -934,6 +1004,12 @@ def validate_source_ledger(
     allowed_coverage = {"none", "shared", "reverse", "insert", "mixed"}
     allowed_kinds = {"dialogue", "inner", "narration"}
     shot_map = build_shot_map(main_text)
+    profile_errors, profile_warnings = character_profile_review_issues(
+        ledger.get("character_registry"), shot_map,
+    )
+    errors.extend(profile_errors)
+    if warnings is not None:
+        warnings.extend(profile_warnings)
     seconds_by_target: dict[str, float] = {}
     speakers_by_target: dict[str, set[str]] = {}
     acting_chars_by_target: dict[str, int] = {}
@@ -1379,6 +1455,15 @@ def validate_source_ledger(
         decision = shot.get("background_decision")
         owner_refs = shot.get("source_images") or shot.get("derived_from") or []
         owner_refs = owner_refs if isinstance(owner_refs, list) else []
+        camera_errors, camera_warnings = camera_source_review_issues(
+            shot,
+            [panel_by_image[Path(ref).name.casefold()] for ref in owner_refs
+             if isinstance(ref, str) and Path(ref).name.casefold() in panel_by_image],
+            shot_field_values(shot_map[target][1]),
+        )
+        errors.extend(camera_errors)
+        if warnings is not None:
+            warnings.extend(camera_warnings)
         needs_decision = any(
             isinstance(ref, str) and isinstance(panel_by_image.get(Path(ref).name.casefold(), {}).get("background"), dict)
             and panel_by_image[Path(ref).name.casefold()]["background"].get("type") in {"omitted", "occluded"}
