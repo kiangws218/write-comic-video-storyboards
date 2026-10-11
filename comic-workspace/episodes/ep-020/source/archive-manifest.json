@@ -1,0 +1,336 @@
+{
+  "archive": "../20.zip",
+  "filename_encoding": "gbk recovered from ZIP cp437 metadata",
+  "images": [
+    {
+      "image": "第20話_01_001.jpg",
+      "bytes": 198529,
+      "sha256": "60cafa1d458d24156065210ffdc0b02007e1b3da3eeaa6f5b7555f30155b32fb"
+    },
+    {
+      "image": "第20話_01_002.jpg",
+      "bytes": 173404,
+      "sha256": "a0cb8adb2dd61318e15095ade86c5049b18f823813c2e73195c93cdad18790e5"
+    },
+    {
+      "image": "第20話_01_003.jpg",
+      "bytes": 775396,
+      "sha256": "5123076a60400c64b2ce60dfc31cb9566d673e196b76de59483a3377ed4297ac"
+    },
+    {
+      "image": "第20話_02_001.jpg",
+      "bytes": 207578,
+      "sha256": "5a99dd0221479605340a13d8e3ca557da65f7cbf0b5359ab5207e9a8a80f2dd6"
+    },
+    {
+      "image": "第20話_02_002.jpg",
+      "bytes": 158560,
+      "sha256": "b6db319e3072f1cec9e1883b9b81c029fcf4c23e34e5413bbe9318efd4c3ef2f"
+    },
+    {
+      "image": "第20話_02_003.jpg",
+      "bytes": 99375,
+      "sha256": "b0cde1083a758acbcbb943218cd11ae8bc791dab6dec1c9ec6dfa5ab269fb9a5"
+    },
+    {
+      "image": "第20話_03_001.jpg",
+      "bytes": 83764,
+      "sha256": "9474c0228f908693611c98a8b2b4a0a5d902b133382ef9f9ee32ebe6513d0687"
+    },
+    {
+      "image": "第20話_03_002.jpg",
+      "bytes": 185352,
+      "sha256": "f5a6e2ec12867e89afadda3eafc6353a0724950a998fca55216841cf0a182591"
+    },
+    {
+      "image": "第20話_03_003.jpg",
+      "bytes": 68417,
+      "sha256": "34e0df772e299b0bf553134d584c872f3efd2ccbbeacbd598d3a556dd42f6e14"
+    },
+    {
+      "image": "第20話_03_004.jpg",
+      "bytes": 93378,
+      "sha256": "b07ce7c70609d4640b7f56febd12e7dd7213f8cf8e6e4f72880531f95bd34184"
+    },
+    {
+      "image": "第20話_04_001.jpg",
+      "bytes": 452119,
+      "sha256": "b70d86182d8c413ca31d0adee8e5edbabc67b84d3bf195fa586a310496964676"
+    },
+    {
+      "image": "第20話_04_002.jpg",
+      "bytes": 251527,
+      "sha256": "13822a39f224f82411a4dc02cc5d49a31a4f560a47f63624861a0642f14b19e7"
+    },
+    {
+      "image": "第20話_04_003.jpg",
+      "bytes": 332578,
+      "sha256": "d110b974bb9ebbea527dc0481d75c51ac3f8cd88ee1c06e39d9e18297a985d8a"
+    },
+    {
+      "image": "第20話_05_001.jpg",
+      "bytes": 140979,
+      "sha256": "51d62af45564a216418d8f76b13c60c8b24241f1ccd6727a47545b1d76396147"
+    },
+    {
+      "image": "第20話_05_002.jpg",
+      "bytes": 119465,
+      "sha256": "55f05701aed090d921d8a3dd3dae73bcad2e3fa5a45ae031d2e9f84e5559fa47"
+    },
+    {
+      "image": "第20話_05_003.jpg",
+      "bytes": 276637,
+      "sha256": "65fc84d6c40c50b4175f9bf64b4fb32abe31282a670b23729a3cf4bd505168a2"
+    },
+    {
+      "image": "第20話_06_001.jpg",
+      "bytes": 155158,
+      "sha256": "2f9b3bbbd350486c7400f04aac77cdea45870ef795f2abefbd64b0a3f447caee"
+    },
+    {
+      "image": "第20話_06_002.jpg",
+      "bytes": 317150,
+      "sha256": "1af0ecf3a151e4cd762651cc80aa88a2f1b8c8c2e4b3422a5483d85bc53c2f45"
+    },
+    {
+      "image": "第20話_06_003.jpg",
+      "bytes": 128553,
+      "sha256": "8cc010731aad77aff1fa808fbc17b7a46f8c08f1ae17854f10bed6bc1c2f0874"
+    },
+    {
+      "image": "第20話_07_001.jpg",
+      "bytes": 410638,
+      "sha256": "16ccc606ef725ac139323b963cba2a1bf3225fbf50676617589be0fb4a6222f2"
+    },
+    {
+      "image": "第20話_07_002.jpg",
+      "bytes": 331349,
+      "sha256": "be358903c55a4e8d42f83253cdd498f9ea12963c34004f534f7b82d22797ac22"
+    },
+    {
+      "image": "第20話_08_001.jpg",
+      "bytes": 511239,
+      "sha256": "b1a28fed66ff5f54c4ea8e6144f3500a80c4784cec2aa5123a52eb8ba75275b6"
+    },
+    {
+      "image": "第20話_08_002.jpg",
+      "bytes": 106861,
+      "sha256": "e56f5956f21afd41c8384086e873efec7ab02ae753d9a750a7ab8ac28e38ed97"
+    },
+    {
+      "image": "第20話_09_001.jpg",
+      "bytes": 143010,
+      "sha256": "b85860f525f0ca8f8390a5d17daa241903e4ff5c5e8494b942e3c0992d90a8ad"
+    },
+    {
+      "image": "第20話_09_002.jpg",
+      "bytes": 489009,
+      "sha256": "ddb4613b5ea3aef61a55688fe14c4fad65ae09f597362875e93f63f8ee8c90a2"
+    },
+    {
+      "image": "第20話_09_003.jpg",
+      "bytes": 151963,
+      "sha256": "cea7005015bb6127f1a6bb1926d4a7aeafea306888466c3295f4cc026e69acf9"
+    },
+    {
+      "image": "第20話_10_001.jpg",
+      "bytes": 409380,
+      "sha256": "deb0bee5cf33be84c5a9f841e98f2a4bc8908f791e1953a97a3c023d871a4aec"
+    },
+    {
+      "image": "第20話_10_002.jpg",
+      "bytes": 422614,
+      "sha256": "50d5a66511c71dd32cbdcd1fbb250cb9a80655bb9aae8eea80e568790bc950d8"
+    },
+    {
+      "image": "第20話_11_001.jpg",
+      "bytes": 371314,
+      "sha256": "08ca795aa63d88aa286ad5f09dc3d8614f454f2c907b4279cfe21fe49ccad593"
+    },
+    {
+      "image": "第20話_11_002.jpg",
+      "bytes": 221808,
+      "sha256": "1907c9ad26b6e521a69ed43e1e2fe3142dab9daace373555978e3c57eb661284"
+    },
+    {
+      "image": "第20話_11_003.jpg",
+      "bytes": 384236,
+      "sha256": "24dc0f043c2bfc75f2c4cfefd4589bd6e966caa4b44305173edcdf8ad991c818"
+    },
+    {
+      "image": "第20話_12_001.jpg",
+      "bytes": 199338,
+      "sha256": "03a81efe43db6df472546fed0efcbfab4267d6fe4a427dcadae1c534ba42aecb"
+    },
+    {
+      "image": "第20話_12_002.jpg",
+      "bytes": 383450,
+      "sha256": "0294c54c0fea4e34ae95303a44c5a06c80a75fc6b4e9d2a2864614cc6a10c21e"
+    },
+    {
+      "image": "第20話_13_001.jpg",
+      "bytes": 83302,
+      "sha256": "1dd9c4746612471bee960964e00d71610306b4856f95fadefe26f2134818436f"
+    },
+    {
+      "image": "第20話_13_002.jpg",
+      "bytes": 460827,
+      "sha256": "9645b6405b1fa0595f9e81f1581938d9da84461437704311445cf46bb5009638"
+    },
+    {
+      "image": "第20話_14_001.jpg",
+      "bytes": 190794,
+      "sha256": "d20436b04b1b6d8ebfd851a88680054f47862246233657cf4db8e6c9d8354312"
+    },
+    {
+      "image": "第20話_14_002.jpg",
+      "bytes": 502108,
+      "sha256": "29e3d705676f9ade1daaef644480bd41f52a56ada4653c892571bed9f856cdeb"
+    },
+    {
+      "image": "第20話_14_003.jpg",
+      "bytes": 481357,
+      "sha256": "c744480148b0bb97329b4ba801d04498cbcdd6af6e68c570ccd8cd96076f4c99"
+    },
+    {
+      "image": "第20話_15_001.jpg",
+      "bytes": 95084,
+      "sha256": "46daa7b3838391a175679c7bf10e61ebb01c1c65f034fd0246067a3886084ca3"
+    },
+    {
+      "image": "第20話_15_002.jpg",
+      "bytes": 149060,
+      "sha256": "1023ec88b91237d5e97c3fbab40baf473c72d03355e12f9f7aae9464454243ac"
+    },
+    {
+      "image": "第20話_15_003.jpg",
+      "bytes": 144168,
+      "sha256": "4977e0e551a701a38d543804433546f2d4e4bc484ac6d42c3d1a97064daf92f3"
+    },
+    {
+      "image": "第20話_16_001.jpg",
+      "bytes": 967410,
+      "sha256": "432cd81f93256ec366c93aa31633b22cbcc2fe831bc4c09058197cae1ddb1979"
+    },
+    {
+      "image": "第20話_17_001.jpg",
+      "bytes": 420581,
+      "sha256": "d81bbdaa897cd4be12cdc0266e98bbe7ddeeac2a2a814f163101de85115a831f"
+    },
+    {
+      "image": "第20話_18_001.jpg",
+      "bytes": 176178,
+      "sha256": "1347fb255386a579ef4bda42a0abbfaa4de6aeaf06c9b0aa66d59350070b94d6"
+    },
+    {
+      "image": "第20話_18_002.jpg",
+      "bytes": 396209,
+      "sha256": "0e6400571f428ae8fe46f42308944111e64d039aa92550b3549a9cc921a0a644"
+    },
+    {
+      "image": "第20話_18_003.jpg",
+      "bytes": 135742,
+      "sha256": "f695f106ac2cc1aa81cbf252946e9298267d8b2444795b8b8b38bdcf1429f838"
+    },
+    {
+      "image": "第20話_19_001.jpg",
+      "bytes": 403408,
+      "sha256": "c25b42bd4fdd2f00c29ed89c81be5fa2f164fcc05a53d9a7b5f985f02c4c7d82"
+    },
+    {
+      "image": "第20話_19_002.jpg",
+      "bytes": 118432,
+      "sha256": "d27ee1a13932b23961ea89c671baa2c4a116ae8a9ff35d952caf5a872f779ef8"
+    },
+    {
+      "image": "第20話_19_003.jpg",
+      "bytes": 235723,
+      "sha256": "af5a4081173855b0792bd5cb4469a9cd51488608ab767b29a56fed124d442e62"
+    },
+    {
+      "image": "第20話_20_001.jpg",
+      "bytes": 157007,
+      "sha256": "26d5d75a7865bad5146697d34655e1589003364854d55369f42783a8dc9bf4a5"
+    },
+    {
+      "image": "第20話_20_002.jpg",
+      "bytes": 319121,
+      "sha256": "7fbb12adc7822e3cfb7c223cbb9617dc6ea1c3b73629659c034a5d35c8465aee"
+    },
+    {
+      "image": "第20話_21_001.jpg",
+      "bytes": 690789,
+      "sha256": "8cb9f88e19823e1aba5aa1903b2cb65b323d25e9408885dde8fb66c63b72fab6"
+    },
+    {
+      "image": "第20話_21_002.jpg",
+      "bytes": 184760,
+      "sha256": "b0ce292bd968501a9f25bdb0547a016193ef61845ff53d9747105cf81a5d12e3"
+    },
+    {
+      "image": "第20話_21_003.jpg",
+      "bytes": 95902,
+      "sha256": "ae66557850f78f84b80c1261d7c76da2375aeab07bef451dd4793dcd06f2ed50"
+    },
+    {
+      "image": "第20話_22_001.jpg",
+      "bytes": 185414,
+      "sha256": "7a01255fdf6182c3e5e686ea00806391c87db1c375828df23ef10793a499596f"
+    },
+    {
+      "image": "第20話_22_002.jpg",
+      "bytes": 162993,
+      "sha256": "c7f15e9ac46023fe3b1966af0e771ea69cad8e320f6d115be65be1e9df0d3823"
+    },
+    {
+      "image": "第20話_22_003.jpg",
+      "bytes": 424988,
+      "sha256": "8a46aa4027affa46792f804fa54cbcbdef75511033c2af284aeb4082c9177052"
+    },
+    {
+      "image": "第20話_23_001.jpg",
+      "bytes": 101004,
+      "sha256": "65ad62179b24edf470c966b32ae051007954cf89639b7bad2821f98559383072"
+    },
+    {
+      "image": "第20話_23_002.jpg",
+      "bytes": 94526,
+      "sha256": "3cd8cf43251b03dec009a8f2845a5c4d9a1774145a811ad1a1f40990d6e3abe6"
+    },
+    {
+      "image": "第20話_23_003.jpg",
+      "bytes": 82607,
+      "sha256": "34916a504804e80b12802dd020a66a48e6a4dd47c8edb89ba2202edc6cebe3e6"
+    },
+    {
+      "image": "第20話_23_004.jpg",
+      "bytes": 165590,
+      "sha256": "3b5effbd0c75c7219985cd1c72cfdab4084815f2b040bb83afb134d3576c1f0c"
+    },
+    {
+      "image": "第20話_24_001.jpg",
+      "bytes": 339388,
+      "sha256": "df5a4a55798ab2fd20a6ccdf325d25b0091595bc72bbd8644bfabf0f9dac7e43"
+    },
+    {
+      "image": "第20話_24_002.jpg",
+      "bytes": 146855,
+      "sha256": "4fb2018993e7c6df5d563e178ce6f93a01e68598a2b4b7d8a6a4d15fe297cf7b"
+    },
+    {
+      "image": "第20話_25_001.jpg",
+      "bytes": 187253,
+      "sha256": "0254ae00e3e13f69ff7b44448b6562e68f70fd05bdbf9d64896ef61a1829411a"
+    },
+    {
+      "image": "第20話_25_002.jpg",
+      "bytes": 144104,
+      "sha256": "251979cd466bb905836eb3b571a39fe59e3556f17ca50a4a26775ab6a10feac1"
+    },
+    {
+      "image": "第20話_26_001.jpg",
+      "bytes": 199179,
+      "sha256": "c54b96bcd0ee71855d5068c084f3a369eb24662faabcac679e3b306303f47edd"
+    }
+  ]
+}

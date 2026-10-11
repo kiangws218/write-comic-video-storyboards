@@ -1,2 +1,7 @@
 __pycache__/
 *.py[cod]
+
+# Local tools, downloaded source packages, and nested working checkouts.
+tests/results/gen2.8/ep018-full/git-lfs-runtime/
+tests/results/gen2.8/ep019-full/19.zip
+tests/results/gen2.8/ep018-019-brow-revision/skill-checkout/

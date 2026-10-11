@@ -1,0 +1,139 @@
+[
+  {
+    "image": "第19話_22_001.jpg",
+    "composition_lock": "刀刃极近景位于画面中央竖向，刃边亮灰，右侧窄黑面，竖向速度线沿两側。",
+    "source_facts": {
+      "entities": [
+        "竖向刀刃"
+      ],
+      "actions": [
+        "刀刃竖向快速下落"
+      ],
+      "relations": [
+        "刀刃中央，边缘两侧有竖向动势"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "graphic",
+    "background_description": "高亮白色图形底场，运动轮廓外短斜线随瞬时动作闪过，独立实景省略。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "春子举起的刃开始劈下。",
+      "beats": [
+        "细长刃竖向快速掠下，边缘亮条闪过，刀面轮廓保持直。"
+      ],
+      "coupling": "将一次劈落集中到明确刃路。",
+      "landing": "刀刃快速下落，准备停在目标近处。"
+    },
+    "continuity": "承接空中举刃与直线下落，下一格刀尖抵近急停。",
+    "admission": "只显刃部，不补镜外手位、目标脸或新的斩击。"
+  },
+  {
+    "image": "第19話_22_002.jpg",
+    "composition_lock": "刀尖与兜帽边缘极近景，灰色兜帽曲面占画面左侧，黑色尖刃从右侧抵近帽缘，中央窄隙与少量小圆粒清楚。",
+    "source_facts": {
+      "entities": [
+        "灰色兜帽曲面",
+        "黑色尖刃",
+        "细白短线",
+        "小圆粒"
+      ],
+      "actions": [
+        "尖刃停在兜帽边缘近处"
+      ],
+      "relations": [
+        "帽缘左侧，尖刃右侧，中间窄隙"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "occluded",
+    "background_description": "独立背景被满幅接触物件遮住。",
+    "kind": "Action",
+    "anchor_phase": "endpoint",
+    "plan": {
+      "opening": "刀刃快速劈落。",
+      "beats": [
+        "刀尖在帽缘近处急停，细白短线与小圆粒沿惯性散开，刃尖微颤后稳定。"
+      ],
+      "coupling": "同次攻击转为近距威胁，未出现刺入。",
+      "landing": "刀尖停在帽缘近处，窄隙保持。"
+    },
+    "continuity": "21_002举刃、22_001下落、此格急停，22_004压制结果；23_004进一步看清帽缘与刀尖间隙。",
+    "admission": "原尺寸及23_004邻近构图确认目标为兜帽边缘，刀尖停在近处；不将细白短线或清硬音效当作身体刺入、硬质皮肤或伤口证据。",
+    "original_resolution_viewed": true,
+    "original_resolution_reason": "核对刀尖、灰色帽缘与窄隙；结合23_004修订早期硬质曲面与碰撞解释为抵近急停。"
+  },
+  {
+    "image": "第19話_22_003.jpg",
+    "composition_lock": "全景排版，指令台词在画面中央，白色底场在后层，无人物或实景。",
+    "source_facts": {
+      "entities": [],
+      "actions": [],
+      "relations": []
+    },
+    "bubbles": [
+      [
+        "春子",
+        "别动"
+      ]
+    ],
+    "jp": [
+      "動くな。"
+    ],
+    "background": "graphic",
+    "background_description": "纯白色排版底场，没有可动画实景，仅含一项指令台词。",
+    "kind": "State",
+    "anchor_phase": "middle",
+    "plan": null,
+    "continuity": "指令接在刀刃受阻后，合入下一格压制结果。",
+    "admission": "纯台词格不作独立视觉，对白映射22_004镜头。",
+    "renderable_visual": false,
+    "omit_reason": "纯台词页，指令完整并入22_004的动作镜头，不渲染漫画气泡。",
+    "dialogue_attaches_to": "第19話_22_004.jpg"
+  },
+  {
+    "image": "第19話_22_004.jpg",
+    "composition_lock": "春子背面侧向中景占画面中央，屈腿压在下方黑袍身体上，近手握刀柄竖下，前腿伸向右下，水纹在后。",
+    "source_facts": {
+      "entities": [
+        "春子",
+        "黑袍来者",
+        "竖向刀柄",
+        "水面"
+      ],
+      "actions": [
+        "春子屈腿压住黑袍身体",
+        "近手握刀柄向下"
+      ],
+      "relations": [
+        "春子中央较高，黑袍身体在下方，刀柄右侧"
+      ]
+    },
+    "bubbles": [
+      [
+        "春子",
+        "我切开你的喉咙连一秒钟都不用."
+      ]
+    ],
+    "jp": [
+      "喉を切るのに、一秒もかからない。"
+    ],
+    "background": "physical",
+    "background_description": "灰暗水面横向展开，冷白片状反光较淡，圆形细波纹缓慢向外散开。",
+    "kind": "Mixed",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "春子已经压在黑袍者身上，刀柄竖向握住。",
+      "beats": [
+        "她把屈腿姿势压稳，握刀的手不松，先短促制止，再低声把威胁说清，刀柄保持竖向。"
+      ],
+      "coupling": "控制局面后明确警告，紧张来自稳定压制，不再加刀伤。",
+      "landing": "春子仍压住黑袍者，刀柄握稳。"
+    },
+    "continuity": "同次刀击之后直接到已供给压制结果，不补击倒手法。",
+    "admission": "服装完整，姿势为战斗压制；不情色强调身体，不发生新的割喉伤口。"
+  }
+]

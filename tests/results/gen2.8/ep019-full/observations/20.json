@@ -1,0 +1,109 @@
+[
+  {
+    "image": "第19話_20_001.jpg",
+    "composition_lock": "春子低位前冲中近景占画面中央，近臂伸向左下，手指接近前层波纹表面；长发向后扬，左侧细长黑刃斜下，岩壁远后。",
+    "source_facts": {
+      "entities": [
+        "春子",
+        "近臂与手",
+        "细长黑刃",
+        "波纹表面",
+        "岩壁"
+      ],
+      "actions": [
+        "春子身体前倾冲出",
+        "手指伸向左下",
+        "长发向后扬"
+      ],
+      "relations": [
+        "春子中央前冲，手左下近层，岩壁后层"
+      ]
+    },
+    "bubbles": [
+      [
+        "春子",
+        "这里可没有那种魔法."
+      ]
+    ],
+    "jp": [
+      "ここに、そんな魔法はない。"
+    ],
+    "background": "physical",
+    "background_description": "后方深褐岩壁，近处灰暗薄水面带白色波纹，人物后方短促亮气流。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "春子已否定眼前变化。",
+      "beats": [
+        "她压低身子迅速前冲，近臂伸向左下，手指掠到水面，长发与后侧细刃跟着同方向前移，白色尾流随后减短。"
+      ],
+      "coupling": "警觉立刻化为行动，以确定的判断打破青的迟疑。",
+      "landing": "身体仍低位，手在前层水面附近。"
+    },
+    "continuity": "否定后兑现源格前冲，不补攻击命中。",
+    "admission": "原尺寸确认手指、细刃与前层波纹；后侧握刀手被遮，保持细刃轮廓，不指定未知握法和目标。",
+    "original_resolution_viewed": true,
+    "original_resolution_reason": "判定前伸手与波纹表面的关系、左侧细刃是否为手臂，避免误写接触与武器握法。"
+  },
+  {
+    "image": "第19話_20_002.jpg",
+    "composition_lock": "脚部近景，春子的露趾凉鞋在画面中央，鞋尖向左，脚踝从上缘裁切，水面环形波纹在下方。",
+    "source_facts": {
+      "entities": [
+        "春子的凉鞋",
+        "水面",
+        "环形波纹"
+      ],
+      "actions": [
+        "鞋底踩入水面"
+      ],
+      "relations": [
+        "鞋近层中央，波纹向外"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "灰暗薄水面横向展开，冷白反光成细碎片状，远处渐亮，水纹层次清楚。",
+    "kind": "Action",
+    "anchor_phase": "contact",
+    "plan": {
+      "opening": "前冲中的春子脚部向水面落下。",
+      "beats": [
+        "凉鞋底踩实，近处水面凹下一瞬，细小环形波纹随落脚向外扩。"
+      ],
+      "coupling": "落脚让此处水面性质更清楚。",
+      "landing": "鞋底已落，波纹继续扩开。"
+    },
+    "continuity": "低位前冲后给落脚水纹，保持动作方向。",
+    "admission": "单脚局部明确，不补另一脚或镜外人物。"
+  },
+  {
+    "image": "第19話_20_003.jpg",
+    "composition_lock": "黑袍者背面头肩近景占画面中央偏左，右后水面有一束向上飞溅水花，周围细波纹。",
+    "source_facts": {
+      "entities": [
+        "黑袍来者",
+        "水花",
+        "水面"
+      ],
+      "actions": [
+        "右后水花向上溅起"
+      ],
+      "relations": [
+        "来者近层中央偏左，水花右后"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "灰暗薄水面横向展开，冷白反光成细碎片状，远处渐亮，水纹层次清楚。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": null,
+    "continuity": "脚踩水后水面右后溅起，来者背影仍近，不新增命中身体。",
+    "admission": "仅动画已见水花生命周期，春子未入画不补其位置。",
+    "sfx": "右后水花短促飞溅",
+    "sfx_source_text": "Splash!／啪！为拟声，不作角色台词。"
+  }
+]

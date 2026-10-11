@@ -1,0 +1,153 @@
+[
+  {
+    "image": "第19話_23_001.jpg",
+    "composition_lock": "青从画面右后跑向左前，远处全身可见，左前大幅长发局部遮挡，脚下水花。",
+    "source_facts": {
+      "entities": [
+        "青",
+        "左前长发局部",
+        "水面"
+      ],
+      "actions": [
+        "青跑来",
+        "脚下水花飞溅"
+      ],
+      "relations": [
+        "青右后，长发左近层"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "灰暗水面横向展开，冷白片状反光较淡，圆形细波纹缓慢向外散开。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "青从右后注意到冲突。",
+      "beats": [
+        "她迅速跑向左侧近处，长发与衣摆随步伐后摆，脚落水面溅起小水花。"
+      ],
+      "coupling": "急着阻止冲突，让她离开旁观位置。",
+      "landing": "青已接近左前，步伐还在继续。"
+    },
+    "continuity": "春子压制来者后青跑来，靠近路线仅当前画内方向。",
+    "admission": "只跑到左前，未给两人补接触、拉扯或拥抱。"
+  },
+  {
+    "image": "第19話_23_002.jpg",
+    "composition_lock": "青正面頭肩近景位于画面中央，睁圆眼张嘴，近手沿左下裁切，浅发两側。",
+    "source_facts": {
+      "entities": [
+        "青",
+        "近手"
+      ],
+      "actions": [
+        "青睁圆眼张口"
+      ],
+      "relations": [
+        "头部中央，手在左下近层"
+      ]
+    },
+    "bubbles": [
+      [
+        "青",
+        "现,现在是什么情况…？！"
+      ]
+    ],
+    "jp": [
+      "い、今、どうなってるの？！"
+    ],
+    "background": "omitted",
+    "background_description": "浅灰省略底场。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "青跑近后步伐收短。",
+      "beats": [
+        "她喘着气问清状况，眼睛圆着，近手刚抬起就停住，像不敢随便插手。"
+      ],
+      "coupling": "赶来阻止却不明白冲突，只能先追问。",
+      "landing": "青停在近处，手仍抬在下缘。"
+    },
+    "continuity": "跑近后给青的惊慌提问。",
+    "admission": "只有近手局部，不补抓住春子或碰刀。"
+  },
+  {
+    "image": "第19話_23_003.jpg",
+    "composition_lock": "春子正面头肩近景位于画面中央，半垂眼，眉间紧起，嘴微张。",
+    "source_facts": {
+      "entities": [
+        "春子"
+      ],
+      "actions": [
+        "春子半垂眼皱眉"
+      ],
+      "relations": [
+        "头部中央，上身从下缘裁切"
+      ]
+    },
+    "bubbles": [
+      [
+        "春子",
+        "如果人类能施展这样的魔法，战况怎么可能那么艰难？"
+      ]
+    ],
+    "jp": [
+      "人間にこんな魔法が使えたら、戦争であんなに苦戦しないでしょ。"
+    ],
+    "background": "omitted",
+    "background_description": "浅灰省略底场。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "春子仍在压制来者。",
+      "beats": [
+        "她抬眼把理由说清，眉间一直绷着，句末反问落得坚定，没有放松警惕。"
+      ],
+      "coupling": "以战争现实判断来者身份，回答青的困惑。",
+      "landing": "目光稳定，警惕未松。"
+    },
+    "continuity": "青问后给春子的推断，压制动作在画外延续。",
+    "admission": "头肩裁切不显示手腿，不能因论证新增战场画面。"
+  },
+  {
+    "image": "第19話_23_004.jpg",
+    "composition_lock": "刀尖与兜帽近景，灰色兜帽曲面占画面左侧，黑色尖刃在右侧指向左下，尖端与帽边之间有窄隙，细白流线在间隙。",
+    "source_facts": {
+      "entities": [
+        "兜帽曲面",
+        "黑色尖刃",
+        "细白流线"
+      ],
+      "actions": [
+        "刀尖保持抵近兜帽边缘"
+      ],
+      "relations": [
+        "帽左侧，尖刃右侧，窄隙中间"
+      ]
+    },
+    "bubbles": [
+      [
+        "春子",
+        "这家伙肯定是魔族."
+      ]
+    ],
+    "jp": [
+      "こいつは、間違いなく魔族だ。"
+    ],
+    "background": "occluded",
+    "background_description": "独立背景被两侧接触物件遮住。",
+    "kind": "State",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "刀尖已停在帽缘近处。",
+      "beats": [
+        "刃尖的余颤渐小，窄隙保持，白色细流线逐渐减弱，春子把结论说定。"
+      ],
+      "coupling": "身份判断伴随稳定威胁，压制仍未松开。",
+      "landing": "刀尖维持近距，兜帽内看不清脸。"
+    },
+    "continuity": "推断结束切回刃与帽缘，保持威胁状态，不再次撞击。",
+    "admission": "本格明确窄隙，刀尖只是抵近，无新伤口。"
+  }
+]

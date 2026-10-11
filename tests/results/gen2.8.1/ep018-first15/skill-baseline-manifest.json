@@ -1,0 +1,25 @@
+{
+  "baseline": "C:\\Users\\86135\\.codex\\skills\\write-comic-video-storyboards-gen2-8",
+  "new_version": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\write-comic-video-storyboards-gen2-8-1",
+  "baseline_hashes": {
+    "SKILL.md": "b45642d8ef3a69fcdfee214d257c3c9fbfa1bd3b418a9ed156b801f3dc136a06",
+    "agents/openai.yaml": "ec7a43fa0468fc1976fc0b313622fcef48fae48b24bb048750f8385998a0603e",
+    "references/2d-animation-execution.md": "067e2fae8055dca250de52967f8aa06e46c131065196e664ae22501dc4470f04",
+    "references/acting-calibration.md": "5e2c7c29aa246f34acecedad00dcb8ede0ac6f507ba6c163f3039219e537fe9d",
+    "references/background-design.md": "d77652e47ded6390771c7631dd5b49457a309a7d3ea55778de8d9eb8a2c0ac50",
+    "references/cinematic-rendering.md": "bb9adcf42a42fc3c67ef7b2ba988e005b6d0754476d63eed4f74f274bc402b0e",
+    "references/core-authoring.md": "bf83cb8627174af9a7fe37a258d11ee8b08d99d635d4c7487a1ac5a4d27f2173",
+    "references/dialogue-performance.md": "c4e13f2bd693c22cb11b75a075176a05f10396dbac84192647dccdf4215b7915",
+    "references/gen2-5-compatibility.md": "91626dc21c7494a19fdd4961d28072ba5080914608a27a804e996c41468138b9",
+    "references/regression-cases.md": "6bdc6b689d957ddd8655812a1fff2d15ac10879b98dcae574f038b7bf3f311d3",
+    "references/seedance-execution-and-review.md": "9ffd9d514e17ebd1895615f309cad878c404530ed436cec68ae8d315b80be1b5",
+    "references/source-risk.md": "0d54ec6e1e15ad66c9330dd243f88c3b8243d5de6e61549a7f61d9c24c986684",
+    "scripts/audit_seedance_prompt.py": "98b6121beb0c79e44ee465fd099a8aa86bda0f247e1239439608ef7c82900dc7",
+    "scripts/build_analysis_proxies.py": "860dcf5017bbad866420702a4755736d406a70b4835ef5d9cffa2da0c6b547d6",
+    "scripts/migrate_source_ledger_v2_to_v3.py": "d1fc86758177e9f75ef3e396246e588720ad07f9872369ea76b870d792176532",
+    "scripts/test_build_analysis_proxies.py": "26f14d49db67e1c89fc28123b5f4ae9919a3e8e7aa0d739b811f26aad6d73587",
+    "scripts/test_migrate_source_ledger.py": "09c5aa6f6c39d651ed0859dd264263296ababc2a8e4e810d7825700a84bf2f33",
+    "scripts/test_validate_storyboard.py": "d90d81424011521f6f9f17ad0dd7d6303266dd712327ff57209c8bfdacecb802",
+    "scripts/validate_storyboard.py": "f463f3b6f42d0188aeb0a8402e5a99fa97f7a8fbbee08f5630768be75de4e926"
+  }
+}

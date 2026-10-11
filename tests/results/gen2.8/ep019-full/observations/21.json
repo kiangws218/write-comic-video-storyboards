@@ -1,0 +1,83 @@
+[
+  {
+    "image": "第19話_21_001.jpg",
+    "composition_lock": "黑袍者头肩近景位于画面下方中央偏左，帽口全暗朝右，兜帽肩扣清楚，上方留宽灰白底。",
+    "source_facts": {
+      "entities": [
+        "黑袍来者",
+        "肩扣"
+      ],
+      "actions": [
+        "头部略向右转"
+      ],
+      "relations": [
+        "头肩下方中央偏左，上方留空"
+      ]
+    },
+    "bubbles": [
+      [
+        "黑袍来者",
+        "HMM."
+      ],
+      [
+        "黑袍来者",
+        "她可真聪明."
+      ]
+    ],
+    "jp": [
+      "ふむ。",
+      "なかなか賢いな。"
+    ],
+    "background": "omitted",
+    "background_description": "灰白省略底场。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "来者背影留在水面前。",
+      "beats": [
+        "他把头略转向右，短短哼一声，随后平静评价，帽缘随小幅转动挪过。"
+      ],
+      "coupling": "他看懂春子的反应，惊讶很少，态度从容。",
+      "landing": "帽口朝右，仍看不见脸。"
+    },
+    "continuity": "水面变化之后给来者的判断，不补他与春子的接触。",
+    "admission": "评价不能确定画外春子位置，仅保留源图右向头部。"
+  },
+  {
+    "image": "第19話_21_002.jpg",
+    "composition_lock": "纵向双人中全景，春子在画面上方空中卷身，长发扬起，握刀手在上侧，黑色尖刃向上；下方近层是黑袍兜帽及袍形。",
+    "source_facts": {
+      "entities": [
+        "春子",
+        "黑色尖刃",
+        "黑袍来者的兜帽与袍形"
+      ],
+      "actions": [
+        "春子空中卷身",
+        "长发扬起",
+        "刀刃向上"
+      ],
+      "relations": [
+        "春子上方，黑袍形下方近层"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "graphic",
+    "background_description": "高亮白色图形底场，运动轮廓外短斜线随瞬时动作闪过，独立实景省略。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "春子低位前冲后转入空中。",
+      "beats": [
+        "她收腿卷身，握刀手随躯干翻转抬起，长发在身后形成弧形，刀刃由上侧准备向下落。"
+      ],
+      "coupling": "主动试探的攻击从低位前冲转为空中劈落。",
+      "landing": "春子卷身在上，刀刃已举起，黑袍形在下。"
+    },
+    "continuity": "单次前冲动作向上转为挥刀，后续直刃下落与接触完成同一次攻击。",
+    "admission": "只连接所供卷身与刃路，不新增踏对方头部、命中身体或反击。",
+    "original_resolution_viewed": true,
+    "original_resolution_reason": "核对卷身姿势、刀刃与下方黑袍形的层次，不把运动块面误写为额外打击。"
+  }
+]

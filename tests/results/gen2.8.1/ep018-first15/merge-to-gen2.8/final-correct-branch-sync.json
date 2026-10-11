@@ -1,0 +1,17 @@
+{
+  "branch": "codex/gen2.8-performance-router",
+  "commit": "c6f5b23ddf98a90360ea6a5beb7395886754a6c6",
+  "changed_files": [
+    "write-comic-video-storyboards-gen2-8/SKILL.md",
+    "write-comic-video-storyboards-gen2-8/agents/openai.yaml",
+    "write-comic-video-storyboards-gen2-8/references/dialogue-performance.md"
+  ],
+  "installed_matches_remote_package": true,
+  "existing_gen2_8_worktree_fast_forwarded": true,
+  "other_existing_edits_preserved": true,
+  "comic_workspace_mistaken_commit_removed": true,
+  "regression_tests": {
+    "passed": 120
+  },
+  "quick_validation_passed": true
+}

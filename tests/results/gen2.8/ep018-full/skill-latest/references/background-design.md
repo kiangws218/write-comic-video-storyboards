@@ -1,0 +1,43 @@
+# Background treatment and visual references
+
+Read for omitted/ambiguous backing, emotional graphics, palette/effects or background revision. `core-authoring.md` alone owns field boundaries, the four authority modes and bounded continuity admission. This file guides their artistic selection, not a second source-lock system.
+
+## Scenery first, expressive departure when useful
+
+An undrawn manga background is not necessarily an undrawn animation background. In ordinary conversation/action, first examine the established location and current framing. A softly simplified or defocused portion of that actual environment often carries continuity better than another gradient. Do not invent architecture to make it detailed. A close-up may reveal little scenery; full subject occlusion may reveal none.
+
+Reserve non-diegetic backing for a supported dramatic departure: an emotionally magnified reaction, comic contrast, explanatory visualization or directional impact. Choose from source performance and scene function, not the absence of manga ink or an adjective in the dialogue. Explicit speed fields, patterned emotion fields and deliberate graphic staging deserve consideration; a neutral gray fill by itself proves neither deliberate abstraction nor omission. Record uncertainty rather than guessing the manga artist's intent as fact.
+
+Review at sequence level: where does the departure begin, what beat does it support, and where does location continuity return? A graphic field can be present on the opening frame of that shot; it need not always dissolve in. A longer graphic passage is acceptable when it carries a coherent function. Do not impose one effect per shot, an abstract-shot quota, compulsory background motion or a mandatory transition animation. End-of-beat return can be a numbered cut already in the approved coverage; do not add hidden cuts or change duration just to implement a background.
+
+## Palette is not the comic's screentone
+
+Use explicit palette direction and verified color references first. Monochrome input does not require monochrome animation. Explicit monochrome **output** does, until the user changes it. Do not borrow character colors from background design.
+
+For uncolored environment/treatment choices, set a coherent scene palette once, then repeat only what the independent shot needs. Specify useful gradient endpoints instead of `浅灰背景` or `暖色背景` alone. Physical green foliage or brick base color remains stable across happy/sad lines; environmental grading may vary without becoming an emotion-color switch.
+
+Warm cream/yellow/peach can support pleasure, enthusiasm or flattering comic self-presentation; cold blue/blue-violet and darker vertical texture can support setback or discomfort; desaturated gray may support an intentionally empty, awkward or deadpan pause. These are choices, not a dictionary: cold colors can be peaceful, warm colors can be threatening, and gray can belong to a real wall. Resolve them against the visible attitude, scene palette and contrast with neighboring shots. Do not make every happy shot sparkle or every disappointed shot dark blue.
+
+## Use real visual examples, not effect-name invention
+
+When selecting or differentiating a graphic family, read [background-visual-library.md](background-visual-library.md). It contains inspected animation stills and useful counterexamples, not wallpaper packs or AI-generated illustrations. Ordinary physical/continuity backing does not require loading the catalogue. Its examples establish color/shape/composition only, not animation speed, direction, frequency or duration. Use them as optional visual families, never import their characters, glyphs, props or exact staging.
+
+Choose the visual function before the motif: soft subjective beautification, bright comic emphasis, psychological pressure and confrontational emphasis need not share a sparkle field. Differentiate verified forms through edge softness, motif size/density, spacing and palette rather than adding more effect names. A simple supported color field remains valid; fuller acting does not require busier backing. A cool cyan field can flatter a friendly exchange, while warm lighting can accompany distress. The library's suggested uses are adaptation judgments, not evidence of the original scene's precise meaning or a fixed emotion-to-effect mapping.
+
+For a new geometric, star, haze-like, striped or other treatment not covered by a verified project reference, inspect an actual relevant animation still/clip before specifying its form. Prefer official scene pages/trailers or identifiable animation screenshots. Search descriptions, guessed image names and generated illustrative art are not visual verification. Record the URL, work/scene when known, observed features and the intended adaptation in the internal decision; keep all research citations out of the formal six-field script. Reuse a verified family across a project rather than browsing on every shot. Check a source again only when unavailable, mismatched or insufficient for the new decision.
+
+For motion, separate **observed animation** (clip/time range or GIF actually inspected) from **production timing chosen from a still's verified visual form**. Do not claim that stars float, stripes flow or geometric motifs rotate because a still contains them. When adding a designed motion, specify the useful layer behavior, timing/settlement and relation to the existing beat; keep it nonphysical and avoid changing the source action. Static graphics remain valid. If no relevant form can be verified, use a verified treatment or a plain supported palette instead of inventing a complicated pattern. Report any research limitation honestly; do not mark a failed preview as inspected.
+
+## Rendering and review
+
+Write background layers, not evidence or rationale. For example, a chosen graphic field might read `奶油黄向浅金色渐变，疏密有别的白色四角闪光铺在底场上。` Its purpose and reference stay in `background_decision`. The motion, if selected, is a separate production choice there, not a motion observation invented from the still.
+
+Render only the distinguishing details the shot needs: the base field/gradient, identifiable motif and useful distribution; add layer motion only when designed. This is a prose aid, not a mandatory checklist or minimum density. `梦幻粒子飘动` is not a substitute for distinguishing soft round color patches from sharp four-point glints. Do not pile stars, waves, radial lines and haze into one field to imply production value. Multiple layers are allowed when they form a coherent treatment.
+
+Graphic haze means soft color patches or blur, not environmental fog; graphic sparkles do not automatically cast light, require dust, make sound or create magic. Physical smoke/fog/rain, optics, surface reflections and real environmental motion still follow the source/light gates. Source action and character performance remain in `【可见动作】`; decorative background activity cannot substitute for them.
+
+Treatments can be a full non-diegetic field or a selective graphic overlay above preserved scenery. Choose the mode from what actually carries the backing: a physical room with a decorative overlay is still `physical` (or `continuity` for admitted reconstruction); a replacement graphic field is `graphic`. Describe the overlay/adaptation in the same `background_decision.basis`, not a new mode or parallel ledger. A background replacement does not automatically recolor the character, create luminous rim light, change anatomy, remove contact support or relocate the action. Keep source spatial relations and visible scenery where they are needed for movement or interaction.
+
+Distinguish scenery from stylistic rendering: saturated curtains, patterned wallpaper, a violet window grid and defocused stage lighting can remain physical backing. Conversely, a split-screen of faces is camera/editing composition, an eye-shaped star is acting/design, and a caption is typography; none becomes background decoration by appearing in the same still. Directional graphic lines amplify an admitted action/confrontation; they do not authorize new speed, an attack, weather or energy emission.
+
+Before delivery, review backing authority, scene continuity, palette fit, graphic purpose/return, real-versus-graphic effect meaning, field purity and true occlusion. Formal camera/light/backing must agree. Reopen only affected panel/reference images under change-scoped review. Validator warnings identify potential issues; visual judgment decides omitted scenery, emotional purpose and field role. No word-count, body-part blacklist or color ratio certifies that judgment.

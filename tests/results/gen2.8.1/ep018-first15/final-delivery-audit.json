@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-09T06:15:17.977386+00:00",
+  "installed_new_files_match_workspace": 19,
+  "installed_gen2_8_unchanged": true,
+  "original_storyboard_unchanged": true,
+  "final_artifact_hashes": {
+    "第18话_前15格_完整分镜_Gen2.8.1.md": "c9a21b3bf73773704d065418eef98fb5be8f1ec90b67f9e3f4b9eef8fc013fc3",
+    "第18话_前15格_工作区基线_Gen2.8.md": "d094a1ef9ebf9ec5ddda9a49aa452692cda2a561a9dbf3896777292f48c040a8",
+    "逐镜表演对照_Gen2.8_vs_Gen2.8.1.md": "7c18c1a3f8713738957a7a52483476113bf3c2f9ad6db2fb82cf98df5bc0f7c0",
+    "Gen2.8.1_迭代与第18话对比评估.md": "cd50722cf541da0b8a9b38145b1738b9e750048e011a700fd748c5237ee59bb7",
+    "source-ledger-v3.json": "d29b55179b4f054310b613062b1842abdbabdc61faca50573fdd63767ef25a73",
+    "comparison-data.json": "4f943591714ecd3b0edd91316b323b1d6cf9375aae2a8d79e49a3ad11aeb6358",
+    "validation-gen2.8.1.txt": "5ee54e7d6f52fd3fb05a80da85eaa3f108ea0235c11f43d283c16efb7fd7524b",
+    "Gen2.8.1_skill_changes.diff": "d95ba9eaa4baaebd4a89472d51269f0278d3d2a8099a2ca4ecba26f008af0d8f",
+    "advisory-dispositions.json": "ff8c3076905e04e95c9d542d8775f7b0dbe64dd747ee26479b49bdd617b074d5"
+  }
+}

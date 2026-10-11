@@ -1,0 +1,70 @@
+[
+  {
+    "image": "第19話_17_001.jpg",
+    "composition_lock": "黑袍者侧面上身近景在画面右侧，黑色手臂向左抬，手指张开在左中，岩壁在左后。",
+    "source_facts": {
+      "entities": [
+        "黑袍来者",
+        "黑色手臂",
+        "张开的手指",
+        "岩壁"
+      ],
+      "actions": [
+        "手臂抬起",
+        "手指张开"
+      ],
+      "relations": [
+        "人右侧，手左中近层，岩壁左后"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "Action",
+    "anchor_phase": "result",
+    "plan": {
+      "opening": "黑袍者站在岩壁前，手臂还低。",
+      "beats": [
+        "他抬起一侧手臂，手指在岩壁前张开，袖口随后垂落。"
+      ],
+      "coupling": "等待终于被一个明确的手部动作打破。",
+      "landing": "张开的手停在岩壁前。"
+    },
+    "continuity": "站定之后抬手，随后切手指动作。",
+    "admission": "不称握持法器或触摸石面，源图没有此物与接触。"
+  },
+  {
+    "image": "第19話_17_002.jpg",
+    "composition_lock": "手指近景从画面右侧伸向左，上方和中央两指分开，左侧岩壁竖向边缘，与手有间隙。",
+    "source_facts": {
+      "entities": [
+        "黑色手指",
+        "岩壁边缘"
+      ],
+      "actions": [
+        "手指分开",
+        "指间有短弧动势"
+      ],
+      "relations": [
+        "手右近层，岩壁左侧，中间留间隙"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "左侧深褐岩壁边缘清楚，中部亮灰空气层，右侧被手部占据。",
+    "kind": "Action",
+    "anchor_phase": "result",
+    "plan": {
+      "opening": "抬起的手在岩壁前。",
+      "beats": [
+        "指间短短弹动一下，两指分开，一声轻响后停在间隙前。"
+      ],
+      "coupling": "局部手势是随后变化的触发线索。",
+      "landing": "两指分开，手与岩壁仍有间隙。"
+    },
+    "continuity": "抬手之后只兑现一次源格手指短动作。",
+    "admission": "不补手指触石或推墙，确见间隙。"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "image": "第19話_15_001.jpg",
+    "composition_lock": "黑袍者侧背头肩近景在画面中央，帽口朝左，兜帽与肩袍轮廓清楚，上方岩壁。",
+    "source_facts": {
+      "entities": [
+        "黑袍来者",
+        "岩壁"
+      ],
+      "actions": [
+        "头部略转向左"
+      ],
+      "relations": [
+        "头肩中央，岩壁上后层"
+      ]
+    },
+    "bubbles": [
+      [
+        "黑袍来者",
+        "跟上."
+      ]
+    ],
+    "jp": [
+      "ついて来い。"
+    ],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "Action",
+    "anchor_phase": "result",
+    "plan": {
+      "opening": "帽口朝向青的方向。",
+      "beats": [
+        "他把头稍转向左，简短示意跟来，肩袍随转向轻移。"
+      ],
+      "coupling": "不解释消息来源，直接引导下一步。",
+      "landing": "头肩朝左，准备带路。"
+    },
+    "continuity": "青追问之后来者不给解释，转身示意。",
+    "admission": "仅做源图已有转头肩，脚步在后续源格兑现。"
+  },
+  {
+    "image": "第19話_15_002.jpg",
+    "composition_lock": "双人中近景，青侧身在画面左前望向右，黑袍者背面在右后，岩壁上方。",
+    "source_facts": {
+      "entities": [
+        "青",
+        "黑袍来者",
+        "岩壁"
+      ],
+      "actions": [
+        "黑袍者背向青",
+        "青看向右侧"
+      ],
+      "relations": [
+        "青左前，来者右后"
+      ]
+    },
+    "bubbles": [
+      [
+        "青",
+        "？？？",
+        "inner"
+      ],
+      [
+        "青",
+        "HUH?"
+      ]
+    ],
+    "jp": [
+      "……？",
+      "え？"
+    ],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "Action",
+    "anchor_phase": "result",
+    "plan": {
+      "opening": "来者头肩已转开。",
+      "beats": [
+        "黑袍者向右后迈开一步，肩袍小幅远移；青迟疑地看着他，短问一声，没有立刻追上。"
+      ],
+      "coupling": "突然的带路指令让青不明所以。",
+      "landing": "黑袍者已向右后偏远，青留在左。"
+    },
+    "continuity": "转头示意后，源格脚步声支持来者走开。",
+    "admission": "只做画内肩背的小幅离开，不补多步路线，问号为无声疑惑。"
+  },
+  {
+    "image": "第19話_15_003.jpg",
+    "composition_lock": "春子正面眉眼脸部近景占画面中央，右侧青的浅发裁切，半垂眼与微皱眉清楚。",
+    "source_facts": {
+      "entities": [
+        "春子",
+        "青的浅发局部"
+      ],
+      "actions": [
+        "春子半垂眼皱眉"
+      ],
+      "relations": [
+        "春子中央，浅发右前"
+      ]
+    },
+    "bubbles": [
+      [
+        "青",
+        "什么情况？"
+      ],
+      [
+        "春子",
+        "……",
+        "inner"
+      ],
+      [
+        "青",
+        "大叔也是骑士？"
+      ]
+    ],
+    "jp": [
+      "どういうこと？",
+      "……。",
+      "おじさんも騎士なの？"
+    ],
+    "background": "omitted",
+    "background_description": "浅灰省略底场。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "青看着走开的来者，春子仍在旁边。",
+      "beats": [
+        "画外疑问传来，春子皱眉保持半垂眼，沉默一拍，没有替来者回答；又一声追问让她的疑惑继续。"
+      ],
+      "coupling": "青连问两次，春子只给沉默反应，未知身份继续保留。",
+      "landing": "春子半垂眼皱眉。"
+    },
+    "continuity": "来者走开后两人疑惑，不据骑士问句确认身份。",
+    "admission": "春子无声省略号写为停顿，不生成实际发声。"
+  }
+]

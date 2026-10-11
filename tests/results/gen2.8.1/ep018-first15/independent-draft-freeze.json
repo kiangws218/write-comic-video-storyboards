@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-09T05:36:56.454693+00:00",
+  "new_draft_sha256": "bc790c05d8b3f17cf022ec21fe385d797d84e2f0f6f03b8f309900a18d7f12cf",
+  "baseline_sha256": "9c5d05bf3cfb4b2ec21188e5abcaad5b4baf3f6d3721eccedae630188f4836e8",
+  "baseline_read_at_freeze": false,
+  "scope": "01_001—05_003",
+  "qualification": "独立新稿，不是读取旧稿后逐句改写；不是模型或随机种子的受控A/B实验。"
+}

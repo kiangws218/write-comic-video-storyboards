@@ -1,0 +1,12 @@
+{
+  "changed_files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "references/dialogue-performance.md"
+  ],
+  "scripts_and_other_references_unchanged": true,
+  "installed_gen2_8_unchanged": true,
+  "quick_validation_exit": 0,
+  "regression_exit": 0,
+  "new_skill_path": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\write-comic-video-storyboards-gen2-8-1"
+}
