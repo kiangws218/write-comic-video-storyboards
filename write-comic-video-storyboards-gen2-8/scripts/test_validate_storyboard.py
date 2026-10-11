@@ -1857,5 +1857,67 @@ class ValidatorTests(unittest.TestCase):
         self.assertIn("超过", result.stdout)
 
 
+class CameraAndCharacterContractTests(unittest.TestCase):
+    def test_composition_accepts_compact_spatial_positions(self):
+        for text in ("高俯双人全景，青左上春子右下", "正面群像中全景，五人远中",
+                     "正面脸胸特写，头部居中", "岩壁空镜，上部黑暗、下半凸岩"):
+            with self.subTest(text=text):
+                signals = sum(bool(pattern.search(text)) for pattern in VALIDATOR.COMPOSITION_SIGNAL_GROUPS)
+                self.assertGreaterEqual(signals, 2)
+
+    def test_composition_still_requires_more_than_a_framing_label(self):
+        for text in ("正面特写", "岩壁空镜", "左右摇移"):
+            with self.subTest(text=text):
+                signals = sum(bool(pattern.search(text)) for pattern in VALIDATOR.COMPOSITION_SIGNAL_GROUPS)
+                self.assertLess(signals, 2)
+
+    def test_source_pitch_omission_queues_review_not_forced_rewrite(self):
+        shot = {"target": "片段1/分镜1", "role": "source_locked"}
+        panel = {"composition_lock": "高俯背面中景，人物在下中", "source_facts": {"relations": []}}
+        errors, warnings = VALIDATOR.camera_source_review_issues(shot, [panel], {"镜头设计": "背面中景，人物占下中；固定镜头。"})
+        self.assertEqual(errors, [])
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("俯仰", warnings[0])
+
+    def test_actor_looking_up_and_low_camera_do_not_prove_upward_axis(self):
+        shot = {"target": "片段1/分镜1", "role": "source_locked"}
+        panel = {"composition_lock": "低机位人物头肩近景，头向上抬", "source_facts": {"relations": []}}
+        errors, warnings = VALIDATOR.camera_source_review_issues(shot, [panel], {"镜头设计": "低机位头肩近景，脸在中央；固定镜头。", "可见动作": "人物抬眼看向上方。"})
+        self.assertEqual((errors, warnings), ([], []))
+
+    def test_front_facing_cannot_discharge_observed_lens_gaze(self):
+        shot = {"target": "片段1/分镜1", "role": "source_locked"}
+        panel = {"composition_lock": "正面近景，脸居中", "source_facts": {"relations": ["人物目光直视镜头"]}}
+        fields = {"镜头设计": "正面近景，脸居中；固定镜头。", "可见动作": "人物面朝前方。"}
+        self.assertTrue(VALIDATOR.camera_source_review_issues(shot, [panel], fields)[1])
+        fields["可见动作"] = "人物面朝前方，目光直视镜头。"
+        self.assertEqual(VALIDATOR.camera_source_review_issues(shot, [panel], fields), ([], []))
+
+    def test_continuous_arc_with_rise_accepts_one_camera_record(self):
+        shot = {"target": "片段1/分镜1", "role": "source_locked", "camera_decision": {
+            "mode": "arc_with_rise", "reason": "展开已建立的高度关系", "anchor_phase": "result",
+            "opening": "左前近景", "landing": "正面平视胸像", "path_basis": "已检查的正侧角色与空间参考",
+        }}
+        self.assertEqual(VALIDATOR.camera_source_review_issues(shot, [], {}), ([], []))
+        del shot["camera_decision"]["path_basis"]
+        self.assertTrue(VALIDATOR.camera_source_review_issues(shot, [], {})[0])
+
+    def test_profile_review_does_not_ban_a_reflex_or_require_emotion_words(self):
+        registry = [{"canonical_name": "测试角色", "performance_profile": {"baseline": "低情绪外显，任务继续", "source": "用户明确设定"}}]
+        calm = storyboard().replace("人物手掌朝上托住物件，手指先放松再轻微收紧。", "测试角色平淡地回答，手上任务继续。")
+        reflex = calm.replace("平淡地回答", "被碰撞后短促睁眼再回答")
+        for text in (calm, reflex):
+            errors, warnings = VALIDATOR.character_profile_review_issues(registry, VALIDATOR.build_shot_map(text))
+            self.assertEqual(errors, [])
+            self.assertEqual(len(warnings), 1)
+        del registry[0]["performance_profile"]["source"]
+        self.assertTrue(VALIDATOR.character_profile_review_issues(registry, {})[0])
+
+    def test_camera_explanation_warning_preserves_executable_focus_and_crop(self):
+        shot = {"target": "片段1/分镜1"}
+        self.assertEqual(VALIDATOR.camera_source_review_issues(shot, [], {"镜头设计": "镜头上摇，落幅双角完整入画，焦点在盔面。"}), ([], []))
+        self.assertTrue(VALIDATOR.camera_source_review_issues(shot, [], {"镜头设计": "固定镜头，把关注集中于两人。"})[1])
+
+
 if __name__ == "__main__":
     unittest.main()
