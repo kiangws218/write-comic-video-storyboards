@@ -1,0 +1,33 @@
+{
+  "episode": 18,
+  "current": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-018\\storyboards\\current\\第18话_制作分镜_Gen2.8.md",
+  "delivery": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-018\\storyboards\\deliveries\\2026-10-11_Gen2.8_抽象背景修订",
+  "clips": 21,
+  "shots": 57,
+  "seconds": 242,
+  "formal_reference_count": 28,
+  "changed_background_shots": 5,
+  "new_graphic_replacements": 4,
+  "graphic_overlays": 0,
+  "inspected_source_images": 10,
+  "inspected_animation_stills": 4,
+  "affected_boundary_reviews": 7,
+  "errors": 0,
+  "warning_count": 88,
+  "warning_classes": {
+    "multiple_speakers": 5,
+    "background_field": 2,
+    "performance_semantics": 29,
+    "repeated_dialogue": 3,
+    "mixed_evidence": 8,
+    "background_occlusion": 10,
+    "performance_card": 31
+  },
+  "manual_overflow_items": 0,
+  "rule_input_bytes": 116253,
+  "action_dialogue_brows_camera_sound_timing_unchanged": true,
+  "source_panels_registry_and_fact_claims_unchanged": true,
+  "source_audit": "扫描全话，重开背景候选及相邻环境；漫画原件和气泡观察不改。",
+  "current_sha256": "c70e00b42e6c5597250c7c0eb1a7ea42bb1efa378b7167c76b87a11ff689a6ef",
+  "video_generated": false
+}
