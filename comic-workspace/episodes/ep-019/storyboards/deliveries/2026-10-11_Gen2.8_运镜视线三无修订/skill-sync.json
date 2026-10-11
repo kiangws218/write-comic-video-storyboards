@@ -1,0 +1,118 @@
+{
+  "branch": "codex/gen2.8-performance-router",
+  "commit": "a77fe4c0045ce03f58ce0b1feb022e940868fbff",
+  "source": "fetched Git tree",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "2504534dbd7ae9d293dca23205d36b9bbba879471707d10cc5b66773741a1740",
+      "before_sha256": "afb63f743c9f77c4d0513a9816ca4abc20e5062d0aafb7c284cb5511237aadb9"
+    },
+    {
+      "file": "agents/openai.yaml",
+      "sha256": "422fdb2074a5dba6b72399c8d5980c39eff7479395e14a3f1cd0c811e19cd8ce",
+      "before_sha256": "422fdb2074a5dba6b72399c8d5980c39eff7479395e14a3f1cd0c811e19cd8ce"
+    },
+    {
+      "file": "references/2d-animation-execution.md",
+      "sha256": "067e2fae8055dca250de52967f8aa06e46c131065196e664ae22501dc4470f04",
+      "before_sha256": "067e2fae8055dca250de52967f8aa06e46c131065196e664ae22501dc4470f04"
+    },
+    {
+      "file": "references/acting-calibration.md",
+      "sha256": "258688716ebe21042056a73313c4fd9504441404255fa2541e1a762b5f2684b6",
+      "before_sha256": "258688716ebe21042056a73313c4fd9504441404255fa2541e1a762b5f2684b6"
+    },
+    {
+      "file": "references/background-design.md",
+      "sha256": "34729983fb83700521218ec90f58f310412cb9993cf362922b003c55554e9ab7",
+      "before_sha256": "34729983fb83700521218ec90f58f310412cb9993cf362922b003c55554e9ab7"
+    },
+    {
+      "file": "references/background-visual-library.md",
+      "sha256": "76a7045b01ce527e72a00f9a31f4e457df46130040725fcafc3dd3c13c2c65c1",
+      "before_sha256": "76a7045b01ce527e72a00f9a31f4e457df46130040725fcafc3dd3c13c2c65c1"
+    },
+    {
+      "file": "references/cinematic-rendering.md",
+      "sha256": "2eacd4bc6350e73d17514d3a69e1c53b96182c4ba4a0a1a8075f55d0170fd466",
+      "before_sha256": "820ad03d69cdfea9ebc56b013773f5c736d26487795e30177c39f4d5db04e929"
+    },
+    {
+      "file": "references/core-authoring.md",
+      "sha256": "45d6be1ef4268e8e32bd4bc2ec340373d58197b839862899af5412552ccefe4e",
+      "before_sha256": "5f21ae552bcc08173057a1a233918716f1caf085573c40fb052b2dc3c5c22877"
+    },
+    {
+      "file": "references/dialogue-performance.md",
+      "sha256": "7197385c09431f54a2c74e1ea5768758ec80ff68aaeac19cc45a8d0511fa693f",
+      "before_sha256": "c65ff333b4225f769ed89423d6023398f70a90f5bcd9cbdf724fe32bfb123a00"
+    },
+    {
+      "file": "references/gen2-5-compatibility.md",
+      "sha256": "91626dc21c7494a19fdd4961d28072ba5080914608a27a804e996c41468138b9",
+      "before_sha256": "91626dc21c7494a19fdd4961d28072ba5080914608a27a804e996c41468138b9"
+    },
+    {
+      "file": "references/regression-cases.md",
+      "sha256": "684986386870d4a89b1398a227525d67b44ce39a50e9dcded6d2880ad3b74fbb",
+      "before_sha256": "d9547c395d00fe16bf5485f43f47a788a8e3f72d96ecb38cd0589367ec895e8e"
+    },
+    {
+      "file": "references/seedance-execution-and-review.md",
+      "sha256": "9ffd9d514e17ebd1895615f309cad878c404530ed436cec68ae8d315b80be1b5",
+      "before_sha256": "9ffd9d514e17ebd1895615f309cad878c404530ed436cec68ae8d315b80be1b5"
+    },
+    {
+      "file": "references/source-risk.md",
+      "sha256": "cc0d1be707c2d0250e26cbfbefdc0da7e187b3e46f55f7b731b260b8afeee660",
+      "before_sha256": "cc0d1be707c2d0250e26cbfbefdc0da7e187b3e46f55f7b731b260b8afeee660"
+    },
+    {
+      "file": "scripts/audit_seedance_prompt.py",
+      "sha256": "98b6121beb0c79e44ee465fd099a8aa86bda0f247e1239439608ef7c82900dc7",
+      "before_sha256": "98b6121beb0c79e44ee465fd099a8aa86bda0f247e1239439608ef7c82900dc7"
+    },
+    {
+      "file": "scripts/build_analysis_proxies.py",
+      "sha256": "860dcf5017bbad866420702a4755736d406a70b4835ef5d9cffa2da0c6b547d6",
+      "before_sha256": "860dcf5017bbad866420702a4755736d406a70b4835ef5d9cffa2da0c6b547d6"
+    },
+    {
+      "file": "scripts/migrate_source_ledger_v2_to_v3.py",
+      "sha256": "d1fc86758177e9f75ef3e396246e588720ad07f9872369ea76b870d792176532",
+      "before_sha256": "d1fc86758177e9f75ef3e396246e588720ad07f9872369ea76b870d792176532"
+    },
+    {
+      "file": "scripts/test_build_analysis_proxies.py",
+      "sha256": "26f14d49db67e1c89fc28123b5f4ae9919a3e8e7aa0d739b811f26aad6d73587",
+      "before_sha256": "26f14d49db67e1c89fc28123b5f4ae9919a3e8e7aa0d739b811f26aad6d73587"
+    },
+    {
+      "file": "scripts/test_migrate_source_ledger.py",
+      "sha256": "09c5aa6f6c39d651ed0859dd264263296ababc2a8e4e810d7825700a84bf2f33",
+      "before_sha256": "09c5aa6f6c39d651ed0859dd264263296ababc2a8e4e810d7825700a84bf2f33"
+    },
+    {
+      "file": "scripts/test_validate_storyboard.py",
+      "sha256": "3793fea602c108c1b7d3dae66d1fdaf8dde0dd4f0734ea793cdbf940a6c140d1",
+      "before_sha256": "f9351242bba4a8206711b788e29f370f1a7554b3daa70509c559f918aa53b5bf"
+    },
+    {
+      "file": "scripts/validate_storyboard.py",
+      "sha256": "34edcb3cd61be5c7479b4784d809b4cd88669fac62721466f7828ba2fb6737b2",
+      "before_sha256": "bdb9564532661620a74a1d90e3a05309062bd41e60e159b027448195db807fd2"
+    }
+  ],
+  "changed_files": [
+    "SKILL.md",
+    "references/cinematic-rendering.md",
+    "references/core-authoring.md",
+    "references/dialogue-performance.md",
+    "references/regression-cases.md",
+    "scripts/test_validate_storyboard.py",
+    "scripts/validate_storyboard.py"
+  ],
+  "status": "installed_and_hash_verified",
+  "installed_path": "C:\\Users\\86135\\.codex\\skills\\write-comic-video-storyboards-gen2-8"
+}
