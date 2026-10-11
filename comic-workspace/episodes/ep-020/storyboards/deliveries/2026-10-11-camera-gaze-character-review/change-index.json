@@ -1,0 +1,1722 @@
+[
+  {
+    "target": "片段1/分镜1",
+    "review_key": "01_001-source",
+    "source_images": [
+      "第20話_01_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "从完整头肩到面部判断，将观察和结论集中到直视镜头的平淡目光，而非增强角色情绪。",
+      "anchor_phase": "middle",
+      "opening": "正面头肩近景，肩线与衣领在下缘",
+      "landing": "正面脸部近景，半垂双眼与嘴同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_01_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段1/分镜2",
+    "review_key": "01_002-source",
+    "source_images": [
+      "第20話_01_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "3秒窄隙插镜以稳定的间距承接判断，移动会削弱刀尖与帽缘的紧邻关系。",
+      "anchor_phase": "middle",
+      "opening": "帽侧和刀尖夹住中央窄隙",
+      "landing": "同一极近景"
+    }
+  },
+  {
+    "target": "片段1/分镜3",
+    "review_key": "01_003-source",
+    "source_images": [
+      "第20話_01_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_up",
+      "reason": "以由水边到层叠群落的上摇展开高度和规模，三秒内形成明确空间揭示。",
+      "anchor_phase": "middle",
+      "opening": "水面与近水边两人为主，下层群像在上缘",
+      "landing": "两人居下中，庞大人形群落充满上方的源远景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_01_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段2/分镜1",
+    "review_key": "02_001-source",
+    "source_images": [
+      "第20話_02_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "保留源格明确的低处仰视，短推进呈现提问的直接性，不以皱眉前倾升级情绪。",
+      "anchor_phase": "middle",
+      "opening": "低位仰拍脸与近处握柄手",
+      "landing": "下颌、双眼和左上握柄手同框特写",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_02_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段2/分镜2",
+    "review_key": "02_002-source",
+    "source_images": [
+      "第20話_02_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "tilt_down",
+      "reason": "两项追问以窄隙上下段的连续扫视展开，不增加未见的持刀人或帽内脸部。",
+      "anchor_phase": "middle",
+      "opening": "上段帽缘与窄隙",
+      "landing": "下段刀尖、帽缘与冷白弧线同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_02_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段3/分镜1",
+    "review_key": "02_003-source",
+    "source_images": [
+      "第20話_02_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "长回应的回避感由遮住面容的帽口与刀之间的横向扫描呈现，8秒保持同一物理关系。",
+      "anchor_phase": "middle",
+      "opening": "左侧圆扣与布褶占主幅",
+      "landing": "刀面与帽口右侧黑面同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_02_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段3/分镜2",
+    "review_key": "03_001-source",
+    "source_images": [
+      "第20話_03_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_follow",
+      "reason": "跟随源格已建立的上行刀刃，保留帽口作为稳定参照，不另造挥刀动作。",
+      "anchor_phase": "middle",
+      "opening": "刀与帽口同框",
+      "landing": "刀面抵近上缘，下部留帽口与圆扣",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_03_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段4/分镜1",
+    "review_key": "03_002-source",
+    "source_images": [
+      "第20話_03_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "从握柄任务移向侧脸与面对方向，给期限后留出的空隙一个可执行落幅。",
+      "anchor_phase": "middle",
+      "opening": "左前握柄手和朝右侧脸同框",
+      "landing": "侧脸居中央偏左，手指、刀背在左缘，右方留空",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_03_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段4/分镜2",
+    "review_key": "03_003-source",
+    "source_images": [
+      "第20話_03_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "2秒无回应停顿落在帽缘现有细线，紧邻刀动作和观察镜，不为两秒插镜再造漂移。",
+      "anchor_phase": "middle",
+      "opening": "斜向帽缘与右侧窄带",
+      "landing": "同一极近景"
+    }
+  },
+  {
+    "target": "片段4/分镜3",
+    "review_key": "03_004-source",
+    "source_images": [
+      "第20話_03_004.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "声音设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "2秒静默观察让单侧半垂眼与眉形直接落幅，接下个落刀镜无需另加运动。",
+      "anchor_phase": "middle",
+      "opening": "侧脸眼鼻极近景",
+      "landing": "同一眼鼻极近景"
+    }
+  },
+  {
+    "target": "片段4/分镜4",
+    "review_key": "04_001-source",
+    "source_images": [
+      "第20話_04_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "tilt_follow",
+      "reason": "纠正先前略俯视的笼统判断，沿源格刀面下行跟摇，以帽口作为着落参照。",
+      "anchor_phase": "middle",
+      "opening": "低位仰拍面孔、举柄手及下部帽口",
+      "landing": "左侧前臂与刀、右上面孔和下部帽口",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_04_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段5/分镜1",
+    "review_key": "04_002-source",
+    "source_images": [
+      "第20話_04_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "follow_down_stop",
+      "reason": "让拦截在相机的下移与急停中落定；镜头只沿已见前臂和接触区运动。",
+      "anchor_phase": "middle",
+      "opening": "持刀前臂居中、右下留接触区",
+      "landing": "抓腕接触点居下中，刀柄在左上",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_04_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段6/分镜1",
+    "review_key": "04_003-source",
+    "source_images": [
+      "第20話_04_003.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "pan_left_reveal",
+      "reason": "用一次横向展开由被拦者转到解释者，青的积极劝说与春子的低情绪反应同框形成反差。",
+      "anchor_phase": "middle",
+      "opening": "右前春子半脸与刀柄",
+      "landing": "青脸居左中、春子半脸右缘、接触点下中",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_04_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段6/分镜2",
+    "review_key": "04_003-coverage-1",
+    "source_images": [
+      "第20話_04_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留原有手部独立覆盖，4秒让阻力缓下的接触读清，避免与前一双人横摇形成同型运镜。",
+      "anchor_phase": "middle",
+      "opening": "握柄手和圈腕手同框",
+      "landing": "同一手部特写"
+    }
+  },
+  {
+    "target": "片段7/分镜1",
+    "review_key": "05_001-source",
+    "source_images": [
+      "第20話_05_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "pull",
+      "reason": "接受答复后由紧幅退至持刀和抓腕仍相接的构图，释放上一段的近距离而不安排情绪反转。",
+      "anchor_phase": "middle",
+      "opening": "侧脸与右上握柄手紧幅",
+      "landing": "侧脸、衣领和右下接触边缘同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_05_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段7/分镜2",
+    "review_key": "05_002-source",
+    "source_images": [
+      "第20話_05_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "diagonal_pan",
+      "reason": "沿现有受力褶线展示抓提任务，从接触点到布料响应形成一个连续轨迹。",
+      "anchor_phase": "middle",
+      "opening": "指节和帽边接触区",
+      "landing": "抓点在左上，受力布褶斜贯画面",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_05_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段7/分镜3",
+    "review_key": "05_003-source",
+    "source_images": [
+      "第20話_05_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pull",
+      "reason": "由二人到环纹周边的拉远交代异常场域尺度，取代没有落幅变化的微移。",
+      "anchor_phase": "middle",
+      "opening": "背向的两人全身与内圈水纹",
+      "landing": "环纹、倒影、画缘暗块组成高俯全景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_05_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段7/分镜4",
+    "review_key": "06_001-source",
+    "source_images": [
+      "第20話_06_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "snap_push",
+      "reason": "源格的小瞳仁惊觉与图形斜轴可支撑一次短促推近，不添加手脚动作。",
+      "anchor_phase": "middle",
+      "opening": "斜轴脸部极近景",
+      "landing": "双眼与鼻尖占主幅，近侧尖耳右缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_06_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段8/分镜1",
+    "review_key": "06_002-source",
+    "source_images": [
+      "第20話_06_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_up",
+      "reason": "沿已见白亮团的垂直展开上摇，明确低处仰观的高度关系。",
+      "anchor_phase": "middle",
+      "opening": "斜向近水面与亮团下部",
+      "landing": "亮团占中上、水面仍在下缘的全景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_06_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段8/分镜2",
+    "review_key": "06_003-source",
+    "source_images": [
+      "第20話_06_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "diagonal_follow",
+      "reason": "随已见浪缘掠过的方向运动，2秒内从浪入到布边形成清楚落点。",
+      "anchor_phase": "middle",
+      "opening": "左侧肢体、上右衣料及下右浪尖",
+      "landing": "衣摆和浪缘交界为主，左侧肢体仍在画内",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_06_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段8/分镜3",
+    "review_key": "07_001-formation",
+    "source_images": [
+      "第20話_07_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留已审核的横抱形成桥，两处承托同时建立，固定构图优先呈现接触而非掩盖动作。",
+      "anchor_phase": "contact",
+      "opening": "肩后与膝下承托尚在形成，肩至膝下同框",
+      "landing": "两处承托到位的动作近景"
+    }
+  },
+  {
+    "target": "片段8/分镜4",
+    "review_key": "07_001-source",
+    "source_images": [
+      "第20話_07_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "pull",
+      "reason": "由双人面孔展开到完整抱持，强调春子平淡承认与青主动救援后的对照。",
+      "anchor_phase": "middle",
+      "opening": "两人面孔和近侧膝部",
+      "landing": "完整抱持、下垂刀与脚边水面",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_07_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段8/分镜5",
+    "review_key": "07_002-source",
+    "source_images": [
+      "第20話_07_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "超低视角和前景框架已形成强烈层次，3秒固定反打让五人数量及四站一蹲的关系直接读出。",
+      "anchor_phase": "middle",
+      "opening": "腿间远景，五人在下中",
+      "landing": "同一低机位远景"
+    }
+  },
+  {
+    "target": "片段9/分镜1",
+    "review_key": "08_001-source",
+    "source_images": [
+      "第20話_08_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "从五人群组压到无面中央人物，构成与腿间远景不同的明确距离收紧；不推定裁外站姿变化。",
+      "anchor_phase": "middle",
+      "opening": "五个帽口及上身同框",
+      "landing": "中央帽口占上中，近侧圆扣下中、侧帽口在画缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_08_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段9/分镜2",
+    "review_key": "08_002-source",
+    "source_images": [
+      "第20話_08_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "一秒图形停顿为插叙分界，不将其变成空间或追加人物运动。",
+      "anchor_phase": "middle",
+      "opening": "横向黑带色面",
+      "landing": "同一图形全画幅"
+    }
+  },
+  {
+    "target": "片段9/分镜3",
+    "review_key": "09_001-source",
+    "source_images": [
+      "第20話_09_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "由握持推进到刀刃，给后面的举刀和冰刃说明建立物件轴线。",
+      "anchor_phase": "middle",
+      "opening": "两手与柄缠布占主幅",
+      "landing": "刀根、右下刃面为主，两手仍在左缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_09_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段9/分镜4",
+    "review_key": "09_002-source",
+    "source_images": [
+      "第20話_09_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_blade_reveal",
+      "reason": "一条由人到握持再到刃面的连续展开呈现冰刃来源，保持闭眼动作而非强加注视。",
+      "anchor_phase": "middle",
+      "opening": "董白脸部与胸肩",
+      "landing": "左侧半身、上方双手和右下冰刃",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_09_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段10/分镜1",
+    "review_key": "09_003-source",
+    "source_images": [
+      "第20話_09_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "diagonal_pan",
+      "reason": "从无面头部展开到现有张手姿态，同时修正原稿把前倾与俯见误写为仰拍的问题。",
+      "anchor_phase": "middle",
+      "opening": "右前无面头部紧幅",
+      "landing": "五指与后侧肩臂在上半幅，头在右下",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_09_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段11/分镜1",
+    "review_key": "10_001-source",
+    "source_images": [
+      "第20話_10_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "可见背景",
+      "光影布光"
+    ],
+    "camera": {
+      "mode": "pull_high_angle",
+      "reason": "高俯拉开将仰望镜头的人物置于大面积暗影和裂地中，揭示尺度而不补画暗影的离画主人。",
+      "anchor_phase": "middle",
+      "opening": "董白全身与右上刀尖",
+      "landing": "中央全身及四周裂地、宽长暗影的源俯景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_10_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段11/分镜2",
+    "review_key": "10_002-source",
+    "source_images": [
+      "第20話_10_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "光影布光"
+    ],
+    "camera": {
+      "mode": "tilt_down_impact",
+      "reason": "源格有压地与碎石弹起，跟摇加一次接触震动呈现已有冲击，不延长攻击。",
+      "anchor_phase": "middle",
+      "opening": "前臂下段与手指上方的碎石",
+      "landing": "指端、掌背、上伸前臂和周围碎石同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_10_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段11/分镜3",
+    "review_key": "11_001-source",
+    "source_images": [
+      "第20話_11_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "沿已见掌指到腕根扫描环纹覆盖范围，保留按地支撑与手掌拓扑。",
+      "anchor_phase": "middle",
+      "opening": "左侧长指与下前拇指",
+      "landing": "腕根与掌背为主，长指仍在左缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_11_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段12/分镜1",
+    "review_key": "11_002-source",
+    "source_images": [
+      "第20話_11_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "两秒无环纹的静止结果与前一横摇区分，保留下一断裂前的停顿和持续按地。",
+      "anchor_phase": "middle",
+      "opening": "完整掌背与石块接触边界",
+      "landing": "同一斜俯近景"
+    }
+  },
+  {
+    "target": "片段12/分镜2",
+    "review_key": "11_003-source",
+    "source_images": [
+      "第20話_11_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_down_follow",
+      "reason": "跟随源格断块的短落程，在两秒内给断裂一个落向石面的终点，不补第二次破坏。",
+      "anchor_phase": "middle",
+      "opening": "中央掌指与断口",
+      "landing": "断块、下部石面、右侧手缘同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_11_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段12/分镜3",
+    "review_key": "12_001-source",
+    "source_images": [
+      "第20話_12_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_up_follow",
+      "reason": "强调近肩远头的既有体量差，并承接已见刀刃上行轴线。",
+      "anchor_phase": "middle",
+      "opening": "左前刀面与巨形肩臂",
+      "landing": "左上刀段、右侧肩与全黑头部",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_12_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段12/分镜4",
+    "review_key": "12_002-source",
+    "source_images": [
+      "第20話_12_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "diagonal_pan",
+      "reason": "沿收刀后的持柄和近臂转到正对镜头的眼神，给旁白评价一个具体视觉终点。",
+      "anchor_phase": "middle",
+      "opening": "右后握柄手及近侧前臂",
+      "landing": "左中脸部、下前近臂、右后刀柄",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_12_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段12/分镜5",
+    "review_key": "13_001-source",
+    "source_images": [
+      "第20話_13_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "两秒转折图形以斜线与黑带的交叉为拍点，不虚构场景俯仰。",
+      "anchor_phase": "middle",
+      "opening": "斜线跨中央黑带",
+      "landing": "同一图形画幅"
+    }
+  },
+  {
+    "target": "片段13/分镜1",
+    "review_key": "13_002-source",
+    "source_images": [
+      "第20話_13_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "pull_reveal",
+      "reason": "在冰刃破裂时由断口揭出双方不同反应和体量，不另造打击或转移身体。",
+      "anchor_phase": "middle",
+      "opening": "下前握柄手与断刃",
+      "landing": "董白面孔、欧迈及脸和中间断刃同框",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_13_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段13/分镜2",
+    "review_key": "14_001-source",
+    "source_images": [
+      "第20話_14_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "将断刃后直视镜头的骤紧反应落到面部，保持近臂和巨形遮挡，不另开不存在的对视目标。",
+      "anchor_phase": "middle",
+      "opening": "董白整脸、外展臂边和右下遮挡",
+      "landing": "双眼鼻梁嘴部紧幅，近臂边与右下遮挡仍在",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_14_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段13/分镜3",
+    "review_key": "14_002-source",
+    "source_images": [
+      "第20話_14_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "2秒指间圈拢需要保持包围拓扑，固定机位让接触形成完整可见。",
+      "anchor_phase": "middle",
+      "opening": "巨手、指间头发和腕侧亮点",
+      "landing": "同一斜俯抓握近景"
+    }
+  },
+  {
+    "target": "片段13/分镜4",
+    "review_key": "14_003-source",
+    "source_images": [
+      "第20話_14_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_pull",
+      "reason": "从被抓者的呼吸反应展开至持续抓握者的体量，保留同一接触关系。",
+      "anchor_phase": "middle",
+      "opening": "指排与董白后仰脸",
+      "landing": "下半指排、中间董白头颈、上中巨形黑脸",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_14_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段14/分镜1",
+    "review_key": "15_001-source",
+    "source_images": [
+      "第20話_15_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "光影布光"
+    ],
+    "camera": {
+      "mode": "tilt_down",
+      "reason": "口部实被盔面遮住，以盔缘、汗和颈侧呼吸承担受惊反应，不要求看不见的唇形。",
+      "anchor_phase": "middle",
+      "opening": "三道盔缝与侧面钢灰片",
+      "landing": "盔下缘与带汗颈侧",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_15_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段15/分镜1",
+    "review_key": "15_002-source",
+    "source_images": [
+      "第20話_15_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_up_reveal",
+      "reason": "沿现有台阶中轴向上揭出高背王座和层级，替代缺少高度说明的正面静景。",
+      "anchor_phase": "middle",
+      "opening": "下中兽耳背影与下段台阶",
+      "landing": "十道剪影、台阶和高背王座全景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_15_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段16/分镜1",
+    "review_key": "15_003-source",
+    "source_images": [
+      "第20話_15_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_down",
+      "reason": "从注视到说话的齿列连续下摇，使支配话语落在咧嘴表情上，不另补怒视。",
+      "anchor_phase": "middle",
+      "opening": "窄眼和眼尾皱纹",
+      "landing": "鼻侧、嘴角、齿列和上缘眼尾",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_15_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段16/分镜2",
+    "review_key": "16_001-source",
+    "source_images": [
+      "第20話_16_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留既有非露骨改编的命令声段和色面裁切，不以运动揭出未经批准的身体区域。",
+      "anchor_phase": "middle",
+      "opening": "上灰下黑的色面",
+      "landing": "同一二维色面"
+    }
+  },
+  {
+    "target": "片段17/分镜1",
+    "review_key": "16_001-coverage-1",
+    "source_images": [
+      "第20話_16_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "两段内心声以已有眼额区的左右扫描承接；不放宽既有改编裁切或补新接触。",
+      "anchor_phase": "middle",
+      "opening": "左前闭眼与额角",
+      "landing": "右侧半垂眼与左缘闭眼",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_16_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段18/分镜1",
+    "review_key": "16_001-coverage-2",
+    "source_images": [
+      "第20話_16_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留既有威胁的图形分界，色面变化属于背景设计而非虚构镜头高度。",
+      "anchor_phase": "middle",
+      "opening": "黑面与上方灰带",
+      "landing": "同一色面"
+    }
+  },
+  {
+    "target": "片段19/分镜1",
+    "review_key": "16_001-coverage-3",
+    "source_images": [
+      "第20話_16_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_scan",
+      "reason": "长段内心声以有限指节局部的距离扫描组织，不开新人物、不改变圈拢、不增加其他身体区。",
+      "anchor_phase": "middle",
+      "opening": "左段及中央指节",
+      "landing": "中右指节交界与黑指缝",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_16_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段20/分镜1",
+    "review_key": "16_001-coverage-4",
+    "source_images": [
+      "第20話_16_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "以一次眼额内收幅落在反抗内心声，维持现有非露骨裁切和前下视线。",
+      "anchor_phase": "middle",
+      "opening": "董白完整眼额局部",
+      "landing": "单眼与近侧额角，鼻梁上段止于下缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_16_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段21/分镜1",
+    "review_key": "17_001-source",
+    "source_images": [
+      "第20話_17_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan",
+      "reason": "限定眼額区内的横向运动组织倒数，不放宽既有改编裁切或改变前臂距离。",
+      "anchor_phase": "middle",
+      "opening": "眼尾皱纹与上方前臂",
+      "landing": "半眯眼、鼻侧与上缘前臂",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_17_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段21/分镜2",
+    "review_key": "17_001-coverage-1",
+    "source_images": [
+      "第20話_17_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "既有内心声以眼额内的一次收幅承接，不新增人体区域或接触。",
+      "anchor_phase": "middle",
+      "opening": "完整眼额局部",
+      "landing": "左侧半垂眼、额角、鼻梁上段",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_17_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段22/分镜1",
+    "review_key": "18_001-source",
+    "source_images": [
+      "第20話_18_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留已有非露骨改编的图形话段，不通过运镜暴露其他原图内容。",
+      "anchor_phase": "middle",
+      "opening": "上黑下灰色面",
+      "landing": "同一图形色面"
+    }
+  },
+  {
+    "target": "片段23/分镜1",
+    "review_key": "18_002-source",
+    "source_images": [
+      "第20話_18_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "tilt_up",
+      "reason": "从持续圈拢的手移到白眼点直视镜头的咧嘴脸，让条件说明与已有表情同框。",
+      "anchor_phase": "middle",
+      "opening": "大手、胸肩和上方黑脸",
+      "landing": "黑脸、白眼点、齿列和两侧雾气，手上缘下前",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_18_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段23/分镜2",
+    "review_key": "18_003-source",
+    "source_images": [
+      "第20話_18_003.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "diagonal_pan",
+      "reason": "在两声短反应之间由盔面移到泪目侧脸，保持头肩以上的既有裁切。",
+      "anchor_phase": "middle",
+      "opening": "左下三槽面盔和旁侧颈线",
+      "landing": "女子侧脸主幅，男盔左下角",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_18_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段24/分镜1",
+    "review_key": "19_001-source",
+    "source_images": [
+      "第20話_19_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "由持续受制的前景进入朝镜头质问的面孔，明确一眼闭合、另一眼直视的源表情。",
+      "anchor_phase": "middle",
+      "opening": "巨指与董白头肩",
+      "landing": "面部与近侧肩线，指上缘下部",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_19_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段24/分镜2",
+    "review_key": "19_001-coverage-1",
+    "source_images": [
+      "第20話_19_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan",
+      "reason": "第二组问题由已有受制接触局部承接，镜头移动不改变指间距或揭出裁外身体。",
+      "anchor_phase": "middle",
+      "opening": "巨指与上臂接触边界左段",
+      "landing": "近侧上臂与指缘交叠",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_19_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段25/分镜1",
+    "review_key": "19_002-source",
+    "source_images": [
+      "第20話_19_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "淡淡回答与上一段质问的推进形成静动反差，窄眼缝不补明确瞳仁方向。",
+      "anchor_phase": "middle",
+      "opening": "窄双眼、鼻梁与鼻翼",
+      "landing": "同一眼鼻极特写"
+    }
+  },
+  {
+    "target": "片段26/分镜1",
+    "review_key": "19_003-source",
+    "source_images": [
+      "第20話_19_003.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "画外任务说明由听者的右上目光承接，收幅聚到明确的源眼线和受制肩部。",
+      "anchor_phase": "middle",
+      "opening": "董白胸像与肩后弧面",
+      "landing": "脸、近侧肩线与右后弧面",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_19_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段26/分镜2",
+    "review_key": "19_003-coverage-1",
+    "source_images": [
+      "第20話_19_003.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "pan_left",
+      "reason": "将内心追问落在人物和包围轮廓的关系上，与前镜收近面孔的机位区分。",
+      "anchor_phase": "middle",
+      "opening": "右后弧面与左缘董白头肩",
+      "landing": "左前头肩、右后弧面关系近景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_19_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段27/分镜1",
+    "review_key": "20_001-source",
+    "source_images": [
+      "第20話_20_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pull_graphic",
+      "reason": "同一目标的连续描述由嘴角紧幅拉到口部上置的黑场，形成揭示前的距离与留空。",
+      "anchor_phase": "middle",
+      "opening": "齿列、嘴角紧特写",
+      "landing": "上方口部及中下厚黑色面",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_20_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段28/分镜1",
+    "review_key": "20_002-source",
+    "source_images": [
+      "第20話_20_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "3秒正面直视与交臂作为长插叙后的返回落点，确认站立新状态；不补无证据的放下过程。",
+      "anchor_phase": "middle",
+      "opening": "直视镜头的青与完整交臂胸像",
+      "landing": "同一胸像构图"
+    }
+  },
+  {
+    "target": "片段29/分镜1",
+    "review_key": "21_001-source",
+    "source_images": [
+      "第20話_21_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "tilt_up_reveal",
+      "reason": "用上摇和明确仰拍建立返回对峙场域的高度与近远关系，消除原稿泛泛的微推。",
+      "anchor_phase": "middle",
+      "opening": "近层小腿、斜向水面与远处五人",
+      "landing": "双人全身左前、五人右下、庞大群落右上",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_21_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段29/分镜2",
+    "review_key": "21_002-source",
+    "source_images": [
+      "第20話_21_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "push",
+      "reason": "两项询问从胸像收到眼鼻和口部，保留右向侧脸轴线及看向右侧外的明确目光。",
+      "anchor_phase": "middle",
+      "opening": "右向侧脸胸像和鼻前空隙",
+      "landing": "单眼、鼻尖、嘴与近侧耳",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_21_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段29/分镜3",
+    "review_key": "21_003-source",
+    "source_images": [
+      "第20話_21_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "3秒不回答的沉默与前面提问推近形成停顿，帽内无眼，不补反应或看向对象。",
+      "anchor_phase": "middle",
+      "opening": "向左的帽口侧缘与袍褶",
+      "landing": "同一兜帽侧景"
+    }
+  },
+  {
+    "target": "片段30/分镜1",
+    "review_key": "22_001-source",
+    "source_images": [
+      "第20話_22_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_right",
+      "reason": "沿拨发任务由手与发束移到闭眼答复，用任务和呼气的节奏承接无回答，不加新手势。",
+      "anchor_phase": "middle",
+      "opening": "画面左前右手及斜发束",
+      "landing": "闭眼鼻口、领带居中，右手与发束留左缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_22_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段31/分镜1",
+    "review_key": "22_002-source",
+    "source_images": [
+      "第20話_22_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作",
+      "台词与语气"
+    ],
+    "camera": {
+      "mode": "pan_right_focus",
+      "reason": "一次横摇和焦点交接呈现称呼、短应、托付，春子靠半垂直视与平直应答参与，不补情绪递进。",
+      "anchor_phase": "middle",
+      "opening": "左前青下半脸与右后春子胸像",
+      "landing": "春子眼睛和肩线居中、青下颌白发左缘",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_22_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段32/分镜1",
+    "review_key": "22_003-source",
+    "source_images": [
+      "第20話_22_003.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "pan_left_task",
+      "reason": "由右手捋袖的机械点沿左臂到张掌亮点，揭示完整任务链，保留左右手辨识和直接眼线。",
+      "anchor_phase": "middle",
+      "opening": "右中肘旁抓袖点与脸",
+      "landing": "左中张掌、下部横臂和右后面孔",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_22_003.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段32/分镜2",
+    "review_key": "23_001-source",
+    "source_images": [
+      "第20話_23_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "snap_pull",
+      "reason": "源格强图形反应与头肩后偏支持一次短促拉开，帽内无眼不补惊恐脸。",
+      "anchor_phase": "middle",
+      "opening": "帽口和尖帽的紧近景",
+      "landing": "完整帽口、尖帽、肩袍与左侧留空",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_23_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段32/分镜3",
+    "review_key": "23_002-source",
+    "source_images": [
+      "第20話_23_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "保留源格明确的全幅模糊和手脸层次，2秒不机械拉回锐焦。",
+      "anchor_phase": "middle",
+      "opening": "柔焦手脸特写",
+      "landing": "同一柔焦构图"
+    }
+  },
+  {
+    "target": "片段32/分镜4",
+    "review_key": "23_003-source",
+    "source_images": [
+      "第20話_23_003.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "嘴与指端接近的短行程由主体完成，固定机位呈现窄隙，不借运镜掩盖必要靠近。",
+      "anchor_phase": "middle",
+      "opening": "唇缘、拇指与右上手指",
+      "landing": "同一口手极特写"
+    }
+  },
+  {
+    "target": "片段33/分镜1",
+    "review_key": "23_004-source",
+    "source_images": [
+      "第20話_23_004.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "pan_reveal_hand",
+      "reason": "揭出已获准的抬手准备，与下一指端特写保持整人胸像与手部局部的区别。",
+      "anchor_phase": "middle",
+      "opening": "帽口和圆扣主幅",
+      "landing": "尖帽左、圆扣中、准备响指的手右侧",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_23_004.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段33/分镜2",
+    "review_key": "24_001-source",
+    "source_images": [
+      "第20話_24_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "一个响指动作与完整说明共享六秒，固定机位精确呈现接触到分开的微小机械阶段；不回放或追加响指。",
+      "anchor_phase": "middle",
+      "opening": "相贴拇指与中指",
+      "landing": "分开指端及下缘腕段"
+    }
+  },
+  {
+    "target": "片段33/分镜3",
+    "review_key": "24_001-coverage-1",
+    "source_images": [
+      "第20話_24_001.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "snap_push",
+      "reason": "由响指特写切到明确的右向眼形反应，短促推进后用停顿承接场景跳切。",
+      "anchor_phase": "middle",
+      "opening": "单眼、鼻尖与下缘嘴边",
+      "landing": "单眼与鼻尖紧幅",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_24_001.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段34/分镜1",
+    "review_key": "24_002-source",
+    "source_images": [
+      "第20話_24_002.jpg"
+    ],
+    "fields": [
+      "镜头设计",
+      "可见动作"
+    ],
+    "camera": {
+      "mode": "pull_location_reveal",
+      "reason": "用拉开揭示突然出现的餐桌场域，源物件和后排均已可见，不添加中间转移过程。",
+      "anchor_phase": "middle",
+      "opening": "青眼部与展开纸页",
+      "landing": "餐桌、双人和栏杆客人剪影的源中景",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_24_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段34/分镜2",
+    "review_key": "25_001-source",
+    "source_images": [
+      "第20話_25_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "源图两阶段接触与抬离用同一机位连续完成，保持指端和肩面的机械边界。",
+      "anchor_phase": "middle",
+      "opening": "肩侧与进入的深色手",
+      "landing": "手抬离、肩侧亮点衰减的同一极特写"
+    }
+  },
+  {
+    "target": "片段34/分镜3",
+    "review_key": "25_002-source",
+    "source_images": [
+      "第20話_25_002.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "push_detail",
+      "reason": "沿现有肩侧局部推进至完整纹样，为下一图形爆亮建立清晰形制，不暴露新身体区域。",
+      "anchor_phase": "middle",
+      "opening": "纹样与周围肩面、左上白发",
+      "landing": "整枚心冠卷纹占中央大半幅，发边肩缘两侧",
+      "path_basis": {
+        "type": "inspected_source_reframe",
+        "source_refs": [
+          "第20話_25_002.jpg"
+        ],
+        "scope": "沿已见图像内容的二维重构、摇移或收放；本轮没有无证据绕拍或新增隐面。"
+      }
+    }
+  },
+  {
+    "target": "片段34/分镜4",
+    "review_key": "26_001-source",
+    "source_images": [
+      "第20話_26_001.jpg"
+    ],
+    "fields": [
+      "镜头设计"
+    ],
+    "camera": {
+      "mode": "fixed",
+      "reason": "已见图形自身有爆亮与放射发展，固定画幅保持纹样形制，不将其当作新空间。",
+      "anchor_phase": "middle",
+      "opening": "中央心冠卷纹与黑晕",
+      "landing": "同一完整图形画幅"
+    }
+  }
+]

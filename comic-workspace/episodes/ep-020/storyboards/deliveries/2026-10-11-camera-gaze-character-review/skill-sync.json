@@ -1,0 +1,57 @@
+{
+  "source_branch": "origin/codex/gen2.8-performance-router",
+  "source_commit": "a77fe4c0045ce03f58ce0b1feb022e940868fbff",
+  "destination": "C:\\Users\\86135\\.codex\\skills\\write-comic-video-storyboards-gen2-8",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "before_sha256": "e7aa6ec3d3ed6aa1d143bd0bde21910ebd8f084ec89727889c358235b160fb52",
+      "after_sha256": "afb63f743c9f77c4d0513a9816ca4abc20e5062d0aafb7c284cb5511237aadb9",
+      "final_installed_sha256": "2504534dbd7ae9d293dca23205d36b9bbba879471707d10cc5b66773741a1740",
+      "normalized_lf_sha256": "2504534dbd7ae9d293dca23205d36b9bbba879471707d10cc5b66773741a1740"
+    },
+    {
+      "path": "references/cinematic-rendering.md",
+      "before_sha256": "bb9adcf42a42fc3c67ef7b2ba988e005b6d0754476d63eed4f74f274bc402b0e",
+      "after_sha256": "820ad03d69cdfea9ebc56b013773f5c736d26487795e30177c39f4d5db04e929",
+      "final_installed_sha256": "2eacd4bc6350e73d17514d3a69e1c53b96182c4ba4a0a1a8075f55d0170fd466",
+      "normalized_lf_sha256": "2eacd4bc6350e73d17514d3a69e1c53b96182c4ba4a0a1a8075f55d0170fd466"
+    },
+    {
+      "path": "references/core-authoring.md",
+      "before_sha256": "f7725111b22141a4c002c469876182184bafd9e4cd0055befaa7468026016b52",
+      "after_sha256": "5f21ae552bcc08173057a1a233918716f1caf085573c40fb052b2dc3c5c22877",
+      "final_installed_sha256": "45d6be1ef4268e8e32bd4bc2ec340373d58197b839862899af5412552ccefe4e",
+      "normalized_lf_sha256": "45d6be1ef4268e8e32bd4bc2ec340373d58197b839862899af5412552ccefe4e"
+    },
+    {
+      "path": "references/dialogue-performance.md",
+      "before_sha256": "b207a464c93afcdef512f012768e429128f1e46cfd48c7d25cfe91305f16dd38",
+      "after_sha256": "c65ff333b4225f769ed89423d6023398f70a90f5bcd9cbdf724fe32bfb123a00",
+      "final_installed_sha256": "7197385c09431f54a2c74e1ea5768758ec80ff68aaeac19cc45a8d0511fa693f",
+      "normalized_lf_sha256": "7197385c09431f54a2c74e1ea5768758ec80ff68aaeac19cc45a8d0511fa693f"
+    },
+    {
+      "path": "references/regression-cases.md",
+      "before_sha256": "fbe03decf2608fd7cd11799875e89eb1cb34e194d9b5cc3b8cba4a554574fd82",
+      "after_sha256": "d9547c395d00fe16bf5485f43f47a788a8e3f72d96ecb38cd0589367ec895e8e",
+      "final_installed_sha256": "684986386870d4a89b1398a227525d67b44ce39a50e9dcded6d2880ad3b74fbb",
+      "normalized_lf_sha256": "684986386870d4a89b1398a227525d67b44ce39a50e9dcded6d2880ad3b74fbb"
+    },
+    {
+      "path": "scripts/test_validate_storyboard.py",
+      "before_sha256": "8581c2c8c8483597305be8c41975f0b6c70b0b3af2ff8033c987493457a8d386",
+      "after_sha256": "f9351242bba4a8206711b788e29f370f1a7554b3daa70509c559f918aa53b5bf",
+      "final_installed_sha256": "3793fea602c108c1b7d3dae66d1fdaf8dde0dd4f0734ea793cdbf940a6c140d1",
+      "normalized_lf_sha256": "3793fea602c108c1b7d3dae66d1fdaf8dde0dd4f0734ea793cdbf940a6c140d1"
+    },
+    {
+      "path": "scripts/validate_storyboard.py",
+      "before_sha256": "3f99fc1f036d6e9e287d290ff31ec23ab880c57962101ed6d3f024dcd49e46cc",
+      "after_sha256": "bdb9564532661620a74a1d90e3a05309062bd41e60e159b027448195db807fd2",
+      "final_installed_sha256": "34edcb3cd61be5c7479b4784d809b4cd88669fac62721466f7828ba2fb6737b2",
+      "normalized_lf_sha256": "34edcb3cd61be5c7479b4784d809b4cd88669fac62721466f7828ba2fb6737b2"
+    }
+  ],
+  "final_verification": "Installed and repository text match; concurrent installation normalized CRLF to LF without content changes."
+}

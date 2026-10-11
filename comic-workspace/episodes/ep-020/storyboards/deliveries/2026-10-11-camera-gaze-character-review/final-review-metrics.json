@@ -1,0 +1,36 @@
+{
+  "clips": 34,
+  "shots": 76,
+  "seconds": 356,
+  "formal_references": 66,
+  "reviewed_source_proxies": 66,
+  "original_reinspections": 1,
+  "camera_fields_revised": 76,
+  "moving_shots": 55,
+  "fixed_shots": 21,
+  "cut_points_reviewed": 75,
+  "errors": 0,
+  "warnings": 71,
+  "warning_classes": {
+    "background_field": 1,
+    "dialogue_coverage": 1,
+    "clip_grouping": 2,
+    "acting_review": 36,
+    "camera_landing": 14,
+    "character_profile": 17
+  },
+  "all_warnings_disposed": true,
+  "manual_overflow": 0,
+  "rule_input_utf8_bytes": 124519,
+  "combat_module": "off",
+  "cross_episode_scene_review": "deferred_by_user",
+  "skill_source_commit": "a77fe4c0045ce03f58ce0b1feb022e940868fbff",
+  "skill_changed_files_verified": 7,
+  "source_dialogue_preserved": true,
+  "video_generation_reviewed": false,
+  "script_sha256": "e60379a2504748496d39a9937a92c32db0daf9d7946d8596b3a931349ae063fb",
+  "skill_regression_tests": {
+    "passed": 151,
+    "failed": 0
+  }
+}
