@@ -1,0 +1,1553 @@
+{
+  "scope": "整话70个原文件全部核对；完整非露骨叙事改编，原始露骨对白与过程非全量覆盖。",
+  "files": [
+    {
+      "image": "第18話_01_001.jpg",
+      "order": [
+        1,
+        1
+      ],
+      "size": 225778,
+      "sha256": "714ff3d95e9958431dca90d8557f0b834cea76e0ec8ff4e466a75beec1750358",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段1/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_01_002.jpg",
+      "order": [
+        1,
+        2
+      ],
+      "size": 64545,
+      "sha256": "dd97292f02a693af5f760816fbf1911f26301cf68eec640567e4b49ddb127536",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": []
+    },
+    {
+      "image": "第18話_01_003.jpg",
+      "order": [
+        1,
+        3
+      ],
+      "size": 245610,
+      "sha256": "9b456c84adbe739f00efbfad7ccd1be6cc2ae5f09798de441518f53d4bfb1db9",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段1/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_02_001.jpg",
+      "order": [
+        2,
+        1
+      ],
+      "size": 249423,
+      "sha256": "3236e7a9ef91eefd2d0e95b27cf500a0b4de02325a5a7fc0abcc09404d28d26c",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段1/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_02_002.jpg",
+      "order": [
+        2,
+        2
+      ],
+      "size": 263343,
+      "sha256": "b0f2b60c7e2a661a5d0904d70c0c1b0848b5e6a8e939f5c1a5c4332ac4187da4",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段2/分镜1",
+        "片段2/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_02_003.jpg",
+      "order": [
+        2,
+        3
+      ],
+      "size": 223904,
+      "sha256": "1a061ed2eeeb2b8646bab499e0d035c6555bf06f21c9003397ecc1369aa52257",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段3/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_02_004.jpg",
+      "order": [
+        2,
+        4
+      ],
+      "size": 320761,
+      "sha256": "a38507f40482cf2c521931e4a112b14c9a7684e28946a47ac741338c4f0c5671",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段3/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_03_001.jpg",
+      "order": [
+        3,
+        1
+      ],
+      "size": 265788,
+      "sha256": "15906fa7ee8c3c31e772fb5183c9b439fce81b6c5770d5c9b880b857cb07f4e8",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段4/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_03_002.jpg",
+      "order": [
+        3,
+        2
+      ],
+      "size": 184552,
+      "sha256": "201579df296674baeff790ce117512efecd98afa9f46ea3733c483f1d4459692",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段4/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_03_003.jpg",
+      "order": [
+        3,
+        3
+      ],
+      "size": 392775,
+      "sha256": "43e4a544bfb7aa88e7474d5cd3fc1fee3b44bc1a13ee472eb04b4cc03b4db573",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段5/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_04_001.jpg",
+      "order": [
+        4,
+        1
+      ],
+      "size": 576362,
+      "sha256": "28899e27fb87ba0243b4945954a3cdf8eb6c27fffd2d9fa8f6912f4171ee12d9",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": []
+    },
+    {
+      "image": "第18話_04_002.jpg",
+      "order": [
+        4,
+        2
+      ],
+      "size": 529516,
+      "sha256": "c14e3ea27522725065ec5f966e76fa313836d9ff1a43722a8038302fc5cec31b",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段5/分镜4"
+      ]
+    },
+    {
+      "image": "第18話_05_001.jpg",
+      "order": [
+        5,
+        1
+      ],
+      "size": 217091,
+      "sha256": "77b39a10f3936798341fe49c1b93d9c948d5f851654fb4f6041078df4af18e4e",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段5/分镜5"
+      ]
+    },
+    {
+      "image": "第18話_05_002.jpg",
+      "order": [
+        5,
+        2
+      ],
+      "size": 213023,
+      "sha256": "44bba98f836e05e355939f82be468b7afe4b4961dd47ebe10da46183400ed3b5",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段5/分镜6"
+      ]
+    },
+    {
+      "image": "第18話_05_003.jpg",
+      "order": [
+        5,
+        3
+      ],
+      "size": 451203,
+      "sha256": "251b27d630a445b76fbad4769f198141e229d93054a04cf23c45c1eba310242d",
+      "origin": "verified_cache",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "retained_approved_front",
+      "reason": "前15个原文件沿用已确认的17镜；04_001的上下分区由两个已检查裁切记录覆盖。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段6/分镜1",
+        "片段6/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_06_001.jpg",
+      "order": [
+        6,
+        1
+      ],
+      "size": 167990,
+      "sha256": "569a9191859fb7eae84c03c1ce74ef7493c4b171552a75097781245d12915bc0",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_06_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段6/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_06_002.jpg",
+      "order": [
+        6,
+        2
+      ],
+      "size": 275065,
+      "sha256": "e4b27e179cba0e0e61f0315cb514291556fd959e66b019176bbf643fd4573992",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_06_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段7/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_06_003.jpg",
+      "order": [
+        6,
+        3
+      ],
+      "size": 193858,
+      "sha256": "efb7a8e84e0cc7220587b952d474c6de16c349335dea8e95978d12d6171988a6",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_06_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段7/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_06_004.jpg",
+      "order": [
+        6,
+        4
+      ],
+      "size": 154665,
+      "sha256": "6589c080d1f858c985c325fe5481acf0b0e6a412421420d15f3130f6abd7f7b4",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_06_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段7/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_07_001.jpg",
+      "order": [
+        7,
+        1
+      ],
+      "size": 199345,
+      "sha256": "ebd0f44a26b14d0e5674a63c4ea206577b170eaf502acead995e4c56f8a3b488",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_07_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段8/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_07_002.jpg",
+      "order": [
+        7,
+        2
+      ],
+      "size": 210613,
+      "sha256": "3fdfa23a4cfc2a6cabb3fe195ae460d8737592baaee52ea9165981b32dd94cd0",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_07_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段8/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_07_003.jpg",
+      "order": [
+        7,
+        3
+      ],
+      "size": 91523,
+      "sha256": "0b0074c453f894c6cf30736482a48b469cbb7af46d2a306e3abc056306c2bb65",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_07_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段8/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_08_001.jpg",
+      "order": [
+        8,
+        1
+      ],
+      "size": 106550,
+      "sha256": "e3f670f0498ef05e7af369488f9405e716bf2d3e5d984ab43e74228e7850fc18",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_08_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段9/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_08_002.jpg",
+      "order": [
+        8,
+        2
+      ],
+      "size": 178167,
+      "sha256": "e2f54e2463182ff13bc55a2cc0606c66d8e21e987e26688083fde59e61e2567b",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_08_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段9/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_08_003.jpg",
+      "order": [
+        8,
+        3
+      ],
+      "size": 133060,
+      "sha256": "fa7c7ba511129490764aadb7e85f43dfa7af01239e665954d6a6d51b8b29d3e3",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_08_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段10/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_08_004.jpg",
+      "order": [
+        8,
+        4
+      ],
+      "size": 758396,
+      "sha256": "0d29a3906766814fc9ff7024e24cced46f7dbe68df59e34943c77a3ad2295bb0",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_08_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段10/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_09_001.jpg",
+      "order": [
+        9,
+        1
+      ],
+      "size": 114131,
+      "sha256": "8a53d9c6c87f66a7a8da3abb4ca8b05c0ff44534a638fe8dfe7ea5cd35e95409",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_09_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": [
+        "片段11/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_09_002.jpg",
+      "order": [
+        9,
+        2
+      ],
+      "size": 222173,
+      "sha256": "f51ce7495477989e1d760be648a183ddc920ce1464936425e53343714b2b05a4",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_09_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_09_002.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "石地有裂纹；液体细节不用于生成。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_09_003.jpg",
+      "order": [
+        9,
+        3
+      ],
+      "size": 611791,
+      "sha256": "351c8772d485c5efa516a0dcf474c35f0dc7eb6662be1a14566b51b48f47842f",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_09_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_09_003.jpg",
+        "decision": "adapt_non_graphic_distress",
+        "safe_facts": "董白左侧面头肩，脸朝右，圆眼张口、脸侧有汗，身后岩壁。",
+        "safe_dialogue_meanings": [
+          "请求停止",
+          "指出用力过度",
+          "恳求"
+        ]
+      },
+      "targets": [
+        "片段11/分镜2",
+        "片段11/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_10_001.jpg",
+      "order": [
+        10,
+        1
+      ],
+      "size": 24768,
+      "sha256": "98814bc4f4b36e8daa9bcddbac5d8db845207cd4cfa01d74b0a4a158a13425cc",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_10_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_10_001.jpg",
+        "decision": "omit_typographic_only",
+        "safe_facts": "只有音效符号，无叙事人物或环境。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_10_002.jpg",
+      "order": [
+        10,
+        2
+      ],
+      "size": 282177,
+      "sha256": "298c4ea307b9a05b274cc51093f013885b894b0cd0aa47c15ea75ba314b84f94",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_10_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_10_002.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "全盔守卫与董白同时受困；不呈现具体接触与性化声息。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_10_003.jpg",
+      "order": [
+        10,
+        3
+      ],
+      "size": 468025,
+      "sha256": "54e791e9c3423ca57d7e6a0a11b75b226b1f7567b3a1b98f4bbe5b0ba0712600",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_10_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_10_003.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "背后黑色人形脸上有白眼与笑口；本格不能确认人物名字。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_10_004.jpg",
+      "order": [
+        10,
+        4
+      ],
+      "size": 228806,
+      "sha256": "0089a24ac14ed220fe536c93b7ad5d9103c8e796396bfcaac120e0e62caadfda",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_10_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_10_004.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "不转写身体局部与性化细节。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_11_001.jpg",
+      "order": [
+        11,
+        1
+      ],
+      "size": 375377,
+      "sha256": "53eb236f2a0c80b4dd5a9dd8c69c460a5f211ca83af7f921f32babfcf5be5c67",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_11_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_11_001.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "董白闭眼，面部有眼泪与汗；不演出性化身体运动或声音。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_11_002.jpg",
+      "order": [
+        11,
+        2
+      ],
+      "size": 64160,
+      "sha256": "a830c2090c868b4be2b81708a0d4fdb80724a6f6d0656954cfbf4b7b11ada3d1",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_11_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_11_002.jpg",
+        "decision": "omit_explicit_context_delivery",
+        "safe_facts": "男子眉眼特写，眼睛半眯。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_11_003.jpg",
+      "order": [
+        11,
+        3
+      ],
+      "size": 237017,
+      "sha256": "a87428f642f5bbd3265b551d686b0dfc5cb0fe3faacf742c0f223e92508aa345",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_11_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_11_003.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "不呈现具体动作与露骨对白。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_11_004.jpg",
+      "order": [
+        11,
+        4
+      ],
+      "size": 239181,
+      "sha256": "4c9eae85419839baf612816a12de02f7afbedb06587b0901f4128b6a3de3a4ce",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_11_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_11_004.jpg",
+        "decision": "omit_explicit_context_delivery",
+        "safe_facts": "董白侧面圆眼张口，脸朝右，面部紧张；性行为节奏不转为动作或声效。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_12_001.jpg",
+      "order": [
+        12,
+        1
+      ],
+      "size": 250165,
+      "sha256": "8739a702a65e12059aba29f287780c2ec9b705ebbe8fd20370da34fba8b629b2",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_12_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_12_001.jpg",
+        "decision": "omit_explicit_context_delivery",
+        "safe_facts": "全盔守卫头盔下颈侧有汗；保留请求停止的剧情功能。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_12_002.jpg",
+      "order": [
+        12,
+        2
+      ],
+      "size": 310921,
+      "sha256": "cf8ecb11177c93edd2525b607fc7ed29abb0d9b025bfb3ed31f025b0dab10bd4",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_12_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_12_002.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "身体局部与体液不用于生成。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_13_001.jpg",
+      "order": [
+        13,
+        1
+      ],
+      "size": 662184,
+      "sha256": "eb97acf0097a73690aba0d61ff011e10887d1158459f0db0e2d414bf469d4f72",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_13_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_13_001.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "全盔守卫与董白受困，守卫有歉意短句；不演出接触、性化声息和身体过程。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_13_002.jpg",
+      "order": [
+        13,
+        2
+      ],
+      "size": 125011,
+      "sha256": "6f5707c6a2d1e9aacac5c503a6c4745b0d8d859129d4b5f2ef07340cfc365917",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_13_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_13_002.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "只借用已建立岩壁，不呈现局部与体液。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_13_003.jpg",
+      "order": [
+        13,
+        3
+      ],
+      "size": 230897,
+      "sha256": "18931eae29d4f18e18a997e694b6b17f49775d41a1e8616a10b65f473330ddcf",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_13_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_13_003.jpg",
+        "decision": "adapt_non_graphic_dialogue",
+        "safe_facts": "全盔守卫头盔居右、面缝清楚，头下有汗，后景岩壁。",
+        "safe_dialogue_meanings": [
+          "问对方还想做什么",
+          "对方回答已经结束"
+        ]
+      },
+      "targets": [
+        "片段12/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_14_001.jpg",
+      "order": [
+        14,
+        1
+      ],
+      "size": 233696,
+      "sha256": "9a7df5629c33cedc2606999345f3e1304af0fcdc92044227336db7e616189d3d",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_14_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_14_001.jpg",
+        "decision": "adapt_non_graphic_dialogue",
+        "safe_facts": "全盔守卫盔面偏低，在左下；黑影男子居后，岩壁在背后。",
+        "safe_dialogue_meanings": [
+          "守卫求对方放她走",
+          "愿意承担针对自己的折磨"
+        ]
+      },
+      "targets": [
+        "片段12/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_14_002.jpg",
+      "order": [
+        14,
+        2
+      ],
+      "size": 324270,
+      "sha256": "7f70e34818dec957f54b40dbdd88836a3ad1f0bcc974ba87e41e43bb70340bcc",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_14_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_14_002.jpg",
+        "decision": "adapt_head_only",
+        "safe_facts": "秃顶男子头部仰起、半眯眼带笑，眼下皱纹明显，黑色尖下巴胡须；岩壁在后。",
+        "safe_dialogue_meanings": [
+          "分三段冷笑着拒绝，不可能"
+        ]
+      },
+      "targets": [
+        "片段13/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_15_001.jpg",
+      "order": [
+        15,
+        1
+      ],
+      "size": 73643,
+      "sha256": "e19672bc426f7ab3fc5a87653fa0e9acbda360389ee04f73cde3f6d2c6078a60",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_15_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "reaction_merged",
+      "reason": "局部短反应并入相邻头部镜头，保留惊疑与注意方向，不再重复一次盔部停顿。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_15_001.jpg",
+        "decision": "adapt_head_only",
+        "safe_facts": "全盔守卫的头盔局部在右，另一张紧张的眼部局部在左下；不呈现受困机制。"
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_15_002.jpg",
+      "order": [
+        15,
+        2
+      ],
+      "size": 176076,
+      "sha256": "b0a52bfd1688392a17bff7b930d3f8653a1a101d300cf1f60b63932bdc1d85d5",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_15_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_15_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "全盔守卫侧面，盔面朝右上，头后有受困结构。",
+        "safe_dialogue_meanings": [
+          "条件？！"
+        ]
+      },
+      "targets": [
+        "片段13/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_15_003.jpg",
+      "order": [
+        15,
+        3
+      ],
+      "size": 213532,
+      "sha256": "f6148251216044f4125f20edae8011587cdab85038a3b8d21aec723c1688e55e",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_15_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_15_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "秃顶男子正面半眯眼微笑，尖下巴胡须。",
+        "safe_dialogue_meanings": [
+          "提出强迫条件",
+          "指定五次；露骨要求不转写"
+        ]
+      },
+      "targets": [
+        "片段13/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_15_004.jpg",
+      "order": [
+        15,
+        4
+      ],
+      "size": 227981,
+      "sha256": "51188311b3731ffa5b92dd29d57f5420411fed68ce77929c589ee1de2d1d2523",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_15_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_15_004.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "全盔守卫正面盔部与肩线，人物位于中部。",
+        "safe_dialogue_meanings": [
+          "愤怒辱骂并要求直接杀死自己",
+          "拒绝要求"
+        ]
+      },
+      "targets": [
+        "片段14/分镜1",
+        "片段14/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_16_001.jpg",
+      "order": [
+        16,
+        1
+      ],
+      "size": 413599,
+      "sha256": "47e239a810a97bc3a64e628b499d43dbecbacf85889cfe60ee8bf67d03616f62",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_16_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_16_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "左边裁切全盔，董白黑发头部位于右后层，岩壁铺满后方。",
+        "safe_dialogue_meanings": [
+          "董白说没关系",
+          "守卫惊讶"
+        ]
+      },
+      "targets": [
+        "片段14/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_16_002.jpg",
+      "order": [
+        16,
+        2
+      ],
+      "size": 204729,
+      "sha256": "5c2ed46877453156f3f0678aa233d0ad0351660f914a34f28e0f201f02a1b379",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_16_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_16_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白左侧面头部朝右，半垂眼与小笑，身后深暗。",
+        "safe_dialogue_meanings": [
+          "只有他们知道今天发生的事；性化表现省略"
+        ]
+      },
+      "targets": [
+        "片段15/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_16_003.jpg",
+      "order": [
+        16,
+        3
+      ],
+      "size": 123864,
+      "sha256": "4ebd314df64b96d9eb0c8acd03099aecfb2f1db2e16768680c4cc1b88d7b54aa",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_16_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_16_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白眼部侧面极近景，左为耳部，右为鼻部裁切。",
+        "safe_dialogue_meanings": [
+          "再忍耐一会；情绪改为艰难自我安慰"
+        ]
+      },
+      "targets": [
+        "片段15/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_17_001.jpg",
+      "order": [
+        17,
+        1
+      ],
+      "size": 121823,
+      "sha256": "4e4bbf530096548ffe7b5fd7153b06e24e3ba13fe5e7f2ebd753133c981cb6bf",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_17_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_17_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "守卫正面全盔中近景，盔后受困结构横过双肩。",
+        "safe_dialogue_meanings": [
+          "质疑董白是否疯了",
+          "要求她听听自己在说什么"
+        ]
+      },
+      "targets": [
+        "片段15/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_17_002.jpg",
+      "order": [
+        17,
+        2
+      ],
+      "size": 234802,
+      "sha256": "9cc7d52d1d0b76a06a995b0f90741188b61cee9a733963f4445396f76a197b1a",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_17_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_17_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白正面偏右闭眼张口；身体大面积暴露。",
+        "safe_dialogue_meanings": [
+          "守卫质疑是否受怪物影响；原催情说法省略"
+        ]
+      },
+      "targets": [
+        "片段16/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_17_003.jpg",
+      "order": [
+        17,
+        3
+      ],
+      "size": 93501,
+      "sha256": "a341a172d85d001763e63f981d07fa2d4fd41112fba48341548f3eeb14932a09",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_17_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_17_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "秃顶男子正面眼部极近景，双眼下方褶皱，眼白点状。",
+        "safe_dialogue_meanings": [
+          "分两段回答完全没有"
+        ]
+      },
+      "targets": [
+        "片段16/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_18_001.jpg",
+      "order": [
+        18,
+        1
+      ],
+      "size": 63629,
+      "sha256": "bbf317065b50511042aadcb91c0e9a363a0b6eb42db2956e926b5b8d6e5c7235",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_18_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "reaction_merged",
+      "reason": "局部短反应并入相邻头部镜头，保留惊疑与注意方向，不再重复一次盔部停顿。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_18_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "头盔局部与守卫颈部侧面，右侧裁切，只见局部。",
+        "safe_dialogue_meanings": []
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_18_002.jpg",
+      "order": [
+        18,
+        2
+      ],
+      "size": 218572,
+      "sha256": "04df4616b813ea653b2dc4816b653598ef419cbe80074de921c016bddbcd2f37",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_18_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_18_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白左侧面头部朝右，眼神向侧面，小笑与汗，岩壁居后。",
+        "safe_dialogue_meanings": [
+          "没有其他办法",
+          "这是唯一选择"
+        ]
+      },
+      "targets": [
+        "片段16/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_18_003.jpg",
+      "order": [
+        18,
+        3
+      ],
+      "size": 183779,
+      "sha256": "5db55bceea251552e75532d9900eb7a407504e2ce926ded223136d97cbbd0feb",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_18_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_18_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白嘴部侧面极近景在左，右后岩壁；原图有性化呼气。",
+        "safe_dialogue_meanings": [
+          "要求保密",
+          "因为是你才同意；保留对白，不演出性化声息"
+        ]
+      },
+      "targets": [
+        "片段17/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_18_004.jpg",
+      "order": [
+        18,
+        4
+      ],
+      "size": 94456,
+      "sha256": "7140ab7ef3ce8a1263fff52dd72da1e28c6e1cd15e963f270242ace7d788ac36",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_18_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": []
+    },
+    {
+      "image": "第18話_19_001.jpg",
+      "order": [
+        19,
+        1
+      ],
+      "size": 99539,
+      "sha256": "86d0abf90429017a9502ce1656389eabd67eb37340fa01fc10f9de810efc134a",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_19_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_19_001.jpg",
+        "decision": "omit_explicit_visual",
+        "safe_facts": "被遮蔽的身体局部、后方岩壁。",
+        "safe_dialogue_meanings": []
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_19_002.jpg",
+      "order": [
+        19,
+        2
+      ],
+      "size": 142811,
+      "sha256": "cb7dd241c0905157f7ce9b08df34457c6ea265077c6f97f719cf2373f706045e",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_19_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_19_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "守卫低头正面全盔中近景，黑色缝隙与汗，受困结构在后。",
+        "safe_dialogue_meanings": [
+          "接受条件并称对方为兽人",
+          "决定艰难而别无办法"
+        ]
+      },
+      "targets": [
+        "片段17/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_19_003.jpg",
+      "order": [
+        19,
+        3
+      ],
+      "size": 247743,
+      "sha256": "1d88f4223c8bc6bed842ed5d1b0010045eb4deffc8d49513582a22f3f8be2542",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_19_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_19_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "守卫头盔抬起后侧面，右后岩壁。",
+        "safe_dialogue_meanings": [
+          "画外男子说反悔",
+          "守卫惊讶"
+        ]
+      },
+      "targets": [
+        "片段18/分镜1"
+      ]
+    },
+    {
+      "image": "19_004.jpg",
+      "order": [
+        19,
+        4
+      ],
+      "size": 215893,
+      "sha256": "283f370f4fe7376d1ff5c86632719021b940f54bd89ad053293f6dbd04eb2e74",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/19_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "duplicate_reaction_merged",
+      "reason": "与19_003同一抬起面盔的惊讶反应，文件裁切与上方气泡不同，合并演出一次。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "19_004.jpg",
+        "decision": "duplicate_reaction",
+        "safe_facts": "与19_003同一守卫姿态和岩壁，裁掉上方反悔气泡。",
+        "safe_dialogue_meanings": [
+          "守卫惊讶；与前一文件是同一反应，不重复演出"
+        ]
+      },
+      "targets": []
+    },
+    {
+      "image": "第18話_20_001.jpg",
+      "order": [
+        20,
+        1
+      ],
+      "size": 291858,
+      "sha256": "a093a6cb78c048a83699f19492590c48215ab8a31a3a939a0ed3cdf3974565f9",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_20_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_20_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "秃顶男子正面咬牙、鼻梁紧皱，下方肩胸轮廓，后方岩壁。",
+        "safe_dialogue_meanings": [
+          "我想要的是"
+        ]
+      },
+      "targets": [
+        "片段18/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_20_002.jpg",
+      "order": [
+        20,
+        2
+      ],
+      "size": 254377,
+      "sha256": "6ccf7715c9dff14cdc67b46b4aa845f0ef71831fe6deb9ed13c98bc0cb19e6e6",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_20_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_20_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白张口流泪，守卫在身后，躯干及手部有性化接触。",
+        "safe_dialogue_meanings": [
+          "男子想要绝望与哭喊；露骨目的省略",
+          "董白请求停手",
+          "担忧自己忘掉未婚夫"
+        ]
+      },
+      "targets": [
+        "片段19/分镜1",
+        "片段19/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_20_003.jpg",
+      "order": [
+        20,
+        3
+      ],
+      "size": 345542,
+      "sha256": "3fd3d49587ca2d44304e0f29e3ebb3397257c79a42f87b00fb637d24a560bc85",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_20_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "explicit_content_omitted",
+      "reason": "省略露骨性行为、身体细节、性化对白或声息；本话必要非露骨剧情在邻接镜头保留。",
+      "source_original_preserved": true,
+      "source_observation": {},
+      "targets": []
+    },
+    {
+      "image": "第18話_21_001.jpg",
+      "order": [
+        21,
+        1
+      ],
+      "size": 226162,
+      "sha256": "405996e12b69bcccf1f73478072662c9b74acb66f308225548a657485f42205c",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_21_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_21_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "秃顶男子眉眼与鼻梁极近景，低眉直视，面部紧绷。",
+        "safe_dialogue_meanings": [
+          "守卫说高中毕业后已放下对她的感情",
+          "董白惊讶追问以前喜欢过自己"
+        ]
+      },
+      "targets": [
+        "片段20/分镜1",
+        "片段20/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_21_002.jpg",
+      "order": [
+        21,
+        2
+      ],
+      "size": 230059,
+      "sha256": "116ac15e7d4949bfa92f6699c840de4e1e6456248517b0b2061400c7237de344",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_21_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_21_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "秃顶男子近处握拳，两名受困者在左后，被挤压的轮廓；中央为深黑底。",
+        "safe_dialogue_meanings": [
+          "男子说你们俩去死吧"
+        ]
+      },
+      "targets": [
+        "片段21/分镜1"
+      ]
+    },
+    {
+      "image": "第18話_21_003.jpg",
+      "order": [
+        21,
+        3
+      ],
+      "size": 183894,
+      "sha256": "4115b69277ae15988b98117bbcd57960799995c00b5bc09c794a1bf66002f7c6",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_21_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_21_003.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "守卫头盔向后仰，左侧抬手贴近盔部，受困结构在身后。",
+        "safe_dialogue_meanings": [
+          "守卫痛叫；按攻击反应，不作性化声效"
+        ]
+      },
+      "targets": [
+        "片段21/分镜2"
+      ]
+    },
+    {
+      "image": "第18話_22_001.jpg",
+      "order": [
+        22,
+        1
+      ],
+      "size": 165831,
+      "sha256": "23e6c907f73332d5e2b84150be18755b2640b210e1621a105f00145f33e3787f",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_22_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "non_graphic_adaptation",
+      "reason": "非露骨叙事改编；只取可安全呈现的头部、情绪与剧情，不绑定原图生成。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_22_001.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "董白仰头闭眼张口，双马尾，肩身局部，纵向动势。",
+        "safe_dialogue_meanings": [
+          "董白惊叫；按受攻击反应，不作性化声效"
+        ]
+      },
+      "targets": [
+        "片段21/分镜3"
+      ]
+    },
+    {
+      "image": "第18話_22_002.jpg",
+      "order": [
+        22,
+        2
+      ],
+      "size": 336751,
+      "sha256": "09b88bdbc0ecfdf90b4a3618dd69238afb0124d5d7353ed8e8f93aff26ada349",
+      "origin": "https://media.githubusercontent.com/media/kiangws218/write-comic-video-storyboards/codex/comic-workspace/comic-workspace/episodes/ep-018/source/monochrome-panels/%E7%AC%AC18%E8%A9%B1_22_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "decision": "redrafted_source_grounded",
+      "reason": "本格先观察再重写，兑现源格构图与允许的动作阶段。",
+      "source_original_preserved": true,
+      "source_observation": {
+        "image": "第18話_22_002.jpg",
+        "decision": "adapt_non_graphic_plot",
+        "safe_facts": "白底上尖锐黑色断裂笔触，自左下与右下汇向斜上方。",
+        "safe_dialogue_meanings": []
+      },
+      "targets": [
+        "片段21/分镜4"
+      ]
+    }
+  ]
+}

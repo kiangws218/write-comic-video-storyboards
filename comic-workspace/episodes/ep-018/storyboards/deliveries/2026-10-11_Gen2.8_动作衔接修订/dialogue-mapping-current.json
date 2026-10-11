@@ -1,0 +1,2247 @@
+[
+  {
+    "image": "第18話_01_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "哦？是吗。",
+        "status": "mapped",
+        "target": "片段1/分镜1",
+        "script_text": "へえ、そう。",
+        "seconds": 1.2,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "这可是你自找的",
+        "status": "mapped",
+        "target": "片段1/分镜1",
+        "script_text": "自分で招いたことよ。",
+        "seconds": 2.2,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "哦？是吗。"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "这可是你自找的"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段1/分镜1"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_01_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_01_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "呃…哈？！",
+        "status": "mapped",
+        "target": "片段1/分镜2",
+        "script_text": "えっ……はあ！？",
+        "seconds": 2.0,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "怎么突然就要打起来了？！",
+        "status": "mapped",
+        "target": "片段1/分镜2",
+        "script_text": "なんで急にケンカになるの！？",
+        "seconds": 3.2,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "呃…哈？！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "怎么突然就要打起来了？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段1/分镜2"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_02_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "够了，到此为止吧",
+        "status": "mapped",
+        "target": "片段1/分镜3",
+        "script_text": "もうやめなさい。",
+        "seconds": 1.8,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "都已经不是小孩子了",
+        "status": "mapped",
+        "target": "片段1/分镜3",
+        "script_text": "子供じゃないんだから。",
+        "seconds": 2.3,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "够了，到此为止吧"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "都已经不是小孩子了"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段1/分镜3"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_02_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "你们这些小…",
+        "status": "mapped",
+        "target": "片段2/分镜1",
+        "script_text": "お前ら、このガキ……",
+        "seconds": 2.5,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "全盔守卫",
+        "kind": "dialogue",
+        "source_text": "您又在惹事了，女士",
+        "status": "mapped",
+        "target": "片段2/分镜1",
+        "script_text": "また騒ぎですか、ご婦人。",
+        "seconds": 2.7,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b3",
+        "speaker": "全盔守卫",
+        "kind": "dialogue",
+        "source_text": "您受到纪律处分还没过多久，又开始惹麻烦了…",
+        "status": "mapped",
+        "target": "片段2/分镜2",
+        "script_text": "懲戒処分を受けてまだ日も浅いのに、もう厄介事ですか……。",
+        "seconds": 6.2,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你们这些小…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "您又在惹事了，女士"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "您受到纪律处分还没过多久，又开始惹麻烦了…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段2/分镜1"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t3"
+        ],
+        "targets": [
+          "片段2/分镜2"
+        ],
+        "merge_basis": "独立语义交付，构图与时长保留反应。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_02_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "全盔守卫",
+        "kind": "dialogue",
+        "source_text": "现在你们两位也该去做自己的事情了",
+        "status": "mapped",
+        "target": "片段3/分镜1",
+        "script_text": "お二人も、そろそろご自分の用事に戻ってください。",
+        "seconds": 5.0,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "现在你们两位也该去做自己的事情了"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段3/分镜1"
+        ],
+        "merge_basis": "独立语义交付，构图与时长保留反应。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_02_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "…走吧",
+        "status": "mapped",
+        "target": "片段3/分镜2",
+        "script_text": "……行こう。",
+        "seconds": 1.5,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "切…她简直就是个混蛋。",
+        "status": "mapped",
+        "target": "片段3/分镜2",
+        "script_text": "ちっ……あいつ、本当に最低。",
+        "seconds": 2.9,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "…走吧"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "切…她简直就是个混蛋。"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段3/分镜2"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_03_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "嘿，把手放开",
+        "status": "mapped",
+        "target": "片段4/分镜1",
+        "script_text": "ねえ、手を放して。",
+        "seconds": 1.9,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "我没想着找人打架",
+        "status": "mapped",
+        "target": "片段4/分镜1",
+        "script_text": "ケンカを売るつもりなんてないわ。",
+        "seconds": 3.2,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "嘿，把手放开"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "我没想着找人打架"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段4/分镜1"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_03_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_03_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_04_001_上格.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_04_001_下格.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_04_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_05_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "春…！！",
+        "status": "mapped",
+        "target": "片段5/分镜5",
+        "script_text": "ハル……！",
+        "seconds": 1.4,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "春…！！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段5/分镜5"
+        ],
+        "merge_basis": "独立语义交付，构图与时长保留反应。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_05_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "春子姐姐！！！",
+        "status": "mapped",
+        "target": "片段5/分镜6",
+        "script_text": "ハルコ姉さん！！",
+        "seconds": 2.0,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "春子姐姐！！！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段5/分镜6"
+        ],
+        "merge_basis": "独立语义交付，构图与时长保留反应。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_05_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "哈。舒坦多了。",
+        "status": "mapped",
+        "target": "片段6/分镜1",
+        "script_text": "はあ、すっきりした。",
+        "seconds": 2.3,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你疯了？！",
+        "status": "mapped",
+        "target": "片段6/分镜1",
+        "script_text": "正気なの！？",
+        "seconds": 1.5,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      },
+      {
+        "id": "b3",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你做的太过分了…！！",
+        "status": "mapped",
+        "target": "片段6/分镜2",
+        "script_text": "やりすぎよ……！",
+        "seconds": 1.9,
+        "speaker_evidence": "当前气泡指向与可见张口者；画外呼唤按本格气泡及前后连续发言判定，仅确立声音身份。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "哈。舒坦多了。"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你疯了？！"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "你做的太过分了…！！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段6/分镜1"
+        ],
+        "merge_basis": "相邻短句同一机位：可见回应完整，两人反应有时间交接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t3"
+        ],
+        "targets": [
+          "片段6/分镜2"
+        ],
+        "merge_basis": "独立语义交付，构图与时长保留反应。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_06_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "你们俩以后对别人放尊重点",
+        "status": "mapped",
+        "target": "片段6/分镜3",
+        "script_text": "これからは人にもっと敬意を払いなさい。",
+        "seconds": 4.418,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "记住了？",
+        "status": "mapped",
+        "target": "片段6/分镜3",
+        "script_text": "分かった？",
+        "seconds": 0.981,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你们俩以后对别人放尊重点"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "记住了？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段6/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_06_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_06_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "这个贱人…！！",
+        "status": "mapped",
+        "target": "片段7/分镜2",
+        "script_text": "この女……！",
+        "seconds": 1.6,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "看我不把你手打断…",
+        "status": "mapped",
+        "target": "片段7/分镜2",
+        "script_text": "腕をへし折ってやる……。",
+        "seconds": 2.8,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "这个贱人…！！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "看我不把你手打断…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段7/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_06_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "够了",
+        "status": "mapped",
+        "target": "片段7/分镜3",
+        "script_text": "もういい。",
+        "seconds": 1.2,
+        "speaker_evidence": "气泡为画外制止，青此格由怒目变为错愕；下一格青转问春子，连续语义确定制止者为春子，仅确立画外声音。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "够了"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段7/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_07_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你要让这事过去？！",
+        "status": "mapped",
+        "target": "片段8/分镜1",
+        "script_text": "このまま済ませる気！？",
+        "seconds": 2.7,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "我们可是正当防卫…！",
+        "status": "mapped",
+        "target": "片段8/分镜1",
+        "script_text": "私たちは正当防衛だったのに……！",
+        "seconds": 3.8,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你要让这事过去？！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "我们可是正当防卫…！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段8/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_07_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "我记住她的脸了。",
+        "status": "mapped",
+        "target": "片段8/分镜2",
+        "script_text": "あいつの顔は覚えた。",
+        "seconds": 2.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我记住她的脸了。"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段8/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_07_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_08_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "…我们去找个水龙头…",
+        "status": "mapped",
+        "target": "片段9/分镜1",
+        "script_text": "……蛇口を探そう……。",
+        "seconds": 2.7,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "处理下伤口",
+        "status": "mapped",
+        "target": "片段9/分镜1",
+        "script_text": "傷の手当てをしないと。",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "…我们去找个水龙头…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "处理下伤口"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段9/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_08_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "哈，脑袋还在嗡嗡响",
+        "status": "mapped",
+        "target": "片段9/分镜2",
+        "script_text": "はあ、まだ頭がくらくらする。",
+        "seconds": 3.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "哈，脑袋还在嗡嗡响"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段9/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_08_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_08_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "inner",
+        "source_text": "现在该怎么办？",
+        "status": "mapped",
+        "target": "片段10/分镜2",
+        "script_text": "どうすればいい……。",
+        "seconds": 2.22,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "inner",
+        "source_text": "希望他们没事…",
+        "status": "mapped",
+        "target": "片段10/分镜2",
+        "script_text": "みんな、無事だといいけど……。",
+        "seconds": 3.2,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "现在该怎么办？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "希望他们没事…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段10/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_09_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第18話_09_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "快，快停下…！",
+        "status": "mapped",
+        "target": "片段11/分镜2",
+        "script_text": "や、やめて……！",
+        "seconds": 1.97,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "你实在太用力了…！！",
+        "status": "mapped",
+        "target": "片段11/分镜2",
+        "script_text": "力が強すぎる……！",
+        "seconds": 2.1,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "求你了…！！",
+        "status": "mapped",
+        "target": "片段11/分镜3",
+        "script_text": "お願い……！",
+        "seconds": 1.55,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "快，快停下…！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你实在太用力了…！！"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "求你了…！！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段11/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t3"
+        ],
+        "targets": [
+          "片段11/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_13_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "…你还要对我们做什么…？",
+        "status": "mapped",
+        "target": "片段12/分镜1",
+        "script_text": "……まだ俺たちに何をするつもりだ……？",
+        "seconds": 4.15,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "已经结束了",
+        "status": "mapped",
+        "target": "片段12/分镜1",
+        "script_text": "もう終わりだ。",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "…你还要对我们做什么…？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "已经结束了"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段12/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_14_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "求求你…让她走吧…",
+        "status": "mapped",
+        "target": "片段12/分镜2",
+        "script_text": "頼む……彼女を放してくれ……。",
+        "seconds": 3.32,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "你想怎么折磨我都可以",
+        "status": "mapped",
+        "target": "片段12/分镜2",
+        "script_text": "俺には何をしてもいい。",
+        "seconds": 2.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "求求你…让她走吧…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你想怎么折磨我都可以"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段12/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_14_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "不…",
+        "status": "mapped",
+        "target": "片段13/分镜1",
+        "script_text": "無……",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "可…",
+        "status": "mapped",
+        "target": "片段13/分镜1",
+        "script_text": "理……",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "能…",
+        "status": "mapped",
+        "target": "片段13/分镜1",
+        "script_text": "だ。",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "不…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "可…"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "能…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2",
+          "t3"
+        ],
+        "targets": [
+          "片段13/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_15_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "条件？！",
+        "status": "mapped",
+        "target": "片段13/分镜2",
+        "script_text": "条件だと！？",
+        "seconds": 1.57,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "条件？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段13/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_15_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "满足他的要求才放人（非露骨改写）",
+        "status": "mapped",
+        "target": "片段13/分镜3",
+        "script_text": "俺の言うとおりにすれば、二人とも放してやる。",
+        "seconds": 7.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "五次",
+        "status": "mapped",
+        "target": "片段13/分镜3",
+        "script_text": "五回だ。",
+        "seconds": 1.3,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "满足他的要求才放人（非露骨改写）"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "五次"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段13/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_15_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "你这个变态的怪物混蛋！干脆杀了我们吧！",
+        "status": "mapped",
+        "target": "片段14/分镜1",
+        "script_text": "この化け物め！いっそ俺たちを殺せ！",
+        "seconds": 5.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "我们才不会做这种鲜廉寡耻的行为…！",
+        "status": "mapped",
+        "target": "片段14/分镜2",
+        "script_text": "そんな真似は絶対にしない……！",
+        "seconds": 3.7,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你这个变态的怪物混蛋！干脆杀了我们吧！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "我们才不会做这种鲜廉寡耻的行为…！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段14/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2"
+        ],
+        "targets": [
+          "片段14/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_16_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "没…关系…",
+        "status": "mapped",
+        "target": "片段14/分镜3",
+        "script_text": "だい……じょうぶ……。",
+        "seconds": 2.65,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "没…关系…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段14/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_16_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "只有我们知道…",
+        "status": "mapped",
+        "target": "片段15/分镜1",
+        "script_text": "今日あったことは……",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "今天发生了什么。",
+        "status": "mapped",
+        "target": "片段15/分镜1",
+        "script_text": "私たちしか知らないから……。",
+        "seconds": 2.88,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "只有我们知道…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "今天发生了什么。"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段15/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_16_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "让我们再忍一会…",
+        "status": "mapped",
+        "target": "片段15/分镜2",
+        "script_text": "もう少しだけ、耐えよう……。",
+        "seconds": 2.97,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "让我们再忍一会…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段15/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_17_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "你，你疯了？！",
+        "status": "mapped",
+        "target": "片段15/分镜3",
+        "script_text": "お、お前、正気か！？",
+        "seconds": 2.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "听听你都说了些什么…",
+        "status": "mapped",
+        "target": "片段15/分镜3",
+        "script_text": "自分が何を言ってるか分かってるのか……。",
+        "seconds": 4.5,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你，你疯了？！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "听听你都说了些什么…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段15/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_17_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "是不是受怪物影响（原催情说法省略）",
+        "status": "mapped",
+        "target": "片段16/分镜1",
+        "script_text": "あいつに何かされたせいか……！？",
+        "seconds": 3.5,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "是不是受怪物影响（原催情说法省略）"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段16/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_17_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "完全",
+        "status": "mapped",
+        "target": "片段16/分镜2",
+        "script_text": "まったく、",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "没有",
+        "status": "mapped",
+        "target": "片段16/分镜2",
+        "script_text": "ない。",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "完全"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "没有"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段16/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_18_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "没有其他办法了…这是我们唯一的选择！",
+        "status": "mapped",
+        "target": "片段16/分镜3",
+        "script_text": "ほかに方法はない……。これしかないの！",
+        "seconds": 4.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "没有其他办法了…这是我们唯一的选择！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段16/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_18_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "接，接下来说的要保密哦…",
+        "status": "mapped",
+        "target": "片段17/分镜1",
+        "script_text": "こ、ここからは秘密にして……。",
+        "seconds": 3.6,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "因为是你我才会同意的…",
+        "status": "mapped",
+        "target": "片段17/分镜1",
+        "script_text": "あなただから、うなずくの……。",
+        "seconds": 3.13,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "接，接下来说的要保密哦…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "因为是你我才会同意的…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段17/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_19_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "我接受你的条件，兽人…！",
+        "status": "mapped",
+        "target": "片段17/分镜2",
+        "script_text": "条件を受け入れる、オーク……！",
+        "seconds": 3.5,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "虽然这个决定很艰难，但也没有别的办法…",
+        "status": "mapped",
+        "target": "片段17/分镜2",
+        "script_text": "つらい決断だが、ほかに道はない……。",
+        "seconds": 3.8,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我接受你的条件，兽人…！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "虽然这个决定很艰难，但也没有别的办法…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段17/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_19_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "我反悔了",
+        "status": "mapped",
+        "target": "片段18/分镜1",
+        "script_text": "気が変わった。",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "啥？！",
+        "status": "mapped",
+        "target": "片段18/分镜1",
+        "script_text": "は！？",
+        "seconds": 1.07,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我反悔了"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "啥？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段18/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_20_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "我想要的是",
+        "status": "mapped",
+        "target": "片段18/分镜2",
+        "script_text": "俺が見たいのは……。",
+        "seconds": 2.22,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我想要的是"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段18/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_20_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "想看到绝望与哭喊（省略露骨目的）",
+        "status": "mapped",
+        "target": "片段19/分镜1",
+        "script_text": "お前たちの絶望と、泣き叫ぶ姿だ。",
+        "seconds": 4.3,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "住，住手，求你了…！",
+        "status": "mapped",
+        "target": "片段19/分镜2",
+        "script_text": "や、やめて、お願い……！",
+        "seconds": 2.72,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "再这样下去，我要忘掉我的未婚夫了！",
+        "status": "mapped",
+        "target": "片段19/分镜2",
+        "script_text": "このままじゃ、婚約者を忘れてしまう……！",
+        "seconds": 4.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "想看到绝望与哭喊（省略露骨目的）"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "住，住手，求你了…！"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "再这样下去，我要忘掉我的未婚夫了！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段19/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2",
+          "t3"
+        ],
+        "targets": [
+          "片段19/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_21_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "我这里也是。高中毕业后我就打消了对她的感情。",
+        "status": "mapped",
+        "target": "片段20/分镜1",
+        "script_text": "俺もだ。高校を卒業してから、彼女への気持ちは捨てた。",
+        "seconds": 6.5,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "等等…什么？！你之前喜欢过我？！",
+        "status": "mapped",
+        "target": "片段20/分镜2",
+        "script_text": "待って……何！？前は私が好きだったの！？",
+        "seconds": 5.4,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我这里也是。高中毕业后我就打消了对她的感情。"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "等等…什么？！你之前喜欢过我？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段20/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2"
+        ],
+        "targets": [
+          "片段20/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_21_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "你们俩",
+        "status": "mapped",
+        "target": "片段21/分镜1",
+        "script_text": "二人とも、",
+        "seconds": 1.2,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "去死吧。",
+        "status": "mapped",
+        "target": "片段21/分镜1",
+        "script_text": "死ね。",
+        "seconds": 1.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你们俩"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "去死吧。"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段21/分镜1"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_21_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "惊叫（KEUAAAAAAAH）",
+        "status": "mapped",
+        "target": "片段21/分镜2",
+        "script_text": "うあああっ！",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "惊叫（KEUAAAAAAAH）"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段21/分镜2"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_22_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "惊叫（KYAAAAAAH）",
+        "status": "mapped",
+        "target": "片段21/分镜3",
+        "script_text": "きゃあああっ！",
+        "seconds": 2.0,
+        "speaker_evidence": "本格气泡指向及当前张口者；画外声音仅确定说话人，不据此增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "惊叫（KYAAAAAAH）"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段21/分镜3"
+        ],
+        "merge_basis": "相邻短语义在同一机位自然交付，主要回应由可见表演承接，无隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第18話_22_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  }
+]
