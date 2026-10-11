@@ -1858,6 +1858,19 @@ class ValidatorTests(unittest.TestCase):
 
 
 class CameraAndCharacterContractTests(unittest.TestCase):
+    def test_composition_accepts_compact_spatial_positions(self):
+        for text in ("高俯双人全景，青左上春子右下", "正面群像中全景，五人远中",
+                     "正面脸胸特写，头部居中", "岩壁空镜，上部黑暗、下半凸岩"):
+            with self.subTest(text=text):
+                signals = sum(bool(pattern.search(text)) for pattern in VALIDATOR.COMPOSITION_SIGNAL_GROUPS)
+                self.assertGreaterEqual(signals, 2)
+
+    def test_composition_still_requires_more_than_a_framing_label(self):
+        for text in ("正面特写", "岩壁空镜", "左右摇移"):
+            with self.subTest(text=text):
+                signals = sum(bool(pattern.search(text)) for pattern in VALIDATOR.COMPOSITION_SIGNAL_GROUPS)
+                self.assertLess(signals, 2)
+
     def test_source_pitch_omission_queues_review_not_forced_rewrite(self):
         shot = {"target": "片段1/分镜1", "role": "source_locked"}
         panel = {"composition_lock": "高俯背面中景，人物在下中", "source_facts": {"relations": []}}
