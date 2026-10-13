@@ -4,7 +4,7 @@ Read only for skill maintenance or compatibility audits, as routed by `SKILL.md`
 
 ## Episode prepass and source evidence
 
-Use core authoring's image-first, one-to-three-panel 720p batches with conditional escalation. Gen2.5's global low-resolution preview is not a Gen2.8 prerequisite; do not add a contact-sheet/overview pass when the user declines it.
+Use `SKILL.md`'s Gen2.8.1 single-conversation workflow: a light thumbnail overview for new substantial ranges, followed by local factual inspection and a second detailed design/writing inspection at 720p with conditional escalation. Skip overview for narrow revisions or an explicit user opt-out. Do not restore Gen2.5's weaker acting or compact output as a consequence of borrowing its global orientation step. Thumbnail observations never certify exact source facts.
 
 The source ledger is created from the open images before prose. `source_text` is the verbatim source-language bubble/box text; `script_text` is the final Japanese. Never reconstruct locks, bubbles, risk flags, viewing attestations, or performance cards from the completed storyboard. Mechanical extraction may copy filenames and final excerpts after drafting, but it cannot fabricate source evidence or an audit result.
 

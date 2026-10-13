@@ -1,39 +1,62 @@
 ---
 name: write-comic-video-storyboards-gen2-8
-description: Turn ordered comic panels into source-grounded cinematic 2D-animation storyboards with enacted action, natural character performance and dialogue coverage, inspecting cached image proxies and validating source fidelity without compressing the six-field output. Use for comic-to-video storyboard generation or revision where quality and token efficiency both matter.
+description: Turn ordered comic panels into source-grounded cinematic 2D-animation storyboards using a single-conversation, two-pass image workflow, enacted action, natural performance and continuous coverage. Use for comic-to-video storyboard generation or revision where source fidelity, acting quality and focused execution matter.
+metadata:
+  version: "2.8.1"
 ---
 
-# Comic video storyboards Gen2.8
+# Comic video storyboards Gen2.8.1
 
 ## 创作前置声明
 
 这是一项高经费、高品质二维动画项目的正式分镜创作委托。请以资深动画导演的专业水准全力投入，充分发挥你的创作能力与审美判断，认真推敲和完善作品，交付你能够完成的最佳版本。具体执行遵循下文规则。
 
-Gen2.8 is an image-first selective compiler. The open panel is primary evidence; OCR, ledgers and plans are indexes, never substitute visual sources.
+Gen2.8.1 is an image-first selective compiler operating in one main conversation. The open panel is primary evidence; OCR, ledgers and plans are indexes, never substitute visual sources. This patch retains the Gen2.8 skill identifier and V3 ledger compatibility; it is not a second competing skill installation.
 
 ## Load only the needed modules
 
-- Every storyboard: read [core-authoring.md](references/core-authoring.md) for source locks **and temporal action design**, then [dialogue-performance.md](references/dialogue-performance.md) for dialogue coverage and task/relationship-led acting, including its linked cold-start calibration. All character shots use its acting principles; D/P/G select planning effort, not permission to animate.
-- Every shot whose camera field is authored or revised: read [cinematic-rendering.md](references/cinematic-rendering.md) once for camera decisions and executable wording; its lighting/finish guidance is conditional on the scene. Arithmetic/format-only revisions do not reload it.
+- Before the first factual inspection: read [core-authoring.md](references/core-authoring.md) once. In pass 1 apply its observation, identity and phase distinctions; in pass 2 apply its admission, continuity and clip-boundary gates; in review apply its change-scoped checks. Reading the file is not a demand to perform every stage at once.
+- Before the first performance/coverage design in pass 2: read [dialogue-performance.md](references/dialogue-performance.md) and its linked cold-start calibration once. All character shots use its acting principles; D/P/G select planning effort, not permission to animate. An expression-defining ambiguity in pass 1 may require this module earlier.
+- Before authoring or revising camera fields in pass 2: read [cinematic-rendering.md](references/cinematic-rendering.md) once for camera decisions and executable wording; its lighting/finish guidance is conditional on the scene. Arithmetic/format-only revisions do not reload it.
 - Omitted/ambiguous comic backing, emotional/graphic treatment, background palette or background revision: read [background-design.md](references/background-design.md). Core authoring owns field boundaries and environment-continuity admission; this reference owns treatment selection and visual examples.
 - Ambiguous contact, overlap, topology, fast action, color evidence or added viewpoint: also read [source-risk.md](references/source-risk.md).
 - Fight/complex fast action: also read [2d-animation-execution.md](references/2d-animation-execution.md).
 - Paste-ready execution prompt or failed-generation review: read [seedance-execution-and-review.md](references/seedance-execution-and-review.md).
 - Skill maintenance and compatibility audits only: read [gen2-5-compatibility.md](references/gen2-5-compatibility.md) and [regression-cases.md](references/regression-cases.md).
 
-Run validators without loading their implementation unless changing them.
+Read each applicable module completely on first use, then consult the relevant rule only when a decision requires it; do not reload the module for each panel, pass or review warning. Stage routing focuses the current task, not an assertion that previously read text disappears from this conversation. Run validators without loading their implementation unless changing them.
 
-## Compile loop
+## Single-conversation, two-pass workflow
 
-Work on one to three contiguous panels. Keep the exact panel open until its shot text is compared back to it. Use cached 720p proxies by default; open 1080p/original only when a decision-changing detail remains unresolved and record why.
+Use one main conversation for overview, both detailed passes, writing and review. Do not create writing/review sub-conversations or duplicate full-rule handoffs as the default. A later explicit request for delegation changes that execution mode, not source or quality requirements.
 
-When character references are supplied, resolve their names and any explicitly confirmed performance profile under the identity gate in `core-authoring.md` before planning acting. Choose camera behavior by the purpose/evidence gate in `cinematic-rendering.md`, not by a fixed-camera default or a movement quota. For revisions and final review, use the change-scoped reinspection rules in `core-authoring.md`; unchanged approved images do not need a blanket second pass.
+### Overview: find the sequence, not the fine detail
 
-1. Record `composition_lock` and atomic `source_facts` (`entities/actions/relations`) from the open image. Distinguish persistent source constraints from phase-specific pose/composition under core authoring; do not freeze the full shot. Separate printed manga overlays into `page_overlays`; glyphs, speech balloons, captions, labels and page furniture are evidence to interpret, never renderable scenery or composition. Put plot meaning, identities inferred only from continuity and dialogue intent in `story_context`; list their tempting but invisible render words in `non_renderable_terms`. Context is never render evidence.
-2. Classify State/Action/Reaction/Mixed and establish the supported temporal phrase under core authoring as the boundary for full performance design: distinguish the physical phase from its placement in the video, declare where the source pose lands, and include an admissible necessary lead-in when the depicted action begins here. The comic need not draw every intermediate pose. Provisionally apply core's cross-shot continuity gate to identify direct cuts, coordinated local C/A or bounded action bridges; actual boundaries are confirmed after acting and coverage are planned. Retain an intentional state only for an evidenced reason. While the panel is open, assign `D` dialogue/coverage, `P` expressive performance and `G` fragile geometry only where needed; these flags do not replace this motion decision.
-3. Resolve ordered dialogue turns and coverage groups before camera count. Design the scene's supported performance within core authoring's admission boundary before choosing added close-ups; preserve the anatomy and partner relation needed to read it. For every added view, assign a distinct visual function and compare a compact composition signature against both the immediately previous planned shot and the next source-panel composition; it must differ from each available neighbor on at least two meaningful dimensions or be redesigned/merged. Use dialogue-performance's calibration and scene patterns to develop the current task/interaction, then record one compact card for each `P` shot. Confirm actual outgoing endpoints and incoming openings under core's continuity gate, including any bridge and its time, before grouping complete panel units under the clip-boundary gate. Neither a new panel nor an inspection-batch boundary starts a clip. Escalate a `G` detail beyond 720p only when necessary.
-4. Apply the three admission gates to the planned temporal phrase. Before background prose, resolve visible environment, bounded continuity reconstruction, purposeful graphic treatment or complete occlusion under core authoring; gray/blank manga backing alone does not select the graphic route. Then render the opening, readable change and endpoint in the six-field shot. Dialogue/story meaning alone fails the evidence gate. Record exact `fact_claims` and major-action admissions; compare source fidelity **and whether the supported action was actually enacted**, not just anatomy keywords, with the still-open panel. Resolve duration after speech and motion intervals are known.
-5. Validate the small batch and fix blockers before advancing. Under core's continuity gate, audit actual affected cut/clip boundaries after prose and any state-changing revision, including returns after reaction coverage; retain the concrete outcome in the existing audit. Separately apply dialogue-performance's comparative acting review; safety, a populated card and zero errors certify neither continuity nor acting quality. Never reconstruct source evidence from completed prose.
+For a new episode or substantial continuous range, browse ordered, labeled thumbnail sheets once before detailed inspection. The proxy helper's `--overview` option produces small paginated sheets and a filename index. Confirm the source order; use the preview only to propose continuous scene/beat ranges, locate drawn environment references and flag likely gaps or difficult panels. Keep only that compact map in the existing audit. No episode-wide transcription, performance plans or source-pass attestations come from thumbnails. A single giant sheet is not a readable overview. A narrow revision or an explicit user opt-out skips this stage.
+
+### Pass 1 — observe and understand
+
+Within the current continuous beat, inspect one to three contiguous panels individually at cached 720p. Finish their factual pass before drafting their shots; then do pass 2 on that same local window before moving onward. Long beats may span windows; a window is a memory aid, never a shot or clip boundary. Consult the immediate neighbor when needed to understand the phase or future boundary, not to transcribe the rest of the episode.
+
+Update the existing V3 panel records from the images: composition (including camera pitch versus head facing and gaze), visible entities/actions/relations, decisive expression shape, original bubble text/owner/kind/order, actual or omitted backing, and typography-only overlays. Resolve canonical identity against supplied references; flag uncertainty instead of guessing. Separate observations from story context and identify the physical source phase and persistent versus phase-specific constraints. Note only consequential open questions and possible continuity gaps. These observations do not yet decide final shot count, motion path, background treatment or duration, and a source pose is not a frozen video or first-frame input.
+
+The exit condition is usable, honest evidence for the current window, not a fully populated final ledger. Resolve a decision-critical uncertainty at useful resolution or leave the affected decision explicitly blocked. Do not invent off-screen facts or perform a full creative/validation checklist during this pass.
+
+### Pass 2 — look again, design and write
+
+Reinspect each current panel individually while creating its shots; keep it visually available through comparison with the prose. This is a deliberate second detailed reading, not merely rereading pass-1 notes. Reuse the same 720p proxy; escalate to 1080p/original only for a still unresolved decision-changing detail, recording why. Correct pass-1 evidence if this view reveals an error, rather than treating its record as superior to the image.
+
+Resolve present characters' confirmed performance profiles, final Japanese and ordered semantic turns. Within core's temporal-action admission boundary, develop the necessary lead-in, depicted phase and supported continuation, then task/interaction-led acting using dialogue-performance's calibration. Plan acting before optional close-ups; complete the existing `motion_decision`, D/P/G decisions and selective P-card before formal prose. Choose coverage and purpose-led camera behavior with concrete openings/landings, not a fixed-camera default or movement quota. Compare added coverage with both neighboring compositions under core's contrast gate. Finalize physical/continuity/graphic/occluded backing from inspected evidence, not thumbnail tone or gray screentone alone.
+
+Confirm actual outgoing/incoming states and any necessary bridge, then group neighboring complete panel units by natural timing under the 15-second ceiling. Render the full six fields and compare source fidelity **and enacted temporal change** against the images. Keep one set of observed facts, admissions, cards and exact rendered excerpts in the existing V3 records; there is no pass-2 copy of the evidence ledger. A newly added view is separately planned coverage, not an excuse to omit the source panel's second reading.
+
+### Review — targeted correction, not a mandatory third reading
+
+Validate the current window and resolve blockers before advancing. Apply comparative acting review to the exchange and audit its actual cut/clip boundary states; zero errors alone is not approval. Keep a tentative clip open across windows until the immediate next unit is assessed. Carry only the current task/contact/facing/ownership state, relevant environment/palette, tentative clip time and unresolved decisions into the next window; the existing ledger remains the authoritative history, not a summary rewritten each time.
+
+After the two detailed passes and prose comparison, reopen only decision-changing evidence affected by a warning or revision under core's change-scoped reinspection rules. Formatting/arithmetic fixes do not trigger new image reads. Order/scope changes or demonstrated systemic visual errors can require broader reinspection. An already approved narrow revision uses this scoped path, not a forced new overview and two complete episode passes.
+
+The same conversation retains prior context: avoid printing full historical ledgers, completed scripts and whole modules repeatedly. Reuse exact approved records and inspect current targets. Do not claim a token-saving percentage or visual-pass completion from read counters, script execution or booleans; record only work actually performed. This workflow changes attention allocation, not the required richness of acting or the six-field output.
 
 ## Non-negotiable outcomes
 
@@ -58,7 +81,7 @@ When character references are supplied, resolve their names and any explicitly c
 - Structural/source/performance blockers stop delivery. Heuristic advisories may remain only with a per-shot image-based disposition.
 
 ```powershell
-python scripts/build_analysis_proxies.py <panel-folder>
+python scripts/build_analysis_proxies.py <panel-folder> --overview
 python scripts/validate_storyboard.py <storyboard.md> --max-seconds 15 --image-dir <proxy-folder> --source-ledger <source-ledger-v3.json> --require-source-ledger
 python scripts/audit_seedance_prompt.py <execution.md> --max-seconds 15 --max-chars 1900
 python -m unittest discover -s scripts -p "test_*.py"

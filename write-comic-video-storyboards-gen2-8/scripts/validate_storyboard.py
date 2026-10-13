@@ -177,7 +177,7 @@ BACKGROUND_VISUAL_RE = re.compile(
     r"墙(?:面|壁)?|室内|走廊|房间|街道|屋顶|山(?:体|坡|脊)?|灌木|"
     r"水面|湖面|海面|河面|岩(?:壁|地|石)?|洞穴|速度(?:线|带|场)|"
     r"放射线|冲击底|渐变|图形底|纯色|纯白图形底|色块|亮区|夜色|阴影|光幕|雾|烟尘|尘土|雨幕|雪地|"
-    r"箱壁|盒壁|内衬|布景|帘布|布面|木(?:板|构|纹|梁|柱|墙|地|柜台)|柜台|炊汽|蒸汽|底场|"
+    r"箱壁|盒壁|内衬|布景|帘布|布面|木(?:平面|面|板|构|纹|梁|柱|墙|地|柜台)|柜台|炊汽|蒸汽|底场|"
     r"(?:铺满|填满|遮满)(?:画面|背景)"
 )
 NEGATIVE_PROMPT_RE = re.compile(
@@ -1127,10 +1127,11 @@ def validate_source_ledger(
                 errors.append(f"{image}的{field}必须是字符串数组，没有则写空数组。")
 
         coverage = panel.get("coverage")
-        if coverage not in allowed_coverage:
+        if not isinstance(coverage, str) or coverage not in allowed_coverage:
             errors.append(
-                f"{image}的coverage必须是none/shared/reverse/insert/mixed之一。"
+                f"{image}的coverage必须是none/shared/reverse/insert/mixed之一（字符串）。"
             )
+            coverage = None  # Keep malformed JSON values out of later enum membership checks.
         bubbles = panel.get("bubbles")
         if not isinstance(bubbles, list):
             errors.append(f"{image}的bubbles必须是数组。")

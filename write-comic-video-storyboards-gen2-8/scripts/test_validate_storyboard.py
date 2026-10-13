@@ -187,6 +187,13 @@ def bridge_fixture() -> tuple[str, dict]:
 
 
 class ValidatorTests(unittest.TestCase):
+    def test_inspected_wood_surface_is_concrete_backing(self) -> None:
+        # A prop insert can show its real support surface without inventing a table.
+        for backing in ("暖褐粗木平面有斜向擦纹，左下边缘下方是深褐暗隙。",
+                        "下层暖褐粗木面纹理在浅景深中柔化。"):
+            with self.subTest(backing=backing):
+                self.assertTrue(VALIDATOR.has_descriptive_background(backing))
+
     def overflow_fixture(self) -> tuple[dict, set[str], list[dict], dict]:
         panel = {"image": "panel.jpg", "overflow_split": {
             "estimated_seconds": 17.5, "segments": [1, 2],
@@ -1527,6 +1534,60 @@ class ValidatorTests(unittest.TestCase):
         result = self.run_validator(text)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("逐条绑定", result.stdout)
+
+    def test_same_setup_continuous_multi_reference_is_allowed(self) -> None:
+        text = storyboard().replace(
+            "分镜参考 `[panel.jpg]`",
+            "分镜参考 `[panel.jpg]`、`[panel2.jpg]`",
+        ).replace(
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "50mm平视手部特写，固定镜头。\n"
+            "- 参考 `[panel.jpg]`（中段）：掌心朝上占中央前景，手腕被下缘裁切。\n"
+            "- 参考 `[panel2.jpg]`（后段）：掌心仍占中央前景，手腕被下缘裁切。",
+        ).replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "\n- 中段：人物手掌朝上托住物件，手指放松。\n"
+            "- 后段：手指轻微收紧，掌心继续托住物件。",
+        )
+        ledger = valid_ledger()
+        panel2 = deepcopy(ledger["panels"][0])
+        panel2.update(image="panel2.jpg", source_bubble_count=0, bubbles=[], coverage="none")
+        ledger["panels"].append(panel2)
+        ledger["shots"][0]["source_images"].append("panel2.jpg")
+        result = self.run_validator(text, ledger, True)
+        self.assertEqual(result.returncode, 0, result.stdout)
+
+    def test_multi_reference_action_phase_must_match_camera_phase(self) -> None:
+        text = storyboard().replace(
+            "分镜参考 `[panel.jpg]`",
+            "分镜参考 `[panel.jpg]`、`[panel2.jpg]`",
+        ).replace(
+            "50mm平视手部特写，手腕被下缘裁切，掌心占中央前景；固定镜头。",
+            "50mm平视手部特写，固定镜头。\n"
+            "- 参考 `[panel.jpg]`（中段）：掌心朝上占中央前景，手腕被下缘裁切。\n"
+            "- 参考 `[panel2.jpg]`（后段）：掌心仍占中央前景，手腕被下缘裁切。",
+        ).replace(
+            "人物手掌朝上托住物件，手指先放松再轻微收紧。",
+            "\n- 中段：人物手掌朝上托住物件，手指放松。",
+        )
+        ledger = valid_ledger()
+        panel2 = deepcopy(ledger["panels"][0])
+        panel2.update(image="panel2.jpg", source_bubble_count=0, bubbles=[], coverage="none")
+        ledger["panels"].append(panel2)
+        ledger["shots"][0]["source_images"].append("panel2.jpg")
+        result = self.run_validator(text, ledger, True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("对应的动作条目", result.stdout)
+
+    def test_malformed_coverage_reports_error_without_traceback(self) -> None:
+        for malformed in ([], {}, ["shared"]):
+            with self.subTest(coverage=malformed):
+                ledger = valid_ledger()
+                ledger["panels"][0]["coverage"] = malformed
+                result = self.run_validator(storyboard(), ledger, True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("coverage必须是none/shared/reverse/insert/mixed之一", result.stdout)
+                self.assertNotIn("Traceback", result.stdout)
 
     def test_camera_requires_concrete_panel_composition(self) -> None:
         text = storyboard().replace(
