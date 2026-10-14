@@ -1,0 +1,100 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "palette": {
+    "royal": "#216AE1",
+    "sky": "#25A9E4",
+    "navy": "#173B80",
+    "paper": "#FFFFFF",
+    "white": "#FFFFFF"
+  },
+  "letters": [
+    {
+      "ch": "新",
+      "file": "assets/glyph-0.png",
+      "ink": "assets/ink-0.png",
+      "edge": "assets/edge-0.png",
+      "x": 569,
+      "y": 302.5,
+      "w": 146.5,
+      "h": 167.5
+    },
+    {
+      "ch": "世",
+      "file": "assets/glyph-1.png",
+      "ink": "assets/ink-1.png",
+      "edge": "assets/edge-1.png",
+      "x": 706.5,
+      "y": 212,
+      "w": 237.5,
+      "h": 234
+    },
+    {
+      "ch": "界",
+      "file": "assets/glyph-2.png",
+      "ink": "assets/ink-2.png",
+      "edge": "assets/edge-2.png",
+      "x": 927.5,
+      "y": 227.5,
+      "w": 232.5,
+      "h": 261
+    },
+    {
+      "ch": "之",
+      "file": "assets/glyph-3.png",
+      "ink": "assets/ink-3.png",
+      "edge": "assets/edge-3.png",
+      "x": 1135,
+      "y": 347,
+      "w": 159,
+      "h": 147.5
+    },
+    {
+      "ch": "魔",
+      "file": "assets/glyph-4.png",
+      "ink": "assets/ink-4.png",
+      "edge": "assets/edge-4.png",
+      "x": 327.5,
+      "y": 425,
+      "w": 325,
+      "h": 357.5
+    },
+    {
+      "ch": "物",
+      "file": "assets/glyph-5.png",
+      "ink": "assets/ink-5.png",
+      "edge": "assets/edge-5.png",
+      "x": 623.5,
+      "y": 449.5,
+      "w": 294.5,
+      "h": 292.5
+    },
+    {
+      "ch": "猎",
+      "file": "assets/glyph-6.png",
+      "ink": "assets/ink-6.png",
+      "edge": "assets/edge-6.png",
+      "x": 954.5,
+      "y": 454.5,
+      "w": 303,
+      "h": 289
+    },
+    {
+      "ch": "手",
+      "file": "assets/glyph-7.png",
+      "ink": "assets/ink-7.png",
+      "edge": "assets/edge-7.png",
+      "x": 1221.5,
+      "y": 454,
+      "w": 362,
+      "h": 302.5
+    }
+  ],
+  "english": {
+    "file": "assets/english.png",
+    "x": 335.25,
+    "y": 788.5,
+    "w": 1192.75,
+    "h": 78.25
+  }
+}
