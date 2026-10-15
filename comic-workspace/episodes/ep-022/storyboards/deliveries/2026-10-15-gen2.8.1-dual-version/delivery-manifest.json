@@ -1,10 +1,5 @@
 [
   {
-    "path": "delivery-manifest.json",
-    "size": 2258,
-    "sha256": "e5c029401f412e11d8fb41d67ba0681454e41cb8ad8a4f0dd709dbe3c1d2281f"
-  },
-  {
     "path": "README.md",
     "size": 1455,
     "sha256": "6bd568801fc0807b6af41ffe8682936af42373b9f39af6c0ad39d35cfabeb89c"
