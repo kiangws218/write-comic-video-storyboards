@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "stable_versions": [
+    "2.5",
+    "2.8"
+  ],
+  "experimental_versions": [
+    "2.8.1"
+  ],
+  "versions": [
+    {
+      "version": "2.5",
+      "status": "stable",
+      "path": "write-comic-video-storyboards-gen2-5",
+      "skill_name": "write-comic-video-storyboards-gen2-5",
+      "source": {
+        "commit": "fd9b08550afa23a6ee7e29b8f0b709b2a2246be5",
+        "path": "write-comic-video-storyboards-gen2-5"
+      },
+      "notes": "成熟版本，按用户确认保留。"
+    },
+    {
+      "version": "2.6",
+      "status": "retained",
+      "path": "write-comic-video-storyboards-gen2-6",
+      "skill_name": "write-comic-video-storyboards-gen2-6",
+      "source": {
+        "commit": "fd9b08550afa23a6ee7e29b8f0b709b2a2246be5",
+        "path": "write-comic-video-storyboards-gen2-6"
+      },
+      "notes": "保留版本，本次不调整成熟度或改写规则。"
+    },
+    {
+      "version": "2.7",
+      "status": "retained",
+      "path": "write-comic-video-storyboards-gen2-7",
+      "skill_name": "write-comic-video-storyboards-gen2-7",
+      "source": {
+        "commit": "fd9b08550afa23a6ee7e29b8f0b709b2a2246be5",
+        "path": "write-comic-video-storyboards-gen2-7"
+      },
+      "notes": "保留版本，本次不调整成熟度或改写规则。"
+    },
+    {
+      "version": "2.8",
+      "status": "stable",
+      "path": "write-comic-video-storyboards-gen2-8",
+      "skill_name": "write-comic-video-storyboards-gen2-8",
+      "source": {
+        "commit": "fd9b08550afa23a6ee7e29b8f0b709b2a2246be5",
+        "path": "write-comic-video-storyboards-gen2-8"
+      },
+      "notes": "成熟版本，保留现有 Gen2.8 规则。"
+    },
+    {
+      "version": "2.8.1",
+      "status": "experimental",
+      "path": "write-comic-video-storyboards-gen2-8-1",
+      "skill_name": "write-comic-video-storyboards-gen2-8-1",
+      "source": {
+        "commit": "cdacb60b4bff3ed5c487e10923d92050622b980f",
+        "path": "write-comic-video-storyboards-gen2-8"
+      },
+      "notes": "测试版本，总览与两遍局部精读流程；不替换成熟 Gen2.8。"
+    }
+  ],
+  "historical_paths": [
+    "write-comic-video-storyboards",
+    "write-comic-video-storyboards-gen2"
+  ]
+}

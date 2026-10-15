@@ -23,7 +23,7 @@ episodes/
 ## 使用方式
 
 1. 安装 Git LFS。
-2. 克隆仓库或切换到 `codex/comic-workspace` 分支。
+2. 克隆仓库并使用 `main` 分支；各版本 skill 和漫画项目已在主分支汇总。
 3. 执行 `git lfs pull` 下载漫画图片。
 4. 优先查看对应话数的 `STATUS.md`，再从 `storyboards/current/` 领取当前稿。
 

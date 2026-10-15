@@ -55,7 +55,7 @@ Do not make every moment equally fast. Shape a readable contrast across the clip
 - **Normal or medium speed:** footwork, repositioning, readable defense, recovery, pursuit.
 - **Rapid acceleration:** launch, dash, evasive burst, short exchange; concentrate in-betweens around the readable start and end poses.
 - **Hit-stop / impact frame:** compress decisive contact to one or two animation frames when the source supports a hard hit.
-- **Brief slow motion:** reserve for a decisive near miss, weapon collision, bodily deformation at impact, reversal, or major environmental fracture; show information that normal speed would hide.
+- **Purposeful slow motion:** reveal important perception, preparation, weight, contact or response that normal speed would underplay; a near miss, collision, reversal and their aftermath are examples, not the only eligible phases. Follow [cinematic-rendering.md](cinematic-rendering.md#slow-motion-as-an-acting-and-rhythm-choice) for entry, recovery, action development and timing; do not make every beat slow.
 - **Return to normal speed:** reveal recoil, landing, debris fall, injury, or the new balance of power.
 
 Use professional camera and animation terms only when they determine visible behavior: low-angle tracking, lateral tracking, pan, tilt, whip-pan, crash zoom, locked wide shot, first-person insert, time ramp, smear frame, multiples, impact frame, held key pose, dense in-betweens, or slow-motion close-up. Avoid strings of terms that do not change the image.

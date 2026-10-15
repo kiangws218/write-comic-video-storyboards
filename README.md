@@ -1,44 +1,59 @@
 # Comic Video Storyboard Skills
 
-将有序漫画、漫画原图与裁切分格转换为可供 AI 视频生成使用的结构化二维动画分镜。
+将有序漫画分格转换为可执行的二维动画分镜。`main` 同时保存各版本 skill、漫画协作项目与测试资料；选择版本时，以本页和 [versions.json](versions.json) 为准。
 
-## Skills
+## 版本选择
 
-- `write-comic-video-storyboards/`：初代稳定版，适合按原漫画恢复对白、拆分约 15 秒片段并编写详细分镜。
-- `write-comic-video-storyboards-gen2/`：第二代版本，强化原格保留、状态／动作判定、自然对白计时、环境提示词、成人原版加平台安全替换稿、战斗镜头与 Seedance 执行审查。
-- `write-comic-video-storyboards-gen2-5/`：二点五代版本，在 Gen2 严格还原原漫画的基础上，支持连续动作镜头组、必要碎切与环境空镜、镜内节奏和中割密度设计、直观怪物描述及克制的动画特效。
-- `write-comic-video-storyboards-gen2-6/`：二点六代版本，要求原格锁定镜头在对应图片保持打开时写作，以版本 2 源图台账审计背景、对白拆镜、镜头权限和新增画面事实，同时保留 Gen2.5 的表演、连续动作、战斗节奏和特效质量下限。
-- `write-comic-video-storyboards-gen2-7/`：二点七代版本，保持 Gen2.6 的七字段输出、人物表演、镜头与布光质量，通过核心规则合并、风险模块按需加载和验证器承接机械约束来减少运行时 Token。
+| 版本 | 状态 | Skill 目录 | 使用定位 |
+| --- | --- | --- | --- |
+| **2.5** | **成熟版** | [write-comic-video-storyboards-gen2-5](write-comic-video-storyboards-gen2-5/SKILL.md) | 已确认的成熟版本，保留原有创作与连续动作规则。 |
+| 2.6 | 保留版本 | [write-comic-video-storyboards-gen2-6](write-comic-video-storyboards-gen2-6/SKILL.md) | 源图台账、图像事实与生成边界规则。 |
+| 2.7 | 保留版本 | [write-comic-video-storyboards-gen2-7](write-comic-video-storyboards-gen2-7/SKILL.md) | 模块路由、规则整合和相应代际的验证工具。 |
+| **2.8** | **成熟版** | [write-comic-video-storyboards-gen2-8](write-comic-video-storyboards-gen2-8/SKILL.md) | 成熟的 V3 来源台账、表演与覆盖流程。 |
+| **2.8.1** | **测试中** | [write-comic-video-storyboards-gen2-8-1](write-comic-video-storyboards-gen2-8-1/SKILL.md) | 单主对话、缩略总览、两遍局部精读及定向复查的实验流程。 |
 
-每个目录都是独立 Skill，包含 `SKILL.md`、相关参考规则、验证脚本与 Codex 界面配置。
+2.5 和 2.8 的成熟状态由项目维护者确认；2.8.1 尚在测试，不替换 2.8。2.6、2.7 均完整保留，本次整理没有改变它们的成熟度定位。
 
-## Install
+2.8.1 使用独立的 `write-comic-video-storyboards-gen2-8-1` 标识、界面名称与默认提示，和成熟 2.8 分开安装。具体输出字段、时长边界和校验要求由各版本自己的 `SKILL.md` 定义。
 
-将需要的整个 Skill 目录复制到 Codex Skills 目录中，保持目录名与 `SKILL.md` 中的 `name` 一致。
+初代 [write-comic-video-storyboards](write-comic-video-storyboards/SKILL.md) 与 [Gen2](write-comic-video-storyboards-gen2/SKILL.md) 也保留，作为早期版本入口。
+
+## 安装
+
+从 `main` 选择需要的目录，完整复制到 Codex 的 skills 目录，保持目录名与 `SKILL.md` 的 `name` 相同。五个版本可以分别安装：
 
 ```text
-~/.codex/skills/write-comic-video-storyboards/
-~/.codex/skills/write-comic-video-storyboards-gen2/
 ~/.codex/skills/write-comic-video-storyboards-gen2-5/
 ~/.codex/skills/write-comic-video-storyboards-gen2-6/
 ~/.codex/skills/write-comic-video-storyboards-gen2-7/
+~/.codex/skills/write-comic-video-storyboards-gen2-8/
+~/.codex/skills/write-comic-video-storyboards-gen2-8-1/
 ```
 
-也可以从此 GitHub 仓库路径安装其中一个子目录。
+调用时明确选择版本，例如 `$write-comic-video-storyboards-gen2-8` 或 `$write-comic-video-storyboards-gen2-8-1`。生产使用可选择成熟的 2.5 或 2.8；评估新流程时选择测试版 2.8.1。
 
-## Tests
+## 仓库内容
 
-- `tests/fixtures/`：版本化的固定输入与旧版基线；不放进任何 Skill 发布目录。
-- `tests/results/<version>/`：对应版本的分镜、源图台账和评估报告。
-- `tests/build_ch15_gen26_fixture.py`：重建第15话第一批测试结果与文件校验清单，保证 A/B 可复现。
-- `tests/build_ch15_gen27_first8_cinematic.py`：重建 Gen2.7 前八图完整质量测试。
-- `tests/compare_gen27_token_quality.py`：复现 Gen2.6/Gen2.7 规则、输出、时长和质量代理指标。
+```text
+write-comic-video-storyboards-gen2-5/    成熟版 2.5
+write-comic-video-storyboards-gen2-6/    保留版本 2.6
+write-comic-video-storyboards-gen2-7/    保留版本 2.7
+write-comic-video-storyboards-gen2-8/    成熟版 2.8
+write-comic-video-storyboards-gen2-8-1/  测试版 2.8.1
+comic-workspace/                       漫画、人设、字幕、设计资产与历次交付
+tests/                                 固定输入、重建脚本及历史评估
+docs/                                  版本来源与仓库维护约定
+versions.json                          机器可读的版本与成熟度清单
+CHANGELOG.md                           仓库整理与版本入口变更
+```
 
-## Notes
+- 漫画协作从 [comic-workspace/README.md](comic-workspace/README.md) 和各话 `STATUS.md` 进入，正式稿优先查看 `storyboards/current/`。
+- 漫画图片沿用 Git LFS；需要图片时安装 Git LFS，并在仓库中执行 `git lfs pull`。仅安装 skill 不需要下载漫画素材。
+- `tests/fixtures/` 保存固定输入；`tests/results/` 保存历史结果。这些资料不随单个 skill 目录安装。
+- 不同代际的规则各自维护，测试新版本时不直接覆盖成熟版本。
 
-- 默认将 15 秒视为软上限，不强制硬切满 15 秒。
-- 分镜引用使用裁切图文件名；原漫画可用于恢复裁切图缺失的对白与上下文。
-- Gen2 的成人内容交付采用完整原作主版，并在文末附受影响片段的平台安全替换稿。
-- Gen2.5 以漫画关键格为强制锚点；新增镜头只能补充既有动作、空间、节奏或情绪，不能替换或改写原作事件。
-- Gen2.6 的台账是约束和审计索引，不是原图的文本替代品；引用原格的镜头必须在图片当前可见时写作与复核。
-- Gen2.7 只压缩运行时规则，不以缩短最终分镜为目标；普通、电影化、源图风险、战斗和 Seedance 模块按任务条件加载。
+## 来源与维护
+
+[版本来源与迁移记录](docs/version-sources.md) 记录各目录的固定来源提交，以及原同名实验稿的历史入口。[维护约定](docs/repository-maintenance.md) 说明分支和版本清单如何配合使用。
+
+此前的 `codex/comic-workspace` 和 `codex/gen2.8-performance-router` 已为本次整理提供历史与内容。后续选用仓库中的 skill 时，以 `main` 的版本目录为准，不再通过旧开发分支猜测版本。
