@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2.7"
+  short_description: "高质量分镜与精简规则加载"
+  default_prompt: "Use $write-comic-video-storyboards-gen2-7 to write a source-grounded cinematic storyboard with compact task-specific rules."

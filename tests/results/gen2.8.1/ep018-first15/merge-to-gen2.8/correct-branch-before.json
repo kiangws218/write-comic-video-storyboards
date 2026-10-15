@@ -1,0 +1,14 @@
+{
+  "correct_branch": "codex/gen2.8-performance-router",
+  "old_head": "0a0bd1c2a7f3bf2393b3b1074675cf0c168f049a",
+  "existing_worktree": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards-gen27",
+  "isolated_worktree": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\gen28-performance-sync",
+  "preserved_existing_changes": "M GEN2.8-V3-REFACTOR.md\n M README.md\n M write-comic-video-storyboards-gen2-8/scripts/audit_seedance_prompt.py\n?? GEN2.8-OPTIMIZATION-PLAN.md\n?? write-comic-video-storyboards-gen2-8/scripts/test_audit_seedance_prompt.py",
+  "other_dirty_file_hashes": {
+    "GEN2.8-V3-REFACTOR.md": "aa2cf72a75b6aafe36706fef6c5dba6cdf57444e75c789c35f83dd9a1ccca1fd",
+    "README.md": "2704b1f79052649375e331cb06d3491b9c1152495ef6d4ea965c1d24e27ea08e",
+    "write-comic-video-storyboards-gen2-8/scripts/audit_seedance_prompt.py": "896c59aa1d590e48523f26a768bfccac130f7211e0906121b74aa819647508e9",
+    "GEN2.8-OPTIMIZATION-PLAN.md": "93a0a87c8f08790ecb9f8cedf58517af71294a2bc32b257495b112aa33d1e56c",
+    "write-comic-video-storyboards-gen2-8/scripts/test_audit_seedance_prompt.py": "dc1fe3a1931ee1ae4d421016bc7bf9fe0b46519ea0e3c5955b9a8e960f6d5795"
+  }
+}

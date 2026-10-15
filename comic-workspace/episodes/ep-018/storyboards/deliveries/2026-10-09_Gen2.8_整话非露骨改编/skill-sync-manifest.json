@@ -1,0 +1,26 @@
+{
+  "ref": "origin/codex/gen2.8-performance-router",
+  "commit": "72a89198d6660479631d45be21f49dabad0316d0",
+  "hashes": {
+    "SKILL.md": "e7aa6ec3d3ed6aa1d143bd0bde21910ebd8f084ec89727889c358235b160fb52",
+    "agents/openai.yaml": "422fdb2074a5dba6b72399c8d5980c39eff7479395e14a3f1cd0c811e19cd8ce",
+    "references/2d-animation-execution.md": "067e2fae8055dca250de52967f8aa06e46c131065196e664ae22501dc4470f04",
+    "references/acting-calibration.md": "258688716ebe21042056a73313c4fd9504441404255fa2541e1a762b5f2684b6",
+    "references/background-design.md": "34729983fb83700521218ec90f58f310412cb9993cf362922b003c55554e9ab7",
+    "references/background-visual-library.md": "76a7045b01ce527e72a00f9a31f4e457df46130040725fcafc3dd3c13c2c65c1",
+    "references/cinematic-rendering.md": "bb9adcf42a42fc3c67ef7b2ba988e005b6d0754476d63eed4f74f274bc402b0e",
+    "references/core-authoring.md": "e411d41c9ab9638b2bf9144328f64c6f8fec5a47558e1847380e025c02d39c7c",
+    "references/dialogue-performance.md": "2815d626b384271664111d8c03a58254b681cf86cbe12599294eef1d866ab30d",
+    "references/gen2-5-compatibility.md": "91626dc21c7494a19fdd4961d28072ba5080914608a27a804e996c41468138b9",
+    "references/regression-cases.md": "393686768ae554cba4cea79143dbdeda52b622585dfc5fb40a370c38120a1aab",
+    "references/seedance-execution-and-review.md": "9ffd9d514e17ebd1895615f309cad878c404530ed436cec68ae8d315b80be1b5",
+    "references/source-risk.md": "cc0d1be707c2d0250e26cbfbefdc0da7e187b3e46f55f7b731b260b8afeee660",
+    "scripts/audit_seedance_prompt.py": "98b6121beb0c79e44ee465fd099a8aa86bda0f247e1239439608ef7c82900dc7",
+    "scripts/build_analysis_proxies.py": "860dcf5017bbad866420702a4755736d406a70b4835ef5d9cffa2da0c6b547d6",
+    "scripts/migrate_source_ledger_v2_to_v3.py": "d1fc86758177e9f75ef3e396246e588720ad07f9872369ea76b870d792176532",
+    "scripts/test_build_analysis_proxies.py": "26f14d49db67e1c89fc28123b5f4ae9919a3e8e7aa0d739b811f26aad6d73587",
+    "scripts/test_migrate_source_ledger.py": "09c5aa6f6c39d651ed0859dd264263296ababc2a8e4e810d7825700a84bf2f33",
+    "scripts/test_validate_storyboard.py": "8581c2c8c8483597305be8c41975f0b6c70b0b3af2ff8033c987493457a8d386",
+    "scripts/validate_storyboard.py": "3f99fc1f036d6e9e287d290ff31ec23ab880c57962101ed6d3f024dcd49e46cc"
+  }
+}

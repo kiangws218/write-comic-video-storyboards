@@ -1,0 +1,134 @@
+[
+  {
+    "image": "第19話_05_001.jpg",
+    "composition_lock": "手部近景特写，前臂由左下伸向右上，手指弯起，手背中央亮，岩壁后衬。",
+    "source_facts": {
+      "entities": [
+        "前臂",
+        "手",
+        "岩壁"
+      ],
+      "actions": [
+        "手指弯曲",
+        "手周围有抖动线"
+      ],
+      "relations": [
+        "手在近层中央"
+      ]
+    },
+    "bubbles": [
+      [
+        "秃顶男子",
+        "天…哪…"
+      ]
+    ],
+    "jp": [
+      "なんて……こった……。"
+    ],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "男子举起的手停在眼前。",
+      "beats": [
+        "手指轻颤，弯起的指节迟迟稳不住。"
+      ],
+      "coupling": "惊愕先在手部露出，不立刻补出攻击。",
+      "landing": "手仍弯着，细颤尚未完全停下。"
+    },
+    "continuity": "问过身份后，切手部迟来的震动。",
+    "admission": "只发展手指抖动，未见手部再生时不新增再生。"
+  },
+  {
+    "image": "第19話_05_002.jpg",
+    "composition_lock": "背面近景，男子黑色头部剪影居上中，背部横过下方，近手张开在左下，后方岩壁。",
+    "source_facts": {
+      "entities": [
+        "秃顶男子",
+        "张开的手",
+        "岩壁"
+      ],
+      "actions": [
+        "手指张开",
+        "头向后侧偏"
+      ],
+      "relations": [
+        "手在左下近层，头在中后"
+      ]
+    },
+    "bubbles": [
+      [
+        "秃顶男子",
+        "双马尾…"
+      ],
+      [
+        "秃顶男子",
+        "大奶子…"
+      ]
+    ],
+    "jp": [
+      "ツインテール……。",
+      "でかい胸……。"
+    ],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "State",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "手还在颤，头偏向来者。",
+      "beats": [
+        "张开的手缓慢放松，头仍朝来者停着，两句像认出了偏好的外形。"
+      ],
+      "coupling": "惊愕转成危险的打量，只保留言语上的冒犯。",
+      "landing": "头仍向来者，手张开未发动攻击。"
+    },
+    "continuity": "从颤抖手切到男子背面，后一句冒犯来者。",
+    "admission": "不切少女身体局部，不强化情色观看，保持男子的威胁感。"
+  },
+  {
+    "image": "第19話_05_003.jpg",
+    "composition_lock": "男子正面脸部极近景，头部位于画面中央，眯眼张嘴，舌部与口边细涎线可见，背景白底。",
+    "source_facts": {
+      "entities": [
+        "秃顶男子"
+      ],
+      "actions": [
+        "眼睛眯起",
+        "嘴张开"
+      ],
+      "relations": [
+        "脸部几乎占满画面"
+      ]
+    },
+    "bubbles": [
+      [
+        "秃顶男子",
+        "你有"
+      ],
+      [
+        "秃顶男子",
+        "男朋友吗？"
+      ]
+    ],
+    "jp": [
+      "お前、",
+      "彼氏はいるのか？"
+    ],
+    "background": "omitted",
+    "background_description": "源图白色省略底场。",
+    "kind": "Reaction",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "男子刚打量完来者。",
+      "beats": [
+        "嘴角又扬起来，问题先试探后直接抛出，目光仍朝对面。"
+      ],
+      "coupling": "危险的笑容与冒犯式问话延续对来者的注意。",
+      "landing": "问完仍眯眼微笑。"
+    },
+    "continuity": "背面打量后切正脸，保留问题，不额外呈现唾液特写。",
+    "admission": "只演可见眼口，情色口腔细节简化成普通嘴部阴影。",
+    "adaptation_scope": "简化原图舌部与口涎的情色强调，保留正脸、危险笑容与男友问题。"
+  }
+]

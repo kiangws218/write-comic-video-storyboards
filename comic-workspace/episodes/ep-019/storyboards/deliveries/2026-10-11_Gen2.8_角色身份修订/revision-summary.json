@@ -1,0 +1,35 @@
+{
+  "episode": 19,
+  "clips": 32,
+  "shots": 79,
+  "seconds": 353,
+  "formal_reference_count": 69,
+  "changed_shots": 16,
+  "inspected_images": 21,
+  "baseline_sha256": "498f130adbfedda786bfea66db5000b4e2ee7635b87734cd199610741eface95",
+  "revised_sha256": "82505dad03e19563a2980064764bca8d99bccb4890e0843d6c90a93f5aadbcc8",
+  "current": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-019\\storyboards\\current\\第19话_制作分镜_Gen2.8.md",
+  "delivery": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-019\\storyboards\\deliveries\\2026-10-11_Gen2.8_角色身份修订",
+  "timings_and_refs_equal": true,
+  "japanese_quotes_equal": true,
+  "mapping": {
+    "path": "comic-workspace/character-references/角色映射.md",
+    "version": 2,
+    "date": "2026-10-11",
+    "baseline_commit": "b56148232717979e8b04a36b8191cf56df5c74a8",
+    "sha256": "39fcd670eef9771124bc570d80e68283009e23f0b97d89cde2850745c949b4be",
+    "scope": "仅摘录本话出场角色，身份设计以共享映射主档为唯一维护入口；当前 pose/contact 仍以源格为准。"
+  },
+  "structural_errors": 0,
+  "warning_count": 52,
+  "warning_classes": {
+    "multiple_speakers": 6,
+    "camera_quality": 1,
+    "performance_semantics": 38,
+    "repeated_dialogue": 1,
+    "camera_landing": 2,
+    "mixed_evidence": 4
+  },
+  "video_generated": false,
+  "source_audit": "affected identity occurrences visually reviewed; raw bubbles/integrity retained"
+}

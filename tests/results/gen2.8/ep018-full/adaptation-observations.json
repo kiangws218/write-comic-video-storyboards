@@ -1,0 +1,300 @@
+{
+  "policy": "露骨性行为及其具体身体接触、体液、性化声效不改写为可执行分镜。保留非露骨的恳求、威胁、人物辨识与叙事后果；相关原图不直接绑定生成。",
+  "observed": [
+    {
+      "image": "第18話_09_002.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "石地有裂纹；液体细节不用于生成。"
+    },
+    {
+      "image": "第18話_09_003.jpg",
+      "decision": "adapt_non_graphic_distress",
+      "safe_facts": "董白左侧面头肩，脸朝右，圆眼张口、脸侧有汗，身后岩壁。",
+      "safe_dialogue_meanings": [
+        "请求停止",
+        "指出用力过度",
+        "恳求"
+      ]
+    },
+    {
+      "image": "第18話_10_001.jpg",
+      "decision": "omit_typographic_only",
+      "safe_facts": "只有音效符号，无叙事人物或环境。"
+    },
+    {
+      "image": "第18話_10_002.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "全盔守卫与董白同时受困；不呈现具体接触与性化声息。"
+    },
+    {
+      "image": "第18話_10_003.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "背后黑色人形脸上有白眼与笑口；本格不能确认人物名字。"
+    },
+    {
+      "image": "第18話_10_004.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "不转写身体局部与性化细节。"
+    },
+    {
+      "image": "第18話_11_001.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "董白闭眼，面部有眼泪与汗；不演出性化身体运动或声音。"
+    },
+    {
+      "image": "第18話_11_002.jpg",
+      "decision": "omit_explicit_context_delivery",
+      "safe_facts": "男子眉眼特写，眼睛半眯。"
+    },
+    {
+      "image": "第18話_11_003.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "不呈现具体动作与露骨对白。"
+    },
+    {
+      "image": "第18話_11_004.jpg",
+      "decision": "omit_explicit_context_delivery",
+      "safe_facts": "董白侧面圆眼张口，脸朝右，面部紧张；性行为节奏不转为动作或声效。"
+    },
+    {
+      "image": "第18話_12_001.jpg",
+      "decision": "omit_explicit_context_delivery",
+      "safe_facts": "全盔守卫头盔下颈侧有汗；保留请求停止的剧情功能。"
+    },
+    {
+      "image": "第18話_12_002.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "身体局部与体液不用于生成。"
+    },
+    {
+      "image": "第18話_13_001.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "全盔守卫与董白受困，守卫有歉意短句；不演出接触、性化声息和身体过程。"
+    },
+    {
+      "image": "第18話_13_002.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "只借用已建立岩壁，不呈现局部与体液。"
+    },
+    {
+      "image": "第18話_13_003.jpg",
+      "decision": "adapt_non_graphic_dialogue",
+      "safe_facts": "全盔守卫头盔居右、面缝清楚，头下有汗，后景岩壁。",
+      "safe_dialogue_meanings": [
+        "问对方还想做什么",
+        "对方回答已经结束"
+      ]
+    },
+    {
+      "image": "第18話_14_001.jpg",
+      "decision": "adapt_non_graphic_dialogue",
+      "safe_facts": "全盔守卫盔面偏低，在左下；黑影男子居后，岩壁在背后。",
+      "safe_dialogue_meanings": [
+        "守卫求对方放她走",
+        "愿意承担针对自己的折磨"
+      ]
+    },
+    {
+      "image": "第18話_14_002.jpg",
+      "decision": "adapt_head_only",
+      "safe_facts": "秃顶男子头部仰起、半眯眼带笑，眼下皱纹明显，黑色尖下巴胡须；岩壁在后。",
+      "safe_dialogue_meanings": [
+        "分三段冷笑着拒绝，不可能"
+      ]
+    },
+    {
+      "image": "第18話_15_001.jpg",
+      "decision": "adapt_head_only",
+      "safe_facts": "全盔守卫的头盔局部在右，另一张紧张的眼部局部在左下；不呈现受困机制。"
+    },
+    {
+      "image": "第18話_15_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "全盔守卫侧面，盔面朝右上，头后有受困结构。",
+      "safe_dialogue_meanings": [
+        "条件？！"
+      ]
+    },
+    {
+      "image": "第18話_15_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "秃顶男子正面半眯眼微笑，尖下巴胡须。",
+      "safe_dialogue_meanings": [
+        "提出强迫条件",
+        "指定五次；露骨要求不转写"
+      ]
+    },
+    {
+      "image": "第18話_15_004.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "全盔守卫正面盔部与肩线，人物位于中部。",
+      "safe_dialogue_meanings": [
+        "愤怒辱骂并要求直接杀死自己",
+        "拒绝要求"
+      ]
+    },
+    {
+      "image": "第18話_16_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "左边裁切全盔，董白黑发头部位于右后层，岩壁铺满后方。",
+      "safe_dialogue_meanings": [
+        "董白说没关系",
+        "守卫惊讶"
+      ]
+    },
+    {
+      "image": "第18話_16_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白左侧面头部朝右，半垂眼与小笑，身后深暗。",
+      "safe_dialogue_meanings": [
+        "只有他们知道今天发生的事；性化表现省略"
+      ]
+    },
+    {
+      "image": "第18話_16_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白眼部侧面极近景，左为耳部，右为鼻部裁切。",
+      "safe_dialogue_meanings": [
+        "再忍耐一会；情绪改为艰难自我安慰"
+      ]
+    },
+    {
+      "image": "第18話_17_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "守卫正面全盔中近景，盔后受困结构横过双肩。",
+      "safe_dialogue_meanings": [
+        "质疑董白是否疯了",
+        "要求她听听自己在说什么"
+      ]
+    },
+    {
+      "image": "第18話_17_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白正面偏右闭眼张口；身体大面积暴露。",
+      "safe_dialogue_meanings": [
+        "守卫质疑是否受怪物影响；原催情说法省略"
+      ]
+    },
+    {
+      "image": "第18話_17_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "秃顶男子正面眼部极近景，双眼下方褶皱，眼白点状。",
+      "safe_dialogue_meanings": [
+        "分两段回答完全没有"
+      ]
+    },
+    {
+      "image": "第18話_18_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "头盔局部与守卫颈部侧面，右侧裁切，只见局部。",
+      "safe_dialogue_meanings": []
+    },
+    {
+      "image": "第18話_18_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白左侧面头部朝右，眼神向侧面，小笑与汗，岩壁居后。",
+      "safe_dialogue_meanings": [
+        "没有其他办法",
+        "这是唯一选择"
+      ]
+    },
+    {
+      "image": "第18話_18_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白嘴部侧面极近景在左，右后岩壁；原图有性化呼气。",
+      "safe_dialogue_meanings": [
+        "要求保密",
+        "因为是你才同意；保留对白，不演出性化声息"
+      ]
+    },
+    {
+      "image": "第18話_19_001.jpg",
+      "decision": "omit_explicit_visual",
+      "safe_facts": "被遮蔽的身体局部、后方岩壁。",
+      "safe_dialogue_meanings": []
+    },
+    {
+      "image": "第18話_19_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "守卫低头正面全盔中近景，黑色缝隙与汗，受困结构在后。",
+      "safe_dialogue_meanings": [
+        "接受条件并称对方为兽人",
+        "决定艰难而别无办法"
+      ]
+    },
+    {
+      "image": "第18話_19_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "守卫头盔抬起后侧面，右后岩壁。",
+      "safe_dialogue_meanings": [
+        "画外男子说反悔",
+        "守卫惊讶"
+      ]
+    },
+    {
+      "image": "19_004.jpg",
+      "decision": "duplicate_reaction",
+      "safe_facts": "与19_003同一守卫姿态和岩壁，裁掉上方反悔气泡。",
+      "safe_dialogue_meanings": [
+        "守卫惊讶；与前一文件是同一反应，不重复演出"
+      ]
+    },
+    {
+      "image": "第18話_20_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "秃顶男子正面咬牙、鼻梁紧皱，下方肩胸轮廓，后方岩壁。",
+      "safe_dialogue_meanings": [
+        "我想要的是"
+      ]
+    },
+    {
+      "image": "第18話_20_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白张口流泪，守卫在身后，躯干及手部有性化接触。",
+      "safe_dialogue_meanings": [
+        "男子想要绝望与哭喊；露骨目的省略",
+        "董白请求停手",
+        "担忧自己忘掉未婚夫"
+      ]
+    },
+    {
+      "image": "第18話_21_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "秃顶男子眉眼与鼻梁极近景，低眉直视，面部紧绷。",
+      "safe_dialogue_meanings": [
+        "守卫说高中毕业后已放下对她的感情",
+        "董白惊讶追问以前喜欢过自己"
+      ]
+    },
+    {
+      "image": "第18話_21_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "秃顶男子近处握拳，两名受困者在左后，被挤压的轮廓；中央为深黑底。",
+      "safe_dialogue_meanings": [
+        "男子说你们俩去死吧"
+      ]
+    },
+    {
+      "image": "第18話_21_003.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "守卫头盔向后仰，左侧抬手贴近盔部，受困结构在身后。",
+      "safe_dialogue_meanings": [
+        "守卫痛叫；按攻击反应，不作性化声效"
+      ]
+    },
+    {
+      "image": "第18話_22_001.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "董白仰头闭眼张口，双马尾，肩身局部，纵向动势。",
+      "safe_dialogue_meanings": [
+        "董白惊叫；按受攻击反应，不作性化声效"
+      ]
+    },
+    {
+      "image": "第18話_22_002.jpg",
+      "decision": "adapt_non_graphic_plot",
+      "safe_facts": "白底上尖锐黑色断裂笔触，自左下与右下汇向斜上方。",
+      "safe_dialogue_meanings": []
+    }
+  ]
+}

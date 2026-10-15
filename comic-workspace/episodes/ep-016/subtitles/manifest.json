@@ -1,0 +1,21 @@
+{
+  "episode": "ep-016",
+  "script_duration_seconds": 431.0,
+  "full_duration_seconds": 470.844,
+  "script_cues": 128,
+  "full_cues": 146,
+  "estimated_cues": 18,
+  "estimated_panels": 8,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第16话_中文_脚本范围01.srt",
+      "script": "第16话_制作分镜_Gen2.8.md",
+      "duration_seconds": 431.0,
+      "cues": 128
+    }
+  ],
+  "review_hints": 8,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

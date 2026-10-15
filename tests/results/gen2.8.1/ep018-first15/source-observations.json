@@ -1,0 +1,1053 @@
+{
+  "version": 3,
+  "source_language": "zh",
+  "scope": "第18話_01_001.jpg—第18話_05_003.jpg（含终点），15格",
+  "evidence_workflow": "逐格查看黑白原图的720p代理后先记录事实；随后规划表演和写稿。原稿尚未读取。",
+  "character_registry": [
+    {
+      "id": "dongbai",
+      "canonical_name": "董白",
+      "reference_paths": [
+        "comic-workspace/character-references/turnarounds/董白.png"
+      ],
+      "traits": "齐刘海、黑色长双马尾及浅色内侧发束、高领深色服装",
+      "status": "visually_confirmed"
+    },
+    {
+      "id": "haruko",
+      "canonical_name": "春子",
+      "reference_paths": [
+        "comic-workspace/character-references/turnarounds/春子.png"
+      ],
+      "traits": "长直发、平直刘海、半垂眼、带帽短袖深色衬衣",
+      "status": "visually_confirmed"
+    },
+    {
+      "id": "qing",
+      "canonical_name": "青",
+      "reference_paths": [
+        "comic-workspace/character-references/turnarounds/青.png"
+      ],
+      "traits": "浅色长发、尖耳、翻领上衣与白领巾",
+      "status": "visually_confirmed"
+    },
+    {
+      "id": "closed_helmet_guard",
+      "canonical_name": "全盔守卫",
+      "reference_paths": [],
+      "traits": "覆盖面部的光滑全盔、黑色Y形面缝、金属肩甲与护臂",
+      "status": "stable_role_label",
+      "identity_audit": "已查看欧铂与欧迈及参考；前者双角及裸胸、后者裸露头脸，均不匹配，未强配人名。"
+    }
+  ],
+  "panels": [
+    {
+      "image": "第18話_01_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "哦？是吗。／这可是你自找的",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "omitted",
+        "description": "人物两侧留白；没有具体环境线索。"
+      },
+      "composition_lock": "略低机位的正面倾斜头肩近景；双马尾占两侧，额头到上胸入画；董白睁圆眼睛，小瞳孔，嘴角略扬。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "双马尾",
+          "高领深色衣料"
+        ],
+        "actions": [
+          "董白睁圆眼睛注视前方",
+          "董白嘴角略扬"
+        ],
+        "relations": [
+          "双马尾垂在脸部两侧",
+          "衣领遮住颈部下段"
+        ]
+      },
+      "story_context": [
+        "带挑衅意味的回应；是否攻击不是这格的可见事实。"
+      ],
+      "non_renderable_terms": [
+        "攻击命中"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "哦？是吗。"
+        },
+        {
+          "id": "b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "这可是你自找的"
+        }
+      ],
+      "performance_plan": {
+        "opening": "董白正面朝镜头，脸较正，带着浅笑注视前方。",
+        "beats": [
+          "应答时略抬眉，头向前倾，展开有压迫感的直视。",
+          "说到自找时把头歪向右侧，肩膀跟着前压，笑意收窄，睁圆眼睛；停在源图的斜头逼视与浅笑。"
+        ],
+        "coupling": "同一挑衅回应内的压力增强，头与肩共同参与，身体不发动新的攻击。",
+        "landing": "保持倾斜的头、睁圆双眼和微扬嘴角，不回到中性表情。"
+      }
+    },
+    {
+      "image": "第18話_01_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": false,
+      "page_overlays": [
+        {
+          "kind": "title",
+          "source_text": "WHAT HAPPENS INSIDE THE DUNGEON",
+          "render": false,
+          "disposition": "纯作品标题，视觉与音频均省略"
+        }
+      ],
+      "background": {
+        "type": "omitted",
+        "description": "整格仅为标题与纸面。"
+      },
+      "composition_lock": "没有可生成的叙事画面。",
+      "source_facts": {
+        "entities": [],
+        "actions": [],
+        "relations": []
+      },
+      "story_context": [
+        "作品标题插页，不是场景转换。"
+      ],
+      "non_renderable_terms": [
+        "WHAT HAPPENS INSIDE THE DUNGEON"
+      ],
+      "bubbles": []
+    },
+    {
+      "image": "第18話_01_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_viewed": true,
+      "original_resolution_reason": "对照后以原图复查中部竖向分隔，确认左右为并置的两个视图而非虚构同机位前后深度。",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "呃…哈？！／怎么突然就要打起来了？！",
+          "render": false
+        },
+        {
+          "kind": "reaction_marks",
+          "source_text": "青头旁惊讶记号",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "青后方画出凹凸岩壁，下部浅淡处理。"
+      },
+      "composition_lock": "左右并置画面：左侧为春子背侧衣肩与竖起前臂的局部近景，头裁在画外，手抓衣料；右侧为青的正面胸像，尖耳、圆眼、张口与身前双手清楚，岩壁在右侧后层。",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "青",
+          "岩壁",
+          "春子身前衣料"
+        ],
+        "actions": [
+          "春子近侧前臂抬起，一手抓住衣料",
+          "青睁眼张口，双手曲指举在身前"
+        ],
+        "relations": [
+          "春子局部在左侧独立视图，青在右侧独立视图",
+          "两个视图不建立人物前后深度或新接触"
+        ]
+      },
+      "story_context": [
+        "青对冲突升级惊讶；本格不画交战。"
+      ],
+      "non_renderable_terms": [
+        "打斗命中"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "呃…哈？！"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "怎么突然就要打起来了？！"
+        }
+      ],
+      "performance_plan": {
+        "opening": "春子抬着近侧前臂，手抓衣料；青双手已在身前，睁眼看向左侧。",
+        "beats": [
+          "青惊讶地上身后缩，双手一起向胸前提，吸气张口。",
+          "追问时她又向前探出肩膀，曲起的手指在胸前悬住，停在张口、圆眼的源图姿态。"
+        ],
+        "coupling": "春子维持抓衣姿态，青的退缩再追问回应当前冲突，双方没有新接触。",
+        "landing": "青仍紧张地张口，双手悬在胸前；春子手仍抓衣料。"
+      }
+    },
+    {
+      "image": "第18話_02_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "原尺寸逐手辨认：春子自己的手在衣领旁抓衣，青的一只白袖手环住春子抬起的前臂；没有第二只青的手搭肩。",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "够了，到此为止吧／都已经不是小孩子了",
+          "render": false
+        },
+        {
+          "kind": "sfx",
+          "source_text": "接触及嘟囔拟声",
+          "render": false,
+          "disposition": "转为手接触衣料的轻声；无法核实内容的嘟囔不编台词"
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "人物上方画出岩壁。"
+      },
+      "composition_lock": "平视紧凑双人胸像，春子居左前景、半垂眼嘴略张，自抬前臂，自己的手在衣领旁；青从右侧探头张口，用一只白袖手环住春子的前臂，接触位于下半部。",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "青",
+          "岩壁"
+        ],
+        "actions": [
+          "青张口，用一只手握住春子抬起的前臂",
+          "春子半垂眼，嘴略张，自己的手在衣领旁抓衣"
+        ],
+        "relations": [
+          "春子在左前景，青从右侧靠近",
+          "青的一只白袖手环住春子的前臂，衣领旁的手属于春子自己"
+        ]
+      },
+      "story_context": [
+        "青介入劝阻，春子不积极回应；接触尚未解除。"
+      ],
+      "non_renderable_terms": [
+        "推倒",
+        "拥抱"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "够了，到此为止吧"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "都已经不是小孩子了"
+        }
+      ],
+      "performance_plan": {
+        "opening": "春子半垂眼，前臂抬在胸前，自己的手抓着衣领旁的衣料；青靠在右侧，一只手接近她的前臂。",
+        "beats": [
+          "青用一只手握住春子抬起的前臂，探身劝阻。",
+          "青紧皱眉头说完劝告，春子半垂眼把脸偏向左侧外，仍抓着衣料。"
+        ],
+        "coupling": "明确演出介入与单手接触形成；春子的冷淡回应和青的焦急并存。",
+        "landing": "青仍握着春子的前臂，春子自己的手仍在衣领旁，两人的态度不同。"
+      },
+      "original_resolution_viewed": true
+    },
+    {
+      "image": "第18話_02_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "你们这些小…／您又在惹事了，女士／您受到纪律处分还没过多久，又开始惹麻烦了…",
+          "render": false
+        },
+        {
+          "kind": "motion_marks",
+          "source_text": "守卫头边及肩边运动记号",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "人物后方凹凸岩壁。"
+      },
+      "composition_lock": "平视正面双人中近景，董白胸腰占右前景、圆睁眼嘴略开；全盔守卫在左后方，Y形面缝正对前方，左下可见护甲手臂与董白手臂重叠，接触细节被裁切。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "全盔守卫",
+          "岩壁",
+          "金属护臂"
+        ],
+        "actions": [
+          "董白圆睁眼睛，嘴略开",
+          "全盔守卫从董白左后方靠近"
+        ],
+        "relations": [
+          "董白在右前景，守卫在左后方",
+          "画面左下护甲手臂与董白手臂重叠"
+        ]
+      },
+      "story_context": [
+        "董白的骂句被守卫打断；纪律处分是对话信息，不生成回忆。"
+      ],
+      "non_renderable_terms": [
+        "纪律处分画面"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "你们这些小…"
+        },
+        {
+          "id": "b2",
+          "speaker": "全盔守卫",
+          "kind": "dialogue",
+          "source_text": "您又在惹事了，女士"
+        },
+        {
+          "id": "b3",
+          "speaker": "全盔守卫",
+          "kind": "dialogue",
+          "source_text": "您受到纪律处分还没过多久，又开始惹麻烦了…"
+        }
+      ],
+      "performance_plan": {
+        "opening": "董白睁圆眼睛、嘴刚张开；全盔守卫在左后方。",
+        "beats": [
+          "董白带着不满开口，守卫在她身后压近并开口；她的话停在半截，嘴形收住，眼睛转向左侧。",
+          "衍生守卫胸像以头盔略向前倾承接规劝，末尾盔面仍朝镜头右侧外。"
+        ],
+        "coupling": "用真实打断保留对话次序；盔内面部不可见，不编眉眼。",
+        "landing": "董白暂时停口；守卫仍在其后。"
+      }
+    },
+    {
+      "image": "第18話_02_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "原尺寸确认下缘手甲与董白近侧手臂的接触；不用上臂一词强定被裁切的部位。",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "现在你们两位也该去做自己的事情了",
+          "render": false
+        },
+        {
+          "kind": "sfx",
+          "source_text": "金属甲片轻响拟声",
+          "render": false,
+          "disposition": "转换为铠甲轻碰声"
+        },
+        {
+          "kind": "motion_marks",
+          "source_text": "转头及肩旁运动记号",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "整片岩壁，人物下方浅化。"
+      },
+      "composition_lock": "平视横向双人中近景；守卫正面在左，董白背侧身占右，回头朝左上看向守卫；下缘一只护甲手抓住董白的近侧手臂。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "全盔守卫",
+          "岩壁",
+          "金属手甲"
+        ],
+        "actions": [
+          "董白回头看向全盔守卫",
+          "全盔守卫用一只护甲手抓着董白近侧手臂"
+        ],
+        "relations": [
+          "全盔守卫在左，董白在右",
+          "护甲手与董白手臂接触"
+        ]
+      },
+      "story_context": [
+        "守卫让争执双方各做各的事；春子不在此格可见范围内。"
+      ],
+      "non_renderable_terms": [
+        "拖走春子"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "全盔守卫",
+          "kind": "dialogue",
+          "source_text": "现在你们两位也该去做自己的事情了"
+        }
+      ],
+      "performance_plan": {
+        "opening": "全盔守卫在左侧抓着董白手臂；董白身体朝右，脸尚偏前。",
+        "beats": [
+          "董白诧异地回头朝左上，长马尾顺势摆开，停到原图回望位置。",
+          "守卫规劝时盔面略压低，抓臂接触持续；董白留着睁圆眼睛听完。"
+        ],
+        "coupling": "回望回应身旁规劝，手的控制关系不改，不演出拖拽或松手。",
+        "landing": "董白朝守卫回望，抓臂关系仍在。"
+      },
+      "original_resolution_viewed": true
+    },
+    {
+      "image": "第18話_02_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "…走吧／切…她简直就是个混蛋。",
+          "render": false
+        },
+        {
+          "kind": "sfx",
+          "source_text": "春子鼻息拟声",
+          "render": false,
+          "disposition": "转为短促鼻息"
+        },
+        {
+          "kind": "motion_marks",
+          "source_text": "两人头旁细小姿态变化记号",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "上部岩壁，向下逐渐浅化。"
+      },
+      "composition_lock": "平视三人中近景，青占左前景看向右，春子居中正面、头略歪、半垂眼；董白的背影在右后方，脸不可见。青与春子下缘手臂相近，明确手部接触被裁切。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子",
+          "董白",
+          "岩壁"
+        ],
+        "actions": [
+          "青侧脸看向春子",
+          "春子半垂眼，嘴略张",
+          "董白背向镜头"
+        ],
+        "relations": [
+          "青在左前景，春子在中前景，董白在右后方",
+          "董白与前景两人分离"
+        ]
+      },
+      "story_context": [
+        "青提出离开，春子仍不满；对话不单独授权前景两人走出画面。"
+      ],
+      "non_renderable_terms": [
+        "离开洞窟"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "…走吧"
+        },
+        {
+          "id": "b2",
+          "speaker": "春子",
+          "kind": "dialogue",
+          "source_text": "切…她简直就是个混蛋。"
+        }
+      ],
+      "performance_plan": {
+        "opening": "青在左侧转脸看春子；春子在中间半垂眼，董白背影在右后方。",
+        "beats": [
+          "青迟疑地提议，眉梢抬起，肩膀向春子靠近。",
+          "春子不耐烦地歪头，把脸略偏开，鼻中出气后低声抱怨，停在半垂眼的斜头姿态。"
+        ],
+        "coupling": "青试着结束争执，春子仍有余怒；董白背景背影不作同步反应。",
+        "landing": "春子目光低低落在画面左下，青等着她的回应，背景董白仍背向镜头。"
+      }
+    },
+    {
+      "image": "第18話_03_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_viewed": true,
+      "original_resolution_reason": "原尺寸确认挥开处手臂与手甲的间隙：董白近侧手臂与守卫手甲分离，未见击中其他部位。",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "嘿，把手放开／我没想着找人打架",
+          "render": false
+        },
+        {
+          "kind": "sfx",
+          "source_text": "短促挥开拟声及两处行进拟声",
+          "render": false,
+          "disposition": "转为脱离时衣料短擦与地面轻脚步，画面不生成排字"
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "上部岩壁清楚、下部浅淡。"
+      },
+      "composition_lock": "平视后侧双人中景，守卫在左，头盔侧向右；董白背向镜头在右，一只近侧手臂往左抬，守卫弯起的护甲手在中上部，双方手臂间有间隙，近董白臂侧有动作记号。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "全盔守卫",
+          "岩壁"
+        ],
+        "actions": [
+          "董白近侧手臂摆离守卫的手",
+          "全盔守卫手甲抬起，手与董白手臂已分离"
+        ],
+        "relations": [
+          "守卫位于左，董白背身位于右",
+          "守卫手甲与董白手臂脱离"
+        ]
+      },
+      "story_context": [
+        "承接前格抓臂，董白让接触解除并否认找人打架；没有新攻击对象或命中结果。"
+      ],
+      "non_renderable_terms": [
+        "攻击守卫面部"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "嘿，把手放开"
+        },
+        {
+          "id": "b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "我没想着找人打架"
+        }
+      ],
+      "performance_plan": {
+        "opening": "董白背身在右，守卫在左，护甲手仍贴住她的近侧手臂。",
+        "beats": [
+          "董白不耐烦地摆开近侧手臂，肩背跟着转动，甩脱抓臂接触；守卫的手退到上方，形成源图间隙。",
+          "她背着镜头继续辩解，肩膀往前带，长马尾随摆臂摇动。"
+        ],
+        "coupling": "抓臂被拒绝，解除动作明确；只形成源图分离，不追加打击、退步或新接触。",
+        "landing": "两人的手臂分开，董白背身向前，守卫手甲悬在胸前。"
+      }
+    },
+    {
+      "image": "第18話_03_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [],
+      "background": {
+        "type": "physical",
+        "description": "上部岩壁，下部浅化；没有可辨门或出口。"
+      },
+      "composition_lock": "平视后方双人中景，守卫居左且更高，董白在右，两个背影隔开；董白双马尾垂下，守卫手臂垂在身侧，下身被裁切。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "全盔守卫",
+          "岩壁"
+        ],
+        "actions": [
+          "两人背向镜头",
+          "守卫双臂垂在身侧"
+        ],
+        "relations": [
+          "守卫在左，董白在右",
+          "两人之间留有间隙"
+        ]
+      },
+      "story_context": [
+        "上一格行进拟声与当前远一些的背影支持继续行进；脚部和具体路线不可见。"
+      ],
+      "non_renderable_terms": [
+        "洞口",
+        "出门"
+      ],
+      "bubbles": [],
+      "performance_plan": {
+        "opening": "守卫在左、董白在右，背向镜头，守卫的手仍接着前格抬在身前。",
+        "beats": [
+          "守卫把手降回身侧；两个背影沿画面深处缓慢推进，肩部有轻微行进起伏，董白马尾随步幅左右摆动。"
+        ],
+        "coupling": "上一格脱离后继续背向前行，保持左右间距，不凭台词新增走位路线。",
+        "landing": "同一后方构图保留两个分离背影，不走出画面，不抵达新地点。"
+      }
+    },
+    {
+      "image": "第18話_03_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "突然急动拟声",
+          "render": false,
+          "disposition": "转换为急促衣料和发束擦动声"
+        },
+        {
+          "kind": "reaction_bubble",
+          "source_text": "？！！",
+          "render": false,
+          "disposition": "纯惊讶标点，不编新增台词"
+        },
+        {
+          "kind": "speed_lines",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "岩壁清楚，画面边缘有漫画速度线。"
+      },
+      "composition_lock": "平视带倾斜动势的董白中近景，身体背侧面由左下到右上，脸向右回望且双眼睁圆，双马尾甩向左上；左缘仅有守卫一部分甲片轮廓。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "守卫局部甲片",
+          "岩壁"
+        ],
+        "actions": [
+          "董白快速转身回望画面右侧",
+          "董白双马尾甩向左上"
+        ],
+        "relations": [
+          "董白位于右前景",
+          "守卫只露在左边缘"
+        ]
+      },
+      "story_context": [
+        "从背行转为突然回身；没有可見的新追逐者或攻击目标。"
+      ],
+      "non_renderable_terms": [
+        "追逐者"
+      ],
+      "bubbles": [],
+      "performance_plan": {
+        "opening": "董白身体背侧向镜头，双马尾垂在肩背后，左缘露出守卫甲片。",
+        "beats": [
+          "董白突然扭身回头，肩背带动脸转向画面右侧，睁圆双眼；马尾滞后甩开。"
+        ],
+        "coupling": "回身主动作由前格背姿发展，快速转头不是单独眨眼；当前目标只用画面方向。",
+        "landing": "躯干斜向右上、脸朝右，马尾甩在左上，恢复当前源图执行相。"
+      }
+    },
+    {
+      "image": "第18話_04_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "composite_file": true,
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "连续急促脚步拟声",
+          "render": false,
+          "disposition": "转为右后方向快速接近的脚步声；不凭拟声新增人物"
+        },
+        {
+          "kind": "reaction_bubble",
+          "source_text": "？",
+          "render": false,
+          "disposition": "表现疑惑，未补口头句"
+        },
+        {
+          "kind": "watermark",
+          "source_text": "mangaduki.co",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "上下两格都画出相同凹凸岩壁，低处浅化。"
+      },
+      "composition_lock": "上格：平视后方双人中景，春子左、青右，背影并排。下格：春子右侧脸肩近景，脸朝左，半垂眼，长直发占右侧。文件中间大块纸面与两格边框不是叙事空间。",
+      "source_facts": {
+        "entities": [
+          "春子",
+          "青",
+          "岩壁"
+        ],
+        "actions": [
+          "春子与青背向镜头并排",
+          "春子转头朝画面左侧回望"
+        ],
+        "relations": [
+          "上格春子在左，青在右",
+          "下格只显示春子头肩"
+        ]
+      },
+      "story_context": [
+        "同一文件包含两个真实漫画格，分成两个图像参考和编号镜头。"
+      ],
+      "non_renderable_terms": [
+        "mangaduki.co"
+      ],
+      "bubbles": [],
+      "subpanels": [
+        {
+          "image": "第18話_04_001_上格.jpg",
+          "region": "top",
+          "facts": {
+            "entities": [
+              "春子",
+              "青",
+              "岩壁"
+            ],
+            "actions": [
+              "春子与青背向镜头并排"
+            ],
+            "relations": [
+              "春子在左，青在右"
+            ]
+          },
+          "performance_plan": {
+            "opening": "春子在左、青在右，并排背身。",
+            "beats": [
+              "急促脚步响起时，春子的肩膀略停顿，青朝左偏脸，保持站位。"
+            ],
+            "coupling": "短暂注意到声响，未提前回身或与画外者接触。",
+            "landing": "两人仍并排背身。"
+          }
+        },
+        {
+          "image": "第18話_04_001_下格.jpg",
+          "region": "bottom",
+          "facts": {
+            "entities": [
+              "春子",
+              "岩壁"
+            ],
+            "actions": [
+              "春子转头朝画面左侧回望"
+            ],
+            "relations": [
+              "长直发占据脸部右侧"
+            ]
+          },
+          "performance_plan": {
+            "opening": "春子半垂着眼，脸尚偏向画面左前方。",
+            "beats": [
+              "春子疑惑地侧过头回望左侧，眉梢抬起，长发随转头掠过肩。"
+            ],
+            "coupling": "把当前关注转向声响方向，未猜测画外人的意图。",
+            "landing": "半垂眼的左侧脸停在源图方向。"
+          }
+        }
+      ]
+    },
+    {
+      "image": "第18話_04_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_viewed": true,
+      "original_resolution_reason": "原图核对横贯前景的条带和肢体；又看上色版确认条带为棕色长发。未确认画外命中点，不把细发线误作刀刃，不把黑色漫画飞溅画成流血。",
+      "renderable_visual": true,
+      "auxiliary_color_reference": "comic-workspace/episodes/ep-018/source/panels/第18话_004_002.jpg",
+      "page_overlays": [
+        {
+          "kind": "sfx",
+          "source_text": "快速挥臂、扫动拟声",
+          "render": false,
+          "disposition": "转换为短而锐的破风声"
+        },
+        {
+          "kind": "speed_lines",
+          "render": false
+        },
+        {
+          "kind": "impact_ink",
+          "render": false,
+          "disposition": "黑色飞溅为冲击画法；未核实物质，不生成血滴或颗粒"
+        }
+      ],
+      "background": {
+        "type": "graphic",
+        "description": "高速动作衬底、边缘短岩纹；主导为漫画速度线。"
+      },
+      "composition_lock": "董白的脸在上部，圆睁眼睛；黑色上臂带在右中，手臂从右中伸向左边界；长发条带跨过手臂和胸前，遮住下半部，双马尾拖向左；没有画出完整受击者、拳头或命中点。",
+      "source_facts": {
+        "entities": [
+          "董白",
+          "横贯前景的长发"
+        ],
+        "actions": [
+          "董白近侧手臂快速向画面左侧横扫",
+          "长发从左向右扫过董白胸前"
+        ],
+        "relations": [
+          "长发遮挡董白胸前与前臂下部",
+          "手臂从右侧上臂带附近横伸至左边界，末端被裁切"
+        ]
+      },
+      "story_context": [
+        "动作段的快速攻击执行相，但本格不能定位画外命中部位；既不添加刀具也不添加伤口。"
+      ],
+      "non_renderable_terms": [
+        "刀刃",
+        "血滴",
+        "头部命中点"
+      ],
+      "bubbles": [],
+      "performance_plan": {
+        "opening": "董白圆睁眼，肩背已经回身，近侧手臂从身旁起动。",
+        "beats": [
+          "董白转肩将近侧手臂快速挥向左侧，长发从左向右扫过胸前和前臂。"
+        ],
+        "coupling": "主动作兑现横向挥臂，保留遮挡与画外边界，不用发丝代替手臂运动。",
+        "landing": "手臂横伸朝左，发束越过前景，源图执行相清楚。"
+      }
+    },
+    {
+      "image": "第18話_05_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_viewed": true,
+      "original_resolution_reason": "原尺寸辨认右下手指和长发遮挡：只露曲指局部，不能确定手的主人、完整握法或额外道具。上色版确认横向条带是棕发。",
+      "renderable_visual": true,
+      "auxiliary_color_reference": "comic-workspace/episodes/ep-018/source/panels/第18话_005_001.jpg",
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "春…！！",
+          "render": false
+        },
+        {
+          "kind": "impact_ink",
+          "render": false,
+          "disposition": "不当作真实血液或颗粒"
+        }
+      ],
+      "background": {
+        "type": "omitted",
+        "description": "青后方留白，前景由长发占据。"
+      },
+      "composition_lock": "正面青胸像，双眼圆睁、嘴张，尖耳露右侧；棕色长发在胸前横穿，右下仅有一小段曲指局部与发束相叠。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "前景长发",
+          "右下曲指局部"
+        ],
+        "actions": [
+          "青双眼圆睁，张口",
+          "前景长发横向掠过"
+        ],
+        "relations": [
+          "长发遮住青的胸前",
+          "右下曲指与发束重叠"
+        ]
+      },
+      "story_context": [
+        "青刚开始喊春子的名字，下一格补全称呼。手部主人不确定，不赋予握持机制。"
+      ],
+      "non_renderable_terms": [
+        "断发",
+        "剪刀"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "春…！！"
+        }
+      ],
+      "performance_plan": {
+        "opening": "青正面睁着眼，胸前已有高速掠过的长发，右下曲指局部可见。",
+        "beats": [
+          "青惊慌地向前探肩，眼睛骤然睁圆，急着张口，却只喊出名字开头。",
+          "发束从前景掠过，青悬着未说完的口形。"
+        ],
+        "coupling": "惊呼被突然动势打断；不补看不见的接触，右下手指只保留局部。",
+        "landing": "青张口、双眼睁圆，胸前长发仍横穿。"
+      }
+    },
+    {
+      "image": "第18話_05_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_reason": "",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "春子姐姐！！！",
+          "render": false
+        },
+        {
+          "kind": "sfx",
+          "source_text": "重响拟声",
+          "render": false,
+          "disposition": "一声短促沉闷撞击声；不命名画外撞击物"
+        },
+        {
+          "kind": "speed_lines",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "狭窄竖向岩壁画面，上部岩块清楚，下部浅淡。"
+      },
+      "composition_lock": "岩壁局部竖向近景，人物均不在可见范围；右侧白纸面的气泡与拟声不是场景。",
+      "source_facts": {
+        "entities": [
+          "岩壁"
+        ],
+        "actions": [],
+        "relations": [
+          "岩壁从上部较暗过渡到下部较亮"
+        ]
+      },
+      "story_context": [
+        "青继续画外惊呼；声音说明画外冲击，不授权撞墙、摔倒或岩壁破裂。"
+      ],
+      "non_renderable_terms": [
+        "撞墙",
+        "岩壁破裂"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "春子姐姐！！！"
+        }
+      ],
+      "performance_plan": {
+        "opening": "岩壁局部，无可见人物。",
+        "beats": [
+          "画面停留于岩壁，由画外惊呼与撞击声承接动作结果。"
+        ],
+        "coupling": "主动留空画面，保留原格的画外声与未见机制。",
+        "landing": "岩壁结构稳定。"
+      }
+    },
+    {
+      "image": "第18話_05_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "original_resolution_viewed": true,
+      "original_resolution_reason": "原图确认青的手臂沿春子肩背搭靠、春子低头弯腰，董白右后方闭眼笑且一手曲指举在脸旁。手指间没有可确认新道具。",
+      "renderable_visual": true,
+      "page_overlays": [
+        {
+          "kind": "bubble",
+          "source_text": "哈。舒坦多了。／你疯了？！／你做的太过分了…！！",
+          "render": false
+        },
+        {
+          "kind": "breath_mark",
+          "render": false,
+          "disposition": "只表现非言语呼气，不生成符号"
+        },
+        {
+          "kind": "motion_marks",
+          "render": false
+        }
+      ],
+      "background": {
+        "type": "physical",
+        "description": "三人后方凹凸岩壁，上方清楚、下方浅化。"
+      },
+      "composition_lock": "平视三人中景；青在左前方睁眼张口、手臂搭向春子肩背；春子在中前景深深弯腰低头，刘海遮脸、双侧长发垂下；董白在右后方闭眼笑，近侧手曲指举在脸边，另一臂垂下。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "春子",
+          "董白",
+          "岩壁"
+        ],
+        "actions": [
+          "青张口皱眉，手臂搭在春子肩背",
+          "春子低头弯腰，一只自己的手贴在脸侧，长发向下垂",
+          "董白闭眼笑，一手曲指举在脸旁"
+        ],
+        "relations": [
+          "青位于左前景，春子位于中前景，董白位于右后方",
+          "青的手臂与春子肩背接触",
+          "春子自己的掌贴在脸侧"
+        ]
+      },
+      "story_context": [
+        "春子受冲击后弯身，青惊怒责问；董白舒坦的笑与二人的状态形成反差。未画伤口、断发或昏迷。"
+      ],
+      "non_renderable_terms": [
+        "断发",
+        "昏迷",
+        "伤口特写"
+      ],
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "哈。舒坦多了。"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "你疯了？！"
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "你做的太过分了…！！"
+        }
+      ],
+      "performance_plan": {
+        "opening": "春子低头弯腰，自己的掌贴在脸侧，青的手臂已搭在她肩背；董白在右后方，一手举在脸边。",
+        "beats": [
+          "董白一脸舒坦地闭眼笑，肩膀随呼气松下来，举着的手指放松；青护着春子，眉头越皱越紧，转脸向右质问。",
+          "衍生双人镜头保留搀扶接触与春子的覆脸手；青更急切地向画面右侧外探肩，春子仍低着头，肩膀随呼吸起伏。"
+        ],
+        "coupling": "得意与惊怒不同步，青的责问发生在扶住春子的任务中；春子不被强行抬头回应。",
+        "landing": "春子弯着腰，手留在脸侧，青扶着她朝右质问，董白仍笑；不提前演出后续报复。"
+      }
+    }
+  ]
+}

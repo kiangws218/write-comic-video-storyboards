@@ -1,0 +1,1157 @@
+{
+  "version": 2,
+  "panels": [
+    {
+      "image": "ch15_p01_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白云层与浅灰天空填满画面。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "云层与天空形成静止开场，标题落在画面中央，画面焦点停在中央留白。",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p02_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "黑白网点与人物衣料边缘填满手掌四周。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "春子右手抬入画面，五指先收紧再张开，手腕停在下压前",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p02_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "白底冲击区与黑色放射线铺满人物轮廓外侧。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "手掌落在青被粉色布料包住的臀部，接触处红色强调瞬间扩开",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": [
+        {
+          "id": "ch15_p02_c002_b01",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "呀啊啊啊！",
+          "status": "mapped",
+          "script_text": "きゃあああっ!!!",
+          "target": "片段2/分镜2",
+          "seconds": 1.6
+        }
+      ]
+    },
+    {
+      "image": "ch15_p03_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "碎石路面铺在下半幅，树林与阴云位于人物身后。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "春子俯身把脸朝向青，目光压在她身上",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p03_c001_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "居然敢骗我。",
+          "status": "mapped",
+          "script_text": "よくも私に嘘をつきましたね。",
+          "target": "片段3/分镜1",
+          "seconds": 2.4
+        },
+        {
+          "id": "ch15_p03_c001_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "干嘛！为什么打我！",
+          "status": "mapped",
+          "script_text": "何ですか?! どうして叩くんですか?!",
+          "target": "片段3/分镜1",
+          "seconds": 2.5
+        }
+      ]
+    },
+    {
+      "image": "ch15_p03_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "带裂纹的碎石地面铺在白发下，深色衣摆形成上缘遮挡。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青伏在路面抬眼，先咬住下唇，右侧眉梢轻颤",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p03_c002_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "知道错了吗？",
+          "status": "mapped",
+          "script_text": "反省しましたか？",
+          "target": "片段3/分镜2",
+          "seconds": 1.3
+        },
+        {
+          "id": "ch15_p03_c002_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "呜……至少告诉我为什么打屁股……",
+          "status": "mapped",
+          "script_text": "うううっ……せめて、どうしてお尻を叩いたのか教えてください……",
+          "target": "片段3/分镜2",
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "image": "ch15_p04_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰白云层与浅灰天空填满整幅画面。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "云层在画面上方展开，明暗交界缓慢改变，落点停在云层与天空的交界。",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p04_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "石路、草丛、岩石与树林形成林间通道。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "春子、青和矮人沿林间石路向前走，步幅依次错开",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p04_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "道路与树丛网点铺在人物身后，眩晕线围住头部。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青跟在队伍中踉跄半步，肩膀下垂，眼睛呈旋涡状",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p05_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "浅灰天空与远处树冠填满两人头肩之间。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "春子侧头提问，视线稳稳压在青身上",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p05_c001_b01",
+          "speaker": "春子",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "没约会过又不是罪，为什么要为这种事撒谎？",
+          "status": "mapped",
+          "script_text": "デートしたことがないのは罪ではないのに、どうしてそんなことで嘘をついたんですか？",
+          "target": "片段5/分镜1",
+          "seconds": 4.7
+        },
+        {
+          "id": "ch15_p05_c001_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "因、因为……我以为你会一直拿这件事取笑我……",
+          "status": "mapped",
+          "script_text": "だ、だって……！ ずっとそのことで私をからかうと思ったんです……",
+          "target": "片段5/分镜2",
+          "seconds": 3.8
+        }
+      ],
+      "coverage_reason": "保留当前面板的表演连续性，并用具体视线、呼吸和手部动作承载信息。"
+    },
+    {
+      "image": "ch15_p05_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "淡冰青向冷白的晶石特写背景填满晶体周围。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青的手指沿晶石边缘轻擦，晶石从掌心前景向画面中心倾斜",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p05_c002_b01",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "你也是为了某个目标才出来冒险的吧？",
+          "status": "mapped",
+          "script_text": "あなたも、何か目的があって冒険に出たんでしょう？",
+          "target": "片段6/分镜1",
+          "seconds": 2.3
+        },
+        {
+          "id": "ch15_p05_c002_b02",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "真有这种只有特定条件的人才能碰的石头。",
+          "status": "mapped",
+          "script_text": "特定の条件を満たす者だけが触れられる石か。",
+          "target": "片段6/分镜2",
+          "seconds": 2.5
+        }
+      ]
+    },
+    {
+      "image": "ch15_p05_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "云层与树冠留在人物轮廓外侧，晶石周围是浅色留白。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人托起晶石，视线先落在晶体再抬向青，眉峰一高一低，嘴角向前探出询问",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p05_c003_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "你想要吗？",
+          "status": "mapped",
+          "script_text": "欲しいか？",
+          "target": "片段7/分镜1",
+          "seconds": 1.0
+        },
+        {
+          "id": "ch15_p05_c003_b02",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "才不要！",
+          "status": "mapped",
+          "script_text": "いりません!!!",
+          "target": "片段7/分镜2",
+          "seconds": 1.0
+        }
+      ]
+    },
+    {
+      "image": "ch15_p06_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "深色背包布面、头盔和肩背填满半身画面。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人低头，肩背向前收，头盔边缘压住眼睛",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p06_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 0,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅色留白承载对白，林间石路与低矮草丛位于远处。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "当前面板以对白承载表演关系",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": []
+    },
+    {
+      "image": "ch15_p06_c003.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "physical",
+        "description": "浅灰留白与手腕衣料填满晶石和双手外侧。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "晶石位于青掌心，矮人的另一只手稳定她的手腕",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": [
+        {
+          "id": "ch15_p06_c003_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "让能碰它的人拿着最好。你带着。",
+          "status": "mapped",
+          "script_text": "触れられる者が持つのが一番いい。お前が持っていけ。",
+          "target": "片段10/分镜1",
+          "seconds": 3.8
+        }
+      ]
+    },
+    {
+      "image": "ch15_p07_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 3,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰色渐变、速度线、手臂衣料与晶石填满人物外侧。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青把晶石往回送，手腕后撤、肩膀缩起，连续摇头时发梢和衣摆向后拖",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p07_c001_b01",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "不要！不要！请拿回去！",
+          "status": "mapped",
+          "script_text": "いやあああっ！ いりません、いりません！ 持って帰ってください！",
+          "target": "片段11/分镜1",
+          "seconds": 3.7
+        },
+        {
+          "id": "ch15_p07_c001_b02",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "小心！",
+          "status": "mapped",
+          "script_text": "おい、気をつけろ！",
+          "target": "片段11/分镜2",
+          "seconds": 1.2
+        },
+        {
+          "id": "ch15_p07_c001_b03",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "带着它不就等于被盖上从没约会过的烙印吗！",
+          "status": "mapped",
+          "script_text": "これを持っていたら、一度もデートしたことがないって烙印を押されるじゃないですか！",
+          "target": "片段11/分镜2",
+          "seconds": 2.4
+        }
+      ],
+      "coverage_reason": "保留当前面板的表演连续性，并用具体视线、呼吸和手部动作承载信息。",
+      "long_take_reason": "当前面板的语义与听者反应在同一关系构图内沿台词逐层发展。"
+    },
+    {
+      "image": "ch15_p07_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "灰色网点和浅色留白围住头盔、胡须与前景白发。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "矮人先收紧眼神，眉峰一侧抬起，随后抬起一根手指解释",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "shared",
+      "bubbles": [
+        {
+          "id": "ch15_p07_c002_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "别这么想。使用者虽有限制，它仍是强得难以置信的矿物。",
+          "status": "mapped",
+          "script_text": "そう考えるな。使い手に条件はあるが、それでも信じられないほど強力な鉱物だ。",
+          "target": "片段12/分镜1",
+          "seconds": 4.7
+        }
+      ],
+      "coverage_reason": "保留当前面板的表演连续性，并用具体视线、呼吸和手部动作承载信息。"
+    },
+    {
+      "image": "ch15_p08_c001.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 2,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "深灰颗粒渐变和白色星点铺满晶石与指虎周围。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "晶石位于左侧，指虎位于右侧",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "mixed",
+      "bubbles": [
+        {
+          "id": "ch15_p08_c001_b01",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "太小做不了大武器，不过按你的战斗方式，指虎就够了。",
+          "status": "mapped",
+          "script_text": "小さすぎて大きな武器にはできないが、お前の戦い方ならナックルダスターで十分だ。",
+          "target": "片段13/分镜1",
+          "seconds": 4.8
+        },
+        {
+          "id": "ch15_p08_c001_b02",
+          "speaker": "矮人",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "锻成之后，遇到强敌时一定能派上用场。",
+          "status": "mapped",
+          "script_text": "鍛えられれば、強敵と出会った時にきっと役に立つ。",
+          "target": "片段13/分镜2",
+          "seconds": 3.2
+        }
+      ],
+      "coverage_reason": "保留当前面板的表演连续性，并用具体视线、呼吸和手部动作承载信息。"
+    },
+    {
+      "image": "ch15_p08_c002.jpg",
+      "viewed_at_drafting": true,
+      "source_bubble_count": 1,
+      "bubble_audit": "pass",
+      "background": {
+        "type": "graphic",
+        "description": "大块白色留空和浅灰网点包围人物与掌中晶石。",
+        "evidence": "current_panel"
+      },
+      "locks": {
+        "composition": "青的拇指沿晶石边缘轻擦，先低头看掌心，再抬眼望向矮人",
+        "visible_subjects": [
+          "仅保留当前面板中可见人物、物件与图形元素"
+        ],
+        "relations": [
+          "人物与物件的接触、朝向和前后关系按当前面板锁定"
+        ],
+        "forbidden_inferences": [
+          "人物、道具、地点与动作结果的事实范围由当前面板可见内容界定"
+        ]
+      },
+      "coverage": "none",
+      "bubbles": [
+        {
+          "id": "ch15_p08_c002_b01",
+          "speaker": "青",
+          "speaker_evidence": "气泡尾向、人物口型与当前面板人物位置共同确认",
+          "kind": "dialogue",
+          "source_text": "你也是为了某个目标才出来冒险的吧？",
+          "status": "mapped",
+          "script_text": "あなたも、何か目的があって冒険に出たんでしょう？",
+          "target": "片段14/分镜1",
+          "seconds": 2.3
+        }
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p01_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：灰白云层与浅灰天空铺满画面，四周保持开阔天空层次。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段2/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p02_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：黑白网点与人物衣料边缘填满手掌周围的近景表面。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段2/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p02_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：白底冲击区与黑色放射线铺满人物轮廓外侧。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段3/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p03_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：碎石路面铺在下半幅，树林与阴云压在两人身后。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段3/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p03_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：带裂纹的碎石地面铺在青的白发下，春子的腿与深色衣摆形成上缘遮挡。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段4/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p04_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：灰白云层与浅灰天空填满整幅画面。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段4/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p04_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：石路向远处收束，两侧草丛、岩石与树林形成通道。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段4/分镜3",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p04_c003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：道路与树丛以简化网点铺在青身后，眩晕线围住头部。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段5/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：浅灰天空与远处树冠填满两人头肩之间。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段5/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：浅灰天空与远处树冠填满两人头肩之间。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段6/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：淡冰青向冷白的晶石特写背景，晶体棱面与细小星屑填满画面。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段6/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：淡冰青向冷白的晶石特写背景，晶体棱面占据画面中央。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段7/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：云层与树冠留在头盔、胡须和青发外侧，晶石周围是浅色留空。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段7/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p05_c003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：云层与树冠留在矮人头盔、胡须和青发外侧，晶石周围是浅色留空。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段8/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p06_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：深色背包布面、头盔和肩背填满半身画面，林路只从边缘露出。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段9/分镜1",
+      "role": "uncited_coverage",
+      "source_images": [],
+      "viewed_while_writing": false,
+      "evidence": "前后格的人物站位与道具状态",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：浅色留白承载对白，林间石路与低矮草丛作为远处关系背景。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段10/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p06_c003.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：浅灰留白与手腕衣料填满晶石和双手外侧。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段11/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p07_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：灰色渐变与速度线围住人物、手臂衣料和晶石。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段11/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p07_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：灰色渐变、手臂衣料、速度线和晶石填满交叠手部周围。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段12/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p07_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：灰色网点和浅色留白围住头盔、胡须与前景白发。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段13/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p08_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：深灰颗粒渐变和白色星点铺满晶石与指虎周围。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段13/分镜2",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p08_c001.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：深灰颗粒渐变和白色星点铺满晶石与指虎周围。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    },
+    {
+      "target": "片段14/分镜1",
+      "role": "source_locked",
+      "source_images": [
+        "ch15_p08_c002.jpg"
+      ],
+      "viewed_while_writing": true,
+      "evidence": "当前原格",
+      "purpose": "忠实呈现当前面板可见关系并执行电影化表演",
+      "background_excerpt": "场景环境：大块白色留空和浅灰网点包围青与掌中晶石。",
+      "source_audit": "pass",
+      "unsupported_additions": []
+    }
+  ],
+  "performance": [
+    {
+      "target": "片段3/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "目光压在她身上",
+        "手掌移到臀部",
+        "肩膀回缩"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.9,
+          "acting_seconds": 4.7
+        }
+      ]
+    },
+    {
+      "target": "片段3/分镜2",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "右侧眉梢轻颤",
+        "泪光聚在下眼睑",
+        "手指在地面收紧"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 5.1,
+          "acting_seconds": 4.8999999999999995
+        }
+      ]
+    },
+    {
+      "target": "片段5/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "视线稳稳压在青身上",
+        "指尖捏住领口缝线",
+        "肩膀上提"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.7,
+          "acting_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "target": "片段5/分镜2",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "左眼先眨",
+        "鼻翼轻收",
+        "肩线仍缩着"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.8,
+          "acting_seconds": 3.5999999999999996
+        }
+      ]
+    },
+    {
+      "target": "片段6/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "手指沿晶石边缘轻擦",
+        "嘴唇先闭合再开口"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.3,
+          "acting_seconds": 2.0999999999999996
+        }
+      ]
+    },
+    {
+      "target": "片段10/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "无名指和小指逐渐收拢",
+        "拇指沿棱面确认触感",
+        "重量落在掌根"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.8,
+          "acting_seconds": 3.5999999999999996
+        }
+      ]
+    },
+    {
+      "target": "片段11/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "手腕后撤、肩膀缩起",
+        "视线在石头与矮人脸之间折返"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.7,
+          "acting_seconds": 3.5
+        }
+      ]
+    },
+    {
+      "target": "片段11/分镜2",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "眼角泛泪",
+        "右肩先缩",
+        "嘴唇在抱怨前短暂抿住"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.5999999999999996,
+          "acting_seconds": 3.3999999999999995
+        }
+      ],
+      "long_take_reason": "当前面板已把语义与错拍反应沿同一构图展开。"
+    },
+    {
+      "target": "片段12/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "眉峰一侧抬起",
+        "下巴同步前伸",
+        "手指停在晶石方向"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.7,
+          "acting_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "target": "片段13/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "冷白亮线从晶石棱面移向指虎",
+        "四个指孔依次显现"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 4.8,
+          "acting_seconds": 4.6
+        }
+      ]
+    },
+    {
+      "target": "片段13/分镜2",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "手指收拢到指虎大小",
+        "亮线在四个指孔上逐一停住"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 3.2,
+          "acting_seconds": 3.0
+        }
+      ]
+    },
+    {
+      "target": "片段14/分镜1",
+      "evidence": "当前面板的表情、手势、道具接触与对白顺序",
+      "details": [
+        "先低头看掌心，再抬眼",
+        "肩膀从收缩转为平稳"
+      ],
+      "intervals": [
+        {
+          "speech_seconds": 2.3,
+          "acting_seconds": 2.0999999999999996
+        }
+      ]
+    }
+  ]
+}

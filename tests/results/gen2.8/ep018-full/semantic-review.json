@@ -1,0 +1,647 @@
+{
+  "review_type": "分镜文字与已查看源图的语义复查；没有生成或评测视频。",
+  "front17": "保留用户确认的原17镜及此前校对记录；最新验证未要求改变这些表演。",
+  "shots": [
+    {
+      "target": "片段6/分镜3",
+      "image": "第18話_06_001.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "董白面对他人的责备仍挑衅地笑，短句与偏脸相连；不加新指人手势。",
+      "performance_card": {
+        "opening": "董白带笑、曲指手仍在胸前；在质问后把注意力转回左侧外。",
+        "beats": [
+          "偏脸、圆眼压向左侧外，笑着训告；最后短问加重凝视，胸前手仍在。"
+        ],
+        "coupling": "不回应斥责的歉意，沿用源图的挑衅态度；表演是偏脸与笑意相连，不另加指人或新接触。",
+        "landing": "带笑的左向侧脸与曲指手延续。"
+      },
+      "continuity": "05_003董白仍笑、手在脸旁；近景将手收在已见胸前范围，回应方向朝左外。",
+      "limitations": "源图圆眼、斜向侧脸、笑口和胸前曲指手支撑局部偏脸与注视发展；不扩大为指向画外人物的手势。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段7/分镜1",
+      "image": "第18話_06_002.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "脚部离开与留下扶持者形成距离，低位姿态为前一个插镜期间的有意省略；不声称镜内演出落座。",
+      "performance_card": {
+        "opening": "黑色高跟鞋从左上进入前景，青和春子已经低身贴近石地。",
+        "beats": [
+          "鞋尖落地、脚跟随即踏实；青护着春子回看近处，怒意渐紧，春子仍背身低坐。"
+        ],
+        "coupling": "离开的步态与留下照料的两人形成距离；不以走开对白为运动依据，用源格鞋部和脚步证据。",
+        "landing": "鞋继续沿左侧走向画外，青仍低身，春子坐低。"
+      },
+      "continuity": "董白面部插镜遮住了青、春子降低姿态的过程；低机位重现已坐低的结果，采用有意省略，不声称已在镜内演出落座。",
+      "limitations": "石地、前景鞋与脚步叠字支撑一次可见落脚；动作限定鞋和可见小腿，不添加全身路线。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段7/分镜2",
+      "image": "第18話_06_003.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "由下缘抬起双手形成自握承载怒气；威胁不是实际攻击，手势持续到下一格。",
+      "performance_card": {
+        "opening": "青低身之后转回正面偏左，双手提到胸前，一手接近另一侧手腕。",
+        "beats": [
+          "扣住手腕，把交叠的手抬到口前，指节短响；愤怒起句时露齿，接着皱紧眉向左侧外威胁。"
+        ],
+        "coupling": "准备姿态承载怒气，不把威胁译成真的攻击；已从扶肩转为双手自握，解除照料接触放在镜头可见开端完成。",
+        "landing": "双手仍交握，眉眼绷紧，露齿朝左侧外。"
+      },
+      "continuity": "06_002青仍护着春子；本近景开端可见手臂从下缘抬起形成自握，解除前一搀扶后才交握，春子不在此镜命名目标中。",
+      "limitations": "双手交叠、腕部扣持、指节音效和露齿皱眉支撑同一手势的局部形成；攻击仅为话语，没有执行打人。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段7/分镜3",
+      "image": "第18話_06_004.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "画外打断导致青的手势与怒气松动；人物仍在听，没有另加画外事件。",
+      "performance_card": {
+        "opening": "青交握双手，眉眼仍绷着。",
+        "beats": [
+          "听到制止后指节先松开，眉间打开，圆眼张口转向左侧外。"
+        ],
+        "coupling": "刚要发作的准备被打断，手势松下来但不回到中性站姿。",
+        "landing": "胸前双手松叠，圆眼朝左侧外。"
+      },
+      "continuity": "06_003同一手势延续，不重做抬手；06_004只松指并接到07_001的转问。",
+      "limitations": "交握手从紧到松的变化由06_003和本格手形对照支持；局部脸部反应以本格圆眼张口为结果。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段8/分镜1",
+      "image": "第18話_07_001.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "自握先分开再向春子伸臂一次，追问的压力持续；长句已给7秒，没有重复接触形成。",
+      "performance_card": {
+        "opening": "青松开胸前自握手势，注意力转向左前景的春子。",
+        "beats": [
+          "朝春子探身，近侧手臂往左伸出，眉眼重新压紧发问；后句急切辩解，嘴形张大，仍盯着春子。"
+        ],
+        "coupling": "怒气从画外离去者转向眼前同伴的不同反应；不新增被遮住的手掌握法。",
+        "landing": "青朝春子前倾，近侧臂横伸，眉眼急切。"
+      },
+      "continuity": "06_004松叠双手后，本镜开端分开自握，伸出近侧臂一次；07_002切到春子侧脸，不抬头重置其状态。",
+      "limitations": "本格青的伸臂、春子前景遮挡和两人关系支持从自握转为伸臂；未画掌部，只写可见臂段。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段8/分镜2",
+      "image": "第18話_07_002.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "低身侧脸保持，冷淡声音与擦痕构成回应；不因反打虚构整身转动。",
+      "performance_card": {
+        "opening": "春子低身坐着，侧脸朝右，眼睛半垂。",
+        "beats": [
+          "听着左侧外的急切话语，目光压向右侧外，嘴角绷起；冷淡地说出记住脸后，半垂眼仍盯着同一方向，呼吸渐缓。"
+        ],
+        "coupling": "不随青的愤怒提高音量，以冷淡、明确的回应终止争执；擦痕保留为既有伤处。",
+        "landing": "右向侧脸、半垂眼和绷着的嘴角延续。"
+      },
+      "continuity": "面对青的同一谈话反打，春子仍低身，镜头只取头肩；方向变化属于镜头轴线，不声称整身转过去。",
+      "limitations": "半垂眼、侧脸和细擦痕来自本格；只发展局部目光与嘴角，不编报复动作或隐藏凶器。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段8/分镜3",
+      "image": "第18話_07_003.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "2秒眼部反应让惊讶替代怒气，不给极近裁切增加肩手动作。",
+      "performance_card": {
+        "opening": "青的侧脸朝左，刚才紧绷的眼睛仍望向近处。",
+        "beats": [
+          "听到冷淡回应后眼睛睁大，眉梢扬起；脸侧汗珠沿皮肤短滑，目光留在左侧外。"
+        ],
+        "coupling": "以安静的局部眼部反应承接同伴异常冷淡的回应，不再重复嘴部争辩。",
+        "landing": "圆眼朝左、汗珠仍贴脸侧，眉梢扬着。"
+      },
+      "continuity": "07_001青面向春子，07_002反打后回到青的侧面眼部；发言已停，保留注意方向，不重演伸臂。",
+      "limitations": "特写只发展已见眼睛、眉梢与汗珠；不添加被裁切的肩手和完整转身。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段9/分镜1",
+      "image": "第18話_08_001.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "5秒实景空镜承载处理伤口的提议，画外对白是任务内容，没有直接演出找水路线。",
+      "performance_card": null,
+      "continuity": "青眼部反应切到洞窟岩壁，保留空间与画外声音，不虚构找水的步行路线。",
+      "limitations": null,
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段9/分镜2",
+      "image": "第18話_08_002.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "肩部颤动与青的支撑随动组成照料任务，扶肩接触持续，不再重握一次。",
+      "performance_card": {
+        "opening": "春子和青背身贴近，青一臂横接春子肩背。",
+        "beats": [
+          "春子疲惫地吐气，肩膀接连颤了两下，上身稍往前沉；青跟着低身，让支撑臂稳在肩背，发束随姿态移动。"
+        ],
+        "coupling": "疲弱身体与正在进行的照料互相牵动，不把台词中的头晕画成额外跌倒。",
+        "landing": "春子仍低身背向镜头，青的扶肩接触持续。"
+      },
+      "continuity": "此前的伸臂指向春子，经过侧面反应和空镜后回到明确扶肩；在当前镜头保留已形成接触，不重复握臂动作。",
+      "limitations": "本格肩旁动势与发颤叠字、两人扶持关系支持上身颤动与支撑随动；不增加脚步、摔倒或新支点。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段10/分镜1",
+      "image": "第18話_08_003.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "扶持延续时头部回望一次，2秒足够，不添加脚步与松手。",
+      "performance_card": {
+        "opening": "青背身扶着春子，视线原本朝前。",
+        "beats": [
+          "青转头向右后方看，白发沿肩侧短短掠动；嘴抿紧，目光在身后停一下。"
+        ],
+        "coupling": "离开时的不放心让青回望，扶持任务仍在画外继续。",
+        "landing": "青留下朝右的侧脸，目光仍朝后方。"
+      },
+      "continuity": "08_002背身扶肩→08_003头部回望，不增画外松手或脚步。",
+      "limitations": "源格侧面朝向与头旁动势支持从背身到侧面的最短转头。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段10/分镜2",
+      "image": "第18話_08_004.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "头转回前方而扶肩继续；栈道材质经彩色图确认，忧虑独白没有对嘴。",
+      "performance_card": {
+        "opening": "青尚向右后方回望，扶肩接触延续。",
+        "beats": [
+          "青把脸转回前方，扶着春子略往前倾；镜头缓慢抬起，把二人的背影压在左下，展露上方折返栈道。"
+        ],
+        "coupling": "担心同伴与眼前找路同时存在，以扶持姿态和对前方的注意承接内心独白。",
+        "landing": "青背身与春子贴近，视线落向前方栈道。"
+      },
+      "continuity": "08_003回望→头转回，支撑关系保留；原图不显示迈步路径。",
+      "limitations": "彩色图确认木板；仅头部回正、上身随扶持轻倾，镜头抬起不增加人物去向。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段11/分镜1",
+      "image": "第18話_09_001.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "1秒原有暗场承担场景分隔。具体侵害过程属于明确省略，不假称已经动画化。",
+      "performance_card": null,
+      "continuity": "由栈道全景切暗场，作为转场与非露骨省略的起点。",
+      "limitations": "原有暗场保留，不加入人物或可见事件。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段11/分镜2",
+      "image": "第18話_09_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "惊恐制止到无力恳求，由头部近景与岩壁空镜覆盖三个短语；不展示身体与性化呼吸。",
+      "performance_card": {
+        "opening": "董白侧脸朝右，眼睛紧盯右侧外。",
+        "beats": [
+          "她惊恐地睁大眼睛，急着制止对方，声音在第二句发紧；末句只能挤出恳求，嘴唇颤着，视线不敢移开。"
+        ],
+        "coupling": "恳求越来越无助，目光始终落在威胁方向。",
+        "landing": "董白仍朝右侧外看，话音断续。"
+      },
+      "continuity": "暗场后只呈现惊恐头部，后续具体侵害过程省略。",
+      "limitations": "仅呈现非露骨恐惧与请求停止；不使用原图的身体、接触与性化声息。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段11/分镜3",
+      "image": "第18話_09_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "惊恐制止到无力恳求，由头部近景与岩壁空镜覆盖三个短语；不展示身体与性化呼吸。",
+      "performance_card": null,
+      "continuity": "暗场后只呈现惊恐头部，后续具体侵害过程省略。",
+      "limitations": "仅呈现非露骨恐惧与请求停止；不使用原图的身体、接触与性化声息。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段12/分镜1",
+      "image": "第18話_13_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "7秒质问与冷答形成不同权力位置，听者僵住仍在参与；画外答复保留而无需复述提问。",
+      "performance_card": {
+        "opening": "守卫低着头，急促呼吸尚未平复。",
+        "beats": [
+          "他艰难抬起盔面，向威胁者问出一句；听到画外回答后头部略停，声音已断。"
+        ],
+        "coupling": "受困者想确认处境，画外冷淡答复让问题悬而未决。",
+        "landing": "盔面微抬，注意仍向前方对手。"
+      },
+      "continuity": "省略09_003后的具体侵害过程，直接进入事后的质问；不补造脱困或衣物复原过程。",
+      "limitations": "非露骨头部问答，只保留求生语义；身体被裁在镜外。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段12/分镜2",
+      "image": "第18話_14_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "求放走她到愿意承担的意义变化由低头再抬头承担，6秒完整，不增加手部求情。",
+      "performance_card": {
+        "opening": "守卫的盔面已抬起，注意在对方。",
+        "beats": [
+          "守卫朝对方低下头，第一句有求人的迟疑；说到自己时把头重新抬起，语气忍着恐惧变得坚决。"
+        ],
+        "coupling": "把自己交出去换取她离开的求生尝试，姿态从低头哀求转到承担。",
+        "landing": "守卫盔面抬向男子，等待回应。"
+      },
+      "continuity": "质问之后主动请求对方放走董白，同一受困处境。",
+      "limitations": "只演出低头与抬头求情，不展示束缚机制或身体细节。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段13/分镜1",
+      "image": "第18話_14_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "三气泡是一句分节拒绝，3秒拖音加蔑视下巴，不误判成三句不同语义。",
+      "performance_card": {
+        "opening": "男子看着近处守卫，嘴角已经扬着。",
+        "beats": [
+          "男子缓缓抬起下巴，带着蔑视把拒绝拖成三段；目光仍压向下方，笑意没有收回。"
+        ],
+        "coupling": "玩弄求生请求，以一句被刻意拖长的拒绝让对方等待落空。",
+        "landing": "下巴抬起，小笑仍在，视线向下。"
+      },
+      "continuity": "守卫求情反打到男子拒绝；不新增交换条件。",
+      "limitations": "只取来源明确的头部与拒绝，不使用身体相关内容。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段13/分镜2",
+      "image": "第18話_15_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "2秒惊疑抬盔承接条件追问，省略纯局部抖动不会丢失新剧情。",
+      "performance_card": {
+        "opening": "守卫注意在近处男子。",
+        "beats": [
+          "听到对方话锋改变，他猛地抬起盔面，语尾上扬，仍不肯相信。"
+        ],
+        "coupling": "新的要求突然打断求情，惊疑替代哀求。",
+        "landing": "盔面抬向右上，注意锁住男子。"
+      },
+      "continuity": "拒绝后接守卫对条件的追问；中间的局部抖动合并到抬头。",
+      "limitations": "来源只提供头部朝向，具体要求将在下一镜非露骨改写。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段13/分镜3",
+      "image": "第18話_15_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "9秒条件陈述与次数重读，以近处目光和微笑持续施压；露骨具体要求明确泛化。",
+      "performance_card": {
+        "opening": "男子半眯眼看着近处守卫，嘴角挂着笑。",
+        "beats": [
+          "他略向听者探头，把条件平静说出；最后慢慢咬重次数，微笑扩大一点，等着对方接受。"
+        ],
+        "coupling": "利用放人的承诺逼对方选择，次数是威胁落点。",
+        "landing": "目光仍落在守卫身上，笑意不减。"
+      },
+      "continuity": "追问后男子提出条件；明确省略原有强迫性行为要求，不改写成具体行为。",
+      "limitations": "仅保留强迫条件与次数这一叙事结构，语义经过安全改编。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段14/分镜1",
+      "image": "第18話_15_004.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "怒骂、求死、拒绝用近景与盔缝极近景覆盖，后段压低而咬紧，没有整镜静止等对白。",
+      "performance_card": {
+        "opening": "守卫抬着盔面，刚听完条件。",
+        "beats": [
+          "他愤怒地挺起头部，骂声冲出头盔；到拒绝时音量降低而字咬得更紧，头部仍朝向对方。"
+        ],
+        "coupling": "羞辱触发愤怒，最后转为明确拒绝，态度一口气完成。",
+        "landing": "盔面正对对手，拒绝仍很坚决。"
+      },
+      "continuity": "条件谈判紧接拒绝，不演出任何条件所指行为。",
+      "limitations": "只演出头部和非露骨拒绝，不以台词制造新攻击。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段14/分镜2",
+      "image": "第18話_15_004.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "怒骂、求死、拒绝用近景与盔缝极近景覆盖，后段压低而咬紧，没有整镜静止等对白。",
+      "performance_card": {
+        "opening": "守卫抬着盔面，刚听完条件。",
+        "beats": [
+          "他愤怒地挺起头部，骂声冲出头盔；到拒绝时音量降低而字咬得更紧，头部仍朝向对方。"
+        ],
+        "coupling": "羞辱触发愤怒，最后转为明确拒绝，态度一口气完成。",
+        "landing": "盔面正对对手，拒绝仍很坚决。"
+      },
+      "continuity": "条件谈判紧接拒绝，不演出任何条件所指行为。",
+      "limitations": "只演出头部和非露骨拒绝，不以台词制造新攻击。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段14/分镜3",
+      "image": "第18話_16_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "3秒同伴突然插话，守卫转注意向她，双头部关系可读。",
+      "performance_card": {
+        "opening": "守卫刚拒绝对方，头部紧绷。",
+        "beats": [
+          "董白在右后小声安慰，守卫的盔面轻转向她，迟疑地等她说下去。"
+        ],
+        "coupling": "同伴突然接受处境，让拒绝尚在的守卫转而关注她。",
+        "landing": "守卫注意朝向董白，董白背影仍在右后。"
+      },
+      "continuity": "拒绝后由董白小声插话，再切她的侧脸。",
+      "limitations": "仅呈现两人头部，身体结构裁在镜外。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段15/分镜1",
+      "image": "第18話_16_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "5秒勉强安慰，目光躲开又回到同伴；原性化神态删去，情绪不是轻松或愉悦。",
+      "performance_card": {
+        "opening": "董白目光落向右侧外的守卫。",
+        "beats": [
+          "她试着挤出一点安慰的笑，第一句说得迟疑；第二句压低声音，目光从躲闪重新落回对方。"
+        ],
+        "coupling": "在受困情境中艰难安慰同伴，不把原有性化神态与声息保留。",
+        "landing": "笑意勉强，目光留在守卫方向。"
+      },
+      "continuity": "守卫拒绝后董白试图劝解；16_001的没关系由本组第一镜画外短句承接。",
+      "limitations": "只保留自我安慰与秘密语义，删除性化表演。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段15/分镜2",
+      "image": "第18話_16_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "3秒眼部劝说强调自己也无把握，范围只在眼睛与目光，不凑大动作。",
+      "performance_card": {
+        "opening": "董白的目光刚落回守卫。",
+        "beats": [
+          "她缓缓垂下目光，劝说的声音比刚才更轻；眼角绷着，最后又向右看了一眼。"
+        ],
+        "coupling": "小声劝对方坚持，自己也缺乏把握。",
+        "landing": "视线再次朝右，眼角紧张。"
+      },
+      "continuity": "从侧脸收近到眼部，保留刚才的目光方向。",
+      "limitations": "移除原图性化眸光与心形表现，只呈现困境下的克制劝说。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段15/分镜3",
+      "image": "第18話_17_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "7秒从惊怒质问到放慢提醒，头部持续对着同伴；重复起音压力已区分。",
+      "performance_card": {
+        "opening": "守卫盔面仍对着董白的方向。",
+        "beats": [
+          "他难以置信地向前探头，质问冲得很急；第二句语速放慢，像逼她重新听清自己的话，头部没有移开。"
+        ],
+        "coupling": "担心对方的判断，愤怒中混入不可置信。",
+        "landing": "头部向前，仍等待她改变主意。"
+      },
+      "continuity": "董白劝说后切守卫反应，双方注意方向相对。",
+      "limitations": "非露骨争辩，只取头部变化。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段16/分镜1",
+      "image": "第18話_17_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "4秒已见岩壁承接画外质疑，原催情解释只保留是否受影响的非露骨功能。",
+      "performance_card": null,
+      "continuity": "守卫质问后继续画外怀疑，切已见岩壁，下一格男子否认。",
+      "limitations": "仅用已有岩壁承接非露骨质疑，不呈现董白裸露身体与性化表现。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段16/分镜2",
+      "image": "第18話_17_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "2秒男子冷淡否认，两短气泡为连续句，眼神压低是听者到回应的转变。",
+      "performance_card": {
+        "opening": "男子眼睛半眯，看向二人。",
+        "beats": [
+          "听到守卫的质疑，男子眼神缓缓压低，毫无犹豫地否认；说完仍冷冷看着二人。"
+        ],
+        "coupling": "否认外部影响，让冲突回到人物自身选择与受迫处境。",
+        "landing": "眼神向下压，注意仍在二人。"
+      },
+      "continuity": "上一格守卫怀疑怪物影响；通过画外提问安全改写原催情说法。",
+      "limitations": "只保留质疑影响与否认，省略催情细节。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段16/分镜3",
+      "image": "第18話_18_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "5秒解释到急切说服，笑意消失、目光压向同伴；不演出未呈现的身体行为。",
+      "performance_card": {
+        "opening": "董白已经面对右侧的守卫。",
+        "beats": [
+          "她朝守卫急切地抬眼，先承认没有办法；到最后几个字把声音顶起来，勉强的笑消失，目光逼着对方理解。"
+        ],
+        "coupling": "绝望里仍试图说服同伴，语气由解释转为急切。",
+        "landing": "眼睛留在右侧，脸上难掩焦急。"
+      },
+      "continuity": "男子否认后回到董白回应，18_001沉默局部并入切回前的短停。",
+      "limitations": "改成非性化劝说，头部取景不展示身体。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段17/分镜1",
+      "image": "第18話_18_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "7秒降声请求保密到信任陈述，口部停顿用于难堪，非性化呼气已去除。",
+      "performance_card": {
+        "opening": "董白已经提高声音，嘴部仍紧绷。",
+        "beats": [
+          "她把声音压下来，开头结巴一下；到提起对方时嘴唇短短抿住，随后很轻地把话说完。"
+        ],
+        "coupling": "信任与难堪交叠，通过音量变化暴露自己的勉强。",
+        "landing": "嘴唇轻闭，话音悬在两人之间。"
+      },
+      "continuity": "急切说服→降低声音请求保密，不添加后续具体行为。",
+      "limitations": "只演出难堪的非露骨对白，去掉性化呼气。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段17/分镜2",
+      "image": "第18話_19_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "8秒低头、抬一点、再垂下，承载被迫决定的艰难，不是随意多一串手势。",
+      "performance_card": {
+        "opening": "守卫低着头，前面的怒气仍没消退。",
+        "beats": [
+          "他沉默一口气，盔面慢慢向上抬一点，吃力地接受条件；后半句说得更低，头再次稍垂。"
+        ],
+        "coupling": "不甘与保护同伴的选择冲突，接受听起来艰难而非顺从。",
+        "landing": "盔面略低，回答已交出去。"
+      },
+      "continuity": "董白劝说后守卫作出决定；19_001身体局部省略。",
+      "limitations": "非露骨条件接受，不执行被省略的具体要求。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段18/分镜1",
+      "image": "第18話_19_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "4秒画外反悔→掀盔惊问，两人语气分明；19_004合并，面盔从此保持掀起。",
+      "performance_card": {
+        "opening": "守卫低着盔面，刚艰难作出决定。",
+        "beats": [
+          "画外拒绝突然传来，守卫猛地向上抬头，盔面沿铰接点掀起；露出的嘴一张，反问脱口而出。"
+        ],
+        "coupling": "让步之后承诺被撤回，突发抬头是不可置信的反应。",
+        "landing": "面盔已掀，头朝右上，不重置为闭合面盔。"
+      },
+      "continuity": "19_003与19_004同一姿态、同一惊讶，不作第二次反应。",
+      "limitations": "图中铰链、抬起盔板与露出的鼻唇支持最短掀盔动作；不用未确认的手去掀。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段18/分镜2",
+      "image": "第18話_20_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "3秒笑意收成咬牙狠相，半句悬停制造威胁，橄榄绿色由两张上色原图确认。",
+      "performance_card": {
+        "opening": "男子脸上的笑意尚在。",
+        "beats": [
+          "他把笑容收成咬牙的狠相，皱紧眉头，慢慢吐出半句话；目光往二人所在的方向压下。"
+        ],
+        "coupling": "撤回承诺后暴露更恶劣的意图，愤怒取代玩弄的笑。",
+        "landing": "牙关紧咬，眼神压向二人。"
+      },
+      "continuity": "上一镜画外反悔后切男子正面，继续半句威胁。",
+      "limitations": "面部变化取源图皱眉咬牙，不新增触碰。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段19/分镜1",
+      "image": "第18話_20_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "5秒岩壁威胁与8秒泪眼恳求同属一个13秒片段；只保留绝望和婚约关系信息，不演出原露骨目的。",
+      "performance_card": null,
+      "continuity": "男子半句接安全改写威胁，再由董白恳求回应。",
+      "limitations": "只呈现头部恐惧与关系信息，原有性行为要求与身体接触省略。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段19/分镜2",
+      "image": "第18話_20_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "5秒岩壁威胁与8秒泪眼恳求同属一个13秒片段；只保留绝望和婚约关系信息，不演出原露骨目的。",
+      "performance_card": {
+        "opening": "董白朝威胁方向看着，眼里已有泪。",
+        "beats": [
+          "她惊恐地摇了一下头，急着请求停止；提到未婚夫时声音碎下来，泪水沿脸颊滑落，视线又落回对方。"
+        ],
+        "coupling": "对眼前威胁的恐惧转入失去重要关系的绝望，声线随意义改变。",
+        "landing": "董白泪眼仍望向对方，身后的守卫保持注意。"
+      },
+      "continuity": "男子半句接安全改写威胁，再由董白恳求回应。",
+      "limitations": "只呈现头部恐惧与关系信息，原有性行为要求与身体接触省略。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段20/分镜1",
+      "image": "第18話_21_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "7秒男子眉眼听者镜承接守卫承认，6秒董白头部反打承担追问；反打位置由20_002、面盔状态由19_003支撑，属于明确改编补镜。",
+      "performance_card": {
+        "opening": "男子正紧盯二人，牙关绷着。",
+        "beats": [
+          "听到二人忽然谈起旧事，男子的眉头越压越低，目光在二人方向短移；眼角紧皱，脸上的怒气积起来。"
+        ],
+        "coupling": "二人的关系信息打断威胁，施害者在听的过程中愈发恼怒。",
+        "landing": "眼神停住，眉间绷紧，为下一次威胁承接。"
+      },
+      "continuity": "守卫与董白画外交换关系信息，男子仍在画内听；避免误把气泡归给男子。",
+      "limitations": "发言人由气泡尾指向画外与语义关系确定；眉眼只承接听者反应。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段20/分镜2",
+      "image": "第18話_21_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "7秒男子眉眼听者镜承接守卫承认，6秒董白头部反打承担追问；反打位置由20_002、面盔状态由19_003支撑，属于明确改编补镜。",
+      "performance_card": {
+        "opening": "董白泪眼朝威胁方向，守卫头部在右后。",
+        "beats": [
+          "听到旧事后董白转目光向守卫，惊愕地停一下，再急切追问。"
+        ],
+        "coupling": "关键信息改变了她对同伴的认识，反打让追问与听者关系可读。",
+        "landing": "董白的视线留在守卫方向。"
+      },
+      "continuity": "守卫与董白画外交换关系信息，男子仍在画内听；避免误把气泡归给男子。",
+      "limitations": "发言人由气泡尾指向画外与语义关系确定；眉眼只承接听者反应。",
+      "supporting_visual_images": [
+        "第18話_20_002.jpg",
+        "第18話_19_003.jpg"
+      ]
+    },
+    {
+      "target": "片段21/分镜1",
+      "image": "第18話_21_002.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "3秒手指收拢与直接威胁对应，只有一记源图支持的握紧，不增新攻击路线、骨折或结果。",
+      "performance_card": {
+        "opening": "男子近处手指已弯起，注意在二人。",
+        "beats": [
+          "男子的拳头猛地攥紧，指节收拢；声音骤冷，最后一字落下时拳形压实。"
+        ],
+        "coupling": "愤怒转为直接威胁，紧握拳头与攻击反应相接。",
+        "landing": "拳头紧握，后续只切受困者非露骨反应。"
+      },
+      "continuity": "男子面部怒气→拳头紧握→二人的受攻击反应；具体束缚接触不呈现。",
+      "limitations": "仅取来源手势与攻击顺序，不把性化身体结构或不明机制展开。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段21/分镜2",
+      "image": "第18話_21_003.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "2秒守卫仰头痛叫，盔旁手部随冲击抖动；面盔继承掀起状态，身体裁去。",
+      "performance_card": {
+        "opening": "守卫的面盔已掀，头正朝右上。",
+        "beats": [
+          "冲击让他猛地向后仰头，痛叫从喉间冲出；原已贴近盔部的手被带得一抖，头颈随余力颤动。"
+        ],
+        "coupling": "承接直接攻击，反应为痛苦与求生，不作性化声音。",
+        "landing": "头仍后仰，面盔继续掀起，不补画摔倒或死亡。"
+      },
+      "continuity": "21_002紧拳后出现守卫攻击反应；继承19_003掀盔状态。",
+      "limitations": "只发展来源已见仰头与盔旁手，不新增束缚、骨折或接触拓扑。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段21/分镜3",
+      "image": "第18話_22_001.jpg",
+      "result": "reviewed_adaptation",
+      "conclusion": "2秒董白惊叫与仰头接连续攻击反应，头部安全取景，不推导伤口或死亡。",
+      "performance_card": {
+        "opening": "董白的头部仍面对威胁者。",
+        "beats": [
+          "她也被冲击带得仰起头，眼睛一下闭紧，惊叫冲出；双马尾随头部向后甩，随后落下，头仍紧绷。"
+        ],
+        "coupling": "与守卫连续的受攻击反应，保留两人共同受威胁的结果。",
+        "landing": "董白头部后仰，声音拉远，身体结果不新增。"
+      },
+      "continuity": "守卫痛叫→董白惊叫，两人攻击反应连续，不重置之前受困状态。",
+      "limitations": "只取头部攻击反应，裁去裸露身体，不增加伤口或额外攻击。",
+      "supporting_visual_images": []
+    },
+    {
+      "target": "片段21/分镜4",
+      "image": "第18話_22_002.jpg",
+      "result": "reviewed_source_grounded",
+      "conclusion": "1秒黑白抽象冲击→衰暗结束，本话没有再添加人物结果或下一话事件。",
+      "performance_card": null,
+      "continuity": "承接两声惊叫，以抽象冲击结束本话，不宣布人物死亡或伤害细节。",
+      "limitations": "只实现原有抽象图形的短促闪现和衰减，不画人体损伤。",
+      "supporting_visual_images": []
+    }
+  ]
+}

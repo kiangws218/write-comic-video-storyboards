@@ -1,0 +1,21 @@
+{
+  "episode": "ep-001",
+  "script_duration_seconds": 285.0,
+  "full_duration_seconds": 496.348,
+  "script_cues": 81,
+  "full_cues": 153,
+  "estimated_cues": 74,
+  "estimated_panels": 57,
+  "expanded_dialogue_shots": 1,
+  "dialogue_extension_seconds": 3.067,
+  "parts": [
+    {
+      "file": "第01话_中文_脚本范围01.srt",
+      "script": "第一集_19-65_结构化分镜脚本.md",
+      "duration_seconds": 285.0,
+      "cues": 81
+    }
+  ],
+  "review_hints": 8,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

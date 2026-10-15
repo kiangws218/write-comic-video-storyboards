@@ -1,0 +1,49 @@
+[
+  {
+    "image": "第19話_24_001.jpg",
+    "composition_lock": "全景暗色图形底场，黑色中央宽，上下边缘灰色渐亮，无人物实景。",
+    "source_facts": {
+      "entities": [
+        "黑灰渐变底场"
+      ],
+      "actions": [],
+      "relations": [
+        "中央黑，上下边缘浅灰"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "graphic",
+    "background_description": "黑灰渐变图形底场，中央最暗，上下边缘较浅。",
+    "kind": "State",
+    "anchor_phase": "middle",
+    "plan": null,
+    "continuity": "入口对峙到此留暗场，下一格回另一处洞窟，不把两条剧情位置连成一次移动。",
+    "admission": "短过场只用黑灰渐变，不加事件或文字。"
+  },
+  {
+    "image": "第19話_24_002.jpg",
+    "composition_lock": "竖向岩壁空镜近景在画面右侧，左侧留白，右下白雾沿岩壁脚部涌起。",
+    "source_facts": {
+      "entities": [
+        "岩壁",
+        "白雾"
+      ],
+      "actions": [
+        "白雾沿岩脚上涌"
+      ],
+      "relations": [
+        "岩壁右侧后层，雾右下近层"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "physical",
+    "background_description": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "kind": "State",
+    "anchor_phase": "middle",
+    "plan": null,
+    "continuity": "过场后回到董白所在洞窟，下一格给怪物与她的关系。",
+    "admission": "只取岩壁与雾，不添加通道或入口场人物。"
+  }
+]

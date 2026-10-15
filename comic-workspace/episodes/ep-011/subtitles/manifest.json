@@ -1,0 +1,27 @@
+{
+  "episode": "ep-011",
+  "script_duration_seconds": 419.0,
+  "full_duration_seconds": 533.777,
+  "script_cues": 132,
+  "full_cues": 173,
+  "estimated_cues": 41,
+  "estimated_panels": 29,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第11话_中文_脚本范围01.srt",
+      "script": "第11话_part1_高还原动画分镜_gen2.5_全量重置.md",
+      "duration_seconds": 227.0,
+      "cues": 79
+    },
+    {
+      "file": "第11话_中文_脚本范围02.srt",
+      "script": "第11话_part2_高还原动画分镜_gen2.5_全量重置.md",
+      "duration_seconds": 192.0,
+      "cues": 53
+    }
+  ],
+  "review_hints": 11,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

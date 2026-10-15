@@ -1,0 +1,123 @@
+[
+  {
+    "class": "multiple_speakers",
+    "target": "片段2/分镜1",
+    "images": [
+      "第18話_02_002.jpg"
+    ],
+    "decision": "retain",
+    "basis": "董白未完骂句→守卫从左后打断；同格同时可见两人，嘴形收住和头肩停顿给打断落点，两短句加交接落在6秒内，无需隐藏切镜。"
+  },
+  {
+    "class": "long_shot",
+    "target": "片段2/分镜2",
+    "images": [
+      "第18話_02_002.jpg",
+      "第18話_02_003.jpg"
+    ],
+    "decision": "retain",
+    "basis": "7秒用于完整规劝而非额外拖长；守卫肩胸压近与董白肩臂后缩同时发展。初稿单人盔面过薄，已恢复原稿有价值的双方身体参与；盔内不编眉眼。"
+  },
+  {
+    "class": "multiple_speakers",
+    "target": "片段3/分镜2",
+    "images": [
+      "第18話_02_004.jpg"
+    ],
+    "decision": "retain",
+    "basis": "青轻声提议→春子低声抱怨，同机位可见脸、歪头和相互回应。完整保留提议与拒斥感，后景董白不作同步动作；两次交付和落点计6秒。"
+  },
+  {
+    "class": "multiple_speakers",
+    "target": "片段6/分镜1",
+    "images": [
+      "第18話_05_003.jpg"
+    ],
+    "decision": "retain",
+    "basis": "闭眼舒坦的董白、护着春子的青和低头覆脸的春子必须同框形成反差。青先看春子再朝右质问，短惊怒问句已有落点，后句另给双人镜头。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段1/分镜2",
+    "images": [
+      "第18話_01_003.jpg"
+    ],
+    "decision": "retain",
+    "basis": "原图是左右并置视图，已复查并恢复；右侧青缩肩后退→双手提到胸前→探身追问→圆眼张口落点，左侧抓衣动作维持。时间连接在句意与动作过程里，未补强制关键词。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段1/分镜3",
+    "images": [
+      "第18話_02_001.jpg"
+    ],
+    "decision": "retain",
+    "basis": "原尺寸复核手的归属后，修正为青的一只手握住春子前臂，春子自己的手仍在衣领旁抓衣；介入接触形成、探身劝阻和偏脸冷淡回应均保留。没有新增第二只青的手搭肩。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段2/分镜1",
+    "images": [
+      "第18話_02_002.jpg"
+    ],
+    "decision": "retain",
+    "basis": "董白起句→守卫压近打断→嘴形收住、眼向偏左、肩停下，惊愕停留；当前下缘握点遮挡没有被补成新抓握。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段2/分镜2",
+    "images": [
+      "第18話_02_002.jpg",
+      "第18話_02_003.jpg"
+    ],
+    "decision": "retain_after_revision",
+    "basis": "回归原稿中的肩胸前压和董白肩后缩，终点是二人距离缩小且肩臂绷紧。成稿用自然短句交代关系，保留身体参与而不编头盔下的表情。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段3/分镜1",
+    "images": [
+      "第18話_02_003.jpg"
+    ],
+    "decision": "retain",
+    "basis": "董白从偏前到向左上回望，马尾随转头摆开；守卫抓住近侧手臂的接触始终持续。末尾回望听完，没有惯性回到中性头位。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段4/分镜1",
+    "images": [
+      "第18話_03_001.jpg",
+      "第18話_02_003.jpg"
+    ],
+    "decision": "retain",
+    "basis": "已以原图核对解除处间隙；摆臂、肩背转动、护甲手退开、双方分离构成完整物理过程。描述摆离握点，未扩大成对守卫的击打，也未强猜被遮挡的精确路径。"
+  },
+  {
+    "class": "performance_semantics",
+    "target": "片段6/分镜1",
+    "images": [
+      "第18話_05_003.jpg"
+    ],
+    "decision": "retain_after_revision",
+    "basis": "原尺寸及辅助色图确认春子自己的覆脸手、青沿肩背的袖臂；三人动作异步：董白闭眼呼气、青先看春子再质问、春子覆脸呼吸。覆脸手已恢复，未强迫春子抬头。"
+  },
+  {
+    "class": "mixed_text_visual_evidence",
+    "target": "片段4/分镜2",
+    "images": [
+      "第18話_03_001.jpg",
+      "第18話_03_002.jpg"
+    ],
+    "decision": "retain_bounded_inference",
+    "basis": "行进依据包括前格两处脚步拟声与两格背身相位连续，当前只写可见肩背推进和发摆；手从已供抬起相接到本格垂下相。未引用放手/走吧对白授权新路线，未画看不见的脚或洞口。"
+  },
+  {
+    "class": "mixed_text_visual_evidence",
+    "target": "片段5/分镜3",
+    "images": [
+      "第18話_04_001_下格.jpg"
+    ],
+    "decision": "retain",
+    "basis": "当前半垂眼回望侧脸与疑问记号支持低强度疑惑；只延展已经可见的头肩转动，不新增奔跑、攻击或更强恐惧。疑问记号作为理解线索，画面不生成符号。"
+  }
+]

@@ -1,0 +1,2243 @@
+#!/usr/bin/env python3
+"""Validate Markdown storyboards produced from sequential comic panels."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import math
+import re
+import sys
+from pathlib import Path
+
+
+SEGMENT_RE = re.compile(r"^#{1,6}\s*【片段\s*(\d+)】", re.MULTILINE)
+SAFE_SEGMENT_RE = re.compile(
+    r"^#{1,6}\s*【平台安全替换[·・\s]*片段\s*(\d+)】", re.MULTILINE
+)
+SHOT_RE = re.compile(
+    r"\*\*分镜\s*(\d+)\s*[（(]\s*(\d+(?:\.\d+)?)\s*秒\s*[）)]\s*[：:]\*\*"
+)
+COMBAT_SEQUENCE_RE = re.compile(
+    r"\*\*战斗段\s*(\d+)\s*[（(]\s*(\d+(?:\.\d+)?)\s*秒\s*[·・\s]*自动分镜\s*[）)]\s*[：:]\*\*"
+)
+LEGACY_TIMECODE_RE = re.compile(r"\*\*\d+(?:\.\d+)?-\d+(?:\.\d+)?s[：:]\*\*")
+REFERENCE_RE = re.compile(
+    r"(?:分镜参考|参考)?\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?",
+    re.IGNORECASE,
+)
+FORBIDDEN_RE = re.compile(r"预计发声|约\s*\d+(?:\.\d+)?\s*秒")
+PRODUCTION_NOTE_RE = re.compile(
+    r"一次性场景|不单独生成环境图|不建立独立背景|视频生成时|"
+    r"后期添加|用于衔接|为下一片段(?:对白)?衔接|避免乱码"
+)
+LEGACY_FIELD_RE = re.compile(r"^(?:景别|构图|运镜|画面内容)[：:]", re.MULTILINE)
+ENVIRONMENT_RE = re.compile(r"^环境参考[：:]", re.MULTILINE)
+SOUND_DESIGN_RE = re.compile(
+    r"(?m)^\s*【声音设计】[：:]\s*\S+",
+    re.IGNORECASE,
+)
+REMOVED_ENVIRONMENT_AUDIO_RE = re.compile(
+    r"(?m)^\s*(?:环境音[：:]|【环境音】[：:])"
+)
+OPTICAL_CRAFT_RE = re.compile(
+    r"(?:24|28|35|50|85|100|135)\s*mm|焦段|浅景深|大景深|全景深|焦平面|"
+    r"焦点(?:转移|后移|前移)|由虚转实|前景[^。；\r\n]{0,12}虚化|重度虚化|"
+    r"近大远小|空间压缩|消失点|引导线|光轴|视平线|起幅|落幅|甩摇"
+)
+GENERIC_GESTURE_RE = re.compile(
+    r"抬手(?:指向|指着|一指)|伸手(?:指向|指着)|竖起一根手指|"
+    r"摊开?手|摊手|掌心向上|点头|抱臂|握拳"
+)
+CONTEXTUAL_GESTURE_RE = re.compile(
+    r"(?:指向|指着)[^。；\r\n]{0,12}(?:前路|晶石|石头|工具|工作台|门|地图|物件|道具)"
+)
+# Local wording families for admission bookkeeping, not proof of visual meaning.
+MAJOR_ACTION_PATTERNS = {
+    name: re.compile(pattern)
+    for name, pattern in {
+        "起身": r"起身|站起",
+        "转身": r"转身",
+        "迈步": r"迈步",
+        "跑向": r"跑向",
+        "跑开": r"跑开",
+        "跳起": r"跳起",
+        "前倾": r"前倾|俯身",
+        "后仰": r"后仰|后倾",
+        "转头": r"转头|回头",
+        "重心转移": (
+            r"(?:转移|移动|调整|收回|降低|放低)(?:身体)?重心|"
+            r"重心[^。；，,\r\n]{0,8}(?:转移|调整|前移|后移|侧移|下沉|回落|移回|移向|移到|落回|向[前后左右]移)"
+        ),
+        "拿出": r"拿出",
+        "放入": r"放入",
+        "推开": r"推开",
+        "拉开": r"拉开",
+        "抓住": r"抓住",
+        "扔出": r"扔出",
+        "接住": r"接住",
+        "撞上": r"撞上",
+        "倒下": r"倒下",
+        "坐下": r"坐下",
+    }.items()
+}
+CAMERA_MOTION_RE = re.compile(r"甩摇|跟拍|推近|缓推|后拉|拉远|横移|弧移|环绕|上摇|下摇|升降|镜头升起|镜头下降|手持")
+AUDIO_HIDDEN_VISUAL_RE = re.compile(
+    r"(?m)^\s*【声音设计】[：:][^\r\n]*(?:人物|角色|他|她)[^\r\n]{0,12}"
+    r"(?:转身|走向|跑向|打开|拿起|放下|推开|拉开)"
+)
+TEXTUAL_EVIDENCE_RE = re.compile(r"台词|对白|气泡|剧情|语义|意图|翻译|剧本")
+TEXT_ONLY_CLAUSE_RE = re.compile(
+    r"^(?:(?:仅|只)(?:根据|依据|凭|据)?|根据|依据|基于)?"
+    r"(?:台词|对白|气泡|剧情|语义|意图|翻译|剧本)"
+    r"(?:说|写|要求|提到|表示|说明|表明|中|里|的|意思|推断|判断|[：:]|$)"
+)
+VISUAL_SOURCE_RE = re.compile(r"原格|源图|画面|当前格|面板|图中|参考图|图像|可见")
+AUTHORING_METADATA_RE = re.compile(
+    r"\b(?:visual_evidence|action_admissions?|fact_claims|motion_decision|"
+    r"source_facts|story_context|source_audit|anchor_safe|visible_in_framing|background_decision|evidence_images)\b|"
+    r"证据说明|推断依据|准入依据|准入通过|图像证据|图像支持|保真复查|"
+    r"(?:证据|推断|准入|复查)(?:来源|说明|理由|结果)[：:]"
+)
+SOUND_DIALOGUE_DUPLICATION_RE = re.compile(
+    r"对白|台词|话音|喊声|问话声|回答声|说话声|嗓音|"
+    r"声线|音色|语气|语速|吐字|尾音|(?:拒绝|质问|回答|解释|否认)声"
+)
+SOUND_SUBJECT_ACTION_RE = re.compile(
+    r"边跑边|随(?:着)?(?:奔跑|跑动|行走|走动|转身|摇头|抬手|伸手)|"
+    r"(?:人物|角色|他|她|两人|少女|少年)[^。；\r\n]{0,16}"
+    r"(?:跑向|跑开|转身|摇头|抬手|伸手|迈步|起身|俯身|后仰|前倾|抓住|拿起|放下|推开|拉开)"
+)
+NON_ACTION_TEMPORAL_MOTION_RE = re.compile(
+    r"(?:先|随后|随即|然后|开始|继续|逐渐|猛地|迅速|突然|最后)"
+    r"[^。；\r\n]{0,18}(?:起身|转身|迈步|跑向|跑开|摇头|抬手|伸手|"
+    r"俯身|后仰|前倾|抓住|拿起|放下|推开|拉开|抛出|接住)"
+)
+ATMOSPHERE_EFFECTS = ("丁达尔", "微尘", "炫光", "环境雾")
+ATMOSPHERE_BASIS_RE = re.compile(
+    r"窗|门缝|开口|逆光|背光|侧逆光|方向光|阳光|夕阳|灯光|蒸汽|烟雾|烟尘|雨幕|强光源"
+)
+CAMERA_STAGING_MOTION_RE = re.compile(
+    r"(?:镜头|摄影机|机位)[^。；\r\n]{0,24}(?:横移|跟随|跟拍|推近|缓推|前推|后拉|拉远|甩摇|弧移|环绕|上摇|下摇|升起|下降|手持)|"
+    r"推近|缓推|前推|后拉|拉远|跟拍|甩摇|弧移|环绕|上摇|下摇|手持"
+)
+CAMERA_LANDING_RE = re.compile(
+    r"落幅|句末[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
+    r"最终[^。；\r\n]{0,18}(?:稳住|稳定|停在|落在|收束)|"
+    r"(?:横移|跟随|跟拍|推近|缓推|前推|后拉|拉远|甩摇|弧移|环绕|上摇|下摇|升起|下降|手持)[^。；\r\n]{0,30}(?:稳住|稳定|停住|停在|落在|收束)"
+)
+EXPRESSIVE_DIALOGUE_RE = re.compile(r"[！!？?]{2,}|っ[！!]|だ、だ|不、?不")
+AUDIO_BEAT_DIFFERENTIATION_RE = re.compile(
+    r"第一次|第二次|第一声|第二声|前一次|后一次|先[^。；\r\n]{0,18}(?:再|随后)|"
+    r"随后|转折|改口|重复|重音|停顿|半拍|回响|收干|衰减"
+)
+PURE_OBJECT_SHOT_RE = re.compile(
+    r"人物(?:与手|和手)?均未入画|人物未入画|画面(?:没有|不含)人物|物件特写|说明性物件镜头"
+)
+SHOT_FIELD_NAMES = ("镜头设计", "可见动作", "可见背景", "台词与语气", "光影布光", "声音设计")
+SHOT_FIELD_RE = re.compile(
+    r"(?ms)^\s*【(镜头设计|可见动作|可见背景|台词与语气|光影布光|声音设计)】[：:]\s*"
+    r"(.*?)(?=^\s*【(?:镜头设计|可见动作|可见背景|台词与语气|光影布光|声音设计)】[：:]|\Z)"
+)
+BACKGROUND_SUBJECT_COMPOSITION_RE = re.compile(
+    r"(?:人物|角色|少女|少年|女性|男性|男人|女人|手掌|手臂|脸部|侧脸|正脸|"
+    r"头盔|晶石|武器|道具)[^。；\r\n]{0,24}"
+    r"(?:位于画面|占据|压在|伸入|围住|遮挡|前景|主体|左侧|右侧|中央)"
+)
+# Narrow assertions fail; body vocabulary alone only asks for semantic review.
+BACKGROUND_BODY_RE = re.compile(
+    r"脸部|面颊|贴布|发束|长发|头发|发丝|皮肤|口腔|指缝|衣领|袖口|甲片|额甲|眼窝"
+)
+BACKGROUND_BODY_AS_BACKING_RE = re.compile(
+    r"(?:脸部|面颊|贴布|发束|长发|头发|发丝|皮肤|口腔|指缝|衣领|袖口|甲片|额甲|眼窝)"
+    r"[^。；\r\n]{0,60}(?:(?:填充|填满|铺满|占满|构成|形成)[^。；\r\n]{0,10}背景|"
+    r"构成(?:两侧|左右|画面)?边界|(?:占满|铺满|填满)画面)"
+)
+BACKGROUND_DEPICTION_RE = re.compile(r"壁画|海报|肖像|照片|画像|广告画")
+BACKGROUND_OCCLUSION_RE = re.compile(
+    r"(?:独立|可见)?背景(?:完全|全部)?被(?:满幅)?(?:主体|人物|物体)"
+    r"(?:完全|全部)?遮(?:住|挡)|背景(?:完全|全部)?为(?:满幅)?主体所遮(?:住|挡)"
+)
+SELF_CONTAINED_META_RE = re.compile(
+    r"保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
+    r"上一(?:格|镜|镜头|片段)|前一(?:格|镜|镜头|片段)|"
+    r"沿用(?:上一|前一)|承接(?:上一|前一)|同一场面(?:继续|后续)|"
+    r"不新增|不增加|不出现|不使用|不改变|不补画|不另加|不要|无需|避免"
+)
+META_RE = re.compile(
+    r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则|"
+    r"(?:按照|依照|按)(?:原格|原图|参考图)(?:进行)?(?:处理|呈现|还原)?|"
+    r"(?:背景|画面)(?:按照|依照|按)(?:原格|原图|参考图)(?:进行)?(?:处理|呈现|还原)?|"
+    r"无(?:实体|独立)?背景|原(?:格|画|图)[^。；\r\n]{0,16}(?:没有|不呈现|弱化)[^。；\r\n]{0,12}(?:实景|环境|背景|景物)|"
+    r"盒外环境不可见|(?:不补画|不另加|不加入|不出现|不恢复|不保留|不切换|不自行)"
+    r"[^。；\r\n]{0,20}(?:背景|实景|环境|林景|树林|树木|天空|城市|建筑)"
+)
+BACKGROUND_VISUAL_RE = re.compile(
+    r"背景|天空|云(?:层|影|体)?|树(?:冠|林|木|影)?|森林|草(?:地|坡|丛|叶)?|地面|地板|"
+    r"墙(?:面|壁)?|室内|走廊|房间|街道|屋顶|山(?:体|坡|脊)?|灌木|"
+    r"水面|湖面|海面|河面|岩(?:壁|地|石)?|洞穴|速度(?:线|带|场)|"
+    r"放射线|冲击底|渐变|图形底|纯色|纯白图形底|色块|亮区|夜色|阴影|光幕|雾|烟尘|尘土|雨幕|雪地|"
+    r"箱壁|盒壁|内衬|布景|帘布|布面|木(?:板|构|纹|梁|柱|墙|地|柜台)|柜台|炊汽|蒸汽|底场|"
+    r"(?:铺满|填满|遮满)(?:画面|背景)"
+)
+NEGATIVE_PROMPT_RE = re.compile(
+    r"^(?:景别|构图|运镜|画面内容)[：:][^\r\n]*(?:不增加|不使用|不推拉|不环绕|"
+    r"不出现|不进入|不显示|不改变|不穿透|不继续|不做|不要|避免|无需)",
+    re.MULTILINE,
+)
+QUOTE_RE = re.compile(r"“([^”]+)”")
+SPEECH_HINT_RE = re.compile(
+    r"旁白|说道|说着|说|喊道|喊|问道|问|答道|回答|解释|嘟囔|"
+    r"低声|高声|叫道|念道|宣布|开口"
+)
+SPEAKER_QUOTE_RE = re.compile(
+    r"([A-Za-z0-9\u3400-\u9fff·]+?)(?:画外)?"
+    r"(?:说道|说|喊道|喊|问道|问|答道|回答|嘟囔|叫道|念道|宣布|开口)"
+    r"[：:]\s*“([^”]+)”"
+)
+HIDDEN_CUT_RE = re.compile(
+    r"(?:画面|镜头)?(?:末尾|随后|然后|再)?切(?:换)?(?:到|至|为)?"
+    r"(?=\s*(?:平视|仰视|俯视|斜俯视|低机位|高位|正面|侧面|背面|"
+    r"近景|中景|远景|特写|全景|反打|插入|手部|脸部|眼部|物件))"
+)
+SEMANTIC_TRIGGER_CUE_RE = re.compile(
+    r"(?:提到|说到|谈到|讲到|问到|回答到)[^。；\r\n]{1,40}?(?:时|处)|"
+    r"[“\"](?:[^”\"。；\r\n]{1,24})[”\"](?:出口|落下|响起|说出|喊出|问出|念出|重复)(?:时|处)|"
+    r"(?:提出|表达|表示|强调|拒绝|答应|承认|否认|改口|反问|质问|警告|命令|劝阻|安慰|解释)"
+    r"[^。；，,\r\n]{1,24}?(?:时|处)|"
+    r"(?:信息|结论|判断|名称|对象)(?:进入|到来|出现)(?:时|处)"
+)
+BACKGROUND_PAGE_ARTIFACT_RE = re.compile(
+    r"漫画留白|对话留白|气泡留白|画面留白|页面留白|页边|格间留白|"
+    r"气泡(?:内部|周边|旁边|后的?)空白|OCR(?:空白|缺口)|画外传来的声源方向留成|"
+    r"留白把背景|空白把背景"
+)
+PAGE_OVERLAY_VISUAL_RE = re.compile(
+    r"(?:韩文|日文|中文|英文)(?:拟声字|文字|字样|排字)|"
+    r"拟声字|字形|漫画排字|文字排布|字幕|页码|"
+    r"(?:对白|旁白|台词|说明)(?:框|文字框)|气泡尾|漫画格线"
+)
+GENERIC_LOCK_RE = re.compile(
+    r"当前原格|当前面板|当前图|按原格|依照原格|原格(?:主体|构图|位置)|"
+    r"主体位置(?:不变|锁定)|构图关系(?:不变|锁定)|可见主体|画面主体"
+)
+COMPOSITION_SIGNAL_GROUPS = (
+    re.compile(r"近景|中景|远景|全景|特写|极近景|半身|胸像|肩部|腰部|膝上|空镜"),
+    re.compile(r"左(?:侧|边|缘|前|后|半|中|上|下)|右(?:侧|边|缘|前|后|半|中|上|下)|中央|居中|中部|[上下](?:中|方|缘|部|半)|远中|前中|近前|画面[左右上下]|占据|占满"),
+    re.compile(r"前景|中景|后景|纵深|前后层次|景深"),
+    re.compile(r"遮挡|重叠|露出|压住|穿过|贴住|接触|裁切|切到|切入|出画|入画|边缘|负空间|填满|围住|横贯|斜穿"),
+)
+MULTI_REF_BULLET_RE = re.compile(
+    r"(?m)^\s*[-*]\s*参考\s*`?\[([^\]\r\n]+\.(?:png|jpe?g|webp))\]`?"
+    r"\s*[（(]([^）)]+)[）)]\s*[：:]\s*(\S.+)$",
+    re.IGNORECASE,
+)
+ACTION_PHASE_BULLET_RE = re.compile(
+    r"(?m)^\s*[-*]\s*([^：:\r\n]{1,20})\s*[：:]\s*(\S.+)$"
+)
+ACTION_CAMERA_COMPOSITION_RE = re.compile(
+    r"(?:\d{2,3}\s*mm|焦段|景深|机位|轴线|构图|负空间|"
+    r"(?:大|极)?特写|近景|中景|远景|全景|(?<![上下])半身|胸像|膝上|"
+    r"前景|中景|后景|裁切|被(?:上|下|左|右)缘(?:裁|切)|"
+    r"(?:占据|占满)(?:画面|左|右|中央|中部)|画面(?:上|下|左|右)三分之一)"
+)
+JAPANESE_TRIGGER_QUOTE_RE = re.compile(r"「([^」]+)」")
+GENERIC_TIMING_CUE_RE = re.compile(
+    r"开口前|句首|句中|前半句|后半句|转折(?:处|后)?|重音处|句末|停顿处"
+)
+COUNTED_GAZE_TARGET_RE = re.compile(
+    r"(?:视线|目光|眼神)[^。；\r\n]{0,24}?"
+    r"(?:落向|转向|看向|投向|停在)[^。；\r\n]{0,16}?"
+    r"(?P<count>两名|两位|两人|二人|三名|三位|三人)"
+    r"(?P<noun>少女|少年|女性|男性|人物|旅人|客人)"
+)
+SUBJECT_DESCRIPTOR_RE = re.compile(
+    r"[A-Za-z0-9\u3400-\u9fff·]{0,10}(?:少女|少年|女性|男性|旅人|客人|店员|厨师|人物)"
+)
+VIEWPOINT_TERMS = ("正面", "侧面", "背面", "三分之二", "俯视", "仰视", "平视")
+SALIENT_PROP_TERMS = ("木杯", "杯", "碗", "筷", "地图", "刀", "剑", "头盔", "吧台")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("storyboard", type=Path)
+    parser.add_argument("--max-seconds", type=int, default=15)
+    parser.add_argument("--target-seconds", type=int, default=15, help="Planning target for adjacent-clip grouping review, not a minimum duration.")
+    parser.add_argument("--image-dir", type=Path)
+    parser.add_argument(
+        "--source-ledger",
+        type=Path,
+        help="Version-3 JSON grounding, dialogue, coverage, shot-role, and audit ledger.",
+    )
+    parser.add_argument(
+        "--dialogue-ledger",
+        type=Path,
+        help="Deprecated alias for --source-ledger; the file must use version 3.",
+    )
+    parser.add_argument(
+        "--require-source-ledger",
+        action="store_true",
+        help="Fail when no version-3 source ledger is supplied.",
+    )
+    return parser.parse_args()
+
+
+def shot_field_values(block: str) -> dict[str, str]:
+    """Return normalized re0-style fields from one ordinary shot."""
+    values: dict[str, str] = {}
+    for match in SHOT_FIELD_RE.finditer(block):
+        values[match.group(1)] = match.group(2).strip()
+    return values
+
+
+def major_action_kinds(text: str) -> set[str]:
+    """Normalize supported wording families; unknown wording still needs review."""
+    return {name for name, pattern in MAJOR_ACTION_PATTERNS.items() if pattern.search(text)}
+
+
+def is_explicitly_text_only_evidence(evidence: str) -> bool:
+    """Reject only clearly textual clauses, not negation or mixed visual evidence."""
+    clauses = [part.strip() for part in re.split(r"[。；;，,\r\n]+", evidence) if part.strip()]
+    return bool(clauses) and all(
+        TEXT_ONLY_CLAUSE_RE.search(clause) and not VISUAL_SOURCE_RE.search(clause)
+        for clause in clauses
+    )
+
+
+def delivery_metadata_errors(text: str) -> list[str]:
+    """Keep authoring evidence in the ledger, including outside the six fields."""
+    def mask_spoken_quotes(field: re.Match[str]) -> str:
+        value = field.group(0)
+        if field.group(1) != "台词与语气":
+            return value
+
+        def mask_quote(quote: re.Match[str]) -> str:
+            prefix = value[:quote.start()]
+            # Mask speaker-colon utterances, not quoted author notes or voice directions.
+            if prefix.count("（") == prefix.count("）") and re.search(
+                r"[A-Za-z0-9\u3400-\u9fff·]+[：:]\s*$", prefix,
+            ):
+                return ""
+            return quote.group(0)
+
+        return QUOTE_RE.sub(mask_quote, value)
+
+    # Actual spoken quotes may legitimately discuss evidence in the story.
+    scanned = SHOT_FIELD_RE.sub(
+        mask_spoken_quotes, text,
+    )
+    leaked = sorted({match.group(0) for match in AUTHORING_METADATA_RE.finditer(scanned)})
+    return [
+        f"正式分镜含内部证据/复查说明：{term}；只放内部源图台账，不写入六字段、旁注或附录。"
+        for term in leaked
+    ]
+
+
+def segment_chunks(
+    text: str, segment_re: re.Pattern[str] = SEGMENT_RE
+) -> list[tuple[int, str]]:
+    matches = list(segment_re.finditer(text))
+    return [
+        (
+            int(match.group(1)),
+            text[
+                match.start() : matches[index + 1].start()
+                if index + 1 < len(matches)
+                else len(text)
+            ],
+        )
+        for index, match in enumerate(matches)
+    ]
+
+
+def missing_voice_directions(chunk: str) -> list[str]:
+    """Return spoken/narrated quotes not followed by a full-width voice note."""
+    missing: list[str] = []
+    for line in chunk.splitlines():
+        for match in QUOTE_RE.finditer(line):
+            prefix = line[: match.start()]
+            # Ignore quoted keywords inside an existing voice-direction parenthesis.
+            if prefix.count("（") > prefix.count("）"):
+                continue
+            nearby = prefix[max(0, len(prefix) - 40) :]
+            suffix = line[match.end() :]
+            # A quoted keyword inside narration is not a separate spoken line.
+            if not SPEECH_HINT_RE.search(nearby) or re.match(r"[^（）]*?(?:时|处)", suffix):
+                continue
+            if not re.match(r"\s*[。！？!?]?\s*（", suffix):
+                missing.append(match.group(1))
+    return missing
+
+
+def compact_text(value: str) -> str:
+    """Normalize whitespace for exact dialogue-presence checks."""
+    return re.sub(r"\s+", "", value)
+
+
+def performance_bookkeeping_warnings(
+    performance: list, shots: list, shot_map: dict[str, tuple[int, str]],
+) -> list[str]:
+    """Expose copied planning/timing records, not infer creative quality or quotas."""
+    warnings: list[str] = []
+    source_shots = {
+        shot["target"]: shot for shot in shots
+        if isinstance(shot, dict) and isinstance(shot.get("target"), str)
+    }
+    whole_shot_timing: dict[str, bool] = {}
+    for entry in performance:
+        if not isinstance(entry, dict):
+            continue
+        target = entry.get("target")
+        if not isinstance(target, str) or target not in shot_map:
+            continue
+        shot = source_shots.get(target, {})
+        card = entry.get("card")
+        if "P" in (shot.get("risk_flags") or []) and isinstance(card, dict):
+            coupling = card.get("coupling")
+            if isinstance(coupling, str) and coupling.strip() and any(
+                isinstance(shot.get(field), str)
+                and compact_text(coupling) == compact_text(shot[field])
+                for field in ("motion_decision", "risk_basis")
+            ):
+                warnings.append(
+                    f"{target}需表演卡语义复查：coupling复制了动作准入/风险说明；"
+                    "核查是否实际设计了任务或人物互动。一个真实节拍或有意持态仍有效，"
+                    "此提示不要求增加手势或改写同义词。"
+                )
+        intervals = entry.get("intervals")
+        whole_shot_timing[target] = bool(
+            isinstance(intervals, list) and len(intervals) == 1
+            and isinstance(intervals[0], dict)
+            and intervals[0].get("concurrent", True) is True
+            and all(
+                valid_seconds(intervals[0].get(field))
+                and intervals[0][field] == shot_map[target][0]
+                for field in ("speech_seconds", "acting_seconds")
+            )
+        )
+    # Three repeated records trigger review, not a required acting density.
+    if len(whole_shot_timing) >= 3 and all(whole_shot_timing.values()):
+        warnings.append(
+            "表演估时需批量复查：全部登记镜头均把对白与表演设为整镜等长并行；"
+            "核查是否遗漏独立前置、停顿或尾持态。真正全程并行可保留，"
+            "不按此模式判定表演质量或要求新增动作。"
+        )
+    return warnings
+
+
+def estimated_japanese_speech_seconds(value: str) -> float:
+    """Independently estimate natural speech time from the final Japanese text."""
+    meaningful = re.findall(r"[A-Za-z0-9\u3040-\u30ff\u3400-\u9fff々ー]", value)
+    if not meaningful:
+        return 0.0
+    duration = len(meaningful) / 6.0
+    duration += 0.25 * len(re.findall(r"[、，,]", value))
+    duration += 0.45 * len(re.findall(r"[。！？!?]", value))
+    duration += 0.6 * len(re.findall(r"……|…", value))
+    # Even a short interjection needs an attack and release; ordinary lines need
+    # enough time to remain intelligible instead of being fitted to the shot.
+    floor = 1.0 if len(meaningful) <= 4 else 2.0 if len(meaningful) <= 16 else 0.0
+    return round(max(duration, floor), 2)
+
+
+def coverage_dialogue_metrics(block: str) -> tuple[int, int]:
+    """Return all quoted dialogue characters and any explicitly named speakers."""
+    quotes = QUOTE_RE.findall(block)
+    matches = list(SPEAKER_QUOTE_RE.finditer(block))
+    meaningful_characters = sum(
+        sum(character.isalnum() for character in quote) for quote in quotes
+    )
+    speakers = {match.group(1) for match in matches}
+    return meaningful_characters, len(speakers)
+
+
+def has_repeated_utterance(dialogue: str) -> bool:
+    """Return whether one spoken quote repeats a meaningful 2+ character unit."""
+    normalized_quotes: list[str] = []
+    all_units: list[str] = []
+    for quote in QUOTE_RE.findall(dialogue):
+        normalized_quote = re.sub(r"[^\u3040-\u30ff\u3400-\u9fffA-Za-z]", "", quote)
+        if len(normalized_quote) >= 2:
+            normalized_quotes.append(normalized_quote)
+        all_units.extend(
+            re.findall(r"[\u3040-\u30ff\u3400-\u9fffA-Za-z]{2,}", quote)
+        )
+        if re.search(
+            r"([\u3040-\u30ff\u3400-\u9fffA-Za-z])[、，,…\s]+\1",
+            quote,
+        ):
+            return True
+    return (
+        len(normalized_quotes) != len(set(normalized_quotes))
+        or len(all_units) != len(set(all_units))
+    )
+
+
+def has_descriptive_background(block: str) -> bool:
+    """Require a concrete background-bearing clause, not a bare label."""
+    for clause in re.split(r"[\n。；;]", block):
+        if not BACKGROUND_VISUAL_RE.search(clause):
+            continue
+        meaningful = sum(character.isalnum() for character in clause)
+        if meaningful >= 6 and clause.strip() not in {"背景", "森林背景", "实体背景"}:
+            return True
+    return False
+
+
+def background_field_issues(background: str, shot_label: str) -> tuple[list[str], list[str]]:
+    """Check ownership, without treating every body/object noun as a hard ban."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    for clause in re.split(r"[\n。；;]", background):
+        if not clause.strip():
+            continue
+        # A painted face is scenery, not the present performer's anatomy.
+        if BACKGROUND_DEPICTION_RE.search(clause):
+            continue
+        if BACKGROUND_BODY_AS_BACKING_RE.search(clause):
+            errors.append(
+                f"{shot_label}的【可见背景】把人物身体/衣饰表面冒充背景；"
+                "构图遮挡移到镜头设计，材质明暗移到光影布光。"
+                "满幅主体确实挡住背景时陈述可见性，不凑造背景。"
+            )
+        elif BACKGROUND_SUBJECT_COMPOSITION_RE.search(clause):
+            errors.append(
+                f"{shot_label}的【可见背景】混入主体、道具位置或构图关系；"
+                "这里只写可生成背景，把静态构图移到【镜头设计】，动态表演移到【可见动作】。"
+            )
+        elif BACKGROUND_BODY_RE.search(clause):
+            warnings.append(
+                f"{shot_label}需背景字段语义复查：疑似混入身体、衣饰或遮挡关系；"
+                "按当前画面判定字段归属，实景布置或画中图像不因单个词被禁用。"
+            )
+    return errors, warnings
+
+
+def semantic_trigger_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Require named dialogue beats to quote the final Japanese line verbatim."""
+    dialogue = fields.get("台词与语气", "")
+    dialogue_quotes = [compact_text(quote) for quote in QUOTE_RE.findall(dialogue)]
+    if not dialogue_quotes:
+        return []
+
+    errors: list[str] = []
+    for field_name in ("镜头设计", "可见动作", "光影布光", "声音设计"):
+        for clause in re.split(r"[，,。；;]", fields.get(field_name, "")):
+            cue = SEMANTIC_TRIGGER_CUE_RE.search(clause)
+            if not cue:
+                continue
+            if GENERIC_TIMING_CUE_RE.search(cue.group(0)):
+                continue
+            triggers = JAPANESE_TRIGGER_QUOTE_RE.findall(clause)
+            if not triggers:
+                errors.append(
+                    f"{shot_label}的{field_name}用中文概括对白触发点：{cue.group(0)}；"
+                    "请改为说到「当前镜头日文原句片段」时，或使用句首/重音处/句末等通用时间节点。"
+                )
+                continue
+            for trigger in triggers:
+                normalized = compact_text(trigger)
+                if not any(normalized in quote for quote in dialogue_quotes):
+                    errors.append(
+                        f"{shot_label}的{field_name}引用了不属于当前台词的触发词：「{trigger}」。"
+                    )
+    return errors
+
+
+def field_ownership_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Keep dialogue treatment and subject/object motion in their owning fields."""
+    errors: list[str] = []
+    sound = fields.get("声音设计", "")
+    duplicated_dialogue = SOUND_DIALOGUE_DUPLICATION_RE.search(sound)
+    if duplicated_dialogue:
+        errors.append(
+            f"{shot_label}的【声音设计】重复了对白表演：{duplicated_dialogue.group(0)}；"
+            "说话者、音色、语气、语速、重音、距离与声像只写在【台词与语气】，"
+            "此处只保留环境音、拟音、呼吸/身体声与静默。"
+        )
+    leaked_sound_action = SOUND_SUBJECT_ACTION_RE.search(sound)
+    if leaked_sound_action:
+        errors.append(
+            f"{shot_label}的【声音设计】重新断言了主体动作：{leaked_sound_action.group(0)}；"
+            "把人物/物体运动只写在【可见动作】，此处改为音效本身及“与动作落点同步”等中性同步。"
+        )
+    for field_name in ("镜头设计", "可见背景", "台词与语气", "光影布光"):
+        leaked_motion = NON_ACTION_TEMPORAL_MOTION_RE.search(fields.get(field_name, ""))
+        if leaked_motion:
+            errors.append(
+                f"{shot_label}的【{field_name}】混入了时序性主体动作：{leaked_motion.group(0)}；"
+                "人物/物体动作只写在【可见动作】，本栏只保留自身职责。"
+            )
+    return errors
+
+
+def counted_gaze_target_errors(fields: dict[str, str], shot_label: str) -> list[str]:
+    """Reject counted gaze targets that the independently generated shot never establishes."""
+    action = fields.get("可见动作", "")
+    errors: list[str] = []
+    count_aliases = {
+        "两名": r"(?:两名|两位|两人|二人)",
+        "两位": r"(?:两名|两位|两人|二人)",
+        "两人": r"(?:两名|两位|两人|二人)",
+        "二人": r"(?:两名|两位|两人|二人)",
+        "三名": r"(?:三名|三位|三人)",
+        "三位": r"(?:三名|三位|三人)",
+        "三人": r"(?:三名|三位|三人)",
+    }
+    for match in COUNTED_GAZE_TARGET_RE.finditer(action):
+        count = match.group("count")
+        noun = match.group("noun")
+        established = re.search(
+            rf"{count_aliases[count]}[^，,。；;\r\n]{{0,8}}{re.escape(noun)}",
+            action[: match.start()],
+        )
+        if not established:
+            errors.append(
+                f"{shot_label}的可见动作把视线指向未在本镜建立的{count}{noun}；"
+                "请在【可见动作】开头正向建立该群体，或改写为看向镜头/画面左侧外/画面右侧外。"
+            )
+    return errors
+
+
+def boundary_fingerprint(block: str) -> tuple[set[str], str, set[str], set[str]]:
+    """Return a small, explainable fingerprint for cross-clip coverage review."""
+    fields = shot_field_values(block)
+    camera = fields.get("镜头设计", "")
+    action = fields.get("可见动作", "")
+    primary_clause = re.split(r"[，,；;。]", action, maxsplit=1)[0]
+    subjects = {match.group(0) for match in SUBJECT_DESCRIPTOR_RE.finditer(primary_clause)}
+    scale = (
+        "close"
+        if re.search(r"大特写|特写|近景", camera)
+        else "wide"
+        if re.search(r"远景|全景", camera)
+        else "medium"
+        if "中景" in camera
+        else ""
+    )
+    viewpoints = {term for term in VIEWPOINT_TERMS if term in camera}
+    props = {term for term in SALIENT_PROP_TERMS if term in action or term in camera}
+    return subjects, scale, viewpoints, props
+
+
+def cross_clip_boundary_warnings(chunks: list[tuple[int, str]]) -> list[str]:
+    """Flag terminal uncited coverage before a new source composition for manual comparison."""
+    warnings: list[str] = []
+    for (number, chunk), (next_number, next_chunk) in zip(chunks, chunks[1:]):
+        shots = list(SHOT_RE.finditer(chunk))
+        next_shots = list(SHOT_RE.finditer(next_chunk))
+        if not shots or not next_shots:
+            continue
+        last = shots[-1]
+        next_first = next_shots[0]
+        last_block = chunk[last.end() :]
+        next_end = next_shots[1].start() if len(next_shots) > 1 else len(next_chunk)
+        next_block = next_chunk[next_first.end() : next_end]
+        if REFERENCE_RE.search(last_block) or not REFERENCE_RE.search(next_block):
+            continue
+        subjects, scale, viewpoints, props = boundary_fingerprint(last_block)
+        next_subjects, next_scale, next_viewpoints, next_props = boundary_fingerprint(next_block)
+        likely_overlap = (
+            bool(subjects & next_subjects)
+            and bool(scale)
+            and scale == next_scale
+            and (bool(viewpoints & next_viewpoints) or bool(props & next_props))
+        )
+        if likely_overlap:
+            warnings.append(
+                f"片段{number}末镜为无参考补镜，下一片段{next_number}首镜为漫画参考镜头；"
+                "请比较主体、景别、视角、主要道具与戏剧功能，若高度重合则删除、合并或至少改变两个维度。"
+            )
+    return warnings
+
+
+def short_clip_grouping_warnings(
+    chunks: list[tuple[int, str]], target_seconds: int = 15,
+) -> list[str]:
+    """Find timing-compatible neighbors; continuity and dramatic boundaries need review."""
+    warnings: list[str] = []
+    for (number, chunk), (next_number, next_chunk) in zip(chunks, chunks[1:]):
+        durations = []
+        for block in (chunk, next_chunk):
+            matches = list(SHOT_RE.finditer(block)) + list(COMBAT_SEQUENCE_RE.finditer(block))
+            durations.append(sum(float(match.group(2)) for match in matches))
+        if all(duration > 0 for duration in durations) and sum(durations) <= target_seconds:
+            warnings.append(
+                f"片段{number}与片段{next_number}合计{sum(durations):g}秒，需跨格合并复查："
+                "若属连续动作/反应、短问短答或同一场景节拍，应合为一个片段并保留编号分镜；"
+                "若有场景/时间断点或独立戏剧落点，可保留并在内部台账说明。"
+                "时长只是候选提示，不自动证明连续性，不要求凑时或删减表演。"
+            )
+    return warnings
+
+
+def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
+    """Return timed target key -> (duration, full block)."""
+    shot_map: dict[str, tuple[int, str]] = {}
+    for segment_number, chunk in segment_chunks(main_text):
+        shots = list(SHOT_RE.finditer(chunk))
+        for index, match in enumerate(shots):
+            end = shots[index + 1].start() if index + 1 < len(shots) else len(chunk)
+            shot_number = int(match.group(1))
+            duration = int(float(match.group(2)))
+            shot_map[f"片段{segment_number}/分镜{shot_number}"] = (
+                duration,
+                chunk[match.start() : end],
+            )
+        combat_sequences = list(COMBAT_SEQUENCE_RE.finditer(chunk))
+        for index, match in enumerate(combat_sequences):
+            end = (
+                combat_sequences[index + 1].start()
+                if index + 1 < len(combat_sequences)
+                else len(chunk)
+            )
+            sequence_number = int(match.group(1))
+            duration = int(float(match.group(2)))
+            shot_map[f"片段{segment_number}/战斗段{sequence_number}"] = (
+                duration,
+                chunk[match.start() : end],
+            )
+    return shot_map
+
+
+def camera_source_review_issues(
+    shot: dict, panels: list[dict], fields: dict[str, str],
+) -> tuple[list[str], list[str]]:
+    """Check records, queue visual discrepancies; never infer pitch from a head pose."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    target = shot.get("target", "镜头")
+    camera = fields.get("镜头设计", "")
+    action = fields.get("可见动作", "")
+    decision = shot.get("camera_decision")
+    if decision is not None:
+        if not isinstance(decision, dict):
+            errors.append(f"{target}的camera_decision必须是对象。")
+        elif "mode" in decision:
+            for key in ("mode", "reason", "anchor_phase", "opening", "landing"):
+                if not isinstance(decision.get(key), str) or not decision[key].strip():
+                    errors.append(f"{target}的camera_decision缺少{key}。")
+            if decision.get("mode") not in {"fixed", "固定", "固定镜头"} and not decision.get("path_basis"):
+                errors.append(f"{target}的移动camera_decision缺少path_basis；填写实际路径依据。")
+        else:
+            warnings.append(f"{target}的既有camera_decision未分开模式、路径与落幅；修改镜头时补齐，不据此否定旧稿。")
+    if shot.get("role") == "source_locked":
+        composition = "；".join(str(p.get("composition_lock", "")) for p in panels)
+        for label, pattern in (("俯拍", r"高俯|略俯|俯拍|俯视"), ("仰拍", r"低仰|略仰|仰拍|仰视")):
+            if re.search(pattern, composition) and not re.search(pattern, camera):
+                warnings.append(f"{target}需摄影机俯仰复查：来源构图含{label}线索而镜头字段未明确；区分人物抬低头、机位高度和光轴，勿自动改角度。")
+        source_relations = "；".join(
+            str(item) for panel in panels
+            for item in panel.get("source_facts", {}).get("relations", [])
+        )
+        lens_gaze = r"(?:目光|视线|眼睛)?(?:直视|看向|望向|看着|注视)(?:摄影机|镜头)"
+        if re.search(lens_gaze, source_relations) and not re.search(lens_gaze, action):
+            warnings.append(f"{target}需镜头注视复查：已记录的直视镜头未落实到动作；面朝前方不是等义视线，不为闭眼/遮挡眼强补注视。")
+    if re.search(r"把关注集中|让[^。；]{0,24}读清楚|确保[^。；]{0,18}可读|呈现源格|保留源图", camera):
+        warnings.append(f"{target}需镜头字段精简：将目的/源格核对理由留内部，保留实际构图、焦点、路径和落幅；不是删除具体裁切约束。")
+    return errors, warnings
+
+
+def character_profile_review_issues(
+    registry: object, shot_map: dict[str, tuple[int, str]],
+) -> tuple[list[str], list[str]]:
+    """Profiles are supplied project facts, not inferred from names or emotion words."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    if registry is None:
+        return errors, warnings
+    # Legacy external-registry references carry no embedded profiles to inspect.
+    if not isinstance(registry, list):
+        return errors, warnings
+    for entry in registry:
+        if not isinstance(entry, dict) or "performance_profile" not in entry:
+            continue
+        name = entry.get("canonical_name")
+        profile = entry.get("performance_profile")
+        if not isinstance(name, str) or not name.strip():
+            errors.append("含performance_profile的人物条目缺少canonical_name。")
+            continue
+        if not isinstance(profile, dict) or any(
+            not isinstance(profile.get(key), str) or not profile[key].strip()
+            for key in ("baseline", "source")
+        ):
+            errors.append(f"{name}的performance_profile须有baseline及明确source；不能从人设图表情推导性格。")
+            continue
+        for target, (_, block) in shot_map.items():
+            fields = shot_field_values(block)
+            if name in fields.get("可见动作", "") or name in fields.get("台词与语气", ""):
+                warnings.append(f"{target}需角色基调语义复查（{name}）：对照已确认profile检查动作与语气、源图例外及持续任务；不按情绪词或动作数量自动判错。")
+    return errors, warnings
+
+
+def cinematic_quality_warnings(main_text: str) -> list[str]:
+    """Schedule semantic acting review; return other non-blocking craft hints.
+
+    Time/dialogue select review targets, not quality verdicts. Action sequence
+    and settlement words cannot certify acting or exempt a static paragraph.
+    """
+    warnings: list[str] = []
+    shot_map = build_shot_map(main_text)
+    if not shot_map:
+        return warnings
+
+    if len(shot_map) >= 3 and not SOUND_DESIGN_RE.search(main_text):
+        warnings.append("全稿没有【声音设计】；请检查环境底声、动作拟音、呼吸或静默是否能参与节奏。")
+    if len(shot_map) >= 4 and not any(
+        OPTICAL_CRAFT_RE.search(block) for _, block in shot_map.values()
+    ):
+        warnings.append("全稿缺少焦段、景深、焦点或空间透视调度；请确认画面质感并非只靠动作描述。")
+
+    generic_by_segment: dict[str, list[str]] = {}
+    for target, (_, block) in shot_map.items():
+        duration = shot_map[target][0]
+        dialogue_chars, _ = coverage_dialogue_metrics(block)
+        fields = shot_field_values(block)
+        action = fields.get("可见动作", "")
+        camera = fields.get("镜头设计", "")
+        dialogue = fields.get("台词与语气", "")
+        pure_object_shot = bool(PURE_OBJECT_SHOT_RE.search(block))
+        repeated_utterance = has_repeated_utterance(dialogue)
+        expressive_dialogue = bool(EXPRESSIVE_DIALOGUE_RE.search(dialogue)) or repeated_utterance
+        generic_match = GENERIC_GESTURE_RE.search(action)
+        generic_gesture = bool(generic_match and not CONTEXTUAL_GESTURE_RE.search(action))
+        silent_review = dialogue_chars == 0 and (
+            duration > 4 or (duration > 3 and re.search(r"特写|近景", camera))
+        )
+        performance_review = not pure_object_shot and (
+            dialogue_chars > 20 or (duration >= 5 and dialogue_chars > 0)
+            or (4 <= duration <= 6 and expressive_dialogue) or silent_review
+        )
+        if performance_review:
+            gesture_note = "出现通用手势；核对它是否回应当前任务/交流。" if generic_gesture else ""
+            warnings.append(
+                f"{target}需表演语义复查：按台词/情境推进核对全程参与与任务/互动响应；"
+                "若保留停顿/持态，说明具体阶段、用途与时长。镜尾可以继续动作。"
+                f"{gesture_note}这是复查排程，不是低质量判定；时序/停姿词不免审，"
+                "不强制加手势、身体位移或拆镜；结论记入现有审阅记录。"
+            )
+        elif pure_object_shot and duration >= 7:
+            warnings.append(
+                f"{target}时长为{duration}秒的物件/说明镜头；复核可见发展或有目的停留及自然时长，"
+                "不要求人物表演，也不因时长自动拆镜。"
+            )
+        if CAMERA_STAGING_MOTION_RE.search(camera) and not CAMERA_LANDING_RE.search(camera):
+            warnings.append(
+                f"{target}声明了摄影机运动但没有镜头落幅；请写明运动跟随什么，并在何处稳定。"
+            )
+        if repeated_utterance and not AUDIO_BEAT_DIFFERENTIATION_RE.search(dialogue):
+            warnings.append(
+                f"{target}含重复话语但【台词与语气】没有区分前后节拍；"
+                "请在台词栏用压力、停顿、重音或收尾变化区分重复表达。"
+            )
+        if generic_gesture:
+            segment = target.split("/", 1)[0]
+            generic_by_segment.setdefault(segment, []).append(target)
+            if not performance_review:
+                warnings.append(
+                    f"{target}出现通用手势；请复查它是否服务当前任务/交流。"
+                    "增加身体部位关键词不能代替情境依据，短镜头的丰富交叠表演无需按数量删减。"
+                )
+        if ("大光圈" in block and re.search(r"大景深|全景深|强景深", block)) or (
+            "浅景深" in block and re.search(r"大景深|全景深|强景深", block)
+        ):
+            warnings.append(f"{target}同时声明浅景深/大光圈与大景深；请明确焦点和景深意图。")
+        if "固定镜头" in block and CAMERA_MOTION_RE.search(block):
+            warnings.append(f"{target}同时声明固定镜头与摄影机运动；请明确起幅、运动和落幅。")
+        if re.search(r"85\s*mm[^。；\r\n]{0,24}广角|广角[^。；\r\n]{0,24}85\s*mm", block):
+            warnings.append(f"{target}同时声明85mm与广角；请明确焦段意图。")
+        if re.search(r"24\s*mm[^。；\r\n]{0,24}长焦|长焦[^。；\r\n]{0,24}24\s*mm", block):
+            warnings.append(f"{target}同时声明24mm与长焦；请明确焦段意图。")
+        if AUDIO_HIDDEN_VISUAL_RE.search(block):
+            warnings.append(f"{target}的声音设计疑似包含新的视觉动作；请把动作移回画面段并复核证据。")
+
+    for segment, targets in generic_by_segment.items():
+        if len(targets) >= 3:
+            warnings.append(
+                f"{segment}多个镜头出现通用手势：{targets}；请复核情境差异，而非按动作数量删减。"
+            )
+
+    blocks_by_segment: dict[str, list[str]] = {}
+    for target, (_, block) in shot_map.items():
+        blocks_by_segment.setdefault(target.split("/", 1)[0], []).append(block)
+    for segment, blocks in blocks_by_segment.items():
+        if len(blocks) < 3:
+            continue
+        threshold = math.ceil(len(blocks) * 0.75)
+        for effect in ATMOSPHERE_EFFECTS:
+            affected = [block for block in blocks if effect in block]
+            unsupported = [block for block in affected if not ATMOSPHERE_BASIS_RE.search(block)]
+            if len(affected) >= threshold and len(unsupported) >= math.ceil(len(affected) / 2):
+                warnings.append(
+                    f"{segment}的{effect}出现在{len(affected)}/{len(blocks)}个镜头且多数缺少可见依据；"
+                    "请复核光源、空气介质与叙事用途。"
+                )
+    return warnings
+
+
+def validate_overflow_split(
+    panel: dict, segments: set[str], shots: list[dict],
+    shot_map: dict[str, tuple[int, str]], max_seconds: int = 15,
+) -> list[str]:
+    """Verify a narrow ownership exception; normal clip/turn/source checks still apply."""
+    image_key = Path(panel.get("image", "")).name.casefold()
+    label = f"原格{image_key}的overflow_split"
+    split = panel.get("overflow_split")
+    if not isinstance(split, dict):
+        return [f"{label}必须是对象。"]
+    errors = []
+    estimate = split.get("estimated_seconds")
+    if not valid_seconds(estimate) or float(estimate) <= max_seconds:
+        errors.append(f"{label}未证明自然完整单格超过{max_seconds}秒。")
+    numbers = split.get("segments")
+    if (
+        not isinstance(numbers, list) or len(numbers) < 2
+        or any(type(n) is not int or n < 1 for n in numbers)
+        or any(b != a + 1 for a, b in zip(numbers, numbers[1:]))
+        or {f"片段{n}" for n in numbers} != segments
+    ):
+        errors.append(f"{label}的segments必须与实际连续片段编号完全一致。")
+    for field in ("boundary_reason", "continuity_state"):
+        value = split.get(field)
+        if not isinstance(value, str) or sum(ch.isalnum() for ch in value) < 6:
+            errors.append(f"{label}缺少具体{field}。")
+    owners = {}
+    for shot in shots:
+        if not isinstance(shot, dict):
+            continue
+        refs = shot.get("derived_from") if shot.get("role") == "uncited_coverage" else shot.get("source_images")
+        if isinstance(refs, list):
+            owners[shot.get("target")] = {Path(ref).name.casefold() for ref in refs if isinstance(ref, str)}
+    owned = [target for target in shot_map if image_key in owners.get(target, set())]
+    duration = sum(shot_map[target][0] for target in owned)
+    if duration <= max_seconds:
+        errors.append(f"{label}的实际单格覆盖仅{duration:g}秒，不能使用超限拆分。")
+    if valid_seconds(estimate) and float(estimate) > duration + 0.35:
+        errors.append(f"{label}的自然估时超过实际覆盖时长，不能靠压缩表演或语速实现拆分。")
+    indexes = [i for i, target in enumerate(shot_map) if target in owned]
+    if indexes and indexes != list(range(indexes[0], indexes[-1] + 1)):
+        errors.append(f"{label}两部分之间插入了非本格覆盖，破坏连续单元。")
+    if any(owners[target] != {image_key} for target in owned):
+        errors.append(f"{label}必须证明本格独立超限，不能借其他原格凑时。")
+    return errors
+
+
+def resolve_bridge_evidence(
+    shot: dict,
+    owner_images: list[str],
+    panel_by_image: dict[str, dict[str, object]],
+    renderable_order: list[str],
+) -> tuple[list[str], list[str]]:
+    """Resolve an opt-in bridge's evidence without changing coverage ownership."""
+    if "evidence_images" not in shot:
+        return [], []
+    target = shot.get("target", "未知镜头")
+    errors: list[str] = []
+    if shot.get("role") != "uncited_coverage" or shot.get("coverage_type") != "action_phase":
+        errors.append(f"{target}的evidence_images仅用于uncited_coverage/action_phase跨镜头衔接。")
+    owners = {Path(item).name.casefold() for item in owner_images}
+    if len(owner_images) != 1 or len(owners) != 1:
+        errors.append(f"{target}的跨镜头衔接必须只有一个derived_from覆盖归属；取证不能增加覆盖归属。")
+    refs = shot.get("evidence_images")
+    if not isinstance(refs, list) or len(refs) != 2 or any(
+        not isinstance(ref, str) or not ref.strip() for ref in refs
+    ):
+        return [], errors + [f"{target}的evidence_images必须登记前后两个端点源图文件名。"]
+    keys = [Path(ref.strip()).name.casefold() for ref in refs]
+    if len(set(keys)) != 2:
+        errors.append(f"{target}的evidence_images端点不能重复。")
+    if not owners.issubset(keys):
+        errors.append(f"{target}的evidence_images必须包含其覆盖归属源图。")
+    for key in keys:
+        panel = panel_by_image.get(key)
+        if panel is None:
+            errors.append(f"{target}的evidence_images引用了未登记面板：{key}")
+        elif panel.get("renderable_visual", True) is False:
+            errors.append(f"{target}的evidence_images不能使用纯漫画排字面板：{key}")
+        elif panel.get("viewed_at_drafting") is not True:
+            errors.append(f"{target}的evidence_images源图未确认已检查：{key}")
+    if all(key in renderable_order for key in keys):
+        positions = sorted(renderable_order.index(key) for key in keys)
+        if positions[1] - positions[0] != 1:
+            errors.append(f"{target}的evidence_images必须是相邻的可生成画面端点，不能借远处源图扩张事实。")
+    decision = shot.get("motion_decision")
+    if not ((isinstance(decision, str) and decision.strip()) or (isinstance(decision, dict) and decision)):
+        errors.append(f"{target}的跨镜头衔接缺少motion_decision；需记录实际前镜结尾、后镜开头及连接选择。")
+    if errors:
+        return [], errors
+    return sorted(keys, key=renderable_order.index), []
+
+
+def validate_source_ledger(
+    ledger_path: Path,
+    main_text: str,
+    image_dir: Path | None,
+    warnings: list[str] | None = None,
+    max_seconds: int = 15,
+) -> list[str]:
+    errors: list[str] = []
+    try:
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [f"源图台账无法读取：{exc}"]
+
+    if ledger.get("version") != 3:
+        errors.append("源图台账version必须为3；旧台账请先运行migrate_source_ledger_v2_to_v3.py。")
+    migration_review = ledger.get("migration_review_required", [])
+    if not isinstance(migration_review, list):
+        errors.append("migration_review_required必须是数组。")
+    elif migration_review:
+        errors.append(
+            f"V2→V3迁移仍有{len(migration_review)}项需要逐图人工复核；"
+            "清空前不能作为通过的源图台账。"
+        )
+    source_language = ledger.get("source_language")
+    if not isinstance(source_language, str) or not source_language.strip():
+        errors.append("源图台账缺少source_language；必须声明原漫画文字语言。")
+        source_language = ""
+    else:
+        source_language = source_language.strip().casefold()
+    panels = ledger.get("panels")
+    if not isinstance(panels, list):
+        return errors + ["对白台账panels必须是数组。"]
+
+    allowed_coverage = {"none", "shared", "reverse", "insert", "mixed"}
+    allowed_kinds = {"dialogue", "inner", "narration"}
+    shot_map = build_shot_map(main_text)
+    profile_errors, profile_warnings = character_profile_review_issues(
+        ledger.get("character_registry"), shot_map,
+    )
+    errors.extend(profile_errors)
+    if warnings is not None:
+        warnings.extend(profile_warnings)
+    seconds_by_target: dict[str, float] = {}
+    speakers_by_target: dict[str, set[str]] = {}
+    acting_chars_by_target: dict[str, int] = {}
+    seen_images: set[str] = set()
+    panel_by_image: dict[str, dict[str, object]] = {}
+    panel_order: list[str] = []
+    available_images = (
+        {path.name.casefold() for path in image_dir.iterdir() if path.is_file()}
+        if image_dir
+        else None
+    )
+
+    for panel_index, panel in enumerate(panels, start=1):
+        label = f"对白台账panels[{panel_index}]"
+        if not isinstance(panel, dict):
+            errors.append(f"{label}必须是对象。")
+            continue
+        image = panel.get("image")
+        if not isinstance(image, str) or not image.strip():
+            errors.append(f"{label}缺少image。")
+            image = f"#{panel_index}"
+        else:
+            key = Path(image).name.casefold()
+            if key in seen_images:
+                errors.append(f"对白台账重复登记图片：{image}")
+            seen_images.add(key)
+            panel_by_image[key] = panel
+            panel_order.append(key)
+            if available_images is not None and key not in available_images:
+                errors.append(f"对白台账图片不存在：{image}")
+
+        if panel.get("viewed_at_drafting") is not True:
+            errors.append(f"{image}未确认在写作时打开原图（viewed_at_drafting）。")
+        drafting_resolution = panel.get("drafting_resolution")
+        if drafting_resolution not in {"720p", "original"}:
+            errors.append(f"{image}的drafting_resolution必须是720p或original。")
+        if drafting_resolution == "original":
+            escalation_reason = panel.get("resolution_escalation_reason")
+            if not isinstance(escalation_reason, str) or sum(ch.isalnum() for ch in escalation_reason) < 6:
+                errors.append(f"{image}查看original但未记录具体resolution_escalation_reason。")
+        if panel.get("bubble_audit") != "pass":
+            errors.append(f"{image}未通过原图气泡数与顺序复核。")
+        renderable_visual = panel.get("renderable_visual", True)
+        if not isinstance(renderable_visual, bool):
+            errors.append(f"{image}的renderable_visual必须是布尔值。")
+            renderable_visual = True
+        page_overlays = panel.get("page_overlays", [])
+        if not isinstance(page_overlays, list):
+            errors.append(f"{image}的page_overlays必须是数组，没有则写空数组。")
+            page_overlays = []
+        for overlay_index, overlay in enumerate(page_overlays, start=1):
+            overlay_label = f"{image} page_overlays[{overlay_index}]"
+            if not isinstance(overlay, dict):
+                errors.append(f"{overlay_label}必须是对象。")
+                continue
+            if overlay.get("kind") not in {"sfx", "speech_balloon", "caption", "label", "page_number", "border"}:
+                errors.append(f"{overlay_label}的kind无效。")
+            if not isinstance(overlay.get("source_text"), str) or not overlay["source_text"].strip():
+                errors.append(f"{overlay_label}缺少source_text。")
+            if overlay.get("render") is not False:
+                errors.append(f"{overlay_label}必须明确render:false；漫画排字不可生成进视频画面。")
+            if overlay.get("kind") == "sfx" and not isinstance(overlay.get("audio_meaning"), str):
+                errors.append(f"{overlay_label}的SFX缺少audio_meaning。")
+        if renderable_visual is False and not page_overlays:
+            errors.append(f"{image}标记为无可生成画面但未登记page_overlays。")
+        background = panel.get("background")
+        if not isinstance(background, dict):
+            errors.append(f"{image}缺少background对象。")
+        else:
+            if background.get("type") not in {"physical", "graphic", "surface", "omitted", "occluded"}:
+                errors.append(f"{image}的background.type必须是physical/graphic/surface/omitted/occluded。")
+            description = background.get("description")
+            if not isinstance(description, str) or sum(ch.isalnum() for ch in description) < 6:
+                errors.append(f"{image}的background.description过短或缺失。")
+            elif BACKGROUND_PAGE_ARTIFACT_RE.search(description):
+                errors.append(f"{image}的background.description把页面/气泡空白误作背景。")
+            elif PAGE_OVERLAY_VISUAL_RE.search(description):
+                errors.append(f"{image}的background.description把漫画排字误作可生成背景。")
+            if background.get("evidence") != "current_panel":
+                errors.append(f"{image}的背景必须以current_panel为证据。")
+        composition = panel.get("composition_lock")
+        if renderable_visual is False and composition in {None, ""}:
+            pass
+        elif not isinstance(composition, str) or not composition.strip():
+            errors.append(f"{image}缺少简洁composition_lock。")
+        elif PAGE_OVERLAY_VISUAL_RE.search(composition):
+            errors.append(f"{image}的composition_lock把漫画排字误作可生成构图。")
+        elif GENERIC_LOCK_RE.search(composition) or sum(
+            bool(pattern.search(composition)) for pattern in COMPOSITION_SIGNAL_GROUPS
+        ) < 2:
+            errors.append(
+                f"{image}的composition_lock过于泛化；必须具体写景别/裁切、位置及深度/遮挡中的至少两类。"
+            )
+        source_facts = panel.get("source_facts")
+        if not isinstance(source_facts, dict):
+            errors.append(f"{image}缺少source_facts，不能把剧情理解当画面事实。")
+        else:
+            for field in ("entities", "actions", "relations"):
+                value = source_facts.get(field)
+                if not isinstance(value, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in value
+                ):
+                    errors.append(f"{image}的source_facts.{field}必须是原子字符串数组。")
+                elif len(value) != len(set(value)):
+                    errors.append(f"{image}的source_facts.{field}含重复事实。")
+                elif any(GENERIC_LOCK_RE.search(item) for item in value):
+                    errors.append(f"{image}的source_facts.{field}含泛化占位语。")
+                elif any(PAGE_OVERLAY_VISUAL_RE.search(item) for item in value):
+                    errors.append(f"{image}的source_facts.{field}混入漫画排字；请移到page_overlays。")
+        for field in ("story_context", "non_renderable_terms"):
+            value = panel.get(field)
+            if not isinstance(value, list) or any(
+                not isinstance(item, str) or not item.strip() for item in value
+            ):
+                errors.append(f"{image}的{field}必须是字符串数组，没有则写空数组。")
+
+        coverage = panel.get("coverage")
+        if coverage not in allowed_coverage:
+            errors.append(
+                f"{image}的coverage必须是none/shared/reverse/insert/mixed之一。"
+            )
+        bubbles = panel.get("bubbles")
+        if not isinstance(bubbles, list):
+            errors.append(f"{image}的bubbles必须是数组。")
+            continue
+        declared_count = panel.get("source_bubble_count")
+        if not isinstance(declared_count, int) or declared_count != len(bubbles):
+            errors.append(
+                f"{image}的source_bubble_count与bubbles行数不一致："
+                f"{declared_count} != {len(bubbles)}"
+            )
+
+        seen_ids: set[str] = set()
+        panel_targets: set[str] = set()
+        bubble_turns: list[tuple[int, int, set[str]]] = []
+        mapped_dialogue_ids: list[str] = []
+        bubble_targets_by_id: dict[str, set[str]] = {}
+        panel_speakers = {
+            bubble.get("speaker")
+            for bubble in bubbles
+            if isinstance(bubble, dict)
+            and isinstance(bubble.get("speaker"), str)
+            and bubble["speaker"].strip()
+        }
+        for bubble_index, bubble in enumerate(bubbles, start=1):
+            bubble_label = f"{image}气泡{bubble_index}"
+            if not isinstance(bubble, dict):
+                errors.append(f"{bubble_label}必须是对象。")
+                continue
+            bubble_id = bubble.get("id")
+            if not isinstance(bubble_id, str) or not bubble_id.strip():
+                errors.append(f"{bubble_label}缺少id。")
+            elif bubble_id in seen_ids:
+                errors.append(f"{image}内气泡id重复：{bubble_id}")
+            else:
+                seen_ids.add(bubble_id)
+            if not isinstance(bubble.get("speaker"), str) or not bubble["speaker"].strip():
+                errors.append(f"{bubble_label}缺少speaker。")
+            if len(panel_speakers) >= 2 and (
+                not isinstance(bubble.get("speaker_evidence"), str)
+                or not bubble["speaker_evidence"].strip()
+            ):
+                errors.append(f"{bubble_label}属于多说话人面板但缺少speaker_evidence。")
+            if bubble.get("kind") not in allowed_kinds:
+                errors.append(f"{bubble_label}的kind必须是dialogue/inner/narration之一。")
+            if not isinstance(bubble.get("source_text"), str) or not bubble["source_text"].strip():
+                errors.append(f"{bubble_label}缺少source_text。")
+
+            status = bubble.get("status")
+            if status == "omitted":
+                if not isinstance(bubble.get("omission_reason"), str) or not bubble[
+                    "omission_reason"
+                ].strip():
+                    errors.append(f"{bubble_label}标记omitted但缺少omission_reason。")
+                continue
+            if status != "mapped":
+                errors.append(f"{bubble_label}的status必须是mapped或omitted。")
+                continue
+
+            mappings = bubble.get("segments", [bubble])
+            if not isinstance(mappings, list) or not mappings or any(not isinstance(m, dict) for m in mappings):
+                errors.append(f"{bubble_label}的segments必须是非空对象数组。")
+                continue
+            if "segments" in bubble and bubble.get("script_text") != "".join(str(m.get("script_text", "")) for m in mappings):
+                errors.append(f"{bubble_label}的完整script_text与segments拼接不一致。")
+            turn_text = str(bubble.get("script_text", ""))
+            source_text = str(bubble.get("source_text", ""))
+            if (
+                source_language
+                and source_language not in {"ja", "jp", "japanese"}
+                and compact_text(source_text) == compact_text(turn_text)
+            ):
+                errors.append(
+                    f"{bubble_label}的source_text与日文script_text完全相同；"
+                    "非日文源必须保留原语言逐字文本，禁止从成稿反向生成台账。"
+                )
+            turn_characters = sum(character.isalnum() for character in turn_text)
+            turn_clauses = len(re.findall(r"[。！？!?]+", turn_text))
+            turn_targets: set[str] = set()
+            for mapping in mappings:
+                target = mapping.get("target")
+                script_text = mapping.get("script_text")
+                seconds = mapping.get("seconds")
+                if not isinstance(target, str) or target not in shot_map:
+                    errors.append(f"{bubble_label}的target不存在：{target}")
+                    continue
+                panel_targets.add(target)
+                turn_targets.add(target)
+                if not isinstance(script_text, str) or not script_text.strip():
+                    errors.append(f"{bubble_label}缺少script_text。")
+                else:
+                    block = shot_map[target][1]
+                    spoken = "".join(re.findall(r"“([^”]+)”\s*（[^）]*）", block))
+                    if compact_text(script_text) not in compact_text(block) and compact_text(script_text) not in compact_text(spoken):
+                        errors.append(f"{bubble_label}的script_text未出现在{target}。")
+                    if bubble.get("kind") != "narration":
+                        count = sum(char.isalnum() for char in script_text)
+                        acting_chars_by_target[target] = acting_chars_by_target.get(target, 0) + count
+                        speaker = bubble.get("speaker")
+                        if isinstance(speaker, str) and speaker.strip():
+                            speakers_by_target.setdefault(target, set()).add(speaker.strip())
+                if not valid_seconds(seconds) or seconds <= 0:
+                    errors.append(f"{bubble_label}的seconds必须是正数。")
+                else:
+                    estimated = estimated_japanese_speech_seconds(str(script_text))
+                    if float(seconds) + 0.35 < estimated:
+                        errors.append(
+                            f"{bubble_label}台账估时{float(seconds):g}秒低于独立日文估时{estimated:g}秒；"
+                            "请按最终日文重估、延长或拆镜。"
+                        )
+                    seconds_by_target[target] = seconds_by_target.get(target, 0.0) + estimated
+
+            bubble_turns.append((turn_characters, turn_clauses, turn_targets))
+            if bubble.get("kind") != "narration" and isinstance(bubble_id, str) and bubble_id.strip():
+                mapped_dialogue_ids.append(bubble_id)
+                bubble_targets_by_id[bubble_id] = set(turn_targets)
+
+        kinds = {
+            bubble.get("kind") for bubble in bubbles if isinstance(bubble, dict)
+        }
+        is_risk = (
+            len(bubbles) >= 3
+            or len(panel_speakers) >= 2
+            or len(kinds) >= 2
+            or any(chars >= 28 or clauses >= 3 for chars, clauses, _ in bubble_turns)
+        )
+        if is_risk and coverage not in {"shared", "reverse", "insert", "mixed"}:
+            errors.append(f"{image}是对白风险面板，必须登记coverage。")
+        needs_turn_plan = len(mapped_dialogue_ids) >= 2 and (
+            len(panel_speakers) >= 2 or len(mapped_dialogue_ids) >= 3
+        )
+        if needs_turn_plan:
+            dialogue_turns = panel.get("dialogue_turns")
+            if not isinstance(dialogue_turns, list) or len(dialogue_turns) < 2:
+                errors.append(
+                    f"{image}是多轮对白面板，必须先按源顺序登记至少两个dialogue_turns，"
+                    "再决定增镜和片段边界。"
+                )
+            else:
+                planned_ids: list[str] = []
+                turn_ids: list[str] = []
+                turn_bubbles: dict[str, list[str]] = {}
+                for turn_index, turn in enumerate(dialogue_turns, start=1):
+                    turn_label = f"{image} dialogue_turns[{turn_index}]"
+                    if not isinstance(turn, dict):
+                        errors.append(f"{turn_label}必须是对象。")
+                        continue
+                    bubble_ids = turn.get("bubble_ids")
+                    if not isinstance(bubble_ids, list) or not bubble_ids or any(
+                        not isinstance(item, str) or not item.strip() for item in bubble_ids
+                    ):
+                        errors.append(f"{turn_label}的bubble_ids必须是非空字符串数组。")
+                        bubble_ids = []
+                    planned_ids.extend(bubble_ids)
+                    turn_id = turn.get("id")
+                    if not isinstance(turn_id, str) or not turn_id.strip() or turn_id in turn_bubbles:
+                        errors.append(f"{turn_label}缺少唯一非空id。")
+                        turn_id = f"#invalid-{turn_index}"
+                    turn_ids.append(turn_id)
+                    turn_bubbles[turn_id] = list(bubble_ids)
+                    if not isinstance(turn.get("function"), str) or not turn["function"].strip():
+                        errors.append(f"{turn_label}缺少语义function。")
+                if planned_ids != mapped_dialogue_ids:
+                    errors.append(
+                        f"{image}的dialogue_turns未按源顺序完整覆盖气泡："
+                        f"{planned_ids} != {mapped_dialogue_ids}。"
+                    )
+                coverage_groups = panel.get("coverage_groups")
+                if not isinstance(coverage_groups, list) or not coverage_groups:
+                    errors.append(f"{image}缺少coverage_groups；语义轮次不能直接等同于镜头数。")
+                else:
+                    grouped_turn_ids: list[str] = []
+                    group_target_sets: list[set[str]] = []
+                    for group_index, group in enumerate(coverage_groups, start=1):
+                        group_label = f"{image} coverage_groups[{group_index}]"
+                        if not isinstance(group, dict):
+                            errors.append(f"{group_label}必须是对象。")
+                            continue
+                        group_turn_ids = group.get("turn_ids")
+                        if not isinstance(group_turn_ids, list) or not group_turn_ids or any(
+                            not isinstance(item, str) or item not in turn_bubbles for item in group_turn_ids
+                        ):
+                            errors.append(f"{group_label}的turn_ids必须引用已登记语义轮次。")
+                            group_turn_ids = []
+                        grouped_turn_ids.extend(group_turn_ids)
+                        targets = group.get("targets")
+                        if not isinstance(targets, list) or not targets or any(
+                            not isinstance(item, str) or item not in shot_map for item in targets
+                        ):
+                            errors.append(f"{group_label}的targets必须是非空且存在的分镜数组。")
+                            targets = []
+                        target_set = set(targets)
+                        group_target_sets.append(target_set)
+                        if len(group_turn_ids) > 1:
+                            merge_basis = group.get("merge_basis")
+                            if not isinstance(merge_basis, str) or sum(ch.isalnum() for ch in merge_basis) < 8:
+                                errors.append(f"{group_label}合并多个轮次但缺少具体merge_basis。")
+                        for group_turn_id in group_turn_ids:
+                            for planned_bubble_id in turn_bubbles.get(group_turn_id, []):
+                                mapped_targets = bubble_targets_by_id.get(planned_bubble_id, set())
+                                if mapped_targets and not mapped_targets.issubset(target_set):
+                                    errors.append(
+                                        f"{group_label}未覆盖气泡{planned_bubble_id}的实际目标"
+                                        f"{sorted(mapped_targets)}。"
+                                    )
+                    if grouped_turn_ids != turn_ids:
+                        errors.append(
+                            f"{image}的coverage_groups未按顺序完整覆盖语义轮次："
+                            f"{grouped_turn_ids} != {turn_ids}。"
+                        )
+                    for group_index in range(len(group_target_sets) - 1):
+                        overlap = group_target_sets[group_index] & group_target_sets[group_index + 1]
+                        if overlap:
+                            errors.append(
+                                f"{image}的相邻coverage_groups共享分镜{sorted(overlap)}；"
+                                "若同一机位承载两轮，应将它们合为一个覆盖组。"
+                            )
+        for chars, clauses, targets in bubble_turns:
+            if (chars >= 42 or clauses >= 3) and len(targets) < 2:
+                errors.append(
+                    f"{image}含{chars}字/{clauses}分句的长台词；必须拆到至少两个真正不同的目标分镜，"
+                    "long_take_reason不能豁免。"
+                )
+            elif chars >= 28 and len(targets) < 2:
+                if not isinstance(panel.get("coverage_reason"), str) or not panel["coverage_reason"].strip():
+                    errors.append(f"{image}的28–41字台词保留单镜时缺少coverage_reason。")
+
+    for target, speakers in speakers_by_target.items():
+        if len(speakers) > 1:
+            seconds_by_target[target] = seconds_by_target.get(target, 0.0) + 0.35 * (len(speakers) - 1)
+
+    for target, required_seconds in seconds_by_target.items():
+        shot_seconds = shot_map[target][0]
+        if math.ceil(required_seconds) > shot_seconds:
+            errors.append(
+                f"{target}映射对白预计{required_seconds:g}秒，向上取整后超过"
+                f"分镜时长{shot_seconds}秒。"
+            )
+
+    for panel in panels:
+        if not isinstance(panel, dict):
+            continue
+        for overlay in panel.get("page_overlays", []):
+            if not isinstance(overlay, dict) or overlay.get("kind") != "sfx":
+                continue
+            target = overlay.get("audio_target")
+            excerpt = overlay.get("audio_excerpt")
+            if panel.get("renderable_visual", True) is False and (
+                not isinstance(target, str) or target not in shot_map
+            ):
+                errors.append(f"{panel.get('image')}是纯排字/SFX格但未把声音映射到相邻可见分镜。")
+                continue
+            if isinstance(target, str) and target in shot_map:
+                sound = shot_field_values(shot_map[target][1]).get("声音设计", "")
+                if not isinstance(excerpt, str) or not excerpt.strip() or compact_text(excerpt) not in compact_text(sound):
+                    errors.append(f"{panel.get('image')}的SFX audio_excerpt未出现在{target}的【声音设计】。")
+
+    shots = ledger.get("shots")
+    if not isinstance(shots, list) or not shots:
+        errors.append("源图台账shots必须是非空数组。")
+        shots = []
+    allowed_roles = {"source_locked", "source_supported_phase", "uncited_coverage"}
+    allowed_coverage_changes = {
+        "subject_focus",
+        "scale",
+        "viewpoint_axis",
+        "composition_overlap",
+        "visible_information",
+        "dramatic_function",
+    }
+    allowed_coverage_types = {
+        "speaker",
+        "listener",
+        "relationship",
+        "object_insert",
+        "environment_insert",
+        "detail_insert",
+        "action_phase",
+    }
+    panel_images = {
+        Path(panel.get("image", "")).name.casefold()
+        for panel in panels
+        if isinstance(panel, dict) and isinstance(panel.get("image"), str)
+    }
+    next_renderable_by_image: dict[str, str] = {}
+    renderable_order = [
+        key for key in panel_order
+        if panel_by_image[key].get("renderable_visual", True) is not False
+    ]
+    for panel_index, image_key in enumerate(panel_order):
+        for later_key in panel_order[panel_index + 1:]:
+            later_panel = panel_by_image.get(later_key, {})
+            if later_panel.get("renderable_visual", True) is not False:
+                next_renderable_by_image[image_key] = later_key
+                break
+    seen_shot_targets: set[str] = set()
+    performance_risk_targets: set[str] = set()
+    coverage_segments_by_panel: dict[str, set[str]] = {}
+    for index, shot in enumerate(shots, start=1):
+        label = f"shots[{index}]"
+        if not isinstance(shot, dict):
+            errors.append(f"{label}必须是对象。")
+            continue
+        target = shot.get("target")
+        if not isinstance(target, str) or target not in shot_map:
+            errors.append(f"{label}的target不存在：{target}")
+            continue
+        if target in seen_shot_targets:
+            errors.append(f"源图台账重复登记镜头：{target}")
+        seen_shot_targets.add(target)
+        role = shot.get("role")
+        if role not in allowed_roles:
+            errors.append(f"{target}的role必须是source_locked/source_supported_phase/uncited_coverage。")
+        if not isinstance(shot.get("purpose"), str) or not shot["purpose"].strip():
+            errors.append(f"{target}缺少purpose。")
+        if not isinstance(shot.get("evidence"), str) or not shot["evidence"].strip():
+            errors.append(f"{target}缺少evidence。")
+        excerpt = shot.get("background_excerpt")
+        if not isinstance(excerpt, str) or sum(ch.isalnum() for ch in excerpt) < 6:
+            errors.append(f"{target}的background_excerpt过短或缺失。")
+        elif compact_text(excerpt) not in compact_text(shot_field_values(shot_map[target][1]).get("可见背景", "")):
+            errors.append(f"{target}的background_excerpt未出现在分镜正文的【可见背景】字段。")
+        decision = shot.get("background_decision")
+        owner_refs = shot.get("source_images") or shot.get("derived_from") or []
+        owner_refs = owner_refs if isinstance(owner_refs, list) else []
+        camera_errors, camera_warnings = camera_source_review_issues(
+            shot,
+            [panel_by_image[Path(ref).name.casefold()] for ref in owner_refs
+             if isinstance(ref, str) and Path(ref).name.casefold() in panel_by_image],
+            shot_field_values(shot_map[target][1]),
+        )
+        errors.extend(camera_errors)
+        if warnings is not None:
+            warnings.extend(camera_warnings)
+        needs_decision = any(
+            isinstance(ref, str) and isinstance(panel_by_image.get(Path(ref).name.casefold(), {}).get("background"), dict)
+            and panel_by_image[Path(ref).name.casefold()]["background"].get("type") in {"omitted", "occluded"}
+            for ref in owner_refs
+        )
+        if decision is None and needs_decision:
+            errors.append(f"{target}的省略/遮住背景缺少background_decision；不能自动路由为抽象底。")
+        if decision is not None:
+            if not isinstance(decision, dict):
+                errors.append(f"{target}的background_decision必须是对象。")
+            else:
+                mode = decision.get("mode")
+                if not isinstance(mode, str) or mode not in {"physical", "continuity", "graphic", "occluded"}:
+                    errors.append(f"{target}的background_decision.mode无效。")
+                if not isinstance(decision.get("basis"), str) or not decision["basis"].strip():
+                    errors.append(f"{target}的background_decision缺少basis。")
+                if mode == "continuity":
+                    refs = decision.get("source_refs")
+                    if not isinstance(refs, list) or not refs:
+                        errors.append(f"{target}的实景延续缺少source_refs。")
+                    else:
+                        for ref in refs:
+                            known = False
+                            if isinstance(ref, str) and ref.strip():
+                                try:
+                                    reference_path = Path(ref)
+                                    known = reference_path.is_file() if reference_path.is_absolute() else reference_path.name.casefold() in panel_by_image
+                                except (OSError, ValueError):
+                                    known = False
+                            if not known:
+                                errors.append(f"{target}的实景延续引用不存在：{ref}")
+                if mode == "occluded" and isinstance(excerpt, str) and not BACKGROUND_OCCLUSION_RE.search(excerpt):
+                    if warnings is not None:
+                        warnings.append(f"{target}需背景遮挡语义复查：occluded与背景正文是否一致。")
+        if shot.get("source_audit") != "pass":
+            errors.append(f"{target}未通过原图语义复核。")
+        if shot.get("unsupported_additions") != []:
+            errors.append(f"{target}存在未清空的unsupported_additions。")
+
+        risk_flags = shot.get("risk_flags")
+        if not isinstance(risk_flags, list) or any(flag not in {"D", "P", "G"} for flag in risk_flags):
+            errors.append(f"{target}的risk_flags必须是只含D/P/G的数组。")
+            risk_flags = []
+        if len(risk_flags) != len(set(risk_flags)):
+            errors.append(f"{target}的risk_flags不得重复。")
+        risk_basis = shot.get("risk_basis")
+        if not isinstance(risk_basis, str) or sum(ch.isalnum() for ch in risk_basis) < 6:
+            errors.append(
+                f"{target}缺少risk_basis；请在看图时简述D/P/G为何触发或清除，"
+                "不得从成稿字数反推。"
+            )
+        if "P" in risk_flags:
+            performance_risk_targets.add(target)
+
+        source_images = shot.get("source_images")
+        if not isinstance(source_images, list) or any(
+            not isinstance(item, str) or not item.strip() for item in source_images
+        ):
+            errors.append(f"{target}的source_images必须是字符串数组。")
+            source_images = []
+        owner_images: list[str] = []
+        evidence_images: list[str] = []
+        if role in {"source_locked", "source_supported_phase"}:
+            owner_images = source_images
+            if shot.get("viewed_while_writing") is not True:
+                errors.append(f"{target}未确认在原图打开时写作。")
+            if not source_images:
+                errors.append(f"{target}的{role}必须登记source_images。")
+            block_references = {
+                Path(item).name.casefold()
+                for item in REFERENCE_RE.findall(shot_map[target][1])
+            }
+            for source_image in source_images:
+                image_key = Path(source_image).name.casefold()
+                coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
+                if image_key not in panel_images:
+                    errors.append(f"{target}引用了未登记面板：{source_image}")
+                elif panel_by_image.get(image_key, {}).get("renderable_visual", True) is False:
+                    errors.append(f"{target}引用了纯漫画排字面板：{source_image}；请只映射声音并省略独立画面。")
+                if role == "source_locked" and image_key not in block_references:
+                    errors.append(f"{target}的source_locked正文未引用：{source_image}")
+            if len(source_images) >= 2:
+                fields = shot_field_values(shot_map[target][1])
+                camera = fields.get("镜头设计", "")
+                action = fields.get("可见动作", "")
+                phase_rows = list(MULTI_REF_BULLET_RE.finditer(camera))
+                phase_images = [Path(row.group(1)).name.casefold() for row in phase_rows]
+                for source_image in source_images:
+                    if Path(source_image).name.casefold() not in phase_images:
+                        errors.append(
+                            f"{target}合并多张参考图，但【镜头设计】缺少与{source_image}绑定的独立构图阶段。"
+                        )
+                action_phases = {
+                    compact_text(row.group(1)) for row in ACTION_PHASE_BULLET_RE.finditer(action)
+                }
+                for row in phase_rows:
+                    description = row.group(3)
+                    if sum(bool(pattern.search(description)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
+                        errors.append(
+                            f"{target}的{row.group(1)}阶段缺少具体构图；需写裁切/景别、位置及深度/遮挡中的至少两类。"
+                        )
+                    phase = compact_text(row.group(2))
+                    if phase not in action_phases:
+                        errors.append(f"{target}的【可见动作】缺少与构图阶段“{row.group(2)}”对应的动作条目。")
+        elif role == "uncited_coverage":
+            if source_images:
+                errors.append(f"{target}是uncited_coverage，source_images应为空数组。")
+            derived_from = shot.get("derived_from")
+            if not isinstance(derived_from, list) or not derived_from or any(
+                not isinstance(item, str) or not item.strip() for item in derived_from
+            ):
+                errors.append(f"{target}是uncited_coverage，必须用derived_from登记所属原格。")
+                derived_from = []
+            owner_images = derived_from
+            evidence_images, bridge_errors = resolve_bridge_evidence(
+                shot, owner_images, panel_by_image, renderable_order,
+            )
+            errors.extend(bridge_errors)
+            coverage_changes = shot.get("coverage_changes")
+            if not isinstance(coverage_changes, list) or any(
+                item not in allowed_coverage_changes for item in coverage_changes
+            ):
+                errors.append(
+                    f"{target}的coverage_changes必须只使用{sorted(allowed_coverage_changes)}。"
+                )
+                coverage_changes = []
+            if len(set(coverage_changes)) < 2:
+                errors.append(f"{target}是增镜但不足两项有效coverage_changes；请重新设计必要覆盖。")
+            coverage_type = shot.get("coverage_type")
+            if coverage_type not in allowed_coverage_types:
+                errors.append(
+                    f"{target}的coverage_type必须是{sorted(allowed_coverage_types)}之一。"
+                )
+            coverage_evidence = shot.get("coverage_evidence")
+            if not isinstance(coverage_evidence, str) or sum(ch.isalnum() for ch in coverage_evidence) < 8:
+                errors.append(f"{target}缺少具体coverage_evidence；标签本身不能证明增镜差异。")
+            for source_image in derived_from:
+                image_key = Path(source_image).name.casefold()
+                if image_key not in panel_images:
+                    errors.append(f"{target}的derived_from未登记面板：{source_image}")
+                elif panel_by_image.get(image_key, {}).get("renderable_visual", True) is False:
+                    errors.append(f"{target}不能从纯漫画排字面板派生可生成画面：{source_image}")
+                coverage_segments_by_panel.setdefault(image_key, set()).add(target.split("/", 1)[0])
+            expected_next = evidence_images[-1] if evidence_images else None
+            if not expected_next:
+                for source_image in derived_from:
+                    expected_next = next_renderable_by_image.get(Path(source_image).name.casefold())
+                    if expected_next:
+                        break
+            if expected_next:
+                next_source_image = shot.get("next_source_image")
+                if not isinstance(next_source_image, str) or Path(next_source_image).name.casefold() != expected_next:
+                    errors.append(f"{target}缺少正确next_source_image；增镜必须在初稿时对比下一漫画格。")
+                next_changes = shot.get("next_source_changes")
+                if not isinstance(next_changes, list) or any(
+                    item not in allowed_coverage_changes for item in next_changes
+                ) or len(set(next_changes)) < 2:
+                    errors.append(f"{target}与下一漫画格不足两项有效next_source_changes；请重设计或合并。")
+                next_evidence = shot.get("next_source_evidence")
+                if not isinstance(next_evidence, str) or sum(ch.isalnum() for ch in next_evidence) < 8:
+                    errors.append(f"{target}缺少具体next_source_evidence；不能只填差异标签。")
+
+        if role != "uncited_coverage" and "evidence_images" in shot:
+            _, bridge_errors = resolve_bridge_evidence(shot, owner_images, panel_by_image, renderable_order)
+            errors.extend(bridge_errors)
+        fact_source_images = owner_images + evidence_images
+        evidence_panels = [
+            panel_by_image[Path(item).name.casefold()]
+            for item in fact_source_images
+            if Path(item).name.casefold() in panel_by_image
+        ]
+        allowed_facts: dict[str, set[str]] = {name: set() for name in ("entities", "actions", "relations")}
+        forbidden_terms: set[str] = set()
+        for evidence_panel in evidence_panels:
+            facts = evidence_panel.get("source_facts")
+            if isinstance(facts, dict):
+                for fact_type in allowed_facts:
+                    values = facts.get(fact_type)
+                    if isinstance(values, list):
+                        allowed_facts[fact_type].update(
+                            item for item in values if isinstance(item, str) and item.strip()
+                        )
+            terms = evidence_panel.get("non_renderable_terms")
+            if isinstance(terms, list):
+                forbidden_terms.update(
+                    item for item in terms if isinstance(item, str) and item.strip()
+                )
+        if evidence_images:
+            # An exact entity now observed in the approved bridge is no longer context-only.
+            forbidden_terms.difference_update(allowed_facts["entities"])
+
+        fact_claims = shot.get("fact_claims")
+        if not isinstance(fact_claims, dict):
+            errors.append(f"{target}缺少fact_claims，无法对账成稿中的人物、动作和关系。")
+        else:
+            for fact_type in allowed_facts:
+                claims = fact_claims.get(fact_type)
+                if not isinstance(claims, list) or any(
+                    not isinstance(item, str) or not item.strip() for item in claims
+                ):
+                    errors.append(f"{target}的fact_claims.{fact_type}必须是字符串数组。")
+                    continue
+                unsupported = sorted(set(claims) - allowed_facts[fact_type])
+                if unsupported:
+                    errors.append(
+                        f"{target}的fact_claims.{fact_type}不在源图允许表中：{unsupported}；"
+                        "剧情理解不能升格为可生成画面事实。"
+                    )
+
+        fields = shot_field_values(shot_map[target][1])
+        renderable_text = "\n".join(
+            fields.get(name, "") for name in ("镜头设计", "可见动作", "可见背景", "光影布光", "声音设计")
+        )
+        leaked_terms = sorted(term for term in forbidden_terms if term in renderable_text)
+        if leaked_terms:
+            errors.append(
+                f"{target}把仅属story_context的内容泄漏进可生成字段：{leaked_terms}。"
+            )
+
+        action_text = fields.get("可见动作", "")
+        major_actions = major_action_kinds(action_text)
+        admissions = shot.get("action_admissions")
+        if not isinstance(admissions, list):
+            errors.append(f"{target}的action_admissions必须是数组，无主要动作时写空数组。")
+            admissions = []
+        admitted_actions: set[str] = set()
+        for admission in admissions:
+            if not isinstance(admission, dict):
+                errors.append(f"{target}的action_admissions条目必须是对象。")
+                continue
+            claim = admission.get("claim")
+            source_image = admission.get("source_image")
+            visual_evidence = admission.get("visual_evidence")
+            if not isinstance(claim, str) or not claim.strip():
+                errors.append(f"{target}的action_admission缺少claim。")
+                continue
+            admitted_actions.update(major_action_kinds(claim))
+            if not isinstance(source_image, str) or Path(source_image).name.casefold() not in {
+                Path(item).name.casefold() for item in fact_source_images
+            }:
+                binding = "已登记的镜头证据源图" if evidence_images else "所属源图"
+                errors.append(f"{target}的动作“{claim}”没有绑定{binding}。")
+            if not isinstance(visual_evidence, str) or sum(ch.isalnum() for ch in visual_evidence) < 4:
+                errors.append(f"{target}的动作“{claim}”缺少具体visual_evidence。")
+            elif is_explicitly_text_only_evidence(visual_evidence):
+                errors.append(
+                    f"{target}的动作“{claim}”仅用台词/剧情作证；"
+                    "台词意思不能证明画面正在发生该动作。"
+                )
+            elif warnings is not None and TEXTUAL_EVIDENCE_RE.search(visual_evidence):
+                warnings.append(
+                    f"{target}的动作“{claim}”证据说明涉及文本语境；请语义复查图像依据与推断边界。"
+                    "提及台词、否定仅凭台词或图像/文本混合说明不自动判错；复查结果只记内部台账。"
+                )
+            if admission.get("visible_in_framing") is not True:
+                errors.append(f"{target}的动作“{claim}”未证明当前景别能看见。")
+            if admission.get("anchor_safe") is not True:
+                errors.append(f"{target}的动作“{claim}”未证明不破坏原格锚点。")
+        for action in sorted(major_actions):
+            if action not in admitted_actions:
+                errors.append(
+                    f"{target}的主要动作“{action}”未通过图像证据/景别可见/锚点安全三问准入。"
+                )
+
+    for image_key, segments in coverage_segments_by_panel.items():
+        if len(segments) > 1:
+            panel = panel_by_image.get(image_key, {})
+            if panel.get("overflow_split") is None:
+                errors.append(
+                    f"原格{image_key}的正式镜头与增镜跨越多个片段：{sorted(segments)}；"
+                    "通常同一原格的全部覆盖必须放在一个片段内；该片段可以同时容纳其他连续原格，"
+                    "这不是每格独占一个片段。自然超限单格需完整overflow_split记录。"
+                )
+            else:
+                errors.extend(validate_overflow_split(panel, segments, shots, shot_map, max_seconds))
+    for image_key, panel in panel_by_image.items():
+        if panel.get("overflow_split") is not None and len(coverage_segments_by_panel.get(image_key, set())) < 2:
+            errors.append(f"原格{image_key}的overflow_split未对应实际跨片段覆盖。")
+
+    missing_shots = sorted(set(shot_map) - seen_shot_targets)
+    if missing_shots:
+        errors.append(f"源图台账未覆盖分镜：{missing_shots}")
+
+    performance = ledger.get("performance", [])
+    if not isinstance(performance, list):
+        errors.append("对白台账performance必须是数组。")
+        performance = []
+    seen_performance: set[str] = set()
+    for entry in performance:
+        if not isinstance(entry, dict):
+            errors.append("performance条目必须是对象。")
+            continue
+        target = entry.get("target")
+        if not isinstance(target, str) or target not in shot_map:
+            errors.append(f"performance目标不存在：{target}")
+            continue
+        if target in seen_performance:
+            errors.append(f"performance重复目标：{target}")
+        seen_performance.add(target)
+        if not isinstance(entry.get("evidence"), str) or not entry["evidence"].strip():
+            errors.append(f"{target}缺少表演依据。")
+        if target in performance_risk_targets:
+            card = entry.get("card")
+            if not isinstance(card, dict):
+                errors.append(f"{target}标记P但缺少performance.card。")
+            else:
+                for field in ("opening", "coupling", "landing"):
+                    if not isinstance(card.get(field), str) or not card[field].strip():
+                        errors.append(f"{target}的performance.card.{field}缺失。")
+                beats = card.get("beats")
+                if not isinstance(beats, list) or not beats or any(
+                    not isinstance(beat, str) or not beat.strip() for beat in beats
+                ):
+                    errors.append(f"{target}的performance.card.beats必须记录非空的实际节拍。")
+        count = acting_chars_by_target.get(target, 0)
+        details = entry.get("details")
+        if not isinstance(details, list) or not details:
+            errors.append(f"{target}需登记非空的表演正文摘录；不按台词字数规定动作数量。")
+        else:
+            normalized = []
+            for detail in details:
+                if not isinstance(detail, str) or not detail.strip():
+                    errors.append(f"{target}表演细节必须是非空正文摘录。")
+                elif compact_text(detail) not in compact_text(shot_map[target][1]):
+                    errors.append(f"{target}登记的表演未写入正文：{detail}")
+                else:
+                    normalized.append(compact_text(detail))
+            if len(set(normalized)) != len(normalized):
+                errors.append(f"{target}重复登记同一表演细节。")
+        if count >= 42:
+            errors.append(f"{target}映射了{count}个有意义的日文台词字符；必须拆镜，不能登记长镜头例外。")
+        intervals = entry.get("intervals")
+        if not isinstance(intervals, list) or not intervals:
+            errors.append(f"{target}缺少串行/并行表演估时间隔。")
+            continue
+        duration, speech = 0.0, 0.0
+        for interval in intervals:
+            if not isinstance(interval, dict) or not all(valid_seconds(interval.get(k)) for k in ("speech_seconds", "acting_seconds")):
+                errors.append(f"{target}间隔估时必须为有限非负数。")
+                continue
+            speaking, acting = interval["speech_seconds"], interval["acting_seconds"]
+            concurrent = interval.get("concurrent", True)
+            if not isinstance(concurrent, bool):
+                errors.append(f"{target}间隔concurrent必须为布尔值。")
+                continue
+            duration += max(speaking, acting) if concurrent else speaking + acting
+            speech += speaking
+        if speech + 1e-6 < seconds_by_target.get(target, 0):
+            errors.append(f"{target}表演估时未覆盖全部映射对白。")
+        if math.ceil(duration) > shot_map[target][0]:
+            errors.append(f"{target}对白与表演共需{duration:g}秒，超过镜头时长。")
+    for target, count in acting_chars_by_target.items():
+        if count > 20 and target not in seen_performance:
+            errors.append(f"{target}台词合计{count}字，缺少表演与估时记录。")
+    for target in performance_risk_targets:
+        if target not in seen_performance:
+            errors.append(f"{target}标记P但缺少performance条目。")
+            continue
+        # Temporal meaning and acting quality require the image-grounded semantic
+        # review. Vocabulary heuristics remain advisories, never P-slot blockers.
+    if warnings is not None:
+        warnings.extend(performance_bookkeeping_warnings(performance, shots, shot_map))
+    return errors
+
+
+def valid_seconds(value: object) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0
+
+
+def manual_overflow_segments(ledger_path: Path | None, max_seconds: int) -> tuple[set[int], list[str]]:
+    """Return strictly verified single-panel segments allowed to exceed the hard clip ceiling."""
+    if ledger_path is None:
+        return set(), []
+    try:
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError):
+        return set(), []
+    if ledger.get("version") != 3:
+        return set(), []
+    shots = ledger.get("shots")
+    panels = ledger.get("panels")
+    if not isinstance(shots, list) or not isinstance(panels, list):
+        return set(), []
+
+    allowed: set[int] = set()
+    errors: list[str] = []
+    for panel in panels:
+        if not isinstance(panel, dict) or not isinstance(panel.get("manual_overflow"), dict):
+            continue
+        image = panel.get("image")
+        overflow = panel["manual_overflow"]
+        segment = overflow.get("segment")
+        match = re.fullmatch(r"片段(\d+)", str(segment))
+        reason = overflow.get("reason")
+        estimated = overflow.get("estimated_seconds")
+        if (
+            not isinstance(image, str)
+            or not match
+            or overflow.get("manual_handling_required") is not True
+            or not valid_seconds(estimated)
+            or float(estimated) <= max_seconds
+            or not isinstance(reason, str)
+            or sum(ch.isalnum() for ch in reason) < 8
+        ):
+            errors.append(f"{image or '未知面板'}的manual_overflow字段不完整或未证明超过{max_seconds}秒。")
+            continue
+        number = int(match.group(1))
+        target_prefix = f"片段{number}/"
+        owned_rows = [
+            shot for shot in shots
+            if isinstance(shot, dict) and str(shot.get("target", "")).startswith(target_prefix)
+        ]
+        image_key = Path(image).name.casefold()
+        if not owned_rows:
+            errors.append(f"{image}的manual_overflow没有对应片段{number}镜头。")
+            continue
+        foreign_owner = False
+        for shot in owned_rows:
+            role = shot.get("role")
+            owners = shot.get("derived_from") if role == "uncited_coverage" else shot.get("source_images")
+            owner_keys = {
+                Path(item).name.casefold()
+                for item in owners or []
+                if isinstance(item, str) and item.strip()
+            }
+            if owner_keys != {image_key}:
+                foreign_owner = True
+                break
+        if foreign_owner:
+            errors.append(
+                f"片段{number}含多格或归属不明镜头，不能使用单格manual_overflow例外。"
+            )
+            continue
+        allowed.add(number)
+    return allowed, errors
+
+
+def main() -> int:
+    args = parse_args()
+    text = args.storyboard.read_text(encoding="utf-8")
+    errors: list[str] = []
+    warnings: list[str] = []
+    errors.extend(delivery_metadata_errors(text))
+    ledger_path = args.source_ledger or args.dialogue_ledger
+    overflow_segments, overflow_errors = manual_overflow_segments(ledger_path, args.max_seconds)
+    errors.extend(overflow_errors)
+
+    safe_section_marker = text.find("# 附录：平台安全替换稿")
+    if safe_section_marker >= 0:
+        main_text = text[:safe_section_marker]
+        safe_text = text[safe_section_marker:]
+    else:
+        main_text = text
+        safe_text = ""
+
+    chunks = segment_chunks(main_text)
+    if not chunks:
+        errors.append("未找到形如‘## 【片段1】’的片段标题。")
+
+    numbers = [number for number, _ in chunks]
+    if numbers and numbers != list(range(numbers[0], numbers[0] + len(numbers))):
+        errors.append(f"片段编号不连续：{numbers}")
+
+    def validate_chunks(
+        labeled_chunks: list[tuple[str, int, str]], require_contiguous_numbers: bool
+    ) -> None:
+        if require_contiguous_numbers:
+            numbers = [number for _, number, _ in labeled_chunks]
+            if numbers and numbers != list(range(numbers[0], numbers[0] + len(numbers))):
+                errors.append(f"片段编号不连续：{numbers}")
+
+        for label, number, chunk in labeled_chunks:
+            validate_chunk(label, number, chunk)
+
+    previous_references_across_chunks: tuple[str, ...] = ()
+
+    def validate_chunk(label: str, number: int, chunk: str) -> None:
+        nonlocal previous_references_across_chunks
+        shots = list(SHOT_RE.finditer(chunk))
+        combat_sequences = list(COMBAT_SEQUENCE_RE.finditer(chunk))
+        if shots and combat_sequences:
+            errors.append(f"{label}{number}混用了逐镜时长与战斗自动分镜模式。")
+            return
+        if not shots and not combat_sequences:
+            if LEGACY_TIMECODE_RE.search(chunk):
+                errors.append(f"{label}{number}仍使用旧时间段，应改为‘分镜1（3秒）’格式。")
+            else:
+                errors.append(f"{label}{number}没有分镜时长块。")
+            return
+
+        if combat_sequences:
+            background_errors, background_warnings = background_field_issues(
+                shot_field_values(chunk).get("可见背景", ""), f"{label}{number}的战斗段"
+            )
+            errors.extend(background_errors)
+            warnings.extend(background_warnings)
+            sequence_numbers: list[int] = []
+            total_duration = 0
+            for match in combat_sequences:
+                sequence_raw, duration_raw = match.groups()
+                sequence_numbers.append(int(sequence_raw))
+                if "." in duration_raw:
+                    errors.append(f"{label}{number}含小数时长：{match.group(0)}")
+                    continue
+                duration = int(duration_raw)
+                if duration <= 0:
+                    errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
+                total_duration += duration
+            if sequence_numbers != [1]:
+                errors.append(
+                    f"{label}{number}自动分镜模式必须只含战斗段1：{sequence_numbers}"
+                )
+            if total_duration > args.max_seconds:
+                if label == "片段" and number in overflow_segments:
+                    warnings.append(
+                        f"片段{number}为单格必要覆盖{total_duration}秒，超过硬上限{args.max_seconds}秒；"
+                        "已标记交由用户人工处理。"
+                    )
+                else:
+                    errors.append(
+                        f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                    )
+            if "开局状态：" not in chunk or "战斗过程：" not in chunk or "结束状态：" not in chunk:
+                errors.append(
+                    f"{label}{number}战斗自动分镜缺少开局状态、战斗过程或结束状态。"
+                )
+            if len(re.findall(r"(?m)^\s*\d+[.、]\s*【[^】]+】", chunk)) < 2:
+                errors.append(
+                    f"{label}{number}战斗自动分镜至少需要两个带节奏/覆盖提示的有序动作节点。"
+                )
+            if not has_descriptive_background(chunk):
+                errors.append(
+                    f"{label}{number}的战斗段缺少可见背景；请写实景、图形底场或环境表面；"
+                    "满幅遮挡按背景可见性处理。"
+                )
+
+        shot_numbers: list[int] = []
+        total_duration = 0
+        for match in shots:
+            shot_raw, duration_raw = match.groups()
+            shot_number = int(shot_raw)
+            shot_numbers.append(shot_number)
+            if "." in duration_raw:
+                errors.append(f"{label}{number}含小数时长：{match.group(0)}")
+                continue
+            duration = int(duration_raw)
+            if duration <= 0:
+                errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
+            total_duration += duration
+
+        if shots:
+            expected = list(range(1, len(shot_numbers) + 1))
+            if shot_numbers != expected:
+                errors.append(f"{label}{number}分镜编号应从1连续递增：{shot_numbers}")
+            if total_duration > args.max_seconds:
+                if label == "片段" and number in overflow_segments:
+                    warnings.append(
+                        f"片段{number}为单格必要覆盖{total_duration}秒，超过硬上限{args.max_seconds}秒；"
+                        "已标记交由用户人工处理。"
+                    )
+                else:
+                    errors.append(
+                        f"{label}{number}总时长{total_duration}秒，超过{args.max_seconds}秒。"
+                    )
+
+        for match in PRODUCTION_NOTE_RE.finditer(chunk):
+            errors.append(
+                f"{label}{number}含制作流程说明，不是可直接生成的提示词：{match.group(0)}"
+            )
+
+        environment_matches = list(ENVIRONMENT_RE.finditer(chunk))
+        if len(environment_matches) > 1:
+            errors.append(f"{label}{number}重复写了环境参考，应只在片段标题下写一次。")
+        first_timed_block = shots[0] if shots else combat_sequences[0]
+        if any(match.start() > first_timed_block.start() for match in environment_matches):
+            errors.append(f"{label}{number}把环境参考写进了分镜块。")
+
+        previous_references = previous_references_across_chunks
+        for index, shot in enumerate(shots):
+            block_end = (
+                shots[index + 1].start()
+                if index + 1 < len(shots)
+                else len(chunk)
+            )
+            block = chunk[shot.end() : block_end]
+            current_references = tuple(
+                reference.casefold() for reference in REFERENCE_RE.findall(block)
+            )
+            shot_label = f"{label}{number}的分镜{shot.group(1)}"
+            duration = int(float(shot.group(2)))
+            dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
+            fields = shot_field_values(block)
+            background_errors, background_warnings = background_field_issues(fields.get("可见背景", ""), shot_label)
+            errors.extend(background_errors)
+            warnings.extend(background_warnings)
+            errors.extend(semantic_trigger_errors(fields, shot_label))
+            errors.extend(field_ownership_errors(fields, shot_label))
+            errors.extend(counted_gaze_target_errors(fields, shot_label))
+            missing_fields = [name for name in SHOT_FIELD_NAMES if not fields.get(name)]
+            if missing_fields:
+                errors.append(
+                    f"{shot_label}缺少独立字段：{', '.join(missing_fields)}；"
+                    "请按【镜头设计】、【可见动作】、【可见背景】、【台词与语气】、"
+                    "【光影布光】、【声音设计】输出。"
+                )
+            present_field_order = [match.group(1) for match in SHOT_FIELD_RE.finditer(block)]
+            expected_present_order = [name for name in SHOT_FIELD_NAMES if name in present_field_order]
+            if present_field_order != expected_present_order:
+                errors.append(
+                    f"{shot_label}字段顺序错误；请按【镜头设计】、【可见动作】、【可见背景】、"
+                    "【台词与语气】、【光影布光】、【声音设计】排列。"
+                )
+            if REMOVED_ENVIRONMENT_AUDIO_RE.search(block):
+                errors.append(f"{shot_label}仍含已移除的环境音字段；请合并进【声音设计】并删除重复内容。")
+            if BACKGROUND_PAGE_ARTIFACT_RE.search(fields.get("可见背景", "")):
+                errors.append(
+                    f"{shot_label}把气泡/页面/格间空白误写成【可见背景】；"
+                    "请回看原图，按背景依据描述环境、图形底场或实际完整遮挡。"
+                )
+            for field_name in ("镜头设计", "可见动作", "可见背景", "光影布光", "声音设计"):
+                overlay_match = PAGE_OVERLAY_VISUAL_RE.search(fields.get(field_name, ""))
+                if overlay_match:
+                    errors.append(
+                        f"{shot_label}的{field_name}把漫画排字写进可生成内容：{overlay_match.group(0)}；"
+                        "拟声字只转为具体声音，其他页面文字只用于理解。"
+                    )
+            camera_text = fields.get("镜头设计", "")
+            action_text = fields.get("可见动作", "")
+            if sum(bool(pattern.search(camera_text)) for pattern in COMPOSITION_SIGNAL_GROUPS) < 2:
+                errors.append(
+                    f"{shot_label}的【镜头设计】缺少原格构图锁；"
+                    "请写景别/裁切、画面位置及深度/遮挡中的至少两类。"
+                )
+            action_composition = ACTION_CAMERA_COMPOSITION_RE.search(action_text)
+            if action_composition:
+                errors.append(
+                    f"{shot_label}的【可见动作】混入静态构图/摄影信息：{action_composition.group(0)}；"
+                    "请移到【镜头设计】，这里只保留随时间变化的可见表演。"
+                )
+            for field_name in ("可见背景", "镜头设计", "可见动作", "光影布光", "声音设计"):
+                field_text = fields.get(field_name, "")
+                meta_match = SELF_CONTAINED_META_RE.search(field_text)
+                if meta_match:
+                    errors.append(
+                        f"{shot_label}的{field_name}含不可执行元措辞：{meta_match.group(0)}；"
+                        "请改写为当前镜头自足的正向姿态、对象、背景、光线或动作。"
+                    )
+            hidden_cut = HIDDEN_CUT_RE.search(block)
+            if hidden_cut:
+                errors.append(
+                    f"{shot_label}在一个编号块内隐藏了机位切换：{hidden_cut.group(0)}；"
+                    "请把新机位改为下一个编号分镜。"
+                )
+            if dialogue_characters >= 42:
+                errors.append(
+                    f"{shot_label}含{dialogue_characters}个有意义的台词字符；"
+                    "必须按语义节点拆成至少两个真正不同的编号分镜，不能用long_take_reason豁免。"
+                )
+            if speaker_count >= 2:
+                warnings.append(
+                    f"{shot_label}含{speaker_count}名明确说话人；"
+                    "请检查回答、反驳、揭示、包袱或态度变化是否需要反打或听者反应。"
+                )
+            if len(current_references) >= 2:
+                camera_text = fields.get("镜头设计", "")
+                phase_images = {
+                    Path(match.group(1)).name.casefold()
+                    for match in MULTI_REF_BULLET_RE.finditer(camera_text)
+                }
+                missing_phase_images = sorted(set(current_references) - phase_images)
+                if missing_phase_images:
+                    errors.append(
+                        f"{shot_label}引用多张原图却未在【镜头设计】逐条绑定：{missing_phase_images}；"
+                        "每张图须以参考阶段条目锁定构图，并在【可见动作】写匹配阶段，或拆成独立编号分镜。"
+                    )
+                warnings.append(
+                    f"{shot_label}引用了{len(current_references)}张原图；"
+                    "已要求逐图阶段绑定，仍请确认同一机位、背景、轴线和连续动作。"
+                )
+            if current_references and current_references == previous_references:
+                errors.append(
+                    f"{label}{number}的相邻{shot.group(0)}重复同一参考图；"
+                    "若无独立覆盖功能则合并；若对白/反应需要该镜头，移除重复正式引用并重新设计为uncited_coverage，"
+                    "且至少改变主体焦点、景别、视角/轴线、构图/遮挡、可见信息或戏剧功能中的两项。"
+                )
+            previous_references = current_references
+            previous_references_across_chunks = current_references
+            if LEGACY_FIELD_RE.search(block):
+                errors.append(
+                    f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"
+                )
+            if not has_descriptive_background(fields.get("可见背景", "")):
+                errors.append(
+                    f"{shot_label}缺少可见背景；请写实景、图形底场或环境表面；"
+                    "背景确被满幅主体遮住时陈述该可见性状态。"
+                )
+
+        for match in META_RE.finditer(chunk):
+            errors.append(
+                f"{label}{number}含参考分析元表述，请改写为可见画面：{match.group(0)}"
+            )
+
+        for match in NEGATIVE_PROMPT_RE.finditer(chunk):
+            errors.append(
+                f"{label}{number}含否定式构图/运镜限制，请改为正向描述：{match.group(0)}"
+            )
+
+        for quote in missing_voice_directions(chunk):
+            errors.append(
+                f"{label}{number}的语音后缺少音色、语气、情绪括号说明：{quote}"
+            )
+
+    validate_chunks(
+        [("片段", number, chunk) for number, chunk in chunks],
+        require_contiguous_numbers=True,
+    )
+    warnings.extend(cross_clip_boundary_warnings(chunks))
+    warnings.extend(short_clip_grouping_warnings(chunks, min(args.target_seconds, args.max_seconds)))
+    warnings.extend(cinematic_quality_warnings(main_text))
+
+    safe_chunks = segment_chunks(safe_text, SAFE_SEGMENT_RE) if safe_text else []
+    if safe_text and not safe_chunks:
+        errors.append("存在平台安全替换稿附录，但未找到替换片段。")
+    if safe_chunks:
+        safe_numbers = [number for number, _ in safe_chunks]
+        duplicates = sorted({n for n in safe_numbers if safe_numbers.count(n) > 1})
+        if duplicates:
+            errors.append(f"平台安全替换片段编号重复：{duplicates}")
+        main_numbers = {number for number, _ in chunks}
+        for number in safe_numbers:
+            if number not in main_numbers:
+                errors.append(f"平台安全替换片段{number}在正文中没有对应片段。")
+        validate_chunks(
+            [("平台安全替换片段", number, chunk) for number, chunk in safe_chunks],
+            require_contiguous_numbers=False,
+        )
+
+    for match in FORBIDDEN_RE.finditer(text):
+        errors.append(f"发现内部估时说明：{match.group(0)}")
+
+    references = sorted(set(REFERENCE_RE.findall(text)))
+    if args.image_dir:
+        available = {
+            path.name.casefold() for path in args.image_dir.iterdir() if path.is_file()
+        }
+        for reference in references:
+            if Path(reference).name.casefold() not in available:
+                errors.append(f"参考图不存在：{reference}")
+
+    if args.source_ledger and args.dialogue_ledger:
+        errors.append("请只使用--source-ledger；不要同时传入--dialogue-ledger。")
+    if args.require_source_ledger and not ledger_path:
+        errors.append("完整验证要求--source-ledger版本3台账。")
+    if ledger_path:
+        errors.extend(
+            validate_source_ledger(ledger_path, main_text, args.image_dir, warnings, args.max_seconds)
+        )
+
+    print(f"片段数：{len(chunks)}")
+    if safe_chunks:
+        print(f"平台安全替换片段数：{len(safe_chunks)}")
+    print(f"参考图数：{len(references)}")
+    for message in warnings:
+        print(f"警告：{message}")
+    for message in errors:
+        print(f"错误：{message}")
+
+    if errors:
+        print(f"验证失败：{len(errors)}个错误，{len(warnings)}个警告。")
+        return 1
+    print(f"结构验证通过：0个错误，{len(warnings)}个警告。")
+    print("结构/台账校验不判定自然表演；主动作兑现、源图保真与表演因果仍须语义复查。")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

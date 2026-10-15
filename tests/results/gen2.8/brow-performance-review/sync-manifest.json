@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "72a89198d6660479631d45be21f49dabad0316d0",
+  "installed_path": "C:\\Users\\86135\\.codex\\skills\\write-comic-video-storyboards-gen2-8",
+  "source_path": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\write-comic-video-storyboards-gen2-8",
+  "status": "installed_and_hash_verified",
+  "files": [
+    {
+      "file": "references/core-authoring.md",
+      "before_sha256": "e411d41c9ab9638b2bf9144328f64c6f8fec5a47558e1847380e025c02d39c7c",
+      "after_sha256": "f7725111b22141a4c002c469876182184bafd9e4cd0055befaa7468026016b52"
+    },
+    {
+      "file": "references/dialogue-performance.md",
+      "before_sha256": "2815d626b384271664111d8c03a58254b681cf86cbe12599294eef1d866ab30d",
+      "after_sha256": "b207a464c93afcdef512f012768e429128f1e46cfd48c7d25cfe91305f16dd38"
+    },
+    {
+      "file": "references/regression-cases.md",
+      "before_sha256": "393686768ae554cba4cea79143dbdeda52b622585dfc5fb40a370c38120a1aab",
+      "after_sha256": "fbe03decf2608fd7cd11799875e89eb1cb34e194d9b5cc3b8cba4a554574fd82"
+    }
+  ]
+}

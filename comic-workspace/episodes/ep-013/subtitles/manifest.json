@@ -1,0 +1,27 @@
+{
+  "episode": "ep-013",
+  "script_duration_seconds": 296.0,
+  "full_duration_seconds": 330.4,
+  "script_cues": 136,
+  "full_cues": 136,
+  "estimated_cues": 14,
+  "estimated_panels": 7,
+  "expanded_dialogue_shots": 3,
+  "dialogue_extension_seconds": 20.4,
+  "parts": [
+    {
+      "file": "第13话_中文_脚本范围01.srt",
+      "script": "第13话_已上色_第一批_01至15_gen2.7_分镜脚本.md",
+      "duration_seconds": 169.0,
+      "cues": 65
+    },
+    {
+      "file": "第13话_中文_脚本范围02.srt",
+      "script": "第13话_已上色_第二批_16至31_gen2.8_分镜脚本.md",
+      "duration_seconds": 127.0,
+      "cues": 71
+    }
+  ],
+  "review_hints": 48,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

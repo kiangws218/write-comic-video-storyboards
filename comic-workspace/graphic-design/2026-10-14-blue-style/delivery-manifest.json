@@ -1,0 +1,561 @@
+{
+  "date": "2026-10-14",
+  "status": "风格暂定",
+  "files": [
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/animation-assets.json",
+      "bytes": 1944,
+      "sha256": "938d4434f9bff5f33ac74b1c9f3af998f014a83462630adbef669c830591bd48"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/animation.js",
+      "bytes": 6702,
+      "sha256": "9394f11628a4d8c309a23d670489290771cf2d08a980e715767cd3dcb97f1d83"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/animation-contact-sheet.png",
+      "bytes": 216333,
+      "sha256": "8f646b71854f21fdd07afdaa0ce90c40202bbfb2c3cecb49928914201ed2835d"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-0.png",
+      "bytes": 19200,
+      "sha256": "356ec1271bbe69ab8f2f16daa42c2e05292ad4b2421a86d4b9630fa037fb5bbe"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-1.png",
+      "bytes": 31401,
+      "sha256": "09ee76e09d2c4534eb5017bf9e84c2ff72b593e5bcdbe871e1a976a3d906f77b"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-2.png",
+      "bytes": 36449,
+      "sha256": "e11c7325e0e7919983fdaa034f88ba1683aa4ffbe34a30ca691f88422bf84539"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-3.png",
+      "bytes": 15974,
+      "sha256": "392cf9199d188a8e50743ec75eefdf4560be89c25caa5714f696335c9dda5f74"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-4.png",
+      "bytes": 64292,
+      "sha256": "45583cd426974053e0c218bdda5e0a9b6ec160ff4e41ae969ade5d279096af96"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-5.png",
+      "bytes": 54596,
+      "sha256": "278e27331dd82bcaaf4a992e0b17d2e22d7b3da25116f928530e21c516c7d991"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-6.png",
+      "bytes": 53103,
+      "sha256": "6787e6d687207940914f18359e6928edce8b80a4131582c1138afdc46ed1602b"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/edge-7.png",
+      "bytes": 48406,
+      "sha256": "a08503f6edce6760f460f227f7c121a59cab8f329c947376c33318799e0e76e3"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/english.png",
+      "bytes": 59306,
+      "sha256": "119ed42ff1c2c9c1d13c5c1b875e2f1d50fbca62576e988617de82e956ba0bbe"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-0.png",
+      "bytes": 127326,
+      "sha256": "27c3c29a480d75313ba6e3c2bf39f8e4d72487309a8d52253650d7f8798f37d1"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-1.png",
+      "bytes": 191396,
+      "sha256": "69e5ca71d6c6e35501623f1bb3200d21313b050529c10833a3d77ab1f08263e2"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-2.png",
+      "bytes": 150825,
+      "sha256": "7b2e7ae758086380bc016ce86f9d0d4f9c0c9d2228ee5f50bdc4c0e1064c6cf6"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-3.png",
+      "bytes": 182072,
+      "sha256": "5a3e25fa7b3f44544571a43dd451d5d108239693b92b76be50afdbfb45b924c4"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-4.png",
+      "bytes": 191125,
+      "sha256": "4547c34aa26f4a824ce735a51f71e65b7b7e9c4bc4bfde842a990b87f7f9150a"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-5.png",
+      "bytes": 191355,
+      "sha256": "dc7a37de030fa76094d7b1ba80194d8362fbaae55e666ffffebf80633d56fd2a"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/frame-final-4k.png",
+      "bytes": 737127,
+      "sha256": "c89200af0107c0e1df04e8bd7a355d4ce17bd441b46f8a3e7fcf7050f91d6dba"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-0.png",
+      "bytes": 40821,
+      "sha256": "cb037c945fed32d786492e308bdb1c850abbc5aba8ca075d3ea9bb60175ebd60"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-1.png",
+      "bytes": 53809,
+      "sha256": "d3c7eaf13400ed57e4f5087afc6d9691b51486e405c0a21b3b88577f9e201e59"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-2.png",
+      "bytes": 62965,
+      "sha256": "493dfdb4ba24bd4709aeefa274902aa8b2a140ff77354b2b47ef00e29b718af2"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-3.png",
+      "bytes": 25131,
+      "sha256": "a60dae9ad754446e575429c32e1d436f731eeca717217b49873337910541214d"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-4.png",
+      "bytes": 132539,
+      "sha256": "9037875f9cf8031a0c13f3899983db513725e89aaf94fc6ac1211d4769ba7eb6"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-5.png",
+      "bytes": 103803,
+      "sha256": "3b019d7d74d408f08fe1b99d0b62ec61eb046c24f7e511af7e4933781be3d532"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-6.png",
+      "bytes": 103476,
+      "sha256": "ed459efc9fe57b444e3e3dfe3e81278c156db9cb0012c4549339c677156330d0"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/glyph-7.png",
+      "bytes": 81570,
+      "sha256": "e2c75494c94b96de65c09d183b3fe3eaf520fba4337a219a296cd774b68d8881"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-0.png",
+      "bytes": 28676,
+      "sha256": "d9b6b8273146d9bc0cf24d51d57512af7c4a4365a462c7320904634827e942a7"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-1.png",
+      "bytes": 37304,
+      "sha256": "c2811100a638eb164376c19fa1158566945c481b7694755180f5d54bbc2e3b10"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-2.png",
+      "bytes": 43938,
+      "sha256": "69024658a7b9effb1198564b7fa0763e5cb21b73fd9e1819ecb2ab49ecd6d312"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-3.png",
+      "bytes": 15947,
+      "sha256": "41945a406e703d0a08d208ffc72f09b870280a5cb86254226dc43048b475a391"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-4.png",
+      "bytes": 94840,
+      "sha256": "65cc0ccf43f334f1d72fe5bd56d30c61ca997855d71b591f7ce213f8e408bfc6"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-5.png",
+      "bytes": 70869,
+      "sha256": "702e5c7cf4ed545a1d89e3833378bd28515b67b9e2835ab6569f4926b623c8c7"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-6.png",
+      "bytes": 72900,
+      "sha256": "5cef4410c0df313e9f399dff4680e46dff9f0c1ecc1f2214e391b4dab030f91c"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/ink-7.png",
+      "bytes": 55520,
+      "sha256": "43164c0cc45b3de9bae900a3371725b47cd905cc52260d75cf4de5d1c17a21df"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/title-final-4k.png",
+      "bytes": 249159,
+      "sha256": "ab32a0e23492009a1eb193159f866c1484dd476766648218111c9227dc6159b8"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/title-final-transparent.png",
+      "bytes": 122009,
+      "sha256": "af6203490375153eb7fcea983807c2048ba7c44add89696da937ef713f687fd4"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/title-final-transparent.svg",
+      "bytes": 29502,
+      "sha256": "dd42bdaf3ed1150127f41cb00f2760073ba22934ee6ee4dd0ae1ce374660c041"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/title-final.png",
+      "bytes": 104009,
+      "sha256": "b5b87ebf58cd79a78e92ce88b8af4f9ba4b3524287ee47729ea77ce391d182e2"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/assets/title-final.svg",
+      "bytes": 29597,
+      "sha256": "7e7b3d79db7247babc88e8f63b9e2b74fc386026b1fa76c1292b4b3e5d48ca59"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/build-animation.cjs",
+      "bytes": 2778,
+      "sha256": "8a0632c40c05a230633a53f4baabdd06d6b126d130979bb394785f0b33c1b95d"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/build-title.cjs",
+      "bytes": 10630,
+      "sha256": "4194296950d8c218c630b290e34ae7c45f344d23999f63f41e14545967e496c5"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/custom-outlines.json",
+      "bytes": 19064,
+      "sha256": "30e6f872e25362641ffdbbeaca57099be0034efcc2277a9382c5562efa6ae038"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/export-video.cjs",
+      "bytes": 4202,
+      "sha256": "fb3ed7d399c372d3ca368cf836daa2880f539ecd84fafd14f571fb89a2aeeb78"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/glyphs.json",
+      "bytes": 4063347,
+      "sha256": "fe3afb9a9d60bd3af9af5734a1af0b352aa11e1dc4f2d3f01c7f6e8c37f697d1"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/layout-assets.json",
+      "bytes": 1933,
+      "sha256": "21688c6444f6b393cb5217dfdd5e2cbc1db457e60ca57a6b897e7dcf422f7d45"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/mp4-muxer.cjs",
+      "bytes": 2965,
+      "sha256": "4167f61a98fd808fd8da3233658a63337c08b0b159b6e0fed87630061da941d7"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/op-title-white-1080p60.mp4",
+      "bytes": 3072026,
+      "sha256": "fb6b3381313f1026bdf288aa4f46c7f5f688fff0ae0029bac42ffd92bfc0dc8d"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/op-title-white-4k60.mp4",
+      "bytes": 6887397,
+      "sha256": "f666d69342033da560750bd58b45a958a068847172b1f526723388b43931f4c5"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/preview.html",
+      "bytes": 1219741,
+      "sha256": "ac958dcf65f2314daabb6b0ddef35f497541f5dea5ab87e938dae460ddbec3f2"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/verify-video.py",
+      "bytes": 1767,
+      "sha256": "40a0641ffbdae01df6bf5d0c9a31ef99e6e0c4d4567a4cfff34ad780966c3c8b"
+    },
+    {
+      "file": "01_当前定稿/01_OP标题_v13_白底4K60帧/动画说明.md",
+      "bytes": 2097,
+      "sha256": "6e5ae5410939f99335173a73909754392002385eb0ecba7b761f0c70b9c691e3"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/animation-assets.json",
+      "bytes": 1944,
+      "sha256": "938d4434f9bff5f33ac74b1c9f3af998f014a83462630adbef669c830591bd48"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/animation-contact-sheet.png",
+      "bytes": 273871,
+      "sha256": "6f4625a43bfcf304fd5f20950db1a8d744671136c986302c1342d0e4cfa3521c"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/edge-4.png",
+      "bytes": 64292,
+      "sha256": "45583cd426974053e0c218bdda5e0a9b6ec160ff4e41ae969ade5d279096af96"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/edge-5.png",
+      "bytes": 54596,
+      "sha256": "278e27331dd82bcaaf4a992e0b17d2e22d7b3da25116f928530e21c516c7d991"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/edge-6.png",
+      "bytes": 53103,
+      "sha256": "6787e6d687207940914f18359e6928edce8b80a4131582c1138afdc46ed1602b"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/edge-7.png",
+      "bytes": 48406,
+      "sha256": "a08503f6edce6760f460f227f7c121a59cab8f329c947376c33318799e0e76e3"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-pair.png",
+      "bytes": 210292,
+      "sha256": "1e689524e7b67ba5b71a44cff6e4dbaba735bb10c174a893d73075635ad871af"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-pause-1080.png",
+      "bytes": 237616,
+      "sha256": "f651d2b843f765a29e1f07155fb8041e6413bd00229757ec3d261491be6b4da4"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-pause-4k.png",
+      "bytes": 606864,
+      "sha256": "723257f412b2501b1e8a63198a47f69ff2210700519d67f3a77fcd8fed42954e"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-pause.svg",
+      "bytes": 46827,
+      "sha256": "f6957a31fbca3772bedf71ef15e60ea27b431cd6e88964614be5275282ce41b0"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-resume-1080.png",
+      "bytes": 231073,
+      "sha256": "7e5b3e59d5317526851c306213f8032a5adce26520cfc957868ab242360f1df7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-resume-4k.png",
+      "bytes": 590221,
+      "sha256": "35ada4bd90ed0f6b9bf1e5d3d17d5f1e7f94fbf5e2984ffb595cf8bab491a4c7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/eyecatch-resume.svg",
+      "bytes": 35204,
+      "sha256": "d6782dfbe6f94397d62b66fee18436a6d969d5ea53ca11a0685ff8e5e450a97a"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-pause-0.png",
+      "bytes": 161883,
+      "sha256": "c9904b30afe1212e13bc41cf334129b3b98adb44da7906a13e4155debb796875"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-pause-1.png",
+      "bytes": 223794,
+      "sha256": "e6c2f19e24686516daeb5586358b45afdbdda209223699c7a938587378e84175"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-pause-2.png",
+      "bytes": 237616,
+      "sha256": "f651d2b843f765a29e1f07155fb8041e6413bd00229757ec3d261491be6b4da4"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-resume-0.png",
+      "bytes": 159593,
+      "sha256": "ea0eeda0e007cedf28ebc507ed202b1c175a8de3c9b39dbd7d9cb306f4800730"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-resume-1.png",
+      "bytes": 206695,
+      "sha256": "f98bca61f734e4995e904f2dc6b2576ba64dc77c7ad835e2e38f45ea4075ff45"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/frame-resume-2.png",
+      "bytes": 231073,
+      "sha256": "7e5b3e59d5317526851c306213f8032a5adce26520cfc957868ab242360f1df7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/ink-4.png",
+      "bytes": 94840,
+      "sha256": "65cc0ccf43f334f1d72fe5bd56d30c61ca997855d71b591f7ce213f8e408bfc6"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/ink-5.png",
+      "bytes": 70869,
+      "sha256": "702e5c7cf4ed545a1d89e3833378bd28515b67b9e2835ab6569f4926b623c8c7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/ink-6.png",
+      "bytes": 72900,
+      "sha256": "5cef4410c0df313e9f399dff4680e46dff9f0c1ecc1f2214e391b4dab030f91c"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/ink-7.png",
+      "bytes": 55520,
+      "sha256": "43164c0cc45b3de9bae900a3371725b47cd905cc52260d75cf4de5d1c17a21df"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/source-title.svg",
+      "bytes": 29502,
+      "sha256": "dd42bdaf3ed1150127f41cb00f2760073ba22934ee6ee4dd0ae1ce374660c041"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/white-0.png",
+      "bytes": 61986,
+      "sha256": "1bbb8b5eae69505e50f06afae9f7160e0e57fa8773580bdbd89550886885af00"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/white-1.png",
+      "bytes": 46780,
+      "sha256": "99fbdc7ca0bd8cacb1f84df8ea73c5277a7e45a0bf56bffb46b27c81f755612f"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/white-2.png",
+      "bytes": 46371,
+      "sha256": "a2650d61097cfdbc25b154f43d2ab65daffbe0353ac64708c59443d6fe1f6af6"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/assets/white-3.png",
+      "bytes": 32174,
+      "sha256": "ac0f28d3cfc0dacda4c410994e9f6df6e91d9a861ce3f5f4339f5ea42845855f"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/build-eyecatch.cjs",
+      "bytes": 7901,
+      "sha256": "6b05b88b79c6aa9c02b8c86a283672a45d0195eff876961b50eb9606a9545081"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/export-eyecatch.cjs",
+      "bytes": 5337,
+      "sha256": "e85d9ee14958f9c7b4346641e77ff72480d61b644910e35918189d35a44039a7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/eyecatch-pause-big-stagger-1080p60.mp4",
+      "bytes": 3727847,
+      "sha256": "ea48d42587477fc0fed2eae3e11c8a5129002fd915ffbd65b30dd86f0ce4fed8"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/eyecatch-pause-big-stagger-4k60.mp4",
+      "bytes": 9116674,
+      "sha256": "4c1be4293e5c7d988e94ebd9ec464ef3415c6bc762e3d0417265beedb8ce0c91"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/eyecatch-resume-big-stagger-1080p60.mp4",
+      "bytes": 3700831,
+      "sha256": "6404ef193a54f3edb21731a2dea158f39cfbdc90852c2aeb3b85e70313e69c9e"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/eyecatch-resume-big-stagger-4k60.mp4",
+      "bytes": 9366914,
+      "sha256": "f5c84da10cd437b21812dbb28ec968a0d4039d268f192f85a044c733e1826f1c"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/eyecatch.js",
+      "bytes": 8159,
+      "sha256": "eab2a7c8e6a1b026626b0f03d9c7c1b9c9cebb20a95293a390ae77148d25b385"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/layout.json",
+      "bytes": 610,
+      "sha256": "c16d71674088e984a4fe4b286ba08ea5198f20934ef7d7025818518860fdb35d"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/lettering.json",
+      "bytes": 7037,
+      "sha256": "09b5b1ed553ed37823cda2929ad64ba136a90d97e630d580f6b9c37ad8d386b8"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/mp4-muxer.cjs",
+      "bytes": 2965,
+      "sha256": "4167f61a98fd808fd8da3233658a63337c08b0b159b6e0fed87630061da941d7"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/preview.html",
+      "bytes": 970570,
+      "sha256": "c8699e515c8ce847c43a311711c0e79a59754ace36720e5b4ede49aa8663bf96"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/verify-video.py",
+      "bytes": 673,
+      "sha256": "3f6b96d64183abd3b13872b0d351851879b863fc8d23e17ee0b5304dfa251054"
+    },
+    {
+      "file": "01_当前定稿/02_中插_v06_大字错落Q弹/设计方案.md",
+      "bytes": 2222,
+      "sha256": "8e4f9e4371e796a031feda0b5ef65f3f59c9634a048a40bd26c06ba5ada3b1e7"
+    },
+    {
+      "file": "01_当前定稿/index.html",
+      "bytes": 2234,
+      "sha256": "a7b208b7ce2fef59c1622af8cd6d2b7a1a2f2b98ecabf26af128cc0c88faaf2f"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/01_图文主版_善行收集券.svg",
+      "bytes": 206532,
+      "sha256": "a7021273bab3ce497270ff5f2d87286a822e349af09d498ff8a021c8dba5144b"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/01_图文主版_善行收集券_1080.png",
+      "bytes": 186932,
+      "sha256": "4dc6bd8ea51feaf929331899348bb4d6c943b0944ebda547a6789828aa59b820"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/01_图文主版_善行收集券_4K.png",
+      "bytes": 440051,
+      "sha256": "21fc092fb6a85932adcc054c7039cef9c163f719d0f9a06913ac65d6a8473125"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/02_文字版_魔物猎手.svg",
+      "bytes": 219519,
+      "sha256": "d9202ca05a7c3ee0f68311ca5d69f28c2d5a63777ddb5a21e26c0159bc43bbb3"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/02_文字版_魔物猎手_1080.png",
+      "bytes": 177394,
+      "sha256": "f5bd56f652f214c49678cd854ac2d9bd63a1c96b9782343e768129c76fdf5c7c"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/02_文字版_魔物猎手_4K.png",
+      "bytes": 410480,
+      "sha256": "2829e4eac58593914961a760dd058a71584c0fe3f85d8447e1965a8109352a37"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/03_条目版_醒酒药.svg",
+      "bytes": 139266,
+      "sha256": "4877b730d5545b0b21f318d5822f149c53b5d6740761aeab9a2811687fa7dff6"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/03_条目版_醒酒药_1080.png",
+      "bytes": 145604,
+      "sha256": "a7f50a9e87d0d7184990ce680dd34448d86cd228df8f320e55f185e0ff944e0e"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/03_条目版_醒酒药_4K.png",
+      "bytes": 334174,
+      "sha256": "3767814a8118dfbf916e3eb30686d7584a69edfaebfbd393c0cd22adb7ca9a20"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/assets/三版排版总览.png",
+      "bytes": 400912,
+      "sha256": "c722e4fd8c1949e312fbdbee631012d73b6714170a28be2b20c5503052f267c8"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/preview.html",
+      "bytes": 3490,
+      "sha256": "4945625b0a614ffadbcf558a05fbd0b842e883d08e5d8c3e27adde5650a4a5e7"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/source/build-pages.cjs",
+      "bytes": 10475,
+      "sha256": "5c6b4a958c709dbd49b944a1400292bc09a94a951c8a020c44ca8904cdf9d37b"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/source/outline-text.ps1",
+      "bytes": 1761,
+      "sha256": "a56fbfe05b52e9f2c21da31e285b61d6f76e4e0c84559fc6afb50bbdb6945dd7"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/source/text-outlines.json",
+      "bytes": 447972,
+      "sha256": "66b801f56fddd5d7e386abb19d1e882c2c1242ef2ffa76a0f94e2cc0c4225fc7"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/source/text-widths.json",
+      "bytes": 9382,
+      "sha256": "fd8766e7c6dbdb28029109e46f6d6d4296c3756f9c077c00a67d5f1a21bbeca3"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/source/text.json",
+      "bytes": 985,
+      "sha256": "47bba560f724e243323885f17616851ba14ef3a63a983fdda284613865e97e23"
+    },
+    {
+      "file": "03_情报页面/静态排版_v01/设计方案.md",
+      "bytes": 1841,
+      "sha256": "6f482f6328197159210b826ab25bd03e8349ccc3317085a27053fce926768a57"
+    }
+  ]
+}

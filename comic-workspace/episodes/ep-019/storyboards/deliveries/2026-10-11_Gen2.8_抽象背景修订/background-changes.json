@@ -1,0 +1,156 @@
+[
+  {
+    "target": "片段3/分镜1",
+    "image": "第19話_04_002.jpg",
+    "mode_before": "physical",
+    "mode_after": "physical",
+    "family": "bright_grid",
+    "observation": "略仰视董白正面中全景，圆眼带笑、手在刀柄旁，后方完整绘有岩石。",
+    "basis": "明快自我展示的笑容与从容停手支持少量喜剧亮纹；当前源图岩壁清楚，采用装饰叠层而不替换空间。不是青梅男获救后的主观美化，也不改变衣装、刀柄或站位。",
+    "sequence_return": "本镜始终保留岩壁；片段4/分镜1撤去叠层进入青梅男的后怕反应，空间和人物光线连续。",
+    "background_before": "深褐洞窟岩壁，凸石上缘稍亮，纵向石缝深暗，后层纹理低对比。",
+    "background_after": "深褐洞窟岩壁保留凸石与深缝，后层纹理低对比；画缘叠一层半透明浅金菱形亮纹，稀疏白色四角闪光停在纹路交点，中央岩面仍清楚，图形层保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "prior_background_decision": {
+      "mode": "physical",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_04_002.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段8/分镜3",
+    "image": "第19話_08_004.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "plain_palette",
+    "observation": "春子正面头肩，半垂眼、近侧眉头上挑、脸颊肿起；背衬为灰色渐变。",
+    "basis": "青仍在笑、春子沉着脸拆穿构成冷面包袱，选择干净静止空底；保留肿脸和不满，不添加欢快闪光。",
+    "sequence_return": "片段9/分镜1恢复08_003支持的木墙，青靠近、把冰袋送到脸侧的空间保持清楚。",
+    "background_before": "诊所入口灰棕木墙面构成背景，竖向木纹低对比，人物轮廓清楚。",
+    "background_after": "上部淡灰紫向下过渡为灰米白，两侧色面平整，眼线附近留浅亮的宽区，底场保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光照亮春子的额头、鼻梁和脸颊，肿起处保留柔暗面；棕发与深色罩衫用清楚色块分层，人物明暗稳定。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_08_003.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段10/分镜2",
+    "image": "第19話_09_004.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "pressure_brush",
+    "observation": "双人头肩，春子左侧半垂眼、青右侧目光低垂；背衬灰色渐变，无木墙几何。",
+    "basis": "青的目光和肩头下沉承载自责，压力纹理只密在右半部，春子一侧较平整，避免把两人的不同态度写成同一种情绪。",
+    "sequence_return": "延续至片段11/分镜1担忧独白；片段12/分镜1春子的平底回应形成对照，片段13/分镜1恢复石地与握冰袋的双人关系。",
+    "background_before": "诊所灰棕木墙面退在后景，木纹低对比，近处人物轮廓清楚。",
+    "background_after": "图形底场由上部深灰蓝过渡为下部浅蓝灰，右半部铺粗细不一的纵向刷痕，左半部平整较亮；中间留一段柔和浅色区，整层保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光照亮两人的额头与鼻梁，青的白发暗面偏浅蓝灰，春子的棕发暗面较深；脸颊敷料与额头贴布保持米白，衣领下留柔暗面。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_09_003.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段11/分镜1",
+    "image": "第19話_10_001.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "pressure_brush",
+    "observation": "青朝左的侧脸头肩，眼睛睁着、嘴张开，肩部由下缘裁切；左侧灰色背衬较宽。",
+    "basis": "承接上一镜自责转成担忧，同一压力纹理按新取景负空间调整；不重新低头或补未见人物，只保留既有问话后的等待。",
+    "sequence_return": "片段12/分镜1切到春子的安静灰米白底，随后片段13/分镜1以石地重新交代当前互动。",
+    "background_before": "诊所灰棕木墙面退在后景，木纹低对比，近处人物轮廓清楚。",
+    "background_after": "深灰蓝向下渐变为浅蓝灰，粗细不一的纵向刷痕集中在上缘与左侧，眼线附近留较浅的平整区，刷痕保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光照亮青的额头、鼻梁和尖耳，白发以浅蓝灰暗面分层，红眼留细小高光；领口下方压深，人物明度稳定。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_09_003.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段12/分镜1",
+    "image": "第19話_10_002.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "plain_palette",
+    "observation": "春子左向侧脸，半垂眼不笑，脸颊有敷料；右前青的发与衣料遮住部分，仍有独立灰色背衬。",
+    "basis": "黑色玩笑由平淡表情说出，用静止平底与青的压力刷痕形成反差；不添加开心、宴席物件或幻想事件。",
+    "sequence_return": "片段13/分镜1恢复10_003已见石地；青转肩、挤冰袋与春子回话保持原有完整表演。",
+    "background_before": "诊所灰棕木墙面退在后景，木纹低对比，近处人物轮廓清楚。",
+    "background_after": "上部灰米白向下过渡为淡灰蓝，左侧色面宽而平整，右上略暗，边缘柔和，底场保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光沿春子的额头与鼻梁铺开，敷料保持米白，脸颊和衣领下方留柔暗面；右前白发的亮度稳定。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_09_003.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段18/分镜1",
+    "image": "第19話_13_002.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "soft_cyan",
+    "observation": "青朝右侧睁圆眼、张口笑，右下手抬起；大块右侧灰色渐变背衬，未画岩壁。",
+    "basis": "辨认之后突然认出旧识的明快反应支持柔亮底场，只借圆斑和少量十字形；不引入恋爱关系、泡泡实体或新法术。",
+    "sequence_return": "片段19/分镜1撤去圆斑，回到已批准诊所远景与双人态度对照；14_002实景复查确认仍在同一诊所位置。",
+    "background_before": "诊所外深褐岩壁退在后景，凸石与石缝低对比，青的侧脸和手部清楚。",
+    "background_after": "浅青蓝向乳白渐变，大小不一的淡色圆斑柔化铺在右侧和上缘，间隔较宽；少量细白十字亮点疏散分布，底场保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光照亮青的额头、鼻梁与抬起的手背，白发暗面偏浅蓝灰，红眼留小高光；蓝衣块面保持清楚。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_11_002.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  },
+  {
+    "target": "片段22/分镜1",
+    "image": "第19話_15_003.jpg",
+    "mode_before": "continuity",
+    "mode_after": "graphic",
+    "family": "plain_palette",
+    "observation": "春子正面半垂眼，单侧眉头挑起，嘴闭着；右前青浅发裁切，二者间灰色背衬可见。",
+    "basis": "两问之间的沉默和困惑由上挑眉头承载，简单空底给停顿留空间；不加问号、气泡或夸张符号，也不补说话。",
+    "sequence_return": "片段23/分镜1切回16_001所见洞窟入口，为后续路线询问提供实景，保留明确场景转换。",
+    "background_before": "深褐岩壁退在后景，凸石低对比，春子的脸与右前浅发局部清楚。",
+    "background_after": "上部淡灰紫向下过渡为灰米白，右侧窄区稍暗，眼线附近留平整浅色区，底场保持静止。",
+    "light_before": "左上方柔光落在人物与凸石上缘，人物以清晰线条和块面阴影表现，岩缝留深暗，环境色稳定。",
+    "light_after": "左上柔光铺在春子的额头、鼻梁与脸颊，半垂眼下留柔暗面；棕发与右前白发明度分开，人物明暗保持稳定。",
+    "prior_background_decision": {
+      "mode": "continuity",
+      "basis": "当前源图的可见实景或已声明的非实景/遮挡处理。",
+      "source_refs": [
+        "第19話_15_002.jpg"
+      ],
+      "inspected_resolution": "720p"
+    }
+  }
+]

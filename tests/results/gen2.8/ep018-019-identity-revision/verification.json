@@ -1,0 +1,26 @@
+[
+  {
+    "episode": 18,
+    "status": "pass",
+    "shots": 57,
+    "seconds": 242,
+    "all_quoted_text_unchanged": true,
+    "bubble_text_and_raw_integrity_unchanged": true,
+    "times_and_references_unchanged": true,
+    "ep18_early_identity_unchanged": true,
+    "canonical_labels_checked": true,
+    "current_delivery_zip_identical": true
+  },
+  {
+    "episode": 19,
+    "status": "pass",
+    "shots": 79,
+    "seconds": 353,
+    "all_quoted_text_unchanged": true,
+    "bubble_text_and_raw_integrity_unchanged": true,
+    "times_and_references_unchanged": true,
+    "ep18_early_identity_unchanged": null,
+    "canonical_labels_checked": true,
+    "current_delivery_zip_identical": true
+  }
+]

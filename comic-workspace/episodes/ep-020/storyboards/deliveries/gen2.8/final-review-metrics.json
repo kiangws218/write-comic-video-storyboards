@@ -1,0 +1,25 @@
+{
+  "clips": 34,
+  "shots": 76,
+  "runtime_seconds": 356,
+  "references": 66,
+  "max_clip_seconds": 15,
+  "blocking_errors": 0,
+  "advisories_by_class": {
+    "background_field": 1,
+    "dialogue_coverage": 1,
+    "clip_grouping": 2,
+    "performance": 35
+  },
+  "manual_overflow_count": 0,
+  "documented_natural_overflow_panels": [
+    "第20話_16_001.jpg"
+  ],
+  "source_images_reopened": 45,
+  "original_resolution_reinspections": 5,
+  "cut_boundaries_reviewed": 75,
+  "rule_input_utf8_bytes": 119712,
+  "cross_episode_scene_review": "deferred_by_user",
+  "storyboard_path": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-020\\storyboards\\current\\第20话_制作分镜_Gen2.8.md",
+  "ledger_path": "C:\\Users\\86135\\OneDrive\\文档\\ChatGPT\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-020\\storyboards\\deliveries\\gen2.8\\source-ledger-v3.json"
+}

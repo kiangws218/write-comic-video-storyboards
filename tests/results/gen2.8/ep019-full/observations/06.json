@@ -1,0 +1,157 @@
+[
+  {
+    "image": "第19話_06_001.jpg",
+    "composition_lock": "手部近景，浅色手腕从右上转向左下，黑色手套料面在手指与腰侧之间拉紧，右后可见碎石地面。",
+    "source_facts": {
+      "entities": [
+        "董白的手",
+        "黑色露指手套",
+        "碎石地面"
+      ],
+      "actions": [
+        "手指牵开黑色露指手套边缘"
+      ],
+      "relations": [
+        "手与手套在左近层，地面右后"
+      ]
+    },
+    "bubbles": [
+      [
+        "董白",
+        "咕哝些什么呢？"
+      ]
+    ],
+    "jp": [
+      "何をぶつぶつ言ってるの？"
+    ],
+    "background": "physical",
+    "background_description": "右后碎石地面，近处衣装占主要画面。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "少女把露指手套套在手上。",
+      "beats": [
+        "另一手牵住套口拉紧，露出的手指伸直，套面贴住手背后放松拉力。"
+      ],
+      "coupling": "说话时把手套戴稳，为握刀做好准备。",
+      "landing": "露指手套贴住手背，手指自由伸展。"
+    },
+    "continuity": "冒犯问话之后，来者带着不耐烦准备应对。",
+    "admission": "只演原格牵衣动作，不补出身体敏感部位。",
+    "original_resolution_viewed": true,
+    "original_resolution_reason": "判断黑色料面属于露指手套还是衣摆，关系到手部动作与武器握法。"
+  },
+  {
+    "image": "第19話_06_002.jpg",
+    "composition_lock": "少女正面上身近景，黑色双马尾斜向两侧，左下近层手持缠布刀柄，另一手在腰侧手套下缘。",
+    "source_facts": {
+      "entities": [
+        "董白",
+        "缠布刀柄",
+        "双马尾"
+      ],
+      "actions": [
+        "直视前方张口",
+        "近手握刀柄"
+      ],
+      "relations": [
+        "刀柄左下近层，少女中央"
+      ]
+    },
+    "bubbles": [
+      [
+        "董白",
+        "爬到这种边缘地带来你可真有胆。"
+      ],
+      [
+        "董白",
+        "也可以说愚蠢至极"
+      ]
+    ],
+    "jp": [
+      "こんな辺境まで来るなんて、いい度胸ね。",
+      "それとも、とんでもない馬鹿なのかな。"
+    ],
+    "background": "omitted",
+    "background_description": "灰色省略底场。",
+    "kind": "Mixed",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "少女手已到刀柄，视线锁住对面。",
+      "beats": [
+        "她收起先前轻松的笑，第一句直接警告，转折后略带讥讽，握柄的手慢慢握实。"
+      ],
+      "coupling": "警告和握刀是同一应对任务，话越说清，姿态越坚决。",
+      "landing": "手牢牢握柄，眼神仍盯对方。"
+    },
+    "continuity": "牵衣准备之后，握刀与警告同时推进。",
+    "admission": "不额外拔刀挥斩，只握紧已见刀柄。"
+  },
+  {
+    "image": "第19話_06_003.jpg",
+    "composition_lock": "两手握持武器近景，缠布柄从左上斜向右下，下手在右下，上手在左上，卡合处位于画面中央央。",
+    "source_facts": {
+      "entities": [
+        "两只手",
+        "缠布刀柄",
+        "金属卡合处"
+      ],
+      "actions": [
+        "双手握住柄部",
+        "接合处短响动势"
+      ],
+      "relations": [
+        "两手分居左上右下，柄斜贯中央"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "graphic",
+    "background_description": "白色速度线底场。",
+    "kind": "Action",
+    "anchor_phase": "result",
+    "plan": {
+      "opening": "双手已经握在柄上。",
+      "beats": [
+        "手指同时收紧，接合处随握力短促一响，柄稳在斜线方向。"
+      ],
+      "coupling": "握紧完成出手前准备，不额外展开刃路。",
+      "landing": "双手握实，刀柄稳定。"
+    },
+    "continuity": "承接警告后双手握实的结果。",
+    "admission": "未见完整刀身，保持局部柄部，不补斩击目标。"
+  },
+  {
+    "image": "第19話_06_004.jpg",
+    "composition_lock": "黑色握拳近景，拳在左侧中央，锯齿形白色能量从拳周围向右侧扩开。",
+    "source_facts": {
+      "entities": [
+        "黑色手套拳头",
+        "白色锯齿形能量"
+      ],
+      "actions": [
+        "握拳",
+        "锯齿形能量包围拳头"
+      ],
+      "relations": [
+        "拳头在左近层，能量向右扩开"
+      ]
+    },
+    "bubbles": [],
+    "jp": [],
+    "background": "graphic",
+    "background_description": "白色闪光与斜向短线图形底场。",
+    "kind": "Action",
+    "anchor_phase": "middle",
+    "plan": {
+      "opening": "戴好手套的拳握住。",
+      "beats": [
+        "拳周围白色能量突然增亮，尖锐边缘向外短促扩开，再收成紧贴拳缘的闪动。"
+      ],
+      "coupling": "握实之后力量显现，为刀上聚力铺垫。",
+      "landing": "黑拳稳定，外缘能量仍在闪动。"
+    },
+    "continuity": "双手握实后力量开始外放。",
+    "admission": "能量只从源图拳头周围起，不补伤害目标或额外攻击。"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "commit": "caebdfd357f05e2d224e96f0f59a8b50c3a4a356",
+  "branch": "codex/comic-workspace",
+  "paths": [
+    "comic-workspace/episodes/ep-018/STATUS.md",
+    "comic-workspace/episodes/ep-018/storyboards/current/第18话_制作分镜_Gen2.8.md",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/color-observations.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/reference-crops.zip",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/semantic-review.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/skill-sync-manifest.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/skill-sync-verification.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/source-intake-audit.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/source-ledger-v3.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/validation.txt",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/warning-dispositions.json",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/交付说明.md",
+    "comic-workspace/episodes/ep-018/storyboards/deliveries/2026-10-09_Gen2.8_整话非露骨改编/第18话_制作分镜_Gen2.8.md"
+  ],
+  "remote_status": "pushed",
+  "source_images_in_commit": false,
+  "existing_hooks_preserved": true,
+  "git_lfs_runtime_verified": true,
+  "remote_head": "caebdfd357f05e2d224e96f0f59a8b50c3a4a356",
+  "remote_verified": true
+}

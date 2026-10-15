@@ -1,0 +1,21 @@
+{
+  "episode": "ep-002",
+  "script_duration_seconds": 315.0,
+  "full_duration_seconds": 325.393,
+  "script_cues": 58,
+  "full_cues": 61,
+  "estimated_cues": 3,
+  "estimated_panels": 4,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第02话_中文_脚本范围01.srt",
+      "script": "第二集_结构化分镜脚本.md",
+      "duration_seconds": 315.0,
+      "cues": 58
+    }
+  ],
+  "review_hints": 2,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

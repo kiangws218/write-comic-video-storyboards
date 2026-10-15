@@ -1,0 +1,21 @@
+{
+  "episode": "ep-012",
+  "script_duration_seconds": 332.0,
+  "full_duration_seconds": 455.483,
+  "script_cues": 82,
+  "full_cues": 107,
+  "estimated_cues": 29,
+  "estimated_panels": 41,
+  "expanded_dialogue_shots": 1,
+  "dialogue_extension_seconds": 3.622,
+  "parts": [
+    {
+      "file": "第12话_中文_脚本范围01.srt",
+      "script": "第12话_未上色_gen2.5_完整分镜脚本.md",
+      "duration_seconds": 332.0,
+      "cues": 82
+    }
+  ],
+  "review_hints": 4,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

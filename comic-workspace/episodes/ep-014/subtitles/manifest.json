@@ -1,0 +1,27 @@
+{
+  "episode": "ep-014",
+  "script_duration_seconds": 386.0,
+  "full_duration_seconds": 386.0,
+  "script_cues": 112,
+  "full_cues": 112,
+  "estimated_cues": 0,
+  "estimated_panels": 0,
+  "expanded_dialogue_shots": 0,
+  "dialogue_extension_seconds": 0,
+  "parts": [
+    {
+      "file": "第14话_中文_脚本范围01.srt",
+      "script": "第14话_未上色_第一批_01_001至22_001_gen2.5_分镜脚本.md",
+      "duration_seconds": 202.0,
+      "cues": 47
+    },
+    {
+      "file": "第14话_中文_脚本范围02.srt",
+      "script": "第14话_未上色_第二批_22_002至33_001_gen2.5_分镜脚本.md",
+      "duration_seconds": 184.0,
+      "cues": 65
+    }
+  ],
+  "review_hints": 16,
+  "validation": "passed: valid SRT, monotonic, no overlap, within subtitle window, Chinese only"
+}

@@ -1,0 +1,3009 @@
+[
+  {
+    "image": "第19話_02_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_02_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_02_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "呃嗯…",
+        "status": "mapped",
+        "target": "片段1/分镜3",
+        "script_text": "ん……？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "怎么回事…",
+        "status": "mapped",
+        "target": "片段1/分镜3",
+        "script_text": "どういうことだ……。",
+        "seconds": 2.4,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "呃嗯…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "怎么回事…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段1/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_03_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "AAAH!",
+        "status": "mapped",
+        "target": "片段1/分镜4",
+        "script_text": "うわあっ！",
+        "seconds": 1.2,
+        "speaker_evidence": "承接18话两名受困者的两声惊叫；不凭这两声增加画内头部或人物身份细节。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "KYAA!!",
+        "status": "mapped",
+        "target": "片段1/分镜4",
+        "script_text": "きゃあっ！",
+        "seconds": 1.2,
+        "speaker_evidence": "承接18话两名受困者的两声惊叫；不凭这两声增加画内头部或人物身份细节。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "AAAH!"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "KYAA!!"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段1/分镜4"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_03_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_03_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "因为前面很吵才着急忙慌赶到的。",
+        "status": "mapped",
+        "target": "片段2/分镜1",
+        "script_text": "この先が騒がしかったから、慌てて来たんだけど。",
+        "seconds": 6.2,
+        "speaker_evidence": "气泡尾朝左近处董白；本镜不能据此生成其未见的脸。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "因为前面很吵才着急忙慌赶到的。"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段2/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_04_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "你",
+        "status": "mapped",
+        "target": "片段2/分镜2",
+        "script_text": "お前、",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "是谁？",
+        "status": "mapped",
+        "target": "片段2/分镜2",
+        "script_text": "誰だ？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "是谁？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段2/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_04_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "真是走运",
+        "status": "mapped",
+        "target": "片段3/分镜1",
+        "script_text": "ついてるなあ。",
+        "seconds": 1.7,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "今天到底是什么日子？",
+        "status": "mapped",
+        "target": "片段3/分镜1",
+        "script_text": "今日は一体、何の日だろう？",
+        "seconds": 2.783333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "真是走运"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "今天到底是什么日子？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段3/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_04_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "inner",
+        "source_text": "得,得救了…骑士在关键时刻赶来…",
+        "status": "mapped",
+        "target": "片段4/分镜1",
+        "script_text": "た、助かった……。騎士がぎりぎりで来てくれた……。",
+        "seconds": 5.6,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "干,干掉它!!",
+        "status": "mapped",
+        "target": "片段4/分镜2",
+        "script_text": "た、倒して！！",
+        "seconds": 2.0666666666666664,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "他是个疯子！",
+        "status": "mapped",
+        "target": "片段4/分镜2",
+        "script_text": "こいつ、頭がおかしいの！",
+        "seconds": 2.6166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "得,得救了…骑士在关键时刻赶来…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "干,干掉它!!"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "他是个疯子！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段4/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2",
+          "t3"
+        ],
+        "targets": [
+          "片段4/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_05_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "天…哪…",
+        "status": "mapped",
+        "target": "片段5/分镜1",
+        "script_text": "なんて……こった……。",
+        "seconds": 2.9,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "天…哪…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段5/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_05_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "双马尾…",
+        "status": "mapped",
+        "target": "片段5/分镜2",
+        "script_text": "ツインテール……。",
+        "seconds": 2.3,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "大奶子…",
+        "status": "mapped",
+        "target": "片段5/分镜2",
+        "script_text": "でかい胸……。",
+        "seconds": 1.9666666666666668,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "双马尾…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "大奶子…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段5/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_05_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "你有",
+        "status": "mapped",
+        "target": "片段5/分镜3",
+        "script_text": "お前、",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "男朋友吗？",
+        "status": "mapped",
+        "target": "片段5/分镜3",
+        "script_text": "彼氏はいるのか？",
+        "seconds": 1.8666666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你有"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "男朋友吗？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段5/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_06_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "咕哝些什么呢？",
+        "status": "mapped",
+        "target": "片段6/分镜1",
+        "script_text": "何をぶつぶつ言ってるの？",
+        "seconds": 2.533333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "咕哝些什么呢？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段6/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_06_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "爬到这种边缘地带来你可真有胆。",
+        "status": "mapped",
+        "target": "片段6/分镜2",
+        "script_text": "こんな辺境まで来るなんて、いい度胸ね。",
+        "seconds": 3.7833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "也可以说愚蠢至极",
+        "status": "mapped",
+        "target": "片段6/分镜2",
+        "script_text": "それとも、とんでもない馬鹿なのかな。",
+        "seconds": 3.6166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "爬到这种边缘地带来你可真有胆。"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "也可以说愚蠢至极"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段6/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_06_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_06_004.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_07_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_07_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "随便啦",
+        "status": "mapped",
+        "target": "片段7/分镜4",
+        "script_text": "まあ、どうでもいいや。",
+        "seconds": 2.45,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "dialogue",
+        "source_text": "我会和你玩到尽兴之后宰了你",
+        "status": "mapped",
+        "target": "片段7/分镜4",
+        "script_text": "たっぷり遊んでから、殺してあげる。",
+        "seconds": 3.45,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "随便啦"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "我会和你玩到尽兴之后宰了你"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段7/分镜4"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_08_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_08_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "你在笑什么？",
+        "status": "mapped",
+        "target": "片段8/分镜1",
+        "script_text": "何を笑ってるの？",
+        "seconds": 1.8666666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你在笑什么？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段8/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_08_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "啥？！",
+        "status": "mapped",
+        "target": "片段8/分镜2",
+        "script_text": "えっ？！",
+        "seconds": 1.4833333333333334,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "我没笑啊！",
+        "status": "mapped",
+        "target": "片段8/分镜2",
+        "script_text": "笑ってないよ！",
+        "seconds": 1.7,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "啥？！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "我没笑啊！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段8/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_08_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "就算现在，你也还在笑",
+        "status": "mapped",
+        "target": "片段8/分镜3",
+        "script_text": "今だって、まだ笑ってるじゃん。",
+        "seconds": 3.1166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "就算现在，你也还在笑"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段8/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_09_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "没,没有.我只是觉得即使在被揍了一拳之后…",
+        "status": "mapped",
+        "target": "片段9/分镜1",
+        "script_text": "ち、違うよ。殴られたあとでも……、",
+        "seconds": 3.8000000000000003,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "姐姐还是那么漂亮…",
+        "status": "mapped",
+        "target": "片段9/分镜1",
+        "script_text": "お姉ちゃんは、やっぱりきれいだなって……。",
+        "seconds": 4.383333333333334,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "发什么神经",
+        "status": "mapped",
+        "target": "片段9/分镜2",
+        "script_text": "何言ってんの。",
+        "seconds": 1.7,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "没,没有.我只是觉得即使在被揍了一拳之后…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "姐姐还是那么漂亮…"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "发什么神经"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段9/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t3"
+        ],
+        "targets": [
+          "片段9/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_09_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_09_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "HAA…",
+        "status": "mapped",
+        "target": "片段10/分镜1",
+        "script_text": "はあ……。",
+        "seconds": 1.6333333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "又怎么了？",
+        "status": "mapped",
+        "target": "片段10/分镜1",
+        "script_text": "今度は何？",
+        "seconds": 1.3666666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "HAA…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "又怎么了？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段10/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_09_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "我弄丢了通行证…",
+        "status": "mapped",
+        "target": "片段10/分镜2",
+        "script_text": "通行証、なくしちゃったし……。",
+        "seconds": 3.3833333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "也是因为我，你才受伤的",
+        "status": "mapped",
+        "target": "片段10/分镜2",
+        "script_text": "お姉ちゃんが怪我したのも、私のせいだし。",
+        "seconds": 3.95,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我弄丢了通行证…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "也是因为我，你才受伤的"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段10/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_10_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "我感觉我除了惹祸一事无成",
+        "status": "mapped",
+        "target": "片段11/分镜1",
+        "script_text": "私、迷惑ばかりで、何もできてない。",
+        "seconds": 3.5333333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "如果那两个进去的人出了什么事…",
+        "status": "mapped",
+        "target": "片段11/分镜1",
+        "script_text": "中に入った二人に、何かあったら……。",
+        "seconds": 3.8833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我感觉我除了惹祸一事无成"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "如果那两个进去的人出了什么事…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段11/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_10_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "如果他们不走运死了，我们就去吃他们的席.",
+        "status": "mapped",
+        "target": "片段12/分镜1",
+        "script_text": "運悪く死んだら、葬式でご飯を食べよう。",
+        "seconds": 3.7833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "你哭的出来吗？",
+        "status": "mapped",
+        "target": "片段12/分镜1",
+        "script_text": "泣ける？",
+        "seconds": 1.2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "如果他们不走运死了，我们就去吃他们的席."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你哭的出来吗？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段12/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_10_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "别乌鸦嘴好吗？",
+        "status": "mapped",
+        "target": "片段13/分镜1",
+        "script_text": "縁起でもないこと、言わないで！",
+        "seconds": 3.1166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "怎么？",
+        "status": "mapped",
+        "target": "片段13/分镜1",
+        "script_text": "何？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "他们偷了我们的东西然后进去了，我还要为他们担心吗？",
+        "status": "mapped",
+        "target": "片段13/分镜2",
+        "script_text": "私たちの物を盗んで入ったんだよ。心配する必要ある？",
+        "seconds": 4.983333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "别乌鸦嘴好吗？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "怎么？"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "他们偷了我们的东西然后进去了，我还要为他们担心吗？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段13/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t3"
+        ],
+        "targets": [
+          "片段13/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_11_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "就,就算这样！你也该在乎他们的生命…!!",
+        "status": "mapped",
+        "target": "片段14/分镜1",
+        "script_text": "そ、それでも！命は大事にしてよ！",
+        "seconds": 3.5666666666666664,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你自己说过这条路很危险的…",
+        "status": "mapped",
+        "target": "片段14/分镜1",
+        "script_text": "この道は危険だって、自分で言ったでしょ……。",
+        "seconds": 4.55,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "就,就算这样！你也该在乎他们的生命…!!"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你自己说过这条路很危险的…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段14/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_11_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "够了，我们现在也做不了什么.",
+        "status": "mapped",
+        "target": "片段15/分镜1",
+        "script_text": "もういいよ。今は何もできない。",
+        "seconds": 3.5,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "就算有什么发生了，那个双马尾婊子会想办法解决的.",
+        "status": "mapped",
+        "target": "片段15/分镜2",
+        "script_text": "何かあっても、あのツインテールのクソ女が何とかするよ。",
+        "seconds": 6.65,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "够了，我们现在也做不了什么."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "就算有什么发生了，那个双马尾婊子会想办法解决的."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段15/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2"
+        ],
+        "targets": [
+          "片段15/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_11_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_11_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "HUH?",
+        "status": "mapped",
+        "target": "片段15/分镜4",
+        "script_text": "え？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "HUH?"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段15/分镜4"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_12_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "好久不见",
+        "status": "mapped",
+        "target": "片段16/分镜1",
+        "script_text": "久しぶり。",
+        "seconds": 1.3666666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你,你是…？",
+        "status": "mapped",
+        "target": "片段16/分镜1",
+        "script_text": "あ、あなたは……？",
+        "seconds": 2.3833333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "好久不见"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你,你是…？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段16/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_12_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "既然如此，为何不当魔物猎手？",
+        "status": "mapped",
+        "target": "片段17/分镜1",
+        "script_text": "それなら、魔物ハンターにならないか？",
+        "seconds": 3.6166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "啊哈？",
+        "status": "mapped",
+        "target": "片段17/分镜1",
+        "script_text": "え？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "既然如此，为何不当魔物猎手？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "啊哈？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段17/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_13_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "在这世界没有什么工作能比魔物猎手更声名显赫.",
+        "status": "mapped",
+        "target": "片段17/分镜2",
+        "script_text": "この世界で、魔物ハンターほど名を上げられる仕事はない。",
+        "seconds": 5.116666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "只要你能打你就行",
+        "status": "mapped",
+        "target": "片段17/分镜2",
+        "script_text": "戦えるなら、それでいい。",
+        "seconds": 2.6166666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "在这世界没有什么工作能比魔物猎手更声名显赫."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "只要你能打你就行"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段17/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_13_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "AAAAH!!",
+        "status": "mapped",
+        "target": "片段18/分镜1",
+        "script_text": "ああっ！",
+        "seconds": 1.2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你是之前那个大叔!!",
+        "status": "mapped",
+        "target": "片段18/分镜1",
+        "script_text": "前に会った、おじさんだ！！",
+        "seconds": 3.066666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "AAAAH!!"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你是之前那个大叔!!"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段18/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_13_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "他是谁？你喜欢这种的？",
+        "status": "mapped",
+        "target": "片段19/分镜1",
+        "script_text": "誰？こういうのが好きなの？",
+        "seconds": 2.9833333333333334,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "没有.我刚到这里的时候遇到的他.",
+        "status": "mapped",
+        "target": "片段19/分镜2",
+        "script_text": "違うよ。ここに来たばかりの時に会ったの。",
+        "seconds": 4.15,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "他是谁？你喜欢这种的？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "没有.我刚到这里的时候遇到的他."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段19/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2"
+        ],
+        "targets": [
+          "片段19/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_14_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "他推荐我当魔物猎手，所以我才当的.",
+        "status": "mapped",
+        "target": "片段20/分镜1",
+        "script_text": "あの人に勧められて、魔物ハンターになったんだ。",
+        "seconds": 4.45,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "…HMM.",
+        "status": "mapped",
+        "target": "片段20/分镜1",
+        "script_text": "ふーん。",
+        "seconds": 1.2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "他推荐我当魔物猎手，所以我才当的."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "…HMM."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段20/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_14_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "没想到能在这里遇见.",
+        "status": "mapped",
+        "target": "片段20/分镜2",
+        "script_text": "ここで会うとはな。",
+        "seconds": 2.033333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你肯定也对猎杀魔物很感兴趣！",
+        "status": "mapped",
+        "target": "片段20/分镜2",
+        "script_text": "魔物狩りに、すごく興味があるんでしょ！",
+        "seconds": 3.7833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "没想到能在这里遇见."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你肯定也对猎杀魔物很感兴趣！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段20/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_14_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "你们要去北边？",
+        "status": "mapped",
+        "target": "片段21/分镜1",
+        "script_text": "北へ行くのか？",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你们要去北边？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段21/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_14_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "HUH?",
+        "status": "mapped",
+        "target": "片段21/分镜2",
+        "script_text": "え？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "你怎么知道的？",
+        "status": "mapped",
+        "target": "片段21/分镜2",
+        "script_text": "どうして知ってるの？",
+        "seconds": 2.2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "HUH?"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "你怎么知道的？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段21/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_15_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "跟上.",
+        "status": "mapped",
+        "target": "片段21/分镜3",
+        "script_text": "ついて来い。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "跟上."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段21/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_15_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "inner",
+        "source_text": "？？？",
+        "status": "mapped",
+        "target": "片段21/分镜4",
+        "script_text": "……？",
+        "seconds": 1.3,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "HUH?",
+        "status": "mapped",
+        "target": "片段21/分镜4",
+        "script_text": "え？",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "？？？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "HUH?"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段21/分镜4"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_15_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "什么情况？",
+        "status": "mapped",
+        "target": "片段22/分镜1",
+        "script_text": "どういうこと？",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "inner",
+        "source_text": "……",
+        "status": "mapped",
+        "target": "片段22/分镜1",
+        "script_text": "……。",
+        "seconds": 1.3,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "大叔也是骑士？",
+        "status": "mapped",
+        "target": "片段22/分镜1",
+        "script_text": "おじさんも騎士なの？",
+        "seconds": 2.2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "什么情况？"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "……"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "大叔也是骑士？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2",
+          "t3"
+        ],
+        "targets": [
+          "片段22/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_16_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "这里…是我们进来的地方.",
+        "status": "mapped",
+        "target": "片段23/分镜1",
+        "script_text": "ここ、私たちが入ってきた場所だよ。",
+        "seconds": 3.45,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "这里有秘密通道之类的东西？",
+        "status": "mapped",
+        "target": "片段23/分镜2",
+        "script_text": "秘密の抜け道でもあるの？",
+        "seconds": 2.533333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b3",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "不可能有",
+        "status": "mapped",
+        "target": "片段23/分镜2",
+        "script_text": "あるわけない。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "这里…是我们进来的地方."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "这里有秘密通道之类的东西？"
+      },
+      {
+        "id": "t3",
+        "bubble_ids": [
+          "b3"
+        ],
+        "function": "不可能有"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段23/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      },
+      {
+        "id": "g2",
+        "turn_ids": [
+          "t2",
+          "t3"
+        ],
+        "targets": [
+          "片段23/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_16_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "inner",
+        "source_text": "那么…",
+        "status": "mapped",
+        "target": "片段24/分镜1",
+        "script_text": "それで……。",
+        "seconds": 1.7999999999999998,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "inner",
+        "source_text": "为什么他在让我们跟上来之后就站在那里？",
+        "status": "mapped",
+        "target": "片段24/分镜1",
+        "script_text": "ついて来いと言ったくせに、どうしてそこで止まってるの？",
+        "seconds": 5.116666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "那么…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "为什么他在让我们跟上来之后就站在那里？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段24/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_17_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_17_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_18_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "GAAH!!",
+        "status": "mapped",
+        "target": "片段25/分镜3",
+        "script_text": "うわっ！！",
+        "seconds": 1.65,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "什么情况？！",
+        "status": "mapped",
+        "target": "片段25/分镜3",
+        "script_text": "何これ？！",
+        "seconds": 1.65,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "GAAH!!"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "什么情况？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段25/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_18_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "inner",
+        "source_text": "……!!!!",
+        "status": "mapped",
+        "target": "片段25/分镜4",
+        "script_text": "……！",
+        "seconds": 1.3,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "……!!!!"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段25/分镜4"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_19_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "去吧.",
+        "status": "mapped",
+        "target": "片段25/分镜5",
+        "script_text": "行け。",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "这是一条通往北方地下城的通道.",
+        "status": "mapped",
+        "target": "片段25/分镜5",
+        "script_text": "北のダンジョンへ通じる道だ。",
+        "seconds": 2.8666666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "去吧."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "这是一条通往北方地下城的通道."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段25/分镜5"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_19_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "难,难以置信…",
+        "status": "mapped",
+        "target": "片段26/分镜1",
+        "script_text": "し、信じられない……。",
+        "seconds": 2.716666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "这个大陆上还存在这种魔法吗？",
+        "status": "mapped",
+        "target": "片段26/分镜1",
+        "script_text": "この大陸に、こんな魔法があるの？",
+        "seconds": 3.2833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "难,难以置信…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "这个大陆上还存在这种魔法吗？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段26/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_19_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "不对.",
+        "status": "mapped",
+        "target": "片段26/分镜2",
+        "script_text": "違う。",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "不对."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段26/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_20_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "这里可没有那种魔法.",
+        "status": "mapped",
+        "target": "片段26/分镜3",
+        "script_text": "ここに、そんな魔法はない。",
+        "seconds": 2.783333333333333,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "这里可没有那种魔法."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段26/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_20_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_20_003.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_21_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "HMM.",
+        "status": "mapped",
+        "target": "片段27/分镜1",
+        "script_text": "ふむ。",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "黑袍来者",
+        "kind": "dialogue",
+        "source_text": "她可真聪明.",
+        "status": "mapped",
+        "target": "片段27/分镜1",
+        "script_text": "なかなか賢いな。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "HMM."
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "她可真聪明."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段27/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_21_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_22_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_22_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_22_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "别动",
+        "status": "mapped",
+        "target": "片段28/分镜5",
+        "script_text": "動くな。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "别动"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段28/分镜5"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_22_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "我切开你的喉咙连一秒钟都不用.",
+        "status": "mapped",
+        "target": "片段28/分镜5",
+        "script_text": "喉を切るのに、一秒もかからない。",
+        "seconds": 3.7,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "我切开你的喉咙连一秒钟都不用."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段28/分镜5"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_23_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_23_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青",
+        "kind": "dialogue",
+        "source_text": "现,现在是什么情况…？！",
+        "status": "mapped",
+        "target": "片段29/分镜1",
+        "script_text": "い、今、どうなってるの？！",
+        "seconds": 3.15,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "现,现在是什么情况…？！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段29/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_23_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "如果人类能施展这样的魔法，战况怎么可能那么艰难？",
+        "status": "mapped",
+        "target": "片段29/分镜2",
+        "script_text": "人間にこんな魔法が使えたら、戦争であんなに苦戦しないでしょ。",
+        "seconds": 5.616666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "如果人类能施展这样的魔法，战况怎么可能那么艰难？"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段29/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_23_004.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "春子",
+        "kind": "dialogue",
+        "source_text": "这家伙肯定是魔族.",
+        "status": "mapped",
+        "target": "片段29/分镜3",
+        "script_text": "こいつは、間違いなく魔族だ。",
+        "seconds": 2.95,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "这家伙肯定是魔族."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段29/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_24_001.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_24_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_25_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "你也只是",
+        "status": "mapped",
+        "target": "片段30/分镜2",
+        "script_text": "お前も、",
+        "seconds": 1.1,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "欧迈及",
+        "kind": "dialogue",
+        "source_text": "蝼蚁.",
+        "status": "mapped",
+        "target": "片段30/分镜2",
+        "script_text": "ただの蟻だ。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "你也只是"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "蝼蚁."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段30/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_25_002.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "董白",
+        "kind": "inner",
+        "source_text": "这个混蛋…",
+        "status": "mapped",
+        "target": "片段30/分镜3",
+        "script_text": "この野郎……。",
+        "seconds": 2,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "董白",
+        "kind": "inner",
+        "source_text": "和平常魔物完全不是一个级别的.",
+        "status": "mapped",
+        "target": "片段30/分镜3",
+        "script_text": "普通の魔物とは、まるで格が違う。",
+        "seconds": 3.2833333333333337,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "这个混蛋…"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "和平常魔物完全不是一个级别的."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段30/分镜3"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_25_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "那个兽人到底怎么回事…！！",
+        "status": "mapped",
+        "target": "片段31/分镜1",
+        "script_text": "あのオーク、何なんだ……！！",
+        "seconds": 3.5,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      },
+      {
+        "id": "b2",
+        "speaker": "青梅男",
+        "kind": "dialogue",
+        "source_text": "无论你砍断哪里，他都会再生…！",
+        "status": "mapped",
+        "target": "片段31/分镜1",
+        "script_text": "どこを切っても、再生しやがる……！",
+        "seconds": 3.716666666666667,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "那个兽人到底怎么回事…！！"
+      },
+      {
+        "id": "t2",
+        "bubble_ids": [
+          "b2"
+        ],
+        "function": "无论你砍断哪里，他都会再生…！"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1",
+          "t2"
+        ],
+        "targets": [
+          "片段31/分镜1"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_26_001.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "不,不仅如此…",
+        "status": "mapped",
+        "target": "片段31/分镜2",
+        "script_text": "い、いえ、それだけじゃ……。",
+        "seconds": 3.3000000000000003,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "不,不仅如此…"
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段31/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  },
+  {
+    "image": "第19話_26_002.jpg",
+    "bubbles": [],
+    "dialogue_turns": [],
+    "coverage_groups": []
+  },
+  {
+    "image": "第19話_26_003.jpg",
+    "bubbles": [
+      {
+        "id": "b1",
+        "speaker": "青梅女",
+        "kind": "dialogue",
+        "source_text": "每次她拔出刀的时候，刀都会变小一点.",
+        "status": "mapped",
+        "target": "片段32/分镜2",
+        "script_text": "刀を抜くたびに、少しずつ小さくなってる。",
+        "seconds": 3.95,
+        "speaker_evidence": "本格气泡尾与可见发言者；画外发言不增加画内人物。"
+      }
+    ],
+    "dialogue_turns": [
+      {
+        "id": "t1",
+        "bubble_ids": [
+          "b1"
+        ],
+        "function": "每次她拔出刀的时候，刀都会变小一点."
+      }
+    ],
+    "coverage_groups": [
+      {
+        "id": "g1",
+        "turn_ids": [
+          "t1"
+        ],
+        "targets": [
+          "片段32/分镜2"
+        ],
+        "merge_basis": "同一姿态与当下回应能够承接相邻短句，语义顺序保持，没有隐藏切镜。"
+      }
+    ]
+  }
+]

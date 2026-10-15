@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bright_grid",
+    "work": "孤独摇滚 官方场景图库图19",
+    "url": "https://bocchi.rocks/omnibus/assets/img/page/special/impression/scene/ph_rere/bamensha_rere_19.jpg",
+    "local": "bocchi-19.jpg",
+    "observed": "浅黄色底，白色斜条交叉成宽菱形网格，大小错落的四角闪光。",
+    "adaptation": "仅借平面网格和稀疏闪光用于自我展示；不移植人物造型、眼部图案或手势。",
+    "inspection": "本轮实际打开下载的官方JPEG静帧核对；不是搜索摘要。",
+    "animation_evidence": "仅静帧，未观察原动画运动；本轮图形层均采用静态设计。",
+    "sha256": "72f2242e1eed7a97af096d6a563634539a4e450480fe329ee9d28bfde0700630"
+  },
+  {
+    "id": "pressure_brush",
+    "work": "孤独摇滚 官方场景图库图23",
+    "url": "https://bocchi.rocks/omnibus/assets/img/page/special/impression/scene/ph_rere/bamensha_rere_23.jpg",
+    "local": "bocchi-23.jpg",
+    "observed": "深蓝灰上缘向浅色下缘延伸，纵向刷痕粗细、长短和明暗不匀。",
+    "adaptation": "降低纹理密度，按负空间安排压力层；不是雨、雾或水流，不移植人物脸部阴影。",
+    "inspection": "本轮实际打开下载的官方JPEG静帧核对；不是搜索摘要。",
+    "animation_evidence": "仅静帧，未观察原动画运动；本轮图形层均采用静态设计。",
+    "sha256": "bb842b3e5da88cbec8b96fee92889c42f0874c872b243b1d3cfdd5d6a0b476fa"
+  },
+  {
+    "id": "soft_cyan",
+    "work": "孤独摇滚 官方场景图库图34",
+    "url": "https://bocchi.rocks/omnibus/assets/img/page/special/impression/scene/ph_rere/bamensha_rere_34.jpg",
+    "local": "bocchi-34.jpg",
+    "observed": "浅青蓝柔亮底，大小不同的柔边浅色圆斑，疏散细白十字亮点。",
+    "adaptation": "用于认出旧识的短暂明快反应；不是恋爱、新魔法或实体泡泡。",
+    "inspection": "本轮实际打开下载的官方JPEG静帧核对；不是搜索摘要。",
+    "animation_evidence": "仅静帧，未观察原动画运动；本轮图形层均采用静态设计。",
+    "sha256": "89a5daba363eca4718d2f10fb554c8c32f1764c69fbdb823ab799eb03653f95b"
+  },
+  {
+    "id": "confrontation_lines",
+    "work": "辉夜大小姐 第三季第2集官方图2",
+    "url": "https://kaguya.love/3rd/story/SYS/CONTENTS/story_2274_photo_1649640800478814199",
+    "local": "kaguya-s3-02-2.jpg",
+    "observed": "黑色背衬内细白灰斜线向对峙区域聚拢；人物另有红蓝强调纹。",
+    "adaptation": "只借背景的线势，降低密度；人物红蓝纹、冲突接触和飞屑不移植。",
+    "inspection": "本轮实际打开下载的官方JPEG静帧核对；不是搜索摘要。",
+    "animation_evidence": "仅静帧，未观察原动画运动；本轮图形层均采用静态设计。",
+    "sha256": "c74859778adba91e530264db360cfd4429f487fdd1b73836ddfbebc1ac622c85"
+  }
+]
