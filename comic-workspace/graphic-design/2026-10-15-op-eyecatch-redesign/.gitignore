@@ -1,0 +1,12 @@
+node_modules/
+package/
+ffmpeg-tool.tgz
+frames/
+*.tmp
+revisions/
+exports/
+audio/
+qa/
+assets/*.png
+*poster.jpg
+__pycache__/
