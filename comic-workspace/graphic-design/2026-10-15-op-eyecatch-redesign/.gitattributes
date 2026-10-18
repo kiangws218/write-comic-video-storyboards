@@ -1,0 +1,8 @@
+# Keep the source package independent of Git LFS.
+*.svg -filter diff merge text
+*.js text
+*.cjs text
+*.json text
+*.py text
+*.html text
+*.md text

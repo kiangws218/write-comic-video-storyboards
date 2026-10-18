@@ -1,0 +1,100 @@
+{
+  "english": {
+    "src": "assets/english.png",
+    "x": 173.5,
+    "y": 647,
+    "w": 1196,
+    "h": 81.5
+  },
+  "eye-0": {
+    "src": "assets/eye-0.png",
+    "x": 664.5,
+    "y": 227.5,
+    "w": 287.5,
+    "h": 311.5
+  },
+  "eye-1": {
+    "src": "assets/eye-1.png",
+    "x": 961.5,
+    "y": 242.5,
+    "w": 290.5,
+    "h": 296
+  },
+  "eye-2": {
+    "src": "assets/eye-2.png",
+    "x": 676.5,
+    "y": 537.5,
+    "w": 290.5,
+    "h": 268
+  },
+  "eye-3": {
+    "src": "assets/eye-3.png",
+    "x": 955,
+    "y": 537.5,
+    "w": 315,
+    "h": 273
+  },
+  "glyph-0": {
+    "src": "assets/glyph-0.png",
+    "x": 416.5,
+    "y": 170,
+    "w": 131.5,
+    "h": 152.5
+  },
+  "glyph-1": {
+    "src": "assets/glyph-1.png",
+    "x": 554,
+    "y": 79.5,
+    "w": 222.5,
+    "h": 219
+  },
+  "glyph-2": {
+    "src": "assets/glyph-2.png",
+    "x": 775,
+    "y": 95,
+    "w": 217.5,
+    "h": 246
+  },
+  "glyph-3": {
+    "src": "assets/glyph-3.png",
+    "x": 982.5,
+    "y": 214.5,
+    "w": 144,
+    "h": 132.5
+  },
+  "glyph-4": {
+    "src": "assets/glyph-4.png",
+    "x": 175,
+    "y": 292.5,
+    "w": 310,
+    "h": 342.5
+  },
+  "glyph-5": {
+    "src": "assets/glyph-5.png",
+    "x": 471,
+    "y": 317,
+    "w": 279.5,
+    "h": 277.5
+  },
+  "glyph-6": {
+    "src": "assets/glyph-6.png",
+    "x": 802,
+    "y": 322,
+    "w": 288,
+    "h": 274
+  },
+  "glyph-7": {
+    "src": "assets/glyph-7.png",
+    "x": 1069,
+    "y": 321.5,
+    "w": 347,
+    "h": 287.5
+  },
+  "title": {
+    "src": "assets/title.png",
+    "x": 170,
+    "y": 74.5,
+    "w": 1251,
+    "h": 654
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "monster-hunter-title-eyecatches-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Deterministic ring title, paired eyecatches and synthesized sound effects",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "assets": "node rasterize.cjs",
+    "sound": "node build.cjs sound",
+    "render:eyes": "node build.cjs eyes",
+    "render:title": "node build.cjs title",
+    "build": "node build.cjs all",
+    "check": "node verify-source.cjs"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "sharp": "0.35.5"
+  }
+}

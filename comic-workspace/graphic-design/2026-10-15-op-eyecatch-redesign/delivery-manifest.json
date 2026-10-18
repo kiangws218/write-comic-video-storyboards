@@ -1,0 +1,102 @@
+{
+  "project": "Title overlay and eyecatches",
+  "revision": "sound-design-6",
+  "date": "2026-10-15",
+  "titleUse": "Overlay into an existing opening, entrance/hold/exit only",
+  "alphaFormat": "ProRes 4444, straight alpha, no audio",
+  "titleDuration": 5,
+  "titleFrames": 300,
+  "pngSequence": {
+    "directory": "exports/title-overlay-png-4K60",
+    "frames": 300,
+    "storage": "Local render cache, excluded from Git; regenerate with render-overlay.cjs"
+  },
+  "files": [
+    {
+      "file": "exports/Title-overlay-4K60-alpha.mov",
+      "bytes": 375191672,
+      "sha256": "57a1651c1125286c508f64d6e47825c5e1f55c1f1d6ef87a893809ca71cdf10b"
+    },
+    {
+      "file": "exports/Title-overlay-1080p60-alpha.mov",
+      "bytes": 177329205,
+      "sha256": "f59fa1bb3ed8faeb938f7af2e9c796474fa50e435c657a56ef95b6fe1626d2f4"
+    },
+    {
+      "file": "exports/Title-overlay-preview-1080p60.mp4",
+      "bytes": 2261802,
+      "sha256": "99e4924befbe806d3e0cd95f10e1532ff6b8644286b55a27b02ce1c7c7b7d988"
+    },
+    {
+      "file": "exports/Title-overlay-hold-4K.png",
+      "bytes": 1079992,
+      "sha256": "da734abcb8bcee3d902fba79ebe0f98270d8c51097447b1abc7fcec915d0f500"
+    },
+    {
+      "file": "exports/Current-deliverables-preview-1080p60.mp4",
+      "bytes": 4272647,
+      "sha256": "0af2a5aeb896865b5bfb34c46ba74ef2469c580f957b482a6e066a7757ce969e"
+    },
+    {
+      "file": "exports/Eyecatch-A-break-4K60.mp4",
+      "bytes": 6171259,
+      "sha256": "ae6d4239844de25532654022016140f467c3c936c3fb2789d0d0e71ac9fdad0d"
+    },
+    {
+      "file": "exports/Eyecatch-B-continue-4K60.mp4",
+      "bytes": 8047112,
+      "sha256": "563911552b9018cf27e9b54cb29ae4746ae83627cc9e36c580de62a71574f24f"
+    },
+    {
+      "file": "exports/Eyecatch-A-break-1080p60.mp4",
+      "bytes": 932033,
+      "sha256": "73df6e0dec23d828dcc03bacf591581e782ccfeac3bc1946c8c3597b8f643cc1"
+    },
+    {
+      "file": "exports/Eyecatch-B-continue-1080p60.mp4",
+      "bytes": 1268348,
+      "sha256": "eaad79d44e78bc0ac3b3331e181329d8091cab653cf4c2abe0ffc577e53d3dcd"
+    },
+    {
+      "file": "exports/Eyecatch-pair-sound-design-1080p60.mp4",
+      "bytes": 2187351,
+      "sha256": "b7333e15dff76a47d9c8afdeb9454717a96e0ff6d80795e456e0685f9abe2902"
+    },
+    {
+      "file": "audio/sound-design-v1/pause-master-48k24.wav",
+      "bytes": 1152220,
+      "sha256": "ad71227af56f42d3f94412c975b2966ab759a9d183375d7e1d6297a8ffbc627b"
+    },
+    {
+      "file": "audio/sound-design-v1/resume-master-48k24.wav",
+      "bytes": 1152218,
+      "sha256": "a8a26c3395fae02f1d6880d57bae4ed180bcde2c876ba1b773aa51adbe7e68a4"
+    }
+  ],
+  "eyecatchRevision": {
+    "removed": [
+      "intro background 魔 / 手",
+      "peripheral male/female symbols",
+      "both upper English lines",
+      "both lower English lines and their underline"
+    ],
+    "opUnchanged": true,
+    "pairPreview": "exports/Eyecatch-pair-sound-design-1080p60.mp4"
+  },
+  "soundDesign": {
+    "directory": "audio/sound-design-v1",
+    "masters": [
+      "pause-master-48k24.wav",
+      "resume-master-48k24.wav"
+    ],
+    "sampleRate": 48000,
+    "bits": 24,
+    "channels": 2,
+    "durationEach": 4,
+    "pairPreview": "exports/Eyecatch-pair-sound-design-1080p60.mp4",
+    "stems": "audio/sound-design-v1/stems"
+  },
+  "version": 2,
+  "versionLabel": "第二版",
+  "gitStorage": "Source only. Files listed below are generated locally and excluded from Git."
+}

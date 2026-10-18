@@ -1,0 +1,72 @@
+[
+  {
+    "path": "README.md",
+    "size": 1455,
+    "sha256": "6bd568801fc0807b6af41ffe8682936af42373b9f39af6c0ad39d35cfabeb89c"
+  },
+  {
+    "path": "source-ledger-safe-v3.json",
+    "size": 404613,
+    "sha256": "15e47eecfb5066f2ff6328b53e69bddf79cdafd60dfbdf35b61a5dcf15223577"
+  },
+  {
+    "path": "source-ledger-v3.json",
+    "size": 397114,
+    "sha256": "fa5ac5099086a2506c73dc7fd8aafa0d6dfe4cd764d5495162f218edd3b1388e"
+  },
+  {
+    "path": "参考分格/第22話_11_001_a.jpg",
+    "size": 91323,
+    "sha256": "8b7a2fcbfc8297eb6af4e4fbb65c068cceaa28790a85a8f3d2d726c92b25d8a9"
+  },
+  {
+    "path": "参考分格/第22話_11_001_b.jpg",
+    "size": 166759,
+    "sha256": "e3c5480e93f7841da30ca7740e6d0bcd610de6ab92e132cea8b86c32f4c65af1"
+  },
+  {
+    "path": "参考分格/第22話_14_001_a.jpg",
+    "size": 176077,
+    "sha256": "d3091d89079ad5cc66af10f75e9cd111b8fd28dedfcbe1693672a39f7f531454"
+  },
+  {
+    "path": "参考分格/第22話_14_001_b.jpg",
+    "size": 221148,
+    "sha256": "8b40b27d5f18ec79a272d16426267fa5029b82afa04dfae8cc4473117650de05"
+  },
+  {
+    "path": "校验报告_原作忠实版.txt",
+    "size": 18714,
+    "sha256": "62799f402b99eb7d54f6e96bda0e71fc2ea4b8e54f9a2b60d2e93561508732d2"
+  },
+  {
+    "path": "校验报告_和谐改编版.txt",
+    "size": 18714,
+    "sha256": "62799f402b99eb7d54f6e96bda0e71fc2ea4b8e54f9a2b60d2e93561508732d2"
+  },
+  {
+    "path": "第22话_交付与审阅说明.md",
+    "size": 3671,
+    "sha256": "8a4e3708345e1bee00b2c97f83490c4e877826409a77b52239ea3872ee927003"
+  },
+  {
+    "path": "第22话_原作忠实版_Gen2.8.1.md",
+    "size": 57946,
+    "sha256": "8b8286df3c8ee191bd0037fe0af274d95792ee8956c869e9a3c88fbc5a734e56"
+  },
+  {
+    "path": "第22话_原文与日语配音核对表.md",
+    "size": 10508,
+    "sha256": "da1af8c90c86f645536a98349e81328df739e926417fbd111e9e3d0fc78126c0"
+  },
+  {
+    "path": "第22话_双版本差异表.md",
+    "size": 6083,
+    "sha256": "5cbb6bf6f43780aecddeb6c5659c38b4bd1376a5cbee9b48198fb1828e1dff84"
+  },
+  {
+    "path": "第22话_和谐改编版_Gen2.8.1.md",
+    "size": 57821,
+    "sha256": "05ae2491a59717086eade11beba7ad9f11979cbacb23d670c0fd9d4cb3751539"
+  }
+]
