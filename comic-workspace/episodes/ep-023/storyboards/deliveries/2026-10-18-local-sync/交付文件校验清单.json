@@ -1,0 +1,87 @@
+[
+  {
+    "file": "source-ledger-safe-v3.json",
+    "bytes": 493005,
+    "sha256": "b60c9dff424251790c76cbf08040569feb6e3a113f403f18745af8a6132d47d9"
+  },
+  {
+    "file": "source-ledger-v3.json",
+    "bytes": 475954,
+    "sha256": "c8850ef68653579b43e332311ca6fc5c1270f81a8b6abfe118d8aee85f80f1b7"
+  },
+  {
+    "file": "原始素材校验清单.json",
+    "bytes": 12524,
+    "sha256": "4dd2894198855bf966de2ee1a30356ef2031a6bc91a789ebca0c4b0f97ba8238"
+  },
+  {
+    "file": "参考分格\\crop-provenance.json",
+    "bytes": 1287,
+    "sha256": "1e34b040947bc9b8753253ada6c4d916c60d60a740b26b0826bf61fee64371c8"
+  },
+  {
+    "file": "参考分格\\第23話_10_002_a.jpg",
+    "bytes": 298679,
+    "sha256": "cd5120ce8e90d97916f239a5a8f3741cd52b52532563a956db510e5ec1d12f42"
+  },
+  {
+    "file": "参考分格\\第23話_10_002_b.jpg",
+    "bytes": 369771,
+    "sha256": "58ecbc6a3944737b25d3d83726699f829b222608467f263cf34717125bf12016"
+  },
+  {
+    "file": "参考分格\\第23話_16_001_a.jpg",
+    "bytes": 222321,
+    "sha256": "567c47fea3bc5f56132e5407f0f2b4b0e515b050c7da5545d8e4650410ff3bc8"
+  },
+  {
+    "file": "参考分格\\第23話_16_001_b.jpg",
+    "bytes": 515464,
+    "sha256": "c56487bff9edcfe887d68e901c2f2168204bedebcda067dc75951eb1d2cb2389"
+  },
+  {
+    "file": "参考分格\\第23話_16_001_c.jpg",
+    "bytes": 220143,
+    "sha256": "2719b6906665ec0024af3932287256e61d7bec74ee1be0411970da5cd263e9a9"
+  },
+  {
+    "file": "参考分格\\第23話_16_001_d.jpg",
+    "bytes": 476647,
+    "sha256": "115898d99d651b9d046ec8a9738d628687480f3196fe2eb2177d2e5be19935a8"
+  },
+  {
+    "file": "校验报告_原作忠实版.txt",
+    "bytes": 19144,
+    "sha256": "0b1a65953c88580b7ab463c30d54d1c7b29a4d8c1a2d3b3ee21760dd11e74750"
+  },
+  {
+    "file": "校验报告_和谐改编版.txt",
+    "bytes": 19144,
+    "sha256": "0b1a65953c88580b7ab463c30d54d1c7b29a4d8c1a2d3b3ee21760dd11e74750"
+  },
+  {
+    "file": "第23话_交付与审阅说明.md",
+    "bytes": 5343,
+    "sha256": "5c8093cd821243ab7fbc8180ee55e04ada87b487b186cce9b2e5f789d82431bc"
+  },
+  {
+    "file": "第23话_原作忠实版_Gen2.8.1.md",
+    "bytes": 68813,
+    "sha256": "590d3da266430794a7701b2eecc441ca525772387f32bd53abcaaeb9111b8fd4"
+  },
+  {
+    "file": "第23话_原文与日语配音核对表.md",
+    "bytes": 13681,
+    "sha256": "38a36aa5dcc4b6467f3cb31007591034ce474945453e8f28928f1c63178db007"
+  },
+  {
+    "file": "第23话_双版本差异表.md",
+    "bytes": 7516,
+    "sha256": "959fb9cbc39a6e8bd9d74e79e8b6b41e2a1327cf294c5da565eefebafaeb471e"
+  },
+  {
+    "file": "第23话_和谐改编版_Gen2.8.1.md",
+    "bytes": 69089,
+    "sha256": "253710a6af513eef2fe0b069358fc625c090b33914ba4e4fe0edbbf7e1b4037d"
+  }
+]
