@@ -5,6 +5,7 @@
 ## 目录约定
 
 ```text
+workflows/                    可复用工作流程与Agent交接规范
 character-references/
   turnarounds/                 角色三视图与补充设定图
   voice-references/            角色参考音频
@@ -27,6 +28,10 @@ episodes/
 2. 克隆仓库并使用 `main` 分支；各版本 skill 和漫画项目已在主分支汇总。
 3. 执行 `git lfs pull` 下载漫画图片、角色参考图与参考音频。
 4. 优先查看对应话数的 `STATUS.md`，再从 `storyboards/current/` 领取当前稿。
+
+## 通用工作流程
+
+- [小云雀漫画动画化与Agent交接](workflows/小云雀漫画动画化_工作流程与Agent交接.md)：CLI优先访问画布、账号隔离、任务输入表、提示词结构、素材引用、参数、布局与验收。
 
 ## 素材约束
 
