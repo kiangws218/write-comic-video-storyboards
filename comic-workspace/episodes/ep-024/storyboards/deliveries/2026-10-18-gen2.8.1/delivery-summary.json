@@ -1,0 +1,30 @@
+{
+  "clips": 21,
+  "shots": 57,
+  "seconds": 262,
+  "formal_references": 57,
+  "source_files": 95,
+  "detailed_source_records": 59,
+  "source_sha256_pass": 95,
+  "blocking_errors": 0,
+  "advisory_classes": {
+    "多人同镜覆盖复核": 4,
+    "跨片段合并复核": 1,
+    "表演语义复核": 26,
+    "重复语句节拍复核": 3
+  },
+  "advisories": 34,
+  "manual_overflow": [],
+  "rule_input_characters": 138078,
+  "rule_files": {
+    "SKILL.md": 14662,
+    "references/core-authoring.md": 52907,
+    "references/dialogue-performance.md": 30771,
+    "references/acting-calibration.md": 3226,
+    "references/cinematic-rendering.md": 10612,
+    "references/source-risk.md": 3459,
+    "references/background-design.md": 8623,
+    "references/2d-animation-execution.md": 13818
+  },
+  "source_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e"
+}

@@ -1,0 +1,401 @@
+[
+  {
+    "target": "片段1/分镜1",
+    "key": "01_003",
+    "seconds": 2,
+    "start": 0,
+    "end": 2
+  },
+  {
+    "target": "片段1/分镜2",
+    "key": "02_001",
+    "seconds": 5,
+    "start": 2,
+    "end": 7
+  },
+  {
+    "target": "片段1/分镜3",
+    "key": "02_003",
+    "seconds": 5,
+    "start": 7,
+    "end": 12
+  },
+  {
+    "target": "片段1/分镜4",
+    "key": "03_002",
+    "seconds": 2,
+    "start": 12,
+    "end": 14
+  },
+  {
+    "target": "片段2/分镜1",
+    "key": "14_002",
+    "seconds": 3,
+    "start": 14,
+    "end": 17
+  },
+  {
+    "target": "片段2/分镜2",
+    "key": "14_003",
+    "seconds": 4,
+    "start": 17,
+    "end": 21
+  },
+  {
+    "target": "片段2/分镜3",
+    "key": "15_001",
+    "seconds": 4,
+    "start": 21,
+    "end": 25
+  },
+  {
+    "target": "片段2/分镜4",
+    "key": "15_002",
+    "seconds": 4,
+    "start": 25,
+    "end": 29
+  },
+  {
+    "target": "片段3/分镜1",
+    "key": "15_003",
+    "seconds": 4,
+    "start": 29,
+    "end": 33
+  },
+  {
+    "target": "片段3/分镜2",
+    "key": "15_004",
+    "seconds": 2,
+    "start": 33,
+    "end": 35
+  },
+  {
+    "target": "片段3/分镜3",
+    "key": "15_005",
+    "seconds": 2,
+    "start": 35,
+    "end": 37
+  },
+  {
+    "target": "片段3/分镜4",
+    "key": "16_001",
+    "seconds": 7,
+    "start": 37,
+    "end": 44
+  },
+  {
+    "target": "片段4/分镜1",
+    "key": "16_002",
+    "seconds": 2,
+    "start": 44,
+    "end": 46
+  },
+  {
+    "target": "片段4/分镜2",
+    "key": "16_003",
+    "seconds": 3,
+    "start": 46,
+    "end": 49
+  },
+  {
+    "target": "片段4/分镜3",
+    "key": "17_001",
+    "seconds": 3,
+    "start": 49,
+    "end": 52
+  },
+  {
+    "target": "片段4/分镜4",
+    "key": "17_002",
+    "seconds": 6,
+    "start": 52,
+    "end": 58
+  },
+  {
+    "target": "片段5/分镜1",
+    "key": "17_003",
+    "seconds": 3,
+    "start": 58,
+    "end": 61
+  },
+  {
+    "target": "片段5/分镜2",
+    "key": "17_004",
+    "seconds": 10,
+    "start": 61,
+    "end": 71
+  },
+  {
+    "target": "片段6/分镜1",
+    "key": "18_001",
+    "seconds": 3,
+    "start": 71,
+    "end": 74
+  },
+  {
+    "target": "片段6/分镜2",
+    "key": "18_002",
+    "seconds": 3,
+    "start": 74,
+    "end": 77
+  },
+  {
+    "target": "片段6/分镜3",
+    "key": "18_003",
+    "seconds": 2,
+    "start": 77,
+    "end": 79
+  },
+  {
+    "target": "片段7/分镜1",
+    "key": "18_004",
+    "seconds": 2,
+    "start": 79,
+    "end": 81
+  },
+  {
+    "target": "片段7/分镜2",
+    "key": "19_001",
+    "seconds": 5,
+    "start": 81,
+    "end": 86
+  },
+  {
+    "target": "片段8/分镜1",
+    "key": "19_002",
+    "seconds": 7,
+    "start": 86,
+    "end": 93
+  },
+  {
+    "target": "片段8/分镜2",
+    "key": "19_003",
+    "seconds": 2,
+    "start": 93,
+    "end": 95
+  },
+  {
+    "target": "片段8/分镜3",
+    "key": "20_001",
+    "seconds": 3,
+    "start": 95,
+    "end": 98
+  },
+  {
+    "target": "片段9/分镜1",
+    "key": "20_002",
+    "seconds": 6,
+    "start": 98,
+    "end": 104
+  },
+  {
+    "target": "片段10/分镜1",
+    "key": "20_003",
+    "seconds": 8,
+    "start": 104,
+    "end": 112
+  },
+  {
+    "target": "片段10/分镜2",
+    "key": "21_001",
+    "seconds": 6,
+    "start": 112,
+    "end": 118
+  },
+  {
+    "target": "片段11/分镜1",
+    "key": "21_002",
+    "seconds": 3,
+    "start": 118,
+    "end": 121
+  },
+  {
+    "target": "片段11/分镜2",
+    "key": "21_003",
+    "seconds": 3,
+    "start": 121,
+    "end": 124
+  },
+  {
+    "target": "片段11/分镜3",
+    "key": "21_004",
+    "seconds": 3,
+    "start": 124,
+    "end": 127
+  },
+  {
+    "target": "片段12/分镜1",
+    "key": "21_005",
+    "seconds": 3,
+    "start": 127,
+    "end": 130
+  },
+  {
+    "target": "片段12/分镜2",
+    "key": "22_001",
+    "seconds": 3,
+    "start": 130,
+    "end": 133
+  },
+  {
+    "target": "片段12/分镜3",
+    "key": "22_002",
+    "seconds": 9,
+    "start": 133,
+    "end": 142
+  },
+  {
+    "target": "片段13/分镜1",
+    "key": "22_003",
+    "seconds": 9,
+    "start": 142,
+    "end": 151
+  },
+  {
+    "target": "片段13/分镜2",
+    "key": "23_001",
+    "seconds": 5,
+    "start": 151,
+    "end": 156
+  },
+  {
+    "target": "片段14/分镜1",
+    "key": "23_002",
+    "seconds": 8,
+    "start": 156,
+    "end": 164
+  },
+  {
+    "target": "片段14/分镜2",
+    "key": "23_003",
+    "seconds": 6,
+    "start": 164,
+    "end": 170
+  },
+  {
+    "target": "片段15/分镜1",
+    "key": "24_001",
+    "seconds": 3,
+    "start": 170,
+    "end": 173
+  },
+  {
+    "target": "片段15/分镜2",
+    "key": "24_002",
+    "seconds": 6,
+    "start": 173,
+    "end": 179
+  },
+  {
+    "target": "片段15/分镜3",
+    "key": "24_003",
+    "seconds": 3,
+    "start": 179,
+    "end": 182
+  },
+  {
+    "target": "片段16/分镜1",
+    "key": "24_004",
+    "seconds": 7,
+    "start": 182,
+    "end": 189
+  },
+  {
+    "target": "片段16/分镜2",
+    "key": "25_001",
+    "seconds": 8,
+    "start": 189,
+    "end": 197
+  },
+  {
+    "target": "片段17/分镜1",
+    "key": "25_002",
+    "seconds": 7,
+    "start": 197,
+    "end": 204
+  },
+  {
+    "target": "片段17/分镜2",
+    "key": "25_003",
+    "seconds": 3,
+    "start": 204,
+    "end": 207
+  },
+  {
+    "target": "片段17/分镜3",
+    "key": "25_004",
+    "seconds": 3,
+    "start": 207,
+    "end": 210
+  },
+  {
+    "target": "片段18/分镜1",
+    "key": "26_001",
+    "seconds": 6,
+    "start": 210,
+    "end": 216
+  },
+  {
+    "target": "片段18/分镜2",
+    "key": "26_002",
+    "seconds": 2,
+    "start": 216,
+    "end": 218
+  },
+  {
+    "target": "片段18/分镜3",
+    "key": "26_003",
+    "seconds": 3,
+    "start": 218,
+    "end": 221
+  },
+  {
+    "target": "片段18/分镜4",
+    "key": "27_001",
+    "seconds": 3,
+    "start": 221,
+    "end": 224
+  },
+  {
+    "target": "片段19/分镜1",
+    "key": "27_002",
+    "seconds": 6,
+    "start": 224,
+    "end": 230
+  },
+  {
+    "target": "片段19/分镜2",
+    "key": "27_003",
+    "seconds": 8,
+    "start": 230,
+    "end": 238
+  },
+  {
+    "target": "片段20/分镜1",
+    "key": "28_002",
+    "seconds": 4,
+    "start": 238,
+    "end": 242
+  },
+  {
+    "target": "片段20/分镜2",
+    "key": "28_003",
+    "seconds": 5,
+    "start": 242,
+    "end": 247
+  },
+  {
+    "target": "片段21/分镜1",
+    "key": "29_001",
+    "seconds": 7,
+    "start": 247,
+    "end": 254
+  },
+  {
+    "target": "片段21/分镜2",
+    "key": "29_003",
+    "seconds": 8,
+    "start": 254,
+    "end": 262
+  }
+]

@@ -1,0 +1,762 @@
+[
+  {
+    "image": "第24話_01_001.jpg",
+    "sha256": "dc45db8f7cbda48ebd8b2a3d750c1df0f1aa3d8dc7f28a4f22f9f421a2f04e0f",
+    "bytes": 320325,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_01_002.jpg",
+    "sha256": "ac61f0235239077936aa45c3ae5b0a9b7adbc1a48adffb5b0ae389ffb41ca213",
+    "bytes": 66345,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_01_003.jpg",
+    "sha256": "956bff9aee7afa6b2313eca428091cb024c069c7c50758175087b95d230c6935",
+    "bytes": 70091,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_02_001.jpg",
+    "sha256": "faaa01931493598fe29793dfa02dafce173339aec76137c63e036a6f0a87c7b8",
+    "bytes": 375881,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_02_002.jpg",
+    "sha256": "3ec04d5559989496d5bbb2ab88562daff59b2a4deb4042d77311ab4bb77a3e83",
+    "bytes": 232355,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_02_003.jpg",
+    "sha256": "af7f7d23f6e0c6e8f3276423b4b4fb7c9477a43d6e04709ed71bd65e88e8497b",
+    "bytes": 196179,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_03_001.jpg",
+    "sha256": "a23ecf56f57968e667c8a0b2a6205630c9cc7597b5177429401272795075a91b",
+    "bytes": 404727,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_03_002.jpg",
+    "sha256": "b35bc8efb19a71758236cdfe6385590dbb5902f237850c5d7ae394e1fb2cb3f5",
+    "bytes": 185800,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_03_003.jpg",
+    "sha256": "2ac6933e32f6308bde06d02d952ec1e1689bccbd804e841760a7a58d7de8fb66",
+    "bytes": 194542,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_04_001.jpg",
+    "sha256": "08addbc782b577eb9802fe580741cbfa7dc336ed56b91c5f29ddf045b3d6c43d",
+    "bytes": 445331,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_04_002.jpg",
+    "sha256": "32f8b99d489c4bd8be8dc36ec8b7bfd0c1d9ffeb959359909af887ca47cb5065",
+    "bytes": 389990,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_04_003.jpg",
+    "sha256": "047aa74c3db390dcee181dabe58f63ae88d982d4d6032fcac92d6d37b0b6de9c",
+    "bytes": 292054,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_05_001.jpg",
+    "sha256": "e990adfe2035ca6c12c2e281e21f0799617711719147fc39503d668456930801",
+    "bytes": 466031,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_05_002.jpg",
+    "sha256": "28e9521a022e9ce1e9e3b445e281ff4fe6c4f9d24eb9a106a331a9cb51a91291",
+    "bytes": 122487,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_05_003.jpg",
+    "sha256": "21d24b16d1bfebefec9382c05603dd127464cc8448dbbea5370080b6e6a63abd",
+    "bytes": 300576,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_06_001.jpg",
+    "sha256": "944342fcbd5161a6ac0f18e4d8c534f07cc49083b4db3df008baca6d77039c9b",
+    "bytes": 261040,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_06_002.jpg",
+    "sha256": "d2a24915783bc5991bdb1557874baf9ba6959e23b34b4a0e295736b4b2e80f8e",
+    "bytes": 346098,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_06_003.jpg",
+    "sha256": "893ff5dda9f1e5387deb613f67144179889608b40dffadffe04b06541947521f",
+    "bytes": 237775,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_07_001.jpg",
+    "sha256": "8d315f5c13d1c60c88e2d405593155d4337f593f7b3fb9eb70203a83d278cd83",
+    "bytes": 95620,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_07_002.jpg",
+    "sha256": "d0df7fcd3eaf6d295eba545fb2dd67f3cb08aa66eaeab58d7dabbda27042b300",
+    "bytes": 102577,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_07_003.jpg",
+    "sha256": "48fc2151fa9f6513d98aee2841dc9b4cf7c247fec07948b77452061936aff7a4",
+    "bytes": 609568,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_08_001.jpg",
+    "sha256": "ee19ccd67c1df809751e920341705215d56312138156a41fb9ceb9439bf76449",
+    "bytes": 254640,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_08_002.jpg",
+    "sha256": "332910c6dc82770505f15efa4f77c77d9010fb31a8093a10d7348d262a682097",
+    "bytes": 187107,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_08_003.jpg",
+    "sha256": "43ee3fba788a889131c7846dc8db687bed2fce883083b0544cb8238b5f4943a7",
+    "bytes": 371216,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_09_001.jpg",
+    "sha256": "e05838a48bd7e4256949943f3812b4365be1e25b431219333eac27dd54799751",
+    "bytes": 360007,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_09_002.jpg",
+    "sha256": "8144d528535ee8ed9115ef7b60ffc41977dfdaacad20fefdb602134afa1ad395",
+    "bytes": 136617,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_09_003.jpg",
+    "sha256": "104a3a6a764302fe62fd9ce1f68d439d38f77b0c5b84d86cb15a7737ba97a826",
+    "bytes": 203690,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_10_001.jpg",
+    "sha256": "00fd986f375f21ccfe2a4b90b3c0c78584218176279b5ae65ea3bff49916e2c4",
+    "bytes": 185837,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_10_002.jpg",
+    "sha256": "056a3cfbfb7dfc67191134e31c85ec62edad35fd309db8bea7b9f584a0a6e00a",
+    "bytes": 681671,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_10_003.jpg",
+    "sha256": "0e080e245a2f2a426482a6d5202190670f2af5a215ee567a2b98c5accd8c18c4",
+    "bytes": 360506,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_11_001.jpg",
+    "sha256": "32e2b03f80cc3595257e6332c558cb1dd56e2af7dcd293c836154847afe8601a",
+    "bytes": 108611,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_11_002.jpg",
+    "sha256": "4df88f10bb93e64c53840955d5fa3e60c8a7b474f7a75f0f96e2d224ed59d975",
+    "bytes": 83616,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_11_003.jpg",
+    "sha256": "4c3bb85c1827381175d61b8f2008878132a20f28956ea0f6775bfa118f3968fe",
+    "bytes": 135263,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_12_001.jpg",
+    "sha256": "96afb4358199d0ae24d0223b1409270094f354ef363b8f986aec971d878c58cf",
+    "bytes": 243421,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_12_002.jpg",
+    "sha256": "cd3630c6a6385dffda42fb471f3ddc3f61b233404492ac5250e32d43851ea002",
+    "bytes": 370581,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_12_003.jpg",
+    "sha256": "44360bf2b729bc49c2a24e2f63143333bda889a5a4aa8debd862ac38a52c7ced",
+    "bytes": 350509,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_13_001.jpg",
+    "sha256": "008bece3d5d89c609dfb9d9ffe7c50fa80ce35742602984355bb04fc4241505d",
+    "bytes": 198305,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_13_002.jpg",
+    "sha256": "7bababf67f213117c107d0fdbe6337772cff3b1c137966d4fecadaaad43841b3",
+    "bytes": 102522,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_13_003.jpg",
+    "sha256": "7f96d2939c9258db92f442d63c22db4fb2137e5031122cbe21eb1483a13f0293",
+    "bytes": 234344,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_14_001.jpg",
+    "sha256": "626f269ffcea7edfa0324120711db070ab744cba3b26504fa2f771741a6a70e8",
+    "bytes": 328847,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "前段非露骨摘要范围内省略",
+    "detailed_inspection": false
+  },
+  {
+    "image": "第24話_14_002.jpg",
+    "sha256": "cf10aafe2fc0a4af27fb8798875d5bd71887a6bcf3e6a43345de692610036732",
+    "bytes": 197884,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_14_003.jpg",
+    "sha256": "dd41d6b892eb6f13b845df1df58fe260a6056c0ed56c7fa6f9669515bf8ff97c",
+    "bytes": 177336,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_15_001.jpg",
+    "sha256": "b02d00aee7ac09dedcdb815d8deff0a3c727a3765f7466075b1a0ac5bb9d6097",
+    "bytes": 168589,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_15_002.jpg",
+    "sha256": "6f453183bf046503f12b86415c9e5774fecbe9723d01d86ab52b8803b5e7bbae",
+    "bytes": 223077,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_15_003.jpg",
+    "sha256": "3ee22ef8878b28befc9e3d1f023394efb29cd66086845712c56751896be780bd",
+    "bytes": 219548,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_15_004.jpg",
+    "sha256": "7b3de420c686e493f0f426123d6e9798423195e8764794b703dcf419153ae107",
+    "bytes": 115906,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_15_005.jpg",
+    "sha256": "f33fcdf968182c95a72f5e01275769f14283e03de1b37ebb45ea1f59a1149e64",
+    "bytes": 211618,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_16_001.jpg",
+    "sha256": "1e9fad438a7071241f4592da9b1f815a996e114ff3b7934ab1c3dc0fd9e54d32",
+    "bytes": 233783,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_16_002.jpg",
+    "sha256": "4ad66ad3ca64f15f2efb32f00b3958374d154c0502e9e0ed1bbb8742404f2cd9",
+    "bytes": 200962,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_16_003.jpg",
+    "sha256": "da47f95346e22802d0f93a47e83426527a8c29e572e4ab6c45c69ea2b937608d",
+    "bytes": 111809,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_17_001.jpg",
+    "sha256": "5ee1e277613254a3c96f172a93b032b6c51873f9a2b93b6e141b21942b45600e",
+    "bytes": 402273,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_17_002.jpg",
+    "sha256": "ae8e306ec125cdd1c86374fb8d7ef7feb2b0a7caf9ba19e5fe2965c4df650aec",
+    "bytes": 231210,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_17_003.jpg",
+    "sha256": "586efc2db6f945dac564e8bc9f35642ce487b44534320e33b3c1bfd1a2656b6b",
+    "bytes": 57745,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_17_004.jpg",
+    "sha256": "5df168a62c1cda368305b611d66c4261798027720d68514a8bfcd96d7fac9365",
+    "bytes": 299991,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_18_001.jpg",
+    "sha256": "8f6755b94dae5473331b75aa6caf0c8e13d7832c36445e71b5e2247158399e7d",
+    "bytes": 163331,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_18_002.jpg",
+    "sha256": "1614b79eba938a11bbb47f68cf6ec81f27152c9cfd195debb8dbb8fb36c467ff",
+    "bytes": 166977,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_18_003.jpg",
+    "sha256": "cd6d98ab36551f93797ff2946893dfbe2814511c0380a01a8f1b3147500b35b2",
+    "bytes": 91485,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_18_004.jpg",
+    "sha256": "a734e4756dfe07cf1f6975dd15c8c729cba43d98f6add98de143dd8fcf790c05",
+    "bytes": 146384,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_19_001.jpg",
+    "sha256": "ac1a3f1ec66edaf9aece653231953824ec2c6f37f706cd410b28818f11bbdb42",
+    "bytes": 348819,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_19_002.jpg",
+    "sha256": "07fab98849c5d29d7be60fe7b2a683f3f2e88412077e365dcd9b2a7e5f4f7b3f",
+    "bytes": 336088,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_19_003.jpg",
+    "sha256": "fb344f4aac74d3a10b46b23dee391e8516640afd880fb4a3ff3bedb90231b2f1",
+    "bytes": 315660,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_20_001.jpg",
+    "sha256": "8613723bd6545dbd02022c7a3e38a59e3503f9d1efd0a5b9d66a11cc5f6cb1dd",
+    "bytes": 172615,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_20_002.jpg",
+    "sha256": "65599f458d74cef60aa5ae881b71752693246c5a4ab745c621fab166bb0e5d1a",
+    "bytes": 321672,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_20_003.jpg",
+    "sha256": "5b4b04733611ff613ee59109f37e9c153e34dd109339ac39ba373b8cb1cb933c",
+    "bytes": 276308,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_21_001.jpg",
+    "sha256": "723e08546a1e0288db47f43602c871a55952f07ade252fb9216bf035c3a19f63",
+    "bytes": 298077,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_21_002.jpg",
+    "sha256": "a32b2a6a1b5e72fe432ea0a2a7ab496c8777fc8b3dce11057899f25a6d75a141",
+    "bytes": 38045,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_21_003.jpg",
+    "sha256": "76c8946ce58c1f3eab19025da1b3bbadeefad551fad3bfebbb091f044035f9af",
+    "bytes": 361582,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_21_004.jpg",
+    "sha256": "b2a1bcf2d4363cff0c7928072b40cd2e2c4591996fbd1f7936cab09619733857",
+    "bytes": 230317,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_21_005.jpg",
+    "sha256": "90fe73601b97df36693376fbae845a13c7c99761623ed6ff87085df45f894758",
+    "bytes": 361428,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_22_001.jpg",
+    "sha256": "d2b4e422dc57f58e2a3d0c3142b689112f10ce97587db6377cffb235fb212674",
+    "bytes": 183867,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_22_002.jpg",
+    "sha256": "7dabc966dd68d24008f7676d83a20d2786eff407c57e8d9b435239ad3bb2ca4c",
+    "bytes": 468764,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_22_003.jpg",
+    "sha256": "c7ce5b2c602ae9f840741fc8736afd9c39b79243f974b531b902cee412852286",
+    "bytes": 246219,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_23_001.jpg",
+    "sha256": "0f9389906adae7e040fd92c1905b3ee4b342517f63712ebe90cfbe070f65441a",
+    "bytes": 175161,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_23_002.jpg",
+    "sha256": "ba790c78571ce68730238b0a50124b07ca3403d6f0d2b5a4fcc12c4559a188d6",
+    "bytes": 301262,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_23_003.jpg",
+    "sha256": "1b343cb749875c65fe8d11b9ee5465db2359d18b9c0b8719daf8225c90242852",
+    "bytes": 278677,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_24_001.jpg",
+    "sha256": "c88261567f66ca9a4d824df847367e7fb48fbd48b3926f6db3550f0112b654e3",
+    "bytes": 133376,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_24_002.jpg",
+    "sha256": "08f44806ed655dfe619e72fe3404f1567e308cef17a39fcfc6aa4b12e537a9ea",
+    "bytes": 229870,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_24_003.jpg",
+    "sha256": "caed129e2c858caee58b442e5e646fa4d7de211250dccbccbf909dfc09e6f361",
+    "bytes": 248453,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_24_004.jpg",
+    "sha256": "bbeaf4008a086af4dde41b1ff81541360d8343c9cf4d7371205a16be4c1a8e6d",
+    "bytes": 280993,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_25_001.jpg",
+    "sha256": "4337d0bdfe73b89b46bdc49cf4da44e37e9226f7cd07e078e6fc52ab34b91a16",
+    "bytes": 180513,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_25_002.jpg",
+    "sha256": "7bc01e40b067ae6e9434a74f028f7868884c15f2b22248d819c20a8bfedcc0f3",
+    "bytes": 265171,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_25_003.jpg",
+    "sha256": "1f79a87c14927282416a89a6b5204a01f47ccdb5df60bf64f0392486dc190ba9",
+    "bytes": 233345,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_25_004.jpg",
+    "sha256": "31aa88e32a7107075a45448c95a081c4d79022802e7aa5554dafd55d29e144e4",
+    "bytes": 227067,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_26_001.jpg",
+    "sha256": "c3d4e8802e01354c23f4d10c92eddad396d00b824a15fae43782482ddc3f4144",
+    "bytes": 411643,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_26_002.jpg",
+    "sha256": "c31fef084b75086c564cea9077f4a62d4cb233b5f02f66caf199938dac489910",
+    "bytes": 146779,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_26_003.jpg",
+    "sha256": "06cb625339d47e01fba8ed0655234be42ce44023b251ded19c8ab4d74a5f757a",
+    "bytes": 258142,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_27_001.jpg",
+    "sha256": "d463c7eaf3f83ad07650231f53f5a060bef203713b686b1a422dc123081b4827",
+    "bytes": 162426,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_27_002.jpg",
+    "sha256": "6c1379fc6b2705c5ca1fa0e957a11d26f4111351dacd1dcdb27dba4af59a1d42",
+    "bytes": 169335,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_27_003.jpg",
+    "sha256": "50e9d7b56ab1d41842ea7f55e7d3757da163ac739fae3a7ab286ae01ec534de5",
+    "bytes": 334093,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_28_001.jpg",
+    "sha256": "3beb8df5bd6b87aa596003b3d10dd91933963471685091b0ead633ade560ec0b",
+    "bytes": 34425,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "声音转入相邻画面",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_28_002.jpg",
+    "sha256": "1f9a40ee6cd3c3f9c62090c99719f40746e325ec1ead0feed580ed9183be1847",
+    "bytes": 48142,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_28_003.jpg",
+    "sha256": "01df2b15d60799ccebb1842537b173601e2a90424df44967fa5891d31cdd6330",
+    "bytes": 786932,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_29_001.jpg",
+    "sha256": "360a5de899082516ffbdfebde3229751f56d006685ca5520032d9717c07bd7b1",
+    "bytes": 319195,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_29_002.jpg",
+    "sha256": "1366d7497f4ed7047a3bbcfeecc18ebc75eeb402d8be3b56948f9addb1883e35",
+    "bytes": 53351,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "声音转入相邻画面",
+    "detailed_inspection": true
+  },
+  {
+    "image": "第24話_29_003.jpg",
+    "sha256": "6d3f0598e6b23cd307dfc27229e034ab8bac3b435b633cc4830d4bff6a54c90b",
+    "bytes": 324635,
+    "git_revision": "b2bb0a34c909d3f3c5291df0000d385f4f67c66e",
+    "disposition": "独立镜头来源",
+    "detailed_inspection": true
+  }
+]
