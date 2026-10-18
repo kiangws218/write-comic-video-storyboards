@@ -3,3 +3,5 @@ comic-workspace/**/*.jpg filter=lfs diff=lfs merge=lfs -text
 comic-workspace/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
 comic-workspace/**/*.jfif filter=lfs diff=lfs merge=lfs -text
 comic-workspace/**/*.webp filter=lfs diff=lfs merge=lfs -text
+comic-workspace/character-references/voice-references/*.[wW][aA][vV] filter=lfs diff=lfs merge=lfs -text
+comic-workspace/character-references/voice-references/*.[mM][pP]3 filter=lfs diff=lfs merge=lfs -text
