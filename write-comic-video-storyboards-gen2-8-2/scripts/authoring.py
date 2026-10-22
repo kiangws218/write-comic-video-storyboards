@@ -1,13 +1,77 @@
 #!/usr/bin/env python3
 """Expand compact 2.8.2 authoring data, or print a proposed route's fingerprint."""
 from copy import deepcopy
+from decimal import Decimal, InvalidOperation
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 FORMAT = "compact-2.8.2"
 FIELDS = ("镜头设计", "可见动作", "可见背景", "台词与语气", "光影布光", "声音设计")
+
+
+def duration_seconds(value):
+    """Seconds on the half-second grid; no rounding, truncation or new ledger fields."""
+    if isinstance(value, bool) or not isinstance(value, (int, float, str)):
+        raise ValueError("时长须为大于0的0.5秒整数倍")
+    try:
+        number = Decimal(str(value))
+    except InvalidOperation:
+        raise ValueError("时长须为大于0的0.5秒整数倍") from None
+    if not number.is_finite() or number <= 0 or number * 2 != (number * 2).to_integral_value():
+        raise ValueError("时长须为大于0的0.5秒整数倍")
+    return float(number)
+
+
+def format_seconds(value):
+    return f"{duration_seconds(value):g}"
+
+
+# Only line-leading ranges in the existing action field are structured timing.
+# Ordinary prose (including a one-frame smear) remains free text.
+ACTION_RANGE = re.compile(
+    r'^\s*(\d+(?:\.\d+)?)\s*(?:s\s*)?-\s*(\d+(?:\.\d+)?)\s*s\s*[：:]\s*(\S.*)$', re.I)
+RANGE_START = re.compile(r'^\s*[+-]?\d+(?:\.\d+)?\s*(?:s\s*)?[-–—~～]', re.I)
+
+
+def action_timeline_errors(text, duration, label="可见动作"):
+    """Validate optional local ranges, without interpreting acting or storing a copy."""
+    if not isinstance(text, str):
+        return []
+    errors, intervals = [], []
+    for line in text.splitlines():
+        if not RANGE_START.match(line):
+            continue
+        match = ACTION_RANGE.fullmatch(line)
+        if not match:
+            errors.append(f"{label}时间段格式须为0-0.5s：具体画面，且描述不能为空。")
+            continue
+        start, end = map(float, match.groups()[:2])
+        if not all(Decimal(str(v)).is_finite() for v in (start, end)):
+            errors.append(f"{label}时间段须为有限数值。")
+            continue
+        if start % .5 or end % .5 or end <= start:
+            errors.append(f"{label}时间段须递增且以0.5秒为步长。")
+            continue
+        intervals.append((start, end))
+    if not intervals:
+        return errors
+    try:
+        length = duration_seconds(duration)
+    except ValueError:
+        return errors + [f"{label}所属镜头时长无效。"]
+    previous = 0
+    for start, end in intervals:
+        if start != previous:
+            errors.append(f"{label}时间段须从0开始连续排列，不能留空、重叠或倒序。")
+        if end > length:
+            errors.append(f"{label}时间段越过镜头时长{length:g}秒。")
+        previous = end
+    if previous != length:
+        errors.append(f"{label}最后时间段须结束于镜头时长{length:g}秒。")
+    return errors
 
 
 def route_digest(route):

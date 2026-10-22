@@ -18,14 +18,14 @@ metadata:
 
 - 首次读图前完整读取 [core-authoring.md](references/core-authoring.md)。
 - 首次人物设计写作前读取 [dialogue-performance.md](references/dialogue-performance.md) 及其链接的表演校准。已有角色设定优先，不从人设图推断性格；新话先读取项目共享人物主档的出场条目，维护方式见 [character-registry.md](references/character-registry.md)。
-- 首次导演创作前读取 [director-expansion.md](references/director-expansion.md)。
-- 设计或修改摄影机时读取 [cinematic-rendering.md](references/cinematic-rendering.md)；复杂动作另读 [2d-animation-execution.md](references/2d-animation-execution.md)。
+- 首次导演创作前读取 [director-expansion.md](references/director-expansion.md) 与 [2d-animation-execution.md](references/2d-animation-execution.md) 的通用表现和词汇；战斗部分仅动作段读取。日常、喜剧与情绪戏也可使用二维造型和动态表现。
+- 设计或修改摄影机时读取 [cinematic-rendering.md](references/cinematic-rendering.md)。
 - 原图身份、肢体、接触、透视不清时读取 [source-risk.md](references/source-risk.md)。新角度本身不触发证据准入。
 - 环境、图形背景或配色设计读取 [background-design.md](references/background-design.md)，需要形式库时才读其链接。
 - 制作执行提示或处理生成失败时读取 [seedance-execution-and-review.md](references/seedance-execution-and-review.md)。
 - 填写或修改台账时按需查 [ledger-v282.md](references/ledger-v282.md)。维护、兼容审计才读 [gen2-5-compatibility.md](references/gen2-5-compatibility.md) 与 [regression-cases.md](references/regression-cases.md)。
 
-各适用模块首次完整读取，此后只查受影响规则，不逐格重载。默认使用一个主对话，不创建写作／审查子对话。沿用一份 V3 台账，不建立分轮事实副本。
+各适用模块首次完整读取；明确分出的战斗等条件章节按需读取。此后只查受影响规则，不逐格重载。默认使用一个主对话，不创建写作／审查子对话。沿用一份 V3 台账，不建立分轮事实副本。
 
 正常新作默认使用 [ledger-v282.md](references/ledger-v282.md) 的 compact 写作格式：来源／全文、六字段、表演卡各写一份；状态只写变化，切点差异每个连接只写一次。渲染和校验自动展开，不要求模型读回展开后的全文。脚本直接运行，只有维护或故障定位才读实现；审查只报告结论、问题与受影响范围，不逐镜复述正文。节省辅助记录，不缩减读图、原镜写作或导演创作。
 

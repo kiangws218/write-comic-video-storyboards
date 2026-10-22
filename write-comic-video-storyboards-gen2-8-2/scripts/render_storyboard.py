@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 from validate_director import FIELDS, POLICY
-from authoring import check_routes, expand
+from authoring import check_routes, expand, duration_seconds, format_seconds, action_timeline_errors
 
 
 def render(ledger):
@@ -36,8 +36,9 @@ def render(ledger):
             raise ValueError("每个真实切镜须有片段N/分镜N目标")
         clip, number = map(int, m.groups())
         duration = shot.get("duration")
-        if isinstance(duration, bool) or not isinstance(duration, int) or duration <= 0:
-            raise ValueError("镜头duration须为正整数，不自动填满片段")
+        if not isinstance(duration, (int, float)):
+            raise ValueError("镜头duration须为数值，不自动填满片段")
+        duration_seconds(duration)
         if clip != last_clip:
             if clip != last_clip + 1 or number != 1:
                 raise ValueError("片段须连续，分镜从1开始")
@@ -49,7 +50,10 @@ def render(ledger):
         fields = shot.get("fields")
         if not isinstance(fields, dict) or any(not isinstance(fields.get(k), str) or not fields[k].strip() for k in FIELDS):
             raise ValueError(f"{shot['target']}缺少实际六字段，拒绝套模板补表演")
-        lines.append(f"**分镜{number}（{duration}秒）：**")
+        timeline_errors = action_timeline_errors(fields["可见动作"], duration, shot["target"])
+        if timeline_errors:
+            raise ValueError("；".join(timeline_errors))
+        lines.append(f"**分镜{number}（{format_seconds(duration)}秒）：**")
         if shot.get("role") == "source_locked":
             refs = shot.get("source_images")
             if not isinstance(refs, list) or not refs or any(not isinstance(r, str) for r in refs):

@@ -49,9 +49,11 @@
 
 ### 完整兼容格式
 
-每镜 target、duration（正整数秒）、role、source_images、purpose、characters（在场人物名称数组）、risk_flags（D/P/G 数组）、risk_basis、state_in、state_out、fields。
+每镜 target、duration（数值，大于0的0.5秒整数倍，例如0.5、1、2.5）、role、source_images、purpose、characters（在场人物名称数组）、risk_flags（D/P/G 数组）、risk_basis、state_in、state_out、fields。旧整数秒仍有效，不新增帧数或第二套时长字段。
 
 fields 为六个中文字段名对应的实际正文字符串，不含字段标签。正式每条发声单独一行，例如 `人物（画外音）：“锁定原句的实际片段”（语气）。` 内心／旁白写在角色括号里；本例文字不是可复制到成稿的占位。
+
+镜内分段可直接写在 `fields["可见动作"]` 的多行字符串中，格式与边界见core；简单动作仍是一段自然语言。不新增动作阶段／曝光／画风切换数组，也不复制正文到技法表。来源、对白、六字段各维持一份，校验器从实际正文读取显式时间段。
 
 - source_locked：source_images 为按顺序登记的真实可视原格。单格继续使用 anchor_phase（preparation/process/middle/contact/reaction/result/state/endpoint）、anchor_elements、anchor_state；有 action_reading 时 meaning_excerpt 必须摘录实际【可见动作】，人工比较其是否实现源含义。anchor_state 包含本格 node_state 的全部已知键并一致。viewed_while_writing/source_audit 如实；frame_adaptation 记录画幅适配，不重写源观察。
 - 连续原格合镜：另有 merge_basis 说明为何是同一连续动画镜头；anchors 与 source_images 一一同序，每项 image/start/anchor_phase/anchor_elements/anchor_state/action_excerpt，以及适用的 meaning_excerpt。start 为该节点在本镜内经过的秒数，严格递增但不要求停住。各 action_excerpt 摘录实际动作正文，不能只写源图清单。镜头设计先写统一机位或连续运镜，再逐行使用 `- 参考 [a.jpg]（起势）：该阶段构图` 格式；合并不自动生成理由或审查结论。

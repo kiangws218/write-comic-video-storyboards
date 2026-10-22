@@ -32,6 +32,8 @@ def uses_director_policy(path):
         return False
 
 
+TIMING = director_policy().authoring_tools()
+
 SEGMENT_RE = re.compile(r"^#{1,6}\s*【片段\s*(\d+)】", re.MULTILINE)
 SAFE_SEGMENT_RE = re.compile(
     r"^#{1,6}\s*【平台安全替换[·・\s]*片段\s*(\d+)】", re.MULTILINE
@@ -692,15 +694,15 @@ def short_clip_grouping_warnings(
     return warnings
 
 
-def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
+def build_shot_map(main_text: str) -> dict[str, tuple[float, str]]:
     """Return timed target key -> (duration, full block)."""
-    shot_map: dict[str, tuple[int, str]] = {}
+    shot_map: dict[str, tuple[float, str]] = {}
     for segment_number, chunk in segment_chunks(main_text):
         shots = list(SHOT_RE.finditer(chunk))
         for index, match in enumerate(shots):
             end = shots[index + 1].start() if index + 1 < len(shots) else len(chunk)
             shot_number = int(match.group(1))
-            duration = int(float(match.group(2)))
+            duration = float(match.group(2))
             shot_map[f"片段{segment_number}/分镜{shot_number}"] = (
                 duration,
                 chunk[match.start() : end],
@@ -713,7 +715,7 @@ def build_shot_map(main_text: str) -> dict[str, tuple[int, str]]:
                 else len(chunk)
             )
             sequence_number = int(match.group(1))
-            duration = int(float(match.group(2)))
+            duration = float(match.group(2))
             shot_map[f"片段{segment_number}/战斗段{sequence_number}"] = (
                 duration,
                 chunk[match.start() : end],
@@ -1843,7 +1845,7 @@ def validate_source_ledger(
             speech += speaking
         if speech + 1e-6 < seconds_by_target.get(target, 0):
             errors.append(f"{target}表演估时未覆盖全部映射对白。")
-        if math.ceil(duration) > shot_map[target][0]:
+        if duration > shot_map[target][0] + .001:
             errors.append(f"{target}对白与表演共需{duration:g}秒，超过镜头时长。")
     for target, count in acting_chars_by_target.items():
         if count > 20 and target not in seen_performance:
@@ -1998,12 +2000,11 @@ def main() -> int:
             for match in combat_sequences:
                 sequence_raw, duration_raw = match.groups()
                 sequence_numbers.append(int(sequence_raw))
-                if "." in duration_raw:
-                    errors.append(f"{label}{number}含小数时长：{match.group(0)}")
+                try:
+                    duration = TIMING.duration_seconds(duration_raw)
+                except ValueError:
+                    errors.append(f"{label}{number}时长须为大于0的0.5秒整数倍：{match.group(0)}")
                     continue
-                duration = int(duration_raw)
-                if duration <= 0:
-                    errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
                 total_duration += duration
             if sequence_numbers != [1]:
                 errors.append(
@@ -2039,12 +2040,11 @@ def main() -> int:
             shot_raw, duration_raw = match.groups()
             shot_number = int(shot_raw)
             shot_numbers.append(shot_number)
-            if "." in duration_raw:
-                errors.append(f"{label}{number}含小数时长：{match.group(0)}")
+            try:
+                duration = TIMING.duration_seconds(duration_raw)
+            except ValueError:
+                errors.append(f"{label}{number}时长须为大于0的0.5秒整数倍：{match.group(0)}")
                 continue
-            duration = int(duration_raw)
-            if duration <= 0:
-                errors.append(f"{label}{number}时长必须大于0秒：{match.group(0)}")
             total_duration += duration
 
         if shots:
@@ -2086,9 +2086,11 @@ def main() -> int:
                 reference.casefold() for reference in REFERENCE_RE.findall(block)
             )
             shot_label = f"{label}{number}的分镜{shot.group(1)}"
-            duration = int(float(shot.group(2)))
+            duration = float(shot.group(2))
             dialogue_characters, speaker_count = coverage_dialogue_metrics(block)
             fields = shot_field_values(block)
+            if not director_mode:
+                errors.extend(TIMING.action_timeline_errors(fields.get("可见动作", ""), duration, shot_label))
             if director_mode:
                 dialogue_characters, speaker_count = coverage_dialogue_metrics(fields.get("台词与语气", ""))
             background_errors, background_warnings = background_field_issues(fields.get("可见背景", ""), shot_label)

@@ -16,7 +16,7 @@ Choose mode, purpose, opening, coherent path and landing before rendering. The a
 
 In a camera-only revision, edit `【镜头设计】` and its camera metadata/excerpts, not performance beats, dialogue, timing, light or sound. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing prompts a purpose check, not an automatic failure; intentional stillness remains valid. A moving shot needs a coherent designed path and useful landing; lack of a drawn path alone does not reject it.
 
-Choose terms only when they change the image:
+Use familiar camera terms for concrete framing and movement. Expressive cues such as 作画感、张力拉满、外连味 can strengthen the desired visual tone alongside the camera/action description; they need not each become a separate technical clause. Choose the useful details below:
 
 - lens/scale and function: wide for depth, normal for natural relations, telephoto for compression/intimacy, macro/long lens for supported detail;
 - camera height/direction, optical axis, horizon/eye line;

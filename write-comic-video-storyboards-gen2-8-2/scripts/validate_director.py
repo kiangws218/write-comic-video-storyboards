@@ -248,6 +248,13 @@ def validate_director_ledger(ledger, text, image_dir, warnings, h):
     for idx, target in enumerate(order):
         s = by_target.get(target, {})
         f = fields_by_target[target]
+        try:
+            if not isinstance(s.get("duration"), (int, float)):
+                raise ValueError("时长须为数值")
+            tools.duration_seconds(s.get("duration"))
+        except ValueError:
+            errors.append(f"{target}台账duration须为大于0的0.5秒整数倍。")
+        errors.extend(tools.action_timeline_errors(f.get("可见动作", ""), durations.get(target), target))
         if s.get("duration") != durations.get(target):
             errors.append(f"{target}台账duration与最终正文时长不一致。")
         planned_fields = s.get("fields")

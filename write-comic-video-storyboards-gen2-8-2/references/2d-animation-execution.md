@@ -1,129 +1,92 @@
-# 2D combat choreography and effects
+# 二维动画表现、动态与战斗执行
 
-Read this file for fights or complex fast action. `core-authoring.md` remains authoritative: the director may design complete attacks, routes, defense, grips, contacts and recovery between original nodes; missing drawn phases warn, while altered decisive injuries/results or failed next-node arrival must be corrected. Use `cinematic-rendering.md` for the shared rhythm and effects quality floor.
+导演轮读取通用表现与词汇；战斗和复杂动作再读后面的战斗部分。原镜、完整台词、关键路径、计时和节点到达以[core-authoring.md](core-authoring.md)为准；摄影与共同画面质量见[cinematic-rendering.md](cinematic-rendering.md)。本模块提供选择，不增加技法配额、台账字段或审查表。
 
-## 1. Precise shots for 2.8.2
+## 通用表现
 
-Use precise numbered shots for every cut in 2.8.2 delivery. Original panels each retain an independent original shot, while every new shot is checked against its two actual final neighbors. This makes exact dialogue, source order and timing review executable. Do not submit combat auto-coverage as a shortcut to hidden cuts or missing original shots. The old auto-coverage illustration below is a legacy rhythm example, not the 2.8.2 delivery format.
+动画同时设计画与时间：决定性姿态、轮廓和表情，画面上的运动轨迹，快慢、停顿、跳变，以及主体和附属部位的先后关系。不要把表现力等同于更多运镜、更高帧率或更多粒子。普通抬手可直接写抬到哪里；关键段才补先后和必要的时间范围。
 
-## 2. Freeze combat continuity
+先读清原格的视觉重点，再决定怎样强化。视线有明确对象；表情由性格、当前目的和情境共同决定。同一刺激下，春子可停手后再看，青可先探身再接话，董白可维持从容姿态只改变眼神；这是选择示例，不能覆盖原作当场的大反应或明确表情。
 
-Before drafting, keep a compact internal ledger for each meaningful beat:
+有意形变与生成崩坏分开处理。允许局部放大、压缩拉伸、动画假角度、几何化残影、Q版、符号脸与主观画面。保持人物识别特征、动作方向、关键接触和原镜节点；切入切出要读得懂。正常比例并非每一帧的硬锁，临时SD也不表示人物在世界里真的缩小。
 
-| Field | Record |
+## 表现词汇与常用写法
+
+积极使用概括词和动画术语。金田系、作画感、Q弹、张力拉满本身可以强化风格、节奏和强度，不因其概括就删除。下表是本项目的选词与联想，不把作者风格压成唯一行业定义，也不保证模型已掌握每个词。选适合本场的词即可；已有动作写清时不反复拆解，每镜不堆满词表。
+
+| 可选词汇 | 常用画面与搭配 |
 |---|---|
-| source phase | supplied panel or necessary uncited connective beat |
-| attacker / recipient | who initiates and who receives, blocks, or evades |
-| start state | screen side, depth, facing, grounded/airborne state, relevant injury |
-| action vector | left/right/up/down/depth direction and target |
-| contact topology | limb or weapon, gripping hand, striking surface, contact point |
-| result | block, miss, recoil, displacement, damage, dropped or embedded weapon |
-| environment change | only persistent breakage, debris, smoke, fire, water, or terrain change |
-| end state | exact state inherited by the next beat |
+| 作画感、手绘作画感、作画爆发 | 有变化的关键姿态、轮廓与节奏；“短促作画爆发，骤然跨出大步后停在有力姿态” |
+| 金田系、金田透视、金田式夸张 | 强烈透视、鲜明关键pose、骤停骤发与大胆形状；按本场取其适用特点 |
+| 外连味／ケレン味、张力拉满、魄力、动势 | 夸张构图、前景逼近、躯干扭转、剪影和强弱反差，强化视觉语气 |
+| 流动系作画、WEB系动感、行云流水 | 连续轨迹、身体转折、背动与层次变化；不自动增加能力或大破坏 |
+| 写实作画、细腻芝居、生活感 | 观察、重心、小动作、呼吸与任务变化；不规定只能小幅动作 |
+| Q弹、弹性十足、软萌、轻快、卡通感 | 挤压、伸展、超调回弹、错时跟随；“上身停住，发尾仍弹跳一下” |
+| 预备动作、蓄力、タメツメ、缓急 | 按需要准备、停留、突然通过、收住；不用日文词代替重要先后关系 |
+| 拉伸压缩／squash and stretch | 接触方向的短促压扁、运动方向的伸展、清楚的恢复姿态 |
+| 超调、回弹、跟随、余动、overlap | 主体先动或先停，袖口／头发延后跟上；不同材质有不同幅度与衰减 |
+| 残影、拖影、オバケ／smear frame、multiples | 拉长或合并轮廓、几何拖影、连续动作的多重像；不等同新增真实肢体或分身 |
+| 抽帧感、跳变、顿挫、pose-to-pose | 明确起止姿态与突然切换的节奏；中间省略仍能读出动作，非随意卡顿 |
+| 持帧、止め、击中停顿／hit-stop | 把某张姿态暂时留住以便读图；不把hit-stop与冲击替换画混为一件事 |
+| 冲击帧／impact frame、黑白闪、反色闪 | 极短视觉重音；强调接触、方向或形状反差，之后能读到后果 |
+| 震颤、抖线、沸腾线、フリッカー | 局部线条或前后姿态回返；强忍、紧绷、不稳定感，避免全屏持续乱抖 |
+| SD／Q版、二头身、豆丁化 | 临时改变比例和情绪语气，识别特征清楚；说清何时恢复 |
+| 颜艺、符号脸、豆豆眼、死鱼眼、蚊香眼、汗滴、怒筋、黑线 | 用适合性格和情境的符号强化读法；不要求每个角色出现同一表情包 |
+| 剧画脸、粗线阴影、夸张明暗、石化反应 | 局部突然改变绘画密度或质感，强化僵住、压力或喜剧反差 |
+| 夸张透视、近大远小、动画假角度 | 手脚迎面放大、躯干压缩；视线、目标方向和接触仍成立 |
+| 碎切、插入镜头、反应切、匹配剪辑、甩镜 | 依注意、动作或图形联系组织画面；真实切镜独立编号 |
+| 图形底场、主观空间、剪影、色块化、留白 | 暂时取舍环境与细节，让情绪、方向、关系突出；世界状态继续成立 |
+| 背动、视差、前景急掠、速度线、集中线 | 角色与镜头相对速度、近中远层次及流动方向；不要让所有层同速滑动 |
 
-For two-person exchanges, preserve the combat axis and screen direction until a neutral view, visible crossing, or clear re-establishing shot permits a reversal. For multi-person combat, name the target of every attack and keep non-participants' positions readable. A weapon keeps its length, orientation, gripping hand, and damage state unless a clearly enacted change preserves the original nodes and next-state continuity.
+例句仅展示写法，不是已验证作品镜头：
 
-## 3. Build the action chain
+- 克制：“春子右手停在衣领旁，保持死鱼眼，过了片刻才将目光移向青。”
+- 轻喜剧：“青以Q弹的节奏前倾，脸先探近，肩和袖口延后跟上；停稳后切成豆豆眼，随后恢复正常眼形。”
+- 动作：“金田系夸张透视，作画爆发。右拳从胸侧猛然冲向前景，途中拉成弧形残影，停在镜头前时拳头与脸部轮廓清楚。”
 
-Identify the original phase anchors, then design the full anticipation, travel, defense/evasion, contact, response, recovery and aftermath needed by this character and scene. It need not be the shortest connection or have a source panel for each motion. Holds, blood-rain atmosphere, deliberate aim, eye detail and silent rhythm can serve the sequence without changing plot facts. Preserve every original shot and arrive naturally at the next original node; number every added cut and apply core’s final-neighbor contrast rule.
+## 动态与节奏
 
-The original automatic example below illustrates rhythm only. Number and time its actual cuts individually when adapting the craft to 2.8.2.
+先决定主导部位、受力和关键姿态。跟随、回摆和形变由动作与材质决定，不给所有人统一套“下蹲—拉长—弹回”。轨迹可以流畅，也可为明确的新作用力或表演意图突然打断；前后画的差距与停留共同形成速度。
 
-## 4. Control combat rhythm
+残影不是越长越快。过长的拖影可能填平姿态差距；先检查动作路径、变化幅度和快慢，再选残影形状。高速时允许减少面部细节，让轮廓、pose和方向承载运动，读脸安排在需要的时刻。摄影模糊不代替所有手绘形变。
 
-Do not make every moment equally fast. Shape a readable contrast across the clip:
+整场安排强弱：安静、蓄势、爆发、接触、余韵可以形成反差，也可选择其他节奏。一处精彩的停住能突出下一次快动；表情重点也可以在小动作时出现。几个人同时反应时，按性格选择不同姿态、起动顺序与速度，不默认齐刷刷转头。
 
-- **Hold or restrained motion:** standoff, aim, breath, weight shift, weapon settling, delayed realization.
-- **Normal or medium speed:** footwork, repositioning, readable defense, recovery, pursuit.
-- **Rapid acceleration:** launch, dash, evasive burst, short exchange; concentrate in-betweens around the readable start and end poses.
-- **Hit-stop / impact frame:** compress decisive contact to one or two animation frames when the source supports a hard hit.
-- **Purposeful slow motion:** reveal important perception, preparation, weight, contact or response that normal speed would underplay; a near miss, collision, reversal and their aftermath are examples, not the only eligible phases. Follow [cinematic-rendering.md](cinematic-rendering.md#slow-motion-as-an-acting-and-rhythm-choice) for entry, recovery, action development and timing; do not make every beat slow.
-- **Return to normal speed:** reveal recoil, landing, debris fall, injury, or the new balance of power.
+镜内时间段、持续动作和真实切镜遵循core，不建逐帧表。曝光的一拍一／二／三是同一张画停几格，不等于项目帧率；只有这类控制对当前执行有用时才写。复杂的精确曝光不能仅凭提示词宣称已经兑现。
 
-Use professional camera and animation terms only when they determine visible behavior: low-angle tracking, lateral tracking, pan, tilt, whip-pan, crash zoom, locked wide shot, first-person insert, time ramp, smear frame, multiples, impact frame, held key pose, dense in-betweens, or slow-motion close-up. Avoid strings of terms that do not change the image.
+## 战斗与复杂动作
 
-Prefer a legible rhythm such as restraint→burst→contact compression→reaction expansion→settle. A large attack feels stronger when surrounded by quieter phases. Use one dominant camera behavior within a continuous view; a real viewpoint change is either a precise numbered shot or an auto-coverage beat.
+### 连续性与编排
 
-## 5. Integrate effects with the action
+使用已有node_state、state_changes及正文维护双方位置、朝向、持物手、目标、接触点、受力、伤势和下一节点，不再建立战斗分账。区别世界运动与画面运动；两人交锋保留可读轴线，多人交锋写清当前攻击对象和其他人的位置。武器的长度、持握与接触不无过程改变。
 
-Write effects in the same beat as their cause. Do not append a detached effect inventory. For an important effect, describe the useful parts of its lifecycle:
+完整设计本场需要的接近、攻防、接触、失衡恢复和后果；既不要求最短连接，也不强制每次攻击都有完整套路。保留原格主动作、关键构图与结果，节点之间可以充分创作。所有真实切镜独立编号，连续原格合镜仍逐一落实节点；本版不使用自动覆盖段隐藏切镜。
 
-1. **Onset:** where it originates and what triggers it;
-2. **Peak:** its dominant shape, direction, scale, and shortest high-energy moment;
-3. **Interaction:** what material, body, light, air, or environment it affects;
-4. **Decay:** how it fragments, trails, disperses, dims, falls, or clears enough to reveal the result.
+摄影机可以固定、跟随或有目的地改变距离。高速跟随写清双方相对速度、景深层次、目标距离变化和落幅；换机位不重新起跳、不把追逐进度归零。甩镜、短震与急推用于合适重音，持续震动会削弱层次。
 
-Build force from a small hierarchy rather than a pile of synonyms:
+### 效果的形、方向和后果
 
-- **Primary effect:** the readable strike trail, energy mass, muzzle burst, impact flash, shockwave, or pressure cut.
-- **Secondary response:** sparks, fragments, dust ring, liquid spray, cloth/hair lag, surface cracks, or displaced smoke.
-- **Tertiary scale cue:** delayed distant debris, background light change, layered smoke, foreground particles, or a structure reacting after the main impact.
+效果跟随原因写进实际动作，不另列效果清单。重要效果按需要写起点、峰值、与人／环境的交互及消散；选一个主形，其他层错开峰值，保留关键接触或在适当时刻揭开遮挡。
 
-Match effect intensity to event importance:
+- **形与材质：**手绘轮廓、赛璐璐色块、尖端收束；金属硬火星、混凝土块与重尘、水片与水滴，各有不同运动。
+- **方向与深度：**拖尾、碎片与烟尘服从动作和撞击方向；明确前后遮挡、近远速度，避免全屏同一粒度的平面覆盖。
+- **光与颜色：**发光核心、短促环境染色与衰减一致，局部闪光不永久改固有色；不堆持续光晕、过曝和脏透明边缘。
+- **重量与规模：**接触和位移、近处反应与远处延迟后果形成力量；不靠粒子数量，新增破坏不能改变原作结果。
+- **密度与显露：**烟可有内部翻卷或分层滑动，轮廓、内线和阴影服务具体运动；到后果／表情重点时留出可见区域。
 
-| Level | Use | Typical visible treatment |
-|---|---|---|
-| light | feint, graze, parry, foot burst | narrow trail, few sparks or dust, little camera response |
-| medium | clean block, body hit, short energy discharge | compact flash, directional fragments, brief shake, local light spill |
-| heavy | decisive strike, wall break, knockback | impact frame or hit-stop, pressure ring, layered debris, clear displacement and delayed fallout |
-| climax | finishing move or source-supported large destruction | staged buildup, one dominant silhouette/effect shape, foreground-to-background response, controlled white/black flash, readable aftermath |
+## 失败后怎样调整
 
-Do not give every hit the climax treatment. Preserve escalation.
+先判断设计是否清楚，再判断执行是否失败。无意融脸、肢体融合、换手换目标或回不到下一节点需要修复；有意压扁、拉长、SD和符号脸不能一律抹掉。
 
-## 6. Effects quality and texture
+漂浮先查重心与接触，弱打击先查前后反差和可见后果，效果糊成一团先减竞争层、错开峰值，地理混乱先恢复位置与轴线。重复失败时按[执行与重试](seedance-execution-and-review.md)收敛变量或分片，不通过修改后续原作迁就偶然生成。
 
-Quality comes from coherent shape, timing, depth, light, and material response rather than adjectives such as “high quality” or “explosive.” Use only the clauses relevant to the current effect.
+## 内容依据
 
-- **2D shape language:** hand-drawn contours, cel-shaded masses, clean opaque cores, controlled translucent fringes, tapered brush-shaped streaks, and deliberate frame-to-frame shape change. Keep silhouettes readable before and after peak speed.
-- **Directional coherence:** trails, speed lines, smear frames, debris cones, shockwaves, and smoke displacement follow the action vector and contact normal. They do not radiate arbitrarily.
-- **Depth and occlusion:** place effects across foreground, character, midground, and background layers with correct overlap and different movement rates. Particles pass behind or in front of bodies consistently instead of forming a flat screen overlay.
-- **Local illumination:** luminous effects cast a brief, directionally consistent color spill, rim edge, reflection, or moving light band on nearby surfaces. The light peaks with the effect and decays with it; it does not permanently recolor the scene.
-- **Material specificity:** metal yields hard sparks and sharp highlights; concrete yields angular chips and heavy dust; earth throws clods and granular dust; glass produces thin shards; water forms sheets, droplets, mist, and rings. Gravity, drag, collision, and inertia remain visible after emission.
-- **Motion clarity:** motion blur and stretched particles follow precise motion vectors. Keep the contact point and endpoint crisp enough to read; do not smear two crossing bodies into one mass.
-- **Density control:** maintain a clear primary silhouette and contact point. Let smoke, glow, particles, and debris peak at different moments and clear toward the result instead of filling the screen continuously.
-- **Grand scale:** show a near response, a midground propagation, and a delayed background consequence when the source supports large force. Scale comes from staggered response and parallax, not particle count alone.
-- **Clean compositing:** avoid clipped halos, dirty transparent edges, random full-frame bloom, persistent lens flare, uniform particle size, and identical repeated bursts. Keep glow concentrated around a luminous core and vary particle size, speed, and lifetime within one material family.
+以下是已读公开正文的学习入口，指导选择而非保证模型能力，不要求每次写作重开网页：
 
-These principles adapt established VFX practice: emitters have origin, direction, lifetime, forces, drag, collision, light, and render layers; luminous particles appear more grounded when they illuminate nearby surfaces; precise motion vectors improve fast-effect blur. Translate those ideas into visible prompt language rather than engine settings.
-
-## 7. Camera response and scale
-
-Camera motion supports the action vector instead of competing with it. Use a locked or smoothly tracking view while geography is being established; reserve whip-pans, crash zooms, short shake, and extreme perspective for a motivated burst or contact. Start camera shake at the impact, make its amplitude proportional to force, and let it settle quickly. Continuous shaking weakens every hit.
-
-For a large exchange, a useful coverage progression is establishing wide→moving medium/wide→contact close-up or insert→consequence wide→reaction or landing. This is a choice, not a quota. Auto-coverage may select another sequence when the ordered beats, screen direction, and endpoint remain clear.
-
-## 8. Medium and layers
-
-Use hand-drawn 2D animation, clean line art, cel-shaded characters, and layered painted or line-art backgrounds unless the user requests another medium. Avoid sensor, ISO, lens-breathing, and photographic bokeh language for ordinary 2D work.
-
-Use only relevant layers: foreground occluders or debris, character cels, weapons/opponents, midground environment, background layout, and weather/light/effect composites. Assign different movement rates when parallax matters; do not move every layer equally.
-
-At peak speed, reduce detailed facial demands. Keep the face readable before or after the burst and let silhouette, pose, trails, background scroll, and impact shapes carry the motion.
-
-## 9. Failure correction
-
-- **Floaty action:** clarify weight transfer, action vector, contact/result, and endpoint; strengthen material response without inventing another phase.
-- **Weak hit:** create rhythm contrast, shorten the contact peak, add one proportional primary effect and one material response, then show displacement or recoil.
-- **Effect soup:** choose one dominant effect, reduce simultaneous layers, stagger their peaks, and clear the contact point.
-- **Flat effect:** add depth overlap, local illumination, material-specific particles, and a decay path.
-- **Melting bodies or faces:** reduce detail at peak speed, simplify the exchange, or return to precise-shot mode.
-- **Broken geography:** re-establish the axis and positions with a wide or neutral view; remove camera flourishes until the action reads.
-- **Weapon or target swap:** restore ledger state and use precise-shot mode for the fragile beat.
-- **Static-panel feeling:** add a coherent designed phase change between preserved source nodes, visible environment response, or camera phase.
-- **Uniform background motion:** differentiate layer speeds or hold one layer.
-- **Photoreal drift:** remove capture terminology and restate 2D contours, cel shading, and layered effects.
-
-## 10. Legacy auto-coverage rhythm illustration (not 2.8.2 output)
-
-```text
-**战斗段1（12秒·自动分镜）：**
-分镜参考 `[load.jpg]`、`[contact.jpg]`、`[landing.jpg]`
-开局状态：持刀者位于画面左侧低位，巨兽位于右侧高位，双方隔着断裂楼板对峙，刀刃斜指右上。
-战斗过程：
-1. 【克制慢速·大全景缓推】持刀者压低重心，刀身周围的细窄电弧从护手向刀尖聚拢，只在临近金属边缘留下短促冷光，巨兽抬起前爪封住正面路线。
-2. 【急加速·低机位侧向跟拍】持刀者沿左至右方向蹬裂楼板冲出，紫色窄电轨紧贴刀路，脚后混凝土碎屑形成低矮扇形并按惯性落后于身体。
-3. 【高速交锋·中近景甩镜】巨兽前爪向下截击，刀刃由下向上格开爪尖；接触点迸出短促白紫冲击闪和少量硬质火星，局部光线扫过双方轮廓，画面保持两条肢体与接触点清楚可辨。
-4. 【接触瞬间·极短慢镜】刀锋切入巨兽胸前甲壳，紧凑高反差冲击帧以已锁定的白紫色相闪过，随后出现椭圆压力环；甲壳裂纹从接触点定向扩开，较大的碎片先飞出，细尘随后涌起，镜头只在命中时轻震并迅速稳定。
-5. 【恢复正常速度·大全景后拉】巨兽向右后方撞穿残墙，近处碎块掠过前景，中景尘浪追随倒飞路线，远处承重结构延迟半拍坍落；持刀者停在左侧落地滑行，电轨断成细小光屑并迅速熄灭。
-结束状态：巨兽倒在右后方尘雾中，胸前甲壳破裂；持刀者仍在左侧握刀，双方位置、伤势与环境破坏可由下一片段直接继承。
-```
+- [益山亮司：目线与表情](https://note.com/masuyama56/n/n38b4e1746c79)、[分镜信息平衡](https://note.com/masuyama56/n/n7e4b8f485714)：视线、口部细差、画面势头与演出意图。
+- [邱家和本人动态教学](https://home.gamer.com.tw/artwork.php?sn=5420363)：作用力、轨迹、拍数、残影、表演阶段及同时段主次；其个人风格分类不是行业定律。
+- [香川久／马越嘉彦教材正文](https://genkosha.pictures/illustration/1804207038)：角度与情绪，以及情境需要的设定外搞笑变形脸。
+- [小泽和则：泡沫与时间表](https://genkosha.pictures/movie/19091827943)、[术语与火焰](https://genkosha.pictures/movie/19091027609)、[夸张爆炸](https://genkosha.pictures/movie/19091928091)：曝光、震颤、替换画和剪影；不照搬全部数值或火焰温度说明。
+- [C&R动态教程](https://2d-studio.crdg.jp/blog/2026/03/05/4234/)：跟随、余动、阶梯与连续变化的对照；属于可迁移的二维骨骼动画教学。
+- [SANZIGEN逐镜制作拆解](https://cgworld.jp/feature/201604-cgw212t2-bbk02.html)：固定机位中的人物表演、按声音改表情与为短时旋转选择残影。

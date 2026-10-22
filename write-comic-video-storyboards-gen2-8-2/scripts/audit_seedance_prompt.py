@@ -7,6 +7,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
+from authoring import duration_seconds, action_timeline_errors
 
 
 SEGMENT_RE = re.compile(r"^#{1,6}\s*【片段\s*(\d+)】[^\r\n]*", re.MULTILINE)
@@ -105,21 +106,25 @@ def main() -> int:
             if LEGACY_TIMECODE_RE.search(prompt):
                 errors.append(f"片段{number}仍使用旧时间段，应改为‘分镜1（3秒）’格式。")
             else:
-                errors.append(f"片段{number}没有整数分镜时长。")
+                errors.append(f"片段{number}没有分镜时长。")
             continue
 
         shot_numbers: list[int] = []
         total_duration = 0
-        for match in shots:
+        for index, match in enumerate(shots):
             shot_raw, duration_raw = match.groups()
             shot_numbers.append(int(shot_raw))
-            if "." in duration_raw:
-                errors.append(f"片段{number}含小数时长：{match.group(0).strip()}")
+            try:
+                duration = duration_seconds(duration_raw)
+            except ValueError:
+                errors.append(f"片段{number}时长须为大于0的0.5秒整数倍：{match.group(0).strip()}")
                 continue
-            duration = int(duration_raw)
-            if duration <= 0:
-                errors.append(f"片段{number}时长必须大于0秒：{match.group(0).strip()}")
             total_duration += duration
+            end = shots[index + 1].start() if index + 1 < len(shots) else len(prompt)
+            block = prompt[match.end():end]
+            action = re.search(r"【可见动作】[：:]\s*(.*?)(?=【[^】]+】[：:]|\Z)", block, re.S)
+            errors.extend(action_timeline_errors(action.group(1) if action else block, duration,
+                                                  f"片段{number}分镜{shot_raw}"))
 
         expected = list(range(1, len(shot_numbers) + 1))
         if shot_numbers != expected:

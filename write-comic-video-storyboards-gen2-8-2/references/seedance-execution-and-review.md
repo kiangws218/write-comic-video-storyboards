@@ -19,9 +19,17 @@ Choose one structure. Default precise-shot structure:
 分镜3（7秒）：……
 ```
 
-Use positive integer durations, reset numbering at 1 in every clip, and keep the summed duration at or below the clip ceiling. A continuous camera take has one numbered block with internal action phases; every true cut gets a new block. For a true multishot clip, state `硬切` at the new block and give each shot a coherent main action with its useful concurrent acting layers, a clear camera behavior, visible local background, and endpoint. Split when combined load is too high.
+Use positive durations in 0.5-second increments, reset numbering at 1 in every clip, and keep the summed duration at or below the clip ceiling. Timing syntax and optional in-shot action ranges follow core-authoring.md; keep ranges local to each explicitly numbered shot (本镜内计时), starting at 0. Preserve simple action prose without adding ranges. A continuous camera take has one numbered block with internal action phases; every true cut gets a new block. For a true multishot clip, state `硬切` at the new block and give each shot a coherent main action with its useful concurrent acting layers, a clear camera behavior, visible local background, and endpoint. Split when combined load is too high.
 
 For 2.8.2 use precise numbered shots, including fights. Legacy auto-coverage examples are not final 2.8.2 output: preserve independent original shots and auditable actual neighbors.
+
+## Prompt wording
+
+Use concise natural Chinese and familiar camera/animation terms. Preserve approved expression cues such as 金田系、作画感、作画爆发、Q弹、张力拉满、外连味、颜艺、夸张透视、smear frame when they carry the intended look or rhythm; do not strip them merely because they summarize style. Add the useful visible action if needed, without expanding every cue into a tutorial or a second action inventory. Never claim that a term guarantees a particular result.
+
+Distinguish intentional squash/stretch, smear or SD acting from unintended identity drift, fused bodies or unmotivated deformation. A designed Q版/形变 passage must not receive contradictory blanket controls such as “全程正常比例、禁止任何变形”. Preserve its entry, important readable pose and exit. Keep source-panel bindings, full dialogue and actual endpoint.
+
+Half-second ranges express the approved plan. Target timing response varies: the official [2.0 guide](https://docs.volcengine.com/docs/ark/seedance-2-0-prompt-guide?lang=en) notes unstable exact-time control, and the [2.5 guide](https://docs.volcengine.com/docs/ark/seedance-2-5-prompt-guide?lang=en) describes integer-second timestamps. Keep clear action order (先、突然、随后、停住) alongside numbers; do not silently round, drop phases or promise frame-accurate output. No new model adapter or duplicate global timeline is required.
 
 ## Reference roles
 

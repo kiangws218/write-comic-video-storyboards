@@ -7,7 +7,8 @@ import sys
 import tempfile
 import unittest
 
-from authoring import check_routes, expand, route_digest
+from authoring import (check_routes, expand, route_digest, duration_seconds,
+                       format_seconds, action_timeline_errors)
 from test_director_282 import fixture, finish, check
 from render_storyboard import render
 from validate_director import make_source_lock, review_digest
@@ -168,6 +169,90 @@ class AuthoringTests(unittest.TestCase):
             run = subprocess.run([sys.executable, "-X", "utf8", str(HERE / "freeze_storyboard.py"), str(path)], capture_output=True)
             self.assertNotEqual(run.returncode, 0)
             self.assertEqual(path.read_bytes(), before)
+
+
+class HalfSecondTimingTests(unittest.TestCase):
+    def test_seconds_are_not_truncated_and_invalid_values_are_rejected(self):
+        for value in (.5, 1, 2.5, "2.5", "1.0"):
+            with self.subTest(value=value):
+                self.assertEqual(duration_seconds(value), float(value))
+        self.assertEqual(format_seconds(1.0), "1")
+        self.assertEqual(format_seconds(2.5), "2.5")
+        for value in (True, False, 0, -.5, .3, .75, "bad", None, float('nan'), float('inf')):
+            with self.subTest(value=value):
+                with self.assertRaises(ValueError): duration_seconds(value)
+
+    def test_compact_half_seconds_render_and_validate_without_new_fields(self):
+        ledger = compact()
+        ledger['shots'][1]['duration'] = .5
+        ledger['shots'][2]['duration'] = 4.5
+        ledger['shots'][3]['duration'] = 3.5
+        before = deepcopy(ledger)
+        text = finish(ledger)
+        self.assertIn('分镜2（0.5秒）', text)
+        self.assertEqual(expand(ledger)['shots'][1]['duration'], .5)
+        self.assertEqual(check(ledger, text)[0], [])
+        from validate_storyboard import build_shot_map
+        self.assertEqual(build_shot_map(text)['片段1/分镜2'][0], .5)
+        for old, new in zip(before['shots'], ledger['shots']):
+            self.assertEqual(old, new)
+
+    def test_optional_ranges_remain_in_the_existing_action_string(self):
+        ledger = compact()
+        action = '0-0.5s：董白抬眼。\n0.5-1.5s：目光停在前方。'
+        ledger['shots'][1]['duration'] = 1.5
+        ledger['shots'][1]['fields']['可见动作'] = action
+        text = finish(ledger)
+        self.assertIn(action, text)
+        self.assertEqual(check(ledger, text)[0], [])
+        self.assertEqual(action_timeline_errors('抬手到胸前，瞬间一张残影后停住。', .5), [])
+
+    def test_ranges_reject_gaps_overlap_reverse_overflow_and_bad_end(self):
+        for text in (
+            '0-0.5s：抬眼。\n1-2s：停住。',
+            '0-1.5s：抬眼。\n1-2s：停住。',
+            '0-1s：抬眼。\n1-0.5s：停住。',
+            '0-2.5s：抬眼。', '0-1.5s：停住。',
+            '0-0.3s：抬眼。\n0.3-2s：停住。', '0-2s：',
+        ):
+            with self.subTest(text=text):
+                self.assertTrue(action_timeline_errors(text, 2))
+
+    def test_renderer_and_direct_ledger_check_both_reject_bad_timing(self):
+        ledger = compact()
+        ledger['shots'][1]['duration'] = .3
+        with self.assertRaises(ValueError): render(ledger)
+        ledger = compact()
+        ledger['shots'][1]['fields']['可见动作'] = '0-4s：抬眼。'
+        with self.assertRaises(ValueError): render(ledger)
+        ledger = compact(); text = finish(ledger)
+        text = text.replace('董白保持右手持剑，目光锁定前方。', '0-4s：抬眼。', 1)
+        self.assertTrue(any('时间段' in e for e in check(ledger, text)[0]))
+
+    def test_execution_audit_accepts_half_seconds_and_detects_overflow(self):
+        ledger = compact()
+        ledger['shots'][1]['duration'] = .5
+        prompt = render(ledger).replace('**', '')
+        # The execution auditor receives only this clip's paste-ready prompt.
+        prompt = prompt.split('## 【片段1】', 1)[1].strip()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'prompt.md'
+            def audit(value):
+                path.write_text('## 【片段1】\n```text\n'+value+'\n```\n', encoding='utf-8')
+                return subprocess.run([sys.executable, '-X', 'utf8', str(HERE/'audit_seedance_prompt.py'),
+                                       str(path), '--max-chars', '10000'], capture_output=True)
+            result = audit(prompt)
+            self.assertEqual(result.returncode, 0, result.stdout.decode('utf-8')+result.stderr.decode('utf-8'))
+            self.assertNotEqual(audit(prompt.replace('分镜2（0.5秒）', '分镜2（0.3秒）')).returncode, 0)
+            overflow = prompt.replace('分镜2（0.5秒）', '分镜2（3.5秒）')
+            self.assertIn('15.5', audit(overflow).stdout.decode('utf-8'))
+            ranged = prompt.replace('分镜2（0.5秒）', '分镜2（1.5秒）')
+            start = ranged.index('分镜2')
+            head, tail = ranged[:start], ranged[start:]
+            tail = tail.replace('董白保持右手持剑，目光锁定前方。',
+                                '0-0.5s：抬眼。\n0.5-1.5s：停住。', 1)
+            self.assertEqual(audit(head+tail).returncode, 0)
+            self.assertNotEqual(audit(head+tail.replace('0.5-1.5s', '1-1.5s')).returncode, 0)
 
 
 if __name__ == "__main__":

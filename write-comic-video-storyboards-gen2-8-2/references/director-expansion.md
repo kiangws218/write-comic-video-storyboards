@@ -10,22 +10,17 @@
 
 先继承可靠原镜，粗排整段，再完成新增镜头六字段并细化需要调整的原镜与局部效果。原镜变化持续受core的保真门槛约束，最终对照第二遍版本与原图检查。关键动作／情绪段可用两种简短方案比较人物、空间和节奏，选一种展开；普通段不强制。第二轮已好的创作可沿用，不为证明第三轮工作而乱改。
 
-## 将行业方法用于具体选择
+## 将二维表现落实到整场选择
 
-以下为结合项目需求的创作方法，不是行业统一三轮法，也不覆盖用户的原镜和台词硬约束。
+先判断本场最值得突出的反应、动作或画面，以及前后何处需要安静、积累或突然爆发。通常画面与局部夸张可以并存：正常比例、Q版、颜艺、剧画脸、主观图形空间、残影与冲击画按人物和情境选择，原作已经夸张的画面不先改回写实。表现词汇和用法见[二维动画执行](2d-animation-execution.md#表现词汇与常用写法)。
 
-| 方法 | 本轮执行 |
-|---|---|
-| [Disney Story](https://www.disneyanimation.com/process/story/)：情感、调度、时间与构图 | 先明确人物与观众的体验，再选镜头；一个威胁先给谁看，会改变悬念和反应的意义。 |
-| [Disney Layout](https://www.disneyanimation.com/process/layout/) 与 [剪辑](https://www.disneyanimation.com/team/editor/)：持续组织场面 | 第二轮不是定稿，重排自创镜头、动作和时长，保存所有原镜原句；先看整段是否成立。 |
-| [表演中的思考与运动方式](https://www.animationmentor.com/blog/10-advanced-acting-performance-tips-for-animators/) | 看见／听见之后留出可读理解过程，由性格和当前目标决定动作，不每重音换姿势。春子克制、青主动明快、董白从容自负。 |
-| [长镜头的任务与身体语言](https://www.animationmentor.com/blog/keeping-your-character-alive-making-the-most-of-a-long-character-shot/) | 同机位可以用任务中断、视线和人物关系展开，不把切镜当作表演替代品。 |
-| [重量](https://www.animationmentor.com/blog/how-to-create-believable-weight-in-animation/) 与 [预备动作](https://www.animationmentor.com/blog/anticipation-the-12-basic-principles-of-animation/) | 用平衡、路径、速度和受力后果表现力量；角色的目的决定如何发力，不给所有动作套反向蓄力。 |
-| [Tim Hodge 的视觉叙事与摄影机](https://www.toonboom.com/tim-hodge-on-storyboarding-for-tv-animation) | 允许完全无对白的叙事；镜头引导观众看见或暂时看不见，选择观察、跟随、主观和对手视点。 |
-| [宫崎骏谈“间”](https://www.rogerebert.com/interviews/drawing-on-spirited-world) | 短暂等待、观察或环境停留可以建立情绪和时间感，让动作与张力有呼吸；不持续同一强度，也不机械添加空镜。原访谈检索摘要可核实，正文访问受限，未声称观看原视频。 |
-| [Pixar Storyreels](https://en.khanacademy.org/computing/pixar/storytelling/storyboard-your-film/v/pitching4)、[Mark Simon 的实际计时](https://www.toonboom.com/mark-simon-storyboard-pro-tips) | 用粗画面、临时完整声音和真实时间播放，调整停顿／切点，不能用漂亮文字冒充播放结果。 |
+关键段可比较两种真正不同的短方案，例如保持一镜的人物表演与主观碎切，或克制反应与突然破格的Q版；选人物准确、观看体验和前后节奏更好的方案。普通段不交额外方案卡，不按术语、增镜或变形数量评优。
 
-这些是可选择的方法，不要求每场全部使用，也不是新证据表。既有《学园》经过用户确认的实际原文校准继续保留，不能由本模块的新例子取代。
+关键动作先选决定性姿态、主导部位和画面轨迹，再安排读清姿态的停留、突然通过、其他部位跟随与下一原镜的到达。不要求每个动作都蓄力、回弹、恢复初始姿势；动作丰富度来自需要的变化，不是平均加中割。克制人物的一次停手、视线或姿态变化同样能成为重点。
+
+碎切依照注意和信息先后安排，先发现什么、何时理解、哪个画面最后揭晓；不要为每句台词或名词配一个特写。Q版、图形背景与主观插入写清出现和退出的画面，世界位置、持物和接触仍须连续，不默认增加真实缩小、分身或新能力。原格关键表情、姿态和揭晓作用仍可辨认。
+
+方案直接落进六字段。场前说明只保留必要选择，沿用现有上下文、表演卡和director_review，不另建技法账、风格切换表或逐帧表。简单动作直接描述；需要时间段时遵循core的0.5秒写法。实际成片仍需粗画面和声音播放检验，未播放只报告文字设计。
 
 ## 角色、纯表演与沉默
 
