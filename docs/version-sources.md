@@ -10,6 +10,8 @@
 | `write-comic-video-storyboards-gen2-8` | 成熟 | 同上，同名目录；保留工作区已使用的 Gen2.8，不混入测试流程 |
 | `write-comic-video-storyboards-gen2-8-1` | 测试中 | router 提交 `cdacb60b4bff3ed5c487e10923d92050622b980f` 的 `write-comic-video-storyboards-gen2-8` 目录 |
 
+| `write-comic-video-storyboards-gen2-8-2` | 测试中 | 2026-10-22 发布的 2.8.2；继承本地已验证 2.8.1 两次精读材料与旧回归，完整迭代见 [发布说明](releases/gen2.8.2/implementation-audit.md) |
+
 ## 为什么需要单独说明 2.8.1
 
 历史上存在两个名称均带 2.8.1 的实现：

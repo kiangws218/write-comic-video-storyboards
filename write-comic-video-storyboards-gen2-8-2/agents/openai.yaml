@@ -1,0 +1,4 @@
+interface:
+  display_name: "漫画转动漫分镜 Gen2.8.2"
+  short_description: "保留原镜原句，两次精读与角色化导演创作，连贯动作与可审查交付"
+  default_prompt: "Use $write-comic-video-storyboards-gen2-8-2 to inspect the comic twice, preserve every original shot and exact dialogue, then direct complete character-specific animation between source nodes with timing, silence and continuity review."

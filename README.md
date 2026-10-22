@@ -11,8 +11,9 @@
 | 2.7 | 保留版本 | [write-comic-video-storyboards-gen2-7](write-comic-video-storyboards-gen2-7/SKILL.md) | 模块路由、规则整合和相应代际的验证工具。 |
 | **2.8** | **成熟版** | [write-comic-video-storyboards-gen2-8](write-comic-video-storyboards-gen2-8/SKILL.md) | 成熟的 V3 来源台账、表演与覆盖流程。 |
 | **2.8.1** | **测试中** | [write-comic-video-storyboards-gen2-8-1](write-comic-video-storyboards-gen2-8-1/SKILL.md) | 单主对话、缩略总览、两遍局部精读及定向复查的实验流程。 |
+| **2.8.2** | **测试中** | [write-comic-video-storyboards-gen2-8-2](write-comic-video-storyboards-gen2-8-2/SKILL.md) | 原镜完整写作与角色化导演创作、关键动作路径确认、精简台账。 |
 
-2.5 和 2.8 的成熟状态由项目维护者确认；2.8.1 尚在测试，不替换 2.8。2.6、2.7 均完整保留，本次整理没有改变它们的成熟度定位。
+2.5 和 2.8 的成熟状态由项目维护者确认；2.8.1、2.8.2 尚在测试，不替换 2.8。2.6、2.7 均完整保留，本次整理没有改变它们的成熟度定位。
 
 2.8.1 使用独立的 `write-comic-video-storyboards-gen2-8-1` 标识、界面名称与默认提示，和成熟 2.8 分开安装。具体输出字段、时长边界和校验要求由各版本自己的 `SKILL.md` 定义。
 
@@ -20,7 +21,7 @@
 
 ## 安装
 
-从 `main` 选择需要的目录，完整复制到 Codex 的 skills 目录，保持目录名与 `SKILL.md` 的 `name` 相同。五个版本可以分别安装：
+从 `main` 选择需要的目录，完整复制到 Codex 的 skills 目录，保持目录名与 `SKILL.md` 的 `name` 相同。六个版本可以分别安装：
 
 ```text
 ~/.codex/skills/write-comic-video-storyboards-gen2-5/
@@ -28,9 +29,10 @@
 ~/.codex/skills/write-comic-video-storyboards-gen2-7/
 ~/.codex/skills/write-comic-video-storyboards-gen2-8/
 ~/.codex/skills/write-comic-video-storyboards-gen2-8-1/
+~/.codex/skills/write-comic-video-storyboards-gen2-8-2/
 ```
 
-调用时明确选择版本，例如 `$write-comic-video-storyboards-gen2-8` 或 `$write-comic-video-storyboards-gen2-8-1`。生产使用可选择成熟的 2.5 或 2.8；评估新流程时选择测试版 2.8.1。
+调用时明确选择版本，例如 `$write-comic-video-storyboards-gen2-8` 或 `$write-comic-video-storyboards-gen2-8-1`。生产使用可选择成熟的 2.5 或 2.8；评估本次优化时调用 `$write-comic-video-storyboards-gen2-8-2`（2.8.2）；2.8.1 独立保留。实现与验证见 [2.8.2 发布说明](docs/releases/gen2.8.2/implementation-audit.md)。
 
 ## 仓库内容
 
@@ -40,6 +42,7 @@ write-comic-video-storyboards-gen2-6/    保留版本 2.6
 write-comic-video-storyboards-gen2-7/    保留版本 2.7
 write-comic-video-storyboards-gen2-8/    成熟版 2.8
 write-comic-video-storyboards-gen2-8-1/  测试版 2.8.1
+write-comic-video-storyboards-gen2-8-2/  测试版 2.8.2
 comic-workspace/                       漫画、人设、字幕、设计资产与历次交付
 tests/                                 固定输入、重建脚本及历史评估
 docs/                                  版本来源与仓库维护约定

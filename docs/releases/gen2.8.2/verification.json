@@ -1,0 +1,45 @@
+{
+  "version": "2.8.2",
+  "skill_name": "write-comic-video-storyboards-gen2-8-2",
+  "unit_tests": {
+    "count": 234,
+    "passed": true
+  },
+  "installed_regression_tests": {
+    "count": 39,
+    "passed": true
+  },
+  "mature_materials": {
+    "exit_code": 0,
+    "calibration_quotes_unchanged": true,
+    "legacy_test_files_unchanged": true
+  },
+  "legacy_forward_checks": {
+    "forward-ep020-action": {
+      "passed": true,
+      "originals": 4,
+      "retained": 4,
+      "shots": 7,
+      "added": 3,
+      "duration": 31,
+      "clips": 3,
+      "video_tested": false
+    },
+    "forward-ep024-dialogue": {
+      "passed": true,
+      "originals": 1,
+      "retained": 1,
+      "shots": 5,
+      "added": 4,
+      "duration": 26,
+      "clips": 2,
+      "video_tested": false
+    }
+  },
+  "execution_checks_passed": true,
+  "package_and_installed_sha256_match": true,
+  "files": 30,
+  "local_links_checked": 45,
+  "prior_2_8_and_2_8_1_unchanged": true,
+  "scope": "程序一致性与现有样例兼容；未重新生成分镜、播放动态分镜或验证成片质量。"
+}

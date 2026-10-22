@@ -5,3 +5,6 @@ comic-workspace/**/*.jfif filter=lfs diff=lfs merge=lfs -text
 comic-workspace/**/*.webp filter=lfs diff=lfs merge=lfs -text
 comic-workspace/character-references/voice-references/*.[wW][aA][vV] filter=lfs diff=lfs merge=lfs -text
 comic-workspace/character-references/voice-references/*.[mM][pP]3 filter=lfs diff=lfs merge=lfs -text
+
+# Preserve original test/calibration bytes and published package SHA-256 across platforms.
+/write-comic-video-storyboards-gen2-8-2/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

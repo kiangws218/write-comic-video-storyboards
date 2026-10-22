@@ -1,0 +1,20 @@
+{
+  "ep020-action": {
+    "full_authoring_bytes": 28947,
+    "compact_authoring_bytes": 26581,
+    "same_rendered_script": true,
+    "same_source_and_dialogue_lock": true,
+    "same_shot_fields_timing_states_and_performance": true,
+    "review_invalidated_as_required": true,
+    "unexpected_errors": 0
+  },
+  "ep024-dialogue": {
+    "full_authoring_bytes": 18994,
+    "compact_authoring_bytes": 16842,
+    "same_rendered_script": true,
+    "same_source_and_dialogue_lock": true,
+    "same_shot_fields_timing_states_and_performance": true,
+    "review_invalidated_as_required": true,
+    "unexpected_errors": 0
+  }
+}
