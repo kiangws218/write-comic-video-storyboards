@@ -39,6 +39,8 @@ A comic panel/crop supplies an in-process/contact/result composition/pose anchor
 
 Preserve each original-shot binding and its approved frame adaptation, not the panel’s accidental page crop. Added views keep their director role; do not label all shots source_locked. Copy exact frozen dialogue, voice-over segments, counted silence and actual endpoints; never shorten dialogue or remove an original shot for the prompt budget. If necessary split/regroup at a recoverable boundary, preserving all content.
 
+Keep approved continuous speaker-to-speaker moves as one numbered take; do not automatically insert a cut at each new voice. Preserve a tall-panel tilt's opening, direction, important intermediate content and landing in the prompt, with the output frame and figure proportions stable. These camera choices follow [cinematic-rendering.md](cinematic-rendering.md#多人同格的连续运镜); compression must not turn them into a fixed crop, a stretched whole panel or a scroll of comic paper.
+
 ## Character budget
 
 Use the actual surface limit. For a 2000-character field, target at most 1900. Count with `scripts/audit_seedance_prompt.py`.

@@ -10,11 +10,35 @@ Use supplied references first. Otherwise choose at most one work, one studio, an
 
 ## Camera and rhythm
 
+构图、机位、人物运动与布光的方位措辞统一执行 [core-authoring.md 的“空间与光向的表述”](core-authoring.md#空间与光向的表述)：使用画面位置和人物／环境相对关系。
+
 Decide the shot's visual purpose before selecting movement. Compare useful moving and fixed presentations from the actual beat rather than accepting the easiest source-safe setup. Push/pull can concentrate or release attention; pan/tilt/follow can trace an established task, path or height relation; an evidenced arc or rising/descending move can develop power, scale or a shared relation. Select a readable extent and rhythm, not a universal `轻推/微移`. Fixed framing remains useful for a held reaction, contrast, awkward pause or fragile contact. Do not impose either a fixed-camera default or an episode-wide movement quota, and do not add actor actions merely to justify moving the camera.
 
 Choose mode, purpose, opening, coherent path and landing before rendering. The actual camera field is the maintained camera plan; use a brief camera_decision only for a complex trajectory or unresolved alternative, without copying the formal prose into another form. Source-node framing preserves its useful visual intent with recorded panel-size adaptation; it is not a comic first-frame asset. Supplied full character references support all angles. Design unseen surfaces and coherent space as production choices; missing source evidence only warns. Preserve readable action, contact and next-node arrival. A continuous arc/rise is one trajectory, not a cut at every angle. High-speed follow specifies relative camera/actor speed, depth layers, occluders, target distance and the outgoing state.
 
-In a camera-only revision, edit `【镜头设计】` and its camera metadata/excerpts, not performance beats, dialogue, timing, light or sound. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing prompts a purpose check, not an automatic failure; intentional stillness remains valid. A moving shot needs a coherent designed path and useful landing; lack of a drawn path alone does not reject it.
+In a camera-only revision, edit `【镜头设计】` and its existing camera metadata/excerpts. Preserve unchanged performance, dialogue, timing, sound and the world-space light source; re-express screen-relative light direction when the changed view requires it, following core. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing prompts a purpose check, not an automatic failure; intentional stillness remains valid. A moving shot needs a coherent designed path and useful landing; lack of a drawn path alone does not reject it.
+
+### 多人同格的连续运镜
+
+多人同处一个原格时，主动考虑用一条连续运镜承接交流，例如从说话人A平摇／横移到接话的B，再到C；不默认每换一个说话人就硬切。依据实际站位选择路径，写清起幅、经过谁、何时移向接话者、必要停留和落幅。运镜可以在接话前开始或短暂留在听者反应上，不要求逐句追嘴，也不把相机移动写成人物瞬移。
+
+示例写法：“起幅为画面左侧青的中近景；青说到句尾时镜头平稳向右摇到中间的春子，承接她的回答；董白接话时继续右摇，落在画面右侧董白的中近景。”这是虚构写法示例，实际方向、时机与台词按本场填写；【可见动作】另外写人物的互动，镜外人物的动作与持物继续推进。一次连续摇移仍为一个编号镜头；真实硬切才另编号，所有发声及画外音沿用既有映射。
+
+全景中的关系、相互注视或同时反应若是原格重点，起幅、途中或落幅须有实际可辨认的关系构图，不能只轮拍孤立脸部就声称保留原镜。不同原格也不因都是说话人就随意合镜；仍按core的连续原格条件处理。
+
+### 长竖格的画幅适配
+
+原格明显竖长、纵向内容无法在目标画幅中同时清楚展示时，**优先使用上摇／下摇**，依次展开原格的纵向画面。保持输出画幅与人物比例，不把整格横向拉宽、纵向压短，不仅留下脸部，也不以缩成小图代替需要读清的内容。格内人物仍在表演，不将漫画纸、气泡与格框做成滚屏动画。
+
+在【镜头设计】写明起幅可见范围、上摇／下摇方向、途中关键内容及落幅；停留和速度服从信息量与完整发声。方向遵守原作的注意／揭晓顺序，例如脚边接触点→持物手→脸部，或脸部→手部→脚下，不为遍历全格提前泄露信息。一个连续纵向展开仍是一镜，不能用多个静止裁图冒充摇镜，也不能为扫完全格把原有静态关系编造成先后发生的事件。
+
+“上摇／下摇”指视线随相机俯仰上／下展开；需要机位真正升降或近距离上下扫描时，写成“镜头上移／下移”，不能只写方向而让模型猜。若必须同一时刻看清全身关系、关键接触或整体构图，保留相应全貌落幅；纵摇不适用时，可选等比扩画、保持比例的全貌构图或有意义的拆镜，理由简记在现有frame_adaptation，不能默默裁掉内容。该记录只说明适配，不重写composition_lock。
+
+### 交付前落实
+
+遇到以上两类画面，回查实际【镜头设计】是否给出了可执行的路径和承接／展开内容，正文是否仍有可读表演、正确发声及原镜重点。只在场前说“考虑运镜”、正文却固定不动不算落实。审查结论并入现有director_review的节奏／节点到达项；不另建逐人运镜表、全格扫描表或强制运动配额，不以命中“摇镜”一词代替画面审查。
+
+方法参考：[Toon Boom 的 Camera Moves 教学](https://learn.toonboom.com/modules/the-language-of-storyboards/topic/camera-moves1)将起止取景与随运动展开的信息作为分镜设计的一部分；上述两类优先级是本项目的创作要求。
 
 Use familiar camera terms for concrete framing and movement. Expressive cues such as 作画感、张力拉满、外连味 can strengthen the desired visual tone alongside the camera/action description; they need not each become a separate technical clause. Choose the useful details below:
 
