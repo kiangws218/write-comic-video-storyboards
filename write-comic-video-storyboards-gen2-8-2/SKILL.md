@@ -16,7 +16,7 @@ metadata:
 
 - 首次读图前完整读取 [core-authoring.md](references/core-authoring.md)。
 - 首次人物设计写作前读取 [dialogue-performance.md](references/dialogue-performance.md) 及其链接的表演校准。已有角色设定优先，不从人设图推断性格；新话先读取项目共享人物主档的出场条目，维护方式见 [character-registry.md](references/character-registry.md)。
-- 首次导演创作前读取 [director-expansion.md](references/director-expansion.md) 与 [2d-animation-execution.md](references/2d-animation-execution.md) 的通用表现和词汇；战斗部分仅动作段读取。日常、喜剧与情绪戏也可使用二维造型和动态表现。
+- 首次导演创作前读取 [director-expansion.md](references/director-expansion.md) 与 [2d-animation-execution.md](references/2d-animation-execution.md) 的通用表现、姿态设计、金田系动态和词汇；战斗部分仅动作段读取。日常、喜剧与情绪戏也可使用二维造型和动态表现。
 - 设计或修改摄影机时读取 [cinematic-rendering.md](references/cinematic-rendering.md)。
 - 原图身份、肢体、接触、透视不清时读取 [source-risk.md](references/source-risk.md)。新角度本身不触发证据准入。
 - 环境、图形背景或配色设计读取 [background-design.md](references/background-design.md)，需要形式库时才读其链接。
@@ -55,7 +55,7 @@ metadata:
 
 ### 第三轮：继承可靠原镜，创作整场动画演出
 
-进入本轮时先读取 [director-expansion.md](references/director-expansion.md) 开头的创作质量声明，按其中的完整场景导演要求展开；人物演出继续执行 [dialogue-performance.md](references/dialogue-performance.md) 的具体组织与校准审查，不以原镜合规或表演卡齐全代替演出质量。
+进入本轮时先读取 [director-expansion.md](references/director-expansion.md) 开头的创作质量声明，按其中的完整场景导演要求展开；内部先构思整场演出，再设计表情与关键姿态、必要过渡和动态节奏，落入六字段后整场复核，不另增原画轮／中割轮或记录副本。人物演出执行 [dialogue-performance.md](references/dialogue-performance.md) 的展开与校准审查，不以原镜合规或表演卡齐全代替演出质量。
 
 以第二遍完整底稿为基础，先定人物意图、观众体验、节奏及下一原作节点，再组织原作与自创镜头，设计完整攻防、符合性格的表演、插入与返回、环境／物品、无对白情绪段和停顿。自创过程可以充分设计；原作镜头始终受core的还原门槛约束，不能因进入导演轮而降级。已好的底稿可沿用，不设增镜比例或手势配额。
 
