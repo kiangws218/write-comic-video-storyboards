@@ -1,0 +1,345 @@
+{
+  "commit": "d0a107593bd3e9c90cadd09c9a9ba939d0d79873",
+  "files": [
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_01_001.jpg",
+      "sha256": "de0a36a292f5738b54c44b26c1751f9326f9941454efb7238edc6e8c8f5006de",
+      "bytes": 231757
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_01_002.jpg",
+      "sha256": "dd1c8d8ec2efecbafe126297c284d623d1e1eac8c88d2f13d4cf1a6116b75aa2",
+      "bytes": 264669
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_02_001.jpg",
+      "sha256": "9ae013d13f6c35382a2c06e9aefbb2f0a0d9cb38f973ae7beff5af44607c8bf4",
+      "bytes": 163742
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_02_002.jpg",
+      "sha256": "e8261233245e72f55a6fe242c42e89efa77b2508320c2d9cc02731cf9ed49066",
+      "bytes": 543152
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_03_001.jpg",
+      "sha256": "b48de18bc1ca9cdf16bb1247bcf2e7d6e51f537e3d32c78d82cdebba809f8afb",
+      "bytes": 264715
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_03_002.jpg",
+      "sha256": "35cd885c06d24a33fa25c07fe5c7f2272519b76a9ec9c8b215ccaa912bed0d4a",
+      "bytes": 361789
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_04_001.jpg",
+      "sha256": "27aba201ab278f307df3ee343479b4ac28c6f9e3f44077d0d26b126c0cf6b979",
+      "bytes": 445047
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_04_002.jpg",
+      "sha256": "8a033cfee2a0e97f2f024f5f50bb246d29276d119b2e86c21d48568750e74128",
+      "bytes": 620005
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_05_001.jpg",
+      "sha256": "4d09dbf659c2227dbc04cb7bbf9df3b4f4e3eb664a7625f5f71a831c74d3b1d5",
+      "bytes": 90512
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_05_002.jpg",
+      "sha256": "9cdf41271c8f9c04aa391dc223fe0702612c097b593d6af5bdd6da51da15cd7a",
+      "bytes": 305334
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_05_003.jpg",
+      "sha256": "635e447038f5a1df5d05996e1d820df103e5e6508ceb248ce334a5e615567a65",
+      "bytes": 222040
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_05_004.jpg",
+      "sha256": "653c8a771e654ac8e1c23e2388a31842dd8d85fd061ba5a354070b7ee20b039e",
+      "bytes": 249053
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_05_005.jpg",
+      "sha256": "2e6b1d4e8b620877a1508a6906792c0fcf6acea40bba34b25c2b7d1fac092938",
+      "bytes": 208788
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_06_001.jpg",
+      "sha256": "0cfeef71588a04c8c5bc510a244f0a101e1955fe08df10ee04c751ea55f4a48f",
+      "bytes": 329978
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_06_002.jpg",
+      "sha256": "33bd66ea47e3e280754dcccdc6ced226419c6054013fde36277f0af320bf3999",
+      "bytes": 724747
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_07_001.jpg",
+      "sha256": "c3e84b08628e370e4f962a1fc20ef333dfb6f82929ee57bbe83c5724590c0d55",
+      "bytes": 460057
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_07_002.jpg",
+      "sha256": "9e5ba56ff6b76412abee305d0fc25cc0acc6ce1e31d4458888bf072a0bc88392",
+      "bytes": 108483
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_07_003.jpg",
+      "sha256": "b4f4ebc5e7e664812856cb15085e925f7796846358eb633a3cec598429728ef2",
+      "bytes": 120356
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_07_004.jpg",
+      "sha256": "f072a760cf5a2e5a9c75b1ef78304af5a860b79e2ee6f5b067220ababecb1b50",
+      "bytes": 254811
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_08_001.jpg",
+      "sha256": "6f620da215c1373875ae668145f34e224673db257abfed8b909ee631e3281f0f",
+      "bytes": 152835
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_08_002.jpg",
+      "sha256": "fa9772b7d2cf5b166765970c7b243be79f13bbd5ff410428c55c8595270ecfdf",
+      "bytes": 148826
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_08_003.jpg",
+      "sha256": "f26103800acb964579d284e016904723b11626c3083e26c35ef60d0d3a1b628d",
+      "bytes": 140942
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_09_001.jpg",
+      "sha256": "dfac91d825da6e3465e4b8dceb807afd3d45e740ef8d5890a03be1c0f24c921b",
+      "bytes": 155264
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_09_002.jpg",
+      "sha256": "cb59ffa87f58e1ac2ff356b20873b23414c3a7264dfc03de505c47f4d2364918",
+      "bytes": 282064
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_09_003.jpg",
+      "sha256": "b210c035a5a57799a14eb821ec5ba5dff674a5d92703273bd49c664aeb5b6d61",
+      "bytes": 269122
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_10_001.jpg",
+      "sha256": "8e537419f368ffe17afbf3fc2b4adfd6f8be61e64dd2b1e5d00c47e3941accfa",
+      "bytes": 113562
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_10_002.jpg",
+      "sha256": "0f2fcfa921eedfee6410a62c530ada51fb409bf51e7bf17c00e2a8e9dd72cf51",
+      "bytes": 188781
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_10_003.jpg",
+      "sha256": "d4a5e5f270770ccff79d388c606a304b32d318b6b78d2d07e017a77e57a2f282",
+      "bytes": 166461
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_11_001.jpg",
+      "sha256": "00c1b79c59b636b5b7a85a974046e47ed9cafe66294eb51aa6d7e52a7bd7c75c",
+      "bytes": 75506
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_11_002.jpg",
+      "sha256": "f4f623b0f20dbdf118030aeaebf60224de7cacdd8d6b067f565ff0925faf78bb",
+      "bytes": 343945
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_11_003.jpg",
+      "sha256": "f25f51c3a7ee94aa7bb81494f7572a17ecf13623d1e5ad689e41e2db61786694",
+      "bytes": 96515
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_11_004.jpg",
+      "sha256": "c0d46d8b95f09fa355e0ff39b60337feacdd523f33cb40f54dd5775a522d6d3a",
+      "bytes": 243077
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_12_001.jpg",
+      "sha256": "d47656fe7f32d305b4c8a2358ead29f9a09e5358cb73f6c2a12e4f2cbc9196df",
+      "bytes": 168825
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_12_002.jpg",
+      "sha256": "2bb8cb3e1d80bbb80842609fe03d884ad702dcdbf9cac29fbf37d8a4359ac078",
+      "bytes": 170585
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_12_003.jpg",
+      "sha256": "6e2d96401e98f0df64a553be26d5d10f2e2eb168e89ff6cd7ac24b2f79cbe9c3",
+      "bytes": 99072
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_12_004.jpg",
+      "sha256": "08c40901369b905a049b346a51e4071739a71c6e2acbf820e1345aba6891ae5d",
+      "bytes": 188582
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_13_001.jpg",
+      "sha256": "e10b8a1afac6528116ed9546aa960a348a94d250f92b4331b58f60e26df0d6b0",
+      "bytes": 194661
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_13_002.jpg",
+      "sha256": "cff6e5650d3eb90a64dd3efd667971037e448528c4c00dcbfa1956a44ec21d15",
+      "bytes": 130041
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_13_003.jpg",
+      "sha256": "911a05f0fb89959f641ae72155e3e798d9524fd6c1b1d1ca4c6f067e5b1c6fd8",
+      "bytes": 405725
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_14_001.jpg",
+      "sha256": "f49d1b4aa68f3c0cf7fc448fe2e909e8881fd08b4c029a977eef4c392b116b3c",
+      "bytes": 131227
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_14_002.jpg",
+      "sha256": "7316d6d140b0b4819f61c4b63cca5e340c5f5e12e9567869f6b6275ba11d58f6",
+      "bytes": 418132
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_14_003.jpg",
+      "sha256": "8bbef5fe0a66940a9992597b21ff310dd691f938c3ea67181c9e169ebaa92c1d",
+      "bytes": 276021
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_15_001.jpg",
+      "sha256": "f0be505684c5741f817aa881aa5a631cdbdc2abc9e9b468dded85dbb370c7245",
+      "bytes": 41979
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_15_002.jpg",
+      "sha256": "7c0f46e6f9f507cd01fd597a25e60666ce8f4378804c171e37fbf6957a7b78d6",
+      "bytes": 157232
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_15_003.jpg",
+      "sha256": "65ba4566dc0f724ce9af8c61934599910ad107cd235724afd1e2b985bcbb19d5",
+      "bytes": 168361
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_15_004.jpg",
+      "sha256": "9932c14c65a2a93618c858f03d92157752b1a0bd9bb53c95a15e3de6a9f2d18a",
+      "bytes": 215849
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_16_001.jpg",
+      "sha256": "3c5fa93c3b4674106fadfef8efa0d5d841b1753c5e8b1efed281ec1b7eb72ac6",
+      "bytes": 463010
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_16_002.jpg",
+      "sha256": "de2dc47ec0b63054b80422a2d17daee6911c8852629feaacb28a463221b8c03a",
+      "bytes": 189202
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_16_003.jpg",
+      "sha256": "027eed11d78ace0bc3e82eff000c208b9ccd238dda29004bbe086fa0323cc22c",
+      "bytes": 194220
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_17_001.jpg",
+      "sha256": "2f27f948a2dee3459c4d85890837c681763e6bc7ed3dda941dc8d898bfdb5f12",
+      "bytes": 532153
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_17_002.jpg",
+      "sha256": "8fec7a01e3e1def18dcefd3ae0a1327e6e2bd1471c8c786a205cd45382ac3513",
+      "bytes": 201983
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_18_001.jpg",
+      "sha256": "68abc6babddc9f5e25184a75ff886dfc40543c97941de928127ff61de85cecfb",
+      "bytes": 203039
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_18_002.jpg",
+      "sha256": "9094ae2a04823f5a9b49a8dc7258af413b70069cdfab1bca62184e1a81afa025",
+      "bytes": 152747
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_18_003.jpg",
+      "sha256": "1f37da6e4f81abb805bf61049452491a62665983e315b311c385fc1c5e8e6407",
+      "bytes": 351202
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_19_001.jpg",
+      "sha256": "34e7e9cd368de58aad96c5025bb34fffa920ae316068633fd3508eb41addf132",
+      "bytes": 112143
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_19_002.jpg",
+      "sha256": "7c24d5ec5b63c11745f7fd6846e32f1c2113412d0d451f419a479fec9e0a66ce",
+      "bytes": 489992
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_19_003.jpg",
+      "sha256": "b9e7b1bb661c943cc841b2934301dd0cc07a6a962cc711a64e055f7394d55888",
+      "bytes": 148361
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_20_001.jpg",
+      "sha256": "e7a5a8eb02cc7270a6076696672ede2190243ef7f6a26863d91fe8121332b1dc",
+      "bytes": 277766
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_20_002.jpg",
+      "sha256": "501f28018b23572015b419f3d860c42de5c435476f3f1cab20eaba39d3978a12",
+      "bytes": 364766
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_20_003.jpg",
+      "sha256": "9072a4086853efc1ca1ede11b6fd3a0acf9c19108cdde4b2c6db1679f3c93b49",
+      "bytes": 180328
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_21_001.jpg",
+      "sha256": "1c8e0b897dd92fd5e84f268f0ab08d42e3c19e8f2ca04f85c824d8fdc12d66b2",
+      "bytes": 221202
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_21_002.jpg",
+      "sha256": "686a23ae8c19acee8656fe1a15d21144ee25cf8723e47d1f35952ec63afe4add",
+      "bytes": 260193
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_21_003.jpg",
+      "sha256": "9a0a8c0887dad4ea6fae74ad6b9fe0c33ee2a03d1d7a977d193aa5dc2238146e",
+      "bytes": 291622
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_22_001.jpg",
+      "sha256": "08eff44f801d4ee78190ac6b8a2590d4773b26b064bd2b5a7dfa34a0232e9f4b",
+      "bytes": 536810
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_22_002.jpg",
+      "sha256": "072b068c60a6f0acd73477f36110256594755fef7f302e14b1649e9e33d3373e",
+      "bytes": 431911
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_22_003.jpg",
+      "sha256": "f4ef8ab903fa975d4108d1fe31fac27f4b9535d4d62851093fc42273f899f296",
+      "bytes": 315297
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_23_001.jpg",
+      "sha256": "a44e34f2cc13035632075b461da61e97a49a4c665fce848cbda2f20840f1e7eb",
+      "bytes": 245806
+    },
+    {
+      "file": "comic-workspace\\episodes\\ep-025\\source\\monochrome-panels\\第25話_23_002.jpg",
+      "sha256": "915729b3ac53d16a2a1e5ac4f1aa107bd1ccbfaed7893b4399b029d525e97559",
+      "bytes": 208605
+    }
+  ]
+}
