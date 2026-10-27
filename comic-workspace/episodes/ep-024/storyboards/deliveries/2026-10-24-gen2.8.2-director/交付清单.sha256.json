@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-24",
+  "maintained_ledger": "D:\\Codex\\Projects\\New project\\ep024-director-20261024\\source-ledger-v3.json",
+  "delivery": "D:\\Codex\\Projects\\New project\\write-comic-video-storyboards\\comic-workspace\\episodes\\ep-024\\storyboards\\deliveries\\2026-10-24-gen2.8.2-director",
+  "files": [
+    {
+      "file": "source-ledger-v3_交付快照.json",
+      "sha256": "5acc10d577b1405fc880e6486d9eff4a5c2291b26b5e5ea7f22b88d3cfaef02c",
+      "bytes": 341630
+    },
+    {
+      "file": "历史底稿完整性.json",
+      "sha256": "6eaca8b4d2756f0a51a2308fcab50428389b468958835593a75dfd197571094b",
+      "bytes": 1048
+    },
+    {
+      "file": "和谐版_派生校验台账.json",
+      "sha256": "4e5b394b9585bbce335fb678ecfb799d48ab5fb922ce6b270106fa42ef5bafce",
+      "bytes": 321446
+    },
+    {
+      "file": "所用skill版本指纹.json",
+      "sha256": "f0ee67d89c215aea70873bf78e3f0e680988d82678cd602f29a1fd0569878cf0",
+      "bytes": 1621
+    },
+    {
+      "file": "整场空间与光源规划_合稿前候选.md",
+      "sha256": "62fc8a81ed02580fb300626e09774d9d5625bf09c881b5b1b5404ed57cf23325",
+      "bytes": 6754
+    },
+    {
+      "file": "来源与本轮范围清单.json",
+      "sha256": "575ec4ad90676b39dcc62f5a5e844c919006a3baeb1802ce158435fc082a498f",
+      "bytes": 37432
+    },
+    {
+      "file": "第24话_第三轮导演稿_剧情保留非露骨版.md",
+      "sha256": "4e6da2a5e1bfb74857701641e81176c31d9e9772ece053d23119e3e6e663a319",
+      "bytes": 61073
+    },
+    {
+      "file": "第24话_第三轮导演稿_和谐改编版.md",
+      "sha256": "7f4d5e738f96062481bfcafd73759d280a298b94258edea127988dad34be5e57",
+      "bytes": 57436
+    },
+    {
+      "file": "第三轮交付与校核说明.md",
+      "sha256": "fa13b1c8c5ed979e95d8d7499fa8ccfd93ceb43d50e2efcb037fec9e1bab2735",
+      "bytes": 8184
+    },
+    {
+      "file": "舞蹈待制来源与原句.json",
+      "sha256": "bf57ab5b83890c552bde06907015845cb3f8b03df78e33d330f0ce496826e6fa",
+      "bytes": 5333
+    },
+    {
+      "file": "验证日志_剧情保留非露骨版.txt",
+      "sha256": "f4e2dcff3714d29abda0f2e6f5b9f4357bcab54c6f17a00ea880e11a0f1837ab",
+      "bytes": 11978
+    },
+    {
+      "file": "验证日志_和谐改编版.txt",
+      "sha256": "d9090850234998e90cb7628032cb7a6bf01e986fa83cb487fb67e241410d2091",
+      "bytes": 11264
+    },
+    {
+      "file": "验证结果.json",
+      "sha256": "8d580f420e931b6f0ec4189c4eea5c5492c8f1bb13aa766ade9d9f45a7ba5055",
+      "bytes": 202
+    }
+  ]
+}

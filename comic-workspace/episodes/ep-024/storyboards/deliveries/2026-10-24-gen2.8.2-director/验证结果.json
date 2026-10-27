@@ -1,0 +1,12 @@
+{
+  "剧情保留非露骨版": {
+    "exit_code": 0,
+    "errors": [],
+    "warning_count": 48
+  },
+  "和谐改编版": {
+    "exit_code": 0,
+    "errors": [],
+    "warning_count": 46
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "仅舞蹈画面另制，本清单保存原格观察与旧译供后续使用，不新增舞蹈编排。",
+  "insertions": [
+    {
+      "after": "第24話_15_001.jpg",
+      "before": "第24話_16_001.jpg",
+      "images": [
+        "第24話_15_002.jpg",
+        "第24話_15_003.jpg",
+        "第24話_15_004.jpg",
+        "第24話_15_005.jpg"
+      ]
+    },
+    {
+      "after": "第24話_16_001.jpg",
+      "before": "第24話_17_002.jpg",
+      "images": [
+        "第24話_16_002.jpg",
+        "第24話_16_003.jpg",
+        "第24話_17_001.jpg"
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "image": "第24話_15_002.jpg",
+      "composition_lock": "正对舞台远景；画面下方观众剪影，中央远处单人表演，木墙与横梁在后。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "观众剪影",
+          "舞台"
+        ],
+        "actions": [
+          "观众举臂",
+          "青在台上站立"
+        ],
+        "relations": [
+          "观众背对镜头面向青"
+        ]
+      },
+      "speech": [
+        {
+          "id": "b1",
+          "speaker": "司仪",
+          "kind": "dialogue",
+          "source_text": "她已经在跳第三首了！",
+          "script_text": "もう三曲目に入っています！",
+          "seconds": 2.45,
+          "status": "已在本稿15_001画外保留，后续不要重复发声"
+        }
+      ]
+    },
+    {
+      "image": "第24話_15_003.jpg",
+      "composition_lock": "轻仰角全身近景；青居画面中央，一条腿屈起横在画面下方，手掌在左侧脸旁，发束向两侧展开；背景省略。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "一腿屈起",
+          "手掌张开靠近脸侧",
+          "闭眼张口微笑"
+        ],
+        "relations": [
+          "身体由另一腿承重"
+        ]
+      },
+      "speech": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "NA NA NA NA NA!",
+          "script_text": "ナ、ナ、ナナナ！",
+          "seconds": 2,
+          "status": "随舞蹈另制，不计入本次时长"
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "NA NA NA NA NA!",
+          "script_text": "ナ、ナ、ナナナ！",
+          "seconds": 2,
+          "status": "随舞蹈另制，不计入本次时长"
+        }
+      ]
+    },
+    {
+      "image": "第24話_15_004.jpg",
+      "composition_lock": "平视侧面中近景；青在画面中左，面朝右，一条前臂伸向右侧，发束向左铺开。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "前臂向右摆出",
+          "闭眼微笑"
+        ],
+        "relations": [
+          "发束拖在头后左侧"
+        ]
+      },
+      "speech": []
+    },
+    {
+      "image": "第24話_15_005.jpg",
+      "composition_lock": "轻仰角正面中景；青身体偏画面右，前伸手位于左侧，一手在右腰旁，头发向右铺开。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "前伸手腕下垂",
+          "闭眼咧嘴笑"
+        ],
+        "relations": [
+          "另一手靠腰侧"
+        ]
+      },
+      "speech": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "HEE~",
+          "script_text": "へへっ。",
+          "seconds": 1,
+          "status": "随舞蹈另制，不计入本次时长"
+        }
+      ]
+    },
+    {
+      "image": "第24話_16_002.jpg",
+      "composition_lock": "正面腰部近景；上衣门襟在画面中央，双手各置左右腰侧，裙摆与袜上缘在下方，头脚裁外。",
+      "source_facts": {
+        "entities": [
+          "青的腰部与双手"
+        ],
+        "actions": [
+          "双手置腰",
+          "衣摆左右偏移"
+        ],
+        "relations": [
+          "两手均贴近各自腰侧"
+        ]
+      },
+      "speech": []
+    },
+    {
+      "image": "第24話_16_003.jpg",
+      "composition_lock": "平视背面中景；青在画面中央偏下，头部向左偏，卷发长束扫向右侧。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "背身转动",
+          "长发向右摆出"
+        ],
+        "relations": [
+          "双臂在身体两侧外伸"
+        ]
+      },
+      "speech": []
+    },
+    {
+      "image": "第24話_17_001.jpg",
+      "composition_lock": "观众后方平视全景；青全身居画面中央远处，双脚分立，一手在嘴前一手在腰；举臂观众遮前景两侧。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "观众",
+          "舞台"
+        ],
+        "actions": [
+          "青一手抬到嘴前",
+          "观众举臂"
+        ],
+        "relations": [
+          "青在舞台上面对观众"
+        ]
+      },
+      "speech": []
+    }
+  ]
+}

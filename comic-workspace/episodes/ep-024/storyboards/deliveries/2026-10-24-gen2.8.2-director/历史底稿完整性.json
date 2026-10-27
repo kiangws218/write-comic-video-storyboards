@@ -1,0 +1,32 @@
+[
+  {
+    "file": "authoring.json",
+    "sha256": "9ee6ef85cc7df6d7dca443ce04e5c233de7cf99212e161234601f0c6430ed97c",
+    "matches_historical_delivery": true
+  },
+  {
+    "file": "delivery-summary.json",
+    "sha256": "2928024cc3f9b7d061e23e5f701d6279580a50bcd3302a420467c4454c4a2130",
+    "matches_historical_delivery": true
+  },
+  {
+    "file": "source-ledger-v3.json",
+    "sha256": "a1ac997e636dcebe35436091be360222d9ae436e1d41014e3addbfc43d5e2ea4",
+    "matches_historical_delivery": true
+  },
+  {
+    "file": "source-manifest.json",
+    "sha256": "ab5ae36a5539bbd4bead07aee4412a019c45d1f52a89834bc628eb75cb6cf2b7",
+    "matches_historical_delivery": true
+  },
+  {
+    "file": "交付与校核说明.md",
+    "sha256": "ee8aa9493e0e3a1f3da5d05ac3ba9c3a13e7c06094f8dc283c1099df04c75303",
+    "matches_historical_delivery": true
+  },
+  {
+    "file": "第24话_分镜脚本_Gen2.8.1.md",
+    "sha256": "492c9d581fb8005698995fcd409c62ee3077c5f93198c5a38ed60832e3f55b8b",
+    "matches_historical_delivery": true
+  }
+]

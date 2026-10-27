@@ -1,0 +1,47 @@
+{
+  "version": "2.8.2",
+  "path": "C:\\Users\\86135\\.codex\\skills\\write-comic-video-storyboards-gen2-8-2",
+  "date": "2026-10-24",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "33ddb542a536c3ea0af8fa3aebb22c594da5501aedd38054b4392229ea97e4da"
+    },
+    {
+      "file": "references/core-authoring.md",
+      "sha256": "d0c7cc16a2fb846245f6ea10c925ecb3d17d18bbb604baec92f089c2d3f3d753"
+    },
+    {
+      "file": "references/director-expansion.md",
+      "sha256": "277bc0cbfc50cea043eb3316eb9c232db7b1e5f99f21f18e4c106b9fd6ed5468"
+    },
+    {
+      "file": "references/dialogue-performance.md",
+      "sha256": "764f66822341cdf9b44c27570182ad8f006de387f1e3266e4c35b17db23f449d"
+    },
+    {
+      "file": "references/2d-animation-execution.md",
+      "sha256": "010b08e7799e24e88a1b2d71abae69b9623845e39d7fa6c81be7fd63fbb06af6"
+    },
+    {
+      "file": "references/cinematic-rendering.md",
+      "sha256": "c1b8d139dd7ea0f37701c9df83370160887565c9fb3956d4c22599ae55db5066"
+    },
+    {
+      "file": "references/background-design.md",
+      "sha256": "ea47a1715de3e7ad57f9cf48a01ec56e3618243f3fc75056e9bf69ef32c4789d"
+    },
+    {
+      "file": "references/source-risk.md",
+      "sha256": "63ae7d98417705d89a6b1d608ba80493d929f1b711e5bd8d1af196c1c8ad97e5"
+    },
+    {
+      "file": "references/ledger-v282.md",
+      "sha256": "304d68bfafcf3385f0efd8cb75b40d52fbaec41db0f43c4cb466fb7e0b828b34"
+    },
+    {
+      "file": "references/character-registry.md",
+      "sha256": "eb174508c073c51f0595b33aab4993628861860563d76fc66a7bb293b9bc75f9"
+    }
+  ]
+}
