@@ -16,7 +16,7 @@ Decide the shot's visual purpose before selecting movement. Compare useful movin
 
 Choose mode, purpose, opening, coherent path and landing before rendering. The actual camera field is the maintained camera plan; use a brief camera_decision only for a complex trajectory or unresolved alternative, without copying the formal prose into another form. Source-node framing preserves its useful visual intent with recorded panel-size adaptation; it is not a comic first-frame asset. Supplied full character references support all angles. Design unseen surfaces and coherent space as production choices; missing source evidence only warns. Preserve readable action, contact and next-node arrival. A continuous arc/rise is one trajectory, not a cut at every angle. High-speed follow specifies relative camera/actor speed, depth layers, occluders, target distance and the outgoing state.
 
-In a camera-only revision, edit `【镜头设计】` and its existing camera metadata/excerpts. Preserve unchanged performance, dialogue, timing, sound and the world-space light source; re-express screen-relative light direction when the changed view requires it, following core. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing prompts a purpose check, not an automatic failure; intentional stillness remains valid. A moving shot needs a coherent designed path and useful landing; lack of a drawn path alone does not reject it.
+In a camera-only revision, edit `【镜头设计】` and its existing camera metadata/excerpts. Recheck affected `【可见背景】` under core’s current-framing boundary whenever position, scale, framing, pitch or trajectory changes; retain old wording only if it still fits, rather than inheriting it unchecked or widening the view to accommodate it. Preserve unchanged performance, dialogue, timing, sound and the world-space light source; re-express screen-relative light direction when the changed view requires it, following core. Record the camera landing separately from the performer's unchanged endpoint. At sequence review, repeated fixed framing or identical scenery lists across materially different views prompt a purpose/framing check, not an automatic failure; intentional stillness remains valid. A moving shot needs a coherent designed path and useful landing; lack of a drawn path alone does not reject it.
 
 ### 多人同格的连续运镜
 
@@ -70,9 +70,7 @@ Budget the actual output duration of the slowed action in the existing timing in
 
 ## Lighting and materials
 
-Derive light from the environment and people positions. State source, direction, occlusion, main/fill or reflection, shadow boundary/depth, motivated rim/highlight, and local material response. Light may evolve with supported movement but cannot erase a face, hand, contact, or anchor.
-
-Connect light to visible material: hair translucency; skin/eye catchlight; cloth folds/compression; diffuse wood grain; metal edge reflection; glass reflection/refraction; wet reflection; crystal transmission; steam/haze scattering. Direction and decay follow the source.
+【光影布光】按core的简写要求执行，例如：“画面左上方窗外照入柔和蓝光；画面右侧桌灯发出较亮的暖黄光。”阴影、轮廓光、补光和材质反射只在影响叙事、关键接触辨认或用户指定效果时补充，不逐镜套用完整灯光与材质清单。布光保持关键表情、动作和接触可读。
 
 Atmosphere is conditional:
 
@@ -92,4 +90,4 @@ An effect has onset, peak, interaction, and decay beside its visible cause. Alig
 
 Ambiguous ink flecks or graphic impact marks are not automatically physical blood, debris or particles. Resolve their role from inspected evidence; a graphic impact treatment needs no invented material source. Effects remain subordinate to the admitted event and its readable response.
 
-Confirm source composition/facts remain recognizable; camera has one reason; focus/depth agree; light/atmosphere have a source; material response is local/directional; effects peak and decay; new shots meet core’s one-significant-difference rule against both actual final neighbors; and polish has not replaced acting, dialogue readability, or the endpoint.
+Confirm source composition/facts remain recognizable; camera has one reason; focus/depth agree; light/atmosphere have a source; any specifically designed material response remains coherent; effects peak and decay; new shots meet core’s one-significant-difference rule against both actual final neighbors; and polish has not replaced acting, dialogue readability, or the endpoint.

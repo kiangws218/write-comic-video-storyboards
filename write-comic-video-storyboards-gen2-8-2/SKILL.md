@@ -23,7 +23,7 @@ metadata:
 - 制作执行提示或处理生成失败时读取 [seedance-execution-and-review.md](references/seedance-execution-and-review.md)。
 - 填写或修改台账时按需查 [ledger-v282.md](references/ledger-v282.md)。维护、兼容审计才读 [gen2-5-compatibility.md](references/gen2-5-compatibility.md) 与 [regression-cases.md](references/regression-cases.md)。
 
-各适用模块首次完整读取；明确分出的战斗等条件章节按需读取。此后只查受影响规则，不逐格重载。默认使用一个主对话，不创建写作／审查子对话。沿用一份 V3 台账，不建立分轮事实副本。
+各适用模块首次完整读取；明确分出的战斗等条件章节按需读取。此后只查受影响规则，不逐格重载。默认由一个主对话负责创作与合稿；第三轮复杂场景按 [director-expansion.md](references/director-expansion.md) 启用一个背景与布光子agent，不另开需要用户维护的写作／审查对话。沿用一份 V3 台账，不建立分轮事实副本。
 
 正常新作默认使用 [ledger-v282.md](references/ledger-v282.md) 的 compact 写作格式：来源／全文、六字段、表演卡各写一份；状态只写变化，切点差异每个连接只写一次。渲染和校验自动展开，不要求模型读回展开后的全文。脚本直接运行，只有维护或故障定位才读实现；审查只报告结论、问题与受影响范围，不逐镜复述正文。节省辅助记录，不缩减读图、原镜写作或导演创作。
 
