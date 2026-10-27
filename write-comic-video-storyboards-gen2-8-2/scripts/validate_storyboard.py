@@ -182,10 +182,10 @@ BACKGROUND_OCCLUSION_RE = re.compile(
     r"(?:完全|全部)?遮(?:住|挡)|背景(?:完全|全部)?为(?:满幅)?主体所遮(?:住|挡)"
 )
 SELF_CONTAINED_META_RE = re.compile(
-    r"保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
+    r"(?P<cross>保持(?:原有|原来|上一|前一)|只放大(?:上一|前一)|"
     r"上一(?:格|镜|镜头|片段)|前一(?:格|镜|镜头|片段)|"
-    r"沿用(?:上一|前一)|承接(?:上一|前一)|同一场面(?:继续|后续)|"
-    r"不新增|不增加|不出现|不使用|不改变|不补画|不另加|不要|无需|避免"
+    r"沿用(?:上一|前一)|承接(?:上一|前一)|同一场面(?:继续|后续))|"
+    r"(?P<negative>不新增|不增加|不出现|不使用|不改变|不补画|不另加|不要|无需|避免)"
 )
 META_RE = re.compile(
     r"保持原格(?:姿势|构图|表情)?|与原格一致|原格中|原格般|原格原则|"
@@ -287,6 +287,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-seconds", type=int, default=15)
     parser.add_argument("--target-seconds", type=int, default=15, help="Planning target for adjacent-clip grouping review, not a minimum duration.")
     parser.add_argument("--image-dir", type=Path)
+    parser.add_argument("--warnings", choices=("summary", "full"), default="summary",
+                        help="Group repeated semantic warnings by rule; full retains every message.")
     parser.add_argument(
         "--source-ledger",
         type=Path,
@@ -1935,6 +1937,28 @@ def manual_overflow_segments(ledger_path: Path | None, max_seconds: int) -> tupl
     return allowed, errors
 
 
+def summarize_warnings(messages: list[str]) -> list[str]:
+    """Presentation only: preserve raw findings and all affected shot references."""
+    groups = {}
+    target_re = re.compile(r"片段(\d+)(?:/分镜|的分镜)(\d+)")
+    for message in messages:
+        key = target_re.sub("{镜头}", message)
+        group = groups.setdefault(key, {"message": message, "count": 0, "targets": []})
+        group["count"] += 1
+        for match in target_re.finditer(message):
+            target = f"片段{match[1]}/分镜{match[2]}"
+            if target not in group["targets"]:
+                group["targets"].append(target)
+    result = []
+    for group in groups.values():
+        if group["count"] == 1:
+            result.append(group["message"])
+        else:
+            targets = "、".join(group["targets"])
+            result.append(f"{group['message']}（同类{group['count']}条；涉及：{targets or '全稿'}）")
+    return result
+
+
 def main() -> int:
     args = parse_args()
     text = args.storyboard.read_text(encoding="utf-8")
@@ -2142,12 +2166,17 @@ def main() -> int:
                 )
             for field_name in ("可见背景", "镜头设计", "可见动作", "光影布光", "声音设计"):
                 field_text = fields.get(field_name, "")
-                meta_match = SELF_CONTAINED_META_RE.search(field_text)
-                if meta_match:
-                    errors.append(
-                        f"{shot_label}的{field_name}含不可执行元措辞：{meta_match.group(0)}；"
-                        "请改写为当前镜头自足的正向姿态、对象、背景、光线或动作。"
-                    )
+                for meta_match in SELF_CONTAINED_META_RE.finditer(field_text):
+                    # A cross-shot dependency is objectively incomplete. Negation alone
+                    # can describe a visible stable state and needs semantic judgment.
+                    if director_mode and meta_match.lastgroup == "negative":
+                        warnings.append(
+                            f"{shot_label}的{field_name}需执行措辞语义复查：{meta_match.group(0)}；"
+                            "区分可见稳定状态与负面控制，优先写当前正向执行内容。")
+                    else:
+                        errors.append(
+                            f"{shot_label}的{field_name}含不可执行元措辞：{meta_match.group(0)}；"
+                            "请改写为当前镜头自足的正向姿态、对象、背景、光线或动作。")
             hidden_cut = HIDDEN_CUT_RE.search(block)
             if hidden_cut:
                 errors.append(
@@ -2196,10 +2225,14 @@ def main() -> int:
                     f"{label}{number}的{shot.group(0)}仍使用景别/构图/运镜/画面内容独立字段。"
                 )
             if not has_descriptive_background(fields.get("可见背景", "")):
-                errors.append(
-                    f"{shot_label}缺少可见背景；请写实景、图形底场或环境表面；"
-                    "背景确被满幅主体遮住时陈述该可见性状态。"
-                )
+                if director_mode and fields.get("可见背景", "").strip():
+                    warnings.append(
+                        f"{shot_label}背景描述需语义复查：词表未识别环境，不等于字段缺失；"
+                        "核对实际实景、图形底场或真实遮挡，不为命中词表添加景物。")
+                else:
+                    errors.append(
+                        f"{shot_label}缺少可见背景；请写实景、图形底场或环境表面；"
+                        "背景确被满幅主体遮住时陈述该可见性状态。")
 
         for match in META_RE.finditer(chunk):
             errors.append(
@@ -2266,7 +2299,7 @@ def main() -> int:
     if safe_chunks:
         print(f"平台安全替换片段数：{len(safe_chunks)}")
     print(f"参考图数：{len(references)}")
-    for message in warnings:
+    for message in (warnings if args.warnings == "full" else summarize_warnings(warnings)):
         print(f"警告：{message}")
     for message in errors:
         print(f"错误：{message}")

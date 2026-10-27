@@ -75,39 +75,81 @@ def action_timeline_errors(text, duration, label="可见动作"):
 
 
 def route_digest(route):
-    value = {key: route.get(key) for key in ("id", "source_images", "path")}
+    return proposal_digest(route, "path")
+
+
+def scene_digest(scene):
+    return proposal_digest(scene, "baseline")
+
+
+def proposal_digest(proposal, text_key):
+    value = {key: proposal.get(key) for key in ("id", "source_images", text_key)}
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
                                     separators=(",", ":")).encode("utf-8")).hexdigest()
 
 
 def check_routes(ledger):
     """Check recorded human confirmation, never create one or infer it from time."""
-    required = ledger.get("requires_route_confirmation", False)
+    check_proposals(ledger, "action_routes", "requires_route_confirmation", "path", "动作路径")
+
+
+def check_proposals(ledger, collection, required_key, text_key, label):
+    """Shared confirmation mechanics; the caller still supplies real human evidence."""
+    required = ledger.get(required_key, False)
     if not isinstance(required, bool):
-        raise ValueError("requires_route_confirmation须为布尔值")
-    routes = ledger.get("action_routes", [])
-    if not isinstance(routes, list) or (required and not routes):
-        raise ValueError("关键动作路径尚未提交用户确认：action_routes不能为空")
+        raise ValueError(f"{required_key}须为布尔值")
+    proposals = ledger.get(collection, [])
+    if not isinstance(proposals, list) or (required and not proposals):
+        raise ValueError(f"{label}尚未提交用户确认：{collection}不能为空")
     images = [p.get("image") for p in ledger.get("panels", []) if isinstance(p, dict)]
     ids = set()
-    for route in routes:
-        if not isinstance(route, dict):
-            raise ValueError("action_routes须为对象数组")
-        identity, refs, path = route.get("id"), route.get("source_images"), route.get("path")
+    for proposal in proposals:
+        if not isinstance(proposal, dict):
+            raise ValueError(f"{collection}须为对象数组")
+        identity, refs, text = proposal.get("id"), proposal.get("source_images"), proposal.get(text_key)
         if not isinstance(identity, str) or not identity.strip() or identity in ids:
-            raise ValueError("动作路径id缺失或重复")
+            raise ValueError(f"{label}id缺失或重复")
         ids.add(identity)
         if (not isinstance(refs, list) or not refs or any(not isinstance(v, str) or v not in images for v in refs)
                 or len(set(refs)) != len(refs) or refs != sorted(refs, key=images.index)):
-            raise ValueError(f"{identity}路径须按顺序关联真实原格")
-        if not isinstance(path, str) or not path.strip():
-            raise ValueError(f"{identity}缺少可读的动作路径")
-        confirmation = route.get("user_confirmation")
+            raise ValueError(f"{identity}{label}须按顺序关联真实原格")
+        if not isinstance(text, str) or not text.strip():
+            raise ValueError(f"{identity}缺少可读的{label}")
+        confirmation = proposal.get("user_confirmation")
         if (not isinstance(confirmation, dict) or not isinstance(confirmation.get("quote"), str)
                 or not confirmation["quote"].strip()):
-            raise ValueError(f"{identity}动作路径尚未获用户明确确认，不能进入第二遍写作")
-        if confirmation.get("sha256") != route_digest(route):
-            raise ValueError(f"{identity}路径已改变或确认指纹缺失，须重新请用户确认")
+            raise ValueError(f"{identity}{label}尚未获用户明确确认，不能进入第二遍写作")
+        if confirmation.get("sha256") != proposal_digest(proposal, text_key):
+            raise ValueError(f"{identity}{label}已改变或确认指纹缺失，须重新请用户确认")
+
+
+def check_scene_baselines(ledger):
+    check_proposals(ledger, "scene_baselines", "requires_scene_confirmation", "baseline", "场景基准")
+    if not ledger.get("scene_baselines"):
+        return  # Old ledgers stay readable; this does not attest historical approval.
+    ids = {scene["id"] for scene in ledger["scene_baselines"]}
+    compact = ledger.get("authoring_format") == FORMAT
+    initial = ledger.get("initial_state", {}) if compact else {}
+    shots = ledger.get("shots", [])
+    if not isinstance(initial, dict) or not isinstance(shots, list) or any(not isinstance(s, dict) for s in shots):
+        raise ValueError("场景基准关联须有对象状态和镜头数组")
+    active = initial.get("场景基准")
+    for shot in shots:
+        keys = ("state_changes",) if compact else ("state_in", "state_out")
+        if any(not isinstance(shot.get(key, {}), dict) for key in keys):
+            raise ValueError("场景基准须关联对象状态")
+        if compact:
+            active = shot.get("state_changes", {}).get("场景基准", active)
+            values = [active]
+        else:
+            values = [shot.get(key, {}).get("场景基准") for key in ("state_in", "state_out")]
+        if any(not isinstance(value, str) or value not in ids for value in values):
+            raise ValueError(f"{shot.get('target', '未知镜头')}须通过现有状态关联已确认场景基准")
+
+
+def check_confirmations(ledger):
+    check_routes(ledger)
+    check_scene_baselines(ledger)
 
 
 def expand(ledger):
@@ -189,18 +231,21 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--expand", type=Path, help="Write a derived validator-compatible ledger; no approvals added")
     group.add_argument("--route-digest", help="Print fingerprint for the proposed route id, without approving")
+    group.add_argument("--scene-digest", help="Print fingerprint for the proposed scene id, without approving")
     args = parser.parse_args()
     try:
         ledger = json.loads(args.ledger.read_text(encoding="utf-8-sig"))
-        if args.route_digest:
-            matches = [r for r in ledger.get("action_routes", []) if isinstance(r, dict) and r.get("id") == args.route_digest]
+        if args.route_digest or args.scene_digest:
+            key, identity, digest = ("action_routes", args.route_digest, route_digest) if args.route_digest else (
+                "scene_baselines", args.scene_digest, scene_digest)
+            matches = [r for r in ledger.get(key, []) if isinstance(r, dict) and r.get("id") == identity]
             if len(matches) != 1:
-                raise ValueError("路径id不存在或重复")
-            print(route_digest(matches[0]))
+                raise ValueError("提案id不存在或重复")
+            print(digest(matches[0]))
         else:
             if args.expand.resolve() == args.ledger.resolve():
                 raise ValueError("不能覆盖唯一创作台账；展开文件是派生产物")
-            check_routes(ledger)
+            check_confirmations(ledger)
             result = expand(ledger)
             args.expand.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print(f"已展开{len(result.get('shots', []))}镜；未增加任何确认或审查通过状态。")

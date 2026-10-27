@@ -5,13 +5,13 @@ import json
 import re
 from pathlib import Path
 from validate_director import FIELDS, POLICY
-from authoring import check_routes, expand, duration_seconds, format_seconds, action_timeline_errors
+from authoring import check_confirmations, expand, duration_seconds, format_seconds, action_timeline_errors
 
 
 def render(ledger):
     if not isinstance(ledger, dict):
         raise ValueError("台账根须为对象")
-    check_routes(ledger)
+    check_confirmations(ledger)
     ledger = expand(ledger)
     if ledger.get("skill_version") != POLICY:
         raise ValueError("只渲染2.8.2；不能自动升级旧审查记录")
@@ -29,6 +29,10 @@ def render(ledger):
                 raise ValueError("未识别角色须有稳定ID、统一称呼和实际上色提示词")
             lines += [f"- {person['id']}｜{person['canonical_name']}：{person['color_prompt']}"]
         lines.append("")
+    clip_totals = {}
+    for shot in ledger.get("shots", []):
+        clip = str(shot.get("target", "")).split("/", 1)[0]
+        clip_totals[clip] = clip_totals.get(clip, 0) + duration_seconds(shot.get("duration"))
     last_clip, last_shot = 0, 0
     for shot in ledger.get("shots", []):
         m = re.fullmatch(r"片段(\d+)/分镜(\d+)", str(shot.get("target", "")))
@@ -42,7 +46,7 @@ def render(ledger):
         if clip != last_clip:
             if clip != last_clip + 1 or number != 1:
                 raise ValueError("片段须连续，分镜从1开始")
-            lines += [f"## 【片段{clip}】", ""]
+            lines += [f"## 【片段{clip}】（{format_seconds(clip_totals[f'片段{clip}'])}秒）", ""]
             last_clip, last_shot = clip, 0
         if number != last_shot + 1:
             raise ValueError("分镜须连续编号")

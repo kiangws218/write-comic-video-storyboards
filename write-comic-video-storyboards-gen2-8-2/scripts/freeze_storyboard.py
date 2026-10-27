@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 from validate_director import POLICY, make_source_lock, review_digest
-from authoring import check_routes
+from authoring import check_confirmations
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
         ledger = json.loads(args.ledger.read_text(encoding="utf-8-sig"))
         if not isinstance(ledger, dict) or ledger.get("version") != 3 or ledger.get("skill_version") != POLICY:
             raise ValueError("须为version:3、skill_version:2.8.2的真实台账；本工具不迁移或补审查状态")
-        check_routes(ledger)
+        check_confirmations(ledger)
         if args.review_digest:
             print(review_digest(ledger, args.review_digest.read_text(encoding="utf-8")))
             return 0

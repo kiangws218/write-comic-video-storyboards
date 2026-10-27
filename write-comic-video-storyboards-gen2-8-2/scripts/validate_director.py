@@ -92,6 +92,9 @@ def review_digest(ledger, text):
                ("skill_version", "source_lock", "shots", "performance", "character_registry")}}
     if "character_registry_source" in ledger:
         payload["character_registry_source"] = ledger["character_registry_source"]
+    for key in ("scene_baselines", "requires_scene_confirmation"):
+        if key in ledger:
+            payload[key] = ledger[key]
     return digest(payload)
 
 
@@ -125,12 +128,14 @@ def validate_director_ledger(ledger, text, image_dir, warnings, h):
         return ["2.8.2台账根必须是对象。"]
     try:
         tools = authoring_tools()
-        tools.check_routes(ledger)
+        tools.check_confirmations(ledger)
         ledger = tools.expand(ledger)
     except (ValueError, TypeError, KeyError) as exc:
         return [f"创作台账无效：{exc}"]
     if ledger.get("version") != 3:
         errors.append("2.8.2沿用version:3。")
+    if "scene_baselines" not in ledger:
+        warn("旧台账未登记场景基准确认；兼容读取不表示已有用户批准，新增或实质改变基准时须确认。")
     language = ledger.get("source_language")
     if not nonempty(language):
         errors.append("缺少source_language。")

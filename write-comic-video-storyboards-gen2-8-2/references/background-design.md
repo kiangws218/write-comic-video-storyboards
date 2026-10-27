@@ -12,6 +12,10 @@ Review at sequence level: where does the departure begin, what beat does it supp
 
 ## Palette is not the comic's screentone
 
+Before drafting, obtain the scene-baseline confirmation defined only in core. Inspect relevant available color references and neighboring established scenery, matching actual composition rather than filenames. Keep observed evidence, uncertain time and proposed lighting distinct in that same proposal; a white monochrome sky does not establish daytime.
+
+After confirmation, check each return to the physical scene against its time layer and lighting baseline. A night correction concerns exposure, sky/ground brightness, readable faces and local-light falloff, not a word replacement from daylight to moonlight. Keep differently timed memories, graphic fields and transient luminous effects distinct; do not add a visible moon or new lamps just to justify night readability.
+
 Use explicit palette direction and verified color references first. Monochrome input does not require monochrome animation. Explicit monochrome **output** does, until the user changes it. Do not borrow character colors from background design.
 
 For uncolored environment/treatment choices, set a coherent scene palette once, then repeat only what the independent shot needs. Specify useful gradient endpoints instead of `浅灰背景` or `暖色背景` alone. Physical green foliage or brick base color remains stable across happy/sad lines; environmental grading may vary without becoming an emotion-color switch.

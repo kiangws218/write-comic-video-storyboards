@@ -16,6 +16,16 @@
 
 根：version、skill_version、source_language、look（场景色彩基准）、panels、shots、performance、character_registry、source_lock、director_review。
 
+### 场景基准确认
+
+新作在同一台账写requires_scene_confirmation:true，以及scene_baselines:[{id,source_images,baseline,user_confirmation:{quote,sha256}}]。baseline是实际展示给用户的完整简明提案，包含场所、时间层次／时段、环境光色、主光源方位及依据／拟定部分；source_images只列按原序的代表原格，不复制全场台账。未确认时省略user_confirmation并继续准备资料，不能正式渲染、冻结或交付该场。
+
+用authoring.py ledger.json --scene-digest 场景ID打印提案指纹；用户明确确认后，原样记录quote和对应指纹。部分指示只覆盖其实际内容，不由工具自动批准其余方案。baseline或代表原格改变会使原确认失效；这些原格固定提案适用范围，后补同一方案的参考记在既有background_decision，不改已确认提案。仅增删对白镜头、改镜号、细化已确认范围内表演不改变提案。场景方案不进来源锁，存在时绑定最终审查指纹。
+
+compact用initial_state["场景基准"]写初始ID，仅场景切换时在state_changes["场景基准"]改ID；完整格式用现有state_in／state_out同名键。回想按其基准切换，返回恢复当前ID；同场图形底或临时亮光不自动另建场景。开启确认要求后，每镜必须关联已登记且已确认的基准；已登记的待确认项不能靠把要求改成false绕过。
+
+旧2.8.2未含这些字段仍可读取和局部维护，不伪造历史确认。涉及新场景或基准实质改变时启用上述流程；缺少新记录的旧稿仅提示未登记，不能声称已经确认。
+
 每个 panel：
 
 - image：唯一真实原格文件名，多格文件使用诚实裁图与原文件溯源。

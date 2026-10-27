@@ -8,7 +8,7 @@ import tempfile
 import unittest
 
 from authoring import (check_routes, expand, route_digest, duration_seconds,
-                       format_seconds, action_timeline_errors)
+                       format_seconds, action_timeline_errors, check_scene_baselines, scene_digest)
 from test_director_282 import fixture, finish, check
 from render_storyboard import render
 from validate_director import make_source_lock, review_digest
@@ -169,6 +169,179 @@ class AuthoringTests(unittest.TestCase):
             run = subprocess.run([sys.executable, "-X", "utf8", str(HERE / "freeze_storyboard.py"), str(path)], capture_output=True)
             self.assertNotEqual(run.returncode, 0)
             self.assertEqual(path.read_bytes(), before)
+
+
+def scenes(ledger, confirmed=False):
+    ledger["requires_scene_confirmation"] = True
+    ledger["scene_baselines"] = [
+        {"id": "current-night", "source_images": ["a.jpg"], "baseline":
+         "合成测试：当下林缘夜间，暗蓝环境，低亮夜空在人物后侧；图形白底和掌光另作局部处理。"},
+        {"id": "past-day", "source_images": ["b.jpg"], "baseline":
+         "合成测试：另一时空的白天回想，浅蓝天空、暖灰地面，开阔天空柔光。"}]
+    if confirmed:
+        for scene in ledger["scene_baselines"]:
+            scene["user_confirmation"] = {
+                "quote": "软件测试合成确认，不代表真实用户批准", "sha256": scene_digest(scene)}
+    if ledger.get("authoring_format"):
+        ledger["initial_state"]["场景基准"] = "current-night"
+        ledger["shots"][2]["state_changes"]["场景基准"] = "past-day"
+        ledger["shots"][3]["state_changes"]["场景基准"] = "current-night"
+    else:
+        active = "current-night"
+        for i, shot in enumerate(ledger["shots"]):
+            shot["state_in"]["场景基准"] = active
+            active = "past-day" if i == 2 else "current-night"
+            shot["state_out"]["场景基准"] = active
+    return ledger
+
+
+class SceneBaselineTests(unittest.TestCase):
+    def test_pending_scene_blocks_render_and_final_validation(self):
+        text = render(compact())
+        ledger = scenes(compact())
+        with self.assertRaisesRegex(ValueError, "场景基准尚未获用户"):
+            render(ledger)
+        self.assertTrue(any("场景基准尚未获用户" in e for e in check(ledger, text)[0]))
+
+    def test_required_scene_cannot_be_missing_or_empty(self):
+        for value in (None, [], "night"):
+            ledger = compact(); ledger["requires_scene_confirmation"] = True
+            if value is not None: ledger["scene_baselines"] = value
+            with self.assertRaises(ValueError): render(ledger)
+
+    def test_false_flag_does_not_bypass_pending_scene(self):
+        ledger = scenes(compact()); ledger["requires_scene_confirmation"] = False
+        with self.assertRaises(ValueError): check_scene_baselines(ledger)
+
+    def test_scene_confirmation_is_bound_to_actual_proposal(self):
+        for key in ("baseline", "source_images"):
+            ledger = scenes(compact(), True)
+            if key == "baseline": ledger["scene_baselines"][0][key] += "改为白昼"
+            else: ledger["scene_baselines"][0][key] = ["b.jpg"]
+            with self.assertRaisesRegex(ValueError, "重新请用户确认"):
+                check_scene_baselines(ledger)
+
+    def test_duplicate_unknown_refs_or_missing_quote_fail(self):
+        for change in ("id", "refs", "quote"):
+            ledger = scenes(compact(), True)
+            if change == "id": ledger["scene_baselines"][1]["id"] = "current-night"
+            elif change == "refs": ledger["scene_baselines"][0]["source_images"] = ["missing.jpg"]
+            else: ledger["scene_baselines"][0]["user_confirmation"]["quote"] = ""
+            with self.assertRaises(ValueError): check_scene_baselines(ledger)
+
+    def test_night_memory_return_uses_existing_state_fields(self):
+        ledger = scenes(compact(), True)
+        before = deepcopy(ledger)
+        expanded = expand(ledger)
+        self.assertEqual([s["state_out"]["场景基准"] for s in expanded["shots"]],
+                         ["current-night", "current-night", "past-day", "current-night"])
+        self.assertEqual(ledger, before)
+        self.assertEqual(check(ledger)[0], [])
+
+    def test_full_format_can_associate_scene_without_compact_state(self):
+        ledger = scenes(fixture(), True)
+        check_scene_baselines(ledger)
+        self.assertEqual(check(ledger)[0], [])
+
+    def test_unknown_or_missing_scene_binding_fails(self):
+        ledger = scenes(compact(), True)
+        ledger["shots"][2]["state_changes"]["场景基准"] = "invented"
+        with self.assertRaisesRegex(ValueError, "关联已确认"): render(ledger)
+        ledger = scenes(fixture(), True)
+        ledger["shots"][0]["state_in"].pop("场景基准")
+        with self.assertRaises(ValueError): render(ledger)
+
+    def test_scene_changes_invalidate_review_but_not_observation_lock(self):
+        ledger = scenes(compact(), True); text = render(ledger)
+        lock, review = make_source_lock(ledger), review_digest(ledger, text)
+        ledger["scene_baselines"][0]["baseline"] += "新的场景方案"
+        self.assertEqual(make_source_lock(ledger), lock)
+        self.assertNotEqual(review_digest(ledger, text), review)
+
+    def test_scene_digest_cli_never_approves_or_writes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = scenes(compact()); path = Path(tmp)/"ledger.json"
+            path.write_text(json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
+            before = path.read_bytes()
+            run = subprocess.run([sys.executable, "-X", "utf8", str(HERE/"authoring.py"), str(path),
+                                  "--scene-digest", "current-night"], capture_output=True)
+            self.assertEqual(run.returncode, 0, run.stderr)
+            self.assertEqual(run.stdout.decode().strip(), scene_digest(ledger["scene_baselines"][0]))
+            self.assertEqual(path.read_bytes(), before)
+
+    def test_freezer_refuses_pending_scene_without_touching_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger = scenes(compact()); ledger.pop("source_lock")
+            path = Path(tmp)/"ledger.json"
+            path.write_text(json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
+            before = path.read_bytes()
+            run = subprocess.run([sys.executable, "-X", "utf8", str(HERE/"freeze_storyboard.py"), str(path)], capture_output=True)
+            self.assertNotEqual(run.returncode, 0)
+            self.assertEqual(path.read_bytes(), before)
+
+    def test_rendered_clip_total_comes_from_actual_shot_durations(self):
+        ledger = compact(); ledger["shots"][1]["duration"] = 2.5
+        total = sum(s["duration"] for s in ledger["shots"])
+        self.assertIn(f"## 【片段1】（{total:g}秒）", render(ledger))
+        ledger["shots"][1]["duration"] = 3
+        self.assertNotIn(f"## 【片段1】（{total:g}秒）", render(ledger))
+
+
+class SemanticWarningTests(unittest.TestCase):
+    def run_cli(self, ledger, *args, transform=None):
+        text = finish(ledger)
+        if transform:
+            text = transform(text)
+            ledger["director_review"]["sha256"] = review_digest(ledger, text)
+        with tempfile.TemporaryDirectory() as tmp:
+            path, script = Path(tmp)/"ledger.json", Path(tmp)/"storyboard.md"
+            path.write_text(json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
+            script.write_text(text, encoding="utf-8")
+            return subprocess.run([sys.executable, "-X", "utf8", str(HERE/"validate_storyboard.py"),
+                                   str(script), "--source-ledger", str(path), *args],
+                                  capture_output=True, text=True, encoding="utf-8")
+
+    def test_nonempty_night_backing_outside_vocabulary_is_not_missing(self):
+        ledger = fixture()
+        for shot in ledger["shots"]:
+            shot["fields"]["可见背景"] = "深靛蓝夜空在上方展开，林海沿石台尽端退深。"
+        run = self.run_cli(ledger)
+        self.assertEqual(run.returncode, 0, run.stdout+run.stderr)
+        self.assertNotIn("缺少可见背景", run.stdout)
+        self.assertIn("词表未识别", run.stdout)
+
+    def test_empty_background_still_fails(self):
+        run = self.run_cli(fixture(), transform=lambda t:t.replace(
+            "【可见背景】：深蓝墙面与灰褐地砖分成前后两层，墙边暗影稳定。", "【可见背景】：", 1))
+        self.assertNotEqual(run.returncode, 0)
+        self.assertIn("缺少独立字段", run.stdout)
+
+    def test_stable_light_negation_warns_but_prior_shot_dependency_fails(self):
+        ledger = fixture()
+        ledger["shots"][0]["fields"]["光影布光"] = "左侧柔光照亮脸部，镜头推进不改变光向，墙角保持暗影。"
+        run = self.run_cli(ledger)
+        self.assertEqual(run.returncode, 0, run.stdout+run.stderr)
+        self.assertIn("执行措辞语义复查", run.stdout)
+        ledger["shots"][0]["fields"]["光影布光"] = "上一镜的光线照亮脸部。"
+        run = self.run_cli(ledger)
+        self.assertNotEqual(run.returncode, 0)
+        self.assertIn("不可执行元措辞", run.stdout)
+
+    def test_warning_summary_preserves_locations_and_full_mode(self):
+        from validate_storyboard import summarize_warnings
+        raw = ["片段1的分镜1需要复核", "片段2/分镜3需要复核"]
+        grouped = summarize_warnings(raw)
+        self.assertEqual(len(grouped), 1)
+        self.assertIn("片段1/分镜1", grouped[0])
+        self.assertIn("片段2/分镜3", grouped[0])
+        self.assertEqual(len(raw), 2)
+        ledger = fixture()
+        for shot in ledger["shots"]:
+            shot["fields"]["可见背景"] = "深靛蓝夜空在上方展开，林海沿石台尽端退深。"
+        short, full = self.run_cli(ledger), self.run_cli(ledger, "--warnings", "full")
+        self.assertEqual(short.returncode, full.returncode)
+        self.assertEqual(short.stdout.splitlines()[-2], full.stdout.splitlines()[-2])
+        self.assertLess(short.stdout.count("警告："), full.stdout.count("警告："))
 
 
 class HalfSecondTimingTests(unittest.TestCase):
