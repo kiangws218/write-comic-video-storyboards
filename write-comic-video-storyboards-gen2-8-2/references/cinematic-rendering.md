@@ -40,13 +40,22 @@ In a camera-only revision, edit `【镜头设计】` and its existing camera met
 
 方法参考：[Toon Boom 的 Camera Moves 教学](https://learn.toonboom.com/modules/the-language-of-storyboards/topic/camera-moves1)将起止取景与随运动展开的信息作为分镜设计的一部分；上述两类优先级是本项目的创作要求。
 
-Use familiar camera terms for concrete framing and movement. Expressive cues such as 作画感、张力拉满、外连味 can strengthen the desired visual tone alongside the camera/action description; they need not each become a separate technical clause. Choose the useful details below:
+### 摄影术语的主动使用
 
-- lens/scale and function: wide for depth, normal for natural relations, telephoto for compression/intimacy, macro/long lens for supported detail;
-- camera height/direction, optical axis, horizon/eye line;
-- subject placement, negative space, leading line/vanishing point, foreground occluder, layered depth;
-- non-contradictory focal plane or supported focus transfer;
-- one coherent camera trajectory—fixed, push/pull, pan/tilt, follow, supported arc/orbit, rise/descent, or motivated handheld—with useful extent/rhythm and readable opening/landing.
+在【镜头设计】积极使用景别、镜位、焦段、构图与运镜的专业表达；“过肩中近景、长焦压缩、浅景深、拉焦”等可以直接成句，不必改写成冗长的白话。仍需按本镜给出必要对象、方向、节奏与取景，不将术语排列当作设计。下表是选择与消歧，不是每镜必填清单：
+
+| 可选术语 | 具体用法与区别 |
+|---|---|
+| 推轨／拉轨（dolly in/out）、变焦（zoom）、急变焦（crash zoom） | 推拉轨移动机位，变焦改变焦距。示例：“机位固定，急变焦至眼部特写。”不能同时泛写为固定机位向前推进。 |
+| 平摇／俯仰摇镜（pan/tilt）、横移／升降 | 摇镜改变光轴朝向，横移或升降改变机位位置。长竖格仍按上节优先上下摇镜，不能把所有向上展开都叫机位上升。 |
+| 跟拍（tracking）、弧线环绕（arc shot） | 指明跟随谁、相对距离或绕行方向与终点；环绕不是人物自行转身。复合运镜可用，路径应能连续执行。 |
+| 甩镜（whip pan）、运动模糊 | 写清从哪个取景甩向哪里、何时重新读清画面；摄影模糊与手绘smear形变分开，甩镜不自动等于切镜。 |
+| 拉焦／焦点转移（rack focus）、浅景深、深焦 | 例：“固定过肩中景，焦点由前景的手转向后景人物的脸。”浅景深是清晰范围，拉焦是清晰对象的变化，不等于变焦或推近。 |
+| 过肩（OTS）、主观镜头（POV）、正反打 | 分别选择遮挡关系、人物视点或对话剪辑结构，不互作同义词。正反打中的每次真实切镜仍独立编号。 |
+| 荷兰角（Dutch angle）、低机位仰拍、俯拍 | 荷兰角是画面水平线倾斜，区别于光轴向上／下；表明幅度或画面构图，避免把低机位与低头混写。 |
+| 广角纵深、长焦压缩、前景框景、负空间、多层视差 | 按实际机位与层次关系选择，不把任意长焦都写成强近大远小。视差应有前中后层相对变化。 |
+
+作画感、张力拉满、外连味可以保留为视觉语气，不必各自展开成技术条款。上表采用影视摄影语义；软件界面的pan／truck命名可能不同，正式稿优先中文加实际路径消歧。参考已读正文：[NFB运镜讲解](https://blog.nfb.ca/blog/2010/02/17/demystifying-camera-terms-7-camera-moves-explained/)、[Adobe镜头与角度](https://www.adobe.com/creativecloud/video/production/cinematography/camera-shots-and-angles.html)、[RED拉焦说明](https://docs.red.com/955-0127_v7.4/Raven-Operation-Guide/en-us/Content/5_Advanced_Menus/6_Focus/Rack_Focus.htm)。术语含义的依据不等于视频模型准确率验证。
 
 When the camera moves during character performance, state what initiates the move, what relation or feature it follows, and where it settles. `小幅横移/轻推` alone is incomplete; the landing must preserve the performer or prop endpoint rather than merely naming a direction.
 
@@ -72,15 +81,19 @@ Budget the actual output duration of the slowed action in the existing timing in
 
 【光影布光】按core的简写要求执行，例如：“画面左上方窗外照入柔和蓝光；画面右侧桌灯发出较亮的暖黄光。”阴影、轮廓光、补光和材质反射只在影响叙事、关键接触辨认或用户指定效果时补充，不逐镜套用完整灯光与材质清单。布光保持关键表情、动作和接触可读。
 
-Atmosphere is conditional:
+### 布光与摄影合成词汇
 
-- 丁达尔光: directional light plus haze/steam/dust and an opening;
-- 微尘/薄雾: plausible particulate or atmospheric source;
-- 镜头炫光: bright source near/crossing the optical axis, brief;
-- 轮廓光: side/back source following the silhouette;
-- bloom/glow/overexposure: local peak followed by decay.
+动画“摄影／撮影”也包含画面合成与光学处理，不仅是运镜。相关术语可以直接用于【光影布光】，按core简写主要光源与确实选定的效果；不因此逐镜增加完整灯光清单。物理气氛应有场景依据，图形情绪处理仍按背景模块区分：
 
-Use only effects with a job; do not stack them by habit.
+| 可选术语 | 可执行的表达 |
+|---|---|
+| 硬光、柔光、轮廓光（rim light）、低调布光（low-key） | 说明本镜主要光源与必要光色。低调布光以暗部和明暗反差组织画面，不等于脸和动作无法辨认。 |
+| 高光扩散／辉光（bloom/glow）、柔光晕 | 如“灯芯周围形成暖色柔光晕，边缘迅速衰减”；它是亮部的扩散处理，不自动新增物理光源。 |
+| 镜头炫光（lens flare）、横向光斑 | 指明触发亮源、出现时机与必要形状，和物体自身发光分开；不无条件覆盖整镜。 |
+| 体积光、丁达尔光、薄雾层 | 结合光束方向、开口与雾／蒸汽／微尘，不能只用名称凭空制造天气；薄雾的画面层次不遮掉关键表情。 |
+| 冷暖对比、局部染色、明暗剪影 | 依据本场色彩和光源选择，短时效果结束后恢复原有光色；剪影时按需要保留动作与轮廓。 |
+
+光晕的扩散、强度及亮区选择可参考[Boris FX官方Glow说明](https://borisfx.com/documentation/sapphire/ae/glow/)。这里借用视觉概念，不向视频提示词复制插件参数、图层节点或伪精确数值。
 
 A graphic star, flat stripe or soft-focus color patch in an admitted emotion field is not a physical light source, fog bank or magic event. It needs dramatic purpose and a coherent designed visual form, honestly distinguished from an inspected reference, not invented weather or automatic light spill onto the performer. Physical atmosphere still needs the visible cause above.
 

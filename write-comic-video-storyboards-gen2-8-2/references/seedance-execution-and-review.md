@@ -25,7 +25,9 @@ For 2.8.2 use precise numbered shots, including fights. Legacy auto-coverage exa
 
 ## Prompt wording
 
-Use concise natural Chinese and familiar camera/animation terms. Preserve approved expression cues such as 金田系、作画感、作画爆发、Q弹、张力拉满、外连味、颜艺、夸张透视、smear frame when they carry the intended look or rhythm; do not strip them merely because they summarize style. Add the useful visible action if needed, without expanding every cue into a tutorial or a second action inventory. Never claim that a term guarantees a particular result.
+积极保留并使用准确的摄影、特效、作画与表演术语，不为“自然中文／通俗化”将它们删成泛词。拉焦、过肩、甩镜、浅景深、辉光、预备动作、超调回弹、smear、表演节拍等可直接承载控制意图；金田系、作画感、Q弹、张力拉满等概括词同样可用。优先采用目标模型常用的中文或中英搭配，不默认英文／日文更有效，也不要求逐词双语解释。
+
+按本镜选择“术语＋必要画面信息”，而非固定模板：如“拉焦由前景手部转向后景人物的脸”“上身超调后回弹，发梢overlap延后跟上”。已有动作足够明确时不重复拆解；有歧义才补对象、时机、方向、程度或落点。专业词汇留在其所属字段，不新增关键词栏、术语表副本或教学说明；不承诺术语或精确数值保证生成结果。
 
 Distinguish intentional squash/stretch, smear or SD acting from unintended identity drift, fused bodies or unmotivated deformation. A designed Q版/形变 passage must not receive contradictory blanket controls such as “全程正常比例、禁止任何变形”. Preserve its entry, important readable pose and exit. Keep source-panel bindings, full dialogue and actual endpoint.
 
@@ -53,7 +55,7 @@ Compress in this order:
 4. redundant negative instructions;
 5. decorative motion unrelated to the beat.
 
-Do not remove dialogue pauses, action causality, critical material/color, valid reference roles, visible local background, or endpoint.
+Do not remove dialogue pauses, action causality, critical material/color, valid reference roles, visible local background, or endpoint. Preserve terms that distinguish the approved camera move, focus, acting rhythm, deformation or effect; when compressing synonyms, keep the useful term and actual target rather than replacing them with “电影感／高级感／动作自然”. If over budget, follow the existing regroup/split rules instead of thinning the performance.
 
 ## Adult master and safe execution
 
