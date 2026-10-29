@@ -21,6 +21,8 @@ Choose one structure. Default precise-shot structure:
 
 Use positive durations in 0.5-second increments, reset numbering at 1 in every clip, and keep the summed duration at or below the clip ceiling. Timing syntax and optional in-shot action ranges follow core-authoring.md; keep ranges local to each explicitly numbered shot (本镜内计时), starting at 0. Preserve simple action prose without adding ranges. A continuous camera take has one numbered block with internal action phases; every true cut gets a new block. For a true multishot clip, state `硬切` at the new block and give each shot a coherent main action with its useful concurrent acting layers, a clear camera behavior, visible local background, and endpoint. Split when combined load is too high.
 
+保留已批准的姿态内表演，包括换重心、头肩倾斜、手势解除、眼神变化及其先后／交叠；不要为压缩写成“人物保持克制／继续说话”。原稿中已有真实变化点才保留相应时间段，不把长动作重新切成半秒状态清单。若母稿只靠重复“保持”填时长，返回导演表演修订，不在编译阶段擅自添动作或只合并标签就称修复。
+
 For 2.8.2 use precise numbered shots, including fights. Legacy auto-coverage examples are not final 2.8.2 output: preserve independent original shots and auditable actual neighbors.
 
 ## Prompt wording
