@@ -6,6 +6,7 @@
 
 ```text
 workflows/                    可复用工作流程与Agent交接规范
+reference-materials/           动画演出研究、联络表与skill优化参考资料
 character-references/
   turnarounds/                 角色三视图与补充设定图
   voice-references/            角色参考音频
@@ -32,6 +33,10 @@ episodes/
 ## 通用工作流程
 
 - [小云雀漫画动画化与Agent交接](workflows/小云雀漫画动画化_工作流程与Agent交接.md)：CLI优先访问画布、账号隔离、任务输入表、提示词结构、素材引用、参数、布局与验收。
+
+## 参考资料
+
+- [参考资料索引](reference-materials/README.md)：跨话数复用的演出研究与画面证据；已收录动漫动作打斗视频研究及skill优化建议。
 
 ## 素材约束
 

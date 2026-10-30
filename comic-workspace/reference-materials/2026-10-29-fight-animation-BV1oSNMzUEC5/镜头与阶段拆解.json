@@ -1,0 +1,212 @@
+[
+  {
+    "id": "S01",
+    "start_seconds": 274,
+    "end_seconds": 278.715,
+    "boundary_type": "镜头内阶段",
+    "framing": "冰体近侧的中景",
+    "visible_action": "人物在大面积冷白冰体中保持可辨姿态，橙黄火焰定位人物。",
+    "analysis": "让观众先找到人，再接受特效扩张。",
+    "refs": "M04.01-.08"
+  },
+  {
+    "id": "S02",
+    "start_seconds": 278.715,
+    "end_seconds": 279.877,
+    "boundary_type": "机位/景别转换段",
+    "framing": "冰体向外展开",
+    "visible_action": "视域转向大范围冰体，碎屑/冰块形成尺度梯度；不把第一次高速变化判作纯硬切。",
+    "analysis": "由人物尺度扩展到环境尺度。",
+    "refs": "M04.09-.11"
+  },
+  {
+    "id": "S03",
+    "start_seconds": 279.877,
+    "end_seconds": 284.686,
+    "boundary_type": "已核对画面切换",
+    "framing": "冰谷大远景",
+    "visible_action": "冷蓝冰体占据画幅，橙黄火焰在远处充当定位点，人物极小但仍可读。",
+    "analysis": "颜色焦点与尺度对比合用。",
+    "refs": "M04.12-.19"
+  },
+  {
+    "id": "S04",
+    "start_seconds": 284.686,
+    "end_seconds": 286.49,
+    "boundary_type": "已核对画面切换",
+    "framing": "暖色侧向奔跑",
+    "visible_action": "人物横向前冲，暖色线带掠过，背景让位于攻击动势。",
+    "analysis": "由静态尺度展示切换到快速推进。",
+    "refs": "M04.20-.23"
+  },
+  {
+    "id": "S05",
+    "start_seconds": 286.49,
+    "end_seconds": 287.5,
+    "boundary_type": "已核对画面切换；截断窗口",
+    "framing": "横向能量远景",
+    "visible_action": "场地与冰柱恢复为参照，大光束在画面横贯。",
+    "analysis": "回收运动范围，避免连续近景失去空间。",
+    "refs": "M04.24"
+  },
+  {
+    "id": "S06",
+    "start_seconds": 592,
+    "end_seconds": 593.3,
+    "boundary_type": "镜内阶段",
+    "framing": "斩击路径",
+    "visible_action": "前景刀光横过，目标身体仍完整，攻击者的掠行保持方向。",
+    "analysis": "先交代作用的原因。",
+    "refs": "M06.01-.10"
+  },
+  {
+    "id": "S07",
+    "start_seconds": 593.3,
+    "end_seconds": 594.3,
+    "boundary_type": "镜内阶段",
+    "framing": "结果开始显现",
+    "visible_action": "目标上的亮线出现，身体开始错位、分离，场地参照仍在。",
+    "analysis": "结果晚于攻击到达，但因果可追踪。",
+    "refs": "M06.11-.17"
+  },
+  {
+    "id": "S08",
+    "start_seconds": 594.3,
+    "end_seconds": 595.46,
+    "boundary_type": "表现层变化",
+    "framing": "高饱和结果",
+    "visible_action": "强烈绿色结果画面扩张并出现小形体；不把颜色覆盖简单当作空间换场。",
+    "analysis": "可改变表现风格，但攻击与结果关系仍需保留。",
+    "refs": "M06.18-.24"
+  },
+  {
+    "id": "S09",
+    "start_seconds": 622.02,
+    "end_seconds": 622.7,
+    "boundary_type": "镜内阶段",
+    "framing": "平台与运动主体",
+    "visible_action": "亮色主体已掠过，平台暂时保持整体形体。",
+    "analysis": "让眼睛先追到高速主体。",
+    "refs": "M07.04-.07"
+  },
+  {
+    "id": "S10",
+    "start_seconds": 622.7,
+    "end_seconds": 623.75,
+    "boundary_type": "镜内阶段",
+    "framing": "实体破坏",
+    "visible_action": "平台表面和立体体块开始裂解、上翻、散开。",
+    "analysis": "把作用通过实体结果兑现。",
+    "refs": "M07.08-.13"
+  },
+  {
+    "id": "S11",
+    "start_seconds": 623.75,
+    "end_seconds": 624.9,
+    "boundary_type": "光色与视点变化段",
+    "framing": "高亮能量扩散",
+    "visible_action": "亮色覆盖扩大，暖色阶段进一步强化破坏；不宣称这是同一未剪辑长镜头。",
+    "analysis": "层层加码，每层有新的信息。",
+    "refs": "M07.14-.20"
+  },
+  {
+    "id": "S12",
+    "start_seconds": 711.2,
+    "end_seconds": 711.415,
+    "boundary_type": "窗口首镜；起点截断",
+    "framing": "近侧交手",
+    "visible_action": "两名持刀者贴近，刀刃与身体占据前后景。",
+    "analysis": "让相对距离可读。",
+    "refs": "M10.01-.02"
+  },
+  {
+    "id": "S13",
+    "start_seconds": 711.415,
+    "end_seconds": 711.535,
+    "boundary_type": "接触强调画面",
+    "framing": "剑刃强光插入",
+    "visible_action": "剑刃交点被白蓝光强调；能确认画面变化，是否独立摄影机硬切不单凭闪光判定。",
+    "analysis": "将光效绑定到接触位置。",
+    "refs": "C05候选01-02"
+  },
+  {
+    "id": "S14",
+    "start_seconds": 711.535,
+    "end_seconds": 713.86,
+    "boundary_type": "连续交手动作组",
+    "framing": "身体近侧与武器交接",
+    "visible_action": "对手压近、兵刃交接与相对身体位移接续，存在视点/形体快速变化，不能统称为固定长镜头。",
+    "analysis": "给近侧大运动保留可追踪的攻守关系。",
+    "refs": "M10.03-.14"
+  },
+  {
+    "id": "S15",
+    "start_seconds": 713.86,
+    "end_seconds": 714.02,
+    "boundary_type": "已核对画面切换",
+    "framing": "脚步近景",
+    "visible_action": "画面落到脚部与地面，身体细节暂被省略。",
+    "analysis": "短暂重建支撑和空间方向。",
+    "refs": "M10.15"
+  },
+  {
+    "id": "S16",
+    "start_seconds": 714.02,
+    "end_seconds": 715.623,
+    "boundary_type": "已核对画面切换",
+    "framing": "刀刃与脸部近侧",
+    "visible_action": "回到兵刃交接，亮点以接触位置为中心；大刀刃掠过前景，身体与面部成为参照。",
+    "analysis": "临场感来自透视与遮挡，不只是抖动。",
+    "refs": "M10.16-.24"
+  },
+  {
+    "id": "S17",
+    "start_seconds": 715.623,
+    "end_seconds": 716.5,
+    "boundary_type": "跨作品示例切换",
+    "framing": "粉色头发人物中近景",
+    "visible_action": "教程切到另一个角色与武器，建立新例子。",
+    "analysis": "不能把跨作品切镜解释为前一场战斗的反打。",
+    "refs": "A24.03；M11.01-.03"
+  },
+  {
+    "id": "S18",
+    "start_seconds": 716.5,
+    "end_seconds": 718.5,
+    "boundary_type": "镜头/动作阶段组",
+    "framing": "人物与长条粉色武器",
+    "visible_action": "武器拉出大幅形体，人物与镜头之间的相对变化推动画幅内运动。",
+    "analysis": "先用大形给主方向，再用细节补全动作。",
+    "refs": "M11.04-.11"
+  },
+  {
+    "id": "S19",
+    "start_seconds": 718.5,
+    "end_seconds": 719.2,
+    "boundary_type": "近侧形体与构图变化段",
+    "framing": "人物近侧与能量掠过",
+    "visible_action": "人物头身靠近画面，粉色能量与青白形体掠过。",
+    "analysis": "近远形体提供速度量级与视差。",
+    "refs": "M11.12-.15"
+  },
+  {
+    "id": "S20",
+    "start_seconds": 719.2,
+    "end_seconds": 721.3,
+    "boundary_type": "动作阶段组",
+    "framing": "斜向运动与跟进",
+    "visible_action": "粉色方向线改变构图，随后呈现另一人物的身体与面部，攻击关系需由动作路径接力。",
+    "analysis": "方向改变要有明确的动作/机位原因。",
+    "refs": "M11.16-.22"
+  },
+  {
+    "id": "S21",
+    "start_seconds": 721.3,
+    "end_seconds": 721.72,
+    "boundary_type": "远近构图/表现转换",
+    "framing": "强形变与远景",
+    "visible_action": "短促强调画面后回到更远的天空/建筑关系。",
+    "analysis": "高强度近侧画面之后恢复尺度与方位。",
+    "refs": "M11.23-.24；C06候选09-10"
+  }
+]

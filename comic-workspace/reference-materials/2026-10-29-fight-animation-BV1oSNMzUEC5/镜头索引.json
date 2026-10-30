@@ -1,0 +1,4477 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "date": "2026-10-29",
+    "source_url": "https://www.bilibili.com/video/BV1oSNMzUEC5/",
+    "local_filename_title": "动画师教程&技巧 P1 中村丰的12条打斗动作原理",
+    "sha256": "88f5dc6af7f7242dc48d39fab820fddfa14a805ba867edd9b2b8c1a3f82767bf",
+    "bytes": 77888245,
+    "duration_seconds": 859.72,
+    "resolution": [
+      852,
+      480
+    ],
+    "container_average_fps": 24.950126501294093,
+    "evidence_method": "全片每5秒总览；每1秒底部硬字幕OCR检索并人工核读关键内容；28个精选窗口每窗12格；12个加密窗口每窗24格；关键画面变化前后帧人工检查。",
+    "not_done": "没有对全片每一次硬切逐帧穷举；没有测定原动画的作画帧率或命中停顿帧数；没有进行音轨听辨与音画同步测量；没有独立认证B站上传者、译者、外部引用及每段作画人员归属。",
+    "timing_note": "图上时间码为本地教程的采样请求时间；CSV/JSON另记OpenCV解码返回PTS。章节时间取转入介绍的约起点，非B站官方章节；子段区间是分析范围，除特意说明外不代表硬切点。",
+    "contact_sheet_count": 49,
+    "sample_tile_count": 796,
+    "principle_count": 12,
+    "selected_window_count": 28,
+    "dense_window_count": 12,
+    "source_filename": "动画师教程&技巧 P1 中村丰的12条打斗动作原理_36545562154.mp4"
+  },
+  "principles": [
+    {
+      "id": "P01",
+      "title": "快与慢的节奏张力",
+      "en": "Fast & Slow",
+      "start": 119,
+      "end": 182,
+      "refs": "A01-A03；M01-M02",
+      "claim": "教程把同一画面中不同元素的速度反差放在首位，也延伸到相邻镜头之间的高速与近静止对照。它明确反对机械地反复“快一下、停一下”。",
+      "evidence": "02:09-02:16 的手臂与手指缓慢改变姿态，周围火焰和光带持续快速掠过；02:42-02:51 从前冲的拳转到红色敌人被大量金色拳影包围、姿态变化很少的画面。",
+      "mechanism": "慢的层负责让观众读懂意图、姿态或情绪；快的层负责压力与能量。关键是两种速度建立关系，而不是全片统一变速。跨镜反差还能把注意力从行进过程切到状态突变。",
+      "application": "给动作镜头分别填写“可读主体的速度”和“环境/特效的速度”；慢层必须有可见变化或明确的保持目的。剪辑前后写出为什么要发生速度落差。",
+      "reject": "只有“极速、慢镜头、定格”的形容词；所有层一起变慢；每次击打都按相同节奏停顿。",
+      "caution": "M01 有教程0.6x慢放及循环小窗，不能据教程秒数反推原片握拳时长；P01也不等同于接触瞬间的 hit stop。"
+    },
+    {
+      "id": "P02",
+      "title": "大与小的尺度对比",
+      "en": "Big & Small",
+      "start": 182,
+      "end": 229,
+      "refs": "A04-A05；M03",
+      "claim": "通过角色、攻击、特效与场景之间的尺度落差建立战斗的宏观量级；教程尤其强调让特效主导画面，同时保留微小而可辨的施放者。",
+      "evidence": "03:15-03:17 暖色攻击与多层圆形屏障占据大部分画面，角色位于左下的小面积区域。03:18-03:23 的岩柱、遗迹和夜空提供尺度参照。",
+      "mechanism": "观众需要可比较的大小关系。大轮廓体现力的覆盖范围，小人物与建筑细节提供测量标尺；远景还让攻击路径和战场布局同时可读。",
+      "application": "写明“大形体是什么、小参照是什么、人物靠什么被找到”。使用画幅占比或相对描述作为创作方案，不把估算写成视频实测。",
+      "reject": "只写“巨大爆炸、史诗远景”；人物与环境全部被光淹没；连续近景使破坏规模失去参照。",
+      "caution": "大不等于强度的唯一表达；近身搏斗也可用前景拳与远处头部的透视差，不能强制每场戏升级为大范围破坏。"
+    },
+    {
+      "id": "P03",
+      "title": "色彩对比",
+      "en": "Contrast of Colors",
+      "start": 229,
+      "end": 292,
+      "refs": "A06-A07；M04",
+      "claim": "教程讨论色相、明度和饱和度的差异如何建立视觉张力；明确提醒不要把色彩对比窄化为单纯的明暗对比。",
+      "evidence": "04:34-04:47 冷白、浅蓝的冰体主导场景，人物附近的橙黄火焰形成暖色定位点。04:15-04:21 的红色高亮区也把注意力集中到主要人物关系上。",
+      "mechanism": "对比既划分攻击来源、阵营和材质，也能在高速运动与满屏特效中保住焦点。人物可以很小，却因局部色彩独特而容易被看见。",
+      "application": "为每个动作段落指定主色域、对抗色域、焦点色和背景压缩方式；切镜时保持这些颜色承担的角色关系。",
+      "reject": "每种特效都使用最高饱和度；无主次的彩色闪光；把所有背景一律变黑；把暖色永远等同于胜者。",
+      "caution": "A06 的两人表演是教程过渡/举例，不是“蓄力预备”的证据；不要因姿态变化而给第三条原则改名。"
+    },
+    {
+      "id": "P04",
+      "title": "将特效归纳为清晰的几何形",
+      "en": "Geometric Shapes",
+      "start": 292,
+      "end": 411,
+      "refs": "A08-A10；M05",
+      "claim": "教程以圆、方、三角概括爆发、实体碎屑、拖影及体积阴影，并展示立方体碎块、尖形涂抹、几何明暗等不同用途。后段也说明这不是绝对分配。",
+      "evidence": "05:14-05:20 方块化破坏；05:25-05:31 横向尖齿拖影；05:39-05:50 拳套与对手体块间的楔形明暗；05:59-06:17 又展示方形粒子、圆形能量和碎屑。",
+      "mechanism": "简洁外轮廓减少高速画面的识别负担，重复的形状家族保持风格一致；体积明确的碎块能保留质量与空间方向。",
+      "application": "为特效写“主几何形、材质、力的方向、形状如何变化”；碎片说明从哪儿剥离、被什么推动、向哪儿散开。允许根据材质例外。",
+      "reject": "把所有物体都变成方块；堆加碎片而没有接触原因；把三角形等同于唯一合法拖影；用特效遮掉肢体接触。",
+      "caution": "教程中的约90%等表述是讲解者的概括，不是统计结果；“中村立方体”是风格称呼，不能把全片几何特效都断言为同一动画师作画。"
+    },
+    {
+      "id": "P05",
+      "title": "几何化表现叠加真实肢体运动",
+      "en": "Overlaying Geometric With Realistic",
+      "start": 411,
+      "end": 484,
+      "refs": "A11-A12",
+      "claim": "夸张几何形和高度风格化特效建立在可感知的身体力学与连续表演之上。教程借日常手势、跑动和近身动作说明真实感的锚点。",
+      "evidence": "07:00-07:06 西装人物的转肩、伸臂、收手和抬臂是连续变化的；07:08-07:14 则切到攻击与高速几何化造型；07:22 后出现近身搏斗。",
+      "mechanism": "观众通过重量、重心、关节接力和惯性感知“身体确实在做这件事”，从而接受其上附加的非现实造型。",
+      "application": "先交代支撑点、重心移动、躯干转向、主发力肢体与末端滞后，再选择哪些帧允许压缩、拉伸和几何化。保持角色身体能力与当前受伤状态。",
+      "reject": "身体没有转动只有光效移动；脚步滑行；肩肘腕脱节；连续出招不重新获得支撑；用“符合力学”四字代替具体动作。",
+      "caution": "本节中支撑脚/力的传播字段属于据视频提炼的创作方法，不宣称教程逐一列出了这些字段。日常表演也不是打击命中的完整动作链。"
+    },
+    {
+      "id": "P06",
+      "title": "视觉母题",
+      "en": "Visual Motif",
+      "start": 484,
+      "end": 567,
+      "refs": "A13-A14",
+      "claim": "让某种形状、线条或颜色在一段动作中反复出现并发生变化，形成统一的视觉组织。教程穿插片头设计与其他动画分析作为旁证。",
+      "evidence": "08:08-08:30 为 Saul Bass 相关设计示例；08:35-08:46 是其他视频的构图示意；08:52-09:01 两名对战者分别举手，形成呼应；09:02-09:05 反复的圆形，09:06-09:13 贯穿攻击的弧线与横向光痕。",
+      "mechanism": "复现的图形使跨镜头的攻击保持身份，让观众无需重新学习每个画面。母题可以承担预告、升级和回收的功能。",
+      "application": "给一场戏挑选少量可复现元素，并写出首次出现、变形升级和最终回收的位置；把母题绑定到角色能力、武器或情绪。",
+      "reject": "每镜头随意换造型与色彩；把所有攻击涂成一样；只抄装饰形状而没有叙事关联；把视觉母题理解为照搬某位动画师所有招牌。",
+      "caution": "A13不是中村丰打斗镜头；08:50-09:00 画面有 Howard Wimshurst 来源字样。这里只记录教程如何使用二级资料，不替这些引用重新认证作者身份。"
+    },
+    {
+      "id": "P07",
+      "title": "延迟呈现动作结果",
+      "en": "Delayed Delivery",
+      "start": 567,
+      "end": 616,
+      "refs": "A15-A17；M06-M07",
+      "claim": "攻击或高速位移先发生，身体损伤、碎裂与环境破坏稍后才变得可见，以结果的滞后来突出速度与力量。",
+      "evidence": "09:52-09:54 刀光先扫过，相对完整的人体随后出现切割痕迹并分离；10:22-10:24 的平台段落中，亮色运动主体先掠过，方块化破坏和高亮扩散随后显现。",
+      "mechanism": "将“原因已过去”和“结果刚到来”分开，给观众一次预期与兑现。延迟仍需靠刀光路径、身体切线或环境连续性维持因果。",
+      "application": "分开标注作用时刻、结果开始可见的时刻，以及二者间观众能追踪的线索。区分物理上的传播时间与表现上的延迟揭示。",
+      "reject": "不展示原因就突然爆炸；每次击打都延迟；把敌人等待受击当作延迟；破坏发生在与攻击无关的位置。",
+      "caution": "本资料不测定原片精确延迟帧数。联络表的相邻采样只证明前后状态，教程也可能重复播放或改变速度。"
+    },
+    {
+      "id": "P08",
+      "title": "层叠式能量爆发与动作叠加",
+      "en": "Layering / Laddering",
+      "start": 616,
+      "end": 653,
+      "refs": "A18-A20；M07-M08",
+      "claim": "教程把上一条延迟发展成分层短促释放：不同动作或结果错开出现，一个元素暂时停留时，另一元素继续运动。",
+      "evidence": "10:25-10:32 红色敌人的身体姿态先被保持，周围光束先出现，随后身体附近出现碎片/损伤；10:33-10:39 下落主体与从侧面掠过的多条光线具有不同节奏。",
+      "mechanism": "分层给观众多个明确的能量台阶，同时维持整体持续推进。它既是时间安排，也可能表现为画面内的多层运动。",
+      "application": "列出身体、主攻击、次级电弧、环境破坏和余波各自开始/达到峰值/结束的顺序；每层承担新的信息或力量级差。",
+      "reject": "所有层同时出现同时消失；只增加粒子数量；连续爆炸没有递进；把普通前中后景分层当成此处时间层叠的全部含义。",
+      "caution": "A20 前半是风格化追逐与空间变换的插例，后半已经过渡到第九条；引用要精确到子段，不能把整张表都当成纯粹的能量层叠。"
+    },
+    {
+      "id": "P09",
+      "title": "运动中的夸张变化与非重复性",
+      "en": "Exaggerated Variation in Motion",
+      "start": 653,
+      "end": 703,
+      "refs": "A21-A22；M09",
+      "claim": "跑动、头部摇摆和特效都应保持丰富的不对称与变化，避免镜像复制或简单循环造成机械感。",
+      "evidence": "11:07-11:11 逃避光束时，躯干倾角、手臂伸展和身体转向不断改变；11:12-11:17 挥拳人物的头发、表情和局部姿态持续变化，教程在此特别谈发丝摆动不要简单循环。11:24-11:30 的爆发轮廓不断重组。",
+      "mechanism": "动作在目标与受力约束下持续修正，变化让角色有主动性并保持危险感。轮廓变化还使能量看起来活跃，而不是贴图在平移。",
+      "application": "保留动作目标和路径，改变关键姿态、角度、间距或幅度；重复招式至少说明哪一项因对手反应、伤势或环境发生改变。",
+      "reject": "把随机抖动当成生命力；每镜头无缘由改方向；为追求变化破坏角色体型、接触位置和前后连续性。",
+      "caution": "“每一帧都是新画”是教程的修辞，不是本资料完成的逐原画帧查重结论，也不应据此禁止生产中合理的保持与复用。"
+    },
+    {
+      "id": "P10",
+      "title": "把镜头放进动作场内",
+      "en": "Camera Inside of Action",
+      "start": 703,
+      "end": 739,
+      "refs": "A23-A24；M10-M11",
+      "claim": "摄影机进入冲击、旋转和刀刃掠过的场内，以贴近身体与路径的非常规视角增强临场感。",
+      "evidence": "11:51-11:55 的持刀人物与脚步、剑刃特写把视点贴近动作；11:56-12:01 的粉色武器与人物运动占据近侧，观众通过大幅掠屏的形体感知速度。",
+      "mechanism": "近处形体在画幅中的位移和透视变化更大，遮挡与视差让观众感到身在动作路径附近，而非远处观看。",
+      "application": "说明镜头相对拳、刀、躯干和冲击点的位置；镜头跟随谁、哪个元素掠镜、遮挡之后如何恢复空间关系。只在关键节拍使用复杂运动。",
+      "reject": "只写“运镜炸裂、360度环绕”；人物与镜头同时高速乱动而无参照；用抖动替代动作设计；所有对白镜头也强制贴身。",
+      "caution": "这条不是“冲击帧原理”。视频确实出现黑白化与闪光，但第十条的标题和主论点是摄影机进入动作；教程给出的镜头频率建议也不是普遍法规。"
+    },
+    {
+      "id": "P11",
+      "title": "画面具有清晰的运动方向",
+      "en": "Frames Having Direction / Frame Directionality",
+      "start": 739,
+      "end": 795,
+      "refs": "A25-A27",
+      "claim": "大多数动作画面要有清楚的主运动方向；拖影、速度线、烟尘、能量和人物姿态协同引导眼睛。方向可被反用以制造预期。",
+      "evidence": "12:31-12:37 绿色线束和人物手臂趋向共同的消失/攻击方向；12:39-12:41 粉色斜线与飞行人物同向；13:04-13:10 的拉长拖影和背景变化再次强调方向。",
+      "mechanism": "观众先读到方向，再补全动作细节。统一的向量将角色、特效和背景连成一个可读事件，减轻高速剪辑的理解成本。",
+      "application": "逐镜写出主运动向量、目标位置、拖影尾端及下一镜接力点；改变方向必须交代转身、反弹、受阻或机位变化。",
+      "reject": "人物往左、拖影往前、碎片随机飞散且没有解释；镜头间无缘由反转攻击方向；把“单一方向”误写成禁止弧线、旋转或真实受力的次方向。",
+      "caution": "本条重点是画面内部的方向组织，不自动等同于跨镜头遵守180度轴线。后者是可追加检查，但不是原文同义改写。"
+    },
+    {
+      "id": "P12",
+      "title": "让镜头运动参与动作的表现",
+      "en": "Camera Playing Into Itself",
+      "start": 795,
+      "end": 859.72,
+      "refs": "A28；M12",
+      "claim": "教程末段再次把摄影机作为动作的参与者，并讨论高速动作转入另一段高速动作时，镜头和画面的运动如何帮助连接与表现；必要时也要留出动作自然沉淀的时间。",
+      "evidence": "13:30 的英文标题为 Camera Playing Into Itself；13:35 有高速旋转的轮形物；13:37-13:40 镜头随人物与场景关系改变；13:50-13:55 近侧红色武器、人物和背景依次改变位置。",
+      "mechanism": "可读的运动是主体位移与摄影机位移的组合。镜头可以借掠过、跟随和透视变化帮助相连动作获得连续动势；也可以通过停留让一段动作完成其信息。",
+      "application": "分别写“角色在世界中做什么”和“摄影机怎样移动”，再写二者结合后观众读到什么；保留转接所需的屏幕位置、方向和参照。",
+      "reject": "把镜头运动当成角色真的完成了位移；用甩镜掩盖缺失的动作；每个转场都旋转；把所有动作都强行拉慢。",
+      "caution": "源视频存在命名不一致：第十二条画面英文是Camera Playing Into Itself，而中文字幕又用了与第十条接近的“镜头沉浸式调度 / Camera-in-the-Action”。此处保留英文屏幕标题，中文为工作性释义。P10偏镜头位置与临近感，P12偏运动、转接与时间安排；此区分是本资料的分析，不能冒充讲解者另行给出的严格分类。"
+    }
+  ],
+  "windows": [
+    {
+      "id": "A01",
+      "title": "慢手臂与高速火焰并置",
+      "start": 127,
+      "end": 139,
+      "sheet": "contact-sheets/A01.jpg",
+      "frames": [
+        {
+          "id": "A01.01",
+          "requested_seconds": 127.0,
+          "decoded_pts_seconds": 127.013,
+          "image": "frames/A01_01_127.000.jpg"
+        },
+        {
+          "id": "A01.02",
+          "requested_seconds": 128.091,
+          "decoded_pts_seconds": 128.095,
+          "image": "frames/A01_02_128.091.jpg"
+        },
+        {
+          "id": "A01.03",
+          "requested_seconds": 129.182,
+          "decoded_pts_seconds": 129.178,
+          "image": "frames/A01_03_129.182.jpg"
+        },
+        {
+          "id": "A01.04",
+          "requested_seconds": 130.273,
+          "decoded_pts_seconds": 130.26,
+          "image": "frames/A01_04_130.273.jpg"
+        },
+        {
+          "id": "A01.05",
+          "requested_seconds": 131.364,
+          "decoded_pts_seconds": 131.382,
+          "image": "frames/A01_05_131.364.jpg"
+        },
+        {
+          "id": "A01.06",
+          "requested_seconds": 132.455,
+          "decoded_pts_seconds": 132.464,
+          "image": "frames/A01_06_132.455.jpg"
+        },
+        {
+          "id": "A01.07",
+          "requested_seconds": 133.545,
+          "decoded_pts_seconds": 133.546,
+          "image": "frames/A01_07_133.545.jpg"
+        },
+        {
+          "id": "A01.08",
+          "requested_seconds": 134.636,
+          "decoded_pts_seconds": 134.628,
+          "image": "frames/A01_08_134.636.jpg"
+        },
+        {
+          "id": "A01.09",
+          "requested_seconds": 135.727,
+          "decoded_pts_seconds": 135.71,
+          "image": "frames/A01_09_135.727.jpg"
+        },
+        {
+          "id": "A01.10",
+          "requested_seconds": 136.818,
+          "decoded_pts_seconds": 136.833,
+          "image": "frames/A01_10_136.818.jpg"
+        },
+        {
+          "id": "A01.11",
+          "requested_seconds": 137.909,
+          "decoded_pts_seconds": 137.915,
+          "image": "frames/A01_11_137.909.jpg"
+        },
+        {
+          "id": "A01.12",
+          "requested_seconds": 139.0,
+          "decoded_pts_seconds": 138.997,
+          "image": "frames/A01_12_139.000.jpg"
+        }
+      ],
+      "principles": "P01",
+      "observation": "02:07-02:08 白衣人物斜向掠行；02:09 起切入手部慢放。主画面手掌张开、手臂回收，再逐渐握紧；外侧亮带与火焰持续高速掠过。",
+      "analysis": "手部特写让细微姿态承担意图；高反差手臂轮廓和高速光带构成两条时间轨。右上小窗是教程对照，不是原动画的第二机位。",
+      "application": "让主体缓慢改变可读姿态，周边威胁持续运动；不要把蓄力镜头写成所有元素静止。参考 M01。"
+    },
+    {
+      "id": "A02",
+      "title": "接触前的可读停留与接触时的图形化",
+      "start": 140,
+      "end": 152,
+      "sheet": "contact-sheets/A02.jpg",
+      "frames": [
+        {
+          "id": "A02.01",
+          "requested_seconds": 140.0,
+          "decoded_pts_seconds": 139.999,
+          "image": "frames/A02_01_140.000.jpg"
+        },
+        {
+          "id": "A02.02",
+          "requested_seconds": 141.091,
+          "decoded_pts_seconds": 141.081,
+          "image": "frames/A02_02_141.091.jpg"
+        },
+        {
+          "id": "A02.03",
+          "requested_seconds": 142.182,
+          "decoded_pts_seconds": 142.163,
+          "image": "frames/A02_03_142.182.jpg"
+        },
+        {
+          "id": "A02.04",
+          "requested_seconds": 143.273,
+          "decoded_pts_seconds": 143.285,
+          "image": "frames/A02_04_143.273.jpg"
+        },
+        {
+          "id": "A02.05",
+          "requested_seconds": 144.364,
+          "decoded_pts_seconds": 144.367,
+          "image": "frames/A02_05_144.364.jpg"
+        },
+        {
+          "id": "A02.06",
+          "requested_seconds": 145.455,
+          "decoded_pts_seconds": 145.449,
+          "image": "frames/A02_06_145.455.jpg"
+        },
+        {
+          "id": "A02.07",
+          "requested_seconds": 146.545,
+          "decoded_pts_seconds": 146.531,
+          "image": "frames/A02_07_146.545.jpg"
+        },
+        {
+          "id": "A02.08",
+          "requested_seconds": 147.636,
+          "decoded_pts_seconds": 147.654,
+          "image": "frames/A02_08_147.636.jpg"
+        },
+        {
+          "id": "A02.09",
+          "requested_seconds": 148.727,
+          "decoded_pts_seconds": 148.736,
+          "image": "frames/A02_09_148.727.jpg"
+        },
+        {
+          "id": "A02.10",
+          "requested_seconds": 149.818,
+          "decoded_pts_seconds": 149.818,
+          "image": "frames/A02_10_149.818.jpg"
+        },
+        {
+          "id": "A02.11",
+          "requested_seconds": 150.909,
+          "decoded_pts_seconds": 150.9,
+          "image": "frames/A02_11_150.909.jpg"
+        },
+        {
+          "id": "A02.12",
+          "requested_seconds": 152.0,
+          "decoded_pts_seconds": 151.982,
+          "image": "frames/A02_12_152.000.jpg"
+        }
+      ],
+      "principles": "P01/P03",
+      "observation": "02:20-02:23 回看能量与手臂；02:24 面部相对稳定；02:25 攻击从画面左侧逼近；02:26 同一脸部关系被压成黑白大块。02:27 后转入标注其他原画师的比较例。",
+      "analysis": "固定的脸部位置让迫近的拳更容易判断。黑白化改变的是表现层，攻击与面部的空间关系仍延续；不能因画风跳变就断言发生了空间切换。",
+      "application": "先让目标位置可读，再在接触附近改变光色或造型。黑白冲击表达是可选手段；本节原理主轴仍是快慢。参考 M02。"
+    },
+    {
+      "id": "A03",
+      "title": "高速推进接近近静止受威胁状态",
+      "start": 159,
+      "end": 171,
+      "sheet": "contact-sheets/A03.jpg",
+      "frames": [
+        {
+          "id": "A03.01",
+          "requested_seconds": 159.0,
+          "decoded_pts_seconds": 158.996,
+          "image": "frames/A03_01_159.000.jpg"
+        },
+        {
+          "id": "A03.02",
+          "requested_seconds": 160.091,
+          "decoded_pts_seconds": 160.078,
+          "image": "frames/A03_02_160.091.jpg"
+        },
+        {
+          "id": "A03.03",
+          "requested_seconds": 161.182,
+          "decoded_pts_seconds": 161.2,
+          "image": "frames/A03_03_161.182.jpg"
+        },
+        {
+          "id": "A03.04",
+          "requested_seconds": 162.273,
+          "decoded_pts_seconds": 162.282,
+          "image": "frames/A03_04_162.273.jpg"
+        },
+        {
+          "id": "A03.05",
+          "requested_seconds": 163.364,
+          "decoded_pts_seconds": 163.364,
+          "image": "frames/A03_05_163.364.jpg"
+        },
+        {
+          "id": "A03.06",
+          "requested_seconds": 164.455,
+          "decoded_pts_seconds": 164.446,
+          "image": "frames/A03_06_164.455.jpg"
+        },
+        {
+          "id": "A03.07",
+          "requested_seconds": 165.545,
+          "decoded_pts_seconds": 165.529,
+          "image": "frames/A03_07_165.545.jpg"
+        },
+        {
+          "id": "A03.08",
+          "requested_seconds": 166.636,
+          "decoded_pts_seconds": 166.651,
+          "image": "frames/A03_08_166.636.jpg"
+        },
+        {
+          "id": "A03.09",
+          "requested_seconds": 167.727,
+          "decoded_pts_seconds": 167.733,
+          "image": "frames/A03_09_167.727.jpg"
+        },
+        {
+          "id": "A03.10",
+          "requested_seconds": 168.818,
+          "decoded_pts_seconds": 168.815,
+          "image": "frames/A03_10_168.818.jpg"
+        },
+        {
+          "id": "A03.11",
+          "requested_seconds": 169.909,
+          "decoded_pts_seconds": 169.897,
+          "image": "frames/A03_11_169.909.jpg"
+        },
+        {
+          "id": "A03.12",
+          "requested_seconds": 171.0,
+          "decoded_pts_seconds": 170.979,
+          "image": "frames/A03_12_171.000.jpg"
+        }
+      ],
+      "principles": "P01",
+      "observation": "02:39-02:41 先有斜向运动示例；02:42-02:45 绿发人物拳头与身体向前推进；02:46 起转到天空中的红色敌人；02:47-02:51 大量金色拳影环绕，中心身体变化较少。",
+      "analysis": "前镜提供趋近动势，后镜把注意力交给被包围的空间状态。前冲与近静止之间的落差延缓了结果的兑现。",
+      "application": "写清切镜前后速度改变的叙事原因，例如让观众意识到已被包围；不要把所有跨镜停留都当成动作发生了物理冻结。"
+    },
+    {
+      "id": "A04",
+      "title": "小目标与大攻击体量建立尺度",
+      "start": 182,
+      "end": 194,
+      "sheet": "contact-sheets/A04.jpg",
+      "frames": [
+        {
+          "id": "A04.01",
+          "requested_seconds": 182.0,
+          "decoded_pts_seconds": 182.001,
+          "image": "frames/A04_01_182.000.jpg"
+        },
+        {
+          "id": "A04.02",
+          "requested_seconds": 183.091,
+          "decoded_pts_seconds": 183.083,
+          "image": "frames/A04_02_183.091.jpg"
+        },
+        {
+          "id": "A04.03",
+          "requested_seconds": 184.182,
+          "decoded_pts_seconds": 184.165,
+          "image": "frames/A04_03_184.182.jpg"
+        },
+        {
+          "id": "A04.04",
+          "requested_seconds": 185.273,
+          "decoded_pts_seconds": 185.287,
+          "image": "frames/A04_04_185.273.jpg"
+        },
+        {
+          "id": "A04.05",
+          "requested_seconds": 186.364,
+          "decoded_pts_seconds": 186.369,
+          "image": "frames/A04_05_186.364.jpg"
+        },
+        {
+          "id": "A04.06",
+          "requested_seconds": 187.455,
+          "decoded_pts_seconds": 187.451,
+          "image": "frames/A04_06_187.455.jpg"
+        },
+        {
+          "id": "A04.07",
+          "requested_seconds": 188.545,
+          "decoded_pts_seconds": 188.534,
+          "image": "frames/A04_07_188.545.jpg"
+        },
+        {
+          "id": "A04.08",
+          "requested_seconds": 189.636,
+          "decoded_pts_seconds": 189.616,
+          "image": "frames/A04_08_189.636.jpg"
+        },
+        {
+          "id": "A04.09",
+          "requested_seconds": 190.727,
+          "decoded_pts_seconds": 190.738,
+          "image": "frames/A04_09_190.727.jpg"
+        },
+        {
+          "id": "A04.10",
+          "requested_seconds": 191.818,
+          "decoded_pts_seconds": 191.82,
+          "image": "frames/A04_10_191.818.jpg"
+        },
+        {
+          "id": "A04.11",
+          "requested_seconds": 192.909,
+          "decoded_pts_seconds": 192.902,
+          "image": "frames/A04_11_192.909.jpg"
+        },
+        {
+          "id": "A04.12",
+          "requested_seconds": 194.0,
+          "decoded_pts_seconds": 193.984,
+          "image": "frames/A04_12_194.000.jpg"
+        }
+      ],
+      "principles": "P02",
+      "observation": "03:02-03:04 为第二条转场标题；03:05-03:07 亮黄色攻击贴近紫暗地表；03:09-03:10 巨大的拳/能量体与很小的目标同框；03:11-03:14 遗迹与地面破坏成为环境量尺。",
+      "analysis": "斜置地面提供深度，接近镜头的大形体与远侧小目标形成压迫。随后展示环境后果，使“大”有可见的外部证据。",
+      "application": "在攻击发生前给一个尺度参照，并在结果镜头回收。角色远小于攻击时，仍要给清晰位置或色彩。"
+    },
+    {
+      "id": "A05",
+      "title": "屏障、岩柱与夜空的尺度接力",
+      "start": 194,
+      "end": 206,
+      "sheet": "contact-sheets/A05.jpg",
+      "frames": [
+        {
+          "id": "A05.01",
+          "requested_seconds": 194.0,
+          "decoded_pts_seconds": 193.984,
+          "image": "frames/A05_01_194.000.jpg"
+        },
+        {
+          "id": "A05.02",
+          "requested_seconds": 195.091,
+          "decoded_pts_seconds": 195.106,
+          "image": "frames/A05_02_195.091.jpg"
+        },
+        {
+          "id": "A05.03",
+          "requested_seconds": 196.182,
+          "decoded_pts_seconds": 196.189,
+          "image": "frames/A05_03_196.182.jpg"
+        },
+        {
+          "id": "A05.04",
+          "requested_seconds": 197.273,
+          "decoded_pts_seconds": 197.271,
+          "image": "frames/A05_04_197.273.jpg"
+        },
+        {
+          "id": "A05.05",
+          "requested_seconds": 198.364,
+          "decoded_pts_seconds": 198.353,
+          "image": "frames/A05_05_198.364.jpg"
+        },
+        {
+          "id": "A05.06",
+          "requested_seconds": 199.455,
+          "decoded_pts_seconds": 199.435,
+          "image": "frames/A05_06_199.455.jpg"
+        },
+        {
+          "id": "A05.07",
+          "requested_seconds": 200.545,
+          "decoded_pts_seconds": 200.557,
+          "image": "frames/A05_07_200.545.jpg"
+        },
+        {
+          "id": "A05.08",
+          "requested_seconds": 201.636,
+          "decoded_pts_seconds": 201.639,
+          "image": "frames/A05_08_201.636.jpg"
+        },
+        {
+          "id": "A05.09",
+          "requested_seconds": 202.727,
+          "decoded_pts_seconds": 202.721,
+          "image": "frames/A05_09_202.727.jpg"
+        },
+        {
+          "id": "A05.10",
+          "requested_seconds": 203.818,
+          "decoded_pts_seconds": 203.803,
+          "image": "frames/A05_10_203.818.jpg"
+        },
+        {
+          "id": "A05.11",
+          "requested_seconds": 204.909,
+          "decoded_pts_seconds": 204.926,
+          "image": "frames/A05_11_204.909.jpg"
+        },
+        {
+          "id": "A05.12",
+          "requested_seconds": 206.0,
+          "decoded_pts_seconds": 206.008,
+          "image": "frames/A05_12_206.000.jpg"
+        }
+      ],
+      "principles": "P02/P03/P06",
+      "observation": "03:15-03:17 由暖色爆发切到人物前方的多层圆形屏障与蓝色能量；03:18-03:20 转遗迹边的运动与环形能量；03:21-03:26 切向夜空、建筑和飞行人物。",
+      "analysis": "屏障尺寸、建筑体块和天空留白先后承担尺度参照。主视线由大能量形引向微小人物，冷暖差使方向相对清楚。",
+      "application": "把大远景用于交代覆盖范围，把相邻中近景用于确认是谁发起/承受。参考 M03；不要把相邻不同示例自动拼成同一段原片连续战斗。"
+    },
+    {
+      "id": "A06",
+      "title": "色彩章节的过渡表演",
+      "start": 229,
+      "end": 241,
+      "sheet": "contact-sheets/A06.jpg",
+      "frames": [
+        {
+          "id": "A06.01",
+          "requested_seconds": 229.0,
+          "decoded_pts_seconds": 229.013,
+          "image": "frames/A06_01_229.000.jpg"
+        },
+        {
+          "id": "A06.02",
+          "requested_seconds": 230.091,
+          "decoded_pts_seconds": 230.095,
+          "image": "frames/A06_02_230.091.jpg"
+        },
+        {
+          "id": "A06.03",
+          "requested_seconds": 231.182,
+          "decoded_pts_seconds": 231.177,
+          "image": "frames/A06_03_231.182.jpg"
+        },
+        {
+          "id": "A06.04",
+          "requested_seconds": 232.273,
+          "decoded_pts_seconds": 232.259,
+          "image": "frames/A06_04_232.273.jpg"
+        },
+        {
+          "id": "A06.05",
+          "requested_seconds": 233.364,
+          "decoded_pts_seconds": 233.341,
+          "image": "frames/A06_05_233.364.jpg"
+        },
+        {
+          "id": "A06.06",
+          "requested_seconds": 234.455,
+          "decoded_pts_seconds": 234.463,
+          "image": "frames/A06_06_234.455.jpg"
+        },
+        {
+          "id": "A06.07",
+          "requested_seconds": 235.545,
+          "decoded_pts_seconds": 235.545,
+          "image": "frames/A06_07_235.545.jpg"
+        },
+        {
+          "id": "A06.08",
+          "requested_seconds": 236.636,
+          "decoded_pts_seconds": 236.628,
+          "image": "frames/A06_08_236.636.jpg"
+        },
+        {
+          "id": "A06.09",
+          "requested_seconds": 237.727,
+          "decoded_pts_seconds": 237.71,
+          "image": "frames/A06_09_237.727.jpg"
+        },
+        {
+          "id": "A06.10",
+          "requested_seconds": 238.818,
+          "decoded_pts_seconds": 238.832,
+          "image": "frames/A06_10_238.818.jpg"
+        },
+        {
+          "id": "A06.11",
+          "requested_seconds": 239.909,
+          "decoded_pts_seconds": 239.914,
+          "image": "frames/A06_11_239.909.jpg"
+        },
+        {
+          "id": "A06.12",
+          "requested_seconds": 241.0,
+          "decoded_pts_seconds": 241.001,
+          "image": "frames/A06_12_241.000.jpg"
+        }
+      ],
+      "principles": "P03",
+      "observation": "03:49-04:01 两名角色在强暖色背光和破口前做连续手势，身体与背景的亮暗和色彩层次明显；末尾字幕揭示第三条是色彩对比。",
+      "analysis": "两人位置相对稳定，表演与背景光帮助视线保持集中。这段也能观察肢体变化，但教程在此的教学指向是色彩。",
+      "application": "准确记录例子在教程中的用途。同一个画面可支持次级分析，但不能据二次解读替换原章节。"
+    },
+    {
+      "id": "A07",
+      "title": "人物定位点与环境色域",
+      "start": 255,
+      "end": 268,
+      "sheet": "contact-sheets/A07.jpg",
+      "frames": [
+        {
+          "id": "A07.01",
+          "requested_seconds": 255.0,
+          "decoded_pts_seconds": 254.988,
+          "image": "frames/A07_01_255.000.jpg"
+        },
+        {
+          "id": "A07.02",
+          "requested_seconds": 256.182,
+          "decoded_pts_seconds": 256.191,
+          "image": "frames/A07_02_256.182.jpg"
+        },
+        {
+          "id": "A07.03",
+          "requested_seconds": 257.364,
+          "decoded_pts_seconds": 257.353,
+          "image": "frames/A07_03_257.364.jpg"
+        },
+        {
+          "id": "A07.04",
+          "requested_seconds": 258.545,
+          "decoded_pts_seconds": 258.555,
+          "image": "frames/A07_04_258.545.jpg"
+        },
+        {
+          "id": "A07.05",
+          "requested_seconds": 259.727,
+          "decoded_pts_seconds": 259.718,
+          "image": "frames/A07_05_259.727.jpg"
+        },
+        {
+          "id": "A07.06",
+          "requested_seconds": 260.909,
+          "decoded_pts_seconds": 260.92,
+          "image": "frames/A07_06_260.909.jpg"
+        },
+        {
+          "id": "A07.07",
+          "requested_seconds": 262.091,
+          "decoded_pts_seconds": 262.082,
+          "image": "frames/A07_07_262.091.jpg"
+        },
+        {
+          "id": "A07.08",
+          "requested_seconds": 263.273,
+          "decoded_pts_seconds": 263.284,
+          "image": "frames/A07_08_263.273.jpg"
+        },
+        {
+          "id": "A07.09",
+          "requested_seconds": 264.455,
+          "decoded_pts_seconds": 264.447,
+          "image": "frames/A07_09_264.455.jpg"
+        },
+        {
+          "id": "A07.10",
+          "requested_seconds": 265.636,
+          "decoded_pts_seconds": 265.649,
+          "image": "frames/A07_10_265.636.jpg"
+        },
+        {
+          "id": "A07.11",
+          "requested_seconds": 266.818,
+          "decoded_pts_seconds": 266.811,
+          "image": "frames/A07_11_266.818.jpg"
+        },
+        {
+          "id": "A07.12",
+          "requested_seconds": 268.0,
+          "decoded_pts_seconds": 268.014,
+          "image": "frames/A07_12_268.000.jpg"
+        }
+      ],
+      "principles": "P03",
+      "observation": "04:15-04:21 白衣人物与其面前的红色竖向能量区；04:22-04:25 岩壁中的机体/角色与带暖色质感的背景；04:26-04:28 小形体出现在地面开口处。",
+      "analysis": "亮色边缘、背景色域和前后遮挡共同突出焦点。后续04:34-04:47的冰火慢放是更直接的冷暖示例，另见M04。",
+      "application": "不要只要求“对比强”；说明哪一块保持冷、哪一块是暖色焦点，以及角色如何在大特效中被识别。"
+    },
+    {
+      "id": "A08",
+      "title": "几何形分别处理碎屑、拖影与体积",
+      "start": 310,
+      "end": 334,
+      "sheet": "contact-sheets/A08.jpg",
+      "frames": [
+        {
+          "id": "A08.01",
+          "requested_seconds": 310.0,
+          "decoded_pts_seconds": 310.016,
+          "image": "frames/A08_01_310.000.jpg"
+        },
+        {
+          "id": "A08.02",
+          "requested_seconds": 312.182,
+          "decoded_pts_seconds": 312.18,
+          "image": "frames/A08_02_312.182.jpg"
+        },
+        {
+          "id": "A08.03",
+          "requested_seconds": 314.364,
+          "decoded_pts_seconds": 314.344,
+          "image": "frames/A08_03_314.364.jpg"
+        },
+        {
+          "id": "A08.04",
+          "requested_seconds": 316.545,
+          "decoded_pts_seconds": 316.549,
+          "image": "frames/A08_04_316.545.jpg"
+        },
+        {
+          "id": "A08.05",
+          "requested_seconds": 318.727,
+          "decoded_pts_seconds": 318.713,
+          "image": "frames/A08_05_318.727.jpg"
+        },
+        {
+          "id": "A08.06",
+          "requested_seconds": 320.909,
+          "decoded_pts_seconds": 320.917,
+          "image": "frames/A08_06_320.909.jpg"
+        },
+        {
+          "id": "A08.07",
+          "requested_seconds": 323.091,
+          "decoded_pts_seconds": 323.081,
+          "image": "frames/A08_07_323.091.jpg"
+        },
+        {
+          "id": "A08.08",
+          "requested_seconds": 325.273,
+          "decoded_pts_seconds": 325.286,
+          "image": "frames/A08_08_325.273.jpg"
+        },
+        {
+          "id": "A08.09",
+          "requested_seconds": 327.455,
+          "decoded_pts_seconds": 327.45,
+          "image": "frames/A08_09_327.455.jpg"
+        },
+        {
+          "id": "A08.10",
+          "requested_seconds": 329.636,
+          "decoded_pts_seconds": 329.614,
+          "image": "frames/A08_10_329.636.jpg"
+        },
+        {
+          "id": "A08.11",
+          "requested_seconds": 331.818,
+          "decoded_pts_seconds": 331.818,
+          "image": "frames/A08_11_331.818.jpg"
+        },
+        {
+          "id": "A08.12",
+          "requested_seconds": 334.0,
+          "decoded_pts_seconds": 333.983,
+          "image": "frames/A08_12_334.000.jpg"
+        }
+      ],
+      "principles": "P04",
+      "observation": "05:10 的圆方三角图示后，05:14-05:20 展示墙体/场景方块化破坏；05:23 人物掠行；05:25-05:31 手臂之后的长条尖齿拖影被保持讲解。",
+      "analysis": "实体破坏具有可辨体块；拖影则主要表示运动方向与速度。二者共享简化形状语言，却承担不同叙事信息。",
+      "application": "把“碎块”“速度残影”“体积阴影”分成三个字段。不能把拖影当成离体碎屑，也不能让碎屑没有来源。"
+    },
+    {
+      "id": "A09",
+      "title": "贴近拳部的几何体积与接触关系",
+      "start": 334,
+      "end": 354,
+      "sheet": "contact-sheets/A09.jpg",
+      "frames": [
+        {
+          "id": "A09.01",
+          "requested_seconds": 334.0,
+          "decoded_pts_seconds": 333.983,
+          "image": "frames/A09_01_334.000.jpg"
+        },
+        {
+          "id": "A09.02",
+          "requested_seconds": 335.818,
+          "decoded_pts_seconds": 335.826,
+          "image": "frames/A09_02_335.818.jpg"
+        },
+        {
+          "id": "A09.03",
+          "requested_seconds": 337.636,
+          "decoded_pts_seconds": 337.63,
+          "image": "frames/A09_03_337.636.jpg"
+        },
+        {
+          "id": "A09.04",
+          "requested_seconds": 339.455,
+          "decoded_pts_seconds": 339.433,
+          "image": "frames/A09_04_339.455.jpg"
+        },
+        {
+          "id": "A09.05",
+          "requested_seconds": 341.273,
+          "decoded_pts_seconds": 341.277,
+          "image": "frames/A09_05_341.273.jpg"
+        },
+        {
+          "id": "A09.06",
+          "requested_seconds": 343.091,
+          "decoded_pts_seconds": 343.08,
+          "image": "frames/A09_06_343.091.jpg"
+        },
+        {
+          "id": "A09.07",
+          "requested_seconds": 344.909,
+          "decoded_pts_seconds": 344.924,
+          "image": "frames/A09_07_344.909.jpg"
+        },
+        {
+          "id": "A09.08",
+          "requested_seconds": 346.727,
+          "decoded_pts_seconds": 346.728,
+          "image": "frames/A09_08_346.727.jpg"
+        },
+        {
+          "id": "A09.09",
+          "requested_seconds": 348.545,
+          "decoded_pts_seconds": 348.531,
+          "image": "frames/A09_09_348.545.jpg"
+        },
+        {
+          "id": "A09.10",
+          "requested_seconds": 350.364,
+          "decoded_pts_seconds": 350.375,
+          "image": "frames/A09_10_350.364.jpg"
+        },
+        {
+          "id": "A09.11",
+          "requested_seconds": 352.182,
+          "decoded_pts_seconds": 352.178,
+          "image": "frames/A09_11_352.182.jpg"
+        },
+        {
+          "id": "A09.12",
+          "requested_seconds": 354.0,
+          "decoded_pts_seconds": 353.982,
+          "image": "frames/A09_12_354.000.jpg"
+        }
+      ],
+      "principles": "P04/P05",
+      "observation": "05:34-05:37 正常画面与大场景短例；05:39 起0.2x慢放，红色拳套/前臂压向暗色体块，交界处绿光闪动；05:48-05:50 手臂附近的亮暗楔形及粒子显现。",
+      "analysis": "大近景几乎只保留施力肢体与受力表面；硬朗亮暗块、轮廓和接触交界让体积可读，绿光辅助指出能量来源。",
+      "application": "描述接触点、施力方向与受力变形，再补光色与几何化；不要只写“拳头带电猛烈击中”。参考M05。"
+    },
+    {
+      "id": "A10",
+      "title": "圆与方的用途以及例外",
+      "start": 355,
+      "end": 377,
+      "sheet": "contact-sheets/A10.jpg",
+      "frames": [
+        {
+          "id": "A10.01",
+          "requested_seconds": 355.0,
+          "decoded_pts_seconds": 354.984,
+          "image": "frames/A10_01_355.000.jpg"
+        },
+        {
+          "id": "A10.02",
+          "requested_seconds": 357.0,
+          "decoded_pts_seconds": 356.988,
+          "image": "frames/A10_02_357.000.jpg"
+        },
+        {
+          "id": "A10.03",
+          "requested_seconds": 359.0,
+          "decoded_pts_seconds": 358.992,
+          "image": "frames/A10_03_359.000.jpg"
+        },
+        {
+          "id": "A10.04",
+          "requested_seconds": 361.0,
+          "decoded_pts_seconds": 361.001,
+          "image": "frames/A10_04_361.000.jpg"
+        },
+        {
+          "id": "A10.05",
+          "requested_seconds": 363.0,
+          "decoded_pts_seconds": 363.005,
+          "image": "frames/A10_05_363.000.jpg"
+        },
+        {
+          "id": "A10.06",
+          "requested_seconds": 365.0,
+          "decoded_pts_seconds": 365.009,
+          "image": "frames/A10_06_365.000.jpg"
+        },
+        {
+          "id": "A10.07",
+          "requested_seconds": 367.0,
+          "decoded_pts_seconds": 367.012,
+          "image": "frames/A10_07_367.000.jpg"
+        },
+        {
+          "id": "A10.08",
+          "requested_seconds": 369.0,
+          "decoded_pts_seconds": 369.016,
+          "image": "frames/A10_08_369.000.jpg"
+        },
+        {
+          "id": "A10.09",
+          "requested_seconds": 371.0,
+          "decoded_pts_seconds": 370.98,
+          "image": "frames/A10_09_371.000.jpg"
+        },
+        {
+          "id": "A10.10",
+          "requested_seconds": 373.0,
+          "decoded_pts_seconds": 372.984,
+          "image": "frames/A10_10_373.000.jpg"
+        },
+        {
+          "id": "A10.11",
+          "requested_seconds": 375.0,
+          "decoded_pts_seconds": 374.988,
+          "image": "frames/A10_11_375.000.jpg"
+        },
+        {
+          "id": "A10.12",
+          "requested_seconds": 377.0,
+          "decoded_pts_seconds": 376.992,
+          "image": "frames/A10_12_377.000.jpg"
+        }
+      ],
+      "principles": "P04",
+      "observation": "05:55 为表情近景；05:57 闪白；05:59-06:01 方块/方形粒子与地面；06:03-06:07 蓝色大能量与圆形组织；06:09-06:17 多种爆发、能量和实体碎块。",
+      "analysis": "不同样本用来解释形状家族。转场和讲解例子频繁，不能把这一整段当成一条连贯的原作镜头。",
+      "application": "选几何形时同时考虑材质、质量、方向和全场视觉母题；保留形状用途的例外，不建立“方块=所有破坏”的死规则。"
+    },
+    {
+      "id": "A11",
+      "title": "风格化特效下的连续表演锚点",
+      "start": 418,
+      "end": 430,
+      "sheet": "contact-sheets/A11.jpg",
+      "frames": [
+        {
+          "id": "A11.01",
+          "requested_seconds": 418.0,
+          "decoded_pts_seconds": 417.992,
+          "image": "frames/A11_01_418.000.jpg"
+        },
+        {
+          "id": "A11.02",
+          "requested_seconds": 419.091,
+          "decoded_pts_seconds": 419.074,
+          "image": "frames/A11_02_419.091.jpg"
+        },
+        {
+          "id": "A11.03",
+          "requested_seconds": 420.182,
+          "decoded_pts_seconds": 420.196,
+          "image": "frames/A11_03_420.182.jpg"
+        },
+        {
+          "id": "A11.04",
+          "requested_seconds": 421.273,
+          "decoded_pts_seconds": 421.279,
+          "image": "frames/A11_04_421.273.jpg"
+        },
+        {
+          "id": "A11.05",
+          "requested_seconds": 422.364,
+          "decoded_pts_seconds": 422.361,
+          "image": "frames/A11_05_422.364.jpg"
+        },
+        {
+          "id": "A11.06",
+          "requested_seconds": 423.455,
+          "decoded_pts_seconds": 423.443,
+          "image": "frames/A11_06_423.455.jpg"
+        },
+        {
+          "id": "A11.07",
+          "requested_seconds": 424.545,
+          "decoded_pts_seconds": 424.525,
+          "image": "frames/A11_07_424.545.jpg"
+        },
+        {
+          "id": "A11.08",
+          "requested_seconds": 425.636,
+          "decoded_pts_seconds": 425.647,
+          "image": "frames/A11_08_425.636.jpg"
+        },
+        {
+          "id": "A11.09",
+          "requested_seconds": 426.727,
+          "decoded_pts_seconds": 426.729,
+          "image": "frames/A11_09_426.727.jpg"
+        },
+        {
+          "id": "A11.10",
+          "requested_seconds": 427.818,
+          "decoded_pts_seconds": 427.811,
+          "image": "frames/A11_10_427.818.jpg"
+        },
+        {
+          "id": "A11.11",
+          "requested_seconds": 428.909,
+          "decoded_pts_seconds": 428.893,
+          "image": "frames/A11_11_428.909.jpg"
+        },
+        {
+          "id": "A11.12",
+          "requested_seconds": 430.0,
+          "decoded_pts_seconds": 430.016,
+          "image": "frames/A11_12_430.000.jpg"
+        }
+      ],
+      "principles": "P05",
+      "observation": "06:58-06:59 为第五条英文标题；07:00-07:06 西装角色在相对稳定的机位中连续转肩、伸手、收臂和抬手；07:08 后转入绿色能量攻击。",
+      "analysis": "中景保留肩、肘、腕与躯干关系；身体表演先建立可感知的现实锚点，再切入抽象和夸张的场面。",
+      "application": "为肢体写相连的动词和重心变化，允许不同身体部位错相；表情与动作意图一致。日常表演示例不自动证明受击反馈。"
+    },
+    {
+      "id": "A12",
+      "title": "真实运动与几何特效的连接",
+      "start": 430,
+      "end": 442,
+      "sheet": "contact-sheets/A12.jpg",
+      "frames": [
+        {
+          "id": "A12.01",
+          "requested_seconds": 430.0,
+          "decoded_pts_seconds": 430.016,
+          "image": "frames/A12_01_430.000.jpg"
+        },
+        {
+          "id": "A12.02",
+          "requested_seconds": 431.091,
+          "decoded_pts_seconds": 431.098,
+          "image": "frames/A12_02_431.091.jpg"
+        },
+        {
+          "id": "A12.03",
+          "requested_seconds": 432.182,
+          "decoded_pts_seconds": 432.18,
+          "image": "frames/A12_03_432.182.jpg"
+        },
+        {
+          "id": "A12.04",
+          "requested_seconds": 433.273,
+          "decoded_pts_seconds": 433.262,
+          "image": "frames/A12_04_433.273.jpg"
+        },
+        {
+          "id": "A12.05",
+          "requested_seconds": 434.364,
+          "decoded_pts_seconds": 434.344,
+          "image": "frames/A12_05_434.364.jpg"
+        },
+        {
+          "id": "A12.06",
+          "requested_seconds": 435.455,
+          "decoded_pts_seconds": 435.466,
+          "image": "frames/A12_06_435.455.jpg"
+        },
+        {
+          "id": "A12.07",
+          "requested_seconds": 436.545,
+          "decoded_pts_seconds": 436.548,
+          "image": "frames/A12_07_436.545.jpg"
+        },
+        {
+          "id": "A12.08",
+          "requested_seconds": 437.636,
+          "decoded_pts_seconds": 437.63,
+          "image": "frames/A12_08_437.636.jpg"
+        },
+        {
+          "id": "A12.09",
+          "requested_seconds": 438.727,
+          "decoded_pts_seconds": 438.713,
+          "image": "frames/A12_09_438.727.jpg"
+        },
+        {
+          "id": "A12.10",
+          "requested_seconds": 439.818,
+          "decoded_pts_seconds": 439.835,
+          "image": "frames/A12_10_439.818.jpg"
+        },
+        {
+          "id": "A12.11",
+          "requested_seconds": 440.909,
+          "decoded_pts_seconds": 440.917,
+          "image": "frames/A12_11_440.909.jpg"
+        },
+        {
+          "id": "A12.12",
+          "requested_seconds": 442.0,
+          "decoded_pts_seconds": 441.999,
+          "image": "frames/A12_12_442.000.jpg"
+        }
+      ],
+      "principles": "P05",
+      "observation": "07:10-07:11 人物处于大体块与绿光攻击附近；07:12-07:14 切粉色轮廓与几何线条；07:15-07:20 回到双人连续表演；07:22 出现双方近距离交手。",
+      "analysis": "教程在真实表演和极简造型之间对照切换。现实感来自连续身体关系，不取决于每帧都写实。",
+      "application": "先保住身体做事的因果，再决定哪些阶段转入几何化。不要把不同作品的示例当成同一空间中的连贯运动。"
+    },
+    {
+      "id": "A13",
+      "title": "片头设计作为视觉母题的外部例证",
+      "start": 486,
+      "end": 510,
+      "sheet": "contact-sheets/A13.jpg",
+      "frames": [
+        {
+          "id": "A13.01",
+          "requested_seconds": 486.0,
+          "decoded_pts_seconds": 486.01,
+          "image": "frames/A13_01_486.000.jpg"
+        },
+        {
+          "id": "A13.02",
+          "requested_seconds": 488.182,
+          "decoded_pts_seconds": 488.174,
+          "image": "frames/A13_02_488.182.jpg"
+        },
+        {
+          "id": "A13.03",
+          "requested_seconds": 490.364,
+          "decoded_pts_seconds": 490.378,
+          "image": "frames/A13_03_490.364.jpg"
+        },
+        {
+          "id": "A13.04",
+          "requested_seconds": 492.545,
+          "decoded_pts_seconds": 492.542,
+          "image": "frames/A13_04_492.545.jpg"
+        },
+        {
+          "id": "A13.05",
+          "requested_seconds": 494.727,
+          "decoded_pts_seconds": 494.747,
+          "image": "frames/A13_05_494.727.jpg"
+        },
+        {
+          "id": "A13.06",
+          "requested_seconds": 496.909,
+          "decoded_pts_seconds": 496.911,
+          "image": "frames/A13_06_496.909.jpg"
+        },
+        {
+          "id": "A13.07",
+          "requested_seconds": 499.091,
+          "decoded_pts_seconds": 499.075,
+          "image": "frames/A13_07_499.091.jpg"
+        },
+        {
+          "id": "A13.08",
+          "requested_seconds": 501.273,
+          "decoded_pts_seconds": 501.279,
+          "image": "frames/A13_08_501.273.jpg"
+        },
+        {
+          "id": "A13.09",
+          "requested_seconds": 503.455,
+          "decoded_pts_seconds": 503.444,
+          "image": "frames/A13_09_503.455.jpg"
+        },
+        {
+          "id": "A13.10",
+          "requested_seconds": 505.636,
+          "decoded_pts_seconds": 505.648,
+          "image": "frames/A13_10_505.636.jpg"
+        },
+        {
+          "id": "A13.11",
+          "requested_seconds": 507.818,
+          "decoded_pts_seconds": 507.812,
+          "image": "frames/A13_11_507.818.jpg"
+        },
+        {
+          "id": "A13.12",
+          "requested_seconds": 510.0,
+          "decoded_pts_seconds": 510.017,
+          "image": "frames/A13_12_510.000.jpg"
+        }
+      ],
+      "principles": "P06",
+      "observation": "08:06 标题转场；08:08-08:15 文字、肢体剪影与电影片头设计；08:16-08:30 海报和片头图形反复出现。画面下方有Little White Lies相关来源字样。",
+      "analysis": "重复的剪影/平面图形跨媒介保持身份。这部分是图形组织的说明，不是打斗动作或中村丰原画归属的证据。",
+      "application": "在skill里把母题与招式身份相连；引用此例时写“教程援引的设计案例”，不能写成“中村丰的电影片头”。"
+    },
+    {
+      "id": "A14",
+      "title": "圆形与弧线贯穿不同攻击",
+      "start": 536,
+      "end": 560,
+      "sheet": "contact-sheets/A14.jpg",
+      "frames": [
+        {
+          "id": "A14.01",
+          "requested_seconds": 536.0,
+          "decoded_pts_seconds": 535.987,
+          "image": "frames/A14_01_536.000.jpg"
+        },
+        {
+          "id": "A14.02",
+          "requested_seconds": 538.182,
+          "decoded_pts_seconds": 538.192,
+          "image": "frames/A14_02_538.182.jpg"
+        },
+        {
+          "id": "A14.03",
+          "requested_seconds": 540.364,
+          "decoded_pts_seconds": 540.356,
+          "image": "frames/A14_03_540.364.jpg"
+        },
+        {
+          "id": "A14.04",
+          "requested_seconds": 542.545,
+          "decoded_pts_seconds": 542.56,
+          "image": "frames/A14_04_542.545.jpg"
+        },
+        {
+          "id": "A14.05",
+          "requested_seconds": 544.727,
+          "decoded_pts_seconds": 544.724,
+          "image": "frames/A14_05_544.727.jpg"
+        },
+        {
+          "id": "A14.06",
+          "requested_seconds": 546.909,
+          "decoded_pts_seconds": 546.889,
+          "image": "frames/A14_06_546.909.jpg"
+        },
+        {
+          "id": "A14.07",
+          "requested_seconds": 549.091,
+          "decoded_pts_seconds": 549.093,
+          "image": "frames/A14_07_549.091.jpg"
+        },
+        {
+          "id": "A14.08",
+          "requested_seconds": 551.273,
+          "decoded_pts_seconds": 551.257,
+          "image": "frames/A14_08_551.273.jpg"
+        },
+        {
+          "id": "A14.09",
+          "requested_seconds": 553.455,
+          "decoded_pts_seconds": 553.461,
+          "image": "frames/A14_09_553.455.jpg"
+        },
+        {
+          "id": "A14.10",
+          "requested_seconds": 555.636,
+          "decoded_pts_seconds": 555.626,
+          "image": "frames/A14_10_555.636.jpg"
+        },
+        {
+          "id": "A14.11",
+          "requested_seconds": 557.818,
+          "decoded_pts_seconds": 557.83,
+          "image": "frames/A14_11_557.818.jpg"
+        },
+        {
+          "id": "A14.12",
+          "requested_seconds": 560.0,
+          "decoded_pts_seconds": 559.994,
+          "image": "frames/A14_12_560.000.jpg"
+        }
+      ],
+      "principles": "P06",
+      "observation": "08:56-09:00 为署有Howard Wimshurst来源的举例；09:02-09:05 多层圆形/球形组织；09:06-09:13 横向红线与弧形刀光；09:15-09:20 转高饱和能量对抗和雕像样形体。",
+      "analysis": "颜色与形状复现，把不同节拍串成同一视觉语汇。不是所有并排样本都来自同一场战斗。",
+      "application": "规定母题从小范围出现到扩张或破裂的变化方式；重复必须伴随新信息，不能只是复制同一特效素材。"
+    },
+    {
+      "id": "A15",
+      "title": "出手先行与教程连续举例",
+      "start": 580,
+      "end": 592,
+      "sheet": "contact-sheets/A15.jpg",
+      "frames": [
+        {
+          "id": "A15.01",
+          "requested_seconds": 580.0,
+          "decoded_pts_seconds": 579.993,
+          "image": "frames/A15_01_580.000.jpg"
+        },
+        {
+          "id": "A15.02",
+          "requested_seconds": 581.091,
+          "decoded_pts_seconds": 581.075,
+          "image": "frames/A15_02_581.091.jpg"
+        },
+        {
+          "id": "A15.03",
+          "requested_seconds": 582.182,
+          "decoded_pts_seconds": 582.198,
+          "image": "frames/A15_03_582.182.jpg"
+        },
+        {
+          "id": "A15.04",
+          "requested_seconds": 583.273,
+          "decoded_pts_seconds": 583.28,
+          "image": "frames/A15_04_583.273.jpg"
+        },
+        {
+          "id": "A15.05",
+          "requested_seconds": 584.364,
+          "decoded_pts_seconds": 584.362,
+          "image": "frames/A15_05_584.364.jpg"
+        },
+        {
+          "id": "A15.06",
+          "requested_seconds": 585.455,
+          "decoded_pts_seconds": 585.444,
+          "image": "frames/A15_06_585.455.jpg"
+        },
+        {
+          "id": "A15.07",
+          "requested_seconds": 586.545,
+          "decoded_pts_seconds": 586.526,
+          "image": "frames/A15_07_586.545.jpg"
+        },
+        {
+          "id": "A15.08",
+          "requested_seconds": 587.636,
+          "decoded_pts_seconds": 587.648,
+          "image": "frames/A15_08_587.636.jpg"
+        },
+        {
+          "id": "A15.09",
+          "requested_seconds": 588.727,
+          "decoded_pts_seconds": 588.73,
+          "image": "frames/A15_09_588.727.jpg"
+        },
+        {
+          "id": "A15.10",
+          "requested_seconds": 589.818,
+          "decoded_pts_seconds": 589.812,
+          "image": "frames/A15_10_589.818.jpg"
+        },
+        {
+          "id": "A15.11",
+          "requested_seconds": 590.909,
+          "decoded_pts_seconds": 590.895,
+          "image": "frames/A15_11_590.909.jpg"
+        },
+        {
+          "id": "A15.12",
+          "requested_seconds": 592.0,
+          "decoded_pts_seconds": 591.977,
+          "image": "frames/A15_12_592.000.jpg"
+        }
+      ],
+      "principles": "P07",
+      "observation": "09:40-09:41 方块化破坏；09:42-09:47 绿发人物出拳，拳臂伸出、背景光色变化并拉出速度线；09:48-09:50 蓝色环境与方块体；09:52 切到刀光示例。",
+      "analysis": "教程在多个例子间组织“原因与结果错开”的概念。前冲与环境结果之间存在可追踪的运动方向，但完整因果需回到各自原片核实。",
+      "application": "为每个动作保留原因与后果两个明确节点。不能把本表中跨作品剪接本身当成动画原片的延迟机制。"
+    },
+    {
+      "id": "A16",
+      "title": "刀光之后才显现的身体分离",
+      "start": 592,
+      "end": 604,
+      "sheet": "contact-sheets/A16.jpg",
+      "frames": [
+        {
+          "id": "A16.01",
+          "requested_seconds": 592.0,
+          "decoded_pts_seconds": 591.977,
+          "image": "frames/A16_01_592.000.jpg"
+        },
+        {
+          "id": "A16.02",
+          "requested_seconds": 593.091,
+          "decoded_pts_seconds": 593.099,
+          "image": "frames/A16_02_593.091.jpg"
+        },
+        {
+          "id": "A16.03",
+          "requested_seconds": 594.182,
+          "decoded_pts_seconds": 594.181,
+          "image": "frames/A16_03_594.182.jpg"
+        },
+        {
+          "id": "A16.04",
+          "requested_seconds": 595.273,
+          "decoded_pts_seconds": 595.263,
+          "image": "frames/A16_04_595.273.jpg"
+        },
+        {
+          "id": "A16.05",
+          "requested_seconds": 596.364,
+          "decoded_pts_seconds": 596.345,
+          "image": "frames/A16_05_596.364.jpg"
+        },
+        {
+          "id": "A16.06",
+          "requested_seconds": 597.455,
+          "decoded_pts_seconds": 597.467,
+          "image": "frames/A16_06_597.455.jpg"
+        },
+        {
+          "id": "A16.07",
+          "requested_seconds": 598.545,
+          "decoded_pts_seconds": 598.55,
+          "image": "frames/A16_07_598.545.jpg"
+        },
+        {
+          "id": "A16.08",
+          "requested_seconds": 599.636,
+          "decoded_pts_seconds": 599.632,
+          "image": "frames/A16_08_599.636.jpg"
+        },
+        {
+          "id": "A16.09",
+          "requested_seconds": 600.727,
+          "decoded_pts_seconds": 600.714,
+          "image": "frames/A16_09_600.727.jpg"
+        },
+        {
+          "id": "A16.10",
+          "requested_seconds": 601.818,
+          "decoded_pts_seconds": 601.801,
+          "image": "frames/A16_10_601.818.jpg"
+        },
+        {
+          "id": "A16.11",
+          "requested_seconds": 602.909,
+          "decoded_pts_seconds": 602.923,
+          "image": "frames/A16_11_602.909.jpg"
+        },
+        {
+          "id": "A16.12",
+          "requested_seconds": 604.0,
+          "decoded_pts_seconds": 604.005,
+          "image": "frames/A16_12_604.000.jpg"
+        }
+      ],
+      "principles": "P07",
+      "observation": "09:52 刀光横过前景，敌人身体仍基本完整；09:53 光线离开，切线闪现；09:54 身体分块错位，随后转为高饱和结果画面；09:58-10:03 为其他示例。",
+      "analysis": "相对稳定的中远景保留攻击路径和目标位置，观众先知道攻击已通过，再看到后果。结果更像“显现”，不是刀光停下来等敌人。",
+      "application": "写“刀光越过—目标短暂完整—切线兑现—分离”的可读顺序。血色或破坏强度取决于原作尺度，不应自动升级。参考M06。"
+    },
+    {
+      "id": "A17",
+      "title": "位移与平台破坏的分离",
+      "start": 604,
+      "end": 616,
+      "sheet": "contact-sheets/A17.jpg",
+      "frames": [
+        {
+          "id": "A17.01",
+          "requested_seconds": 604.0,
+          "decoded_pts_seconds": 604.005,
+          "image": "frames/A17_01_604.000.jpg"
+        },
+        {
+          "id": "A17.02",
+          "requested_seconds": 605.091,
+          "decoded_pts_seconds": 605.087,
+          "image": "frames/A17_02_605.091.jpg"
+        },
+        {
+          "id": "A17.03",
+          "requested_seconds": 606.182,
+          "decoded_pts_seconds": 606.169,
+          "image": "frames/A17_03_606.182.jpg"
+        },
+        {
+          "id": "A17.04",
+          "requested_seconds": 607.273,
+          "decoded_pts_seconds": 607.292,
+          "image": "frames/A17_04_607.273.jpg"
+        },
+        {
+          "id": "A17.05",
+          "requested_seconds": 608.364,
+          "decoded_pts_seconds": 608.374,
+          "image": "frames/A17_05_608.364.jpg"
+        },
+        {
+          "id": "A17.06",
+          "requested_seconds": 609.455,
+          "decoded_pts_seconds": 609.456,
+          "image": "frames/A17_06_609.455.jpg"
+        },
+        {
+          "id": "A17.07",
+          "requested_seconds": 610.545,
+          "decoded_pts_seconds": 610.538,
+          "image": "frames/A17_07_610.545.jpg"
+        },
+        {
+          "id": "A17.08",
+          "requested_seconds": 611.636,
+          "decoded_pts_seconds": 611.62,
+          "image": "frames/A17_08_611.636.jpg"
+        },
+        {
+          "id": "A17.09",
+          "requested_seconds": 612.727,
+          "decoded_pts_seconds": 612.742,
+          "image": "frames/A17_09_612.727.jpg"
+        },
+        {
+          "id": "A17.10",
+          "requested_seconds": 613.818,
+          "decoded_pts_seconds": 613.824,
+          "image": "frames/A17_10_613.818.jpg"
+        },
+        {
+          "id": "A17.11",
+          "requested_seconds": 614.909,
+          "decoded_pts_seconds": 614.907,
+          "image": "frames/A17_11_614.909.jpg"
+        },
+        {
+          "id": "A17.12",
+          "requested_seconds": 616.0,
+          "decoded_pts_seconds": 615.989,
+          "image": "frames/A17_12_616.000.jpg"
+        }
+      ],
+      "principles": "P07/P08",
+      "observation": "10:04-10:05 飞行人物继续运动；10:06-10:10 粉色运动段转入亮色主体掠过平台、平台立方体化并大范围发光；10:11-10:15 再展示跑动与随后显现的地面反应；10:16 进入第八条。",
+      "analysis": "运动主体、破坏与光热结果并不同步到达峰值。场景面和运动路径负责把多个层级连回同一次作用。",
+      "application": "用环境结果证明速度和力量，而不是让人物始终占据画面。根据实际地形安排传播方向与遮挡关系。"
+    },
+    {
+      "id": "A18",
+      "title": "从延迟结果到分层释放",
+      "start": 619,
+      "end": 631,
+      "sheet": "contact-sheets/A18.jpg",
+      "frames": [
+        {
+          "id": "A18.01",
+          "requested_seconds": 619.0,
+          "decoded_pts_seconds": 618.995,
+          "image": "frames/A18_01_619.000.jpg"
+        },
+        {
+          "id": "A18.02",
+          "requested_seconds": 620.091,
+          "decoded_pts_seconds": 620.077,
+          "image": "frames/A18_02_620.091.jpg"
+        },
+        {
+          "id": "A18.03",
+          "requested_seconds": 621.182,
+          "decoded_pts_seconds": 621.199,
+          "image": "frames/A18_03_621.182.jpg"
+        },
+        {
+          "id": "A18.04",
+          "requested_seconds": 622.273,
+          "decoded_pts_seconds": 622.281,
+          "image": "frames/A18_04_622.273.jpg"
+        },
+        {
+          "id": "A18.05",
+          "requested_seconds": 623.364,
+          "decoded_pts_seconds": 623.363,
+          "image": "frames/A18_05_623.364.jpg"
+        },
+        {
+          "id": "A18.06",
+          "requested_seconds": 624.455,
+          "decoded_pts_seconds": 624.445,
+          "image": "frames/A18_06_624.455.jpg"
+        },
+        {
+          "id": "A18.07",
+          "requested_seconds": 625.545,
+          "decoded_pts_seconds": 625.527,
+          "image": "frames/A18_07_625.545.jpg"
+        },
+        {
+          "id": "A18.08",
+          "requested_seconds": 626.636,
+          "decoded_pts_seconds": 626.649,
+          "image": "frames/A18_08_626.636.jpg"
+        },
+        {
+          "id": "A18.09",
+          "requested_seconds": 627.727,
+          "decoded_pts_seconds": 627.732,
+          "image": "frames/A18_09_627.727.jpg"
+        },
+        {
+          "id": "A18.10",
+          "requested_seconds": 628.818,
+          "decoded_pts_seconds": 628.814,
+          "image": "frames/A18_10_628.818.jpg"
+        },
+        {
+          "id": "A18.11",
+          "requested_seconds": 629.909,
+          "decoded_pts_seconds": 629.896,
+          "image": "frames/A18_11_629.909.jpg"
+        },
+        {
+          "id": "A18.12",
+          "requested_seconds": 631.0,
+          "decoded_pts_seconds": 631.018,
+          "image": "frames/A18_12_631.000.jpg"
+        }
+      ],
+      "principles": "P08",
+      "observation": "10:19-10:20 为Layering标题；10:21-10:24 再放平台破坏例；10:25-10:27 红色敌人被金色攻击包围；10:28-10:30 身体形态相对保持；10:31 起局部碎片/损伤出现。",
+      "analysis": "光束、身体和后果在时间上错层；保持的身体让下一层变化有落点。教程回放同例属于讲解结构。",
+      "application": "把能量峰值分配给不同层，每一层都有新的作用。连续发光本身不等于层叠。参考M07-M08。"
+    },
+    {
+      "id": "A19",
+      "title": "主体与次级光线的节奏分离",
+      "start": 631,
+      "end": 643,
+      "sheet": "contact-sheets/A19.jpg",
+      "frames": [
+        {
+          "id": "A19.01",
+          "requested_seconds": 631.0,
+          "decoded_pts_seconds": 631.018,
+          "image": "frames/A19_01_631.000.jpg"
+        },
+        {
+          "id": "A19.02",
+          "requested_seconds": 632.091,
+          "decoded_pts_seconds": 632.1,
+          "image": "frames/A19_02_632.091.jpg"
+        },
+        {
+          "id": "A19.03",
+          "requested_seconds": 633.182,
+          "decoded_pts_seconds": 633.182,
+          "image": "frames/A19_03_633.182.jpg"
+        },
+        {
+          "id": "A19.04",
+          "requested_seconds": 634.273,
+          "decoded_pts_seconds": 634.264,
+          "image": "frames/A19_04_634.273.jpg"
+        },
+        {
+          "id": "A19.05",
+          "requested_seconds": 635.364,
+          "decoded_pts_seconds": 635.346,
+          "image": "frames/A19_05_635.364.jpg"
+        },
+        {
+          "id": "A19.06",
+          "requested_seconds": 636.455,
+          "decoded_pts_seconds": 636.469,
+          "image": "frames/A19_06_636.455.jpg"
+        },
+        {
+          "id": "A19.07",
+          "requested_seconds": 637.545,
+          "decoded_pts_seconds": 637.551,
+          "image": "frames/A19_07_637.545.jpg"
+        },
+        {
+          "id": "A19.08",
+          "requested_seconds": 638.636,
+          "decoded_pts_seconds": 638.633,
+          "image": "frames/A19_08_638.636.jpg"
+        },
+        {
+          "id": "A19.09",
+          "requested_seconds": 639.727,
+          "decoded_pts_seconds": 639.715,
+          "image": "frames/A19_09_639.727.jpg"
+        },
+        {
+          "id": "A19.10",
+          "requested_seconds": 640.818,
+          "decoded_pts_seconds": 640.797,
+          "image": "frames/A19_10_640.818.jpg"
+        },
+        {
+          "id": "A19.11",
+          "requested_seconds": 641.909,
+          "decoded_pts_seconds": 641.919,
+          "image": "frames/A19_11_641.909.jpg"
+        },
+        {
+          "id": "A19.12",
+          "requested_seconds": 643.0,
+          "decoded_pts_seconds": 643.001,
+          "image": "frames/A19_12_643.000.jpg"
+        }
+      ],
+      "principles": "P08",
+      "observation": "10:31-10:32 身体损伤后继续变化；10:33-10:39 发光主体沿弧线下落，多条细光从侧面进入、交叉或掠过；10:40 后转为风格化追逐。",
+      "analysis": "主体路径连续，次级攻击的出现点和方向提供节拍。深色背景使线条与小型亮点容易跟踪。",
+      "application": "指定哪条轨迹是主体，哪些是次级干扰；不同层既要错时，也要保持主次。不能把复杂度全部交给随机线束。"
+    },
+    {
+      "id": "A20",
+      "title": "抽象空间运动与章节过渡",
+      "start": 643,
+      "end": 655,
+      "sheet": "contact-sheets/A20.jpg",
+      "frames": [
+        {
+          "id": "A20.01",
+          "requested_seconds": 643.0,
+          "decoded_pts_seconds": 643.001,
+          "image": "frames/A20_01_643.000.jpg"
+        },
+        {
+          "id": "A20.02",
+          "requested_seconds": 644.091,
+          "decoded_pts_seconds": 644.084,
+          "image": "frames/A20_02_644.091.jpg"
+        },
+        {
+          "id": "A20.03",
+          "requested_seconds": 645.182,
+          "decoded_pts_seconds": 645.166,
+          "image": "frames/A20_03_645.182.jpg"
+        },
+        {
+          "id": "A20.04",
+          "requested_seconds": 646.273,
+          "decoded_pts_seconds": 646.288,
+          "image": "frames/A20_04_646.273.jpg"
+        },
+        {
+          "id": "A20.05",
+          "requested_seconds": 647.364,
+          "decoded_pts_seconds": 647.37,
+          "image": "frames/A20_05_647.364.jpg"
+        },
+        {
+          "id": "A20.06",
+          "requested_seconds": 648.455,
+          "decoded_pts_seconds": 648.452,
+          "image": "frames/A20_06_648.455.jpg"
+        },
+        {
+          "id": "A20.07",
+          "requested_seconds": 649.545,
+          "decoded_pts_seconds": 649.534,
+          "image": "frames/A20_07_649.545.jpg"
+        },
+        {
+          "id": "A20.08",
+          "requested_seconds": 650.636,
+          "decoded_pts_seconds": 650.616,
+          "image": "frames/A20_08_650.636.jpg"
+        },
+        {
+          "id": "A20.09",
+          "requested_seconds": 651.727,
+          "decoded_pts_seconds": 651.739,
+          "image": "frames/A20_09_651.727.jpg"
+        },
+        {
+          "id": "A20.10",
+          "requested_seconds": 652.818,
+          "decoded_pts_seconds": 652.821,
+          "image": "frames/A20_10_652.818.jpg"
+        },
+        {
+          "id": "A20.11",
+          "requested_seconds": 653.909,
+          "decoded_pts_seconds": 653.903,
+          "image": "frames/A20_11_653.909.jpg"
+        },
+        {
+          "id": "A20.12",
+          "requested_seconds": 655.0,
+          "decoded_pts_seconds": 654.985,
+          "image": "frames/A20_12_655.000.jpg"
+        }
+      ],
+      "principles": "P08/P09",
+      "observation": "10:43-10:48 夸张几何载体经过抽象空间与宇宙图景；10:49-10:51 回到岩石/载体滑行；10:52-10:55 重放面部受拳及黑白化，字幕引入第九条。",
+      "analysis": "此窗的前半延续教程视觉展示，后半是新章节铺垫。抽象背景变化能增强运动感，但并不能直接据此确定角色真实位移。",
+      "application": "分析镜头要标注“举例/转场/重放”。skill改写优先使用前后因果清楚的例子，不把转场当独立动作原理证据。"
+    },
+    {
+      "id": "A21",
+      "title": "不对称跑动与头部变化",
+      "start": 666,
+      "end": 678,
+      "sheet": "contact-sheets/A21.jpg",
+      "frames": [
+        {
+          "id": "A21.01",
+          "requested_seconds": 666.0,
+          "decoded_pts_seconds": 666.006,
+          "image": "frames/A21_01_666.000.jpg"
+        },
+        {
+          "id": "A21.02",
+          "requested_seconds": 667.091,
+          "decoded_pts_seconds": 667.089,
+          "image": "frames/A21_02_667.091.jpg"
+        },
+        {
+          "id": "A21.03",
+          "requested_seconds": 668.182,
+          "decoded_pts_seconds": 668.171,
+          "image": "frames/A21_03_668.182.jpg"
+        },
+        {
+          "id": "A21.04",
+          "requested_seconds": 669.273,
+          "decoded_pts_seconds": 669.253,
+          "image": "frames/A21_04_669.273.jpg"
+        },
+        {
+          "id": "A21.05",
+          "requested_seconds": 670.364,
+          "decoded_pts_seconds": 670.375,
+          "image": "frames/A21_05_670.364.jpg"
+        },
+        {
+          "id": "A21.06",
+          "requested_seconds": 671.455,
+          "decoded_pts_seconds": 671.457,
+          "image": "frames/A21_06_671.455.jpg"
+        },
+        {
+          "id": "A21.07",
+          "requested_seconds": 672.545,
+          "decoded_pts_seconds": 672.539,
+          "image": "frames/A21_07_672.545.jpg"
+        },
+        {
+          "id": "A21.08",
+          "requested_seconds": 673.636,
+          "decoded_pts_seconds": 673.621,
+          "image": "frames/A21_08_673.636.jpg"
+        },
+        {
+          "id": "A21.09",
+          "requested_seconds": 674.727,
+          "decoded_pts_seconds": 674.743,
+          "image": "frames/A21_09_674.727.jpg"
+        },
+        {
+          "id": "A21.10",
+          "requested_seconds": 675.818,
+          "decoded_pts_seconds": 675.826,
+          "image": "frames/A21_10_675.818.jpg"
+        },
+        {
+          "id": "A21.11",
+          "requested_seconds": 676.909,
+          "decoded_pts_seconds": 676.908,
+          "image": "frames/A21_11_676.909.jpg"
+        },
+        {
+          "id": "A21.12",
+          "requested_seconds": 678.0,
+          "decoded_pts_seconds": 677.99,
+          "image": "frames/A21_12_678.000.jpg"
+        }
+      ],
+      "principles": "P09",
+      "observation": "11:07-11:11 角色在绿光间改变躯干倾斜、手臂角度与面向；11:12-11:17 挥拳人物在相似构图中改变头部、嘴形和表情；11:18 切白衣人物运动。",
+      "analysis": "重复任务保留，姿态不简单镜像。中心手臂与头部的错相变化使动作有主动修正感。",
+      "application": "为连续招式设计“相同目标、不同修正”，把对手和环境反应写成变化原因；不以无意义摇摆填满所有镜头。参考M09。"
+    },
+    {
+      "id": "A22",
+      "title": "特效轮廓不断重组",
+      "start": 678,
+      "end": 690,
+      "sheet": "contact-sheets/A22.jpg",
+      "frames": [
+        {
+          "id": "A22.01",
+          "requested_seconds": 678.0,
+          "decoded_pts_seconds": 677.99,
+          "image": "frames/A22_01_678.000.jpg"
+        },
+        {
+          "id": "A22.02",
+          "requested_seconds": 679.091,
+          "decoded_pts_seconds": 679.072,
+          "image": "frames/A22_02_679.091.jpg"
+        },
+        {
+          "id": "A22.03",
+          "requested_seconds": 680.182,
+          "decoded_pts_seconds": 680.194,
+          "image": "frames/A22_03_680.182.jpg"
+        },
+        {
+          "id": "A22.04",
+          "requested_seconds": 681.273,
+          "decoded_pts_seconds": 681.276,
+          "image": "frames/A22_04_681.273.jpg"
+        },
+        {
+          "id": "A22.05",
+          "requested_seconds": 682.364,
+          "decoded_pts_seconds": 682.358,
+          "image": "frames/A22_05_682.364.jpg"
+        },
+        {
+          "id": "A22.06",
+          "requested_seconds": 683.455,
+          "decoded_pts_seconds": 683.44,
+          "image": "frames/A22_06_683.455.jpg"
+        },
+        {
+          "id": "A22.07",
+          "requested_seconds": 684.545,
+          "decoded_pts_seconds": 684.523,
+          "image": "frames/A22_07_684.545.jpg"
+        },
+        {
+          "id": "A22.08",
+          "requested_seconds": 685.636,
+          "decoded_pts_seconds": 685.645,
+          "image": "frames/A22_08_685.636.jpg"
+        },
+        {
+          "id": "A22.09",
+          "requested_seconds": 686.727,
+          "decoded_pts_seconds": 686.727,
+          "image": "frames/A22_09_686.727.jpg"
+        },
+        {
+          "id": "A22.10",
+          "requested_seconds": 687.818,
+          "decoded_pts_seconds": 687.809,
+          "image": "frames/A22_10_687.818.jpg"
+        },
+        {
+          "id": "A22.11",
+          "requested_seconds": 688.909,
+          "decoded_pts_seconds": 688.891,
+          "image": "frames/A22_11_688.909.jpg"
+        },
+        {
+          "id": "A22.12",
+          "requested_seconds": 690.0,
+          "decoded_pts_seconds": 690.013,
+          "image": "frames/A22_12_690.000.jpg"
+        }
+      ],
+      "principles": "P09",
+      "observation": "11:18-11:20 白衣人物由移动到站定；11:21-11:23 港口/城市远景；11:24-11:26 暖色爆发轮廓变化；11:27-11:30 粉色光带在近地空间不断重组。",
+      "analysis": "城市与建筑保留空间参照；爆发的外轮廓和明暗每个阶段不同。变化服务于能量过程，而非仅让纹理闪烁。",
+      "application": "写出轮廓由何种形态演变为何种形态，以及峰值后的衰减；区分大形变化、粒子细节与摄影机变化。"
+    },
+    {
+      "id": "A23",
+      "title": "摄影机进入冲击场的章节引入",
+      "start": 702,
+      "end": 714,
+      "sheet": "contact-sheets/A23.jpg",
+      "frames": [
+        {
+          "id": "A23.01",
+          "requested_seconds": 702.0,
+          "decoded_pts_seconds": 701.997,
+          "image": "frames/A23_01_702.000.jpg"
+        },
+        {
+          "id": "A23.02",
+          "requested_seconds": 703.091,
+          "decoded_pts_seconds": 703.079,
+          "image": "frames/A23_02_703.091.jpg"
+        },
+        {
+          "id": "A23.03",
+          "requested_seconds": 704.182,
+          "decoded_pts_seconds": 704.161,
+          "image": "frames/A23_03_704.182.jpg"
+        },
+        {
+          "id": "A23.04",
+          "requested_seconds": 705.273,
+          "decoded_pts_seconds": 705.283,
+          "image": "frames/A23_04_705.273.jpg"
+        },
+        {
+          "id": "A23.05",
+          "requested_seconds": 706.364,
+          "decoded_pts_seconds": 706.365,
+          "image": "frames/A23_05_706.364.jpg"
+        },
+        {
+          "id": "A23.06",
+          "requested_seconds": 707.455,
+          "decoded_pts_seconds": 707.447,
+          "image": "frames/A23_06_707.455.jpg"
+        },
+        {
+          "id": "A23.07",
+          "requested_seconds": 708.545,
+          "decoded_pts_seconds": 708.53,
+          "image": "frames/A23_07_708.545.jpg"
+        },
+        {
+          "id": "A23.08",
+          "requested_seconds": 709.636,
+          "decoded_pts_seconds": 709.652,
+          "image": "frames/A23_08_709.636.jpg"
+        },
+        {
+          "id": "A23.09",
+          "requested_seconds": 710.727,
+          "decoded_pts_seconds": 710.734,
+          "image": "frames/A23_09_710.727.jpg"
+        },
+        {
+          "id": "A23.10",
+          "requested_seconds": 711.818,
+          "decoded_pts_seconds": 711.816,
+          "image": "frames/A23_10_711.818.jpg"
+        },
+        {
+          "id": "A23.11",
+          "requested_seconds": 712.909,
+          "decoded_pts_seconds": 712.898,
+          "image": "frames/A23_11_712.909.jpg"
+        },
+        {
+          "id": "A23.12",
+          "requested_seconds": 714.0,
+          "decoded_pts_seconds": 713.98,
+          "image": "frames/A23_12_714.000.jpg"
+        }
+      ],
+      "principles": "P10",
+      "observation": "11:42-11:46 为触手/大型形体附近的运动与环境；11:47-11:49 标题Camera Inside of Action；11:51-11:54 持刀人物和脚部的近侧视点。",
+      "analysis": "近处形体、背景和人物产生明显相对位移，视点接近动作路径。它的教学指向是镜头位置与参与感。",
+      "application": "写摄影机相对武器和身体的位置，说明贴近的目的；不能把第十条误归为冲击帧。参考M10。"
+    },
+    {
+      "id": "A24",
+      "title": "近侧刀刃、身体与掠镜线条",
+      "start": 714,
+      "end": 726,
+      "sheet": "contact-sheets/A24.jpg",
+      "frames": [
+        {
+          "id": "A24.01",
+          "requested_seconds": 714.0,
+          "decoded_pts_seconds": 713.98,
+          "image": "frames/A24_01_714.000.jpg"
+        },
+        {
+          "id": "A24.02",
+          "requested_seconds": 715.091,
+          "decoded_pts_seconds": 715.102,
+          "image": "frames/A24_02_715.091.jpg"
+        },
+        {
+          "id": "A24.03",
+          "requested_seconds": 716.182,
+          "decoded_pts_seconds": 716.184,
+          "image": "frames/A24_03_716.182.jpg"
+        },
+        {
+          "id": "A24.04",
+          "requested_seconds": 717.273,
+          "decoded_pts_seconds": 717.267,
+          "image": "frames/A24_04_717.273.jpg"
+        },
+        {
+          "id": "A24.05",
+          "requested_seconds": 718.364,
+          "decoded_pts_seconds": 718.349,
+          "image": "frames/A24_05_718.364.jpg"
+        },
+        {
+          "id": "A24.06",
+          "requested_seconds": 719.455,
+          "decoded_pts_seconds": 719.431,
+          "image": "frames/A24_06_719.455.jpg"
+        },
+        {
+          "id": "A24.07",
+          "requested_seconds": 720.545,
+          "decoded_pts_seconds": 720.553,
+          "image": "frames/A24_07_720.545.jpg"
+        },
+        {
+          "id": "A24.08",
+          "requested_seconds": 721.636,
+          "decoded_pts_seconds": 721.64,
+          "image": "frames/A24_08_721.636.jpg"
+        },
+        {
+          "id": "A24.09",
+          "requested_seconds": 722.727,
+          "decoded_pts_seconds": 722.722,
+          "image": "frames/A24_09_722.727.jpg"
+        },
+        {
+          "id": "A24.10",
+          "requested_seconds": 723.818,
+          "decoded_pts_seconds": 723.804,
+          "image": "frames/A24_10_723.818.jpg"
+        },
+        {
+          "id": "A24.11",
+          "requested_seconds": 724.909,
+          "decoded_pts_seconds": 724.927,
+          "image": "frames/A24_11_724.909.jpg"
+        },
+        {
+          "id": "A24.12",
+          "requested_seconds": 726.0,
+          "decoded_pts_seconds": 726.009,
+          "image": "frames/A24_12_726.000.jpg"
+        }
+      ],
+      "principles": "P10/P11",
+      "observation": "11:54-11:55 从脚步附近转到掠镜剑刃；11:56-12:01 粉色武器/线条绕着人物展开，形成大幅画面位移；12:02-12:05 切天空小人物与强光十字形态。",
+      "analysis": "近侧线条的快速扫屏提供速度量级，远处人物或背景提供方位参照。少量极近视角与较远构图交替，避免全段不可辨。",
+      "application": "在极近镜头之后安排空间恢复点，并保住主运动向量。参考M10-M11；闪白/黑白化在此是具体表现，不能替代摄影机论点。"
+    },
+    {
+      "id": "A25",
+      "title": "方向性章节引入与主向量",
+      "start": 738,
+      "end": 750,
+      "sheet": "contact-sheets/A25.jpg",
+      "frames": [
+        {
+          "id": "A25.01",
+          "requested_seconds": 738.0,
+          "decoded_pts_seconds": 737.992,
+          "image": "frames/A25_01_738.000.jpg"
+        },
+        {
+          "id": "A25.02",
+          "requested_seconds": 739.091,
+          "decoded_pts_seconds": 739.074,
+          "image": "frames/A25_02_739.091.jpg"
+        },
+        {
+          "id": "A25.03",
+          "requested_seconds": 740.182,
+          "decoded_pts_seconds": 740.196,
+          "image": "frames/A25_03_740.182.jpg"
+        },
+        {
+          "id": "A25.04",
+          "requested_seconds": 741.273,
+          "decoded_pts_seconds": 741.279,
+          "image": "frames/A25_04_741.273.jpg"
+        },
+        {
+          "id": "A25.05",
+          "requested_seconds": 742.364,
+          "decoded_pts_seconds": 742.361,
+          "image": "frames/A25_05_742.364.jpg"
+        },
+        {
+          "id": "A25.06",
+          "requested_seconds": 743.455,
+          "decoded_pts_seconds": 743.443,
+          "image": "frames/A25_06_743.455.jpg"
+        },
+        {
+          "id": "A25.07",
+          "requested_seconds": 744.545,
+          "decoded_pts_seconds": 744.565,
+          "image": "frames/A25_07_744.545.jpg"
+        },
+        {
+          "id": "A25.08",
+          "requested_seconds": 745.636,
+          "decoded_pts_seconds": 745.647,
+          "image": "frames/A25_08_745.636.jpg"
+        },
+        {
+          "id": "A25.09",
+          "requested_seconds": 746.727,
+          "decoded_pts_seconds": 746.729,
+          "image": "frames/A25_09_746.727.jpg"
+        },
+        {
+          "id": "A25.10",
+          "requested_seconds": 747.818,
+          "decoded_pts_seconds": 747.811,
+          "image": "frames/A25_10_747.818.jpg"
+        },
+        {
+          "id": "A25.11",
+          "requested_seconds": 748.909,
+          "decoded_pts_seconds": 748.893,
+          "image": "frames/A25_11_748.909.jpg"
+        },
+        {
+          "id": "A25.12",
+          "requested_seconds": 750.0,
+          "decoded_pts_seconds": 750.016,
+          "image": "frames/A25_12_750.000.jpg"
+        }
+      ],
+      "principles": "P11",
+      "observation": "12:18-12:24 为武器、飞行、碎块和能量示例；12:25-12:29 字幕及英文标题引出Frames Having Direction；12:30 起切入带边框的分解展示。",
+      "analysis": "运动方向由形体倾斜、透视缩短和拉长拖影共同表达。方向组织不等于永远直线飞行。",
+      "application": "把“朝向哪里”写得比“冲得多快”更明确，并给目标或消失方向一个可见参照。"
+    },
+    {
+      "id": "A26",
+      "title": "身体、速度线与消失方向协同",
+      "start": 750,
+      "end": 762,
+      "sheet": "contact-sheets/A26.jpg",
+      "frames": [
+        {
+          "id": "A26.01",
+          "requested_seconds": 750.0,
+          "decoded_pts_seconds": 750.016,
+          "image": "frames/A26_01_750.000.jpg"
+        },
+        {
+          "id": "A26.02",
+          "requested_seconds": 751.091,
+          "decoded_pts_seconds": 751.098,
+          "image": "frames/A26_02_751.091.jpg"
+        },
+        {
+          "id": "A26.03",
+          "requested_seconds": 752.182,
+          "decoded_pts_seconds": 752.18,
+          "image": "frames/A26_03_752.182.jpg"
+        },
+        {
+          "id": "A26.04",
+          "requested_seconds": 753.273,
+          "decoded_pts_seconds": 753.262,
+          "image": "frames/A26_04_753.273.jpg"
+        },
+        {
+          "id": "A26.05",
+          "requested_seconds": 754.364,
+          "decoded_pts_seconds": 754.344,
+          "image": "frames/A26_05_754.364.jpg"
+        },
+        {
+          "id": "A26.06",
+          "requested_seconds": 755.455,
+          "decoded_pts_seconds": 755.466,
+          "image": "frames/A26_06_755.455.jpg"
+        },
+        {
+          "id": "A26.07",
+          "requested_seconds": 756.545,
+          "decoded_pts_seconds": 756.548,
+          "image": "frames/A26_07_756.545.jpg"
+        },
+        {
+          "id": "A26.08",
+          "requested_seconds": 757.636,
+          "decoded_pts_seconds": 757.63,
+          "image": "frames/A26_08_757.636.jpg"
+        },
+        {
+          "id": "A26.09",
+          "requested_seconds": 758.727,
+          "decoded_pts_seconds": 758.713,
+          "image": "frames/A26_09_758.727.jpg"
+        },
+        {
+          "id": "A26.10",
+          "requested_seconds": 759.818,
+          "decoded_pts_seconds": 759.835,
+          "image": "frames/A26_10_759.818.jpg"
+        },
+        {
+          "id": "A26.11",
+          "requested_seconds": 760.909,
+          "decoded_pts_seconds": 760.917,
+          "image": "frames/A26_11_760.909.jpg"
+        },
+        {
+          "id": "A26.12",
+          "requested_seconds": 762.0,
+          "decoded_pts_seconds": 761.999,
+          "image": "frames/A26_12_762.000.jpg"
+        }
+      ],
+      "principles": "P11",
+      "observation": "12:31-12:32 人物向绿色楔形空间的深处推进；12:33-12:34 两人物关系由拳臂和背景线条连起；12:35-12:37 绿发人物出拳与线束共同指向一侧；12:39-12:41 粉色斜向速度线与飞行姿态协同。",
+      "analysis": "方向既能由主肢体指出，也能由背景汇聚强化。教程大小窗是速度/画面比较，不表示两个事件同一时刻并列发生。",
+      "application": "联合检查人物轴线、主特效、拖影尾部与背景，删除争夺注意力却不传递信息的反向线。"
+    },
+    {
+      "id": "A27",
+      "title": "方向线既引导，也能制造预期",
+      "start": 762,
+      "end": 790,
+      "sheet": "contact-sheets/A27.jpg",
+      "frames": [
+        {
+          "id": "A27.01",
+          "requested_seconds": 762.0,
+          "decoded_pts_seconds": 761.999,
+          "image": "frames/A27_01_762.000.jpg"
+        },
+        {
+          "id": "A27.02",
+          "requested_seconds": 764.545,
+          "decoded_pts_seconds": 764.564,
+          "image": "frames/A27_02_764.545.jpg"
+        },
+        {
+          "id": "A27.03",
+          "requested_seconds": 767.091,
+          "decoded_pts_seconds": 767.089,
+          "image": "frames/A27_03_767.091.jpg"
+        },
+        {
+          "id": "A27.04",
+          "requested_seconds": 769.636,
+          "decoded_pts_seconds": 769.654,
+          "image": "frames/A27_04_769.636.jpg"
+        },
+        {
+          "id": "A27.05",
+          "requested_seconds": 772.182,
+          "decoded_pts_seconds": 772.179,
+          "image": "frames/A27_05_772.182.jpg"
+        },
+        {
+          "id": "A27.06",
+          "requested_seconds": 774.727,
+          "decoded_pts_seconds": 774.744,
+          "image": "frames/A27_06_774.727.jpg"
+        },
+        {
+          "id": "A27.07",
+          "requested_seconds": 777.273,
+          "decoded_pts_seconds": 777.269,
+          "image": "frames/A27_07_777.273.jpg"
+        },
+        {
+          "id": "A27.08",
+          "requested_seconds": 779.818,
+          "decoded_pts_seconds": 779.834,
+          "image": "frames/A27_08_779.818.jpg"
+        },
+        {
+          "id": "A27.09",
+          "requested_seconds": 782.364,
+          "decoded_pts_seconds": 782.359,
+          "image": "frames/A27_09_782.364.jpg"
+        },
+        {
+          "id": "A27.10",
+          "requested_seconds": 784.909,
+          "decoded_pts_seconds": 784.924,
+          "image": "frames/A27_10_784.909.jpg"
+        },
+        {
+          "id": "A27.11",
+          "requested_seconds": 787.455,
+          "decoded_pts_seconds": 787.449,
+          "image": "frames/A27_11_787.455.jpg"
+        },
+        {
+          "id": "A27.12",
+          "requested_seconds": 790.0,
+          "decoded_pts_seconds": 790.014,
+          "image": "frames/A27_12_790.000.jpg"
+        }
+      ],
+      "principles": "P11",
+      "observation": "12:42-12:44 面部与手臂举例；12:47 红黑斜线中的人物剪影；12:49-12:54 紫色与青蓝能量的方向展示；12:57-13:02 枪/手臂及暖色飞行；13:04-13:10 拖影、碎块与双向能量关系。",
+      "analysis": "线条先给眼睛一个追踪路径，人物和特效再兑现该方向。若出现反向力量，应能解释为反击、对撞或预告，而不是画面杂讯。",
+      "application": "写出读图顺序：先看到什么，眼睛被带到哪里，结果在哪儿出现。保留对立力的主次，不把所有向量强行同向。"
+    },
+    {
+      "id": "A28",
+      "title": "摄影机运动、动作转接与停留",
+      "start": 810,
+      "end": 838,
+      "sheet": "contact-sheets/A28.jpg",
+      "frames": [
+        {
+          "id": "A28.01",
+          "requested_seconds": 810.0,
+          "decoded_pts_seconds": 810.013,
+          "image": "frames/A28_01_810.000.jpg"
+        },
+        {
+          "id": "A28.02",
+          "requested_seconds": 812.545,
+          "decoded_pts_seconds": 812.538,
+          "image": "frames/A28_02_812.545.jpg"
+        },
+        {
+          "id": "A28.03",
+          "requested_seconds": 815.091,
+          "decoded_pts_seconds": 815.103,
+          "image": "frames/A28_03_815.091.jpg"
+        },
+        {
+          "id": "A28.04",
+          "requested_seconds": 817.636,
+          "decoded_pts_seconds": 817.628,
+          "image": "frames/A28_04_817.636.jpg"
+        },
+        {
+          "id": "A28.05",
+          "requested_seconds": 820.182,
+          "decoded_pts_seconds": 820.193,
+          "image": "frames/A28_05_820.182.jpg"
+        },
+        {
+          "id": "A28.06",
+          "requested_seconds": 822.727,
+          "decoded_pts_seconds": 822.718,
+          "image": "frames/A28_06_822.727.jpg"
+        },
+        {
+          "id": "A28.07",
+          "requested_seconds": 825.273,
+          "decoded_pts_seconds": 825.283,
+          "image": "frames/A28_07_825.273.jpg"
+        },
+        {
+          "id": "A28.08",
+          "requested_seconds": 827.818,
+          "decoded_pts_seconds": 827.808,
+          "image": "frames/A28_08_827.818.jpg"
+        },
+        {
+          "id": "A28.09",
+          "requested_seconds": 830.364,
+          "decoded_pts_seconds": 830.373,
+          "image": "frames/A28_09_830.364.jpg"
+        },
+        {
+          "id": "A28.10",
+          "requested_seconds": 832.909,
+          "decoded_pts_seconds": 832.898,
+          "image": "frames/A28_10_832.909.jpg"
+        },
+        {
+          "id": "A28.11",
+          "requested_seconds": 835.455,
+          "decoded_pts_seconds": 835.463,
+          "image": "frames/A28_11_835.455.jpg"
+        },
+        {
+          "id": "A28.12",
+          "requested_seconds": 838.0,
+          "decoded_pts_seconds": 837.988,
+          "image": "frames/A28_12_838.000.jpg"
+        }
+      ],
+      "principles": "P12",
+      "observation": "13:30 标题Camera Playing Into Itself；13:32-13:40 旋转、掠行与镜头随动；13:42-13:48 强风格化段及红色大型武器；13:50-13:55 镜头与人物/武器及背景的关系再次变化；13:58 后为收尾蒙太奇。",
+      "analysis": "视觉速度来自摄影机和主体的相对运动。某些段落需要让姿态和结果留得足够久；另一些段落靠摄影机参与来接起高速变化。",
+      "application": "将主体动作与摄影机动作分栏，避免把甩镜写成角色移动。P12与P10分别保留，参考M12，并核对教程字幕而非只凭英文词面解释。"
+    }
+  ],
+  "dense_windows": [
+    {
+      "id": "M01",
+      "title": "慢握拳后加速；教程标注0.6x",
+      "start": 129,
+      "end": 136,
+      "sheet": "contact-sheets/M01.jpg",
+      "frames": [
+        {
+          "id": "M01.01",
+          "requested_seconds": 129.0,
+          "decoded_pts_seconds": 129.017,
+          "image": "frames/M01_01_129.000.jpg"
+        },
+        {
+          "id": "M01.02",
+          "requested_seconds": 129.304,
+          "decoded_pts_seconds": 129.298,
+          "image": "frames/M01_02_129.304.jpg"
+        },
+        {
+          "id": "M01.03",
+          "requested_seconds": 129.609,
+          "decoded_pts_seconds": 129.618,
+          "image": "frames/M01_03_129.609.jpg"
+        },
+        {
+          "id": "M01.04",
+          "requested_seconds": 129.913,
+          "decoded_pts_seconds": 129.899,
+          "image": "frames/M01_04_129.913.jpg"
+        },
+        {
+          "id": "M01.05",
+          "requested_seconds": 130.217,
+          "decoded_pts_seconds": 130.22,
+          "image": "frames/M01_05_130.217.jpg"
+        },
+        {
+          "id": "M01.06",
+          "requested_seconds": 130.522,
+          "decoded_pts_seconds": 130.54,
+          "image": "frames/M01_06_130.522.jpg"
+        },
+        {
+          "id": "M01.07",
+          "requested_seconds": 130.826,
+          "decoded_pts_seconds": 130.821,
+          "image": "frames/M01_07_130.826.jpg"
+        },
+        {
+          "id": "M01.08",
+          "requested_seconds": 131.13,
+          "decoded_pts_seconds": 131.141,
+          "image": "frames/M01_08_131.130.jpg"
+        },
+        {
+          "id": "M01.09",
+          "requested_seconds": 131.435,
+          "decoded_pts_seconds": 131.422,
+          "image": "frames/M01_09_131.435.jpg"
+        },
+        {
+          "id": "M01.10",
+          "requested_seconds": 131.739,
+          "decoded_pts_seconds": 131.743,
+          "image": "frames/M01_10_131.739.jpg"
+        },
+        {
+          "id": "M01.11",
+          "requested_seconds": 132.043,
+          "decoded_pts_seconds": 132.063,
+          "image": "frames/M01_11_132.043.jpg"
+        },
+        {
+          "id": "M01.12",
+          "requested_seconds": 132.348,
+          "decoded_pts_seconds": 132.344,
+          "image": "frames/M01_12_132.348.jpg"
+        },
+        {
+          "id": "M01.13",
+          "requested_seconds": 132.652,
+          "decoded_pts_seconds": 132.664,
+          "image": "frames/M01_13_132.652.jpg"
+        },
+        {
+          "id": "M01.14",
+          "requested_seconds": 132.957,
+          "decoded_pts_seconds": 132.945,
+          "image": "frames/M01_14_132.957.jpg"
+        },
+        {
+          "id": "M01.15",
+          "requested_seconds": 133.261,
+          "decoded_pts_seconds": 133.266,
+          "image": "frames/M01_15_133.261.jpg"
+        },
+        {
+          "id": "M01.16",
+          "requested_seconds": 133.565,
+          "decoded_pts_seconds": 133.546,
+          "image": "frames/M01_16_133.565.jpg"
+        },
+        {
+          "id": "M01.17",
+          "requested_seconds": 133.87,
+          "decoded_pts_seconds": 133.867,
+          "image": "frames/M01_17_133.870.jpg"
+        },
+        {
+          "id": "M01.18",
+          "requested_seconds": 134.174,
+          "decoded_pts_seconds": 134.187,
+          "image": "frames/M01_18_134.174.jpg"
+        },
+        {
+          "id": "M01.19",
+          "requested_seconds": 134.478,
+          "decoded_pts_seconds": 134.468,
+          "image": "frames/M01_19_134.478.jpg"
+        },
+        {
+          "id": "M01.20",
+          "requested_seconds": 134.783,
+          "decoded_pts_seconds": 134.789,
+          "image": "frames/M01_20_134.783.jpg"
+        },
+        {
+          "id": "M01.21",
+          "requested_seconds": 135.087,
+          "decoded_pts_seconds": 135.069,
+          "image": "frames/M01_21_135.087.jpg"
+        },
+        {
+          "id": "M01.22",
+          "requested_seconds": 135.391,
+          "decoded_pts_seconds": 135.39,
+          "image": "frames/M01_22_135.391.jpg"
+        },
+        {
+          "id": "M01.23",
+          "requested_seconds": 135.696,
+          "decoded_pts_seconds": 135.71,
+          "image": "frames/M01_23_135.696.jpg"
+        },
+        {
+          "id": "M01.24",
+          "requested_seconds": 136.0,
+          "decoded_pts_seconds": 135.991,
+          "image": "frames/M01_24_136.000.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "title": "接触前后表情与黑白化",
+      "start": 144,
+      "end": 147.2,
+      "sheet": "contact-sheets/M02.jpg",
+      "frames": [
+        {
+          "id": "M02.01",
+          "requested_seconds": 144.0,
+          "decoded_pts_seconds": 144.007,
+          "image": "frames/M02_01_144.000.jpg"
+        },
+        {
+          "id": "M02.02",
+          "requested_seconds": 144.139,
+          "decoded_pts_seconds": 144.127,
+          "image": "frames/M02_02_144.139.jpg"
+        },
+        {
+          "id": "M02.03",
+          "requested_seconds": 144.278,
+          "decoded_pts_seconds": 144.287,
+          "image": "frames/M02_03_144.278.jpg"
+        },
+        {
+          "id": "M02.04",
+          "requested_seconds": 144.417,
+          "decoded_pts_seconds": 144.407,
+          "image": "frames/M02_04_144.417.jpg"
+        },
+        {
+          "id": "M02.05",
+          "requested_seconds": 144.557,
+          "decoded_pts_seconds": 144.568,
+          "image": "frames/M02_05_144.557.jpg"
+        },
+        {
+          "id": "M02.06",
+          "requested_seconds": 144.696,
+          "decoded_pts_seconds": 144.688,
+          "image": "frames/M02_06_144.696.jpg"
+        },
+        {
+          "id": "M02.07",
+          "requested_seconds": 144.835,
+          "decoded_pts_seconds": 144.848,
+          "image": "frames/M02_07_144.835.jpg"
+        },
+        {
+          "id": "M02.08",
+          "requested_seconds": 144.974,
+          "decoded_pts_seconds": 144.968,
+          "image": "frames/M02_08_144.974.jpg"
+        },
+        {
+          "id": "M02.09",
+          "requested_seconds": 145.113,
+          "decoded_pts_seconds": 145.129,
+          "image": "frames/M02_09_145.113.jpg"
+        },
+        {
+          "id": "M02.10",
+          "requested_seconds": 145.252,
+          "decoded_pts_seconds": 145.249,
+          "image": "frames/M02_10_145.252.jpg"
+        },
+        {
+          "id": "M02.11",
+          "requested_seconds": 145.391,
+          "decoded_pts_seconds": 145.409,
+          "image": "frames/M02_11_145.391.jpg"
+        },
+        {
+          "id": "M02.12",
+          "requested_seconds": 145.53,
+          "decoded_pts_seconds": 145.53,
+          "image": "frames/M02_12_145.530.jpg"
+        },
+        {
+          "id": "M02.13",
+          "requested_seconds": 145.67,
+          "decoded_pts_seconds": 145.65,
+          "image": "frames/M02_13_145.670.jpg"
+        },
+        {
+          "id": "M02.14",
+          "requested_seconds": 145.809,
+          "decoded_pts_seconds": 145.81,
+          "image": "frames/M02_14_145.809.jpg"
+        },
+        {
+          "id": "M02.15",
+          "requested_seconds": 145.948,
+          "decoded_pts_seconds": 145.93,
+          "image": "frames/M02_15_145.948.jpg"
+        },
+        {
+          "id": "M02.16",
+          "requested_seconds": 146.087,
+          "decoded_pts_seconds": 146.091,
+          "image": "frames/M02_16_146.087.jpg"
+        },
+        {
+          "id": "M02.17",
+          "requested_seconds": 146.226,
+          "decoded_pts_seconds": 146.211,
+          "image": "frames/M02_17_146.226.jpg"
+        },
+        {
+          "id": "M02.18",
+          "requested_seconds": 146.365,
+          "decoded_pts_seconds": 146.371,
+          "image": "frames/M02_18_146.365.jpg"
+        },
+        {
+          "id": "M02.19",
+          "requested_seconds": 146.504,
+          "decoded_pts_seconds": 146.491,
+          "image": "frames/M02_19_146.504.jpg"
+        },
+        {
+          "id": "M02.20",
+          "requested_seconds": 146.643,
+          "decoded_pts_seconds": 146.652,
+          "image": "frames/M02_20_146.643.jpg"
+        },
+        {
+          "id": "M02.21",
+          "requested_seconds": 146.783,
+          "decoded_pts_seconds": 146.772,
+          "image": "frames/M02_21_146.783.jpg"
+        },
+        {
+          "id": "M02.22",
+          "requested_seconds": 146.922,
+          "decoded_pts_seconds": 146.932,
+          "image": "frames/M02_22_146.922.jpg"
+        },
+        {
+          "id": "M02.23",
+          "requested_seconds": 147.061,
+          "decoded_pts_seconds": 147.052,
+          "image": "frames/M02_23_147.061.jpg"
+        },
+        {
+          "id": "M02.24",
+          "requested_seconds": 147.2,
+          "decoded_pts_seconds": 147.213,
+          "image": "frames/M02_24_147.200.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "title": "能量盾的尺寸与层级",
+      "start": 195.3,
+      "end": 198.2,
+      "sheet": "contact-sheets/M03.jpg",
+      "frames": [
+        {
+          "id": "M03.01",
+          "requested_seconds": 195.3,
+          "decoded_pts_seconds": 195.307,
+          "image": "frames/M03_01_195.300.jpg"
+        },
+        {
+          "id": "M03.02",
+          "requested_seconds": 195.426,
+          "decoded_pts_seconds": 195.427,
+          "image": "frames/M03_02_195.426.jpg"
+        },
+        {
+          "id": "M03.03",
+          "requested_seconds": 195.552,
+          "decoded_pts_seconds": 195.547,
+          "image": "frames/M03_03_195.552.jpg"
+        },
+        {
+          "id": "M03.04",
+          "requested_seconds": 195.678,
+          "decoded_pts_seconds": 195.667,
+          "image": "frames/M03_04_195.678.jpg"
+        },
+        {
+          "id": "M03.05",
+          "requested_seconds": 195.804,
+          "decoded_pts_seconds": 195.788,
+          "image": "frames/M03_05_195.804.jpg"
+        },
+        {
+          "id": "M03.06",
+          "requested_seconds": 195.93,
+          "decoded_pts_seconds": 195.908,
+          "image": "frames/M03_06_195.930.jpg"
+        },
+        {
+          "id": "M03.07",
+          "requested_seconds": 196.057,
+          "decoded_pts_seconds": 196.068,
+          "image": "frames/M03_07_196.057.jpg"
+        },
+        {
+          "id": "M03.08",
+          "requested_seconds": 196.183,
+          "decoded_pts_seconds": 196.189,
+          "image": "frames/M03_08_196.183.jpg"
+        },
+        {
+          "id": "M03.09",
+          "requested_seconds": 196.309,
+          "decoded_pts_seconds": 196.309,
+          "image": "frames/M03_09_196.309.jpg"
+        },
+        {
+          "id": "M03.10",
+          "requested_seconds": 196.435,
+          "decoded_pts_seconds": 196.429,
+          "image": "frames/M03_10_196.435.jpg"
+        },
+        {
+          "id": "M03.11",
+          "requested_seconds": 196.561,
+          "decoded_pts_seconds": 196.549,
+          "image": "frames/M03_11_196.561.jpg"
+        },
+        {
+          "id": "M03.12",
+          "requested_seconds": 196.687,
+          "decoded_pts_seconds": 196.669,
+          "image": "frames/M03_12_196.687.jpg"
+        },
+        {
+          "id": "M03.13",
+          "requested_seconds": 196.813,
+          "decoded_pts_seconds": 196.83,
+          "image": "frames/M03_13_196.813.jpg"
+        },
+        {
+          "id": "M03.14",
+          "requested_seconds": 196.939,
+          "decoded_pts_seconds": 196.95,
+          "image": "frames/M03_14_196.939.jpg"
+        },
+        {
+          "id": "M03.15",
+          "requested_seconds": 197.065,
+          "decoded_pts_seconds": 197.07,
+          "image": "frames/M03_15_197.065.jpg"
+        },
+        {
+          "id": "M03.16",
+          "requested_seconds": 197.191,
+          "decoded_pts_seconds": 197.19,
+          "image": "frames/M03_16_197.191.jpg"
+        },
+        {
+          "id": "M03.17",
+          "requested_seconds": 197.317,
+          "decoded_pts_seconds": 197.311,
+          "image": "frames/M03_17_197.317.jpg"
+        },
+        {
+          "id": "M03.18",
+          "requested_seconds": 197.443,
+          "decoded_pts_seconds": 197.431,
+          "image": "frames/M03_18_197.443.jpg"
+        },
+        {
+          "id": "M03.19",
+          "requested_seconds": 197.57,
+          "decoded_pts_seconds": 197.551,
+          "image": "frames/M03_19_197.570.jpg"
+        },
+        {
+          "id": "M03.20",
+          "requested_seconds": 197.696,
+          "decoded_pts_seconds": 197.711,
+          "image": "frames/M03_20_197.696.jpg"
+        },
+        {
+          "id": "M03.21",
+          "requested_seconds": 197.822,
+          "decoded_pts_seconds": 197.832,
+          "image": "frames/M03_21_197.822.jpg"
+        },
+        {
+          "id": "M03.22",
+          "requested_seconds": 197.948,
+          "decoded_pts_seconds": 197.952,
+          "image": "frames/M03_22_197.948.jpg"
+        },
+        {
+          "id": "M03.23",
+          "requested_seconds": 198.074,
+          "decoded_pts_seconds": 198.072,
+          "image": "frames/M03_23_198.074.jpg"
+        },
+        {
+          "id": "M03.24",
+          "requested_seconds": 198.2,
+          "decoded_pts_seconds": 198.192,
+          "image": "frames/M03_24_198.200.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "title": "冰火色彩对比；教程标注0.2x",
+      "start": 274,
+      "end": 287,
+      "sheet": "contact-sheets/M04.jpg",
+      "frames": [
+        {
+          "id": "M04.01",
+          "requested_seconds": 274.0,
+          "decoded_pts_seconds": 273.985,
+          "image": "frames/M04_01_274.000.jpg"
+        },
+        {
+          "id": "M04.02",
+          "requested_seconds": 274.565,
+          "decoded_pts_seconds": 274.546,
+          "image": "frames/M04_02_274.565.jpg"
+        },
+        {
+          "id": "M04.03",
+          "requested_seconds": 275.13,
+          "decoded_pts_seconds": 275.148,
+          "image": "frames/M04_03_275.130.jpg"
+        },
+        {
+          "id": "M04.04",
+          "requested_seconds": 275.696,
+          "decoded_pts_seconds": 275.709,
+          "image": "frames/M04_04_275.696.jpg"
+        },
+        {
+          "id": "M04.05",
+          "requested_seconds": 276.261,
+          "decoded_pts_seconds": 276.27,
+          "image": "frames/M04_05_276.261.jpg"
+        },
+        {
+          "id": "M04.06",
+          "requested_seconds": 276.826,
+          "decoded_pts_seconds": 276.831,
+          "image": "frames/M04_06_276.826.jpg"
+        },
+        {
+          "id": "M04.07",
+          "requested_seconds": 277.391,
+          "decoded_pts_seconds": 277.392,
+          "image": "frames/M04_07_277.391.jpg"
+        },
+        {
+          "id": "M04.08",
+          "requested_seconds": 277.957,
+          "decoded_pts_seconds": 277.953,
+          "image": "frames/M04_08_277.957.jpg"
+        },
+        {
+          "id": "M04.09",
+          "requested_seconds": 278.522,
+          "decoded_pts_seconds": 278.514,
+          "image": "frames/M04_09_278.522.jpg"
+        },
+        {
+          "id": "M04.10",
+          "requested_seconds": 279.087,
+          "decoded_pts_seconds": 279.075,
+          "image": "frames/M04_10_279.087.jpg"
+        },
+        {
+          "id": "M04.11",
+          "requested_seconds": 279.652,
+          "decoded_pts_seconds": 279.636,
+          "image": "frames/M04_11_279.652.jpg"
+        },
+        {
+          "id": "M04.12",
+          "requested_seconds": 280.217,
+          "decoded_pts_seconds": 280.198,
+          "image": "frames/M04_12_280.217.jpg"
+        },
+        {
+          "id": "M04.13",
+          "requested_seconds": 280.783,
+          "decoded_pts_seconds": 280.799,
+          "image": "frames/M04_13_280.783.jpg"
+        },
+        {
+          "id": "M04.14",
+          "requested_seconds": 281.348,
+          "decoded_pts_seconds": 281.36,
+          "image": "frames/M04_14_281.348.jpg"
+        },
+        {
+          "id": "M04.15",
+          "requested_seconds": 281.913,
+          "decoded_pts_seconds": 281.921,
+          "image": "frames/M04_15_281.913.jpg"
+        },
+        {
+          "id": "M04.16",
+          "requested_seconds": 282.478,
+          "decoded_pts_seconds": 282.482,
+          "image": "frames/M04_16_282.478.jpg"
+        },
+        {
+          "id": "M04.17",
+          "requested_seconds": 283.043,
+          "decoded_pts_seconds": 283.043,
+          "image": "frames/M04_17_283.043.jpg"
+        },
+        {
+          "id": "M04.18",
+          "requested_seconds": 283.609,
+          "decoded_pts_seconds": 283.604,
+          "image": "frames/M04_18_283.609.jpg"
+        },
+        {
+          "id": "M04.19",
+          "requested_seconds": 284.174,
+          "decoded_pts_seconds": 284.165,
+          "image": "frames/M04_19_284.174.jpg"
+        },
+        {
+          "id": "M04.20",
+          "requested_seconds": 284.739,
+          "decoded_pts_seconds": 284.726,
+          "image": "frames/M04_20_284.739.jpg"
+        },
+        {
+          "id": "M04.21",
+          "requested_seconds": 285.304,
+          "decoded_pts_seconds": 285.287,
+          "image": "frames/M04_21_285.304.jpg"
+        },
+        {
+          "id": "M04.22",
+          "requested_seconds": 285.87,
+          "decoded_pts_seconds": 285.849,
+          "image": "frames/M04_22_285.870.jpg"
+        },
+        {
+          "id": "M04.23",
+          "requested_seconds": 286.435,
+          "decoded_pts_seconds": 286.45,
+          "image": "frames/M04_23_286.435.jpg"
+        },
+        {
+          "id": "M04.24",
+          "requested_seconds": 287.0,
+          "decoded_pts_seconds": 287.011,
+          "image": "frames/M04_24_287.000.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "title": "拳与体块接触；教程标注0.2x",
+      "start": 339,
+      "end": 350,
+      "sheet": "contact-sheets/M05.jpg",
+      "frames": [
+        {
+          "id": "M05.01",
+          "requested_seconds": 339.0,
+          "decoded_pts_seconds": 338.992,
+          "image": "frames/M05_01_339.000.jpg"
+        },
+        {
+          "id": "M05.02",
+          "requested_seconds": 339.478,
+          "decoded_pts_seconds": 339.473,
+          "image": "frames/M05_02_339.478.jpg"
+        },
+        {
+          "id": "M05.03",
+          "requested_seconds": 339.957,
+          "decoded_pts_seconds": 339.954,
+          "image": "frames/M05_03_339.957.jpg"
+        },
+        {
+          "id": "M05.04",
+          "requested_seconds": 340.435,
+          "decoded_pts_seconds": 340.435,
+          "image": "frames/M05_04_340.435.jpg"
+        },
+        {
+          "id": "M05.05",
+          "requested_seconds": 340.913,
+          "decoded_pts_seconds": 340.916,
+          "image": "frames/M05_05_340.913.jpg"
+        },
+        {
+          "id": "M05.06",
+          "requested_seconds": 341.391,
+          "decoded_pts_seconds": 341.397,
+          "image": "frames/M05_06_341.391.jpg"
+        },
+        {
+          "id": "M05.07",
+          "requested_seconds": 341.87,
+          "decoded_pts_seconds": 341.878,
+          "image": "frames/M05_07_341.870.jpg"
+        },
+        {
+          "id": "M05.08",
+          "requested_seconds": 342.348,
+          "decoded_pts_seconds": 342.359,
+          "image": "frames/M05_08_342.348.jpg"
+        },
+        {
+          "id": "M05.09",
+          "requested_seconds": 342.826,
+          "decoded_pts_seconds": 342.84,
+          "image": "frames/M05_09_342.826.jpg"
+        },
+        {
+          "id": "M05.10",
+          "requested_seconds": 343.304,
+          "decoded_pts_seconds": 343.281,
+          "image": "frames/M05_10_343.304.jpg"
+        },
+        {
+          "id": "M05.11",
+          "requested_seconds": 343.783,
+          "decoded_pts_seconds": 343.762,
+          "image": "frames/M05_11_343.783.jpg"
+        },
+        {
+          "id": "M05.12",
+          "requested_seconds": 344.261,
+          "decoded_pts_seconds": 344.243,
+          "image": "frames/M05_12_344.261.jpg"
+        },
+        {
+          "id": "M05.13",
+          "requested_seconds": 344.739,
+          "decoded_pts_seconds": 344.724,
+          "image": "frames/M05_13_344.739.jpg"
+        },
+        {
+          "id": "M05.14",
+          "requested_seconds": 345.217,
+          "decoded_pts_seconds": 345.205,
+          "image": "frames/M05_14_345.217.jpg"
+        },
+        {
+          "id": "M05.15",
+          "requested_seconds": 345.696,
+          "decoded_pts_seconds": 345.686,
+          "image": "frames/M05_15_345.696.jpg"
+        },
+        {
+          "id": "M05.16",
+          "requested_seconds": 346.174,
+          "decoded_pts_seconds": 346.166,
+          "image": "frames/M05_16_346.174.jpg"
+        },
+        {
+          "id": "M05.17",
+          "requested_seconds": 346.652,
+          "decoded_pts_seconds": 346.647,
+          "image": "frames/M05_17_346.652.jpg"
+        },
+        {
+          "id": "M05.18",
+          "requested_seconds": 347.13,
+          "decoded_pts_seconds": 347.128,
+          "image": "frames/M05_18_347.130.jpg"
+        },
+        {
+          "id": "M05.19",
+          "requested_seconds": 347.609,
+          "decoded_pts_seconds": 347.609,
+          "image": "frames/M05_19_347.609.jpg"
+        },
+        {
+          "id": "M05.20",
+          "requested_seconds": 348.087,
+          "decoded_pts_seconds": 348.09,
+          "image": "frames/M05_20_348.087.jpg"
+        },
+        {
+          "id": "M05.21",
+          "requested_seconds": 348.565,
+          "decoded_pts_seconds": 348.571,
+          "image": "frames/M05_21_348.565.jpg"
+        },
+        {
+          "id": "M05.22",
+          "requested_seconds": 349.043,
+          "decoded_pts_seconds": 349.052,
+          "image": "frames/M05_22_349.043.jpg"
+        },
+        {
+          "id": "M05.23",
+          "requested_seconds": 349.522,
+          "decoded_pts_seconds": 349.533,
+          "image": "frames/M05_23_349.522.jpg"
+        },
+        {
+          "id": "M05.24",
+          "requested_seconds": 350.0,
+          "decoded_pts_seconds": 350.014,
+          "image": "frames/M05_24_350.000.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "title": "刀光先行，身体随后分裂",
+      "start": 592,
+      "end": 595.2,
+      "sheet": "contact-sheets/M06.jpg",
+      "frames": [
+        {
+          "id": "M06.01",
+          "requested_seconds": 592.0,
+          "decoded_pts_seconds": 591.977,
+          "image": "frames/M06_01_592.000.jpg"
+        },
+        {
+          "id": "M06.02",
+          "requested_seconds": 592.139,
+          "decoded_pts_seconds": 592.137,
+          "image": "frames/M06_02_592.139.jpg"
+        },
+        {
+          "id": "M06.03",
+          "requested_seconds": 592.278,
+          "decoded_pts_seconds": 592.257,
+          "image": "frames/M06_03_592.278.jpg"
+        },
+        {
+          "id": "M06.04",
+          "requested_seconds": 592.417,
+          "decoded_pts_seconds": 592.418,
+          "image": "frames/M06_04_592.417.jpg"
+        },
+        {
+          "id": "M06.05",
+          "requested_seconds": 592.557,
+          "decoded_pts_seconds": 592.538,
+          "image": "frames/M06_05_592.557.jpg"
+        },
+        {
+          "id": "M06.06",
+          "requested_seconds": 592.696,
+          "decoded_pts_seconds": 592.698,
+          "image": "frames/M06_06_592.696.jpg"
+        },
+        {
+          "id": "M06.07",
+          "requested_seconds": 592.835,
+          "decoded_pts_seconds": 592.818,
+          "image": "frames/M06_07_592.835.jpg"
+        },
+        {
+          "id": "M06.08",
+          "requested_seconds": 592.974,
+          "decoded_pts_seconds": 592.979,
+          "image": "frames/M06_08_592.974.jpg"
+        },
+        {
+          "id": "M06.09",
+          "requested_seconds": 593.113,
+          "decoded_pts_seconds": 593.099,
+          "image": "frames/M06_09_593.113.jpg"
+        },
+        {
+          "id": "M06.10",
+          "requested_seconds": 593.252,
+          "decoded_pts_seconds": 593.259,
+          "image": "frames/M06_10_593.252.jpg"
+        },
+        {
+          "id": "M06.11",
+          "requested_seconds": 593.391,
+          "decoded_pts_seconds": 593.379,
+          "image": "frames/M06_11_593.391.jpg"
+        },
+        {
+          "id": "M06.12",
+          "requested_seconds": 593.53,
+          "decoded_pts_seconds": 593.54,
+          "image": "frames/M06_12_593.530.jpg"
+        },
+        {
+          "id": "M06.13",
+          "requested_seconds": 593.67,
+          "decoded_pts_seconds": 593.66,
+          "image": "frames/M06_13_593.670.jpg"
+        },
+        {
+          "id": "M06.14",
+          "requested_seconds": 593.809,
+          "decoded_pts_seconds": 593.82,
+          "image": "frames/M06_14_593.809.jpg"
+        },
+        {
+          "id": "M06.15",
+          "requested_seconds": 593.948,
+          "decoded_pts_seconds": 593.941,
+          "image": "frames/M06_15_593.948.jpg"
+        },
+        {
+          "id": "M06.16",
+          "requested_seconds": 594.087,
+          "decoded_pts_seconds": 594.101,
+          "image": "frames/M06_16_594.087.jpg"
+        },
+        {
+          "id": "M06.17",
+          "requested_seconds": 594.226,
+          "decoded_pts_seconds": 594.221,
+          "image": "frames/M06_17_594.226.jpg"
+        },
+        {
+          "id": "M06.18",
+          "requested_seconds": 594.365,
+          "decoded_pts_seconds": 594.341,
+          "image": "frames/M06_18_594.365.jpg"
+        },
+        {
+          "id": "M06.19",
+          "requested_seconds": 594.504,
+          "decoded_pts_seconds": 594.502,
+          "image": "frames/M06_19_594.504.jpg"
+        },
+        {
+          "id": "M06.20",
+          "requested_seconds": 594.643,
+          "decoded_pts_seconds": 594.622,
+          "image": "frames/M06_20_594.643.jpg"
+        },
+        {
+          "id": "M06.21",
+          "requested_seconds": 594.783,
+          "decoded_pts_seconds": 594.782,
+          "image": "frames/M06_21_594.783.jpg"
+        },
+        {
+          "id": "M06.22",
+          "requested_seconds": 594.922,
+          "decoded_pts_seconds": 594.902,
+          "image": "frames/M06_22_594.922.jpg"
+        },
+        {
+          "id": "M06.23",
+          "requested_seconds": 595.061,
+          "decoded_pts_seconds": 595.063,
+          "image": "frames/M06_23_595.061.jpg"
+        },
+        {
+          "id": "M06.24",
+          "requested_seconds": 595.2,
+          "decoded_pts_seconds": 595.183,
+          "image": "frames/M06_24_595.200.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "title": "飞行先行，平台破坏随后扩散",
+      "start": 621.5,
+      "end": 625.5,
+      "sheet": "contact-sheets/M07.jpg",
+      "frames": [
+        {
+          "id": "M07.01",
+          "requested_seconds": 621.5,
+          "decoded_pts_seconds": 621.519,
+          "image": "frames/M07_01_621.500.jpg"
+        },
+        {
+          "id": "M07.02",
+          "requested_seconds": 621.674,
+          "decoded_pts_seconds": 621.68,
+          "image": "frames/M07_02_621.674.jpg"
+        },
+        {
+          "id": "M07.03",
+          "requested_seconds": 621.848,
+          "decoded_pts_seconds": 621.84,
+          "image": "frames/M07_03_621.848.jpg"
+        },
+        {
+          "id": "M07.04",
+          "requested_seconds": 622.022,
+          "decoded_pts_seconds": 622.04,
+          "image": "frames/M07_04_622.022.jpg"
+        },
+        {
+          "id": "M07.05",
+          "requested_seconds": 622.196,
+          "decoded_pts_seconds": 622.201,
+          "image": "frames/M07_05_622.196.jpg"
+        },
+        {
+          "id": "M07.06",
+          "requested_seconds": 622.37,
+          "decoded_pts_seconds": 622.361,
+          "image": "frames/M07_06_622.370.jpg"
+        },
+        {
+          "id": "M07.07",
+          "requested_seconds": 622.543,
+          "decoded_pts_seconds": 622.562,
+          "image": "frames/M07_07_622.543.jpg"
+        },
+        {
+          "id": "M07.08",
+          "requested_seconds": 622.717,
+          "decoded_pts_seconds": 622.722,
+          "image": "frames/M07_08_622.717.jpg"
+        },
+        {
+          "id": "M07.09",
+          "requested_seconds": 622.891,
+          "decoded_pts_seconds": 622.882,
+          "image": "frames/M07_09_622.891.jpg"
+        },
+        {
+          "id": "M07.10",
+          "requested_seconds": 623.065,
+          "decoded_pts_seconds": 623.083,
+          "image": "frames/M07_10_623.065.jpg"
+        },
+        {
+          "id": "M07.11",
+          "requested_seconds": 623.239,
+          "decoded_pts_seconds": 623.243,
+          "image": "frames/M07_11_623.239.jpg"
+        },
+        {
+          "id": "M07.12",
+          "requested_seconds": 623.413,
+          "decoded_pts_seconds": 623.403,
+          "image": "frames/M07_12_623.413.jpg"
+        },
+        {
+          "id": "M07.13",
+          "requested_seconds": 623.587,
+          "decoded_pts_seconds": 623.604,
+          "image": "frames/M07_13_623.587.jpg"
+        },
+        {
+          "id": "M07.14",
+          "requested_seconds": 623.761,
+          "decoded_pts_seconds": 623.764,
+          "image": "frames/M07_14_623.761.jpg"
+        },
+        {
+          "id": "M07.15",
+          "requested_seconds": 623.935,
+          "decoded_pts_seconds": 623.924,
+          "image": "frames/M07_15_623.935.jpg"
+        },
+        {
+          "id": "M07.16",
+          "requested_seconds": 624.109,
+          "decoded_pts_seconds": 624.125,
+          "image": "frames/M07_16_624.109.jpg"
+        },
+        {
+          "id": "M07.17",
+          "requested_seconds": 624.283,
+          "decoded_pts_seconds": 624.285,
+          "image": "frames/M07_17_624.283.jpg"
+        },
+        {
+          "id": "M07.18",
+          "requested_seconds": 624.457,
+          "decoded_pts_seconds": 624.445,
+          "image": "frames/M07_18_624.457.jpg"
+        },
+        {
+          "id": "M07.19",
+          "requested_seconds": 624.63,
+          "decoded_pts_seconds": 624.646,
+          "image": "frames/M07_19_624.630.jpg"
+        },
+        {
+          "id": "M07.20",
+          "requested_seconds": 624.804,
+          "decoded_pts_seconds": 624.806,
+          "image": "frames/M07_20_624.804.jpg"
+        },
+        {
+          "id": "M07.21",
+          "requested_seconds": 624.978,
+          "decoded_pts_seconds": 624.966,
+          "image": "frames/M07_21_624.978.jpg"
+        },
+        {
+          "id": "M07.22",
+          "requested_seconds": 625.152,
+          "decoded_pts_seconds": 625.167,
+          "image": "frames/M07_22_625.152.jpg"
+        },
+        {
+          "id": "M07.23",
+          "requested_seconds": 625.326,
+          "decoded_pts_seconds": 625.327,
+          "image": "frames/M07_23_625.326.jpg"
+        },
+        {
+          "id": "M07.24",
+          "requested_seconds": 625.5,
+          "decoded_pts_seconds": 625.487,
+          "image": "frames/M07_24_625.500.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "title": "停留、碎裂、再运动",
+      "start": 627.1,
+      "end": 633,
+      "sheet": "contact-sheets/M08.jpg",
+      "frames": [
+        {
+          "id": "M08.01",
+          "requested_seconds": 627.1,
+          "decoded_pts_seconds": 627.09,
+          "image": "frames/M08_01_627.100.jpg"
+        },
+        {
+          "id": "M08.02",
+          "requested_seconds": 627.357,
+          "decoded_pts_seconds": 627.371,
+          "image": "frames/M08_02_627.357.jpg"
+        },
+        {
+          "id": "M08.03",
+          "requested_seconds": 627.613,
+          "decoded_pts_seconds": 627.611,
+          "image": "frames/M08_03_627.613.jpg"
+        },
+        {
+          "id": "M08.04",
+          "requested_seconds": 627.87,
+          "decoded_pts_seconds": 627.852,
+          "image": "frames/M08_04_627.870.jpg"
+        },
+        {
+          "id": "M08.05",
+          "requested_seconds": 628.126,
+          "decoded_pts_seconds": 628.132,
+          "image": "frames/M08_05_628.126.jpg"
+        },
+        {
+          "id": "M08.06",
+          "requested_seconds": 628.383,
+          "decoded_pts_seconds": 628.373,
+          "image": "frames/M08_06_628.383.jpg"
+        },
+        {
+          "id": "M08.07",
+          "requested_seconds": 628.639,
+          "decoded_pts_seconds": 628.653,
+          "image": "frames/M08_07_628.639.jpg"
+        },
+        {
+          "id": "M08.08",
+          "requested_seconds": 628.896,
+          "decoded_pts_seconds": 628.894,
+          "image": "frames/M08_08_628.896.jpg"
+        },
+        {
+          "id": "M08.09",
+          "requested_seconds": 629.152,
+          "decoded_pts_seconds": 629.134,
+          "image": "frames/M08_09_629.152.jpg"
+        },
+        {
+          "id": "M08.10",
+          "requested_seconds": 629.409,
+          "decoded_pts_seconds": 629.415,
+          "image": "frames/M08_10_629.409.jpg"
+        },
+        {
+          "id": "M08.11",
+          "requested_seconds": 629.665,
+          "decoded_pts_seconds": 629.655,
+          "image": "frames/M08_11_629.665.jpg"
+        },
+        {
+          "id": "M08.12",
+          "requested_seconds": 629.922,
+          "decoded_pts_seconds": 629.936,
+          "image": "frames/M08_12_629.922.jpg"
+        },
+        {
+          "id": "M08.13",
+          "requested_seconds": 630.178,
+          "decoded_pts_seconds": 630.176,
+          "image": "frames/M08_13_630.178.jpg"
+        },
+        {
+          "id": "M08.14",
+          "requested_seconds": 630.435,
+          "decoded_pts_seconds": 630.417,
+          "image": "frames/M08_14_630.435.jpg"
+        },
+        {
+          "id": "M08.15",
+          "requested_seconds": 630.691,
+          "decoded_pts_seconds": 630.697,
+          "image": "frames/M08_15_630.691.jpg"
+        },
+        {
+          "id": "M08.16",
+          "requested_seconds": 630.948,
+          "decoded_pts_seconds": 630.938,
+          "image": "frames/M08_16_630.948.jpg"
+        },
+        {
+          "id": "M08.17",
+          "requested_seconds": 631.204,
+          "decoded_pts_seconds": 631.218,
+          "image": "frames/M08_17_631.204.jpg"
+        },
+        {
+          "id": "M08.18",
+          "requested_seconds": 631.461,
+          "decoded_pts_seconds": 631.459,
+          "image": "frames/M08_18_631.461.jpg"
+        },
+        {
+          "id": "M08.19",
+          "requested_seconds": 631.717,
+          "decoded_pts_seconds": 631.699,
+          "image": "frames/M08_19_631.717.jpg"
+        },
+        {
+          "id": "M08.20",
+          "requested_seconds": 631.974,
+          "decoded_pts_seconds": 631.98,
+          "image": "frames/M08_20_631.974.jpg"
+        },
+        {
+          "id": "M08.21",
+          "requested_seconds": 632.23,
+          "decoded_pts_seconds": 632.22,
+          "image": "frames/M08_21_632.230.jpg"
+        },
+        {
+          "id": "M08.22",
+          "requested_seconds": 632.487,
+          "decoded_pts_seconds": 632.501,
+          "image": "frames/M08_22_632.487.jpg"
+        },
+        {
+          "id": "M08.23",
+          "requested_seconds": 632.743,
+          "decoded_pts_seconds": 632.741,
+          "image": "frames/M08_23_632.743.jpg"
+        },
+        {
+          "id": "M08.24",
+          "requested_seconds": 633.0,
+          "decoded_pts_seconds": 632.982,
+          "image": "frames/M08_24_633.000.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "title": "跑动中不对称的连续姿态",
+      "start": 667,
+      "end": 672,
+      "sheet": "contact-sheets/M09.jpg",
+      "frames": [
+        {
+          "id": "M09.01",
+          "requested_seconds": 667.0,
+          "decoded_pts_seconds": 667.008,
+          "image": "frames/M09_01_667.000.jpg"
+        },
+        {
+          "id": "M09.02",
+          "requested_seconds": 667.217,
+          "decoded_pts_seconds": 667.209,
+          "image": "frames/M09_02_667.217.jpg"
+        },
+        {
+          "id": "M09.03",
+          "requested_seconds": 667.435,
+          "decoded_pts_seconds": 667.449,
+          "image": "frames/M09_03_667.435.jpg"
+        },
+        {
+          "id": "M09.04",
+          "requested_seconds": 667.652,
+          "decoded_pts_seconds": 667.65,
+          "image": "frames/M09_04_667.652.jpg"
+        },
+        {
+          "id": "M09.05",
+          "requested_seconds": 667.87,
+          "decoded_pts_seconds": 667.85,
+          "image": "frames/M09_05_667.870.jpg"
+        },
+        {
+          "id": "M09.06",
+          "requested_seconds": 668.087,
+          "decoded_pts_seconds": 668.09,
+          "image": "frames/M09_06_668.087.jpg"
+        },
+        {
+          "id": "M09.07",
+          "requested_seconds": 668.304,
+          "decoded_pts_seconds": 668.291,
+          "image": "frames/M09_07_668.304.jpg"
+        },
+        {
+          "id": "M09.08",
+          "requested_seconds": 668.522,
+          "decoded_pts_seconds": 668.531,
+          "image": "frames/M09_08_668.522.jpg"
+        },
+        {
+          "id": "M09.09",
+          "requested_seconds": 668.739,
+          "decoded_pts_seconds": 668.732,
+          "image": "frames/M09_09_668.739.jpg"
+        },
+        {
+          "id": "M09.10",
+          "requested_seconds": 668.957,
+          "decoded_pts_seconds": 668.972,
+          "image": "frames/M09_10_668.957.jpg"
+        },
+        {
+          "id": "M09.11",
+          "requested_seconds": 669.174,
+          "decoded_pts_seconds": 669.173,
+          "image": "frames/M09_11_669.174.jpg"
+        },
+        {
+          "id": "M09.12",
+          "requested_seconds": 669.391,
+          "decoded_pts_seconds": 669.373,
+          "image": "frames/M09_12_669.391.jpg"
+        },
+        {
+          "id": "M09.13",
+          "requested_seconds": 669.609,
+          "decoded_pts_seconds": 669.613,
+          "image": "frames/M09_13_669.609.jpg"
+        },
+        {
+          "id": "M09.14",
+          "requested_seconds": 669.826,
+          "decoded_pts_seconds": 669.814,
+          "image": "frames/M09_14_669.826.jpg"
+        },
+        {
+          "id": "M09.15",
+          "requested_seconds": 670.043,
+          "decoded_pts_seconds": 670.054,
+          "image": "frames/M09_15_670.043.jpg"
+        },
+        {
+          "id": "M09.16",
+          "requested_seconds": 670.261,
+          "decoded_pts_seconds": 670.255,
+          "image": "frames/M09_16_670.261.jpg"
+        },
+        {
+          "id": "M09.17",
+          "requested_seconds": 670.478,
+          "decoded_pts_seconds": 670.495,
+          "image": "frames/M09_17_670.478.jpg"
+        },
+        {
+          "id": "M09.18",
+          "requested_seconds": 670.696,
+          "decoded_pts_seconds": 670.696,
+          "image": "frames/M09_18_670.696.jpg"
+        },
+        {
+          "id": "M09.19",
+          "requested_seconds": 670.913,
+          "decoded_pts_seconds": 670.896,
+          "image": "frames/M09_19_670.913.jpg"
+        },
+        {
+          "id": "M09.20",
+          "requested_seconds": 671.13,
+          "decoded_pts_seconds": 671.136,
+          "image": "frames/M09_20_671.130.jpg"
+        },
+        {
+          "id": "M09.21",
+          "requested_seconds": 671.348,
+          "decoded_pts_seconds": 671.337,
+          "image": "frames/M09_21_671.348.jpg"
+        },
+        {
+          "id": "M09.22",
+          "requested_seconds": 671.565,
+          "decoded_pts_seconds": 671.577,
+          "image": "frames/M09_22_671.565.jpg"
+        },
+        {
+          "id": "M09.23",
+          "requested_seconds": 671.783,
+          "decoded_pts_seconds": 671.778,
+          "image": "frames/M09_23_671.783.jpg"
+        },
+        {
+          "id": "M09.24",
+          "requested_seconds": 672.0,
+          "decoded_pts_seconds": 671.978,
+          "image": "frames/M09_24_672.000.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "近距离剑刃与脚步",
+      "start": 711.2,
+      "end": 715.6,
+      "sheet": "contact-sheets/M10.jpg",
+      "frames": [
+        {
+          "id": "M10.01",
+          "requested_seconds": 711.2,
+          "decoded_pts_seconds": 711.215,
+          "image": "frames/M10_01_711.200.jpg"
+        },
+        {
+          "id": "M10.02",
+          "requested_seconds": 711.391,
+          "decoded_pts_seconds": 711.375,
+          "image": "frames/M10_02_711.391.jpg"
+        },
+        {
+          "id": "M10.03",
+          "requested_seconds": 711.583,
+          "decoded_pts_seconds": 711.575,
+          "image": "frames/M10_03_711.583.jpg"
+        },
+        {
+          "id": "M10.04",
+          "requested_seconds": 711.774,
+          "decoded_pts_seconds": 711.776,
+          "image": "frames/M10_04_711.774.jpg"
+        },
+        {
+          "id": "M10.05",
+          "requested_seconds": 711.965,
+          "decoded_pts_seconds": 711.976,
+          "image": "frames/M10_05_711.965.jpg"
+        },
+        {
+          "id": "M10.06",
+          "requested_seconds": 712.157,
+          "decoded_pts_seconds": 712.137,
+          "image": "frames/M10_06_712.157.jpg"
+        },
+        {
+          "id": "M10.07",
+          "requested_seconds": 712.348,
+          "decoded_pts_seconds": 712.337,
+          "image": "frames/M10_07_712.348.jpg"
+        },
+        {
+          "id": "M10.08",
+          "requested_seconds": 712.539,
+          "decoded_pts_seconds": 712.537,
+          "image": "frames/M10_08_712.539.jpg"
+        },
+        {
+          "id": "M10.09",
+          "requested_seconds": 712.73,
+          "decoded_pts_seconds": 712.738,
+          "image": "frames/M10_09_712.730.jpg"
+        },
+        {
+          "id": "M10.10",
+          "requested_seconds": 712.922,
+          "decoded_pts_seconds": 712.898,
+          "image": "frames/M10_10_712.922.jpg"
+        },
+        {
+          "id": "M10.11",
+          "requested_seconds": 713.113,
+          "decoded_pts_seconds": 713.098,
+          "image": "frames/M10_11_713.113.jpg"
+        },
+        {
+          "id": "M10.12",
+          "requested_seconds": 713.304,
+          "decoded_pts_seconds": 713.299,
+          "image": "frames/M10_12_713.304.jpg"
+        },
+        {
+          "id": "M10.13",
+          "requested_seconds": 713.496,
+          "decoded_pts_seconds": 713.499,
+          "image": "frames/M10_13_713.496.jpg"
+        },
+        {
+          "id": "M10.14",
+          "requested_seconds": 713.687,
+          "decoded_pts_seconds": 713.7,
+          "image": "frames/M10_14_713.687.jpg"
+        },
+        {
+          "id": "M10.15",
+          "requested_seconds": 713.878,
+          "decoded_pts_seconds": 713.86,
+          "image": "frames/M10_15_713.878.jpg"
+        },
+        {
+          "id": "M10.16",
+          "requested_seconds": 714.07,
+          "decoded_pts_seconds": 714.06,
+          "image": "frames/M10_16_714.070.jpg"
+        },
+        {
+          "id": "M10.17",
+          "requested_seconds": 714.261,
+          "decoded_pts_seconds": 714.261,
+          "image": "frames/M10_17_714.261.jpg"
+        },
+        {
+          "id": "M10.18",
+          "requested_seconds": 714.452,
+          "decoded_pts_seconds": 714.461,
+          "image": "frames/M10_18_714.452.jpg"
+        },
+        {
+          "id": "M10.19",
+          "requested_seconds": 714.643,
+          "decoded_pts_seconds": 714.621,
+          "image": "frames/M10_19_714.643.jpg"
+        },
+        {
+          "id": "M10.20",
+          "requested_seconds": 714.835,
+          "decoded_pts_seconds": 714.822,
+          "image": "frames/M10_20_714.835.jpg"
+        },
+        {
+          "id": "M10.21",
+          "requested_seconds": 715.026,
+          "decoded_pts_seconds": 715.022,
+          "image": "frames/M10_21_715.026.jpg"
+        },
+        {
+          "id": "M10.22",
+          "requested_seconds": 715.217,
+          "decoded_pts_seconds": 715.223,
+          "image": "frames/M10_22_715.217.jpg"
+        },
+        {
+          "id": "M10.23",
+          "requested_seconds": 715.409,
+          "decoded_pts_seconds": 715.423,
+          "image": "frames/M10_23_715.409.jpg"
+        },
+        {
+          "id": "M10.24",
+          "requested_seconds": 715.6,
+          "decoded_pts_seconds": 715.583,
+          "image": "frames/M10_24_715.600.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "粉色攻击的方向线",
+      "start": 716,
+      "end": 721.6,
+      "sheet": "contact-sheets/M11.jpg",
+      "frames": [
+        {
+          "id": "M11.01",
+          "requested_seconds": 716.0,
+          "decoded_pts_seconds": 715.984,
+          "image": "frames/M11_01_716.000.jpg"
+        },
+        {
+          "id": "M11.02",
+          "requested_seconds": 716.243,
+          "decoded_pts_seconds": 716.225,
+          "image": "frames/M11_02_716.243.jpg"
+        },
+        {
+          "id": "M11.03",
+          "requested_seconds": 716.487,
+          "decoded_pts_seconds": 716.465,
+          "image": "frames/M11_03_716.487.jpg"
+        },
+        {
+          "id": "M11.04",
+          "requested_seconds": 716.73,
+          "decoded_pts_seconds": 716.746,
+          "image": "frames/M11_04_716.730.jpg"
+        },
+        {
+          "id": "M11.05",
+          "requested_seconds": 716.974,
+          "decoded_pts_seconds": 716.986,
+          "image": "frames/M11_05_716.974.jpg"
+        },
+        {
+          "id": "M11.06",
+          "requested_seconds": 717.217,
+          "decoded_pts_seconds": 717.227,
+          "image": "frames/M11_06_717.217.jpg"
+        },
+        {
+          "id": "M11.07",
+          "requested_seconds": 717.461,
+          "decoded_pts_seconds": 717.467,
+          "image": "frames/M11_07_717.461.jpg"
+        },
+        {
+          "id": "M11.08",
+          "requested_seconds": 717.704,
+          "decoded_pts_seconds": 717.707,
+          "image": "frames/M11_08_717.704.jpg"
+        },
+        {
+          "id": "M11.09",
+          "requested_seconds": 717.948,
+          "decoded_pts_seconds": 717.948,
+          "image": "frames/M11_09_717.948.jpg"
+        },
+        {
+          "id": "M11.10",
+          "requested_seconds": 718.191,
+          "decoded_pts_seconds": 718.188,
+          "image": "frames/M11_10_718.191.jpg"
+        },
+        {
+          "id": "M11.11",
+          "requested_seconds": 718.435,
+          "decoded_pts_seconds": 718.429,
+          "image": "frames/M11_11_718.435.jpg"
+        },
+        {
+          "id": "M11.12",
+          "requested_seconds": 718.678,
+          "decoded_pts_seconds": 718.669,
+          "image": "frames/M11_12_718.678.jpg"
+        },
+        {
+          "id": "M11.13",
+          "requested_seconds": 718.922,
+          "decoded_pts_seconds": 718.91,
+          "image": "frames/M11_13_718.922.jpg"
+        },
+        {
+          "id": "M11.14",
+          "requested_seconds": 719.165,
+          "decoded_pts_seconds": 719.15,
+          "image": "frames/M11_14_719.165.jpg"
+        },
+        {
+          "id": "M11.15",
+          "requested_seconds": 719.409,
+          "decoded_pts_seconds": 719.391,
+          "image": "frames/M11_15_719.409.jpg"
+        },
+        {
+          "id": "M11.16",
+          "requested_seconds": 719.652,
+          "decoded_pts_seconds": 719.631,
+          "image": "frames/M11_16_719.652.jpg"
+        },
+        {
+          "id": "M11.17",
+          "requested_seconds": 719.896,
+          "decoded_pts_seconds": 719.872,
+          "image": "frames/M11_17_719.896.jpg"
+        },
+        {
+          "id": "M11.18",
+          "requested_seconds": 720.139,
+          "decoded_pts_seconds": 720.152,
+          "image": "frames/M11_18_720.139.jpg"
+        },
+        {
+          "id": "M11.19",
+          "requested_seconds": 720.383,
+          "decoded_pts_seconds": 720.393,
+          "image": "frames/M11_19_720.383.jpg"
+        },
+        {
+          "id": "M11.20",
+          "requested_seconds": 720.626,
+          "decoded_pts_seconds": 720.633,
+          "image": "frames/M11_20_720.626.jpg"
+        },
+        {
+          "id": "M11.21",
+          "requested_seconds": 720.87,
+          "decoded_pts_seconds": 720.874,
+          "image": "frames/M11_21_720.870.jpg"
+        },
+        {
+          "id": "M11.22",
+          "requested_seconds": 721.113,
+          "decoded_pts_seconds": 721.114,
+          "image": "frames/M11_22_721.113.jpg"
+        },
+        {
+          "id": "M11.23",
+          "requested_seconds": 721.357,
+          "decoded_pts_seconds": 721.355,
+          "image": "frames/M11_23_721.357.jpg"
+        },
+        {
+          "id": "M11.24",
+          "requested_seconds": 721.6,
+          "decoded_pts_seconds": 721.6,
+          "image": "frames/M11_24_721.600.jpg"
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "title": "镜头参与高速动作的运动",
+      "start": 812,
+      "end": 818,
+      "sheet": "contact-sheets/M12.jpg",
+      "frames": [
+        {
+          "id": "M12.01",
+          "requested_seconds": 812.0,
+          "decoded_pts_seconds": 812.017,
+          "image": "frames/M12_01_812.000.jpg"
+        },
+        {
+          "id": "M12.02",
+          "requested_seconds": 812.261,
+          "decoded_pts_seconds": 812.257,
+          "image": "frames/M12_02_812.261.jpg"
+        },
+        {
+          "id": "M12.03",
+          "requested_seconds": 812.522,
+          "decoded_pts_seconds": 812.538,
+          "image": "frames/M12_03_812.522.jpg"
+        },
+        {
+          "id": "M12.04",
+          "requested_seconds": 812.783,
+          "decoded_pts_seconds": 812.778,
+          "image": "frames/M12_04_812.783.jpg"
+        },
+        {
+          "id": "M12.05",
+          "requested_seconds": 813.043,
+          "decoded_pts_seconds": 813.059,
+          "image": "frames/M12_05_813.043.jpg"
+        },
+        {
+          "id": "M12.06",
+          "requested_seconds": 813.304,
+          "decoded_pts_seconds": 813.299,
+          "image": "frames/M12_06_813.304.jpg"
+        },
+        {
+          "id": "M12.07",
+          "requested_seconds": 813.565,
+          "decoded_pts_seconds": 813.58,
+          "image": "frames/M12_07_813.565.jpg"
+        },
+        {
+          "id": "M12.08",
+          "requested_seconds": 813.826,
+          "decoded_pts_seconds": 813.82,
+          "image": "frames/M12_08_813.826.jpg"
+        },
+        {
+          "id": "M12.09",
+          "requested_seconds": 814.087,
+          "decoded_pts_seconds": 814.101,
+          "image": "frames/M12_09_814.087.jpg"
+        },
+        {
+          "id": "M12.10",
+          "requested_seconds": 814.348,
+          "decoded_pts_seconds": 814.341,
+          "image": "frames/M12_10_814.348.jpg"
+        },
+        {
+          "id": "M12.11",
+          "requested_seconds": 814.609,
+          "decoded_pts_seconds": 814.622,
+          "image": "frames/M12_11_814.609.jpg"
+        },
+        {
+          "id": "M12.12",
+          "requested_seconds": 814.87,
+          "decoded_pts_seconds": 814.862,
+          "image": "frames/M12_12_814.870.jpg"
+        },
+        {
+          "id": "M12.13",
+          "requested_seconds": 815.13,
+          "decoded_pts_seconds": 815.143,
+          "image": "frames/M12_13_815.130.jpg"
+        },
+        {
+          "id": "M12.14",
+          "requested_seconds": 815.391,
+          "decoded_pts_seconds": 815.383,
+          "image": "frames/M12_14_815.391.jpg"
+        },
+        {
+          "id": "M12.15",
+          "requested_seconds": 815.652,
+          "decoded_pts_seconds": 815.664,
+          "image": "frames/M12_15_815.652.jpg"
+        },
+        {
+          "id": "M12.16",
+          "requested_seconds": 815.913,
+          "decoded_pts_seconds": 815.904,
+          "image": "frames/M12_16_815.913.jpg"
+        },
+        {
+          "id": "M12.17",
+          "requested_seconds": 816.174,
+          "decoded_pts_seconds": 816.185,
+          "image": "frames/M12_17_816.174.jpg"
+        },
+        {
+          "id": "M12.18",
+          "requested_seconds": 816.435,
+          "decoded_pts_seconds": 816.425,
+          "image": "frames/M12_18_816.435.jpg"
+        },
+        {
+          "id": "M12.19",
+          "requested_seconds": 816.696,
+          "decoded_pts_seconds": 816.706,
+          "image": "frames/M12_19_816.696.jpg"
+        },
+        {
+          "id": "M12.20",
+          "requested_seconds": 816.957,
+          "decoded_pts_seconds": 816.946,
+          "image": "frames/M12_20_816.957.jpg"
+        },
+        {
+          "id": "M12.21",
+          "requested_seconds": 817.217,
+          "decoded_pts_seconds": 817.227,
+          "image": "frames/M12_21_817.217.jpg"
+        },
+        {
+          "id": "M12.22",
+          "requested_seconds": 817.478,
+          "decoded_pts_seconds": 817.467,
+          "image": "frames/M12_22_817.478.jpg"
+        },
+        {
+          "id": "M12.23",
+          "requested_seconds": 817.739,
+          "decoded_pts_seconds": 817.748,
+          "image": "frames/M12_23_817.739.jpg"
+        },
+        {
+          "id": "M12.24",
+          "requested_seconds": 818.0,
+          "decoded_pts_seconds": 817.988,
+          "image": "frames/M12_24_818.000.jpg"
+        }
+      ]
+    }
+  ],
+  "micro_notes": [
+    {
+      "id": "M01",
+      "principles": "P01",
+      "observation": "M01.01-.12 手掌姿态渐变；.13-.24 手臂转为横向、手指收拢，亮带继续掠过。主画面与小窗不同步，不能用它们测原动画快慢比。"
+    },
+    {
+      "id": "M02",
+      "principles": "P01/P03",
+      "observation": "M02.01-.06 面部位置稳定；.07-.09 亮色攻击进入；.10-.15 拳臂贴近脸侧；.16-.19 黑白块化；.20-.24 暖色结果画面。此为清楚的接触前后表现链，不据采样确认接触的准确首帧。"
+    },
+    {
+      "id": "M03",
+      "principles": "P02/P03/P06",
+      "observation": "M03.01-.07 暖色场中的蓝色攻击；.08-.21 多层圆形屏障、微小人物和逐步扩大的冷色作用区；.22-.24 已切换到遗迹镜头。最后三格不能当作屏障的连续后继帧。"
+    },
+    {
+      "id": "M04",
+      "principles": "P03",
+      "observation": "M04.01-.08 冰体与人物；.09-.19 向更大范围的冰体展开，橙黄火焰持续定位人物；.20-.24 已切到暖色前冲与远景。教程0.2x慢放和重放仍然存在。"
+    },
+    {
+      "id": "M05",
+      "principles": "P04/P05",
+      "observation": "拳部与暗色受力体块持续贴近，绿光、硬边阴影、接触周围的小形体逐层变化。这里只能确认可见形体与能量，不能凭单张暗块断定具体肌肉受力或完整躯干姿势。"
+    },
+    {
+      "id": "M06",
+      "principles": "P07",
+      "observation": "M06.01-.10 刀光扫过且身体仍基本完整；.11-.16 切线/高亮出现；.17 身体分离；.18-.24 强色结果画面。观众有先见攻击、后见结果的时间差。"
+    },
+    {
+      "id": "M07",
+      "principles": "P07/P08",
+      "observation": "M07.04-.07 亮色主体已在平台边缘；.08-.13 平台方块化上翻/散开；.14 起高亮扩散；.15-.20 为更强烈的暖色释放；.21 后切到新例。层次顺序比同时爆满更关键。"
+    },
+    {
+      "id": "M08",
+      "principles": "P08",
+      "observation": "先保持红色敌人在天空中的大姿态，随后局部白色碎片出现，最后出现身体碎裂/状态变化。时间错层与姿态保持共同制造递进，原片解剖细节不在此推断。"
+    },
+    {
+      "id": "M09",
+      "principles": "P09",
+      "observation": "在绿色光束附近，头肩、躯干与双臂不断改变倾斜和伸展组合。避免左右镜像循环，但其任务始终是穿越/躲避危险区，而非任意摆动。"
+    },
+    {
+      "id": "M10",
+      "principles": "P10",
+      "observation": "身体、持刀动作、脚步和近侧剑刃相继占据画面，视点贴近动作路径；不是一条毫无剪辑的长镜头。以最近形体的掠屏和透视变化感知临场感。"
+    },
+    {
+      "id": "M11",
+      "principles": "P10/P11",
+      "observation": "粉色武器与人物拉出大幅方向形；近处形体扫过后转为斜线与更远构图。方向性与非常规近侧机位共同工作，不能归结为单独“摄影机抖动”。"
+    },
+    {
+      "id": "M12",
+      "principles": "P12",
+      "observation": "高速旋转物体、人物、武器与背景相对变化，镜头和主体的动作需要分开描述；这一窗是多个示例的剪接，不是一个连续追踪镜头。"
+    }
+  ]
+}

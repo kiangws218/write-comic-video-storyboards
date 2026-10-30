@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "date": "2026-10-29",
+  "source_url": "https://www.bilibili.com/video/BV1oSNMzUEC5/",
+  "local_filename_title": "动画师教程&技巧 P1 中村丰的12条打斗动作原理",
+  "sha256": "88f5dc6af7f7242dc48d39fab820fddfa14a805ba867edd9b2b8c1a3f82767bf",
+  "bytes": 77888245,
+  "duration_seconds": 859.72,
+  "resolution": [
+    852,
+    480
+  ],
+  "container_average_fps": 24.950126501294093,
+  "evidence_method": "全片每5秒总览；每1秒底部硬字幕OCR检索并人工核读关键内容；28个精选窗口每窗12格；12个加密窗口每窗24格；关键画面变化前后帧人工检查。",
+  "not_done": "没有对全片每一次硬切逐帧穷举；没有测定原动画的作画帧率或命中停顿帧数；没有进行音轨听辨与音画同步测量；没有独立认证B站上传者、译者、外部引用及每段作画人员归属。",
+  "timing_note": "图上时间码为本地教程的采样请求时间；CSV/JSON另记OpenCV解码返回PTS。章节时间取转入介绍的约起点，非B站官方章节；子段区间是分析范围，除特意说明外不代表硬切点。",
+  "contact_sheet_count": 49,
+  "sample_tile_count": 796,
+  "principle_count": 12,
+  "selected_window_count": 28,
+  "dense_window_count": 12,
+  "source_filename": "动画师教程&技巧 P1 中村丰的12条打斗动作原理_36545562154.mp4"
+}
