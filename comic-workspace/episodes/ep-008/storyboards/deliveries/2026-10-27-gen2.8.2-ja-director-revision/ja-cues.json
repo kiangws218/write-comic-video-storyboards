@@ -1,0 +1,601 @@
+{
+  "02_002-b1": [
+    {
+      "id": "02_002-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "咳咳咳!",
+      "script_text": "ゴホッ、ゴホッ、ゴホッ！",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 1.5,
+      "target": "片段2/分镜2"
+    }
+  ],
+  "02_002-b2": [
+    {
+      "id": "02_002-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "该死!找不到机会\n被追着跑了十多分钟!",
+      "script_text": "くそっ！攻める隙がない！もう十分以上も追い回されてる！",
+      "status": "mapped",
+      "start": 2,
+      "seconds": 5.5,
+      "target": "片段2/分镜2"
+    }
+  ],
+  "02_003-b1": [
+    {
+      "id": "02_003-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "幸好这玩意体型大\n动作也大\n闪过他的攻击不算难",
+      "script_text": "幸い、体がでかくて動きも大きい。攻撃をかわすのは難しくない。",
+      "status": "mapped",
+      "start": 0.5,
+      "seconds": 6.5,
+      "target": "片段3/分镜1"
+    }
+  ],
+  "02_003-b2": [
+    {
+      "start": 0,
+      "seconds": 2.5,
+      "script_text": "視野も広くなさそうだし。",
+      "target": "片段3/分镜2"
+    },
+    {
+      "start": 0.5,
+      "seconds": 4,
+      "script_text": "建物の間に隠れて、弱点さえ見つければ…",
+      "target": "片段3/分镜3"
+    }
+  ],
+  "03_001-b1": [
+    {
+      "id": "03_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "这就发现我了?",
+      "script_text": "もう見つかったの？",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 1.5,
+      "target": "片段4/分镜1"
+    }
+  ],
+  "03_002-b1": [
+    {
+      "id": "03_002-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "?!!",
+      "script_text": "!?",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 0.5,
+      "target": "片段4/分镜2"
+    }
+  ],
+  "05_001-b1": [
+    {
+      "id": "05_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "这也太离谱了!\n你厌倦了捉迷藏,哈?",
+      "script_text": "ありえないでしょ！かくれんぼに飽きたってわけ？",
+      "status": "mapped",
+      "start": 1,
+      "seconds": 4.0,
+      "target": "片段5/分镜1"
+    }
+  ],
+  "05_001-b2": [
+    {
+      "id": "05_001-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "然后你就\n把整座城拆了",
+      "script_text": "だからって、街を丸ごと壊すなんて！",
+      "status": "mapped",
+      "start": 5.5,
+      "seconds": 3.0,
+      "target": "片段5/分镜1"
+    }
+  ],
+  "05_002-b1": [
+    {
+      "id": "05_002-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "HEY!!",
+      "script_text": "おい!!",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 0.5,
+      "target": "片段5/分镜2"
+    }
+  ],
+  "05_002-b2": [
+    {
+      "id": "05_002-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "看哪呢?\n傻大个!",
+      "script_text": "どこ見てんの、デカブツ！",
+      "status": "mapped",
+      "start": 1,
+      "seconds": 2.0,
+      "target": "片段5/分镜2"
+    }
+  ],
+  "06_002-b1": [
+    {
+      "id": "06_002-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "你过来呀!",
+      "script_text": "ほら、こっちに来な！",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 2.0,
+      "target": "片段6/分镜1"
+    }
+  ],
+  "06_002-b2": [
+    {
+      "id": "06_002-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "长翅膀的杂种",
+      "script_text": "羽の生えたクソ野郎！",
+      "status": "mapped",
+      "start": 2.75,
+      "seconds": 2.0,
+      "target": "片段6/分镜1"
+    }
+  ],
+  "09_001-b1": [
+    {
+      "id": "09_001-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "这身躯真是\n铜浇铁铸\n毫无破绽",
+      "script_text": "この体、まるで鋼鉄の塊。まったく隙がない。",
+      "status": "mapped",
+      "start": 0.5,
+      "seconds": 4.5,
+      "target": "片段8/分镜1"
+    }
+  ],
+  "09_001-b2": [
+    {
+      "id": "09_001-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "但任何生物都有弱点!",
+      "script_text": "でも、生き物なら必ず弱点はある！",
+      "status": "mapped",
+      "start": 5,
+      "seconds": 2.5,
+      "target": "片段8/分镜1"
+    }
+  ],
+  "09_002-b1": [
+    {
+      "id": "09_002-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "不能再拖下去了!",
+      "script_text": "これ以上、長引かせられない！",
+      "status": "mapped",
+      "start": 7.5,
+      "seconds": 2,
+      "target": "片段8/分镜1"
+    }
+  ],
+  "09_002-b2": [
+    {
+      "start": 0,
+      "seconds": 1.5,
+      "script_text": "どんな動物にも",
+      "target": "片段8/分镜2"
+    },
+    {
+      "start": 0,
+      "seconds": 3.5,
+      "script_text": "共通する弱点を、直接狙う。",
+      "target": "片段9/分镜1"
+    }
+  ],
+  "10_001-b1": [
+    {
+      "id": "10_001-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "那就是眼睛!",
+      "script_text": "それは、目だ！",
+      "status": "mapped",
+      "start": 4,
+      "seconds": 1.0,
+      "target": "片段9/分镜1"
+    }
+  ],
+  "11_001-b1": [
+    {
+      "id": "11_001-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "来尝尝这个!",
+      "script_text": "これでも食らえ！",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 1.5,
+      "target": "片段9/分镜3"
+    }
+  ],
+  "11_001-b2": [
+    {
+      "start": 1.5,
+      "seconds": 2.5,
+      "script_text": "かわせるもんなら、かわしてみなよ。",
+      "target": "片段9/分镜3"
+    },
+    {
+      "start": 0,
+      "seconds": 1.5,
+      "script_text": "デカブツ！",
+      "target": "片段9/分镜4"
+    }
+  ],
+  "11_003-b1": [
+    {
+      "id": "11_003-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "什么...?",
+      "script_text": "何…？",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 0.5,
+      "target": "片段10/分镜2"
+    }
+  ],
+  "12_002-b1": [
+    {
+      "id": "12_002-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "居然可以变形\n全覆盖面甲?",
+      "script_text": "変形して、顔全体を装甲で覆えるの？",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 3.5,
+      "target": "片段10/分镜5"
+    }
+  ],
+  "12_002-b2": [
+    {
+      "id": "12_002-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "你他妈在逗我?",
+      "script_text": "ふざけてんのかよ？",
+      "status": "mapped",
+      "start": 4,
+      "seconds": 2.0,
+      "target": "片段10/分镜5"
+    }
+  ],
+  "12_003-b1": [
+    {
+      "start": 0,
+      "seconds": 2.5,
+      "script_text": "こいつ…硬いってもんじゃない！",
+      "target": "片段11/分镜1"
+    },
+    {
+      "start": 0,
+      "seconds": 3.5,
+      "script_text": "この硬さ、言葉じゃ言い表せない！",
+      "target": "片段11/分镜2"
+    }
+  ],
+  "12_003-b2": [
+    {
+      "start": 3.5,
+      "seconds": 2,
+      "script_text": "鉄の塊より硬いじゃん！",
+      "target": "片段11/分镜2"
+    },
+    {
+      "start": 0,
+      "seconds": 1.5,
+      "script_text": "何を食べたら、",
+      "target": "片段11/分镜3"
+    },
+    {
+      "start": 0,
+      "seconds": 1.5,
+      "script_text": "こんなに硬くなるの？",
+      "target": "片段11/分镜4"
+    }
+  ],
+  "14_001-b1": [
+    {
+      "id": "14_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "?!",
+      "script_text": "!?",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 0.5,
+      "target": "片段12/分镜1"
+    }
+  ],
+  "14_002-b1": [
+    {
+      "start": 0.5,
+      "seconds": 1,
+      "script_text": "痛い…！",
+      "target": "片段12/分镜2"
+    },
+    {
+      "start": 0,
+      "seconds": 4.5,
+      "script_text": "でも、腕が歯の隙間に挟まってるだけでよかった。",
+      "target": "片段12/分镜3"
+    }
+  ],
+  "14_002-b2": [
+    {
+      "id": "14_002-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "但是再这样\n下去手臂会\n被扯断的!",
+      "script_text": "でも、このままじゃ腕が引きちぎられる！",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 3.5,
+      "target": "片段12/分镜4"
+    }
+  ],
+  "15_001-b1": [
+    {
+      "id": "15_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "我...我得\n赶紧拔出来...!",
+      "script_text": "あ…早く引き抜かなきゃ…！",
+      "status": "mapped",
+      "start": 0.5,
+      "seconds": 2.5,
+      "target": "片段13/分镜1"
+    }
+  ],
+  "15_001-b2": [
+    {
+      "id": "15_001-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "就算弄断胳膊\n我也得先下来!",
+      "script_text": "腕がちぎれても、先にここから降りなきゃ！",
+      "status": "mapped",
+      "start": 3.5,
+      "seconds": 4.0,
+      "target": "片段13/分镜1"
+    }
+  ],
+  "15_002-b1": [
+    {
+      "id": "15_002-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "EUK!!",
+      "script_text": "うぐっ!!",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 0.5,
+      "target": "片段13/分镜3"
+    }
+  ],
+  "16_003-b1": [
+    {
+      "id": "16_003-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "嗄哈!!",
+      "script_text": "がはっ!!",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 0.5,
+      "target": "片段14/分镜2"
+    }
+  ],
+  "16_003-b2": [
+    {
+      "id": "16_003-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "咳咳咳!",
+      "script_text": "ゴホッ、ゴホッ、ゴホッ！",
+      "status": "mapped",
+      "start": 1,
+      "seconds": 1.5,
+      "target": "片段14/分镜2"
+    }
+  ],
+  "16_004-b1": [
+    {
+      "id": "16_004-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "呼...呼呜...\n这也太疼了",
+      "script_text": "はぁ…ふぅ…痛すぎる。",
+      "status": "mapped",
+      "start": 0.5,
+      "seconds": 3.0,
+      "target": "片段14/分镜3"
+    }
+  ],
+  "17_001-b1": [
+    {
+      "id": "17_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "真难搞...",
+      "script_text": "厄介だな…",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 1.5,
+      "target": "片段15/分镜1"
+    }
+  ],
+  "17_001-b2": [
+    {
+      "id": "17_001-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "我本来就想看看\n它有多能打然后开溜的...",
+      "script_text": "どれだけ強いか見て、さっさと逃げるつもりだったのに…",
+      "status": "mapped",
+      "start": 2,
+      "seconds": 5.0,
+      "target": "片段15/分镜1"
+    }
+  ],
+  "17_002-b1": [
+    {
+      "id": "17_002-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "这么好斗的话\n就算逃跑它也会\n追上来吧",
+      "script_text": "こんなに好戦的なら、逃げても追ってくるよね。",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 4.0,
+      "target": "片段16/分镜1"
+    }
+  ],
+  "17_002-b2": [
+    {
+      "start": 0.5,
+      "seconds": 0.75,
+      "script_text": "くそっ！",
+      "target": "片段16/分镜2"
+    },
+    {
+      "start": 0,
+      "seconds": 4.25,
+      "script_text": "ここで倒すしかなさそう。でも、どうすれば？",
+      "target": "片段16/分镜3"
+    }
+  ],
+  "18_001-b1": [
+    {
+      "id": "18_001-b1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "好吧...我们找到他\n也不是说抓不到他",
+      "script_text": "まあ…見つけたんだし。捕まえられないってわけじゃないよ。",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 5.5,
+      "target": "片段17/分镜1"
+    }
+  ],
+  "18_001-b2": [
+    {
+      "id": "18_001-b2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "source_text": "参照它们的平均寿命\n这条龙应该还很小\n相对成年体来说\n还算好办",
+      "script_text": "平均寿命から考えると、この竜はまだかなり幼いはず。成体に比べれば、まだ相手にしやすいよ。",
+      "status": "mapped",
+      "start": 6,
+      "seconds": 8.0,
+      "target": "片段17/分镜1"
+    }
+  ],
+  "18_002-b1": [
+    {
+      "id": "18_002-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "......",
+      "script_text": "……",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 0.5,
+      "target": "片段18/分镜1"
+    }
+  ],
+  "18_002-b2": [
+    {
+      "id": "18_002-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "还不是成年体?",
+      "script_text": "まだ成体じゃないの？",
+      "status": "mapped",
+      "start": 1,
+      "seconds": 1.5,
+      "target": "片段18/分镜1"
+    }
+  ],
+  "18_003-b1": [
+    {
+      "start": 0.5,
+      "seconds": 2.5,
+      "script_text": "倒すのは無理そう…でも、",
+      "target": "片段18/分镜2"
+    },
+    {
+      "start": 0,
+      "seconds": 4,
+      "script_text": "こいつをほんの少しでもビビらせられたら…",
+      "target": "片段18/分镜3"
+    }
+  ],
+  "18_003-b2": [
+    {
+      "id": "18_003-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "这能行吗...?",
+      "script_text": "うまくいくかな…？",
+      "status": "mapped",
+      "start": 4.5,
+      "seconds": 1.5,
+      "target": "片段18/分镜3"
+    }
+  ],
+  "19_001-b1": [
+    {
+      "id": "19_001-b1",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "不...没时间犹豫了!",
+      "script_text": "いや…迷ってる時間はない！",
+      "status": "mapped",
+      "start": 0.25,
+      "seconds": 2.5,
+      "target": "片段19/分镜1"
+    }
+  ],
+  "19_001-b2": [
+    {
+      "id": "19_001-b2",
+      "speaker": "青",
+      "kind": "inner",
+      "source_text": "放手一搏吧!",
+      "script_text": "一か八か、やってやる！",
+      "status": "mapped",
+      "start": 0,
+      "seconds": 2.0,
+      "target": "片段19/分镜2"
+    }
+  ]
+}

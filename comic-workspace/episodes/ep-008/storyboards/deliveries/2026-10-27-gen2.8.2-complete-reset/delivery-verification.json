@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "all_66_original_sha256_match": true,
+    "all_64_visual_nodes_in_exact_order": true,
+    "all_45_speech_records_unchanged": true,
+    "execution_actions_equal_mother_draft": true,
+    "execution_speech_equal_mother_draft": true,
+    "source_lock_matches_current_source_projection": true,
+    "shared_character_registry_unchanged": true,
+    "all_execution_clips_within_15_seconds": true,
+    "all_execution_clips_within_1900_characters": true,
+    "all_final_shot_durations_positive_half_seconds": true
+  },
+  "passed": true,
+  "original_files": 66,
+  "visual_nodes": 64,
+  "shots": 74,
+  "added_shots": 12,
+  "source_shots": 62,
+  "clips": 24,
+  "seconds": 258.0,
+  "speech_records": 45,
+  "max_clip_seconds": 15.0,
+  "max_execution_characters": 1888
+}

@@ -1,0 +1,397 @@
+{
+  "date": "2026-10-28",
+  "shots_updated": 36,
+  "field_updates": 47,
+  "applications": [
+    {
+      "code": "01_001",
+      "target": "片段1/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "広角パース"
+      ]
+    },
+    {
+      "code": "01_003",
+      "target": "片段1/分镜3",
+      "field": "镜头设计",
+      "terms": [
+        "multiplane parallax"
+      ]
+    },
+    {
+      "code": "03_002",
+      "target": "片段4/分镜2",
+      "field": "镜头设计",
+      "terms": [
+        "camera shake"
+      ]
+    },
+    {
+      "code": "04_001",
+      "target": "片段4/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "手绘エフェクト"
+      ]
+    },
+    {
+      "code": "04_001",
+      "target": "片段4/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "块面破片",
+        "layered dust"
+      ]
+    },
+    {
+      "code": "07_001",
+      "target": "片段7/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "広角パース"
+      ]
+    },
+    {
+      "code": "X04",
+      "target": "片段7/分镜2",
+      "field": "镜头设计",
+      "terms": [
+        "tracking shot"
+      ]
+    },
+    {
+      "code": "X04",
+      "target": "片段7/分镜2",
+      "field": "可见动作",
+      "terms": [
+        "speed ramp"
+      ]
+    },
+    {
+      "code": "X04",
+      "target": "片段7/分镜2",
+      "field": "可见动作",
+      "terms": [
+        "speed ramp"
+      ]
+    },
+    {
+      "code": "07_002",
+      "target": "片段7/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "hit-stop"
+      ]
+    },
+    {
+      "code": "07_002",
+      "target": "片段7/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "impact frame"
+      ]
+    },
+    {
+      "code": "K01",
+      "target": "片段7/分镜4",
+      "field": "镜头设计",
+      "terms": [
+        "whip pan"
+      ]
+    },
+    {
+      "code": "08_001",
+      "target": "片段8/分镜1",
+      "field": "可见动作",
+      "terms": [
+        "squash and stretch"
+      ]
+    },
+    {
+      "code": "X05",
+      "target": "片段8/分镜2",
+      "field": "镜头设计",
+      "terms": [
+        "tracking shot"
+      ]
+    },
+    {
+      "code": "09_001",
+      "target": "片段8/分镜3",
+      "field": "镜头设计",
+      "terms": [
+        "BG animation",
+        "parallax"
+      ]
+    },
+    {
+      "code": "09_001",
+      "target": "片段8/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "follow-through",
+        "overlap"
+      ]
+    },
+    {
+      "code": "10_002",
+      "target": "片段9/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "オバケ",
+        "smear frame"
+      ]
+    },
+    {
+      "code": "11_001",
+      "target": "片段10/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "金田系透视"
+      ]
+    },
+    {
+      "code": "11_001",
+      "target": "片段10/分镜1",
+      "field": "可见动作",
+      "terms": [
+        "pose-to-pose"
+      ]
+    },
+    {
+      "code": "12_001",
+      "target": "片段11/分镜1",
+      "field": "可见动作",
+      "terms": [
+        "contact deformation"
+      ]
+    },
+    {
+      "code": "12_001",
+      "target": "片段11/分镜1",
+      "field": "可见动作",
+      "terms": [
+        "impact frame"
+      ]
+    },
+    {
+      "code": "X06",
+      "target": "片段11/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "follow-through",
+        "overlap"
+      ]
+    },
+    {
+      "code": "12_002",
+      "target": "片段11/分镜4",
+      "field": "可见动作",
+      "terms": [
+        "剧画脸",
+        "line boil"
+      ]
+    },
+    {
+      "code": "14_002",
+      "target": "片段14/分镜1",
+      "field": "光影布光",
+      "terms": [
+        "contact shadow"
+      ]
+    },
+    {
+      "code": "X07",
+      "target": "片段15/分镜2",
+      "field": "可见动作",
+      "terms": [
+        "タメツメ"
+      ]
+    },
+    {
+      "code": "16_003",
+      "target": "片段16/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "呼吸芝居"
+      ]
+    },
+    {
+      "code": "M20_003_21_001",
+      "target": "片段22/分镜1",
+      "field": "光影布光",
+      "terms": [
+        "selective glow"
+      ]
+    },
+    {
+      "code": "21_002",
+      "target": "片段22/分镜2",
+      "field": "可见动作",
+      "terms": [
+        "止め",
+        "overlap"
+      ]
+    },
+    {
+      "code": "X11",
+      "target": "片段22/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "オバケ",
+        "smear"
+      ]
+    },
+    {
+      "code": "21_003",
+      "target": "片段22/分镜4",
+      "field": "可见动作",
+      "terms": [
+        "smear frame"
+      ]
+    },
+    {
+      "code": "22_001",
+      "target": "片段23/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "directional motion blur"
+      ]
+    },
+    {
+      "code": "X12",
+      "target": "片段23/分镜2",
+      "field": "镜头设计",
+      "terms": [
+        "tracking shot"
+      ]
+    },
+    {
+      "code": "22_002",
+      "target": "片段24/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "orbit tracking",
+        "BG animation"
+      ]
+    },
+    {
+      "code": "22_002",
+      "target": "片段24/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "金田系透视"
+      ]
+    },
+    {
+      "code": "22_002",
+      "target": "片段24/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "foreground occlusion"
+      ]
+    },
+    {
+      "code": "23_001",
+      "target": "片段24/分镜2",
+      "field": "可见动作",
+      "terms": [
+        "流动系作画",
+        "强pose"
+      ]
+    },
+    {
+      "code": "23_001",
+      "target": "片段24/分镜2",
+      "field": "光影布光",
+      "terms": [
+        "impact frame"
+      ]
+    },
+    {
+      "code": "M24_001_24_002",
+      "target": "片段25/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "squash and stretch"
+      ]
+    },
+    {
+      "code": "24_003",
+      "target": "片段26/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "arc tracking"
+      ]
+    },
+    {
+      "code": "25_002",
+      "target": "片段26/分镜4",
+      "field": "可见动作",
+      "terms": [
+        "inverted impact frame"
+      ]
+    },
+    {
+      "code": "25_003",
+      "target": "片段27/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "ease-out"
+      ]
+    },
+    {
+      "code": "X15",
+      "target": "片段27/分镜2",
+      "field": "镜头设计",
+      "terms": [
+        "camera roll"
+      ]
+    },
+    {
+      "code": "26_001",
+      "target": "片段27/分镜3",
+      "field": "可见动作",
+      "terms": [
+        "剧画脸",
+        "粗线阴影"
+      ]
+    },
+    {
+      "code": "26_002",
+      "target": "片段27/分镜4",
+      "field": "可见动作",
+      "terms": [
+        "手绘エフェクト",
+        "破空环"
+      ]
+    },
+    {
+      "code": "27_001",
+      "target": "片段28/分镜1",
+      "field": "镜头设计",
+      "terms": [
+        "tracking shot"
+      ]
+    },
+    {
+      "code": "27_001",
+      "target": "片段28/分镜1",
+      "field": "可见动作",
+      "terms": [
+        "放射背动",
+        "parallax"
+      ]
+    },
+    {
+      "code": "27_002",
+      "target": "片段28/分镜3",
+      "field": "镜头设计",
+      "terms": [
+        "speed ramp"
+      ]
+    }
+  ],
+  "principle": "术语+对象+发生阶段+结束状态；自然日文发声不随动作慢放拉长。"
+}

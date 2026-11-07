@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CDF77CD52BE7A61F4E53A23A6649A9A375250EF2A9164FA6133F3F0C0B607C72",
+    "Path": "D:\\Codex\\Projects\\New project\\ep008-gen282-reset-20261027\\second-pass\\source-ledger.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C0E352D7D6AD651378AEBF925C6E5B3B3FB0117F8975CC7A0D93579282B3A2BD",
+    "Path": "D:\\Codex\\Projects\\New project\\ep008-gen282-reset-20261027\\second-pass\\full.md"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "three_historical_manifests_verified": {
+    "deliveries/2026-10-27-gen2.8.2-complete-reset": 108,
+    "deliveries/2026-10-27-gen2.8.2-ja-director-revision": 113,
+    "alternates/2026-10-27-sakuga-director-cut": 120
+  },
+  "nov4_latest_master_and_execution_hashes_match": true,
+  "all_30_single_inputs_match_latest_local": true,
+  "all_45_source_and_japanese_records_match_baseline": true,
+  "old_remote_current_archived_byte_exact": true,
+  "current_master_equals_completed_ja_baseline": true,
+  "latest_shots": 87,
+  "latest_packages": 30,
+  "latest_seconds": 288,
+  "latest_max_seconds": 14,
+  "latest_max_characters": 1828,
+  "source_panels_modified": false,
+  "visual_experiments_promoted": false,
+  "classification": "retain explicit alternate designation; current is completed Japanese baseline",
+  "checked_date": "2026-11-07",
+  "latest_completed_revision": "2026-11-04近景与快慢节奏优化版",
+  "latest_master_sha256": "b1da214af5d7584748ea2e7788d3636711e5882a4f9e738f8937e44e152cae4d",
+  "latest_execution_sha256": "d9f65d075165a14eafcea90a984290b9a572522f6f86399c564ea2667af3b2ee"
+}

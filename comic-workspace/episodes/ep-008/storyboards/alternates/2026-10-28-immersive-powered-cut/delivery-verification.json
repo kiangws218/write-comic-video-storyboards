@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "revision": "2026-11-04近景与快慢节奏优化版",
+  "scope": "仅片段27—30的近景慢放与快慢组织；片段1—26不变",
+  "shots": 87,
+  "seconds": 288,
+  "input_packages": 30,
+  "tail_segments": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "tail_seconds": 65,
+  "changed_segments": [
+    27,
+    28,
+    29,
+    30
+  ],
+  "changed_seconds": 31.5,
+  "first_26_ledger_records_identical": true,
+  "first_26_execution_inputs_byte_identical": true,
+  "approved_energy_cross_explosion_sequence_unchanged": true,
+  "source_lock_unchanged_this_revision": true,
+  "all_original_shot_codes_order_times_and_references_unchanged": true,
+  "all_dialogue_text_speakers_types_and_windows_unchanged": true,
+  "max_input_characters": 1828,
+  "max_input_seconds": 14,
+  "source_locked_shots": 62,
+  "validator_exit": 0,
+  "execution_audit_exit": 0,
+  "master_sha256": "b1da214af5d7584748ea2e7788d3636711e5882a4f9e738f8937e44e152cae4d",
+  "execution_sha256": "d9f65d075165a14eafcea90a984290b9a572522f6f86399c564ea2667af3b2ee",
+  "review_sha256": "46d3c9f60bdaf5c78761d27bc7c9baf109e39a7ccbe44521726c7cc5ce454974",
+  "new_video_generated_or_played": false
+}

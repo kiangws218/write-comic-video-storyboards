@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "all_66_original_sha256_match": true,
+    "all_64_visual_nodes_in_exact_order": true,
+    "all_45_japanese_performance_texts_exact": true,
+    "all_45_original_chinese_texts_speakers_and_types_unchanged": true,
+    "all_manual_japanese_fragments_join_complete_lines": true,
+    "all_manual_cues_in_order_and_within_shot_budgets": true,
+    "all_20_added_shots_grouped_with_preceding_source_shot": true,
+    "final_powerup_and_attack_sequence_has_no_lexical_dialogue": true,
+    "execution_actions_equal_mother_draft": true,
+    "execution_speech_equal_mother_draft": true,
+    "source_lock_matches_current_source_projection": true,
+    "shared_character_registry_unchanged": true,
+    "all_execution_clips_within_15_seconds": true,
+    "all_execution_clips_within_1900_characters": true,
+    "all_final_shot_durations_positive_half_seconds": true
+  },
+  "passed": true,
+  "original_files": 66,
+  "visual_nodes": 64,
+  "shots": 82,
+  "added_shots": 20,
+  "source_shots": 62,
+  "clips": 24,
+  "seconds": 272.5,
+  "speech_records": 45,
+  "max_clip_seconds": 15.0,
+  "max_execution_characters": 1852,
+  "scheduled_voice_and_symbol_reaction_seconds": 138.0,
+  "final_sequence_without_lexical_dialogue_seconds": 46.0,
+  "timing_scope": "文字预算；未录音、未制作或播放动态分镜。"
+}

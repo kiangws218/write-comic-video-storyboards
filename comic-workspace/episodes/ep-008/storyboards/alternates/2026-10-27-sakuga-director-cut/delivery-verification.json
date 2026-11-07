@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": {
+    "previous_ja_master_unchanged": true,
+    "all_64_visual_nodes_in_exact_order": true,
+    "all_45_source_and_ja_lines_speakers_types_unchanged": true,
+    "confirmed_macro_route_unchanged": true,
+    "source_projection_and_dialogue_lock_unchanged": true,
+    "phrase_fragments_exact_and_cues_in_order": true,
+    "all_added_shots_with_preceding_source_in_same_clip": true,
+    "entire_final_attack_without_lexical_dialogue": true,
+    "execution_actions_exact": true,
+    "execution_japanese_voice_exact": true,
+    "all_clips_within_15_seconds_and_1900_chars": true,
+    "positive_half_second_shot_budgets": true
+  },
+  "shots": 87,
+  "source_shots": 62,
+  "added_shots": 25,
+  "new_in_this_cut": 5,
+  "clips": 28,
+  "seconds": 288.0,
+  "final_attack_no_lexical_dialogue_seconds": 59.5,
+  "max_execution_chars": 1702,
+  "max_clip_seconds": 15.0,
+  "scheduled_voice_and_reaction_seconds": 138.0,
+  "scope": "文字、来源、动作状态与原画示意检查；尚未实录配音或制作动态分镜/成片。"
+}
