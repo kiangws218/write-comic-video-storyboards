@@ -1,0 +1,77 @@
+{
+  "version": "V2",
+  "clip_count": 4,
+  "total_seconds": 52,
+  "shot_count": 20,
+  "clips": [
+    {
+      "clip": "C01",
+      "duration": 13,
+      "shot_durations": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "sum": 13,
+      "characters": 714,
+      "within_requested_12_to_14_seconds": true,
+      "below_user_supplied_15_second_ceiling": true
+    },
+    {
+      "clip": "C02",
+      "duration": 13,
+      "shot_durations": [
+        3,
+        3,
+        1,
+        3,
+        3
+      ],
+      "sum": 13,
+      "characters": 801,
+      "within_requested_12_to_14_seconds": true,
+      "below_user_supplied_15_second_ceiling": true
+    },
+    {
+      "clip": "C03",
+      "duration": 13,
+      "shot_durations": [
+        4,
+        3,
+        2,
+        2,
+        2
+      ],
+      "sum": 13,
+      "characters": 874,
+      "within_requested_12_to_14_seconds": true,
+      "below_user_supplied_15_second_ceiling": true
+    },
+    {
+      "clip": "C04",
+      "duration": 13,
+      "shot_durations": [
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "sum": 13,
+      "characters": 880,
+      "within_requested_12_to_14_seconds": true,
+      "below_user_supplied_15_second_ceiling": true
+    }
+  ],
+  "all_requested_durations_pass": true,
+  "animation_unchanged": true,
+  "animation_sha256": {
+    "代码动态分镜.html": "c4b2f6ba53535715ef1a1028122c3cd236626ea413898326190ac3d3d437ba7a",
+    "代码动态分镜_源码.html": "2c2d452f9ac4a8caa75cd21de3167d8c35ee55bdc121f0b80cbafbb2aa46578b",
+    "ice-blade-animatic.html": "2c2d452f9ac4a8caa75cd21de3167d8c35ee55bdc121f0b80cbafbb2aa46578b"
+  },
+  "video_generated": false,
+  "publication_note": "动画哈希为原本地交付的只读核对记录；本次仅发布文字V2，不包含动画。"
+}
