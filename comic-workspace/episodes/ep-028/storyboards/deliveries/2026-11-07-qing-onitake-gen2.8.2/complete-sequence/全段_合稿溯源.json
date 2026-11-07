@@ -1,0 +1,833 @@
+{
+  "kind": "derived_reading_script",
+  "scope": "2026-11-04动作演出与特效摄影强化后，五批成稿机械合并及连续编号，来源事实不变。",
+  "raw_files": 146,
+  "visual_source_nodes": 148,
+  "shots": 202,
+  "added": 55,
+  "clips": 59,
+  "seconds": 684.0,
+  "text_units": 145,
+  "batches": [
+    {
+      "batch": "第一批",
+      "source_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\scene-ledger.json",
+      "source_script": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "source_ledger_sha256": "f950269c3e6dd49ed4da983c45c3d94dcfe7b392e5a21fe4d2a9d3aba8932cdf",
+      "source_script_sha256": "bb5e10f6c1a728d7c2c8d403c1a8e05683bea0d50d45c370d370bee4fd0349f4",
+      "body_sha256": "b5ad9daf2f5c592605ac1acc95443571afbbcb85a93206e3c04ed3431f615716",
+      "global_clip_start": 1,
+      "global_clip_end": 14,
+      "shots": 48,
+      "added": 12,
+      "seconds": 168.0,
+      "source_lock": "09755530e06499191aedc8c000390ff27e1cf15c58991bb320ce040a8b90698a",
+      "director_review": "a26e29b5a868226f61673c1885930f01aaced3f2f48e61c4e2d961ef6f6b4472"
+    },
+    {
+      "batch": "第二批",
+      "source_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\scene-ledger.json",
+      "source_script": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "source_ledger_sha256": "d115d696aaec3c588075a1dd633120af62b11ac1d61535611c81f12d91ed943a",
+      "source_script_sha256": "2e545af5d5c58004e0116d39515a26fe2d34dab518e326fe6c9b39b15f62565f",
+      "body_sha256": "3b3083f54a424e0d2ea4c66a23f856fdd1669f847446de7be2293788a5218d4b",
+      "global_clip_start": 15,
+      "global_clip_end": 23,
+      "shots": 39,
+      "added": 13,
+      "seconds": 105.0,
+      "source_lock": "4c8957639d49a47b1e1a351f3cdfc9b442e1a927dfa8c13fb1a77e2aaa05b1d8",
+      "director_review": "1f894d30a0f92c0869bd088c72cb1746b3c60ef0f64ec4a417b4ae72037d7600"
+    },
+    {
+      "batch": "第三批",
+      "source_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\scene-ledger.json",
+      "source_script": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "source_ledger_sha256": "37e6f7c0e0cd40616333870be7ded749b026da00e9c086e772a6d6da9c095b46",
+      "source_script_sha256": "6accd9fd1915a07721055455752acd021f7b521d7db5542737931717cbb6a808",
+      "body_sha256": "c17a6ecca817726e9313a61fcc6e892d3c94a499abe52e366f917d65010fe52e",
+      "global_clip_start": 24,
+      "global_clip_end": 40,
+      "shots": 49,
+      "added": 13,
+      "seconds": 200.0,
+      "source_lock": "3dbc3f1b028ef86d871b7762769eaf746fe430b22fa5f37a30b200d4edc47e85",
+      "director_review": "64011ed1fc99e24d1d26869c06165fc65e8836db264b45abfa48cf2dcdec537b"
+    },
+    {
+      "batch": "第四批",
+      "source_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\scene-ledger.json",
+      "source_script": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "source_ledger_sha256": "0d163ba4c53309f78d95c56fdbe7ead179f0fa6c45170f72bf786367d11b21cc",
+      "source_script_sha256": "4f0d495b4416a0a26be04d839e3b96cd0ee3e2a3aa19e94961597ba2ec97eaa8",
+      "body_sha256": "c8acfb5b99a773461ee770f5065548723539f08a3d89e05215551b99a1701b8e",
+      "global_clip_start": 41,
+      "global_clip_end": 47,
+      "shots": 30,
+      "added": 9,
+      "seconds": 77.5,
+      "source_lock": "4fcbabf9bc6395f4eec8b279c3adfad2404578034b05d3341b3425dbef3faf9f",
+      "director_review": "3a6f261963e57308f6636924e18e7212e7ba5563d12a43c725cf1c2a44547595"
+    },
+    {
+      "batch": "第五批",
+      "source_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\scene-ledger.json",
+      "source_script": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "source_ledger_sha256": "027564f96721d185ff73618f346083f111929c6931bce36b8b3485be87586a3b",
+      "source_script_sha256": "1532fadff84955e062603b0ce383f35f46c7a08e9c1c6ae05cbd3bfc30a19e73",
+      "body_sha256": "675ade9039df8d449c74220a158827f5c1cd80e72bf204f3c807b4f6a4362fa4",
+      "global_clip_start": 48,
+      "global_clip_end": 59,
+      "shots": 36,
+      "added": 8,
+      "seconds": 133.5,
+      "source_lock": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+      "director_review": "e8bbd9e4df70b9d452cdf3eb29d8677664b4c41df238829fe3b6b4b100396978"
+    }
+  ],
+  "reference_manifest": [
+    {
+      "image": "第26話_01_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_01_001.jpg",
+      "sha256": "98cd5d6e6c095113145060cafb1d964e86343d02d5171eb8819a12e86a6db732"
+    },
+    {
+      "image": "第26話_08_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_08_003.jpg",
+      "sha256": "4d998b4f0d06de0e7a1bef2a6a2d39e8bf3c8295f8d3dc684a9d491bc22f0ed2"
+    },
+    {
+      "image": "第26話_09_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_09_001.jpg",
+      "sha256": "06508235abd56b0c22f862f7a55c4ee409db7dc2aa53487d508c07a2bfc2b84d"
+    },
+    {
+      "image": "第26話_09_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_09_002.jpg",
+      "sha256": "320daacce9855f743ec0047808818dc1900671340bb857fcf81493693f463710"
+    },
+    {
+      "image": "第26話_09_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_09_003.jpg",
+      "sha256": "0168074d734d391181c4b26a29bdfe7ccfc49055d58397c37cae9de0b405507e"
+    },
+    {
+      "image": "第26話_09_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_09_004.jpg",
+      "sha256": "cc6c04fbb486bdc192557bf776de56ed6a6fa827c72bde8c73d96314e4538345"
+    },
+    {
+      "image": "第26話_10_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_10_001.jpg",
+      "sha256": "4848d63152c09f598f996e7e5abea02eba29086633baae61341970af87fefff1"
+    },
+    {
+      "image": "第26話_10_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_10_002.jpg",
+      "sha256": "867bf032463def45810aa6af0e4cfec733e1c72c9c0b3fb05c4fbede7e8c833d"
+    },
+    {
+      "image": "第26話_10_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_10_003.jpg",
+      "sha256": "97469c74ae090c5109e5255c25e77a147525445acfe9936b94cb5222675928c2"
+    },
+    {
+      "image": "第26話_11_001a.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001a.jpg",
+      "sha256": "52bce666169bbf0354a5bcbc64f23c4d2b2344d5d81cccc3694f169cc930bd4e"
+    },
+    {
+      "image": "第26話_11_001b.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001b.jpg",
+      "sha256": "208b91331926e563d8c2a38a2f0546069ecdc5cafae0a46b3fd768a2a7cb699e"
+    },
+    {
+      "image": "第26話_11_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_11_002.jpg",
+      "sha256": "8b0231afb3e75bfafe1b02561c3dd71cd4ff806cd66452174c17b86d7086781b"
+    },
+    {
+      "image": "第26話_12_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_12_001.jpg",
+      "sha256": "297e2f28bfb978ed493fb57b0ec492414a53bd9eb4ca443aab4dd813ec2dc4fd"
+    },
+    {
+      "image": "第26話_12_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_12_002.jpg",
+      "sha256": "777751489569d0153e9f0aa158aaa047ec2cfeb2f38d28c3abfb27371e06873a"
+    },
+    {
+      "image": "第26話_12_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_12_003.jpg",
+      "sha256": "f92fb4b009212b8c7bc717d059bceb6578c091c0c0375c397043d3b8da405fd6"
+    },
+    {
+      "image": "第26話_12_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_12_004.jpg",
+      "sha256": "c1653b6cd103737b9f37f8176579d9a2a00daa0f6e0405a88fef4a9f3af37983"
+    },
+    {
+      "image": "第26話_13_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_13_001.jpg",
+      "sha256": "64316dc89dd7239ea9e1a6cb2c51ce1f8daa39f01f8ae79c75f483fe9056a092"
+    },
+    {
+      "image": "第26話_13_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_13_002.jpg",
+      "sha256": "229ce4bf9cb96cd7551ca92695dd1d0b35ca34a8547dc01ef30b164d61ac29a2"
+    },
+    {
+      "image": "第26話_13_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_13_003.jpg",
+      "sha256": "b2888d87c079dfbb420d60f2e52e9c9368bcf50c71861d331519af61ed79ae8f"
+    },
+    {
+      "image": "第26話_13_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_13_004.jpg",
+      "sha256": "edaf8983654981764eda96e18fff83880a19dab1de2df51055c4ae748ceb6efb"
+    },
+    {
+      "image": "第26話_14_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_14_001.jpg",
+      "sha256": "d2209bd52a72744f7b2a1f297190e5121d7bec8268ee70150fb0f76c68fd431a"
+    },
+    {
+      "image": "第26話_14_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_14_002.jpg",
+      "sha256": "c666994b51784f05ac9d91a0886fe27320141e67ec420625c2caad766a2d9868"
+    },
+    {
+      "image": "第26話_15_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_15_001.jpg",
+      "sha256": "52ab75b457293bc55970a927fe2297dfae5abcdf663b239cfb5d282ba5cb05f6"
+    },
+    {
+      "image": "第26話_15_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_15_002.jpg",
+      "sha256": "cf3aa9f0d24156b8c144d1f800dbd35a0d77ce47dc38939ff09e6bd5f124d262"
+    },
+    {
+      "image": "第26話_16_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_16_001.jpg",
+      "sha256": "92d05bd9c0af9d541c5d2d08d2ecc09000bbe680558d5deb2c316844f9478d56"
+    },
+    {
+      "image": "第26話_16_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_16_002.jpg",
+      "sha256": "6a3e05f83c9bb780f3ebf88889fc11580b1a44676d57837332c7209c1e25a310"
+    },
+    {
+      "image": "第26話_16_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_16_003.jpg",
+      "sha256": "5f94bea602a743a58a2a9e3ea925f3b84c947b8ce84f45ed18caad0c03f40288"
+    },
+    {
+      "image": "第26話_17_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_17_001.jpg",
+      "sha256": "99c581ff1d9afd5eaf065c13cf95e707235bb8454dc545b8d5242940cc89ed16"
+    },
+    {
+      "image": "第26話_17_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_17_002.jpg",
+      "sha256": "0a6dccdcee78ff5f7353cfc857d89d8f5c6414f7a699d415fca61d6488d9f715"
+    },
+    {
+      "image": "第26話_17_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_17_003.jpg",
+      "sha256": "8381734113e4a54e5bd8c27567ec30e6c678dfe89b4b6682d11cb98c5d55d993"
+    },
+    {
+      "image": "第26話_18_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_18_001.jpg",
+      "sha256": "b301b8ff4e830d10957d3d35b15c4fc3bd7926466e007d1fcdc3bdcf0f7b99f5"
+    },
+    {
+      "image": "第26話_18_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_18_002.jpg",
+      "sha256": "b7d4fb3e9eb3bc3a315584fa1aced3b9609529be939f0d88c259abc8d49f31a9"
+    },
+    {
+      "image": "第26話_18_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_18_003.jpg",
+      "sha256": "129da3bc9c0a0f1c342eb115ecf42f10943fce3ac3b0dafc7bf01a4c0cbca62c"
+    },
+    {
+      "image": "第26話_18_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_18_004.jpg",
+      "sha256": "36c74f875c014a05bec2ae646ffe1eb95902a4ed828bd1d9c5c924b77d2cc036"
+    },
+    {
+      "image": "第26話_19_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_19_001.jpg",
+      "sha256": "030259a8acffd761b3c6dbbb17caf843119a21bc50c71db6e38d752c70c1f615"
+    },
+    {
+      "image": "第26話_19_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第26话\\第26話_19_002.jpg",
+      "sha256": "b8787756382a6ecd7d3984a25916ba8f0e8db6da6d669e8bde7d464ede9b5933"
+    },
+    {
+      "image": "第27話_17_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_17_001.jpg",
+      "sha256": "df22a16a60fde12e82dd1bd498f90df5f8022de97850ed3a317f60ab5f8baaa7"
+    },
+    {
+      "image": "第27話_17_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_17_002.jpg",
+      "sha256": "b54a59bd1a6df635d98816bb224daa629f2d13c6995c5d11628a2bc978a1648d"
+    },
+    {
+      "image": "第27話_18_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_18_001.jpg",
+      "sha256": "cfc47423df0cb760f80d7815065525bc7e0548ac541bd58678ba570ef68063a7"
+    },
+    {
+      "image": "第27話_18_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_18_002.jpg",
+      "sha256": "1277abfcc2c3d3a5ce856753b2b0ecda42f7f5ea65aebbc5c0599af08da32b8e"
+    },
+    {
+      "image": "第27話_18_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_18_003.jpg",
+      "sha256": "a5c8a54e5af230af8177255d8b3f25e5ab1471e5e3efd595fae317261e923df5"
+    },
+    {
+      "image": "第27話_19_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_19_001.jpg",
+      "sha256": "10c2004120d60f70be3348119ff33d944cdc1ed8accd4748c74f02bf9588e89d"
+    },
+    {
+      "image": "第27話_19_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_19_002.jpg",
+      "sha256": "19c8289a08c1fa0d241e3bb65fe0c621493a305a703a5838a684dbb4016ca3c7"
+    },
+    {
+      "image": "第27話_19_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_19_003.jpg",
+      "sha256": "b121e52d5d3f272a682c3cebe281b514bd74d50e4753db26927c76a99c1e6f8d"
+    },
+    {
+      "image": "第27話_20_001a.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001a.jpg",
+      "sha256": "71a211d7ee7ef8a871c144b238ec2d7e325f74fba2175b22010d6e606a132f8a"
+    },
+    {
+      "image": "第27話_20_001b.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001b.jpg",
+      "sha256": "a301a4de7deefbaf910a356fb0e17265e301c1e8900be05c663c09e01d2482ea"
+    },
+    {
+      "image": "第27話_20_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_20_002.jpg",
+      "sha256": "8cdf49cf5d63297b39d9382cbe717fa968523a8a39434dc3b99bca0ac3ab615e"
+    },
+    {
+      "image": "第27話_21_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_21_001.jpg",
+      "sha256": "96c2ad0e229e75b978c8988df02acab59bcccfd38f6cd96271afbdbead09f192"
+    },
+    {
+      "image": "第27話_22_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_22_001.jpg",
+      "sha256": "cc96f82a7148195967625d0155ce47184e0b6ea99d92a838bd185114b262f6ed"
+    },
+    {
+      "image": "第27話_22_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_22_002.jpg",
+      "sha256": "939c6db26730203c60d29f27475c6e68f74d9818b96387e96bd9165333473461"
+    },
+    {
+      "image": "第27話_23_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_23_001.jpg",
+      "sha256": "124406af4ca59fc3cfc7347adbeb8106727b0bb92800ca208436158e5422a4cd"
+    },
+    {
+      "image": "第27話_23_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_23_002.jpg",
+      "sha256": "e3837a2d41912b31014cc67615d3063edfc7b330a094ffbbd4b737b93deb817e"
+    },
+    {
+      "image": "第27話_24_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_24_001.jpg",
+      "sha256": "37440611468612c2d87584ab19d5c8fe8762fd62ff437606121f85f14b8ce47e"
+    },
+    {
+      "image": "第27話_24_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_24_002.jpg",
+      "sha256": "9f6120e2d5b4a5d60ccfcf03d2abea99a935ab8f5cf1d7db9d1d1fdfd8858c3b"
+    },
+    {
+      "image": "第27話_24_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_24_003.jpg",
+      "sha256": "f60b1e0f4631d0a422321b300ad88af010178d00ec580178e545ee0ebd580657"
+    },
+    {
+      "image": "第27話_24_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_24_004.jpg",
+      "sha256": "5db7a50b0323108fd4fdb690773fa3ca091c20ef8504cbc5295395e57679c77a"
+    },
+    {
+      "image": "第27話_25_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_25_001.jpg",
+      "sha256": "006f806c8a177e4ab54c6029ebcfc9241796fd7af6af0b8362853c7a38c3a886"
+    },
+    {
+      "image": "第27話_25_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_25_002.jpg",
+      "sha256": "e116a875166958a7ec609c2e7b23518760dcb12648a70ad05b9821764945505b"
+    },
+    {
+      "image": "第27話_25_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_25_003.jpg",
+      "sha256": "9e13b5339e7a62788436275d51256d655fc928e5c425cc9183dbb4ba729649b5"
+    },
+    {
+      "image": "第27話_26_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_26_001.jpg",
+      "sha256": "34b30a158444915d4670284d8b73483160fe7d039e9bdb4fb22c94c2ecfa7996"
+    },
+    {
+      "image": "第27話_26_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_26_002.jpg",
+      "sha256": "a30c136309b131e4727fb77c5c9c80698a9f82bc722a240944043d3ac1a96150"
+    },
+    {
+      "image": "第27話_26_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第27话\\第27話_26_003.jpg",
+      "sha256": "315ad618c59d13625154832d7f60b6501a83724d7b89ffc23fc6cc17f918b22d"
+    },
+    {
+      "image": "第28話_01_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_01_001.jpg",
+      "sha256": "e5116e7c1ade9464a6a9687dc0cbd968c08a1a7d07a5c3246cf452fb198697f2"
+    },
+    {
+      "image": "第28話_01_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_01_002.jpg",
+      "sha256": "6d38ab4c198aea0397d300be20897908bfc755c9a9ee8c562b8af7dd1096839f"
+    },
+    {
+      "image": "第28話_01_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_01_003.jpg",
+      "sha256": "86bee239276bd8e2762a20bbd663d53b8955c3f8b03690cb49a7920a2aad3694"
+    },
+    {
+      "image": "第28話_01_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_01_004.jpg",
+      "sha256": "538c02ae428e85782adefb89fb2017640b3efbe561a1a8617ce44be6d48d7205"
+    },
+    {
+      "image": "第28話_02_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_02_001.jpg",
+      "sha256": "ed92d8bb97298b7a9182027ff82c81706e12e184195d7c05269c79c182bc4f6d"
+    },
+    {
+      "image": "第28話_02_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_02_002.jpg",
+      "sha256": "87e222e385a6ab4c01df86c6adfae3310209d469217740ec60421c269f0c8387"
+    },
+    {
+      "image": "第28話_02_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_02_003.jpg",
+      "sha256": "fbb091a76a1b1941cfe1c99626f56ac80d2ddf39b9c4e7a9c68d501899ecb24b"
+    },
+    {
+      "image": "第28話_02_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_02_004.jpg",
+      "sha256": "a68737fe68533236111d19ada984f93e31d9e6e9805375a8e33085f0d5437d5a"
+    },
+    {
+      "image": "第28話_03_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_03_002.jpg",
+      "sha256": "fddd40d9b6c37ff94c16cc74ad5dfb107e683faf6ae3457909e5c25978f00cd2"
+    },
+    {
+      "image": "第28話_03_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_03_003.jpg",
+      "sha256": "dec2fc9a844fd31c46ca9a4844e2f7b3e15fddc0cfc1eba2d289c913263265e9"
+    },
+    {
+      "image": "第28話_03_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_03_004.jpg",
+      "sha256": "4d7bc757502eb3eaa45a72411ba07fae01fc20d75254decff96d15c5f4807338"
+    },
+    {
+      "image": "第28話_04_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_04_001.jpg",
+      "sha256": "10e081af838f78fd74da83672a6a62054f30d90f28e6a6b968ba26adf0721f48"
+    },
+    {
+      "image": "第28話_04_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_04_002.jpg",
+      "sha256": "489ecd0ae13481cb9ec18c6b7cda3e5bfa47c75b98d65fa1f34c973e01cfa542"
+    },
+    {
+      "image": "第28話_04_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_04_003.jpg",
+      "sha256": "4ff0e76f5d0e74715ec792118cfc23c8fc3d33050251bb2482c3dbda57ca5347"
+    },
+    {
+      "image": "第28話_05_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_05_001.jpg",
+      "sha256": "b9a6c85c67d4b5643801f84f4079571b3f38c714897f06f7628d341e80f8a8df"
+    },
+    {
+      "image": "第28話_05_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_05_002.jpg",
+      "sha256": "984f26bf1e4a4867b8cc0d02532f9a89f1a13f95839fa4316cd1b31a98de9aa0"
+    },
+    {
+      "image": "第28話_05_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_05_003.jpg",
+      "sha256": "68edcedce4ee8b7db2c468aafc9dc7dd80f2b12d34163bea909ef6e715054c0b"
+    },
+    {
+      "image": "第28話_05_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_05_004.jpg",
+      "sha256": "12a8c394d4878047de3a6e7754bec3254aafbd2e4c590a13a683e1ece947d3f9"
+    },
+    {
+      "image": "第28話_06_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_06_001.jpg",
+      "sha256": "1bb49d21272c478b1b0c5d34e8faebef10f89901a06ffc6f7480961dcc1d2e76"
+    },
+    {
+      "image": "第28話_06_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_06_002.jpg",
+      "sha256": "1343e98edbc24a30e0bcdf834599a596c0f0603e0f12f1ba1a2a575f28cf435c"
+    },
+    {
+      "image": "第28話_06_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_06_003.jpg",
+      "sha256": "080e2f476cd40fd7aa6e59855b105addff6aa3aec563d40b2fc346e928605767"
+    },
+    {
+      "image": "第28話_06_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_06_004.jpg",
+      "sha256": "303168cbed821129ab3b9d5eac31af9c799b7c57062c22c501ffbdafcaa809c6"
+    },
+    {
+      "image": "第28話_07_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_07_001.jpg",
+      "sha256": "4b1288a9d5a3fa13c0f313104437b2c6415918727a84c71b19edc0cb93a7dd8f"
+    },
+    {
+      "image": "第28話_07_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_07_002.jpg",
+      "sha256": "40b4d80c779736b6233018f916e56959a5a79ea104e5072914c983cfee2b7baa"
+    },
+    {
+      "image": "第28話_07_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_07_003.jpg",
+      "sha256": "b3423909ac75de101fb39636e2aed07c5d047e1017ae00753243079f4f3d0cfe"
+    },
+    {
+      "image": "第28話_08_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_08_001.jpg",
+      "sha256": "f9df0069ba8dca6c99a667b17a92ef5e301b7eba3f196b23d059ba99ba028955"
+    },
+    {
+      "image": "第28話_08_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_08_002.jpg",
+      "sha256": "c916e17743c4fa44b942bc7ad43674862802b1d8d64162c8dc5a397d479eed63"
+    },
+    {
+      "image": "第28話_08_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_08_003.jpg",
+      "sha256": "fc62e0d67fafe268fc35271a224f3f12d9d0c3eb37bf3c6c7414e8095aa8ce03"
+    },
+    {
+      "image": "第28話_09_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_09_001.jpg",
+      "sha256": "905fba2033d5223386f0d1b03c2941e34c4938e371031bc8b58fcbbde22ada4d"
+    },
+    {
+      "image": "第28話_09_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_09_002.jpg",
+      "sha256": "b6d09fce405b0397556828432e733401de95d65ee4b650742d82855f62834948"
+    },
+    {
+      "image": "第28話_10_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_10_001.jpg",
+      "sha256": "e74b83fa15372ee4ed4473fbec754a60fcfe3601f4f30517b2264b30cd827351"
+    },
+    {
+      "image": "第28話_10_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_10_002.jpg",
+      "sha256": "83289bb88ec9f2efb25864a5cba253f5344f2391ccbc99ca4c5deba28bb33ef2"
+    },
+    {
+      "image": "第28話_10_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_10_003.jpg",
+      "sha256": "67792aafbd5c85983cee2138cc5c51564600015faca5d26001f663f2d948240f"
+    },
+    {
+      "image": "第28話_10_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_10_004.jpg",
+      "sha256": "9120fbb338905b917eed89bb933aad55e0d309ef9d5b8e0edd6b250ca4744220"
+    },
+    {
+      "image": "第28話_11_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_11_001.jpg",
+      "sha256": "8cfc89ed4f9b39fe7ba8c382bc387ba7a75a3afa7432957598dc0db08da51f59"
+    },
+    {
+      "image": "第28話_11_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_11_002.jpg",
+      "sha256": "da365f55939924e29466d88c9386a21c22f221f2bba1ec5bfb3fdd562e726c43"
+    },
+    {
+      "image": "第28話_11_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_11_003.jpg",
+      "sha256": "9980fecb44abd58c440606f677eea4b4b82eb670ea550801efab56d58bdfd96e"
+    },
+    {
+      "image": "第28話_12_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_001.jpg",
+      "sha256": "4ce730ff43cfa1e38c09d480fc5837db06f4bb0608b8901318da527419b67642"
+    },
+    {
+      "image": "第28話_12_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_002.jpg",
+      "sha256": "1aedf683a29f05fff17d5d35d897241de169092a3ba0ed4799d5fbcad791b421"
+    },
+    {
+      "image": "第28話_12_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_003.jpg",
+      "sha256": "e93630c82f47fa6446f156c992b3e2e35dab2e691da701bd3da641f293e6fe86"
+    },
+    {
+      "image": "第28話_12_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_004.jpg",
+      "sha256": "3a4facbc292b46eb29ec6677454175077c6bb5970c1c95b3e1caa38cffcf416a"
+    },
+    {
+      "image": "第28話_13_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_13_001.jpg",
+      "sha256": "282bc5fa50f489e57bfe624587dfb4ea27344cdf095a7198ee8071b356fe1f36"
+    },
+    {
+      "image": "第28話_13_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_13_002.jpg",
+      "sha256": "8587dc6cc8e125ec2dbc34daf1a07f9f36411dbbf4916afabdf81e8d307864da"
+    },
+    {
+      "image": "第28話_14_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_001.jpg",
+      "sha256": "44919b75dbe80ee502db2504cd6f5bbee3e7f33f0e0591b4b7640631b0518981"
+    },
+    {
+      "image": "第28話_14_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_002.jpg",
+      "sha256": "b9609988b17975d7572f132d82ae5dc07010c2642af5b20e4f5e4827eb08c246"
+    },
+    {
+      "image": "第28話_14_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_003.jpg",
+      "sha256": "2d5c19efc1eeef96286c615ffe429e8b893bd7c80a3fd22a318b99165c1d931f"
+    },
+    {
+      "image": "第28話_15_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_15_001.jpg",
+      "sha256": "0d330c0455f445bbbb994f21d5e557ddbb588d234cf1310769fb89983990dca2"
+    },
+    {
+      "image": "第28話_16_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_001.jpg",
+      "sha256": "08ad575577a950704ac6199662eab7e3b18640d0046ecc1b643c4b9458de6a35"
+    },
+    {
+      "image": "第28話_16_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_002.jpg",
+      "sha256": "92f4ae74f5da37d740f1c9a413ab8db96cbf2ee9fc1543f7495de9201b17e051"
+    },
+    {
+      "image": "第28話_16_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_003.jpg",
+      "sha256": "88b84e49d4ff62f3c7a60d27288cb982bb6c6d032e917d870d7268c2456e8f3c"
+    },
+    {
+      "image": "第28話_17_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_17_001.jpg",
+      "sha256": "fc4c8c3b47c67e7380875dd98436183616db63fe1f578d65c6dafea5f38eec78"
+    },
+    {
+      "image": "第28話_17_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_17_002.jpg",
+      "sha256": "1a18ede064ad0df861f48b294180c15787c4e797f31f5b1b21727b91331cd18d"
+    },
+    {
+      "image": "第28話_18_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_18_001.jpg",
+      "sha256": "c5d7fd9e1c0651ee75be2f8aaebf89aa32b697064ae27f8df9482858faad6053"
+    },
+    {
+      "image": "第28話_18_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_18_002.jpg",
+      "sha256": "74116b3c352ae55bcf438124e4d8c47255dad02434d87417fed3b625f62e16b7"
+    },
+    {
+      "image": "第28話_19_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_19_003.jpg",
+      "sha256": "2bda395245ead2c951384e9997170da6bb712050b33228b209565122a846471e"
+    },
+    {
+      "image": "第28話_20_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_001.jpg",
+      "sha256": "22922084ee1abe5842ae9a3ed62b8901defa8132dde5e0447175a544808f6941"
+    },
+    {
+      "image": "第28話_20_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_002.jpg",
+      "sha256": "eda5d59f3a8d2f1ae16144474cee2847f92673b1f6e13296e9d4c2bace0df5b4"
+    },
+    {
+      "image": "第28話_20_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_003.jpg",
+      "sha256": "44cbbca98dabcfae9e6e3e2ab3d59b95607c846c8854f51b3cbc8cf9b0873944"
+    },
+    {
+      "image": "第28話_21_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_001.jpg",
+      "sha256": "734270a8b5bfe6bd080c1caa537bc5a008d92f3335a62ce5861a96820eda5180"
+    },
+    {
+      "image": "第28話_21_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_002.jpg",
+      "sha256": "4ee2a23d6b93965d63cf93ffa7044232b2448bd21a76c12b46ba3d005dcf004f"
+    },
+    {
+      "image": "第28話_21_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_003.jpg",
+      "sha256": "2d27e19bbdc57faf094411c6ac5c90aadb331714d03290f0da7959377b6bc3d3"
+    },
+    {
+      "image": "第28話_22_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_001.jpg",
+      "sha256": "de194c45d659b47464e732c6bb06f328066f538c6ac64cc845cc372ef3933ca9"
+    },
+    {
+      "image": "第28話_22_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_002.jpg",
+      "sha256": "4951b803e1940cc474a70f8aead325807842e270a0e2f9ecea1105c82da55f40"
+    },
+    {
+      "image": "第28話_22_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_003.jpg",
+      "sha256": "b21324f01082cf7811b40641cdefeafcfac48c377b5e8614d0a8378fcb01e5c4"
+    },
+    {
+      "image": "第28話_22_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_004.jpg",
+      "sha256": "d757bd7f1b4e25509fea5797400a6209e11a8ec84afe1ef5b5513c8551937a91"
+    },
+    {
+      "image": "第28話_23_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_001.jpg",
+      "sha256": "b47dc3de2e4fcb15d46ee0f90cbda2d8268521ee21466322ee5fb57ed3ed625a"
+    },
+    {
+      "image": "第28話_23_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_002.jpg",
+      "sha256": "354414ad326b8cb9b7fdc4605a37684c973848077e01d4b882487122174a4ed7"
+    },
+    {
+      "image": "第28話_23_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_003.jpg",
+      "sha256": "fe5952cf674847c43dd91f3bdab874d477a77d4c8a138d593786ac6d0d49cafa"
+    },
+    {
+      "image": "第28話_23_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_004.jpg",
+      "sha256": "2d7591c549f60eac4ad0586b7a16c0afab30306e7248f7ea9a6f85f37ab265c3"
+    },
+    {
+      "image": "第28話_24_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_001.jpg",
+      "sha256": "7e5ed61bae6f5fac34407c84fe10989164534b15ef4b5e4c17178d21ad553b25"
+    },
+    {
+      "image": "第28話_24_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_002.jpg",
+      "sha256": "d924db07152b2d547d84005783937ed3e6b93153c7912fb58569f7068a7103b9"
+    },
+    {
+      "image": "第28話_24_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_003.jpg",
+      "sha256": "b461a6c6e7c8abd9466ed5184140bee698264c3dcbf4c5080fcb0dab1eb230dc"
+    },
+    {
+      "image": "第28話_25_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_25_001.jpg",
+      "sha256": "ad74033e9ecc7e44c894f9869e224587d8d958b8c347c51940b6fb8145ff50da"
+    },
+    {
+      "image": "第28話_25_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_25_002.jpg",
+      "sha256": "2af09483d6fa5f31a0c8d96efb9c003b213686916154c475ecda13e5afb4e062"
+    },
+    {
+      "image": "第28話_26_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_001.jpg",
+      "sha256": "32ed7938a2539960c53579da39d5acb971677e36b805eb9fda1c67eb57c32867"
+    },
+    {
+      "image": "第28話_26_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_002.jpg",
+      "sha256": "9c407bcdf93bdf37c2a2f1811a4d2fe543cffca4279474109f9534ae7c1ade40"
+    },
+    {
+      "image": "第28話_26_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_003.jpg",
+      "sha256": "a01ce4c6eeae54247361a6866ec9fe34a064cc218850c559cbed5eaadf4b20df"
+    },
+    {
+      "image": "第28話_27_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_001.jpg",
+      "sha256": "4396068da7fb13705c9fbf3734219638f1b16f3c10a99dc916f94fc8ca89143b"
+    },
+    {
+      "image": "第28話_27_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_002.jpg",
+      "sha256": "52ecd8436a0e83a6b1c9bce509bd3f80ddaf5260c5feb37c37ebf168776a7a9c"
+    },
+    {
+      "image": "第28話_27_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_003.jpg",
+      "sha256": "4a9e06986fa7f63084a1e0bc9ecfa824eaa628a2f78ac421880f8ef680736e4c"
+    },
+    {
+      "image": "第28話_28_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_001.jpg",
+      "sha256": "43ef276c171a5b92126eaeadc2f22774361f27dda4aaa1d5b02141fad45aa3cd"
+    },
+    {
+      "image": "第28話_28_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_002.jpg",
+      "sha256": "309d4d13416bf5c6553fdd5eb860d404c6212d47d925061f02a944604724faf0"
+    },
+    {
+      "image": "第28話_28_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_003.jpg",
+      "sha256": "192e36bdea81dd48cfd98b2a6932c44f5fad07b5e229eca99eceb80519eb7f03"
+    },
+    {
+      "image": "第28話_29_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_29_001.jpg",
+      "sha256": "bda2eb703f78afd4758195e956632d1623caa39b1db850927cf39fc04b2d624a"
+    },
+    {
+      "image": "第28話_29_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_29_002.jpg",
+      "sha256": "9245fd95dd12dff3dcbc9f74fd50bb3f9d14773ae018d80b209106a15a326f3b"
+    },
+    {
+      "image": "第28話_30_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_30_001.jpg",
+      "sha256": "03ffc55792cccbb71b86810babeaf4c32ce8968748216670a981172bcb5e781d"
+    }
+  ],
+  "derived_ledger": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_派生台账.json",
+  "derived_ledger_sha256": "15ef6207476363ae6e31482a80d8e4cc9500205873b2c75ceed0bfb3660a0f7f",
+  "final_review_sha256": "b39453f22858f493390abd520b1eeb0634a06de4bf23dfea04e3b516d200db13"
+}

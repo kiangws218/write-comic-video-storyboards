@@ -1,0 +1,2 @@
+# Preserve audited delivery bytes across platforms; retain original dialogue-table EOF spacing.
+* -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof

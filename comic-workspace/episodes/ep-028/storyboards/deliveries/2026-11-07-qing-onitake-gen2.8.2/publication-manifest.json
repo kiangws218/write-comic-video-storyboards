@@ -1,0 +1,457 @@
+{
+  "published_on": "2026-11-07",
+  "content_completed_on": "2026-11-04",
+  "base_commit": "355311580cb99e59cada7124baffc8a52553b3a2",
+  "scope": "第26—28话青与鬼头武士独立战斗段落及已确认进出连接；不是三话全部剧情线",
+  "completed_batches": [
+    {
+      "batch": 1,
+      "name": "第一批",
+      "episode": 26,
+      "directory": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01",
+      "script": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/scene-ledger.json",
+      "stage": "final",
+      "shots": 48,
+      "clips": 14,
+      "seconds": 168.0,
+      "source_nodes": 36,
+      "text_units": 35,
+      "source_lock": "09755530e06499191aedc8c000390ff27e1cf15c58991bb320ce040a8b90698a",
+      "review_sha256": "a26e29b5a868226f61673c1885930f01aaced3f2f48e61c4e2d961ef6f6b4472"
+    },
+    {
+      "batch": 2,
+      "name": "第二批",
+      "episode": 27,
+      "directory": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02",
+      "script": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/scene-ledger.json",
+      "stage": "final",
+      "shots": 39,
+      "clips": 9,
+      "seconds": 105.0,
+      "source_nodes": 26,
+      "text_units": 22,
+      "source_lock": "4c8957639d49a47b1e1a351f3cdfc9b442e1a927dfa8c13fb1a77e2aaa05b1d8",
+      "review_sha256": "1f894d30a0f92c0869bd088c72cb1746b3c60ef0f64ec4a417b4ae72037d7600"
+    },
+    {
+      "batch": 3,
+      "name": "第三批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/scene-ledger.json",
+      "stage": "final",
+      "shots": 49,
+      "clips": 17,
+      "seconds": 200.0,
+      "source_nodes": 36,
+      "text_units": 47,
+      "source_lock": "3dbc3f1b028ef86d871b7762769eaf746fe430b22fa5f37a30b200d4edc47e85",
+      "review_sha256": "64011ed1fc99e24d1d26869c06165fc65e8836db264b45abfa48cf2dcdec537b"
+    },
+    {
+      "batch": 4,
+      "name": "第四批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/scene-ledger.json",
+      "stage": "final",
+      "shots": 30,
+      "clips": 7,
+      "seconds": 77.5,
+      "source_nodes": 22,
+      "text_units": 12,
+      "source_lock": "4fcbabf9bc6395f4eec8b279c3adfad2404578034b05d3341b3425dbef3faf9f",
+      "review_sha256": "3a6f261963e57308f6636924e18e7212e7ba5563d12a43c725cf1c2a44547595"
+    },
+    {
+      "batch": 5,
+      "name": "第五批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/scene-ledger.json",
+      "stage": "final",
+      "shots": 36,
+      "clips": 12,
+      "seconds": 133.5,
+      "source_nodes": 28,
+      "text_units": 29,
+      "source_lock": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+      "review_sha256": "e8bbd9e4df70b9d452cdf3eb29d8677664b4c41df238829fe3b6b4b100396978"
+    }
+  ],
+  "in_progress_batches_in_this_thread": [],
+  "total": {
+    "shots": 202,
+    "added": 55,
+    "clips": 59,
+    "seconds": 684.0,
+    "errors": 0,
+    "warnings": 350
+  },
+  "source_nodes": 148,
+  "raw_files": 146,
+  "locked_text_units": 145,
+  "source_ledger_bytes_unchanged": true,
+  "script_bytes_unchanged": true,
+  "validation": "fresh 0 errors; total 350 warnings; no animatic playback",
+  "copied_files": [
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "bb5e10f6c1a728d7c2c8d403c1a8e05683bea0d50d45c370d370bee4fd0349f4",
+      "bytes": 59697
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/scene-ledger.json",
+      "sha256": "f950269c3e6dd49ed4da983c45c3d94dcfe7b392e5a21fe4d2a9d3aba8932cdf",
+      "bytes": 323420
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_最终校验.txt",
+      "sha256": "413bffaee769db532895fad6e301fd48db586fe1eea3108265f335562de096f2",
+      "bytes": 7319
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_交付与核对说明.md",
+      "sha256": "d84e9439c0cecb7aa47af05ad51af49bed4fd9664c49bf3f9a0c2635d1c3e9c1",
+      "bytes": 1159
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_原文与日文演出台词对照.md",
+      "sha256": "bfa892a600d9f57a24de413f4ada9d31ddd02077693d12a09717356d26cde68f",
+      "bytes": 6015
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\batch-1-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/validation-20261107.txt",
+      "sha256": "413bffaee769db532895fad6e301fd48db586fe1eea3108265f335562de096f2",
+      "bytes": 7319
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001a.jpg",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001a.jpg",
+      "sha256": "52bce666169bbf0354a5bcbc64f23c4d2b2344d5d81cccc3694f169cc930bd4e",
+      "bytes": 900737
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001b.jpg",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001b.jpg",
+      "sha256": "208b91331926e563d8c2a38a2f0546069ecdc5cafae0a46b3fd768a2a7cb699e",
+      "bytes": 201885
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "2e545af5d5c58004e0116d39515a26fe2d34dab518e326fe6c9b39b15f62565f",
+      "bytes": 44622
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/scene-ledger.json",
+      "sha256": "d115d696aaec3c588075a1dd633120af62b11ac1d61535611c81f12d91ed943a",
+      "bytes": 228968
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_最终校验.txt",
+      "sha256": "b532e85005deafe94faf524b5adfb8d4736629b7db28c06f0f451a99194307b4",
+      "bytes": 4298
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_交付与核对说明.md",
+      "sha256": "9b9f2c2d42a3c0e8132054cd9d12429ef61dadd7974f5ee1e81524b81b6ad319",
+      "bytes": 1163
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_原文与日文演出台词对照.md",
+      "sha256": "d0d29821a82a1d4e95a8fbcc788155408d94d65f3b9752ba92cb7987ba303893",
+      "bytes": 3461
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\batch-2-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/validation-20261107.txt",
+      "sha256": "b532e85005deafe94faf524b5adfb8d4736629b7db28c06f0f451a99194307b4",
+      "bytes": 4298
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001a.jpg",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001a.jpg",
+      "sha256": "71a211d7ee7ef8a871c144b238ec2d7e325f74fba2175b22010d6e606a132f8a",
+      "bytes": 155978
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001b.jpg",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001b.jpg",
+      "sha256": "a301a4de7deefbaf910a356fb0e17265e301c1e8900be05c663c09e01d2482ea",
+      "bytes": 164773
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "6accd9fd1915a07721055455752acd021f7b521d7db5542737931717cbb6a808",
+      "bytes": 55637
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/scene-ledger.json",
+      "sha256": "37e6f7c0e0cd40616333870be7ded749b026da00e9c086e772a6d6da9c095b46",
+      "bytes": 301366
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_最终校验.txt",
+      "sha256": "025b78622057021ce390fbe7008db4b659f92daf8db85b08c186fecd5a9c4c5d",
+      "bytes": 4647
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_交付与核对说明.md",
+      "sha256": "ad12ef0766c7c81923743ee5529f6f6491a051398bf1dd7dc04709de876313c5",
+      "bytes": 1191
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_原文与日文演出台词对照.md",
+      "sha256": "3a35eb6b6a79e3feb137115d594173cc75a2b35edeef1e60443cd2e066323e6c",
+      "bytes": 8024
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\batch-3-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/validation-20261107.txt",
+      "sha256": "025b78622057021ce390fbe7008db4b659f92daf8db85b08c186fecd5a9c4c5d",
+      "bytes": 4647
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "4f0d495b4416a0a26be04d839e3b96cd0ee3e2a3aa19e94961597ba2ec97eaa8",
+      "bytes": 46713
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/scene-ledger.json",
+      "sha256": "0d163ba4c53309f78d95c56fdbe7ead179f0fa6c45170f72bf786367d11b21cc",
+      "bytes": 219083
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_最终校验.txt",
+      "sha256": "d4b63bc0397d549e547079f2b6bfe770e6f2af06611b30aa8b9137bb68589042",
+      "bytes": 3190
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_交付与核对说明.md",
+      "sha256": "72ef630617c379cf13871a75d47a2325ee6bf547935a9ad5ab10935e560dd43e",
+      "bytes": 1329
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_原文与日文演出台词对照.md",
+      "sha256": "1c9452c994c36a394a189fd1b131eae048cef438a6e0458eda5ee95e2ff26487",
+      "bytes": 1968
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\batch-4-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/validation-20261107.txt",
+      "sha256": "d4b63bc0397d549e547079f2b6bfe770e6f2af06611b30aa8b9137bb68589042",
+      "bytes": 3190
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "1532fadff84955e062603b0ce383f35f46c7a08e9c1c6ae05cbd3bfc30a19e73",
+      "bytes": 44892
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/scene-ledger.json",
+      "sha256": "027564f96721d185ff73618f346083f111929c6931bce36b8b3485be87586a3b",
+      "bytes": 234513
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_最终校验.txt",
+      "sha256": "f37d2dddaae0800f3bacb74989515557230998c18cf988275a648509086350e0",
+      "bytes": 4436
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_交付与核对说明.md",
+      "sha256": "5973b067c50ecdb8be355fc92a7e65609c16e884d72c4ef1a65af622381d7ae2",
+      "bytes": 1162
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_原文与日文演出台词对照.md",
+      "sha256": "296db592dd2878e06509d288c50625e841db069d3faf97c642d3dc3f68cc37d8",
+      "bytes": 4884
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\batch-5-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/validation-20261107.txt",
+      "sha256": "f37d2dddaae0800f3bacb74989515557230998c18cf988275a648509086350e0",
+      "bytes": 4436
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\青与鬼头武士_完整导演分镜_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/青与鬼头武士_完整导演分镜_Gen2.8.2.md",
+      "sha256": "1ff9b234aa8e528b9a15286a705faf7743a4675e4b4c73c85535a0eef9543c8b",
+      "bytes": 247770
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_派生台账.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_派生台账.json",
+      "sha256": "15ef6207476363ae6e31482a80d8e4cc9500205873b2c75ceed0bfb3660a0f7f",
+      "bytes": 1475532
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_原文与日文演出台词对照.md",
+      "sha256": "8e9893829c5cd942b8b8ca022147e70a19e5e6805f8c905e5233d24ddf65c828",
+      "bytes": 23886
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_交付与核对说明.md",
+      "sha256": "a99ec01f5d6d08c96ad10fe681d7b16561de67af87f01e303861922183856f19",
+      "bytes": 3165
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_合稿溯源.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_合稿溯源.json",
+      "sha256": "527371a04bdc6a7f26667ad72271175536d28c4a0add4594f1c7fc9229f3091a",
+      "bytes": 54522
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_片段编排.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_片段编排.md",
+      "sha256": "4c128b24a118f0b240a05a9f2504aad9d4eba3ed141ce7105d598011f4ccd266",
+      "bytes": 5342
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_最终校验.txt",
+      "sha256": "291f3815a4da5b119f2becdb2df92d8c157a307b4e58814c13c736f9a1635f0e",
+      "bytes": 18459
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\特效强化_20261104_说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_说明.md",
+      "sha256": "0a0e6b431e12ca086f2769152eeb7e34dff56bd14d2bde3741ba4c14daae6693",
+      "bytes": 5798
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\追加特效_20261104_说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/追加特效_20261104_说明.md",
+      "sha256": "cf463ee54b06aeca3cd20ea29f390b86e26fad75efc2dd2b296c2fca01daa589",
+      "bytes": 3493
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\特效强化_20261104_最终统计.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_最终统计.json",
+      "sha256": "429d8fb5ffd45a1f0cfec0d09ca705e2426ed8ffa00415c79f300def8707fc80",
+      "bytes": 1719
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\特效强化_20261104_一致性复核.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_一致性复核.json",
+      "sha256": "5aca0b0f0e6de75f50b413a4a515f91bcdc9d45708a8e4ebc3615dfed485375f",
+      "bytes": 879
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\特效强化_20261104_改写记录.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_改写记录.json",
+      "sha256": "7051917ec2cd2282aeb122dfefa8c4d04786475c893c9ecf9569a821feae43fd",
+      "bytes": 167880
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\追加特效_20261104_改写记录.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/追加特效_20261104_改写记录.json",
+      "sha256": "77b5582f65263f89df0c65a6c1e15fa24c260419b10cac67a6610ac0a3c6895e",
+      "bytes": 38924
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\sync-ep026-028-fight-20261107-audit\\full-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/validation-20261107.txt",
+      "sha256": "291f3815a4da5b119f2becdb2df92d8c157a307b4e58814c13c736f9a1635f0e",
+      "bytes": 18459
+    }
+  ],
+  "files": {
+    "comic-workspace/episodes/ep-026/STATUS.md": "a21f5dd705deb6083da12c0644daa6ddfbbe21a59b477de3ab8730cdabd0339e",
+    "comic-workspace/episodes/ep-026/storyboards/current/README.md": "a5a80ec078b7b053dfd7129d918ef2ad350d25e11e67eaeaf1b8e6d7d3572dfc",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/.gitattributes": "38e8fd7f68ba757a85b7d179419300445c34a2b08316f0c9041ad41cb1aacd5a",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/README.md": "f21fa21ce7fe913bdf74cb164b934c1a9dacfc8ccfeddbe8c16d2bd4ebd26ae3",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/scene-ledger.json": "f950269c3e6dd49ed4da983c45c3d94dcfe7b392e5a21fe4d2a9d3aba8932cdf",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001a.jpg": "52bce666169bbf0354a5bcbc64f23c4d2b2344d5d81cccc3694f169cc930bd4e",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001b.jpg": "208b91331926e563d8c2a38a2f0546069ecdc5cafae0a46b3fd768a2a7cb699e",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/validation-20261107.txt": "413bffaee769db532895fad6e301fd48db586fe1eea3108265f335562de096f2",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_交付与核对说明.md": "d84e9439c0cecb7aa47af05ad51af49bed4fd9664c49bf3f9a0c2635d1c3e9c1",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_原文与日文演出台词对照.md": "bfa892a600d9f57a24de413f4ada9d31ddd02077693d12a09717356d26cde68f",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_最终校验.txt": "413bffaee769db532895fad6e301fd48db586fe1eea3108265f335562de096f2",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md": "bb5e10f6c1a728d7c2c8d403c1a8e05683bea0d50d45c370d370bee4fd0349f4",
+    "comic-workspace/episodes/ep-027/STATUS.md": "2db1c0b032b6ef6027e40da62c9f12bd3e4e5442a139d482704294d80e845e20",
+    "comic-workspace/episodes/ep-027/storyboards/current/README.md": "b26e80d947f1d06f0e68cc892211b94907c91d6dd4c000db4d9429fd1bdea445",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/.gitattributes": "38e8fd7f68ba757a85b7d179419300445c34a2b08316f0c9041ad41cb1aacd5a",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/README.md": "18cac4cc28df7f1d2ce48f46432034f3ae59c5063d0258973fe4bb0ec95a50f1",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/scene-ledger.json": "d115d696aaec3c588075a1dd633120af62b11ac1d61535611c81f12d91ed943a",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001a.jpg": "71a211d7ee7ef8a871c144b238ec2d7e325f74fba2175b22010d6e606a132f8a",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001b.jpg": "a301a4de7deefbaf910a356fb0e17265e301c1e8900be05c663c09e01d2482ea",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/validation-20261107.txt": "b532e85005deafe94faf524b5adfb8d4736629b7db28c06f0f451a99194307b4",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_交付与核对说明.md": "9b9f2c2d42a3c0e8132054cd9d12429ef61dadd7974f5ee1e81524b81b6ad319",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_原文与日文演出台词对照.md": "d0d29821a82a1d4e95a8fbcc788155408d94d65f3b9752ba92cb7987ba303893",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_最终校验.txt": "b532e85005deafe94faf524b5adfb8d4736629b7db28c06f0f451a99194307b4",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md": "2e545af5d5c58004e0116d39515a26fe2d34dab518e326fe6c9b39b15f62565f",
+    "comic-workspace/episodes/ep-028/STATUS.md": "afef56d4c42e3024b3fa71f3ee60627659fe5d092039122f1f83f96f521242d1",
+    "comic-workspace/episodes/ep-028/storyboards/current/README.md": "1ec6d9cd2e14906ebb60965124b91659a226fbb593f6de17c1a4784d5be56e05",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/.gitattributes": "38e8fd7f68ba757a85b7d179419300445c34a2b08316f0c9041ad41cb1aacd5a",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/PUBLICATION.md": "f739a474a01d09cd0d6bd0f0735c807abfc7df10754af9a3f02898ed9a77f5ce",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/README.md": "426ec704d3635551def92e42ba742fe82b3f15dd401168a599444ae6285eb3bb",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/scene-ledger.json": "37e6f7c0e0cd40616333870be7ded749b026da00e9c086e772a6d6da9c095b46",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/validation-20261107.txt": "025b78622057021ce390fbe7008db4b659f92daf8db85b08c186fecd5a9c4c5d",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_交付与核对说明.md": "ad12ef0766c7c81923743ee5529f6f6491a051398bf1dd7dc04709de876313c5",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_原文与日文演出台词对照.md": "3a35eb6b6a79e3feb137115d594173cc75a2b35edeef1e60443cd2e066323e6c",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_最终校验.txt": "025b78622057021ce390fbe7008db4b659f92daf8db85b08c186fecd5a9c4c5d",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md": "6accd9fd1915a07721055455752acd021f7b521d7db5542737931717cbb6a808",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/scene-ledger.json": "0d163ba4c53309f78d95c56fdbe7ead179f0fa6c45170f72bf786367d11b21cc",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/validation-20261107.txt": "d4b63bc0397d549e547079f2b6bfe770e6f2af06611b30aa8b9137bb68589042",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_交付与核对说明.md": "72ef630617c379cf13871a75d47a2325ee6bf547935a9ad5ab10935e560dd43e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_原文与日文演出台词对照.md": "1c9452c994c36a394a189fd1b131eae048cef438a6e0458eda5ee95e2ff26487",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_最终校验.txt": "d4b63bc0397d549e547079f2b6bfe770e6f2af06611b30aa8b9137bb68589042",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md": "4f0d495b4416a0a26be04d839e3b96cd0ee3e2a3aa19e94961597ba2ec97eaa8",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/scene-ledger.json": "027564f96721d185ff73618f346083f111929c6931bce36b8b3485be87586a3b",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/validation-20261107.txt": "f37d2dddaae0800f3bacb74989515557230998c18cf988275a648509086350e0",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_交付与核对说明.md": "5973b067c50ecdb8be355fc92a7e65609c16e884d72c4ef1a65af622381d7ae2",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_原文与日文演出台词对照.md": "296db592dd2878e06509d288c50625e841db069d3faf97c642d3dc3f68cc37d8",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_最终校验.txt": "f37d2dddaae0800f3bacb74989515557230998c18cf988275a648509086350e0",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md": "1532fadff84955e062603b0ce383f35f46c7a08e9c1c6ae05cbd3bfc30a19e73",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/validation-20261107.txt": "291f3815a4da5b119f2becdb2df92d8c157a307b4e58814c13c736f9a1635f0e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_交付与核对说明.md": "a99ec01f5d6d08c96ad10fe681d7b16561de67af87f01e303861922183856f19",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_原文与日文演出台词对照.md": "8e9893829c5cd942b8b8ca022147e70a19e5e6805f8c905e5233d24ddf65c828",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_合稿溯源.json": "527371a04bdc6a7f26667ad72271175536d28c4a0add4594f1c7fc9229f3091a",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_最终校验.txt": "291f3815a4da5b119f2becdb2df92d8c157a307b4e58814c13c736f9a1635f0e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_派生台账.json": "15ef6207476363ae6e31482a80d8e4cc9500205873b2c75ceed0bfb3660a0f7f",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/全段_片段编排.md": "4c128b24a118f0b240a05a9f2504aad9d4eba3ed141ce7105d598011f4ccd266",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_一致性复核.json": "5aca0b0f0e6de75f50b413a4a515f91bcdc9d45708a8e4ebc3615dfed485375f",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_改写记录.json": "7051917ec2cd2282aeb122dfefa8c4d04786475c893c9ecf9569a821feae43fd",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_最终统计.json": "429d8fb5ffd45a1f0cfec0d09ca705e2426ed8ffa00415c79f300def8707fc80",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/特效强化_20261104_说明.md": "0a0e6b431e12ca086f2769152eeb7e34dff56bd14d2bde3741ba4c14daae6693",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/追加特效_20261104_改写记录.json": "77b5582f65263f89df0c65a6c1e15fa24c260419b10cac67a6610ac0a3c6895e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/追加特效_20261104_说明.md": "cf463ee54b06aeca3cd20ea29f390b86e26fad75efc2dd2b296c2fca01daa589",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/complete-sequence/青与鬼头武士_完整导演分镜_Gen2.8.2.md": "1ff9b234aa8e528b9a15286a705faf7743a4675e4b4c73c85535a0eef9543c8b",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/source-reference-map.json": "d39dc94f4f087514840606032405a8ca2d26baf746c8153823d1e396fa3f7207"
+  }
+}

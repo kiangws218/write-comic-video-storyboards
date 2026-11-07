@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-11-04",
+  "shots": 202,
+  "added": 55,
+  "clips": 59,
+  "seconds": 684,
+  "raw_files": 146,
+  "visual_nodes": 148,
+  "locked_text_units": 145,
+  "changed_source_nodes": 70,
+  "new_shots_this_revision": 3,
+  "all_batch_fields_durations_sources_equal_master": true,
+  "source_snapshots_and_locks_unchanged": true,
+  "all_added_with_preceding_source_clip": true,
+  "all_clips_at_most_15_seconds": true,
+  "merged_20_001_20_002_seconds": 9,
+  "aura_off_before_batch5": true,
+  "review_digests_valid": true,
+  "provenance_input_hashes_valid": true,
+  "errors": 0,
+  "warnings": 350,
+  "latest_effect_revision": {
+    "shots_enhanced": 27,
+    "fields_changed": 31,
+    "new_shots": 0,
+    "added_seconds": 0,
+    "source_nodes_reopened": 17,
+    "neighbor_nodes_reopened": 1,
+    "source_lock_and_dialogue_unchanged": true
+  }
+}

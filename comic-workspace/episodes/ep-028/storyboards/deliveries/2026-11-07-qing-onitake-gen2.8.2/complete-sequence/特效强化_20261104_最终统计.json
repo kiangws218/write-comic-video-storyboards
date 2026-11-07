@@ -1,0 +1,82 @@
+{
+  "batches": [
+    {
+      "batch": "第一批",
+      "shots": 48,
+      "added": 12,
+      "clips": 14,
+      "seconds": 168.0,
+      "nodes": 36,
+      "text_units": 35,
+      "errors": 0,
+      "warnings": 102
+    },
+    {
+      "batch": "第二批",
+      "shots": 39,
+      "added": 13,
+      "clips": 9,
+      "seconds": 105.0,
+      "nodes": 26,
+      "text_units": 22,
+      "errors": 0,
+      "warnings": 67
+    },
+    {
+      "batch": "第三批",
+      "shots": 49,
+      "added": 13,
+      "clips": 17,
+      "seconds": 200.0,
+      "nodes": 36,
+      "text_units": 47,
+      "errors": 0,
+      "warnings": 77
+    },
+    {
+      "batch": "第四批",
+      "shots": 30,
+      "added": 9,
+      "clips": 7,
+      "seconds": 77.5,
+      "nodes": 22,
+      "text_units": 12,
+      "errors": 0,
+      "warnings": 49
+    },
+    {
+      "batch": "第五批",
+      "shots": 36,
+      "added": 8,
+      "clips": 12,
+      "seconds": 133.5,
+      "nodes": 28,
+      "text_units": 29,
+      "errors": 0,
+      "warnings": 59
+    }
+  ],
+  "total": {
+    "shots": 202,
+    "added": 55,
+    "clips": 59,
+    "seconds": 684.0,
+    "errors": 0,
+    "warnings": 350
+  },
+  "new_shots_this_revision": 3,
+  "source_locks_unchanged": true,
+  "locked_text_units_unchanged": 145,
+  "all_added_with_preceding_source_clip": true,
+  "explicit_silence_intervals": 7,
+  "explicit_silence_seconds": 5,
+  "latest_effect_revision": {
+    "shots_enhanced": 27,
+    "fields_changed": 31,
+    "new_shots": 0,
+    "added_seconds": 0,
+    "source_nodes_reopened": 17,
+    "neighbor_nodes_reopened": 1,
+    "source_lock_and_dialogue_unchanged": true
+  }
+}

@@ -1,0 +1,1043 @@
+{
+  "raw_files": 146,
+  "visual_nodes": 148,
+  "notes": "原单格引用已有Git LFS源素材；4张a/b裁图为本段二遍使用的真实分格证据，仅放交付sources，不改原source目录。",
+  "nodes": [
+    {
+      "image": "第26話_01_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_01_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_01_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_08_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_08_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_08_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_09_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_09_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_09_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_09_004.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_09_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_10_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_10_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_10_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_10_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_11_001a.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001a.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_11_001.jpg",
+      "split_crop": true
+    },
+    {
+      "image": "第26話_11_001b.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-01/sources/第26話_11_001b.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_11_001.jpg",
+      "split_crop": true
+    },
+    {
+      "image": "第26話_11_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_11_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_11_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_12_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_12_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_12_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_12_004.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_12_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_13_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_13_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_13_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_13_004.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_13_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_14_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_14_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_14_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_14_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_14_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_14_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_15_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_15_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_15_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_15_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_15_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_15_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_16_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_16_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_16_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_16_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_17_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_17_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_17_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_17_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_18_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_18_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_18_003.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_18_004.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_18_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_19_001.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_19_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_19_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第26話_19_002.jpg",
+      "batch": 1,
+      "reference_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_19_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-026/source/monochrome-panels/第26話_19_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_17_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_17_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_17_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_17_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_17_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_17_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_18_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_18_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_18_003.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_18_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_19_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_19_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_19_003.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_19_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_20_001a.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001a.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_20_001.jpg",
+      "split_crop": true
+    },
+    {
+      "image": "第27話_20_001b.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-07-qing-onitake-gen2.8.2/batch-02/sources/第27話_20_001b.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_20_001.jpg",
+      "split_crop": true
+    },
+    {
+      "image": "第27話_20_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_20_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_20_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_21_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_21_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_21_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_22_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_22_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_22_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_22_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_22_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_22_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_23_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_23_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_23_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_23_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_23_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_23_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_24_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_24_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_24_003.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_24_004.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_24_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_25_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_25_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_25_003.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_25_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_26_001.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_26_002.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第27話_26_003.jpg",
+      "batch": 2,
+      "reference_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-027/source/monochrome-panels/第27話_26_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_01_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_01_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_01_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_01_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_01_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_02_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_02_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_02_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_02_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_02_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_03_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_03_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_03_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_03_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_04_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_04_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_04_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_04_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_05_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_05_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_05_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_05_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_05_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_06_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_06_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_06_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_06_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_06_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_07_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_07_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_07_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_07_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_08_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_08_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_08_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_08_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_09_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_09_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_09_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_09_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_09_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_09_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_10_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_10_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_10_003.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_10_004.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_10_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_11_001.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_11_002.jpg",
+      "batch": 3,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_11_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_11_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_12_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_12_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_12_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_12_004.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_12_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_13_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_13_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_13_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_13_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_13_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_13_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_14_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_14_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_14_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_14_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_15_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_15_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_15_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_16_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_16_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_16_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_16_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_17_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_17_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_17_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_17_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_17_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_17_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_18_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_18_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_18_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_18_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_18_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_18_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_19_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_19_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_19_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_20_001.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_20_002.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_20_003.jpg",
+      "batch": 4,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_20_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_21_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_21_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_21_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_21_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_22_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_22_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_22_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_22_004.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_22_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_23_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_23_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_23_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_23_004.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_004.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_23_004.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_24_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_24_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_24_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_24_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_25_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_25_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_25_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_25_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_25_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_25_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_26_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_26_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_26_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_26_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_27_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_27_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_27_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_27_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_28_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_28_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_28_003.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_003.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_28_003.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_29_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_29_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_29_001.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_29_002.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_29_002.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_29_002.jpg",
+      "split_crop": false
+    },
+    {
+      "image": "第28話_30_001.jpg",
+      "batch": 5,
+      "reference_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_30_001.jpg",
+      "original_panel_path": "comic-workspace/episodes/ep-028/source/monochrome-panels/第28話_30_001.jpg",
+      "split_crop": false
+    }
+  ]
+}
