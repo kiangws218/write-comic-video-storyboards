@@ -1,0 +1,243 @@
+{
+  "shots": 116,
+  "source_shots": 94,
+  "added_shots": 22,
+  "new_in_r2": 16,
+  "clips": 46,
+  "seconds": 527.0,
+  "max_chars": 1634,
+  "cuts_touching_additions": 41,
+  "unit_exceptions": [],
+  "clip_stats": [
+    {
+      "clip": 1,
+      "seconds": 15.0,
+      "characters": 1280
+    },
+    {
+      "clip": 2,
+      "seconds": 12.5,
+      "characters": 1399
+    },
+    {
+      "clip": 3,
+      "seconds": 11.5,
+      "characters": 840
+    },
+    {
+      "clip": 4,
+      "seconds": 11.5,
+      "characters": 1115
+    },
+    {
+      "clip": 5,
+      "seconds": 8.5,
+      "characters": 616
+    },
+    {
+      "clip": 6,
+      "seconds": 12.5,
+      "characters": 694
+    },
+    {
+      "clip": 7,
+      "seconds": 12.0,
+      "characters": 701
+    },
+    {
+      "clip": 8,
+      "seconds": 14.0,
+      "characters": 887
+    },
+    {
+      "clip": 9,
+      "seconds": 13.5,
+      "characters": 1010
+    },
+    {
+      "clip": 10,
+      "seconds": 12.0,
+      "characters": 932
+    },
+    {
+      "clip": 11,
+      "seconds": 9.5,
+      "characters": 637
+    },
+    {
+      "clip": 12,
+      "seconds": 13.5,
+      "characters": 1202
+    },
+    {
+      "clip": 13,
+      "seconds": 15.0,
+      "characters": 1383
+    },
+    {
+      "clip": 14,
+      "seconds": 12.5,
+      "characters": 1634
+    },
+    {
+      "clip": 15,
+      "seconds": 6.0,
+      "characters": 549
+    },
+    {
+      "clip": 16,
+      "seconds": 10.0,
+      "characters": 972
+    },
+    {
+      "clip": 17,
+      "seconds": 12.0,
+      "characters": 691
+    },
+    {
+      "clip": 18,
+      "seconds": 8.5,
+      "characters": 355
+    },
+    {
+      "clip": 19,
+      "seconds": 9.0,
+      "characters": 708
+    },
+    {
+      "clip": 20,
+      "seconds": 13.5,
+      "characters": 1083
+    },
+    {
+      "clip": 21,
+      "seconds": 11.0,
+      "characters": 755
+    },
+    {
+      "clip": 22,
+      "seconds": 14.5,
+      "characters": 1036
+    },
+    {
+      "clip": 23,
+      "seconds": 8.5,
+      "characters": 569
+    },
+    {
+      "clip": 24,
+      "seconds": 9.0,
+      "characters": 489
+    },
+    {
+      "clip": 25,
+      "seconds": 9.5,
+      "characters": 701
+    },
+    {
+      "clip": 26,
+      "seconds": 8.5,
+      "characters": 442
+    },
+    {
+      "clip": 27,
+      "seconds": 9.0,
+      "characters": 471
+    },
+    {
+      "clip": 28,
+      "seconds": 14.5,
+      "characters": 901
+    },
+    {
+      "clip": 29,
+      "seconds": 8.0,
+      "characters": 389
+    },
+    {
+      "clip": 30,
+      "seconds": 11.5,
+      "characters": 850
+    },
+    {
+      "clip": 31,
+      "seconds": 9.0,
+      "characters": 785
+    },
+    {
+      "clip": 32,
+      "seconds": 8.0,
+      "characters": 380
+    },
+    {
+      "clip": 33,
+      "seconds": 10.0,
+      "characters": 633
+    },
+    {
+      "clip": 34,
+      "seconds": 14.0,
+      "characters": 962
+    },
+    {
+      "clip": 35,
+      "seconds": 12.5,
+      "characters": 964
+    },
+    {
+      "clip": 36,
+      "seconds": 14.0,
+      "characters": 973
+    },
+    {
+      "clip": 37,
+      "seconds": 11.5,
+      "characters": 705
+    },
+    {
+      "clip": 38,
+      "seconds": 14.0,
+      "characters": 685
+    },
+    {
+      "clip": 39,
+      "seconds": 14.0,
+      "characters": 764
+    },
+    {
+      "clip": 40,
+      "seconds": 9.5,
+      "characters": 636
+    },
+    {
+      "clip": 41,
+      "seconds": 15.0,
+      "characters": 1043
+    },
+    {
+      "clip": 42,
+      "seconds": 15.0,
+      "characters": 1284
+    },
+    {
+      "clip": 43,
+      "seconds": 10.0,
+      "characters": 687
+    },
+    {
+      "clip": 44,
+      "seconds": 14.0,
+      "characters": 954
+    },
+    {
+      "clip": 45,
+      "seconds": 14.0,
+      "characters": 1554
+    },
+    {
+      "clip": 46,
+      "seconds": 6.0,
+      "characters": 733
+    }
+  ]
+}

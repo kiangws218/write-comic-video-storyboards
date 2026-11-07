@@ -1,0 +1,352 @@
+[
+  {
+    "path": "execution-audit-r2.txt",
+    "bytes": 1196,
+    "sha256": "d4457f3cf885f756781bdd53c6bf5ae6bb7148029338eef6f3920d2e2fd65764"
+  },
+  {
+    "path": "r2-final-stats.json",
+    "bytes": 4036,
+    "sha256": "25c62a0d51b4ef248658bbc033ab7935567c5c15cba3b16b00cc9df371a38aa2"
+  },
+  {
+    "path": "R2自查与修改说明.md",
+    "bytes": 7274,
+    "sha256": "54bee540a3abefa53d1dd9b2457636ed44bc5fb649686b7225de2d726e07408e"
+  },
+  {
+    "path": "README.md",
+    "bytes": 812,
+    "sha256": "b73ed16a37e32f4efc42ec49ffc79cf787a4c51eeb14cc2cffd42e42786873e0"
+  },
+  {
+    "path": "skill-version.json",
+    "bytes": 4227,
+    "sha256": "643242c48417696ed7b9040d87307855f49869452d5350dd8283fc81ebad5538"
+  },
+  {
+    "path": "validation-r2.txt",
+    "bytes": 5184,
+    "sha256": "70540c7df7e649b301808cb1d94842c95c55fc833927af120285f360363181a2"
+  },
+  {
+    "path": "参考图/女主席_红衣_卡其发_黑眼白瞳_v4.png",
+    "bytes": 1663163,
+    "sha256": "f384f9ad0169e0f1ddd95f388c524cc67e833270d50d7d2d2ca196cf9de8f575"
+  },
+  {
+    "path": "参考图/春子.png",
+    "bytes": 1483337,
+    "sha256": "5ff931b637518069bf0322864c6d33b47530500da79aa6711c437316ae58181c"
+  },
+  {
+    "path": "参考图/欧铂.png",
+    "bytes": 1533351,
+    "sha256": "c6909eb4274d51750460fd5cbb3985894dbbe0892d1a6514232b873d05cc37db"
+  },
+  {
+    "path": "参考图/第29話_08_003.jpg",
+    "bytes": 160155,
+    "sha256": "121e92bd2c99a9cba9b5ddc0454eb83a286e6f83b0ee630957e2e6f92900bdd1"
+  },
+  {
+    "path": "参考图/第29話_24_003.jpg",
+    "bytes": 309447,
+    "sha256": "c9eb97ccfe92300366de680b06c8bc1a62b204c9127caeac857a98d9a4343fd3"
+  },
+  {
+    "path": "参考图/董白.png",
+    "bytes": 1342406,
+    "sha256": "e21c7f3b70f949b338c47594471a3c7c6ffd3dc4dcbc238d4b5b4ae3c4b83dc2"
+  },
+  {
+    "path": "参考图/青.png",
+    "bytes": 1545315,
+    "sha256": "260fd6c02c1f1f664186edeaea4fafbe7b4d13232b17d05f1541a68b5d2b2b2b"
+  },
+  {
+    "path": "参考图/青梅女.png",
+    "bytes": 1260008,
+    "sha256": "8a6ac7a072e41e0048cf77ef0177c8555b3c8bad13d8ac5711f9316a44d54d69"
+  },
+  {
+    "path": "参考图/青梅男.png",
+    "bytes": 1341848,
+    "sha256": "0070cd269c1923a343521123b296904852f23600da1b47dad8d9e475f1276609"
+  },
+  {
+    "path": "参考图/鬼头武士.png",
+    "bytes": 1405901,
+    "sha256": "62589d89dce7d4bf481e049ec6adbf9613f76ba446764c68b7eaa5afa5dde0aa"
+  },
+  {
+    "path": "审查摘要_R2.json",
+    "bytes": 7260,
+    "sha256": "d74edeabc09e9b78e0d26bbe734d5bf572656e960928744b078717bfca2d2d2e"
+  },
+  {
+    "path": "日文发声计时_R2.json",
+    "bytes": 77026,
+    "sha256": "d11204f477fd74a371f1fb13c7ee9e281d554374cd9fa38bda485c5f8afb35a2"
+  },
+  {
+    "path": "日文发声计时_R2.md",
+    "bytes": 13443,
+    "sha256": "68ac71b1539b6a2ed9faddc92b351ac035513f1b0a0e5ae0d3287c0ba6bdb224"
+  },
+  {
+    "path": "本话人物与参考.md",
+    "bytes": 3975,
+    "sha256": "4b5e9a556f488b5926919978ec60ecb5d422ebeb125b86922c6a56c980c2abe7"
+  },
+  {
+    "path": "生产索引_R2.json",
+    "bytes": 355652,
+    "sha256": "3f46b47dc922028cb05c5d471c055b558b7feb96647e783402c511f597799403"
+  },
+  {
+    "path": "第29话_完整导演分镜_Gen2.8.2_R2.md",
+    "bytes": 118136,
+    "sha256": "3089178457e2f058e0c2375c2ec79c8f5313d938c92486f9aeb3a6761e7122b5"
+  },
+  {
+    "path": "第29话_逐片执行稿_Gen2.8.2_R2.md",
+    "bytes": 116089,
+    "sha256": "ee1ecb23ca0a217dda602fc7e25525e9ffb0f84bed5b5cc4031adb5d68ae389d"
+  },
+  {
+    "path": "逐片TXT/片段01.txt",
+    "bytes": 3752,
+    "sha256": "9e047dcbd1f51ce0c236d6bca9738e9ab993d867dba80366e82e04049c07ae10"
+  },
+  {
+    "path": "逐片TXT/片段02.txt",
+    "bytes": 4054,
+    "sha256": "f9f8b30aa40d77b40df9921a106ef8cdf79aec389e1a26f8c4c1870c411d3a69"
+  },
+  {
+    "path": "逐片TXT/片段03.txt",
+    "bytes": 2449,
+    "sha256": "4ca5d92725da9c3a68a8cea8d02d0a93ab276a67e99225a23ae07d509a67ec29"
+  },
+  {
+    "path": "逐片TXT/片段04.txt",
+    "bytes": 3191,
+    "sha256": "14b5113120717a50fa173775567e2e778c4cd1cb7fbc49afad98040b1b754cf3"
+  },
+  {
+    "path": "逐片TXT/片段05.txt",
+    "bytes": 1799,
+    "sha256": "abeeae2e9507f333aaccd97d327489dedaee5be3d236ed45541ab616e19e433d"
+  },
+  {
+    "path": "逐片TXT/片段06.txt",
+    "bytes": 2032,
+    "sha256": "5d0115f617c89ad5d1d35602c20e09d7f64a6b90356b5d0d0e86290e6205a093"
+  },
+  {
+    "path": "逐片TXT/片段07.txt",
+    "bytes": 2047,
+    "sha256": "92b2f4014c1cf5ac6a83d06170596fb141625e536fc772a3609e154ebe8db650"
+  },
+  {
+    "path": "逐片TXT/片段08.txt",
+    "bytes": 2588,
+    "sha256": "0849dfea3c38f4328466ad4c14ff968567a37696c4400bee25e95739e2da3fb4"
+  },
+  {
+    "path": "逐片TXT/片段09.txt",
+    "bytes": 2962,
+    "sha256": "b895e6157f1f738b6992bca0a462ee0b1096821ba381e69a06e30e429f398582"
+  },
+  {
+    "path": "逐片TXT/片段10.txt",
+    "bytes": 2729,
+    "sha256": "dc25c71b8e73c696923bf9cb62cda7087c7a9359627a6ae654131c77673a4796"
+  },
+  {
+    "path": "逐片TXT/片段11.txt",
+    "bytes": 1859,
+    "sha256": "0487ba4f9c87233467e344b23621bff9a48553c73cf6a5041cc0376fd240c46a"
+  },
+  {
+    "path": "逐片TXT/片段12.txt",
+    "bytes": 3511,
+    "sha256": "c4ffc03f751ade89d85d714b2686f30d7b97a8eac3e7367c773a5bbe266a2c31"
+  },
+  {
+    "path": "逐片TXT/片段13.txt",
+    "bytes": 4007,
+    "sha256": "bcdf94db97a7cea8d73de54c36feabe9f83a6bb7844d225c485b936b374fdcde"
+  },
+  {
+    "path": "逐片TXT/片段14.txt",
+    "bytes": 4667,
+    "sha256": "12228a2f43196d2421034ac1b8a93ce58a70439cf442507ccc837d0fd86fa6f4"
+  },
+  {
+    "path": "逐片TXT/片段15.txt",
+    "bytes": 1600,
+    "sha256": "ea6e11f7c742d832bb155fcd6a68918df76aa3f805f2bd3d401ccc1cc8bd735a"
+  },
+  {
+    "path": "逐片TXT/片段16.txt",
+    "bytes": 2852,
+    "sha256": "c7044136ba43f16236e20e6e06347fea1d7be965d6d4b23da4d971feeb6e5bfd"
+  },
+  {
+    "path": "逐片TXT/片段17.txt",
+    "bytes": 2020,
+    "sha256": "a1a4823ca0aa6e7880c97b98ac9f887ba7d1c4d8b66b92242f9c0421fb594416"
+  },
+  {
+    "path": "逐片TXT/片段18.txt",
+    "bytes": 1034,
+    "sha256": "5ecfc769799231a94dd94e0176bc59705f5a4feb6af83942ebd5a9b1ede75939"
+  },
+  {
+    "path": "逐片TXT/片段19.txt",
+    "bytes": 2079,
+    "sha256": "52078aa87cced410e3c55104712ebe66bc10886b6c9166723088d1227759d814"
+  },
+  {
+    "path": "逐片TXT/片段20.txt",
+    "bytes": 3173,
+    "sha256": "07a8a5da7bd5b88fff79f0cfdf18dc8d55d2b41db22fb5a334f5e51665b3842f"
+  },
+  {
+    "path": "逐片TXT/片段21.txt",
+    "bytes": 2162,
+    "sha256": "da43f0aa4753a7abe8b2d74faea7fb36241c84fe442da1ccd8574d75e4ded604"
+  },
+  {
+    "path": "逐片TXT/片段22.txt",
+    "bytes": 3038,
+    "sha256": "b90f64de786adbbc3571a723f6b2b25d17463da7c8bedae898bd7b06977ae7ae"
+  },
+  {
+    "path": "逐片TXT/片段23.txt",
+    "bytes": 1658,
+    "sha256": "f18ac0c5d9416064cb985c2b3fdba23f2bb51fb3c6c57a8aea90481f7909c215"
+  },
+  {
+    "path": "逐片TXT/片段24.txt",
+    "bytes": 1440,
+    "sha256": "3b17bf81934a527265e5986959d77675ad0b33aa8c0ec540e3f05ab692ca2cfa"
+  },
+  {
+    "path": "逐片TXT/片段25.txt",
+    "bytes": 2052,
+    "sha256": "2137392d10eb5db03d9d53bd5a1fa6da0e250774c58cba64ee9cd25a80461bf9"
+  },
+  {
+    "path": "逐片TXT/片段26.txt",
+    "bytes": 1295,
+    "sha256": "2d51a7b6725448b4a92532f815d77abf1ac80ba105a76f0890a09fbb20a499fd"
+  },
+  {
+    "path": "逐片TXT/片段27.txt",
+    "bytes": 1384,
+    "sha256": "69bf2e49e1fc2dee606789ef53babfb56302a3e97c08a3a11b6721192211edd6"
+  },
+  {
+    "path": "逐片TXT/片段28.txt",
+    "bytes": 2650,
+    "sha256": "c448b0f6efd4048734a7764e8a76f9872f32486ad0d00703c53ad21d36ea2a52"
+  },
+  {
+    "path": "逐片TXT/片段29.txt",
+    "bytes": 1140,
+    "sha256": "b4c691df018d9d9f069f32953a47c8a6d16d3685077f972ffadcbb2c76de69ad"
+  },
+  {
+    "path": "逐片TXT/片段30.txt",
+    "bytes": 2500,
+    "sha256": "abfc7a7c1c591a2475abae2527f11d9e1c5d166fc6b87d2f28f893c2497efc68"
+  },
+  {
+    "path": "逐片TXT/片段31.txt",
+    "bytes": 2270,
+    "sha256": "137140fa3c9ec587b12e95a9cc337e4309bb66f153efc47d17bebc740747efe7"
+  },
+  {
+    "path": "逐片TXT/片段32.txt",
+    "bytes": 1113,
+    "sha256": "7bcac418cdf5316dc7949b68611e0cd523504f3f2e56626c89d984c14df930a3"
+  },
+  {
+    "path": "逐片TXT/片段33.txt",
+    "bytes": 1846,
+    "sha256": "23c955e952aaf12d4fc1e74705dc7de9be6db2ebb35b785ef8e2b22771944c41"
+  },
+  {
+    "path": "逐片TXT/片段34.txt",
+    "bytes": 2822,
+    "sha256": "61a70683d26efde5eb60a0bc2d19b650537efa4b13620b278fed094380e985df"
+  },
+  {
+    "path": "逐片TXT/片段35.txt",
+    "bytes": 2815,
+    "sha256": "5b50c8bc126846a31c074ca646d7bb8e6166277594aec7418f04e598aa8359e5"
+  },
+  {
+    "path": "逐片TXT/片段36.txt",
+    "bytes": 2846,
+    "sha256": "66b3e7657c7c5dac38cb80fc6c60f22cb7f332d63bce8c7d2fb9b0eec0ecb2a3"
+  },
+  {
+    "path": "逐片TXT/片段37.txt",
+    "bytes": 2033,
+    "sha256": "29d361024bd7c41f6e1a4be62fa9b8e5e242f5b2b56c4e381faad28c7edf70d2"
+  },
+  {
+    "path": "逐片TXT/片段38.txt",
+    "bytes": 2001,
+    "sha256": "bb8c427f631fb736e4651819ebe9ed2d100b4499afb81dd2cec88e43eb293096"
+  },
+  {
+    "path": "逐片TXT/片段39.txt",
+    "bytes": 2244,
+    "sha256": "d0b3584a09ab877b20cc35f844240c694a1d2151b32a7d020e5c274a7643fe7d"
+  },
+  {
+    "path": "逐片TXT/片段40.txt",
+    "bytes": 1858,
+    "sha256": "2e4555dbbed90abf5c560ad99bf8e658a3be2ab62a8f2e154124e094e9b47af9"
+  },
+  {
+    "path": "逐片TXT/片段41.txt",
+    "bytes": 3065,
+    "sha256": "d7eba98934705f5b4c2911dbd1e5535e9c8c0c62413638eedc890853b0d78a90"
+  },
+  {
+    "path": "逐片TXT/片段42.txt",
+    "bytes": 3719,
+    "sha256": "087582fe1fc4cd7739a97883bd7dbe8e2b5ba83ef63defd0a4e4b45ca5473d36"
+  },
+  {
+    "path": "逐片TXT/片段43.txt",
+    "bytes": 2015,
+    "sha256": "757055941011d46571182a83b44900eb92d92eb64f45290cbcac27177294929b"
+  },
+  {
+    "path": "逐片TXT/片段44.txt",
+    "bytes": 2742,
+    "sha256": "b15b12e1497ead66be62f62742b24415c5483764c22e9fb31de89d97ac244e12"
+  },
+  {
+    "path": "逐片TXT/片段45.txt",
+    "bytes": 4472,
+    "sha256": "e7567f3396c9a390e539a02d7ae2299135d69cfb03d0b1e7cb5157e01284dbf2"
+  },
+  {
+    "path": "逐片TXT/片段46.txt",
+    "bytes": 2070,
+    "sha256": "f2034479fa4f95454c63b9cea85a650536827f28dba3441d9ab06f904756ed71"
+  },
+  {
+    "path": "逐片参考与连续性索引_R2.md",
+    "bytes": 4673,
+    "sha256": "06a133e5bc12083fa79c187f6d32b6ec96c68dc0092f4fe1d6a35b5c31a5783d"
+  }
+]

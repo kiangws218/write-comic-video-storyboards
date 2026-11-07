@@ -1,0 +1,266 @@
+{
+  "revision": "R2",
+  "source_commit": "355311580cb99e59cada7124baffc8a52553b3a2",
+  "source_lock": "5e7ce906af203e8e34bea1b7456563e801255299314701dd120394222f447c97",
+  "review": {
+    "characters": "R2重构床边劝阻、门口受责、道歉接收、招揽与敬语的身体参与：青不是连续抬眼低头，而是尝试坐直、接话吞回、被支持后再提出疑问；春子以缩短一步、平淡接收、浅笑及低幅撒娇行动；董白礼貌笑与全身半鞠躬互相冲突。原作明确表情及长发/接触结果仍在。画内名单逐镜人工登记，未入画目标改成方位，极近景删除不可见腿手动作。",
+    "pacing": "R2增加16个有具体功能的镜头，来源顺序不改。长镜有选择地拆为说者—听者/关系—返回；不把每句对白切一镜。保留手部承重的长持态、拥抱受阻、哽咽道歉及春子听辱骂的克制段。悬手两秒、擦衣揭示、两秒未接话、惊愣后才笑按实际镜长排；西红柿触前主观慢放，接触恢复正常，耳光单次快速通过。预估秒数没有替代实录或动态预演。",
+    "node_arrivals": "相对第二遍及R1，回看21个安全原格并纠正11_001的接触前阶段：原格悬手保留，新增特写才落肩擦过离开，原11_002接颜艺结果；承重、截果、单次耳光仍按已确认路径。16个新增镜均在相邻节点间承接；亭中新角度由背景协作复核，A08略俯收在亭板，A10近柱在右中，未搬动主光。非露骨替代13节点仍按用户批准方案，不能计为露骨原构图逐字保真。",
+    "contrast": "116镜中22个为导演新增，共41条实际切点涉及增镜；已逐条写明相邻两侧在主体、景别、关系、动作阶段或信息上的显著差异。三组连续新增同样按彼此实际邻接检查。插入不从未来原格借反应；返回时坐直、手的接触、敬语姿态及身体余势已经发展，不重演起手。所有22新增优先与前来源镜组成同片单元，实际例外另列。",
+    "limits": "仅完成原图与文本前向检查、计时与导出校验；未制作或播放粗动态分镜，不能据此声称已达到顶级动画的成片流畅度和制作水准。",
+    "sha256": "975e9719fe61cd33961b8e5974b549a1ab5891ac110a2a0278200bdaf2b8dc5a"
+  },
+  "stats": {
+    "shots": 116,
+    "source_shots": 94,
+    "added_shots": 22,
+    "new_in_r2": 16,
+    "clips": 46,
+    "seconds": 527.0,
+    "max_chars": 1634,
+    "cuts_touching_additions": 41,
+    "unit_exceptions": [],
+    "clip_stats": [
+      {
+        "clip": 1,
+        "seconds": 15.0,
+        "characters": 1280
+      },
+      {
+        "clip": 2,
+        "seconds": 12.5,
+        "characters": 1399
+      },
+      {
+        "clip": 3,
+        "seconds": 11.5,
+        "characters": 840
+      },
+      {
+        "clip": 4,
+        "seconds": 11.5,
+        "characters": 1115
+      },
+      {
+        "clip": 5,
+        "seconds": 8.5,
+        "characters": 616
+      },
+      {
+        "clip": 6,
+        "seconds": 12.5,
+        "characters": 694
+      },
+      {
+        "clip": 7,
+        "seconds": 12.0,
+        "characters": 701
+      },
+      {
+        "clip": 8,
+        "seconds": 14.0,
+        "characters": 887
+      },
+      {
+        "clip": 9,
+        "seconds": 13.5,
+        "characters": 1010
+      },
+      {
+        "clip": 10,
+        "seconds": 12.0,
+        "characters": 932
+      },
+      {
+        "clip": 11,
+        "seconds": 9.5,
+        "characters": 637
+      },
+      {
+        "clip": 12,
+        "seconds": 13.5,
+        "characters": 1202
+      },
+      {
+        "clip": 13,
+        "seconds": 15.0,
+        "characters": 1383
+      },
+      {
+        "clip": 14,
+        "seconds": 12.5,
+        "characters": 1634
+      },
+      {
+        "clip": 15,
+        "seconds": 6.0,
+        "characters": 549
+      },
+      {
+        "clip": 16,
+        "seconds": 10.0,
+        "characters": 972
+      },
+      {
+        "clip": 17,
+        "seconds": 12.0,
+        "characters": 691
+      },
+      {
+        "clip": 18,
+        "seconds": 8.5,
+        "characters": 355
+      },
+      {
+        "clip": 19,
+        "seconds": 9.0,
+        "characters": 708
+      },
+      {
+        "clip": 20,
+        "seconds": 13.5,
+        "characters": 1083
+      },
+      {
+        "clip": 21,
+        "seconds": 11.0,
+        "characters": 755
+      },
+      {
+        "clip": 22,
+        "seconds": 14.5,
+        "characters": 1036
+      },
+      {
+        "clip": 23,
+        "seconds": 8.5,
+        "characters": 569
+      },
+      {
+        "clip": 24,
+        "seconds": 9.0,
+        "characters": 489
+      },
+      {
+        "clip": 25,
+        "seconds": 9.5,
+        "characters": 701
+      },
+      {
+        "clip": 26,
+        "seconds": 8.5,
+        "characters": 442
+      },
+      {
+        "clip": 27,
+        "seconds": 9.0,
+        "characters": 471
+      },
+      {
+        "clip": 28,
+        "seconds": 14.5,
+        "characters": 901
+      },
+      {
+        "clip": 29,
+        "seconds": 8.0,
+        "characters": 389
+      },
+      {
+        "clip": 30,
+        "seconds": 11.5,
+        "characters": 850
+      },
+      {
+        "clip": 31,
+        "seconds": 9.0,
+        "characters": 785
+      },
+      {
+        "clip": 32,
+        "seconds": 8.0,
+        "characters": 380
+      },
+      {
+        "clip": 33,
+        "seconds": 10.0,
+        "characters": 633
+      },
+      {
+        "clip": 34,
+        "seconds": 14.0,
+        "characters": 962
+      },
+      {
+        "clip": 35,
+        "seconds": 12.5,
+        "characters": 964
+      },
+      {
+        "clip": 36,
+        "seconds": 14.0,
+        "characters": 973
+      },
+      {
+        "clip": 37,
+        "seconds": 11.5,
+        "characters": 705
+      },
+      {
+        "clip": 38,
+        "seconds": 14.0,
+        "characters": 685
+      },
+      {
+        "clip": 39,
+        "seconds": 14.0,
+        "characters": 764
+      },
+      {
+        "clip": 40,
+        "seconds": 9.5,
+        "characters": 636
+      },
+      {
+        "clip": 41,
+        "seconds": 15.0,
+        "characters": 1043
+      },
+      {
+        "clip": 42,
+        "seconds": 15.0,
+        "characters": 1284
+      },
+      {
+        "clip": 43,
+        "seconds": 10.0,
+        "characters": 687
+      },
+      {
+        "clip": 44,
+        "seconds": 14.0,
+        "characters": 954
+      },
+      {
+        "clip": 45,
+        "seconds": 14.0,
+        "characters": 1554
+      },
+      {
+        "clip": 46,
+        "seconds": 6.0,
+        "characters": 733
+      }
+    ]
+  },
+  "utterances_unchanged": 110,
+  "mapped_speech_pieces": 113,
+  "added_shots_with_previous_source": 22,
+  "added_grouping_exceptions": 0,
+  "unresolved_named_visual_presence": [],
+  "validated_errors": 0,
+  "validated_warnings": 153,
+  "execution_errors": 0,
+  "execution_warnings": 0,
+  "scope": "source images and text; no animatic playback or actual recorded speech"
+}

@@ -1,0 +1,2580 @@
+{
+  "basis": "日语每秒约六个有效字加标点作预估下限；保留更慢的原计划，镜长向上到0.5秒。不是实录／TTS测时。",
+  "utterances": [
+    {
+      "id": "P004B1",
+      "speaker": "董白",
+      "kind": "inner",
+      "full_text": "こんな大物の魔族に出くわすなんて！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P004B1",
+          "piece": 1,
+          "source": "第29話_02_001.jpg",
+          "target": "片段1/分镜4",
+          "speaker": "董白",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "こんな大物の魔族に出くわすなんて！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.57,
+          "episode_start": 8.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P004B2",
+      "speaker": "董白",
+      "kind": "inner",
+      "full_text": "これは好機なのか？！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P004B2",
+          "piece": 1,
+          "source": "第29話_02_001.jpg",
+          "target": "片段1/分镜4",
+          "speaker": "董白",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "これは好機なのか？！",
+          "shot_start": 4.12,
+          "estimated_seconds": 2.23,
+          "episode_start": 12.12,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P009B1",
+      "speaker": "欧铂",
+      "kind": "inner",
+      "full_text": "…面白い。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P009B1",
+          "piece": 1,
+          "source": "第29話_03_003.jpg",
+          "target": "片段2/分镜6",
+          "speaker": "欧铂",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "…面白い。",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.6,
+          "episode_start": 25.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P010B1",
+      "speaker": "欧铂",
+      "kind": "inner",
+      "full_text": "以前、亀頭武士をここまで追い詰めたのは…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P010B1",
+          "piece": 1,
+          "source": "第29話_03_004.jpg",
+          "target": "片段3/分镜1",
+          "speaker": "欧铂",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "以前、亀頭武士をここまで追い詰めたのは…",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.5,
+          "episode_start": 27.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P010B2",
+      "speaker": "欧铂",
+      "kind": "inner",
+      "full_text": "「あいつ」だった。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P010B2",
+          "piece": 1,
+          "source": "第29話_03_004.jpg",
+          "target": "片段3/分镜1",
+          "speaker": "欧铂",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "「あいつ」だった。",
+          "shot_start": 5.05,
+          "estimated_seconds": 2,
+          "episode_start": 32.55,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P012B1",
+      "speaker": "董白",
+      "kind": "inner",
+      "full_text": "えっ？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P012B1",
+          "piece": 1,
+          "source": "第29話_04_002.jpg",
+          "target": "片段3/分镜3",
+          "speaker": "董白",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "えっ？",
+          "shot_start": 0.3,
+          "estimated_seconds": 1,
+          "episode_start": 37.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P016B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "…行った。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P016B1",
+          "piece": 1,
+          "source": "第29話_05_002.jpg",
+          "target": "片段4/分镜3",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…行った。",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.55,
+          "episode_start": 47.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P017B1",
+      "speaker": "青",
+      "kind": "inner",
+      "full_text": "ここは…どこ？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P017B1",
+          "piece": 1,
+          "source": "第29話_05_003.jpg",
+          "target": "片段5/分镜1",
+          "speaker": "青",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "ここは…どこ？",
+          "shot_start": 0.3,
+          "estimated_seconds": 2,
+          "episode_start": 50.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P018B1",
+      "speaker": "青",
+      "kind": "inner",
+      "full_text": "はぁ…よかった。どうやら片づいたみたい。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P018B1",
+          "piece": 1,
+          "source": "第29話_05_004.jpg",
+          "target": "片段5/分镜2",
+          "speaker": "青",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "はぁ…よかった。どうやら片づいたみたい。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.33,
+          "episode_start": 53.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P019B1",
+      "speaker": "青梅女",
+      "kind": "dialogue",
+      "full_text": "あっ！目が覚めた！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P019B1",
+          "piece": 1,
+          "source": "第29話_06_001.jpg",
+          "target": "片段6/分镜1",
+          "speaker": "青梅女",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あっ！目が覚めた！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.52,
+          "episode_start": 59.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P019B2",
+      "speaker": "青梅男",
+      "kind": "dialogue",
+      "full_text": "ずっと目を覚まさないから、ひどいけがかと思ったよ…！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P019B2",
+          "piece": 1,
+          "source": "第29話_06_001.jpg",
+          "target": "片段6/分镜1",
+          "speaker": "青梅男",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ずっと目を覚まさないから、ひどいけがかと思ったよ…！",
+          "shot_start": 3.07,
+          "estimated_seconds": 5.13,
+          "episode_start": 62.07,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P019B3",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "ほら。目を覚ますって言ったでしょ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P019B3",
+          "piece": 1,
+          "source": "第29話_06_001.jpg",
+          "target": "片段6/分镜2",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ほら。目を覚ますって言ったでしょ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.4,
+          "episode_start": 67.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P020B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "は、春子お姉ちゃん？！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P020B1",
+          "piece": 1,
+          "source": "第29話_06_002.jpg",
+          "target": "片段7/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "は、春子お姉ちゃん？！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.48,
+          "episode_start": 71.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P021B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "うわあああ！私が心配で、戻ってきてくれたんだよね？！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P021B1",
+          "piece": 1,
+          "source": "第29話_06_003.jpg",
+          "target": "片段7/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "うわあああ！私が心配で、戻ってきてくれたんだよね？！",
+          "shot_start": 0.3,
+          "estimated_seconds": 5.27,
+          "episode_start": 75.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P021B2",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "おい、すり寄るな。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P021B2",
+          "piece": 1,
+          "source": "第29話_06_003.jpg",
+          "target": "片段7/分镜2",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "おい、すり寄るな。",
+          "shot_start": 5.82,
+          "estimated_seconds": 2,
+          "episode_start": 80.82,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P022B1",
+      "speaker": "青梅女",
+      "kind": "dialogue",
+      "full_text": "ほら！あの二人、百合だって言ったでしょ！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P022B1",
+          "piece": 1,
+          "source": "第29話_07_001.jpg",
+          "target": "片段8/分镜1",
+          "speaker": "青梅女",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ほら！あの二人、百合だって言ったでしょ！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.98,
+          "episode_start": 83.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P022B2",
+      "speaker": "青梅男",
+      "kind": "dialogue",
+      "full_text": "いや、違うと思うけど…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P022B2",
+          "piece": 1,
+          "source": "第29話_07_001.jpg",
+          "target": "片段8/分镜2",
+          "speaker": "青梅男",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "いや、違うと思うけど…",
+          "shot_start": 0.5,
+          "estimated_seconds": 2.35,
+          "episode_start": 89.0,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P023B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "もういい。今、動ける？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P023B1",
+          "piece": 1,
+          "source": "第29話_07_002.jpg",
+          "target": "片段8/分镜3",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "もういい。今、動ける？",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.48,
+          "episode_start": 92.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P023B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "どうしたの？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P023B2",
+          "piece": 1,
+          "source": "第29話_07_002.jpg",
+          "target": "片段8/分镜3",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "どうしたの？",
+          "shot_start": 3.03,
+          "estimated_seconds": 2,
+          "episode_start": 95.03,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P024B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "起きて。女会長が会いたいって。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P024B1",
+          "piece": 1,
+          "source": "第29話_07_003.jpg",
+          "target": "片段9/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "起きて。女会長が会いたいって。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.07,
+          "episode_start": 97.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P024B2",
+      "speaker": "青梅女",
+      "kind": "dialogue",
+      "full_text": "今？やっと意識が戻ったばかりなのに、そんなに急がなくても…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P024B2",
+          "piece": 1,
+          "source": "第29話_07_003.jpg",
+          "target": "片段9/分镜2",
+          "speaker": "青梅女",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "今？やっと意識が戻ったばかりなのに、そんなに急がなくても…",
+          "shot_start": 0.3,
+          "estimated_seconds": 5.63,
+          "episode_start": 101.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P024B3",
+      "speaker": "青梅男",
+      "kind": "dialogue",
+      "full_text": "今は、それどころじゃ…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P024B3",
+          "piece": 1,
+          "source": "第29話_07_003.jpg",
+          "target": "片段9/分镜3",
+          "speaker": "青梅男",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "今は、それどころじゃ…",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.35,
+          "episode_start": 108.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P025B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "何をぐずぐずしてるの？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P025B1",
+          "piece": 1,
+          "source": "第29話_07_004.jpg",
+          "target": "片段10/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "何をぐずぐずしてるの？",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.12,
+          "episode_start": 111.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P025B2",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "早く着替えて。行くよ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P025B2",
+          "piece": 1,
+          "source": "第29話_07_004.jpg",
+          "target": "片段10/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "早く着替えて。行くよ。",
+          "shot_start": 2.67,
+          "estimated_seconds": 2.4,
+          "episode_start": 113.67,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P027B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "…外、どうしてこんなに騒がしいの？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P027B1",
+          "piece": 1,
+          "source": "第29話_08_002.jpg",
+          "target": "片段11/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…外、どうしてこんなに騒がしいの？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.63,
+          "episode_start": 123.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P027B2",
+      "speaker": "青梅女",
+      "kind": "dialogue",
+      "full_text": "ああ…それは…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P027B2",
+          "piece": 1,
+          "source": "第29話_08_002.jpg",
+          "target": "片段11/分镜1",
+          "speaker": "青梅女",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ああ…それは…",
+          "shot_start": 4.18,
+          "estimated_seconds": 2.03,
+          "episode_start": 127.18,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P028B1",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "あの女だ！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P028B1",
+          "piece": 1,
+          "source": "第29話_08_003.jpg",
+          "target": "片段11/分镜2",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あの女だ！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.57,
+          "episode_start": 130.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P029B1",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "魔物が襲って来たのは、あいつのせいだ！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P029B1",
+          "piece": 1,
+          "source": "第29話_08_004.jpg",
+          "target": "片段12/分镜1",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "魔物が襲って来たのは、あいつのせいだ！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.53,
+          "episode_start": 132.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P029B2",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "この村から出ていけ！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P029B2",
+          "piece": 1,
+          "source": "第29話_08_004.jpg",
+          "target": "片段12/分镜2",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "この村から出ていけ！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.4,
+          "episode_start": 137.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P029B3",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "よくもここに顔を出せたな！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P029B3",
+          "piece": 1,
+          "source": "第29話_08_004.jpg",
+          "target": "片段12/分镜3",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "よくもここに顔を出せたな！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.5,
+          "episode_start": 140.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P031B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "放っておいて。行こう。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P031B1",
+          "piece": 1,
+          "source": "第29話_09_002.jpg",
+          "target": "片段13/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "放っておいて。行こう。",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.4,
+          "episode_start": 146.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P032B1",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "あいつのせいで、俺の家が壊されたんだ！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P032B1",
+          "piece": 1,
+          "source": "第29話_09_003.jpg",
+          "target": "片段13/分镜2",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あいつのせいで、俺の家が壊されたんだ！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.53,
+          "episode_start": 149.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P032B2",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "どう責任を取るつもりだ！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P032B2",
+          "piece": 1,
+          "source": "第29話_09_003.jpg",
+          "target": "片段13/分镜2",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "どう責任を取るつもりだ！",
+          "shot_start": 4.08,
+          "estimated_seconds": 2.28,
+          "episode_start": 153.58,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P033B1",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "とっとと失せろ！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P033B1",
+          "piece": 1,
+          "source": "第29話_09_004.jpg",
+          "target": "片段13/分镜3",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "とっとと失せろ！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.07,
+          "episode_start": 156.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P037B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "あ、ありがとう。お姉ちゃん…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P037B1",
+          "piece": 1,
+          "source": "第29話_10_004.jpg",
+          "target": "片段14/分镜3",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あ、ありがとう。お姉ちゃん…",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.13,
+          "episode_start": 165.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P039B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "うわ、汚い。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P039B1",
+          "piece": 1,
+          "source": "第29話_11_002.jpg",
+          "target": "片段14/分镜5",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "うわ、汚い。",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.37,
+          "episode_start": 171.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P039B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "なんで私に拭くの…？！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P039B2",
+          "piece": 1,
+          "source": "第29話_11_002.jpg",
+          "target": "片段15/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "なんで私に拭くの…？！",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.83,
+          "episode_start": 173.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P042B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "…来たのね。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P042B1",
+          "piece": 1,
+          "source": "第29話_11_005.jpg",
+          "target": "片段16/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…来たのね。",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.72,
+          "episode_start": 183.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P044B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "会長さん…本当に、合わせる顔がありません…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P044B1",
+          "piece": 1,
+          "source": "第29話_12_002.jpg",
+          "target": "片段17/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "会長さん…本当に、合わせる顔がありません…",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.45,
+          "episode_start": 189.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P044B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "ここを守れるなんて大きなことを言ったのに…結局…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P044B2",
+          "piece": 1,
+          "source": "第29話_12_002.jpg",
+          "target": "片段17/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ここを守れるなんて大きなことを言ったのに…結局…",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.87,
+          "episode_start": 195.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P045B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "そ、それに、",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P045B1",
+          "piece": 1,
+          "source": "第29話_12_003.jpg",
+          "target": "片段18/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "そ、それに、",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.3,
+          "episode_start": 201.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P045B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "私の助けが間に合わなくて、魔物にあんな辱めまで受けさせてしまって…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P045B2",
+          "piece": 1,
+          "source": "第29話_12_003.jpg",
+          "target": "片段18/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私の助けが間に合わなくて、魔物にあんな辱めまで受けさせてしまって…",
+          "shot_start": 1.85,
+          "estimated_seconds": 6.02,
+          "episode_start": 203.35,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P046B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "もういいの。責めるために呼んだんじゃないわ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P046B1",
+          "piece": 1,
+          "source": "第29話_13_001.jpg",
+          "target": "片段19/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "もういいの。責めるために呼んだんじゃないわ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.23,
+          "episode_start": 210.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P046B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "むしろ、あなたには感謝しているの。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P046B2",
+          "piece": 1,
+          "source": "第29話_13_001.jpg",
+          "target": "片段19/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "むしろ、あなたには感謝しているの。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.2,
+          "episode_start": 215.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P047B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "村の一部は壊れたけれど、幸い誰も死ななかった。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P047B1",
+          "piece": 1,
+          "source": "第29話_13_002.jpg",
+          "target": "片段20/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "村の一部は壊れたけれど、幸い誰も死ななかった。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.3,
+          "episode_start": 219.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P047B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "私たちを全力で守ってくれて、ありがとう。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P047B2",
+          "piece": 1,
+          "source": "第29話_13_002.jpg",
+          "target": "片段20/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "私たちを全力で守ってくれて、ありがとう。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.7,
+          "episode_start": 224.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P048B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "か、会長さん…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P048B1",
+          "piece": 1,
+          "source": "第29話_13_003.jpg",
+          "target": "片段20/分镜3",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "か、会長さん…",
+          "shot_start": 0.3,
+          "estimated_seconds": 2,
+          "episode_start": 229.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P049B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "私にとっては、",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P049B1",
+          "piece": 1,
+          "source": "第29話_14_001.jpg",
+          "target": "片段21/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私にとっては、",
+          "shot_start": 1,
+          "estimated_seconds": 2,
+          "episode_start": 233.5,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P050B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "私には、少し…まだ整理できない気持ちがあるの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P050B1",
+          "piece": 1,
+          "source": "第29話_14_002.jpg",
+          "target": "片段21/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私には、少し…まだ整理できない気持ちがあるの。",
+          "shot_start": 3.5,
+          "estimated_seconds": 4.63,
+          "episode_start": 236.0,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P051B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "…え？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P051B1",
+          "piece": 1,
+          "source": "第29話_14_003.jpg",
+          "target": "片段21/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…え？",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.22,
+          "episode_start": 241.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P052B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あの夜…あの魔族に、確かにひどいことをされたわ。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P052B1",
+          "piece": 1,
+          "source": "第29話_15_001.jpg",
+          "target": "片段22/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あの夜…あの魔族に、確かにひどいことをされたわ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.8,
+          "episode_start": 243.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P095B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "ずっと、誇りを守って生きてきた私が…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P095B1",
+          "piece": 1,
+          "source": "第29話_15_001_panel2.jpg",
+          "target": "片段22/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "ずっと、誇りを守って生きてきた私が…",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.52,
+          "episode_start": 249.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P096B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あんなふうに、連れていかれて…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P096B1",
+          "piece": 1,
+          "source": "第29話_15_001_panel3.jpg",
+          "target": "片段22/分镜3",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あんなふうに、連れていかれて…",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.02,
+          "episode_start": 254.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P054B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あの時は、恥ずかしさと怒りで、どうにかなりそうだった。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P054B1",
+          "piece": 1,
+          "source": "第29話_16_002.jpg",
+          "target": "片段23/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あの時は、恥ずかしさと怒りで、どうにかなりそうだった。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.95,
+          "episode_start": 260.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P055B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "でも今、思い出すと、まだ気持ちが落ち着かないの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P055B1",
+          "piece": 1,
+          "source": "第29話_16_003.jpg",
+          "target": "片段24/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "でも今、思い出すと、まだ気持ちが落ち着かないの。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.45,
+          "episode_start": 266.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P055B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あの出来事が、ずっと頭から離れなくて。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P055B2",
+          "piece": 1,
+          "source": "第29話_16_003.jpg",
+          "target": "片段24/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あの出来事が、ずっと頭から離れなくて。",
+          "shot_start": 5.0,
+          "estimated_seconds": 3.53,
+          "episode_start": 271.5,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P056B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "私はこれまで、この屋敷の中で暮らしてきたでしょう…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P056B1",
+          "piece": 1,
+          "source": "第29話_17_001.jpg",
+          "target": "片段25/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "私はこれまで、この屋敷の中で暮らしてきたでしょう…",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.68,
+          "episode_start": 275.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P056B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あんな経験は、簡単に忘れられないの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P056B2",
+          "piece": 1,
+          "source": "第29話_17_001.jpg",
+          "target": "片段25/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あんな経験は、簡単に忘れられないの。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.37,
+          "episode_start": 281.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P057B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あの魔族の言葉が…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P057B1",
+          "piece": 1,
+          "source": "第29話_17_002.jpg",
+          "target": "片段26/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あの魔族の言葉が…",
+          "shot_start": 0.3,
+          "estimated_seconds": 2,
+          "episode_start": 285.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P057B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "あの夜、村の人たちが私をどう見ていたのか、考えてしまうの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P057B2",
+          "piece": 1,
+          "source": "第29話_17_002.jpg",
+          "target": "片段26/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あの夜、村の人たちが私をどう見ていたのか、考えてしまうの。",
+          "shot_start": 2.55,
+          "estimated_seconds": 5.28,
+          "episode_start": 287.55,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P058B1",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "か、会長さん、そんなに近くで見られると…！",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P058B1",
+          "piece": 1,
+          "source": "第29話_17_003.jpg",
+          "target": "片段27/分镜1",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "か、会長さん、そんなに近くで見られると…！",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.38,
+          "episode_start": 293.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P058B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "そ、そんな言い方は…乱暴よ！",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P058B2",
+          "piece": 1,
+          "source": "第29話_17_003.jpg",
+          "target": "片段27/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "そ、そんな言い方は…乱暴よ！",
+          "shot_start": 4.93,
+          "estimated_seconds": 3.13,
+          "episode_start": 298.43,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P059B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "今夜だけ、話を聞いてあげる…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P059B1",
+          "piece": 1,
+          "source": "第29話_18_001.jpg",
+          "target": "片段28/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "今夜だけ、話を聞いてあげる…",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.85,
+          "episode_start": 302.8,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P059B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "み、耳元で囁かないで…",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P059B2",
+          "piece": 1,
+          "source": "第29話_18_001.jpg",
+          "target": "片段28/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "み、耳元で囁かないで…",
+          "shot_start": 3.4,
+          "estimated_seconds": 2.35,
+          "episode_start": 305.9,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P060B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "もう！みんな、一度に話さないで！",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P060B1",
+          "piece": 1,
+          "source": "第29話_18_002.jpg",
+          "target": "片段28/分镜2",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "もう！みんな、一度に話さないで！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.32,
+          "episode_start": 309.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P060B2",
+      "speaker": "村民群体",
+      "kind": "dialogue",
+      "full_text": "会長さん、少し落ち着いてください！",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P060B2",
+          "piece": 1,
+          "source": "第29話_18_002.jpg",
+          "target": "片段28/分镜2",
+          "speaker": "村民群体",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "会長さん、少し落ち着いてください！",
+          "shot_start": 3.87,
+          "estimated_seconds": 3.2,
+          "episode_start": 312.87,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P061B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "そんなことを、考えてしまって。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P061B1",
+          "piece": 1,
+          "source": "第29話_18_003.jpg",
+          "target": "片段29/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "そんなことを、考えてしまって。",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.87,
+          "episode_start": 317.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P061B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "頭の中で、勝手に場面がつながっていくの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P061B2",
+          "piece": 1,
+          "source": "第29話_18_003.jpg",
+          "target": "片段29/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "頭の中で、勝手に場面がつながっていくの。",
+          "shot_start": 3.42,
+          "estimated_seconds": 3.7,
+          "episode_start": 320.42,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P062B1",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "人の目が気になるのに、どう思われているのか確かめるのも怖くて。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P062B1",
+          "piece": 1,
+          "source": "第29話_19_001.jpg",
+          "target": "片段30/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "人の目が気になるのに、どう思われているのか確かめるのも怖くて。",
+          "shot_start": 0.3,
+          "estimated_seconds": 5.53,
+          "episode_start": 325.3,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P062B2",
+      "speaker": "女主席",
+      "kind": "dialogue",
+      "full_text": "そんな自分が、落ち着かないの。",
+      "adapted": true,
+      "segments": [
+        {
+          "id": "P062B2",
+          "piece": 1,
+          "source": "第29話_19_001.jpg",
+          "target": "片段30/分镜1",
+          "speaker": "女主席",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "そんな自分が、落ち着かないの。",
+          "shot_start": 6.08,
+          "estimated_seconds": 2.87,
+          "episode_start": 331.08,
+          "adapted": true
+        }
+      ]
+    },
+    {
+      "id": "P063B1",
+      "speaker": "青",
+      "kind": "inner",
+      "full_text": "か、彼女は…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P063B1",
+          "piece": 1,
+          "source": "第29話_19_002.jpg",
+          "target": "片段31/分镜1",
+          "speaker": "青",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "か、彼女は…",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.6,
+          "episode_start": 336.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P063B2",
+      "speaker": "青",
+      "kind": "inner",
+      "full_text": "思ったよりは元気みたい。本当によかった…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P063B2",
+          "piece": 1,
+          "source": "第29話_19_002.jpg",
+          "target": "片段31/分镜1",
+          "speaker": "青",
+          "source_kind": "inner",
+          "delivery_mode": "内心",
+          "text": "思ったよりは元気みたい。本当によかった…",
+          "shot_start": 2.15,
+          "estimated_seconds": 4.05,
+          "episode_start": 338.65,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P065B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "それで、何て？五年牢屋に入れって？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P065B1",
+          "piece": 1,
+          "source": "第29話_20_001.jpg",
+          "target": "片段32/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "それで、何て？五年牢屋に入れって？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.48,
+          "episode_start": 345.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P065B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "ううん…逆に慰めてくれたよ…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P065B2",
+          "piece": 1,
+          "source": "第29話_20_001.jpg",
+          "target": "片段32/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ううん…逆に慰めてくれたよ…",
+          "shot_start": 4.03,
+          "estimated_seconds": 3.2,
+          "episode_start": 349.53,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P066B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "でも、話を聞く限り、魔族は確かに私を捜していたんだ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P066B1",
+          "piece": 1,
+          "source": "第29話_20_002.jpg",
+          "target": "片段33/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "でも、話を聞く限り、魔族は確かに私を捜していたんだ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.78,
+          "episode_start": 353.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P066B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "…理由が何であれ、私の責任だよ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P066B2",
+          "piece": 1,
+          "source": "第29話_20_002.jpg",
+          "target": "片段33/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "…理由が何であれ、私の責任だよ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.47,
+          "episode_start": 359.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P067B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "…でも、どうしてだろう…？あの人たちの竜を傷つけたから？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P067B1",
+          "piece": 1,
+          "source": "第29話_20_003.jpg",
+          "target": "片段34/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…でも、どうしてだろう…？あの人たちの竜を傷つけたから？",
+          "shot_start": 0.3,
+          "estimated_seconds": 6.18,
+          "episode_start": 363.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P067B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "まるで…誰かに目をつけられているみたい。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P067B2",
+          "piece": 1,
+          "source": "第29話_20_003.jpg",
+          "target": "片段34/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "まるで…誰かに目をつけられているみたい。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.05,
+          "episode_start": 370.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P069B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "それは…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P069B1",
+          "piece": 1,
+          "source": "第29話_21_001.jpg",
+          "target": "片段35/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "それは…",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.1,
+          "episode_start": 377.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P069B2",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "それはね…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P069B2",
+          "piece": 1,
+          "source": "第29話_21_001.jpg",
+          "target": "片段35/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "それはね…",
+          "shot_start": 1.65,
+          "estimated_seconds": 1.27,
+          "episode_start": 379.15,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P070B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "勝手なことをして、あちこち騒がせるから、魔物に嫌われるのよ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P070B1",
+          "piece": 1,
+          "source": "第29話_21_002.jpg",
+          "target": "片段35/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "勝手なことをして、あちこち騒がせるから、魔物に嫌われるのよ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 5.45,
+          "episode_start": 381.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P071B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "違う？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P071B1",
+          "piece": 1,
+          "source": "第29話_22_001.jpg",
+          "target": "片段35/分镜3",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "違う？",
+          "shot_start": 0.3,
+          "estimated_seconds": 1,
+          "episode_start": 387.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P072B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "…なんでまだついてくるの。偉そうにして。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P072B1",
+          "piece": 1,
+          "source": "第29話_22_002.jpg",
+          "target": "片段36/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…なんでまだついてくるの。偉そうにして。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.33,
+          "episode_start": 390.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P072B2",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "さあね…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P072B2",
+          "piece": 1,
+          "source": "第29話_22_002.jpg",
+          "target": "片段36/分镜1",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "さあね…",
+          "shot_start": 4.88,
+          "estimated_seconds": 1.1,
+          "episode_start": 394.88,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P073B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "その眠たそうな目のクソ女と話すことなんてないわ。黙ってなさい。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P073B1",
+          "piece": 1,
+          "source": "第29話_22_003.jpg",
+          "target": "片段36/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "その眠たそうな目のクソ女と",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.7,
+          "episode_start": 396.8,
+          "adapted": false
+        },
+        {
+          "id": "P073B1",
+          "piece": 2,
+          "source": "第29話_22_003.jpg",
+          "target": "片段36/分镜3",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "話すことなんてないわ。黙ってなさい。",
+          "shot_start": 0,
+          "estimated_seconds": 3.79,
+          "episode_start": 399.5,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P074B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "ねえ。私の部下にならない？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P074B1",
+          "piece": 1,
+          "source": "第29話_23_001.jpg",
+          "target": "片段37/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ねえ。私の部下にならない？",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.73,
+          "episode_start": 404.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P074B2",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "どう考えても、あんたは使えるわ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P074B2",
+          "piece": 1,
+          "source": "第29話_23_001.jpg",
+          "target": "片段37/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "どう考えても、あんたは使えるわ。",
+          "shot_start": 3.28,
+          "estimated_seconds": 3.03,
+          "episode_start": 407.28,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P075B1",
+      "speaker": "青",
+      "kind": "dialogue",
+      "full_text": "…？？？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P075B1",
+          "piece": 1,
+          "source": "第29話_23_002.jpg",
+          "target": "片段37/分镜2",
+          "speaker": "青",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "…？？？",
+          "shot_start": 2,
+          "estimated_seconds": 1.95,
+          "episode_start": 413.0,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P076B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "見習い騎士にでもなれば、今の境遇より百倍ましよ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P076B1",
+          "piece": 1,
+          "source": "第29話_23_003.jpg",
+          "target": "片段38/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "見習い騎士にでもなれば、今の境遇より百倍ましよ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.37,
+          "episode_start": 415.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P077B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "今の境遇っていうのは、後ろ盾もコネもないクソ女とつるんでいるってことよ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P077B1",
+          "piece": 1,
+          "source": "第29話_24_001.jpg",
+          "target": "片段38/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "今の境遇っていうのは、後ろ盾もコネもないクソ女とつるんでいるってことよ。",
+          "shot_start": 0.3,
+          "estimated_seconds": 6.4,
+          "episode_start": 421.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P077B2",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "何？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P077B2",
+          "piece": 1,
+          "source": "第29話_24_001.jpg",
+          "target": "片段38/分镜2",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "何？",
+          "shot_start": 6.95,
+          "estimated_seconds": 1,
+          "episode_start": 427.95,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P078B1",
+      "speaker": "春德",
+      "kind": "dialogue",
+      "full_text": "あら、春子。まだここにいたの？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P078B1",
+          "piece": 1,
+          "source": "第29話_24_002.jpg",
+          "target": "片段39/分镜1",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "あら、春子。まだここにいたの？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.15,
+          "episode_start": 429.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P079B1",
+      "speaker": "春德",
+      "kind": "dialogue",
+      "full_text": "ところで、ここはどういう状況なんだい？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P079B1",
+          "piece": 1,
+          "source": "第29話_24_003.jpg",
+          "target": "片段39/分镜2",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "ところで、ここはどういう状況なんだい？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.53,
+          "episode_start": 433.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P079B2",
+      "speaker": "救援指挥官",
+      "kind": "dialogue",
+      "full_text": "救援班が私より遅いのか？まったく、規律のない連中だ。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P079B2",
+          "piece": 1,
+          "source": "第29話_24_003.jpg",
+          "target": "片段39/分镜2",
+          "speaker": "救援指挥官",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "救援班が私より遅いのか？まったく、規律のない連中だ。",
+          "shot_start": 4.08,
+          "estimated_seconds": 4.98,
+          "episode_start": 437.58,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P080B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "？？！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P080B1",
+          "piece": 1,
+          "source": "第29話_24_004.jpg",
+          "target": "片段40/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "？？！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 1.8,
+          "episode_start": 443.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P081B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "こ、こんにちは！！！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P081B1",
+          "piece": 1,
+          "source": "第29話_25_001.jpg",
+          "target": "片段40/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "こ、こんにちは！！！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.05,
+          "episode_start": 446.8,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P081B2",
+      "speaker": "春德",
+      "kind": "dialogue",
+      "full_text": "私を知っているのかい？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P081B2",
+          "piece": 1,
+          "source": "第29話_25_001.jpg",
+          "target": "片段40/分镜2",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私を知っているのかい？",
+          "shot_start": 3.6,
+          "estimated_seconds": 2.2,
+          "episode_start": 450.1,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P082B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "私は討伐団第三十七期の董白と申します、先輩！！！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P082B1",
+          "piece": 1,
+          "source": "第29話_25_002.jpg",
+          "target": "片段41/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私は討伐団第三十七期の董白と申します、先輩！！！",
+          "shot_start": 0.3,
+          "estimated_seconds": 4.93,
+          "episode_start": 453.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P082B2",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "長官と、あなたのような戦団の大先達に、わざわざお越しいただくとは、一体何事で…？！",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P082B2",
+          "piece": 1,
+          "source": "第29話_25_002.jpg",
+          "target": "片段41/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "長官と、あなたのような戦団の大先達に、",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.7,
+          "episode_start": 459.3,
+          "adapted": false
+        },
+        {
+          "id": "P082B2",
+          "piece": 2,
+          "source": "第29話_25_002.jpg",
+          "target": "片段41/分镜3",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "わざわざお越しいただくとは、一体何事で…？！",
+          "shot_start": 0,
+          "estimated_seconds": 4.75,
+          "episode_start": 463.0,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P083B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "うちのおばあちゃん、知ってるの？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P083B1",
+          "piece": 1,
+          "source": "第29話_25_003.jpg",
+          "target": "片段42/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "うちのおばあちゃん、知ってるの？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.03,
+          "episode_start": 468.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P084B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "何ですって…？あなたのおばあ様？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P084B1",
+          "piece": 1,
+          "source": "第29話_26_001.jpg",
+          "target": "片段42/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "何ですって…？あなたのおばあ様？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.67,
+          "episode_start": 472.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P084B2",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "あんた、まさか…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P084B2",
+          "piece": 1,
+          "source": "第29話_26_001.jpg",
+          "target": "片段42/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あんた、まさか…",
+          "shot_start": 4.5,
+          "estimated_seconds": 2,
+          "episode_start": 476.5,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P086B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "おばあちゃ～ん。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P086B1",
+          "piece": 1,
+          "source": "第29話_26_003.jpg",
+          "target": "片段43/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "おばあちゃ～ん。",
+          "shot_start": 0.3,
+          "estimated_seconds": 2,
+          "episode_start": 483.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P086B2",
+      "speaker": "春德",
+      "kind": "dialogue",
+      "full_text": "おや、かわいい子！最近やけに甘えるねえ。前はこうじゃなかったのに。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P086B2",
+          "piece": 1,
+          "source": "第29話_26_003.jpg",
+          "target": "片段43/分镜1",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "おや、かわいい子！最近やけに甘えるねえ。",
+          "shot_start": 2.55,
+          "estimated_seconds": 4.45,
+          "episode_start": 485.55,
+          "adapted": false
+        },
+        {
+          "id": "P086B2",
+          "piece": 2,
+          "source": "第29話_26_003.jpg",
+          "target": "片段43/分镜2",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "前はこうじゃなかったのに。",
+          "shot_start": 0,
+          "estimated_seconds": 2.45,
+          "episode_start": 490.0,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P087B1",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "あの子、懲らしめて～。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P087B1",
+          "piece": 1,
+          "source": "第29話_27_001.jpg",
+          "target": "片段44/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "あの子、懲らしめて～。",
+          "shot_start": 1,
+          "estimated_seconds": 2.03,
+          "episode_start": 494.0,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P087B2",
+      "speaker": "春子",
+      "kind": "dialogue",
+      "full_text": "私の顔を叩いて…後ろ盾も頼れる人もないクソ女だって…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P087B2",
+          "piece": 1,
+          "source": "第29話_27_001.jpg",
+          "target": "片段44/分镜1",
+          "speaker": "春子",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "私の顔を叩いて…後ろ盾も頼れる人もないクソ女だって…",
+          "shot_start": 3.53,
+          "estimated_seconds": 5.2,
+          "episode_start": 496.53,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P089B1",
+      "speaker": "救援指挥官",
+      "kind": "dialogue",
+      "full_text": "大当たりだな。",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P089B1",
+          "piece": 1,
+          "source": "第29話_27_003.jpg",
+          "target": "片段44/分镜3",
+          "speaker": "救援指挥官",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "大当たりだな。",
+          "shot_start": 0.3,
+          "estimated_seconds": 2,
+          "episode_start": 504.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P090B1",
+      "speaker": "春德",
+      "kind": "dialogue",
+      "full_text": "…そんなことがあったのかい？",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P090B1",
+          "piece": 1,
+          "source": "第29話_27_004.jpg",
+          "target": "片段45/分镜1",
+          "speaker": "春德",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "…そんなことがあったのかい？",
+          "shot_start": 0.3,
+          "estimated_seconds": 3.05,
+          "episode_start": 507.3,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P090B2",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "先輩…そ、それは誤解です…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P090B2",
+          "piece": 1,
+          "source": "第29話_27_004.jpg",
+          "target": "片段45/分镜1",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "对白",
+          "text": "先輩…そ、それは誤解です…",
+          "shot_start": 3.6,
+          "estimated_seconds": 3.12,
+          "episode_start": 510.6,
+          "adapted": false
+        }
+      ]
+    },
+    {
+      "id": "P091B1",
+      "speaker": "董白",
+      "kind": "dialogue",
+      "full_text": "お孫さんのほうが先に…",
+      "adapted": false,
+      "segments": [
+        {
+          "id": "P091B1",
+          "piece": 1,
+          "source": "第29話_28_001.jpg",
+          "target": "片段45/分镜2",
+          "speaker": "董白",
+          "source_kind": "dialogue",
+          "delivery_mode": "画外音",
+          "text": "お孫さんのほうが先に…",
+          "shot_start": 0.3,
+          "estimated_seconds": 2.27,
+          "episode_start": 514.8,
+          "adapted": false
+        }
+      ]
+    }
+  ],
+  "estimated_episode_seconds": 527.0,
+  "utterance_count": 110,
+  "speech_piece_count": 113
+}
