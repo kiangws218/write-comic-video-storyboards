@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "clips": 34,
+    "shots": 83,
+    "seconds": 419.0,
+    "source_refs": 80
+  },
+  "baseline_range": {
+    "clips": 7,
+    "shots": 18,
+    "seconds": 88.0,
+    "source_refs": 18
+  },
+  "optimized_range": {
+    "clips": 8,
+    "shots": 21,
+    "seconds": 102.0,
+    "source_refs": 18
+  },
+  "integrated_full": {
+    "clips": 35,
+    "shots": 86,
+    "seconds": 433.0,
+    "source_refs": 80
+  },
+  "source_node_order_equal": true,
+  "frozen_bubbles_unchanged": 21,
+  "outside_range_six_fields_exact_equal": true,
+  "full_script_scope": "范围外只顺延片段编号，不作新的视觉、对白翻译或艺术复审。"
+}

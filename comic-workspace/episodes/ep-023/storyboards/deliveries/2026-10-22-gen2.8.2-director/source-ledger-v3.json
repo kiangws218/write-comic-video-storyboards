@@ -1,0 +1,2492 @@
+{
+  "version": 3,
+  "skill_version": "2.8.2",
+  "authoring_format": "compact-2.8.2",
+  "source_language": "zh",
+  "look": "二维手绘动画，赛璐璐人物、分层绘景，16:9。现实庭院统一为傍晚：长桌东西向，三人位于桌南侧同一长凳，由东向西依次为青、青梅女、青梅男；木屋在庭院东北侧，朝南的窗墙临着桌边，林带围在外侧。夕阳固定在世界西方低空，约地平线上8°，光由西向东斜射，桌腿与杯的长影投向东。北侧向南拍摄时，西在画面右侧；南侧向北反打时，西在画面左侧。人物转头只改变受光面，不改变光源位置。金橙侧光透过厚云下缘，云影降低强度；蓝紫天光补暗面。现实中的银发、金属、木纹共用这一方向。回忆保留原有软白边、岩壁和遮蔽，使用另一个冷白漫光体系，回到现实立即恢复西来夕照。 青采用银白发、红眼、蓝上衣、白裙白靴；青梅女采用黑发、绿眼、黑灰交领宽袖袍和浅色领边；青梅男采用银灰三槽面甲、黑袍、米白内领，当前桌边服装按原格，既有回忆的状态单独保持。",
+  "panels": [
+    {
+      "image": "第23話_15_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "天空远景横幅，暗云占中央和右侧，左下较亮，无人物。",
+      "source_facts": {
+        "entities": [
+          "云层"
+        ],
+        "actions": [
+          "云层静铺"
+        ],
+        "relations": [
+          "无人物可见"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "暗云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [
+        "离别后青在庭院低落地坐着。青梅女请客试图安慰，转头求助青梅男，男方自嘲没有恋爱经验。青主动追问此前是否发生过什么，插入既有四幅回忆，两人急否认，青仍怀疑。女方转为解释，青把魔王的关注与春子离开相联，但这只是青的推测；男方提醒不能认定青是目标。女方再问双马尾骑士安危，男方以不确定的安慰作答，接外界来者的林海远景。"
+      ],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.主体": "云层"
+      },
+      "anchor_target": "片段1/分镜1",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_15_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "木杯近景在中央，左缘手握杯柄，杯底触桌，杯口液体溅起，云天后景。",
+      "source_facts": {
+        "entities": [
+          "木杯",
+          "手",
+          "桌面",
+          "溅液"
+        ],
+        "actions": [
+          "杯落桌；杯口液体跳起"
+        ],
+        "relations": [
+          "手握杯柄；杯底接触桌面"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "桌面窄边与云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.接触": "手握杯柄，杯底触桌，液体跳起"
+      },
+      "anchor_target": "片段1/分镜2",
+      "narrative_kind": "mixed",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。",
+      "action_reading": {
+        "summary": "手将木杯放落桌面，杯口液体因触桌跃起。",
+        "phase": "contact",
+        "world_motion": "杯向桌面下降后停止，液体先上跃后回落；不涉及人物关键路线。",
+        "screen_motion": "杯向画面下方落桌，液体相对杯口向上。",
+        "grounding": "杯底接触桌面",
+        "basis": "原格的杯底触桌、杯口溅液与接触图形；手主人按导演连接设计，不认作原图已辨。"
+      }
+    },
+    {
+      "image": "第23話_15_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "三人坐桌半身中景；青左低头，青梅女中看青，青梅男右，木杯在左桌沿。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "青梅女",
+          "青梅男",
+          "木杯",
+          "桌"
+        ],
+        "actions": [
+          "青低头；青梅女张口；男面甲向前"
+        ],
+        "relations": [
+          "三人并排坐于桌后"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "桌面、树丛与厚云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "不是啥大餐 但是放开吃吧,我们请客",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "好...谢谢...",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "不是啥大餐 但是放开吃吧,我们请客",
+          "script_text": "ご馳走じゃないけど、遠慮せず食べて。私たちのおごりです。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段1/分镜3",
+          "seconds": 5.4,
+          "start": 1
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "好...谢谢...",
+          "script_text": "うん……ありがとう……。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段1/分镜3",
+          "seconds": 2.8,
+          "start": 6.7
+        }
+      ],
+      "node_state": {
+        "原格.关系": "青左低头，青梅女中张口，青梅男右；三人同桌"
+      },
+      "anchor_target": "片段1/分镜3",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_15_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青梅女左前半身近景，青梅男右后胸像，女侧看男张口、男面甲向女偏。",
+      "source_facts": {
+        "entities": [
+          "青梅女",
+          "青梅男"
+        ],
+        "actions": [
+          "女张口催男；男头向女偏"
+        ],
+        "relations": [
+          "女在前、男在后，肩线重叠"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "树丛与厚云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "喂,快说点什么安慰一下她...!",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "啥?让我说?",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "你明明知道我连女朋友都没有.",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 3,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "喂,快说点什么安慰一下她...!",
+          "script_text": "ねえ、何か言って慰めて……！",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段2/分镜2",
+          "seconds": 3,
+          "start": 0.3
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "啥?让我说?",
+          "script_text": "え？ 僕が？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段2/分镜2",
+          "seconds": 1.2,
+          "start": 3.7
+        },
+        {
+          "id": "b3",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "你明明知道我连女朋友都没有.",
+          "script_text": "彼女もいないって、知ってるでしょ。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段2/分镜2",
+          "seconds": 3.2,
+          "start": 5.3
+        }
+      ],
+      "node_state": {
+        "原格.关系": "女左前侧看男，男右后向女偏头"
+      },
+      "anchor_target": "片段2/分镜2",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_15_005.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "三人斜列半身中景，青脸被刘海遮在左前，青梅女中、男右后，桌沿在下方。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "青梅女",
+          "青梅男",
+          "桌"
+        ],
+        "actions": [
+          "青低头开口；女倾头看青，双手半握在桌前；男向青看"
+        ],
+        "relations": [
+          "三人前后斜列"
+        ]
+      },
+      "background": {
+        "type": "omitted",
+        "description": "浅灰省略背景，窄桌沿可见。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "喂",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "怎么了?",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "那时候真的什么都没有发生吗?",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 3,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "喂",
+          "script_text": "ねえ。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段3/分镜1",
+          "seconds": 1,
+          "start": 0.3
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "怎么了?",
+          "script_text": "どうしたの？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段3/分镜1",
+          "seconds": 2,
+          "start": 1.7
+        },
+        {
+          "id": "b3",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "那时候真的什么都没有发生吗?",
+          "script_text": "あの時、本当に何もなかったの？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段3/分镜1",
+          "seconds": 3.4,
+          "start": 4.1
+        }
+      ],
+      "node_state": {
+        "原格.关系": "青左前遮眼，女中前倾半握双手，男右后摊掌"
+      },
+      "anchor_target": "片段3/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_16_001_a.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "背侧关系中景；裸上身青梅男在左上，青梅女在右下蜷身，巨大褐色手指横压前层。",
+      "source_facts": {
+        "entities": [
+          "青梅男",
+          "青梅女",
+          "巨大褐色手掌"
+        ],
+        "actions": [
+          "两人被手掌包围抓持；青梅女蜷身"
+        ],
+        "relations": [
+          "巨手在两人身前交叠，男背向、女脸被遮"
+        ]
+      },
+      "background": {
+        "type": "graphic",
+        "description": "白色回忆底，边缘软化。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.接触": "两人被巨手包围，男背向左上，女蜷在右下"
+      },
+      "anchor_target": "片段3/分镜2",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_16_001_b.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青梅女侧脸及上身近景在左，圆眼张口，岩壁在右后，亮雾沿下缘。",
+      "source_facts": {
+        "entities": [
+          "青梅女"
+        ],
+        "actions": [
+          "圆眼、张口、脸红汗点"
+        ],
+        "relations": [
+          "侧脸朝右，肩与胸部有裸露"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "右后岩壁与水雾。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.表情": "女圆眼张口，侧脸向右"
+      },
+      "anchor_target": "片段3/分镜3",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_16_001_c.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "局部特写斜向裁切，两侧暗轮廓遮挡，中部原有白亮遮蔽，透明水滴悬在前层。",
+      "source_facts": {
+        "entities": [
+          "局部人体轮廓",
+          "透明水滴"
+        ],
+        "actions": [
+          "水滴在局部前方"
+        ],
+        "relations": [
+          "中部白亮遮蔽覆盖具体细节"
+        ]
+      },
+      "background": {
+        "type": "occluded",
+        "description": "满幅主体与水滴，没有独立实景。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.遮蔽": "中心白亮遮蔽完整，水滴在前"
+      },
+      "anchor_target": "片段3/分镜4",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_16_001_d.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "俯拍双人中景；青梅男在上后，青梅女在下前低头，两组巨大手指环绕躯干。",
+      "source_facts": {
+        "entities": [
+          "青梅男",
+          "青梅女",
+          "巨大手掌"
+        ],
+        "actions": [
+          "两人被抓持，女低头蜷身；皮肤有水滴"
+        ],
+        "relations": [
+          "男后女前，巨手遮压双方"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "右后少量岩面，四周软边。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.接触": "男上后女下前，巨手接触保持，女低头"
+      },
+      "anchor_target": "片段3/分镜5",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_17_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "双人半身中景，青梅女左前举双掌，脸红眼眩，青梅男右后点头，桌边在下方。",
+      "source_facts": {
+        "entities": [
+          "青梅女",
+          "青梅男"
+        ],
+        "actions": [
+          "青梅女螺旋眼、脸红、汗点、张口并举双掌；青梅男面甲旁有重复点头动作线"
+        ],
+        "relations": [
+          "女在前、男在后，双掌朝前"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "树丛、厚云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "啊,没有!真的什么都没发生...!",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "我们发誓!!",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "啊,没有!真的什么都没发生...!",
+          "script_text": "あ、ないです！ 本当に何もなかったです……！",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段4/分镜1",
+          "seconds": 4.8,
+          "start": 0.2
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "我们发誓!!",
+          "script_text": "二人とも誓います！！",
+          "status": "mapped",
+          "speaker_evidence": "宣誓框接在女的连续张口回应下，男只有明确点头标示；尾端不清，按女续说、男以点头附和处理，中等置信，不冒称原文明确齐声。",
+          "target": "片段4/分镜1",
+          "seconds": 2.2,
+          "start": 5.2
+        }
+      ],
+      "node_state": {
+        "原格.表情": "女螺旋眼脸红举双掌，男点头附和"
+      },
+      "anchor_target": "片段4/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_17_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青正面胸像近景居中，身体前倾，双眼压成细线，嘴小开，树丛在后。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "青前倾，双眼压成低平黑色眼形，嘴微开，眉内侧弧度仍可见"
+        ],
+        "relations": [
+          "目光向正前"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "树丛与云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "...是吗?",
+          "render": false
+        }
+      ],
+      "coverage": "single",
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...是吗?",
+          "script_text": "……そう？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段4/分镜2",
+          "seconds": 1.1,
+          "start": 0.6
+        }
+      ],
+      "node_state": {
+        "原格.表情": "青前倾，低平黑色眼形，嘴微开"
+      },
+      "anchor_target": "片段4/分镜2",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_17_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青梅女胸像近景居中偏右，头微倾，嘴闭合浅笑，眼睛朝左前；云天在后。",
+      "source_facts": {
+        "entities": [
+          "青梅女"
+        ],
+        "actions": [
+          "嘴闭合浅笑；头微倾；脸有汗点"
+        ],
+        "relations": [
+          "看向左前"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "厚云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.表情": "女倾头浅笑，圆眼和汗点"
+      },
+      "anchor_target": "片段4/分镜4",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_17_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青胸像近景在左中，头微倾，眼圆向右前，嘴小开，右侧背景留白。",
+      "source_facts": {
+        "entities": [
+          "青"
+        ],
+        "actions": [
+          "青圆眼、嘴微张、面颊汗点，头微倾"
+        ],
+        "relations": [
+          "听向右前"
+        ]
+      },
+      "background": {
+        "type": "omitted",
+        "description": "浅灰底与窄云天，场景省略。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "但如果要简单说下当时的情况的话...",
+          "render": false
+        }
+      ],
+      "coverage": "single",
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "但如果要简单说下当时的情况的话...",
+          "script_text": "ただ、あの時の状況を簡単に言うと……。",
+          "status": "mapped",
+          "speaker_evidence": "重开17_004比较18_002：尾向右画外，同一解释下一回答尾指中间青梅女，修正初始男声猜测。",
+          "target": "片段5/分镜1",
+          "seconds": 4.4,
+          "start": 0.3
+        }
+      ],
+      "node_state": {
+        "原格.表情": "青圆眼微张嘴，面颊汗点"
+      },
+      "anchor_target": "片段5/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_18_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "庭院远景；木屋和两桶在左前，三人在中央后层长桌后，左右空桌延伸，树线和云天在后。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "青梅女",
+          "青梅男",
+          "木屋",
+          "木桶",
+          "长桌",
+          "长凳",
+          "空桌"
+        ],
+        "actions": [
+          "三人坐在长桌后"
+        ],
+        "relations": [
+          "三人聚在一张桌；旁桌空置"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "木屋、桶、长桌凳、树丛、低雾和暗云天。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [],
+      "coverage": "none",
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "node_state": {
+        "原格.关系": "三人同凳同桌，木屋木桶在左，空桌在外围"
+      },
+      "anchor_target": "片段5/分镜2",
+      "narrative_kind": "state",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_18_002.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "三人背侧半身中景，青梅男左缘裁切，青梅女中侧脸，青背发在右前；木墙窗格在后。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "青梅女",
+          "青梅男"
+        ],
+        "actions": [
+          "青梅女侧看青；青背向发问"
+        ],
+        "relations": [
+          "三人坐在木屋窗前，女面向青"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "木屋墙面、窗格、右侧树梢与云天。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "...魔王盯上我了?",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "是的,从我们听到的来说...",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...魔王盯上我了?",
+          "script_text": "……魔王に目をつけられたの？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段6/分镜1",
+          "seconds": 2.9,
+          "start": 0.3
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "是的,从我们听到的来说...",
+          "script_text": "うん、聞いた話だと……。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段6/分镜1",
+          "seconds": 2.6,
+          "start": 3.6
+        }
+      ],
+      "node_state": {
+        "原格.关系": "男左女中青右背发，女侧看青，窗格后景"
+      },
+      "anchor_target": "片段6/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_18_003.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青侧脸近景在右，木杯边在左下前层，脸向左、嘴小开、汗点可见。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "木杯"
+        ],
+        "actions": [
+          "侧看左方；嘴小开；汗点"
+        ],
+        "relations": [
+          "杯边遮下左，脸在右后"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "蓝灰云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "这就是她离开我的原因吗?",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "她认为自己会被卷进这麻烦里面...?",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青",
+          "kind": "inner",
+          "source_text": "这就是她离开我的原因吗?",
+          "script_text": "それで、私から離れたの？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段6/分镜2",
+          "seconds": 2.4,
+          "start": 0.5
+        },
+        {
+          "id": "b2",
+          "speaker": "青",
+          "kind": "inner",
+          "source_text": "她认为自己会被卷进这麻烦里面...?",
+          "script_text": "自分も巻き込まれると思ったのかな……？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段6/分镜2",
+          "seconds": 3.8,
+          "start": 3.6
+        }
+      ],
+      "node_state": {
+        "原格.关系": "青右侧脸向左，嘴微开汗点，杯左前"
+      },
+      "anchor_target": "片段6/分镜2",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_18_004.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "青梅男侧面胸像近景在左，三槽面甲向右下低着，云天占右侧。",
+      "source_facts": {
+        "entities": [
+          "青梅男"
+        ],
+        "actions": [
+          "面甲低向右下"
+        ],
+        "relations": [
+          "侧面头盔与肩同现"
+        ]
+      },
+      "background": {
+        "type": "physical",
+        "description": "厚云天。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "但这也很难明确说他是针对你...",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "因为那时你在昏迷,而那个魔物也没有攻击你.",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "但这也很难明确说他是针对你...",
+          "script_text": "でも、君が狙いだとは言い切れない……。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段7/分镜1",
+          "seconds": 3.8,
+          "start": 0.5
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "因为那时你在昏迷,而那个魔物也没有攻击你.",
+          "script_text": "あの時、君は気を失ってたし、あの魔物も君を攻撃してない。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "segments": [
+            {
+              "target": "片段7/分镜1",
+              "script_text": "あの時、君は気を失ってたし、",
+              "start": 4.8,
+              "seconds": 2.5
+            },
+            {
+              "target": "片段7/分镜2",
+              "script_text": "あの魔物も君を攻撃してない。",
+              "start": 0,
+              "seconds": 3
+            }
+          ]
+        }
+      ],
+      "node_state": {
+        "原格.关系": "男左侧面，面甲向右下低着"
+      },
+      "anchor_target": "片段7/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    },
+    {
+      "image": "第23話_19_001.jpg",
+      "viewed_at_drafting": true,
+      "drafting_resolution": "720p",
+      "renderable_visual": true,
+      "bubble_audit": "pass",
+      "composition_lock": "三人横列半身中景，青左缘裁切，青梅女中间看左，青梅男面甲占右前。",
+      "source_facts": {
+        "entities": [
+          "青",
+          "青梅女",
+          "青梅男"
+        ],
+        "actions": [
+          "青低头；女向左看；男面甲略低"
+        ],
+        "relations": [
+          "三人并排，男靠近镜头"
+        ]
+      },
+      "background": {
+        "type": "omitted",
+        "description": "浅灰省略背景。；当前裁切没有可辨的独立场景细节。",
+        "evidence": "current_panel"
+      },
+      "story_context": [],
+      "non_renderable_terms": [],
+      "page_overlays": [
+        {
+          "kind": "speech_balloon",
+          "source_text": "话说回来,那个双马尾骑士没事吧?",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "鬼知道...",
+          "render": false
+        },
+        {
+          "kind": "speech_balloon",
+          "source_text": "她好歹是个骑士,不会出什么事的.",
+          "render": false
+        }
+      ],
+      "coverage": "shared",
+      "source_bubble_count": 3,
+      "bubbles": [
+        {
+          "id": "b1",
+          "speaker": "青梅女",
+          "kind": "dialogue",
+          "source_text": "话说回来,那个双马尾骑士没事吧?",
+          "script_text": "そういえば、あのツインテールの騎士は無事かな？",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段8/分镜1",
+          "seconds": 4.4,
+          "start": 0.4
+        },
+        {
+          "id": "b2",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "鬼知道...",
+          "script_text": "さあな……。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段8/分镜1",
+          "seconds": 1.5,
+          "start": 5.2
+        },
+        {
+          "id": "b3",
+          "speaker": "青梅男",
+          "kind": "dialogue",
+          "source_text": "她好歹是个骑士,不会出什么事的.",
+          "script_text": "騎士だし、きっと大丈夫でしょ。",
+          "status": "mapped",
+          "speaker_evidence": "当前气泡尾端、人物口形与相邻同场发言顺序；无尾不强配可见人物。",
+          "target": "片段8/分镜1",
+          "seconds": 3.2,
+          "start": 7.2
+        }
+      ],
+      "node_state": {
+        "原格.关系": "青左缘，女中看左，男面甲右前略低"
+      },
+      "anchor_target": "片段8/分镜1",
+      "narrative_kind": "dialogue",
+      "third_round_view": "2026-10-22，实际打开当前代理核对改动原镜，非本次重做第二遍的声明。"
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_15_001.jpg"
+      ],
+      "purpose": "以阴云和风跨过离别后的空白，进入同一傍晚庭院。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "以阴云和风跨过离别后的空白，进入同一傍晚庭院。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "北侧朝南偏西仰拍天空远景，16:9；厚云压住中央及右上，左下保留较薄的蓝紫云隙。固定机位。",
+        "可见动作": "厚云向东缓移，下缘一小段金橙亮边先显露、再被薄云盖浅；中央暗云的层次持续可辨。",
+        "可见背景": "蓝紫色暮空、深靛灰厚云与一线偏金橙的西侧低云缘；云层占满画幅。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳位于世界西方低空，画面右下之外；金橙光由右向左擦亮云的西侧下缘。左下浅亮区来自薄云透射和天光，云底为冷紫漫反射。",
+        "声音设计": "开阔风声延续，近处人声空缺；末段林叶声逐渐靠近。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "天空远景横幅，暗云占中央和右侧，左下较亮，无人物。",
+      "anchor_state": {
+        "原格.主体": "云层"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。"
+    },
+    {
+      "target": "片段1/分镜2",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_15_002.jpg"
+      ],
+      "purpose": "用一次落杯把空旷情绪收进桌边，保留溅液与接触重音。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "用一次落杯把空旷情绪收进桌边，保留溅液与接触重音。",
+      "state_changes": {
+        "现实.杯": "青前方桌缘静置；杯柄朝东，左手已松开"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南的贴桌低机位近景；木杯在中央，握柄的手从画面左缘入，桌沿在下方。固定镜头，杯口和杯底均在画内。",
+        "可见动作": "0-0.5s：青的左手握住木杯柄，将杯降向桌面。\n0.5-1s：杯底落桌，杯口两股液体向上跃起，杯身顿住，握柄的手没有松脱。\n1-2s：液体落回杯内，手指放开杯柄，左手收向青的右前臂；杯留在青面前，余波消退。",
+        "可见背景": "深褐木桌形成下方窄层，后方是低对比蓝紫云天；杯体为暖褐木质。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳由世界西向东照入，北侧机位中为画面右向左的低侧光；杯右缘木纹和液体西侧边缘泛金，杯与手在桌上的长影投向画面左方。蓝紫天光托住杯左侧。",
+        "声音设计": "杯底一声短实的木响，紧接两点液体回落声；指腹离开杯柄有细微擦声，林叶声连续。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "木杯近景在中央，左缘手握杯柄，杯底触桌，杯口液体溅起，云天后景。",
+      "anchor_state": {
+        "原格.接触": "手握杯柄，杯底触桌，液体跳起"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "左手持杯尚未落桌",
+          "beats": [
+            "杯落桌，液体越过杯缘后回落",
+            "松柄后手收回抱臂"
+          ],
+          "coupling": "以一次真实接触建立桌边空间，收手接入青低头抱臂的原格。",
+          "landing": "杯静置，左手回向右前臂"
+        },
+        "details": [
+          "0-0.5s：青的左手握住木杯柄，将杯降向桌面。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 0,
+            "acting_seconds": 2,
+            "concurrent": true
+          }
+        ]
+      },
+      "meaning_excerpt": "杯底落桌，杯口两股液体向上跃起"
+    },
+    {
+      "target": "片段1/分镜3",
+      "duration": 9.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_15_003.jpg"
+      ],
+      "purpose": "主动招待没有驱散青的失落；用三人的不同时机表现关心落空。",
+      "characters": [
+        "青",
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "主动招待没有驱散青的失落；用三人的不同时机表现关心落空。",
+      "state_changes": {
+        "青.任务": "抱臂低头，已答谢，未接上招待",
+        "青梅女.任务": "试着邀请但未得到情绪回应",
+        "青梅男.任务": "注意青的反应"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南，平视三人半身中景；青在左，青梅女居中，青梅男在右，桌面与青面前的木杯贯穿下沿。固定构图，三人的手臂和肩线可见。",
+        "可见动作": "0-1s：青双臂已经抱拢伏在桌缘，头仍垂着。青梅女先观察她，随后从腰背探近，寻找被刘海挡住的眼睛；青梅男面甲转向青。\n1-6.5s：青梅女带着试探的笑说话，说到「私たちのおごりです。」时，把一只手掌摊向桌面，身体停在邀请的距离。青没有跟着抬头；青梅男原本要顺势点头，看见她不动便止住。\n6.5-9.5s：青只把下颌抬到足够应答的位置，轻声答谢，随后肩背重新沉下，刘海依旧遮眼；青梅女的笑停在脸上，伸出的手没再往前送。",
+        "可见背景": "深褐桌面、低矮墨绿灌木及靛紫厚云；木杯保持在青的左前侧，远林低对比。",
+        "台词与语气": "青梅女：“ご馳走じゃないけど、遠慮せず食べて。私たちのおごりです。”（1秒入句，关切中试着明快，5.4秒）。\n青：“うん……ありがとう……。”（6.7秒入句，低声，2.8秒，句内停顿保留）。",
+        "光影布光": "夕阳固定由世界西向东，北侧机位中由画面右侧低角度照入；青梅男西侧盔缘金亮、面甲槽内保持深色，青梅女朝西一侧颊面与青银发右缘受暖光。青俯首后的眼部暗面由刘海遮挡形成；蓝紫天光保留衣物褶层。",
+        "声音设计": "林叶声保持；探身时宽袖擦过腰侧，青一口轻而短的呼气落在回答前；桌上木杯静置无再次碰响。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "三人坐桌半身中景；青左低头，青梅女中看青，青梅男右，木杯在左桌沿。",
+      "anchor_state": {
+        "原格.关系": "青左低头，青梅女中张口，青梅男右；三人同桌"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青低头抱臂，女方试图重新建立交流",
+          "beats": [
+            "女方探近邀请",
+            "青勉强答谢后仍低头",
+            "男方止住顺势附和"
+          ],
+          "coupling": "女方的主动开放与青的封闭姿态不对拍，催促同伴的念头由此成立。",
+          "landing": "青不抬眼，女方手掌滞住"
+        },
+        "details": [
+          "0-1s：青双臂已经抱拢伏在桌缘，头仍垂着。青梅女先观察她，随后从腰背探近，寻找被刘海挡住的眼睛；青梅男面甲转向青。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 8.2,
+            "acting_seconds": 9.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段2/分镜1",
+      "duration": 3,
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "招待之后留出真实空白：观察青抱臂和杯，令接下来的催促有起因。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "招待之后留出真实空白：观察青抱臂和杯，令接下来的催促有起因。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "北侧朝南偏东，桌面高度的手臂近景；木杯占左前景，青抱拢的双前臂与低垂发卷在右后，不取完整脸。固定机位。",
+        "可见动作": "青把左手更深地收进右肘旁，抱拢的双臂没有向桌中央打开；杯面平静地映着一小片暖色天光。她轻呼出一口气，发卷只随肩背下沉落低一点。",
+        "可见背景": "深褐桌面横向木纹清楚，桌外墨绿树影散成色块，杯在原位。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳由世界西向东，北侧机位中暖光从画面右侧斜入；杯西缘与衣袖右侧形成窄暖边，桌面长影向画面左方拖出。天光为冷紫填充。",
+        "声音设计": "杯面已平静；近处衣袖轻擦，青呼气后只剩林叶声，画外青梅女的一次浅吸气引出切镜。"
+      },
+      "derived_from": [
+        "第23話_15_003.jpg",
+        "第23話_15_004.jpg"
+      ],
+      "creative_additions": [
+        "招待之后留出真实空白：观察青抱臂和杯，令接下来的催促有起因。"
+      ],
+      "performance": {
+        "card": {
+          "opening": "青抱着双臂未进食，杯静置",
+          "beats": [
+            "手更深收进肘旁，余波结束"
+          ],
+          "coupling": "伸手与递话都没有换来青的主动参与；画外女方开始求助同伴。",
+          "landing": "青保持封闭坐姿"
+        },
+        "details": [
+          "青把左手更深地收进右肘旁，抱拢的双臂没有向桌中央打开；杯面平静地映着一小片暖色天光。她轻呼出一口气，发卷只随肩背下沉落低一点。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 0,
+            "acting_seconds": 3,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段2/分镜2",
+      "duration": 9,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_15_004.jpg"
+      ],
+      "purpose": "女方把安慰任务推给男方，男方的窘迫由身体和回话承担。",
+      "characters": [
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "女方把安慰任务推给男方，男方的窘迫由身体和回话承担。",
+      "state_changes": {
+        "青梅女.任务": "侧向同伴催促安慰",
+        "青梅男.任务": "窘迫自嘲，掌心仍向上"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南略偏西，双人半身近景；青梅女在左前，青梅男在右后，肩线交叠，画幅下缘容纳男方摊开的手。固定机位。",
+        "可见动作": "0-3.5s：青梅女从看青的方向迅速转头，肩背也带向青梅男，宽袖晚半拍跟上；她压低声催促，眉稍提、嘴张开，继续侧看他。\n3.5-5s：男方面甲短促转向她，上身收了一下，一手向她摊开；反问时手掌停在半途。\n5-9s：他说后一句时，摊掌缓缓转为自嘲的示意，面甲略低。女方并未跟着笑，嘴闭上后仍侧看他；末尾男方的手保持在两人之间，还没有收回。",
+        "可见背景": "低置的墨绿树梢与靛紫厚云天，衣物是黑灰外袍与米白领边；男方穿黑色宽袖休息袍，银灰面甲保留三道横槽。",
+        "台词与语气": "青梅女：“ねえ、何か言って慰めて……！”（0.3秒入句，压低声催促，3秒）。\n青梅男：“え？ 僕が？”（3.7秒入句，年轻男声，1.2秒）。\n青梅男：“彼女もいないって、知ってるでしょ。”（5.3秒入句，自嘲、稍慢，3.2秒）。",
+        "光影布光": "夕阳从世界西向东照射，北侧机位中为画面右向左；青梅男西侧盔面形成窄金橙反光，青梅女朝西一侧颊面偏暖。脸部朝向变化仅改变明暗分界；冷紫天光保留两人黑袍层次。",
+        "声音设计": "转肩时衣袖短促一擦，男方收肩时布料轻绷；风声维持距离，反问前有很短的吸气。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青梅女左前半身近景，青梅男右后胸像，女侧看男张口、男面甲向女偏。",
+      "anchor_state": {
+        "原格.关系": "女左前侧看男，男右后向女偏头"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "女方的安慰落空，转而向同伴求助",
+          "beats": [
+            "女方肩背转向催促",
+            "男方面甲转向、收肩摊掌",
+            "女方未被自嘲带开注意"
+          ],
+          "coupling": "女方把任务推过去，男方只能承认自己没有经验，青随后打断这一小段。",
+          "landing": "女方侧看男方，男方手仍摊着"
+        },
+        "details": [
+          "0-3.5s：青梅女从看青的方向迅速转头，肩背也带向青梅男，宽袖晚半拍跟上；她压低声催促，眉稍提、嘴张开，继续侧看他。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 7.4,
+            "acting_seconds": 9,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段3/分镜1",
+      "duration": 9,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_15_005.jpg"
+      ],
+      "purpose": "青主动接管话题，两人的注意先后转回她，完整承载三轮问答。",
+      "characters": [
+        "青",
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "青主动接管话题，两人的注意先后转回她，完整承载三轮问答。",
+      "state_changes": {
+        "青.任务": "低头主动追问往事",
+        "青梅女.任务": "前倾半握双手，未立刻回答",
+        "青梅男.任务": "面向青，摊掌停住"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南的斜列三人半身中景；青的低垂刘海、鼻尖和嘴在左前放大，青梅女中层、青梅男右后。起幅容纳三人，随青梅女转向青横移约一掌宽，落在女方前倾、双手半握、男方摊掌仍可见的构图。",
+        "可见动作": "0-1.5s：青保持低头抱臂，却主动开口；青梅女先转眼、再把肩背从男方收回来。青梅男迟半拍将面甲转向青，摊开的手没有重起一次动作。\n1.5-4s：青梅女前倾回应，双手由松开收成停在腹前的半握姿态，目光落向青被刘海挡住的眼睛。\n4-7.5s：青问完整句，下颌稍向两人转来，但眼睛继续藏在刘海下；女方维持前倾，笑意逐渐绷住，男方手掌停在半空。\n7.5-9s：问句落下后，女方嘴微张却没有立即答，男方面甲也停止偏转；两人身上的小幅余动依次停下。",
+        "可见背景": "桌沿横过下方；树丛简化为低对比墨绿，后方靛紫暮空形成平静底层。",
+        "台词与语气": "青：“ねえ。”（0.3秒入句，轻而直接，1秒）。\n青梅女：“どうしたの？”（1.7秒入句，立即关心，2秒）。\n青：“あの時、本当に何もなかったの？”（4.1秒入句，确认意味稍重，3.4秒）。\n（沉默1.5秒）",
+        "光影布光": "夕阳固定从世界西照向东，北侧机位中来自画面右侧低空；青银发右缘受金光，刘海下眼部继续被遮；青梅女朝西一侧颊面明亮，男方盔面反光位置随转头滑动，入射方向不变。冷紫天光填充左侧。",
+        "声音设计": "女方转身带起袖口声；问句结束后近处衣料声止住，远林叶声仍轻轻延续。切回忆时环境声压低。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "三人斜列半身中景，青脸被刘海遮在左前，青梅女中、男右后，桌沿在下方。",
+      "anchor_state": {
+        "原格.关系": "青左前遮眼，女中前倾半握双手，男右后摊掌"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "男方手仍摊着，女方注意在他身上，青低头",
+          "beats": [
+            "青短唤打断",
+            "女先转向并回答，男后转",
+            "完整疑问使两人停住"
+          ],
+          "coupling": "两人被青主动发问拉回；先听完疑问，再出现紧绷和记忆插入。",
+          "landing": "青仍遮眼，两人朝她僵住半拍"
+        },
+        "details": [
+          "0-1.5s：青保持低头抱臂，却主动开口；青梅女先转眼、再把肩背从男方收回来。青梅男迟半拍将面甲转向青，摊开的手没有重起一次动作。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.4,
+            "acting_seconds": 9,
+            "concurrent": true
+          }
+        ]
+      },
+      "silences": [
+        {
+          "start": 7.5,
+          "seconds": 1.5
+        }
+      ]
+    },
+    {
+      "target": "片段3/分镜2",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_16_001_a.jpg"
+      ],
+      "purpose": "保留第一幅回忆的背侧关系与既存抓持，不扩写往事。",
+      "characters": [
+        "青梅男",
+        "青梅女"
+      ],
+      "risk_flags": [],
+      "risk_basis": "保留第一幅回忆的背侧关系与既存抓持，不扩写往事。",
+      "state_changes": {
+        "叙述.层级": "回忆",
+        "回忆.接触": "巨手包围两人，既存接触保持"
+      },
+      "fields": {
+        "镜头设计": "回忆，固定背侧关系中景；青梅男背部在左上，青梅女蜷在右下，巨大手指横过前景，人物前后遮挡关系保持。柔白边由四周收进画面。",
+        "可见动作": "回忆画面从柔白边中浮现，两人已经处于被巨大手掌包围抓持的状态。女方保持蜷身，男方背向，接触持续；画面只留极轻的呼吸起伏。",
+        "可见背景": "乳白回忆底场，外围软白边；巨手保持深褐固有色。",
+        "台词与语气": "无台词。",
+        "光影布光": "本镜为回忆，采用软白漫光，方向不沿用现实庭院；肤色与深褐手掌低反差，原有遮挡完整。",
+        "声音设计": "现实林叶声低通压远，低闷空气声短暂进入。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "背侧关系中景；裸上身青梅男在左上，青梅女在右下蜷身，巨大褐色手指横压前层。",
+      "anchor_state": {
+        "原格.接触": "两人被巨手包围，男背向左上，女蜷在右下"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "boundary": {
+        "from": "片段3/分镜1",
+        "kind": "ellipsis",
+        "reason": "问题后的回忆插入，呈现既有过去状态，不是现实人物离席或重新被抓。"
+      }
+    },
+    {
+      "target": "片段3/分镜3",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_16_001_b.jpg"
+      ],
+      "purpose": "保持受惊面容的视觉重音。",
+      "characters": [
+        "青梅女"
+      ],
+      "risk_flags": [],
+      "risk_basis": "保持受惊面容的视觉重音。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "回忆，固定侧脸近景；青梅女在左面朝右，圆睁的眼和张口占主体，右后留岩壁。下缘收在肩线，格外部分以软白边过渡。",
+        "可见动作": "青梅女维持圆睁眼与张口的受惊表情，一次短吸气使下颌紧住；发束带着前一状态的轻微余动，身体受困状态持续。",
+        "可见背景": "右后为冷灰褐岩壁，凹缝深暗，低处保留淡白水雾与回忆软边。",
+        "台词与语气": "无台词。",
+        "光影布光": "回忆内冷白漫反射照亮面部，眼角与汗点有小而清楚的高光；岩壁低反差，区别于现实的西来金橙夕照。",
+        "声音设计": "一声短吸气，低闷水声持续。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青梅女侧脸及上身近景在左，圆眼张口，岩壁在右后，亮雾沿下缘。",
+      "anchor_state": {
+        "原格.表情": "女圆眼张口，侧脸向右"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。"
+    },
+    {
+      "target": "片段3/分镜4",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_16_001_c.jpg"
+      ],
+      "purpose": "保留原有遮蔽和水滴图像，不补全遮蔽下内容。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "保留原有遮蔽和水滴图像，不补全遮蔽下内容。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "回忆，固定斜向局部特写；两侧暗轮廓分别压住上下边缘，中心既有柔边白亮遮蔽居中，透明水滴在右前层。",
+        "可见动作": "前层透明水滴沿原有方向轻移，中心白亮遮蔽完整稳定，两侧轮廓保持既有位置。",
+        "可见背景": "独立背景完全被主体和原有白亮遮蔽占据。",
+        "台词与语气": "无台词。",
+        "光影布光": "回忆冷白光，水滴边缘有细小白色反光；中心遮蔽保持不透，周围暗面为冷灰。",
+        "声音设计": "一声极短水响，低闷环境声延续。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "局部特写斜向裁切，两侧暗轮廓遮挡，中部原有白亮遮蔽，透明水滴悬在前层。",
+      "anchor_state": {
+        "原格.遮蔽": "中心白亮遮蔽完整，水滴在前"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。"
+    },
+    {
+      "target": "片段3/分镜5",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_16_001_d.jpg"
+      ],
+      "purpose": "以第二个关系构图收住回忆，随即回到否认。",
+      "characters": [
+        "青梅男",
+        "青梅女"
+      ],
+      "risk_flags": [],
+      "risk_basis": "以第二个关系构图收住回忆，随即回到否认。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "回忆，固定俯拍双人中景；青梅男上后、青梅女下前低头，巨大手指分布在两侧和前层。接触关系完整，边缘柔白。",
+        "可见动作": "两人保持已经成立的受困蜷缩状态，青梅女低着头，青梅男面甲朝前；少量水滴滑落，巨大手掌的既存接触保持稳定。末尾软白边略收拢，下一镜硬切现实。",
+        "可见背景": "冷灰褐岩面只在右后露出一层，四周软白边。",
+        "台词与语气": "无台词。",
+        "光影布光": "回忆用冷白漫光，面甲和水滴反光清楚，巨手深褐暗部保留轮廓；现实夕照在下一镜恢复。",
+        "声音设计": "低闷水声收短，现实叶声在末尾先进入少许。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "俯拍双人中景；青梅男在上后，青梅女在下前低头，两组巨大手指环绕躯干。",
+      "anchor_state": {
+        "原格.接触": "男上后女下前，巨手接触保持，女低头"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。"
+    },
+    {
+      "target": "片段4/分镜1",
+      "duration": 7.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_17_001.jpg"
+      ],
+      "purpose": "现实的急否认撞破回忆，保留螺旋眼、脸红和两人不同的回应方式。",
+      "characters": [
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "现实的急否认撞破回忆，保留螺旋眼、脸红和两人不同的回应方式。",
+      "state_changes": {
+        "叙述.层级": "现实",
+        "青梅女.任务": "双掌前举，急否认后宣誓",
+        "青梅男.任务": "已收摊掌，以点头附和"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南，双人半身中景；青梅女左前、青梅男右后，下缘容纳女方举起的双掌与男方桌侧手臂。固定机位，直接从软边回忆切回完整实景。",
+        "可见动作": "0-1s：青梅女双掌从腹前猛地抬至胸前，掌心朝青，肩背短促弹起；螺旋眼、脸红和汗点同时显露。\n1-5s：她急着否认，双掌来回摆过一小段后停在前方；青梅男先收起摊着的手，再连续点头两次，第二次幅度较小，身上也保留汗点。\n5-7.5s：女方接着宣誓，重音处双掌绷直；男方面甲停在一次点头后的低位，随即回到能看向青的角度。两人肩膀仍比平常提起。",
+        "可见背景": "墨绿树丛、靛紫厚云天和下方深褐桌缘，回忆白边已经退出。",
+        "台词与语气": "青梅女：“あ、ないです！ 本当に何もなかったです……！”（0.2秒入句，急而不含糊，4.8秒）。\n青梅女：“二人とも誓います！！”（5.2秒入句，短促强调，2.2秒）。",
+        "光影布光": "恢复现实傍晚：夕阳固定由世界西向东，北侧机位中从画面右侧低角度照入；盔面西缘窄金亮，女方朝西一侧颊面偏暖，脸红是表情色而非新光源。冷紫天光填充双掌暗面。",
+        "声音设计": "双袖猛抬后短促一响；男方点头伴很轻的盔甲接合声，两次间隔不等。林叶声恢复正常频段。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "双人半身中景，青梅女左前举双掌，脸红眼眩，青梅男右后点头，桌边在下方。",
+      "anchor_state": {
+        "原格.表情": "女螺旋眼脸红举双掌，男点头附和"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "回忆后的现实两人仍坐在桌边",
+          "beats": [
+            "女方双掌上举、螺旋眼急否认",
+            "男方先收手再点头",
+            "女方续说宣誓后双掌绷直"
+          ],
+          "coupling": "女方用话与双掌抢先解释，男方只用点头附和，不给他新增台词。",
+          "landing": "两人仍紧张坐着，女方双掌在胸前"
+        },
+        "details": [
+          "0-1s：青梅女双掌从腹前猛地抬至胸前，掌心朝青，肩背短促弹起；螺旋眼、脸红和汗点同时显露。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 7.0,
+            "acting_seconds": 7.5,
+            "concurrent": true
+          }
+        ]
+      },
+      "boundary": {
+        "from": "片段3/分镜5",
+        "kind": "ellipsis",
+        "reason": "结束回忆返回同一现实桌边；衣物、座位与杯保持现实连续，回忆接触不转移到现实。"
+      }
+    },
+    {
+      "target": "片段4/分镜2",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_17_002.jpg"
+      ],
+      "purpose": "青从低头转为主动逼问，保留原格半垂成横线的怀疑眼形。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "青从低头转为主动逼问，保留原格半垂成横线的怀疑眼形。",
+      "state_changes": {
+        "青.任务": "前倾观察，眼形收窄，等待回答"
+      },
+      "fields": {
+        "镜头设计": "西偏北侧朝青正面拍胸像近景，青居中，桌外树丛压低；固定机位，两侧尖耳和前倾肩线均可见。",
+        "可见动作": "青从抱臂坐姿探身到桌前，领带向前垂落；双眼收成低平黑色眼形，内侧眉形仍保留抬起的弧度。她轻问一句，嘴随后合住，维持前倾距离观察对方。",
+        "可见背景": "低置墨绿树梢与靛紫暮空，云层不作速度背景。",
+        "台词与语气": "青：“……そう？”（0.6秒入句，低而带怀疑，1.1秒）。",
+        "光影布光": "夕阳来自世界西方；西偏北机位中为画面右侧略偏前方，勾亮银发外缘。脸面由蓝紫天光填充，刘海投影仍可辨认，眼部不被压成额外黑影。",
+        "声音设计": "衣领随前倾轻擦，叶声在短问后保持低音量。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青正面胸像近景居中，身体前倾，双眼压成细线，嘴小开，树丛在后。",
+      "anchor_state": {
+        "原格.表情": "青前倾，低平黑色眼形，嘴微开"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青刚听完否认和宣誓",
+          "beats": [
+            "前倾、收窄眼形",
+            "短问后维持距离"
+          ],
+          "coupling": "她恢复主动交流的身体速度，却把主动性用在怀疑上；对面必须承受这次等待。",
+          "landing": "青前倾，盯着两人"
+        },
+        "details": [
+          "青从抱臂坐姿探身到桌前，领带向前垂落；双眼收成低平黑色眼形，内侧眉形仍保留抬起的弧度。她轻问一句，嘴随后合住，维持前倾距离观察对方。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 1.1,
+            "acting_seconds": 2.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段4/分镜3",
+      "duration": 1.5,
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "让否认后的尴尬真正发生，给青梅女接下来的勉强笑容留出动机。",
+      "characters": [
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "让否认后的尴尬真正发生，给青梅女接下来的勉强笑容留出动机。",
+      "state_changes": {
+        "青梅女.任务": "双掌降至胸下，想笑又停",
+        "青梅男.任务": "停止点头，坐直僵住"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南，桌边双人中景，比急否认镜更宽；两人腰背、女方胸前双掌与桌沿同时可见，青在画外东侧。固定机位。",
+        "可见动作": "青梅女在青的注视下把双掌慢慢放至胸下，两手停在尚未落桌的位置；青梅男没有再点头，已坐直的肩线僵住。女方嘴角刚想抬起，先停了一拍。",
+        "可见背景": "深褐桌沿在前，墨绿树丛和靛紫厚云在后，两人座位保持。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳由世界西向东，北侧机位中金橙光从画面右侧斜入；两人的西侧轮廓窄亮，冷紫天光保留掌心、衣褶与面甲暗面。",
+        "声音设计": "女方双袖下落的一声细擦后安静下来，男方的盔甲接合声已经停下，远叶声持续。"
+      },
+      "derived_from": [
+        "第23話_17_001.jpg",
+        "第23話_17_002.jpg",
+        "第23話_17_003.jpg"
+      ],
+      "creative_additions": [
+        "让否认后的尴尬真正发生，给青梅女接下来的勉强笑容留出动机。"
+      ],
+      "performance": {
+        "card": {
+          "opening": "女方双掌尚在前，男方刚结束点头",
+          "beats": [
+            "双掌慢降而未落桌",
+            "男方不再点头，女方试图挤出笑"
+          ],
+          "coupling": "青的问题没有得到更多解释，两人先承受短暂无言，女方随后选择缓和气氛。",
+          "landing": "女方表情尚未恢复笑，双掌低于胸口"
+        },
+        "details": [
+          "青梅女在青的注视下把双掌慢慢放至胸下，两手停在尚未落桌的位置；青梅男没有再点头，已坐直的肩线僵住。女方嘴角刚想抬起，先停了一拍。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 0,
+            "acting_seconds": 1.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段4/分镜4",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_17_003.jpg"
+      ],
+      "purpose": "以不完全放松的笑把窘迫转为解释，不把人物演成突然轻松。",
+      "characters": [
+        "青梅女"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "以不完全放松的笑把窘迫转为解释，不把人物演成突然轻松。",
+      "state_changes": {
+        "青梅女.任务": "双手落桌前，勉强浅笑，准备解释"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南偏西的胸像近景，青梅女居中偏右，保留单束马尾与微倾头的轮廓；固定构图。16:9在左侧补出窄层暮空，面部仍为重点。",
+        "可见动作": "青梅女合拢张着的嘴，嘴角挤出略不对称的浅笑；眼睛恢复圆形但仍看着青，面颊汗点保留。她将头稍稍倾向青，双手继续落到桌前，肩膀只放下一点。",
+        "可见背景": "靛紫厚云天形成低对比层，低处是虚化墨绿树梢。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳固定从世界西向东，北侧机位中从画面右侧照亮朝西一侧颊面和马尾边缘，左颊以蓝紫天光填充。汗点为小高光，脸色保持自然。",
+        "声音设计": "青梅女一口很轻的呼气，衣袖落在桌前的窸窣声；林叶风声保持。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青梅女胸像近景居中偏右，头微倾，嘴闭合浅笑，眼睛朝左前；云天在后。",
+      "anchor_state": {
+        "原格.表情": "女倾头浅笑，圆眼和汗点"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "女方已经放低双掌，却仍承受青的怀疑",
+          "beats": [
+            "嘴角从停顿中挤出浅笑",
+            "头稍倾近，肩只松一点"
+          ],
+          "coupling": "以尴尬而有限的笑缓和交流，不能抹掉刚才的紧张。",
+          "landing": "浅笑与汗点并存，眼睛看青"
+        },
+        "details": [
+          "青梅女合拢张着的嘴，嘴角挤出略不对称的浅笑；眼睛恢复圆形但仍看着青，面颊汗点保留。她将头稍稍倾向青，双手继续落到桌前，肩膀只放下一点。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 0,
+            "acting_seconds": 2,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段5/分镜1",
+      "duration": 5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_17_004.jpg"
+      ],
+      "purpose": "解释从画外进入，青由怀疑转为认真接收信息。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "解释从画外进入，青由怀疑转为认真接收信息。",
+      "state_changes": {
+        "青.任务": "退回坐姿，睁圆眼认真听"
+      },
+      "fields": {
+        "镜头设计": "西偏北侧朝青正面偏侧的胸像近景；青居中偏左，头微倾向西侧的说话人，双眼和尖耳轮廓完整。固定机位。",
+        "可见动作": "青从前倾距离缓慢退回一些，听到解释开头才把压低的眼睑打开，圆眼、微张嘴和面颊汗点显露出来；她的身体停止往前逼近，视线仍落在青梅女方向。领带随上身退回后贴近胸前。",
+        "可见背景": "低对比墨绿树梢与蓝紫暮空，格框外的肩部空间按同一庭院补全。",
+        "台词与语气": "青梅女（画外音）：“ただ、あの時の状況を簡単に言うと……。”（0.3秒入句，谨慎解释，4.4秒）。",
+        "光影布光": "夕阳由世界西向东，西偏北机位中位于画面右前侧，银发西缘与朝西一侧颊面偏金；脸面用蓝紫天光提亮，眼中普通高光恢复，汗点细小。",
+        "声音设计": "衣襟随后退轻响，林叶声与女方画外声音处于同一现实距离。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青胸像近景在左中，头微倾，眼圆向右前，嘴小开，右侧背景留白。",
+      "anchor_state": {
+        "原格.表情": "青圆眼微张嘴，面颊汗点"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青仍前倾怀疑，女方已准备说明",
+          "beats": [
+            "听到解释后停止逼近",
+            "退回、睁眼，汗点仍在"
+          ],
+          "coupling": "声画分离以听者的变化承载女方的话；青的理解发生在听到之后。",
+          "landing": "青坐回一些，圆眼听着"
+        },
+        "details": [
+          "青从前倾距离缓慢退回一些，听到解释开头才把压低的眼睑打开，圆眼、微张嘴和面颊汗点显露出来；她的身体停止往前逼近，视线仍落在青梅女方向。领带随上身退回后贴近胸前。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 4.4,
+            "acting_seconds": 5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段5/分镜2",
+      "duration": 5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_18_001.jpg"
+      ],
+      "purpose": "从面部压力放回庭院尺度，以安静远景过渡到下一问答。",
+      "characters": [
+        "青",
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "从面部压力放回庭院尺度，以安静远景过渡到下一问答。",
+      "state_changes": {},
+      "fields": {
+        "镜头设计": "北侧朝南的三人中远景起幅，沿原轴缓慢后退约两米；木屋与两只木桶由画面左侧进入，外侧空桌和长凳依次露出。落幅为庭院远景：三人聚在中央后层，木屋在左，西侧厚云亮区在右上。",
+        "可见动作": "三人仍坐在同一长凳，青比先前略坐直，青梅女的手已落到桌前，青梅男面甲朝两人。开头女方把刚才解释的尾息收住，随后三人安静地消化这句话；低雾沿林带缓慢横移。",
+        "可见背景": "东北侧灰褐木屋和木桶、深褐长桌长凳，四周墨绿林带及低雾；西侧厚云后有暖白亮区，天空为蓝紫暮色。",
+        "台词与语气": "无台词。",
+        "光影布光": "夕阳固定在世界西方低空，北侧机位中从画面右侧照向左侧；桌腿和木桶的长影向东，即画面左侧伸出。右上厚云亮区为云层透射，不另设顶光；屋檐边和薄雾西缘微暖，三人暗面由天光与桌面反射托住。",
+        "声音设计": "近处衣料细声随拉远退去，风声和林叶声逐渐铺开，远处木构轻响；不补解释性旁白。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "庭院远景；木屋和两桶在左前，三人在中央后层长桌后，左右空桌延伸，树线和云天在后。",
+      "anchor_state": {
+        "原格.关系": "三人同凳同桌，木屋木桶在左，空桌在外围"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "三人仍在桌边，女方已经说完解释引句",
+          "beats": [
+            "保持各自当前坐姿，气息收住",
+            "远景留出共同消化信息的空白"
+          ],
+          "coupling": "摄影机退出谈话距离，让下一问句从安静中生出。",
+          "landing": "三人仍同坐，无人离席"
+        },
+        "details": [
+          "三人仍坐在同一长凳，青比先前略坐直，青梅女的手已落到桌前，青梅男面甲朝两人。开头女方把刚才解释的尾息收住，随后三人安静地消化这句话；低雾沿林带缓慢横移。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 0,
+            "acting_seconds": 5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段6/分镜1",
+      "duration": 6.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_18_002.jpg"
+      ],
+      "purpose": "明确反打后的地理关系，接住青对魔王的直接疑问。",
+      "characters": [
+        "青",
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "明确反打后的地理关系，接住青对魔王的直接疑问。",
+      "state_changes": {
+        "青.任务": "向西转头，问魔王是否盯上自己",
+        "青梅女.任务": "听完问题后点头确认",
+        "青梅男.任务": "坐听二人对话"
+      },
+      "fields": {
+        "镜头设计": "南侧朝北的背侧三人半身中景；青梅男在左缘，青梅女居中露侧脸，青的银发背面在右前。木屋南侧墙面的窗格保持在三人后方，固定机位。",
+        "可见动作": "青稍向西转头向青梅女发问，背发随颈肩转动滑过衣领；青梅女看着她，先保持静听，在听完整个问题后才轻点一次头回答。男方面甲转向女方与青之间，手臂仍靠近桌侧。",
+        "可见背景": "灰褐木墙、深色窗格与偏冷的窗面，右侧露出一小层墨绿树梢和暮空；窗格不自发光。",
+        "台词与语气": "青：“……魔王に目をつけられたの？”（0.3秒入句，低声难以置信，2.9秒）。\n青梅女：“うん、聞いた話だと……。”（3.6秒入句，谨慎确认，2.6秒）。",
+        "光影布光": "夕阳仍在世界西方，南侧向北反打后位于画面左侧，光由左向右照入；青梅男左侧盔缘和青梅女朝西的侧脸暖亮，青银发左缘受金光。木墙凸起西侧亮、东侧投影，蓝紫天光补窗下暗部。",
+        "声音设计": "转头时发束与衣领轻擦，女方回答前有很短的吸气；风声绕过木屋后稍闷，林叶仍在远处。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "三人背侧半身中景，青梅男左缘裁切，青梅女中侧脸，青背发在右前；木墙窗格在后。",
+      "anchor_state": {
+        "原格.关系": "男左女中青右背发，女侧看青，窗格后景"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青已听到女方的解释开头，三人同坐",
+          "beats": [
+            "青侧转提出疑问",
+            "女方听完再点头回答"
+          ],
+          "coupling": "女方的答话使青把危机与刚才的离别联系起来。",
+          "landing": "女方说完，青停在侧向她的朝向"
+        },
+        "details": [
+          "青稍向西转头向青梅女发问，背发随颈肩转动滑过衣领；青梅女看着她，先保持静听，在听完整个问题后才轻点一次头回答。男方面甲转向女方与青之间，手臂仍靠近桌侧。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 5.5,
+            "acting_seconds": 6.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段6/分镜2",
+      "duration": 8,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_18_003.jpg"
+      ],
+      "purpose": "以持续身体任务承载两句内心推测，避免把独白做成外放对白。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "以持续身体任务承载两句内心推测，避免把独白做成外放对白。",
+      "state_changes": {
+        "青.任务": "将离别与危机相连，左手握杯柄但杯未抬起"
+      },
+      "fields": {
+        "镜头设计": "南侧朝北的青侧脸近景，青在右面朝画面左侧的两人，木杯位于左下前层。0-5.5秒固定在眼、嘴与杯同框，5.5-8秒缓缓推近约一成，落幅仍保留杯口边与青的眼睛。",
+        "可见动作": "0-3s：青保持面朝两人，眼睛的焦点却从对方脸上缓缓松开；嘴停在微张状态，没有配独白口型。\n3-5.5s：她的左手从右臂旁松开，移到杯柄边，指尖停在木柄上；手到达后没有举杯，眼睛低向杯缘，面颊汗点保留。\n5.5-8s：第二句推测结束时，她把指尖轻轻收拢，仍只握住杯柄让杯留在桌上；目光在杯沿停了一瞬，肩背不再继续下沉。",
+        "可见背景": "蓝紫色傍晚天空与低对比厚云；木杯和下方深褐桌边处于真实庭院层次。",
+        "台词与语气": "青（内心）：“それで、私から離れたの？”（0.5秒入句，轻声推测，2.4秒）。\n青（内心）：“自分も巻き込まれると思ったのかな……？”（3.6秒入句，后半渐收，3.8秒）。",
+        "光影布光": "夕阳固定由世界西照向东，南侧反打机位中为画面左向右；青朝西的鼻梁、颊面与杯左缘受柔金侧光，银发暗面由蓝紫天光补足。指尖接近杯柄时遮下一点局部暖光，杯的长影仍朝东。",
+        "声音设计": "远叶声稍减高频但保持现实连续；指尖触木柄一声极轻擦响，杯底始终不离桌，无饮水或吞咽声。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青侧脸近景在右，木杯边在左下前层，脸向左、嘴小开、汗点可见。",
+      "anchor_state": {
+        "原格.关系": "青右侧脸向左，嘴微开汗点，杯左前"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青面向同伴，刚听到确认，双臂原先抱拢",
+          "beats": [
+            "视线从同伴游移到杯缘",
+            "左手松开抱臂，触杯却不拿起",
+            "内心推测结束，肩背不再塌下"
+          ],
+          "coupling": "一项未完成的取杯动作把情绪带入身体，不用嘴替内心音发声，也不把推测演成既定真相。",
+          "landing": "青握住杯柄，杯仍落桌，脸仍朝西"
+        },
+        "details": [
+          "0-3s：青保持面朝两人，眼睛的焦点却从对方脸上缓缓松开；嘴停在微张状态，没有配独白口型。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.199999999999999,
+            "acting_seconds": 8,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段7/分镜1",
+      "duration": 7.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_18_004.jpg"
+      ],
+      "purpose": "保留青梅男低头的谨慎解释，以语义转折分出听者镜。",
+      "characters": [
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "保留青梅男低头的谨慎解释，以语义转折分出听者镜。",
+      "state_changes": {
+        "青梅男.任务": "谨慎解释，向青稍倾，低处摊掌"
+      },
+      "fields": {
+        "镜头设计": "南侧朝北的侧面胸像近景，青梅男在左，面甲低向画面右下的青，右侧留蓝紫暮空；固定机位，三槽面甲和肩线完整。",
+        "可见动作": "青梅男先把面甲朝青抬起一点准备说明，在「言い切れない」处重新压低下颌，保留低头的侧面姿态；肩背随后略向青的方向倾近。进入下一句时，他的一只手在画幅下缘缓缓摊向桌边，像把已经知道的情况摆出来，手掌留在低处。",
+        "可见背景": "蓝紫厚云天，低处一小层虚化墨绿树梢；男方穿桌边休息时的黑袍和米白内领。",
+        "台词与语气": "青梅男：“でも、君が狙いだとは言い切れない……。”（0.5秒入句，年轻男声，谨慎保留，3.8秒）。\n青梅男：“あの時、君は気を失ってたし、”（4.8秒入句，平稳解释，2.5秒；整句在下一镜连续说完）。",
+        "光影布光": "夕阳由世界西向东，南侧反打机位中为画面左侧低光；青梅男盔后西侧缘和肩部左缘呈窄金亮，面甲正面以冷紫天光和桌面浅反射保留银灰层次，光不凭空换到右侧。",
+        "声音设计": "面甲俯下时接合处轻响，手臂移向桌边有衣料声；叶声持续，最后半句跨切点连续发声。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "青梅男侧面胸像近景在左，三槽面甲向右下低着，云天占右侧。",
+      "anchor_state": {
+        "原格.关系": "男左侧面，面甲向右下低着"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青梅男看见青陷入推测，准备介入",
+          "beats": [
+            "先抬头回应，再在保留判断时低下",
+            "身体向青倾近，低处摊掌说明"
+          ],
+          "coupling": "他试图限制推断的范围，以事实把青从独自猜测中拉回。",
+          "landing": "面甲仍朝青，手在桌边低处摊着"
+        },
+        "details": [
+          "青梅男先把面甲朝青抬起一点准备说明，在「言い切れない」处重新压低下颌，保留低头的侧面姿态；肩背随后略向青的方向倾近。进入下一句时，他的一只手在画幅下缘缓缓摊向桌边，像把已经知道的情况摆出来，手掌留在低处。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.3,
+            "acting_seconds": 7.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段7/分镜2",
+      "duration": 4,
+      "role": "uncited_coverage",
+      "source_images": [],
+      "purpose": "解释连续发声，观察青把注意力从杯上重新放回同伴。",
+      "characters": [
+        "青",
+        "青梅女"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "解释连续发声，观察青把注意力从杯上重新放回同伴。",
+      "state_changes": {
+        "青.任务": "握杯留桌，抬眼回到同伴，坐直听话",
+        "青梅女.任务": "观察青是否接住解释"
+      },
+      "fields": {
+        "镜头设计": "南侧朝北偏东的听者双人半身中景；青在右、青梅女在左，青梅女仅露侧背，木杯与青的左手落在下沿。固定机位，青梅男在画外西侧。",
+        "可见动作": "青起初仍低看杯缘，听到魔物没有攻击她时才把视线从杯上抬向西侧的青梅男；左手不松开杯柄，杯也没有抬起。青梅女不抢着附和，只侧过一点脸观察青是否接住解释。末尾青微张的嘴合拢，身体回到能继续听话的坐直状态。",
+        "可见背景": "灰褐木墙的边缘和一段冷窗面，外侧露蓝紫暮空；深褐桌面上木杯静置。",
+        "台词与语气": "青梅男（画外音）：“あの魔物も君を攻撃してない。”（承接前半句，0秒继续，平稳，3秒）。",
+        "光影布光": "夕阳固定从世界西向东，南侧机位中由画面左侧照向右侧；青朝西的颊面和杯左缘偏金，青梅女发缘与袍褶西侧有窄暖边。冷紫天光维持两人暗面可辨。",
+        "声音设计": "男方声音保持同一距离和节奏穿过切点；青一口很浅的鼻息落在句后，杯底不响，林叶声稳定。"
+      },
+      "derived_from": [
+        "第23話_18_003.jpg",
+        "第23話_18_004.jpg",
+        "第23話_19_001.jpg"
+      ],
+      "creative_additions": [
+        "解释连续发声，观察青把注意力从杯上重新放回同伴。"
+      ],
+      "performance": {
+        "card": {
+          "opening": "青低看杯，手握杯柄，男方话语正在继续",
+          "beats": [
+            "听到关键判断后才抬眼",
+            "杯保持桌上，嘴合拢，坐直"
+          ],
+          "coupling": "听者被完整信息拉回现实；女方等待她反应而不与男方同步表演。",
+          "landing": "青仍握杯，视线回到同伴"
+        },
+        "details": [
+          "青起初仍低看杯缘，听到魔物没有攻击她时才把视线从杯上抬向西侧的青梅男；左手不松开杯柄，杯也没有抬起。青梅女不抢着附和，只侧过一点脸观察青是否接住解释。末尾青微张的嘴合拢，身体回到能继续听话的坐直状态。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 3,
+            "acting_seconds": 4,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段8/分镜1",
+      "duration": 11.5,
+      "role": "source_locked",
+      "source_images": [
+        "第23話_19_001.jpg"
+      ],
+      "purpose": "收回三人同框，把担忧转向双马尾骑士；男方安慰保留不确定性。",
+      "characters": [
+        "青",
+        "青梅女",
+        "青梅男"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "收回三人同框，把担忧转向双马尾骑士；男方安慰保留不确定性。",
+      "state_changes": {
+        "青.任务": "手在杯柄上放松，低头听",
+        "青梅女.任务": "担忧骑士，回看男方",
+        "青梅男.任务": "手已落桌侧，含糊安慰"
+      },
+      "fields": {
+        "镜头设计": "北侧朝南的三人横列半身中景，青在左缘留半脸与银发，青梅女居中，青梅男面甲占右前。0-7秒固定三层构图，7-11.5秒沿桌边向东缓移约二十厘米，落幅仍为同一三人构图，女方看向男方的侧向变化落在中层。",
+        "可见动作": "0-5s：青梅女先看左侧的青，确认她已经抬眼，再把担忧转为问句；青仍握着桌上杯柄，头略低听着。男方低处摊开的手慢慢落回桌侧，面甲先低着听完。\n5-7s：青梅男短答，面甲不作笃定上扬；女方听后没有马上追问，目光停在他身上。\n7-11.5s：男方略向女方转过面甲，把后一句说完，肩线放松一些，却不点头作保证；女方这才回看他，眉稍抬，嘴轻合。青把杯柄上的手放松，杯留在原位，三人仍坐在暮色里。",
+        "可见背景": "低对比墨绿树丛与蓝紫暮空，深褐桌边只占下方窄层；远处外桌保持空着。",
+        "台词与语气": "青梅女：“そういえば、あのツインテールの騎士は無事かな？”（0.4秒入句，担忧，4.4秒）。\n青梅男：“さあな……。”（5.2秒入句，含糊低声，1.5秒）。\n青梅男：“騎士だし、きっと大丈夫でしょ。”（7.2秒入句，试着让人安心，3.2秒；尾音保留不确定感）。\n（沉默1秒）",
+        "光影布光": "夕阳继续从世界西向东，北侧向南拍摄时为画面右向左；青梅男右侧盔缘、青梅女朝西一侧颊面和青银发右缘保持同一金橙侧光，冷紫天光托暗面。缓移只改变局部反射，桌面长影继续指向画面左方的东侧。",
+        "声音设计": "男方手臂落桌侧一声轻布响，随后近处安静；风和林叶声在句后留住一秒，接下一原格19_002林海时可连续延伸。"
+      },
+      "anchor_phase": "middle",
+      "anchor_elements": "三人横列半身中景，青左缘裁切，青梅女中间看左，青梅男面甲占右前。",
+      "anchor_state": {
+        "原格.关系": "青左缘，女中看左，男面甲右前略低"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "frame_adaptation": "以原作关键构图为经过节点，16:9补全格框或气泡裁去的外侧空间；不使用漫画图作为首帧。",
+      "performance": {
+        "card": {
+          "opening": "青已抬眼接住解释，女方观察她，男方低处摊掌",
+          "beats": [
+            "女方从青的近况转问骑士",
+            "男方听完再短答，女方等待",
+            "男方再安慰，女方在句后回看"
+          ],
+          "coupling": "话题转移并未消除不确定性；三个人回到同一画框，以环境余韵交接下一段。",
+          "landing": "三人仍同坐，杯静置，女方看男方"
+        },
+        "details": [
+          "0-5s：青梅女先看左侧的青，确认她已经抬眼，再把担忧转为问句；青仍握着桌上杯柄，头略低听着。男方低处摊开的手慢慢落回桌侧，面甲先低着听完。"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 9.100000000000001,
+            "acting_seconds": 11.5,
+            "concurrent": true
+          }
+        ]
+      },
+      "silences": [
+        {
+          "start": 10.5,
+          "seconds": 1
+        }
+      ]
+    }
+  ],
+  "cuts": [
+    {
+      "from": "片段1/分镜3",
+      "to": "片段2/分镜1",
+      "changes": [
+        {
+          "dimension": "scale",
+          "description": "三人半身关系转为杯与抱臂近景，青没有参与招待的身体状态占据画面。",
+          "shot": "片段2/分镜1",
+          "field": "镜头设计"
+        }
+      ]
+    },
+    {
+      "from": "片段2/分镜1",
+      "to": "片段2/分镜2",
+      "changes": [
+        {
+          "dimension": "subject",
+          "description": "从青的双臂和杯转向两位招待者，女方转身把安慰任务推给男方。",
+          "shot": "片段2/分镜2",
+          "field": "镜头设计"
+        }
+      ]
+    },
+    {
+      "from": "片段4/分镜2",
+      "to": "片段4/分镜3",
+      "changes": [
+        {
+          "dimension": "subject",
+          "description": "青的正面怀疑反应切到对面两人腰背和双掌的尴尬等待。",
+          "shot": "片段4/分镜3",
+          "field": "镜头设计"
+        }
+      ]
+    },
+    {
+      "from": "片段4/分镜3",
+      "to": "片段4/分镜4",
+      "changes": [
+        {
+          "dimension": "scale",
+          "description": "双人含手的中景切单人胸像，女方尚未笑的停顿发展为汗点仍在的勉强浅笑。",
+          "shot": "片段4/分镜4",
+          "field": "镜头设计"
+        }
+      ]
+    },
+    {
+      "from": "片段7/分镜1",
+      "to": "片段7/分镜2",
+      "changes": [
+        {
+          "dimension": "subject",
+          "description": "从低头解释的男方切到握杯的听者，完整信息使青重新抬眼。",
+          "shot": "片段7/分镜2",
+          "field": "镜头设计"
+        }
+      ]
+    },
+    {
+      "from": "片段7/分镜2",
+      "to": "片段8/分镜1",
+      "changes": [
+        {
+          "dimension": "viewpoint",
+          "description": "南侧听者两人反打切回北侧三人正面；女方由观察青转问骑士，开启新话题。",
+          "shot": "片段8/分镜1",
+          "field": "镜头设计"
+        }
+      ]
+    }
+  ],
+  "character_registry": [
+    {
+      "id": "C001",
+      "canonical_name": "青",
+      "aliases": [],
+      "identity_status": "identified",
+      "performance_profile": {
+        "baseline": "活泼阳光；本场受离别影响低落，仍会主动追问；怀疑与担忧按源格表演。",
+        "source": "共享人物主档版本4，用户确认基调；本场情境见15—19页。"
+      }
+    },
+    {
+      "id": "C005",
+      "canonical_name": "青梅女",
+      "aliases": [],
+      "identity_status": "identified",
+      "performance_profile": {
+        "baseline": "长期性格未确认；本场主动招待、催促同伴安慰、窘迫否认后谨慎解释。",
+        "source": "共享人物主档版本4的身份与设计；本场策略来自指定原格及冻结对白。"
+      }
+    },
+    {
+      "id": "C006",
+      "canonical_name": "青梅男",
+      "aliases": [],
+      "identity_status": "identified",
+      "performance_profile": {
+        "baseline": "长期性格未确认；本场被点名时窘迫、随后以保留判断的方式解释。年轻男声，轻而自然。",
+        "source": "共享人物主档版本4的身份与设计；年轻男声沿用2026-10-18当前脚本。"
+      }
+    }
+  ],
+  "character_registry_source": {
+    "path": "D:\\Codex\\Projects\\New project\\ep023-director-20261022\\source-snapshot\\comic-workspace\\character-references\\角色映射.md",
+    "version": 4,
+    "read_date": "2026-10-22",
+    "sha256": "686450b175a36412778427b7b1e0d4882872ada82337b4f84632375bdf8da1dc"
+  },
+  "initial_state": {
+    "现实.座次": "东青/中青梅女/西青梅男；桌南同凳",
+    "现实.夕阳": "西向东，低空8度",
+    "现实.杯": "青前方桌缘，待落桌",
+    "叙述.层级": "现实",
+    "青.任务": "抱拢双臂低头坐着",
+    "青梅女.任务": "试着招待青",
+    "青梅男.任务": "坐听"
+  },
+  "requires_route_confirmation": false,
+  "route_scope_note": "局部第三轮，继承既有节点解释。杯落桌为日常单次置杯；回忆只保留已经成立的抓持状态与原图顺序，不补接近、抓起、换位、解除或新的关键动作路线；本次没有待确认的原作关键路径。",
+  "creative_additions": [
+    "庭院东西座次与低空西来夕照为本次统一生产设计，并非黑白原图所证方位。",
+    "杯的手在15_002原格中无可独立识别主人，动画连接选择青的左手，落桌后缩回抱臂；不把这一选择写成源事实。",
+    "新增三镜分别观察未被接受的招待、否认后的尴尬等待和解释时的听者；不增加台词或往事事件。"
+  ],
+  "revision_audit": {
+    "scope": "第23話_15_001—第23話_19_001，含16_001四幅既有拆分参考，共18原作节点。",
+    "mode": "继承完整底稿后开展第三轮；本次逐一打开受影响的18张原格代理并查看14_003、19_002邻格和三位人物彩色参考；未重做全话总览或前两轮。",
+    "pre_director_snapshot": "D:\\Codex\\Projects\\New project\\ep023-director-20261022\\delivery\\pre-director",
+    "source_warnings": [
+      "17_001“我们发誓”框的尾端仍不完全明确，沿用已交付稿的青梅女续说、青梅男无声点头；不提升为确定事实。",
+      "回忆巨手的主人未辨认，继续不命名；原有遮蔽保持，不补其下细节。",
+      "新机位、扩画、场景方位和统一夕照为导演设计；不冒称漫画逐镜给出。"
+    ],
+    "playback": "仅文字前向检查；未制作或播放动态分镜、临时配音或成片。",
+    "source_record_correction": "终稿重看17_004后，将误混进source_facts的“不得配画外台词口型”移出观察字段；该执行选择仍在正式动作中，原文、译文、归属、源节点均未改。"
+  },
+  "director_review": {
+    "characters": "青的阳光基调不强制变笑：由抱臂低头到主动追问，再由取杯未成转为抬眼听人；青梅女探身邀请、求助同伴、螺旋眼举掌、勉强浅笑再解释，变化由上一刺激带出；青梅男以年轻声线、收肩摊掌和无声点头参与，后段以保留判断限制推测。各人的启动时机与任务不同。",
+    "pacing": "102秒分8片，14/12/15/13.5/10/14.5/11.5/11.5秒。招待后3秒手臂近景、问句后1.5秒停顿、否认后1.5秒等待、庭院5秒远景各有不同作用；四幅回忆总6秒，保持顺序和短促信息，不扩写往事。长话在解释处跨听者镜延续；已增加四处发声预算以保留停顿，尚无录音实测。",
+    "node_arrivals": "已把第三轮21镜与继承的18原镜六字段逐项比较，并重新打开全部18个对应原格。保留天空暗云、杯底接触与两股溅液、三人座次与青低头遮眼、催促的双人重叠、女方前倾半握双手、回忆四构图与既有遮蔽、螺旋眼双掌和男方点头、青的低平眼形与后续圆眼汗点、庭院木屋木桶空桌、窗格反打、杯前侧脸汗点、男方低头侧面及终镜三层关系。第二遍继承稿遗漏的螺旋眼与汗点在正文明确。杯只落桌一次，松柄、抱臂、再次触柄均有过程，后段不举杯、不配独白口型。原文及最终语言逐条保持；18_004第二句仅跨镜，拼回逐字一致。14_003至天空用情绪/时间转场，19_001至19_002以叶声和暮色接出；范围之外未作视觉复审。",
+    "contrast": "新增杯与抱臂近景的前后分别为三人邀请中景及双人催促近景；新增尴尬双人中景的前后分别为青的正面怀疑及女方单人勉强浅笑；新增听者双人反打的前后分别为男方解释侧脸与转问骑士的三人正面。六个实际邻接分别具有主体、景别、视角或信息阶段的显著差异。其他连接已按最终顺序前向检查，回忆两处边界是真实叙述层切换，现实席位不迁移。",
+    "lighting": "现实夕阳固定西向东、低空8度，影子投东；北侧正面在画面右来光，南侧反打在画面左来光。两处青的近正面机位置于西偏北侧，暖光在画面右前侧，避免误写为背光。木屋统一东北侧、南向窗墙，兼容正面左层木屋和反打窗墙。回忆单独冷白体系，无第二个现实光源。",
+    "limitations": "文字前向检查与静帧回源比较；尚未制作或播放动态分镜，不能作为成片艺术质量认证。17_001宣誓归属与巨手身份维持既有不确定性。",
+    "sha256": "fc6e4adabdce9be093163a4e5b76d6b5427f1533ed1374411dfb58c2d5bd6173"
+  },
+  "source_lock": {
+    "version": 1,
+    "sha256": "f73fea59c3187e870a6cf5919f32dd7c0874a6d98086d521ca44c2aa4ba1d807",
+    "manifest": [
+      {
+        "image": "第23話_15_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_15_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_15_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_15_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_15_005.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_16_001_a.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_16_001_b.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_16_001_c.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_16_001_d.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_17_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_17_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_17_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_17_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_18_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_18_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_18_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_18_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第23話_19_001.jpg",
+        "renderable_visual": true
+      }
+    ]
+  },
+  "source_lock_history": [
+    {
+      "previous_lock": {
+        "version": 1,
+        "sha256": "a6944f89dc2962626921fe7a7fa6bde71399df848c4892ead15e8d46325a29c6",
+        "manifest": [
+          {
+            "image": "第23話_15_001.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_15_002.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_15_003.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_15_004.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_15_005.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_16_001_a.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_16_001_b.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_16_001_c.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_16_001_d.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_17_001.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_17_002.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_17_003.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_17_004.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_18_001.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_18_002.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_18_003.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_18_004.jpg",
+            "renderable_visual": true
+          },
+          {
+            "image": "第23話_19_001.jpg",
+            "renderable_visual": true
+          }
+        ]
+      },
+      "reason": "终稿重看17_004：将不配画外台词口型的导演执行要求从原图观察字段移出，保留圆眼、微张嘴、汗点、头微倾的图像事实；原文译文归属不变。"
+    }
+  ]
+}

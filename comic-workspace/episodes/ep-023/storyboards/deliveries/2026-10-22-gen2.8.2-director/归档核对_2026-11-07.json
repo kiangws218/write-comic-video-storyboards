@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-07",
+  "source_delivery": "D:\\Codex\\Projects\\New project\\ep023-director-20261022\\delivery",
+  "remote_base": "355311580cb99e59cada7124baffc8a52553b3a2",
+  "verified_original_files": {
+    "source-ledger-v3.json": "2c4694706c5f280a40ef495a3a1f43765059439ee58d4a832cc02cbabaa8bf90",
+    "交付与审查说明.md": "15b2412add4b073ac0c7eaf381d9a829c8f49eca1a37dc625b5b80158f896cf0",
+    "原镜与编号对照.md": "3e368311bde18d801383c70b33bc36c1e4756287ac44ed2d3819c34fcce755b1",
+    "整合与对白一致性检查.json": "59911ceda38b547d79490c4c3bd9597124ef96a63c173c7da7178ed19d83fd7d",
+    "校验报告_Gen2.8.2.txt": "4747f588875501514eda9fa9913aad22b5fae6fa64a26f46f228621a577969ae",
+    "第23话_15_001-19_001_导演轮优化_Gen2.8.2.md": "5f9c5ba3885a2290c9e402f2032d91f1161fa16317dbb4dfda805ec19de89b7a",
+    "第23话_完整脚本_指定段导演优化_Gen2.8.2.md": "3b426dc203f79f5dcedd3cb743127bd3e4c13ded54d0a0a19010854aa27abbbe"
+  },
+  "original_hash_manifest_sha256": "dcf16a4fdddb51b94174b25e796a63de01e762d54bd735debb6c9e7e67882386",
+  "full": {
+    "clips": 35,
+    "shots": 86,
+    "seconds": 433.0
+  },
+  "range": {
+    "clips": 8,
+    "shots": 21,
+    "seconds": 102.0
+  },
+  "source_nodes_in_order": 18,
+  "dialogue_units_equal_remote_legacy": 21,
+  "remote_baseline_equal_working_snapshot": true,
+  "outside_range_six_fields_equal_remote_legacy": true,
+  "scope": "历史定稿归档；未按现行skill重写或签发新导演审查。"
+}
