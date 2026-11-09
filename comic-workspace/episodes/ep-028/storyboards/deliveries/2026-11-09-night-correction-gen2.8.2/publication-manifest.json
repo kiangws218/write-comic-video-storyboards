@@ -1,0 +1,457 @@
+{
+  "published_on": "2026-11-09",
+  "content_completed_on": "2026-11-09",
+  "base_commit": "b115a75ee7fbaee01d953d179d17433d08bb4268",
+  "scope": "第26—28话青与鬼头武士独立战斗段落及已确认进出连接；不是三话全部剧情线",
+  "completed_batches": [
+    {
+      "batch": 1,
+      "name": "第一批",
+      "episode": 26,
+      "directory": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01",
+      "script": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/scene-ledger.json",
+      "stage": "final",
+      "shots": 48,
+      "clips": 14,
+      "seconds": 168.0,
+      "source_nodes": 36,
+      "text_units": 35,
+      "source_lock": "09755530e06499191aedc8c000390ff27e1cf15c58991bb320ce040a8b90698a",
+      "review_sha256": "2dc03b3581ba5ae9f2603a9220a2e4a1f044644411e8502bae64327f7522372c"
+    },
+    {
+      "batch": 2,
+      "name": "第二批",
+      "episode": 27,
+      "directory": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02",
+      "script": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/scene-ledger.json",
+      "stage": "final",
+      "shots": 39,
+      "clips": 9,
+      "seconds": 105.0,
+      "source_nodes": 26,
+      "text_units": 22,
+      "source_lock": "4c8957639d49a47b1e1a351f3cdfc9b442e1a927dfa8c13fb1a77e2aaa05b1d8",
+      "review_sha256": "91925e543ba77888e9709c2516cb479e30da3efab9bea88142b90ded8e453a2e"
+    },
+    {
+      "batch": 3,
+      "name": "第三批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/scene-ledger.json",
+      "stage": "final",
+      "shots": 49,
+      "clips": 17,
+      "seconds": 200.0,
+      "source_nodes": 36,
+      "text_units": 47,
+      "source_lock": "3dbc3f1b028ef86d871b7762769eaf746fe430b22fa5f37a30b200d4edc47e85",
+      "review_sha256": "0a1fdbf4027ea49bb39b1b7035f0afe0eaa4ba5cb596026806a3b6f09819b027"
+    },
+    {
+      "batch": 4,
+      "name": "第四批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/scene-ledger.json",
+      "stage": "final",
+      "shots": 30,
+      "clips": 7,
+      "seconds": 77.5,
+      "source_nodes": 22,
+      "text_units": 12,
+      "source_lock": "4ed1fe247472c78c0384a73067eb87043fdb5e817f5893e8583fb2c65d0038de",
+      "review_sha256": "ed7efe84d6eee17961ef1773fa3fd14531596883928a85dc1ab42562a8489e31"
+    },
+    {
+      "batch": 5,
+      "name": "第五批",
+      "episode": 28,
+      "directory": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05",
+      "script": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "ledger": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/scene-ledger.json",
+      "stage": "final",
+      "shots": 36,
+      "clips": 12,
+      "seconds": 133.5,
+      "source_nodes": 28,
+      "text_units": 29,
+      "source_lock": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+      "review_sha256": "3eb92f5c2a3334cf2b5719b92ceec21c89b3be6365570db1251ecc9c94afb881"
+    }
+  ],
+  "in_progress_batches_in_this_thread": [],
+  "total": {
+    "shots": 202,
+    "added": 55,
+    "clips": 59,
+    "seconds": 684,
+    "errors": 0,
+    "warnings": 471
+  },
+  "source_nodes": 148,
+  "raw_files": 146,
+  "locked_text_units": 145,
+  "source_ledger_bytes_unchanged_during_copy": true,
+  "night_revision": {
+    "night_shots": 182,
+    "dawn_shots": 20,
+    "dawn_starts_at": "片段54/分镜1",
+    "source_interpretation_fields_corrected": 2,
+    "prior_source_locks_retained": true
+  },
+  "script_bytes_unchanged": true,
+  "validation": "fresh 0 errors; total 471 warnings; no animatic playback",
+  "copied_files": [
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "dcdfaee66c72610cfd03d0330f8a0c54e31f7f321fbb683f9547cd21d87c188e",
+      "bytes": 61719
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/scene-ledger.json",
+      "sha256": "437478fca3a418943043f0f0f1e54b8868bfaa48eb7a1a9a05f83fbc982ebfc5",
+      "bytes": 338083
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_最终校验.txt",
+      "sha256": "2d265e8639adcb19ad4d453da570aa040e3c8bc9d380ba5c815af9578f2d128b",
+      "bytes": 8271
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_交付与核对说明.md",
+      "sha256": "aadcc7bc2066695d2d57d948b4dd535d4c600ce36d39a46891eb7c2acd86b0cf",
+      "bytes": 751
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第一批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_原文与日文演出台词对照.md",
+      "sha256": "bfa892a600d9f57a24de413f4ada9d31ddd02077693d12a09717356d26cde68f",
+      "bytes": 6015
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\batch-1-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/validation-20261109.txt",
+      "sha256": "2d265e8639adcb19ad4d453da570aa040e3c8bc9d380ba5c815af9578f2d128b",
+      "bytes": 8271
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001a.jpg",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/sources/第26話_11_001a.jpg",
+      "sha256": "52bce666169bbf0354a5bcbc64f23c4d2b2344d5d81cccc3694f169cc930bd4e",
+      "bytes": 900737
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\sources\\第26話_11_001b.jpg",
+      "repository_path": "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/sources/第26話_11_001b.jpg",
+      "sha256": "208b91331926e563d8c2a38a2f0546069ecdc5cafae0a46b3fd768a2a7cb699e",
+      "bytes": 201885
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "f7696c3c6857080eada2c113a27c45cce48a9d3b619dd967c531b951c626c00d",
+      "bytes": 46461
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/scene-ledger.json",
+      "sha256": "537c1ad296aad7dd74852376ebb757f72a00cbe684c3667e307eec7e69b87f17",
+      "bytes": 241389
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_最终校验.txt",
+      "sha256": "9637c8413b04c6636e1bb657cdb8029704d7195b6c2e3e3b1ab38660cb948283",
+      "bytes": 4787
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_交付与核对说明.md",
+      "sha256": "46d813f2cc417f19d2eb2ca8cf1e50ec7c28f2572297e4b6156e8d260ee69d9a",
+      "bytes": 752
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_原文与日文演出台词对照.md",
+      "sha256": "d0d29821a82a1d4e95a8fbcc788155408d94d65f3b9752ba92cb7987ba303893",
+      "bytes": 3461
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\batch-2-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/validation-20261109.txt",
+      "sha256": "9637c8413b04c6636e1bb657cdb8029704d7195b6c2e3e3b1ab38660cb948283",
+      "bytes": 4787
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001a.jpg",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/sources/第27話_20_001a.jpg",
+      "sha256": "71a211d7ee7ef8a871c144b238ec2d7e325f74fba2175b22010d6e606a132f8a",
+      "bytes": 155978
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\sources\\第27話_20_001b.jpg",
+      "repository_path": "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/sources/第27話_20_001b.jpg",
+      "sha256": "a301a4de7deefbaf910a356fb0e17265e301c1e8900be05c663c09e01d2482ea",
+      "bytes": 164773
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "cb805d074266bb7ac25d21b1f705236456d53368423111e0f3ccedfac97dcb35",
+      "bytes": 57586
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/scene-ledger.json",
+      "sha256": "d60c19bf2368af2cc379463009f474e94c20de556feb5a36fa31fc9c979ae934",
+      "bytes": 315920
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_最终校验.txt",
+      "sha256": "95c6f73d341fa04d455ab5bc0ce8c200a2eb369fdb320ec48294ffb376611696",
+      "bytes": 5400
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_交付与核对说明.md",
+      "sha256": "6eec4561f40a475abc44f5df766e29a69c745820c9d1031ed1c6a45d9c2905e6",
+      "bytes": 793
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第三批_第28话前段\\第三批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_原文与日文演出台词对照.md",
+      "sha256": "3a35eb6b6a79e3feb137115d594173cc75a2b35edeef1e60443cd2e066323e6c",
+      "bytes": 8024
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\batch-3-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/validation-20261109.txt",
+      "sha256": "95c6f73d341fa04d455ab5bc0ce8c200a2eb369fdb320ec48294ffb376611696",
+      "bytes": 5400
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "6ad6cea68327a6c90e78463545697ab4d1f12ebc6ad5c3e17c90c8616988e2f9",
+      "bytes": 46306
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/scene-ledger.json",
+      "sha256": "262de31d49e946771abf13153004bade11eec1f82b074e3257cbf08bdc4c7158",
+      "bytes": 228350
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_最终校验.txt",
+      "sha256": "186bf18fd00c174bf7bb97d45ef969e719d06583ec9b51fe21e20d06533be4fa",
+      "bytes": 3300
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_交付与核对说明.md",
+      "sha256": "18ea7652b985671e999370eb1a524707d2166c7d4aee81e494d6ca295785069f",
+      "bytes": 798
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第四批_第28话后段\\第四批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_原文与日文演出台词对照.md",
+      "sha256": "1c9452c994c36a394a189fd1b131eae048cef438a6e0458eda5ee95e2ff26487",
+      "bytes": 1968
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\batch-4-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/validation-20261109.txt",
+      "sha256": "186bf18fd00c174bf7bb97d45ef969e719d06583ec9b51fe21e20d06533be4fa",
+      "bytes": 3300
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md",
+      "sha256": "9cf96630f31411f2a5c61c44684689fdf983bb4dc0255c506706d7421f338e41",
+      "bytes": 46136
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\scene-ledger.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/scene-ledger.json",
+      "sha256": "c24e564fb84f02fe698c4e37dba1796afd14d8407498991ec684ecc90ff86e51",
+      "bytes": 245953
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_最终校验.txt",
+      "sha256": "bc90a574f897ef4583435c981fa79f17a469749acdfa8d3010f61ee02837a2d6",
+      "bytes": 4962
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_交付与核对说明.md",
+      "sha256": "a6ac9003b51aa63b4023292a7e30a9070ac00757a51b75e1cd2c970407e62b07",
+      "bytes": 796
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第五批_第28话战后段\\第五批_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_原文与日文演出台词对照.md",
+      "sha256": "296db592dd2878e06509d288c50625e841db069d3faf97c642d3dc3f68cc37d8",
+      "bytes": 4884
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\batch-5-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/validation-20261109.txt",
+      "sha256": "bc90a574f897ef4583435c981fa79f17a469749acdfa8d3010f61ee02837a2d6",
+      "bytes": 4962
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\青与鬼头武士_完整导演分镜_Gen2.8.2.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/青与鬼头武士_完整导演分镜_Gen2.8.2.md",
+      "sha256": "f00cdd9ec8e04d73553962a264fa5e6df26a3a61db8ef96e6dabb48f7a6639bd",
+      "bytes": 253744
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_派生台账.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_派生台账.json",
+      "sha256": "5ba45f8e929fd0ab58058a9997b6d40336fedf06fd0740a5a7c5bb82b01cf6ac",
+      "bytes": 1576425
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_原文与日文演出台词对照.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_原文与日文演出台词对照.md",
+      "sha256": "8e9893829c5cd942b8b8ca022147e70a19e5e6805f8c905e5233d24ddf65c828",
+      "bytes": 23886
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_交付与核对说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_交付与核对说明.md",
+      "sha256": "19c9c415189a9058f2b11534eca1068efbc5ebeee3a1d0ffc83fc69720b31f43",
+      "bytes": 1918
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_合稿溯源.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_合稿溯源.json",
+      "sha256": "587e22ff3651c7608fd1676e3925714850ab0332b831537fd33570e6125d9d60",
+      "bytes": 54522
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_片段编排.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_片段编排.md",
+      "sha256": "2089feb3b704216d0de032e252bc0e480f1b91a0bb4ecee10e4e1c35448de898",
+      "bytes": 3921
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\全段_最终校验.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_最终校验.txt",
+      "sha256": "24364c80da8e9f6f58098b5e13a7effd3f21e7d2ff618d24714bf7683d490cfa",
+      "bytes": 21215
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\夜战修复_20261109_说明.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_说明.md",
+      "sha256": "ec8986da7b17a366aabfc91331aa4b935bfc95c4c4fd8d18527ce817141514a9",
+      "bytes": 3674
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\夜战修复_20261109_背景复核.md",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_背景复核.md",
+      "sha256": "85f9b13376cbbc0ff9037dca49b1c9e21ce05efe5b3831dec1f7dd2253df295c",
+      "bytes": 14674
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\夜战修复_20261109_最终统计.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_最终统计.json",
+      "sha256": "3531d2a4b2b891da6334b9c046bd126c980a39f3bde54940fde47ac815e79263",
+      "bytes": 1530
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\夜战修复_20261109_一致性复核.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_一致性复核.json",
+      "sha256": "018fbb0a90495e059faf56f69f1683e3c3ff3dadcdc886ac8508d163665a7e1e",
+      "bytes": 2193
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\夜战修复_20261109_逐镜改写记录.json",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_逐镜改写记录.json",
+      "sha256": "543cb24ecdc8223da73a0bab8eaeb84070594f267c82aeedaf613a820f651f35",
+      "bytes": 181043
+    },
+    {
+      "local_source": "D:\\Codex\\Projects\\New project\\.tmp-worktrees\\fix-ep026-028-night-20261109-audit\\full-validation.txt",
+      "repository_path": "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/validation-20261109.txt",
+      "sha256": "24364c80da8e9f6f58098b5e13a7effd3f21e7d2ff618d24714bf7683d490cfa",
+      "bytes": 21215
+    }
+  ],
+  "files": {
+    "comic-workspace/episodes/ep-026/STATUS.md": "f6104fe23e1c6b06792e05d49812673ac1cfee5526556db21a134ca142b9c35f",
+    "comic-workspace/episodes/ep-026/storyboards/current/README.md": "b9bb06239f1f88a4b2a8c6b4e51da00b6a594fa2418a59c6fae278e5ceed898f",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/.gitattributes": "e5f3961581cedd36fa66983c43a9f20961519435055b58f4a0860ea660d83263",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/README.md": "840539fa46496812d09ed209153c7a68080a1c164efa29ed0503e41238e0e227",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/scene-ledger.json": "437478fca3a418943043f0f0f1e54b8868bfaa48eb7a1a9a05f83fbc982ebfc5",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/sources/第26話_11_001a.jpg": "52bce666169bbf0354a5bcbc64f23c4d2b2344d5d81cccc3694f169cc930bd4e",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/sources/第26話_11_001b.jpg": "208b91331926e563d8c2a38a2f0546069ecdc5cafae0a46b3fd768a2a7cb699e",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/validation-20261109.txt": "2d265e8639adcb19ad4d453da570aa040e3c8bc9d380ba5c815af9578f2d128b",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_交付与核对说明.md": "aadcc7bc2066695d2d57d948b4dd535d4c600ce36d39a46891eb7c2acd86b0cf",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_原文与日文演出台词对照.md": "bfa892a600d9f57a24de413f4ada9d31ddd02077693d12a09717356d26cde68f",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_最终校验.txt": "2d265e8639adcb19ad4d453da570aa040e3c8bc9d380ba5c815af9578f2d128b",
+    "comic-workspace/episodes/ep-026/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-01/第一批_青与鬼头武士_导演版_Gen2.8.2.md": "dcdfaee66c72610cfd03d0330f8a0c54e31f7f321fbb683f9547cd21d87c188e",
+    "comic-workspace/episodes/ep-027/STATUS.md": "cce53ba58a231df9d55c37bb6162a4df5626fb9b203d13b8884626e571faec48",
+    "comic-workspace/episodes/ep-027/storyboards/current/README.md": "f438c0a816b6e9e9a5b30082d404640051527884bf4648ee999cb171515e7293",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/.gitattributes": "e5f3961581cedd36fa66983c43a9f20961519435055b58f4a0860ea660d83263",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/README.md": "9b49929ed938ab84a0a351d747e198221b5b291f42983ecb5d69dd9a0e68afc9",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/scene-ledger.json": "537c1ad296aad7dd74852376ebb757f72a00cbe684c3667e307eec7e69b87f17",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/sources/第27話_20_001a.jpg": "71a211d7ee7ef8a871c144b238ec2d7e325f74fba2175b22010d6e606a132f8a",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/sources/第27話_20_001b.jpg": "a301a4de7deefbaf910a356fb0e17265e301c1e8900be05c663c09e01d2482ea",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/validation-20261109.txt": "9637c8413b04c6636e1bb657cdb8029704d7195b6c2e3e3b1ab38660cb948283",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_交付与核对说明.md": "46d813f2cc417f19d2eb2ca8cf1e50ec7c28f2572297e4b6156e8d260ee69d9a",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_原文与日文演出台词对照.md": "d0d29821a82a1d4e95a8fbcc788155408d94d65f3b9752ba92cb7987ba303893",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_最终校验.txt": "9637c8413b04c6636e1bb657cdb8029704d7195b6c2e3e3b1ab38660cb948283",
+    "comic-workspace/episodes/ep-027/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-02/第二批_青与鬼头武士_导演版_Gen2.8.2.md": "f7696c3c6857080eada2c113a27c45cce48a9d3b619dd967c531b951c626c00d",
+    "comic-workspace/episodes/ep-028/STATUS.md": "717c2dc14d929b4d9091d1882fbfa063281d4b4962247423a61fdc579dfa7b6e",
+    "comic-workspace/episodes/ep-028/storyboards/current/README.md": "624d1a3d8f96ef2485338e47d774580e6197cbf06e11f97d0f00f4d5f5e5ad8b",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/.gitattributes": "e5f3961581cedd36fa66983c43a9f20961519435055b58f4a0860ea660d83263",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/PUBLICATION.md": "c3601b39a593a4a260ecb843d38a03ff8303792087493638023de697889a900e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/README.md": "4b9aa0e416a11aa05b86c54321875c952614a36d1a831066789b8cb04a80018c",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/scene-ledger.json": "d60c19bf2368af2cc379463009f474e94c20de556feb5a36fa31fc9c979ae934",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/validation-20261109.txt": "95c6f73d341fa04d455ab5bc0ce8c200a2eb369fdb320ec48294ffb376611696",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_交付与核对说明.md": "6eec4561f40a475abc44f5df766e29a69c745820c9d1031ed1c6a45d9c2905e6",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_原文与日文演出台词对照.md": "3a35eb6b6a79e3feb137115d594173cc75a2b35edeef1e60443cd2e066323e6c",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_最终校验.txt": "95c6f73d341fa04d455ab5bc0ce8c200a2eb369fdb320ec48294ffb376611696",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-03/第三批_青与鬼头武士_导演版_Gen2.8.2.md": "cb805d074266bb7ac25d21b1f705236456d53368423111e0f3ccedfac97dcb35",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/scene-ledger.json": "262de31d49e946771abf13153004bade11eec1f82b074e3257cbf08bdc4c7158",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/validation-20261109.txt": "186bf18fd00c174bf7bb97d45ef969e719d06583ec9b51fe21e20d06533be4fa",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_交付与核对说明.md": "18ea7652b985671e999370eb1a524707d2166c7d4aee81e494d6ca295785069f",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_原文与日文演出台词对照.md": "1c9452c994c36a394a189fd1b131eae048cef438a6e0458eda5ee95e2ff26487",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_最终校验.txt": "186bf18fd00c174bf7bb97d45ef969e719d06583ec9b51fe21e20d06533be4fa",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-04/第四批_青与鬼头武士_导演版_Gen2.8.2.md": "6ad6cea68327a6c90e78463545697ab4d1f12ebc6ad5c3e17c90c8616988e2f9",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/scene-ledger.json": "c24e564fb84f02fe698c4e37dba1796afd14d8407498991ec684ecc90ff86e51",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/validation-20261109.txt": "bc90a574f897ef4583435c981fa79f17a469749acdfa8d3010f61ee02837a2d6",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_交付与核对说明.md": "a6ac9003b51aa63b4023292a7e30a9070ac00757a51b75e1cd2c970407e62b07",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_原文与日文演出台词对照.md": "296db592dd2878e06509d288c50625e841db069d3faf97c642d3dc3f68cc37d8",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_最终校验.txt": "bc90a574f897ef4583435c981fa79f17a469749acdfa8d3010f61ee02837a2d6",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/batch-05/第五批_青与鬼头武士_导演版_Gen2.8.2.md": "9cf96630f31411f2a5c61c44684689fdf983bb4dc0255c506706d7421f338e41",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/validation-20261109.txt": "24364c80da8e9f6f58098b5e13a7effd3f21e7d2ff618d24714bf7683d490cfa",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_交付与核对说明.md": "19c9c415189a9058f2b11534eca1068efbc5ebeee3a1d0ffc83fc69720b31f43",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_原文与日文演出台词对照.md": "8e9893829c5cd942b8b8ca022147e70a19e5e6805f8c905e5233d24ddf65c828",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_合稿溯源.json": "587e22ff3651c7608fd1676e3925714850ab0332b831537fd33570e6125d9d60",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_最终校验.txt": "24364c80da8e9f6f58098b5e13a7effd3f21e7d2ff618d24714bf7683d490cfa",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_派生台账.json": "5ba45f8e929fd0ab58058a9997b6d40336fedf06fd0740a5a7c5bb82b01cf6ac",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/全段_片段编排.md": "2089feb3b704216d0de032e252bc0e480f1b91a0bb4ecee10e4e1c35448de898",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_一致性复核.json": "018fbb0a90495e059faf56f69f1683e3c3ff3dadcdc886ac8508d163665a7e1e",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_最终统计.json": "3531d2a4b2b891da6334b9c046bd126c980a39f3bde54940fde47ac815e79263",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_背景复核.md": "85f9b13376cbbc0ff9037dca49b1c9e21ce05efe5b3831dec1f7dd2253df295c",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_说明.md": "ec8986da7b17a366aabfc91331aa4b935bfc95c4c4fd8d18527ce817141514a9",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/夜战修复_20261109_逐镜改写记录.json": "543cb24ecdc8223da73a0bab8eaeb84070594f267c82aeedaf613a820f651f35",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/complete-sequence/青与鬼头武士_完整导演分镜_Gen2.8.2.md": "f00cdd9ec8e04d73553962a264fa5e6df26a3a61db8ef96e6dabb48f7a6639bd",
+    "comic-workspace/episodes/ep-028/storyboards/deliveries/2026-11-09-night-correction-gen2.8.2/source-reference-map.json": "68de6c83fa6d441595fb0833dc85636d39af667416d45265b6b47503e5fdd8bc"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-09",
+  "shots": 202,
+  "added": 55,
+  "clips": 59,
+  "seconds": 684,
+  "night_shots": 182,
+  "dawn_transition_shots": 20,
+  "raw_files": 146,
+  "visual_nodes": 148,
+  "text_units": 145,
+  "changed_shots": 201,
+  "field_changes": {
+    "可见背景": 180,
+    "光影布光": 201,
+    "可见动作": 18,
+    "镜头设计": 3
+  },
+  "all_batch_fields_equal_master": true,
+  "all_durations_dialogue_sound_and_source_order_unchanged": true,
+  "source_observations_and_composition_unchanged": true,
+  "source_interpretation_correction": {
+    "image": "第28話_16_001.jpg",
+    "fields": [
+      "action_reading.summary",
+      "action_reading.world_motion"
+    ],
+    "old_locks_retained": true
+  },
+  "source_locks": [
+    {
+      "batch": 1,
+      "before": "09755530e06499191aedc8c000390ff27e1cf15c58991bb320ce040a8b90698a",
+      "after": "09755530e06499191aedc8c000390ff27e1cf15c58991bb320ce040a8b90698a",
+      "source_correction": false
+    },
+    {
+      "batch": 2,
+      "before": "4c8957639d49a47b1e1a351f3cdfc9b442e1a927dfa8c13fb1a77e2aaa05b1d8",
+      "after": "4c8957639d49a47b1e1a351f3cdfc9b442e1a927dfa8c13fb1a77e2aaa05b1d8",
+      "source_correction": false
+    },
+    {
+      "batch": 3,
+      "before": "3dbc3f1b028ef86d871b7762769eaf746fe430b22fa5f37a30b200d4edc47e85",
+      "after": "3dbc3f1b028ef86d871b7762769eaf746fe430b22fa5f37a30b200d4edc47e85",
+      "source_correction": false
+    },
+    {
+      "batch": 4,
+      "before": "4fcbabf9bc6395f4eec8b279c3adfad2404578034b05d3341b3425dbef3faf9f",
+      "after": "4ed1fe247472c78c0384a73067eb87043fdb5e817f5893e8583fb2c65d0038de",
+      "source_correction": true
+    },
+    {
+      "batch": 5,
+      "before": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+      "after": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+      "source_correction": false
+    }
+  ],
+  "all_scene_states_consistent": true,
+  "all_added_with_preceding_source_clip": true,
+  "seven_silences_five_seconds": true,
+  "review_digests_valid": true,
+  "errors": 0,
+  "warnings": 471,
+  "no_animatic_playback": true
+}

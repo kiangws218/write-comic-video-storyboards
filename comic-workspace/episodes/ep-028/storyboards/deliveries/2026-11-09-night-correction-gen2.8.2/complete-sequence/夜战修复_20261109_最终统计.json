@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-09",
+  "batches": [
+    {
+      "batch": "第一批",
+      "shots": 48,
+      "added": 12,
+      "clips": 14,
+      "seconds": 168.0,
+      "nodes": 36,
+      "text_units": 35,
+      "errors": 0,
+      "warnings": 138
+    },
+    {
+      "batch": "第二批",
+      "shots": 39,
+      "added": 13,
+      "clips": 9,
+      "seconds": 105.0,
+      "nodes": 26,
+      "text_units": 22,
+      "errors": 0,
+      "warnings": 83
+    },
+    {
+      "batch": "第三批",
+      "shots": 49,
+      "added": 13,
+      "clips": 17,
+      "seconds": 200.0,
+      "nodes": 36,
+      "text_units": 47,
+      "errors": 0,
+      "warnings": 114
+    },
+    {
+      "batch": "第四批",
+      "shots": 30,
+      "added": 9,
+      "clips": 7,
+      "seconds": 77.5,
+      "nodes": 22,
+      "text_units": 12,
+      "errors": 0,
+      "warnings": 52
+    },
+    {
+      "batch": "第五批",
+      "shots": 36,
+      "added": 8,
+      "clips": 12,
+      "seconds": 133.5,
+      "nodes": 28,
+      "text_units": 29,
+      "errors": 0,
+      "warnings": 84
+    }
+  ],
+  "total": {
+    "shots": 202,
+    "added": 55,
+    "clips": 59,
+    "seconds": 684,
+    "errors": 0,
+    "warnings": 471
+  },
+  "night_shots": 182,
+  "dawn_transition_shots": 20,
+  "dawn_starts_at": "片段54/分镜1",
+  "source_correction_fields": 2,
+  "source_correction_image": "第28話_16_001.jpg",
+  "all_145_text_units_unchanged": true,
+  "silences": 7,
+  "silence_seconds": 5
+}

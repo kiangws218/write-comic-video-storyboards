@@ -1,0 +1,2 @@
+# Preserve audited delivery bytes and original EOF spacing across platforms.
+* -text whitespace=blank-at-eol,space-before-tab,cr-at-eol,-blank-at-eof
