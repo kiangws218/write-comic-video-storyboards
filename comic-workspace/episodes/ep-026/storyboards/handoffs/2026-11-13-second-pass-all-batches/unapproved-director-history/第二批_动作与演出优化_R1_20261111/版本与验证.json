@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-11",
+  "shots": 51,
+  "added": 25,
+  "source_nodes": 26,
+  "original_files": 25,
+  "locked_text_units": 22,
+  "clips": 8,
+  "seconds": 94.5,
+  "max_clip_seconds": 13.5,
+  "max_main_clip_chars": 1765,
+  "max_execution_clip_chars": 1681,
+  "silence_intervals": 4,
+  "silence_seconds": 2.0,
+  "source_interpretation_relocked_after_user_correction": true,
+  "all_dialogue_fragments_rejoin_frozen_text": true,
+  "source_order_unchanged": true,
+  "old_file_hashes_unchanged": {
+    "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\scene-ledger.json": "537c1ad296aad7dd74852376ebb757f72a00cbe684c3667e307eec7e69b87f17",
+    "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\第二批_第27话\\第二批_青与鬼头武士_导演版_Gen2.8.2.md": "f7696c3c6857080eada2c113a27c45cce48a9d3b619dd967c531b951c626c00d",
+    "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\03_青与鬼头武士_独立制作\\青与鬼头武士_完整导演分镜_Gen2.8.2.md": "f00cdd9ec8e04d73553962a264fa5e6df26a3a61db8ef96e6dabb48f7a6639bd"
+  },
+  "errors": 0,
+  "warnings": 126,
+  "actual_video_playback": false,
+  "execution_audit": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "explicit_comic_references": 26,
+  "confirmed_checks": {
+    "simultaneous_two_hand_grip": "S013",
+    "continuous_grip_through_throw": "S014—S019",
+    "ground_impact_before_release": "S020",
+    "full_frame_dust_cover": "S021",
+    "all_in_one_clip_seconds": 13.5,
+    "spray_fully_avoided": "S037—S038",
+    "old_files_hashes_unchanged": true
+  }
+}

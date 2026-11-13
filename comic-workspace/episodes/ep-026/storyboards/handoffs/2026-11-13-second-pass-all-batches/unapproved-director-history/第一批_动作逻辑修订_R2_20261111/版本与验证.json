@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-11",
+  "shots": 89,
+  "added": 53,
+  "source_nodes": 36,
+  "original_files": 35,
+  "locked_text_units": 35,
+  "clips": 15,
+  "seconds": 164.5,
+  "max_clip_seconds": 15.0,
+  "max_main_clip_chars": 1580,
+  "max_execution_clip_chars": 1527,
+  "silence_intervals": 8,
+  "silence_seconds": 8.0,
+  "source_interpretation_relocked_after_user_correction": true,
+  "all_dialogue_fragments_rejoin_frozen_text": true,
+  "source_order_unchanged": true,
+  "old_file_hashes_unchanged": {
+    "scene-ledger.json": "437478fca3a418943043f0f0f1e54b8868bfaa48eb7a1a9a05f83fbc982ebfc5",
+    "第一批_青与鬼头武士_导演版_Gen2.8.2.md": "dcdfaee66c72610cfd03d0330f8a0c54e31f7f321fbb683f9547cd21d87c188e",
+    "青与鬼头武士_完整导演分镜_Gen2.8.2.md": "f00cdd9ec8e04d73553962a264fa5e6df26a3a61db8ef96e6dabb48f7a6639bd"
+  },
+  "errors": 0,
+  "warnings": 236,
+  "actual_video_playback": false,
+  "execution_audit": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "explicit_comic_references": 36,
+  "continuity_check": {
+    "roof_landing_to_push_in_one_clip": 6,
+    "continuous_clip_seconds": 11,
+    "qing_hidden_keys": "R041—R050",
+    "ground_first_reveal_key": "R051",
+    "neck_action_keys": "R059—R063",
+    "r1_manifest_all_unchanged": true
+  }
+}

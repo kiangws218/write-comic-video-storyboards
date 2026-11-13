@@ -1,0 +1,1207 @@
+{
+  ".gitattributes": [
+    ".gitattributes"
+  ],
+  "00_接手导航.md": [
+    "00_接手导航.md"
+  ],
+  "README.md": [
+    "README.md",
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/README.md",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/README.md"
+  ],
+  "SHA256.json": [
+    "SHA256.json",
+    "second-pass/batch-01/SHA256.json",
+    "second-pass/batch-02/SHA256.json",
+    "second-pass/batch-03/SHA256.json",
+    "second-pass/batch-04/SHA256.json",
+    "second-pass/batch-05/SHA256.json"
+  ],
+  "复制核对清单.json": [
+    "复制核对清单.json"
+  ],
+  "文件定位索引.json": [
+    "文件定位索引.json"
+  ],
+  "用户已确认的动作与创作要求.md": [
+    "用户已确认的动作与创作要求.md"
+  ],
+  "角色映射.md": [
+    "characters/角色映射.md"
+  ],
+  "女主席_红衣_卡其发_黑眼白瞳_v4.png": [
+    "characters/turnarounds/女主席_红衣_卡其发_黑眼白瞳_v4.png"
+  ],
+  "欧铂.png": [
+    "characters/turnarounds/欧铂.png"
+  ],
+  "董白.png": [
+    "characters/turnarounds/董白.png"
+  ],
+  "青2.png": [
+    "characters/turnarounds/青2.png"
+  ],
+  "青梅女.png": [
+    "characters/turnarounds/青梅女.png"
+  ],
+  "青梅男.png": [
+    "characters/turnarounds/青梅男.png"
+  ],
+  "鬼头武士.png": [
+    "characters/turnarounds/鬼头武士.png"
+  ],
+  "scene-ledger.json": [
+    "later-working-ledgers/batch-01/scene-ledger.json",
+    "later-working-ledgers/batch-02/scene-ledger.json",
+    "later-working-ledgers/batch-03/scene-ledger.json",
+    "later-working-ledgers/batch-04/scene-ledger.json",
+    "later-working-ledgers/batch-05/scene-ledger.json",
+    "second-pass/batch-01/scene-ledger.json",
+    "second-pass/batch-02/scene-ledger.json",
+    "second-pass/batch-03/scene-ledger.json",
+    "second-pass/batch-04/scene-ledger.json",
+    "second-pass/batch-05/scene-ledger.json",
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/scene-ledger.json",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/scene-ledger.json"
+  ],
+  "第一批_第二遍原镜底稿.md": [
+    "second-pass/batch-01/第一批_第二遍原镜底稿.md"
+  ],
+  "第二批_第二遍原镜底稿.md": [
+    "second-pass/batch-02/第二批_第二遍原镜底稿.md"
+  ],
+  "第三批_第二遍原镜底稿.md": [
+    "second-pass/batch-03/第三批_第二遍原镜底稿.md"
+  ],
+  "第四批_第二遍原镜底稿.md": [
+    "second-pass/batch-04/第四批_第二遍原镜底稿.md"
+  ],
+  "第五批_第二遍原镜底稿.md": [
+    "second-pass/batch-05/第五批_第二遍原镜底稿.md"
+  ],
+  "SKILL.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/SKILL.md"
+  ],
+  "openai.yaml": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/agents/openai.yaml"
+  ],
+  "2d-animation-execution.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/2d-animation-execution.md"
+  ],
+  "acting-calibration.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/acting-calibration.md"
+  ],
+  "action-performance.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-performance.md"
+  ],
+  "background-design.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/background-design.md"
+  ],
+  "background-visual-library.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/background-visual-library.md"
+  ],
+  "character-registry.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/character-registry.md"
+  ],
+  "cinematic-rendering.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/cinematic-rendering.md"
+  ],
+  "core-authoring.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/core-authoring.md"
+  ],
+  "dialogue-performance.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/dialogue-performance.md"
+  ],
+  "director-expansion.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/director-expansion.md"
+  ],
+  "gen2-5-compatibility.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/gen2-5-compatibility.md"
+  ],
+  "ledger-v282.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/ledger-v282.md"
+  ],
+  "regression-cases.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/regression-cases.md"
+  ],
+  "seedance-execution-and-review.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/seedance-execution-and-review.md"
+  ],
+  "source-risk.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/source-risk.md"
+  ],
+  "clips.json": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/clips.json"
+  ],
+  "clips.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/clips.md"
+  ],
+  "combinations.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/combinations.md"
+  ],
+  "drawing.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/drawing.md"
+  ],
+  "effects.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/effects.md"
+  ],
+  "index.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/index.md"
+  ],
+  "sources.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/sources.md"
+  ],
+  "tags.md": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/tags.md"
+  ],
+  "视频参考索引.html": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/视频参考索引.html"
+  ],
+  "试抠对比与慢放.html": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/references/action-library/variants/trial-01/试抠对比与慢放.html"
+  ],
+  "audit_seedance_prompt.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/audit_seedance_prompt.py"
+  ],
+  "authoring.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/authoring.py"
+  ],
+  "build_analysis_proxies.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/build_analysis_proxies.py"
+  ],
+  "freeze_storyboard.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/freeze_storyboard.py"
+  ],
+  "migrate_source_ledger_v2_to_v3.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/migrate_source_ledger_v2_to_v3.py"
+  ],
+  "render_storyboard.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/render_storyboard.py"
+  ],
+  "test_action_workflow.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_action_workflow.py"
+  ],
+  "test_authoring_282.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_authoring_282.py"
+  ],
+  "test_build_analysis_proxies.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_build_analysis_proxies.py"
+  ],
+  "test_director_282.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_director_282.py"
+  ],
+  "test_migrate_source_ledger.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_migrate_source_ledger.py"
+  ],
+  "test_source_meaning_and_registry.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_source_meaning_and_registry.py"
+  ],
+  "test_validate_storyboard.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/test_validate_storyboard.py"
+  ],
+  "validate_director.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/validate_director.py"
+  ],
+  "validate_storyboard.py": [
+    "skill-snapshot/write-comic-video-storyboards-gen2-8-2/scripts/validate_storyboard.py"
+  ],
+  "第26話_01_001.jpg": [
+    "source/originals/第26话/第26話_01_001.jpg",
+    "source/proxies/ep26/第26話_01_001.jpg",
+    "source/validation-panels/第26話_01_001.jpg"
+  ],
+  "第26話_08_003.jpg": [
+    "source/originals/第26话/第26話_08_003.jpg",
+    "source/proxies/ep26/第26話_08_003.jpg",
+    "source/validation-panels/第26話_08_003.jpg"
+  ],
+  "第26話_09_001.jpg": [
+    "source/originals/第26话/第26話_09_001.jpg",
+    "source/proxies/ep26/第26話_09_001.jpg",
+    "source/validation-panels/第26話_09_001.jpg"
+  ],
+  "第26話_09_002.jpg": [
+    "source/originals/第26话/第26話_09_002.jpg",
+    "source/proxies/ep26/第26話_09_002.jpg",
+    "source/validation-panels/第26話_09_002.jpg"
+  ],
+  "第26話_09_003.jpg": [
+    "source/originals/第26话/第26話_09_003.jpg",
+    "source/proxies/ep26/第26話_09_003.jpg",
+    "source/validation-panels/第26話_09_003.jpg"
+  ],
+  "第26話_09_004.jpg": [
+    "source/originals/第26话/第26話_09_004.jpg",
+    "source/proxies/ep26/第26話_09_004.jpg",
+    "source/validation-panels/第26話_09_004.jpg"
+  ],
+  "第26話_10_001.jpg": [
+    "source/originals/第26话/第26話_10_001.jpg",
+    "source/proxies/ep26/第26話_10_001.jpg",
+    "source/validation-panels/第26話_10_001.jpg"
+  ],
+  "第26話_10_002.jpg": [
+    "source/originals/第26话/第26話_10_002.jpg",
+    "source/proxies/ep26/第26話_10_002.jpg",
+    "source/validation-panels/第26話_10_002.jpg"
+  ],
+  "第26話_10_003.jpg": [
+    "source/originals/第26话/第26話_10_003.jpg",
+    "source/proxies/ep26/第26話_10_003.jpg",
+    "source/validation-panels/第26話_10_003.jpg"
+  ],
+  "第26話_11_001.jpg": [
+    "source/originals/第26话/第26話_11_001.jpg",
+    "source/proxies/ep26/第26話_11_001.jpg"
+  ],
+  "第26話_11_002.jpg": [
+    "source/originals/第26话/第26話_11_002.jpg",
+    "source/proxies/ep26/第26話_11_002.jpg",
+    "source/validation-panels/第26話_11_002.jpg"
+  ],
+  "第26話_12_001.jpg": [
+    "source/originals/第26话/第26話_12_001.jpg",
+    "source/proxies/ep26/第26話_12_001.jpg",
+    "source/validation-panels/第26話_12_001.jpg"
+  ],
+  "第26話_12_002.jpg": [
+    "source/originals/第26话/第26話_12_002.jpg",
+    "source/proxies/ep26/第26話_12_002.jpg",
+    "source/validation-panels/第26話_12_002.jpg"
+  ],
+  "第26話_12_003.jpg": [
+    "source/originals/第26话/第26話_12_003.jpg",
+    "source/proxies/ep26/第26話_12_003.jpg",
+    "source/validation-panels/第26話_12_003.jpg"
+  ],
+  "第26話_12_004.jpg": [
+    "source/originals/第26话/第26話_12_004.jpg",
+    "source/proxies/ep26/第26話_12_004.jpg",
+    "source/validation-panels/第26話_12_004.jpg"
+  ],
+  "第26話_13_001.jpg": [
+    "source/originals/第26话/第26話_13_001.jpg",
+    "source/proxies/ep26/第26話_13_001.jpg",
+    "source/validation-panels/第26話_13_001.jpg"
+  ],
+  "第26話_13_002.jpg": [
+    "source/originals/第26话/第26話_13_002.jpg",
+    "source/proxies/ep26/第26話_13_002.jpg",
+    "source/validation-panels/第26話_13_002.jpg"
+  ],
+  "第26話_13_003.jpg": [
+    "source/originals/第26话/第26話_13_003.jpg",
+    "source/proxies/ep26/第26話_13_003.jpg",
+    "source/validation-panels/第26話_13_003.jpg"
+  ],
+  "第26話_13_004.jpg": [
+    "source/originals/第26话/第26話_13_004.jpg",
+    "source/proxies/ep26/第26話_13_004.jpg",
+    "source/validation-panels/第26話_13_004.jpg"
+  ],
+  "第26話_14_001.jpg": [
+    "source/originals/第26话/第26話_14_001.jpg",
+    "source/proxies/ep26/第26話_14_001.jpg",
+    "source/validation-panels/第26話_14_001.jpg"
+  ],
+  "第26話_14_002.jpg": [
+    "source/originals/第26话/第26話_14_002.jpg",
+    "source/proxies/ep26/第26話_14_002.jpg",
+    "source/validation-panels/第26話_14_002.jpg"
+  ],
+  "第26話_15_001.jpg": [
+    "source/originals/第26话/第26話_15_001.jpg",
+    "source/proxies/ep26/第26話_15_001.jpg",
+    "source/validation-panels/第26話_15_001.jpg"
+  ],
+  "第26話_15_002.jpg": [
+    "source/originals/第26话/第26話_15_002.jpg",
+    "source/proxies/ep26/第26話_15_002.jpg",
+    "source/validation-panels/第26話_15_002.jpg"
+  ],
+  "第26話_16_001.jpg": [
+    "source/originals/第26话/第26話_16_001.jpg",
+    "source/proxies/ep26/第26話_16_001.jpg",
+    "source/validation-panels/第26話_16_001.jpg"
+  ],
+  "第26話_16_002.jpg": [
+    "source/originals/第26话/第26話_16_002.jpg",
+    "source/proxies/ep26/第26話_16_002.jpg",
+    "source/validation-panels/第26話_16_002.jpg"
+  ],
+  "第26話_16_003.jpg": [
+    "source/originals/第26话/第26話_16_003.jpg",
+    "source/proxies/ep26/第26話_16_003.jpg",
+    "source/validation-panels/第26話_16_003.jpg"
+  ],
+  "第26話_17_001.jpg": [
+    "source/originals/第26话/第26話_17_001.jpg",
+    "source/proxies/ep26/第26話_17_001.jpg",
+    "source/validation-panels/第26話_17_001.jpg"
+  ],
+  "第26話_17_002.jpg": [
+    "source/originals/第26话/第26話_17_002.jpg",
+    "source/proxies/ep26/第26話_17_002.jpg",
+    "source/validation-panels/第26話_17_002.jpg"
+  ],
+  "第26話_17_003.jpg": [
+    "source/originals/第26话/第26話_17_003.jpg",
+    "source/proxies/ep26/第26話_17_003.jpg",
+    "source/validation-panels/第26話_17_003.jpg"
+  ],
+  "第26話_18_001.jpg": [
+    "source/originals/第26话/第26話_18_001.jpg",
+    "source/proxies/ep26/第26話_18_001.jpg",
+    "source/validation-panels/第26話_18_001.jpg"
+  ],
+  "第26話_18_002.jpg": [
+    "source/originals/第26话/第26話_18_002.jpg",
+    "source/proxies/ep26/第26話_18_002.jpg",
+    "source/validation-panels/第26話_18_002.jpg"
+  ],
+  "第26話_18_003.jpg": [
+    "source/originals/第26话/第26話_18_003.jpg",
+    "source/proxies/ep26/第26話_18_003.jpg",
+    "source/validation-panels/第26話_18_003.jpg"
+  ],
+  "第26話_18_004.jpg": [
+    "source/originals/第26话/第26話_18_004.jpg",
+    "source/proxies/ep26/第26話_18_004.jpg",
+    "source/validation-panels/第26話_18_004.jpg"
+  ],
+  "第26話_19_001.jpg": [
+    "source/originals/第26话/第26話_19_001.jpg",
+    "source/proxies/ep26/第26話_19_001.jpg",
+    "source/validation-panels/第26話_19_001.jpg"
+  ],
+  "第26話_19_002.jpg": [
+    "source/originals/第26话/第26話_19_002.jpg",
+    "source/proxies/ep26/第26話_19_002.jpg",
+    "source/validation-panels/第26話_19_002.jpg"
+  ],
+  "第27話_17_001.jpg": [
+    "source/originals/第27话/第27話_17_001.jpg",
+    "source/proxies/ep27/第27話_17_001.jpg",
+    "source/validation-panels/第27話_17_001.jpg"
+  ],
+  "第27話_17_002.jpg": [
+    "source/originals/第27话/第27話_17_002.jpg",
+    "source/proxies/ep27/第27話_17_002.jpg",
+    "source/validation-panels/第27話_17_002.jpg"
+  ],
+  "第27話_18_001.jpg": [
+    "source/originals/第27话/第27話_18_001.jpg",
+    "source/proxies/ep27/第27話_18_001.jpg",
+    "source/validation-panels/第27話_18_001.jpg"
+  ],
+  "第27話_18_002.jpg": [
+    "source/originals/第27话/第27話_18_002.jpg",
+    "source/proxies/ep27/第27話_18_002.jpg",
+    "source/validation-panels/第27話_18_002.jpg"
+  ],
+  "第27話_18_003.jpg": [
+    "source/originals/第27话/第27話_18_003.jpg",
+    "source/proxies/ep27/第27話_18_003.jpg",
+    "source/validation-panels/第27話_18_003.jpg"
+  ],
+  "第27話_19_001.jpg": [
+    "source/originals/第27话/第27話_19_001.jpg",
+    "source/proxies/ep27/第27話_19_001.jpg",
+    "source/validation-panels/第27話_19_001.jpg"
+  ],
+  "第27話_19_002.jpg": [
+    "source/originals/第27话/第27話_19_002.jpg",
+    "source/proxies/ep27/第27話_19_002.jpg",
+    "source/validation-panels/第27話_19_002.jpg"
+  ],
+  "第27話_19_003.jpg": [
+    "source/originals/第27话/第27話_19_003.jpg",
+    "source/proxies/ep27/第27話_19_003.jpg",
+    "source/validation-panels/第27話_19_003.jpg"
+  ],
+  "第27話_20_001.jpg": [
+    "source/originals/第27话/第27話_20_001.jpg",
+    "source/proxies/ep27/第27話_20_001.jpg"
+  ],
+  "第27話_20_002.jpg": [
+    "source/originals/第27话/第27話_20_002.jpg",
+    "source/proxies/ep27/第27話_20_002.jpg",
+    "source/validation-panels/第27話_20_002.jpg"
+  ],
+  "第27話_21_001.jpg": [
+    "source/originals/第27话/第27話_21_001.jpg",
+    "source/proxies/ep27/第27話_21_001.jpg",
+    "source/validation-panels/第27話_21_001.jpg"
+  ],
+  "第27話_22_001.jpg": [
+    "source/originals/第27话/第27話_22_001.jpg",
+    "source/proxies/ep27/第27話_22_001.jpg",
+    "source/validation-panels/第27話_22_001.jpg"
+  ],
+  "第27話_22_002.jpg": [
+    "source/originals/第27话/第27話_22_002.jpg",
+    "source/proxies/ep27/第27話_22_002.jpg",
+    "source/validation-panels/第27話_22_002.jpg"
+  ],
+  "第27話_23_001.jpg": [
+    "source/originals/第27话/第27話_23_001.jpg",
+    "source/proxies/ep27/第27話_23_001.jpg",
+    "source/validation-panels/第27話_23_001.jpg"
+  ],
+  "第27話_23_002.jpg": [
+    "source/originals/第27话/第27話_23_002.jpg",
+    "source/proxies/ep27/第27話_23_002.jpg",
+    "source/validation-panels/第27話_23_002.jpg"
+  ],
+  "第27話_24_001.jpg": [
+    "source/originals/第27话/第27話_24_001.jpg",
+    "source/proxies/ep27/第27話_24_001.jpg",
+    "source/validation-panels/第27話_24_001.jpg"
+  ],
+  "第27話_24_002.jpg": [
+    "source/originals/第27话/第27話_24_002.jpg",
+    "source/proxies/ep27/第27話_24_002.jpg",
+    "source/validation-panels/第27話_24_002.jpg"
+  ],
+  "第27話_24_003.jpg": [
+    "source/originals/第27话/第27話_24_003.jpg",
+    "source/proxies/ep27/第27話_24_003.jpg",
+    "source/validation-panels/第27話_24_003.jpg"
+  ],
+  "第27話_24_004.jpg": [
+    "source/originals/第27话/第27話_24_004.jpg",
+    "source/proxies/ep27/第27話_24_004.jpg",
+    "source/validation-panels/第27話_24_004.jpg"
+  ],
+  "第27話_25_001.jpg": [
+    "source/originals/第27话/第27話_25_001.jpg",
+    "source/proxies/ep27/第27話_25_001.jpg",
+    "source/validation-panels/第27話_25_001.jpg"
+  ],
+  "第27話_25_002.jpg": [
+    "source/originals/第27话/第27話_25_002.jpg",
+    "source/proxies/ep27/第27話_25_002.jpg",
+    "source/validation-panels/第27話_25_002.jpg"
+  ],
+  "第27話_25_003.jpg": [
+    "source/originals/第27话/第27話_25_003.jpg",
+    "source/proxies/ep27/第27話_25_003.jpg",
+    "source/validation-panels/第27話_25_003.jpg"
+  ],
+  "第27話_26_001.jpg": [
+    "source/originals/第27话/第27話_26_001.jpg",
+    "source/proxies/ep27/第27話_26_001.jpg",
+    "source/validation-panels/第27話_26_001.jpg"
+  ],
+  "第27話_26_002.jpg": [
+    "source/originals/第27话/第27話_26_002.jpg",
+    "source/proxies/ep27/第27話_26_002.jpg",
+    "source/validation-panels/第27話_26_002.jpg"
+  ],
+  "第27話_26_003.jpg": [
+    "source/originals/第27话/第27話_26_003.jpg",
+    "source/proxies/ep27/第27話_26_003.jpg",
+    "source/validation-panels/第27話_26_003.jpg"
+  ],
+  "第28話_01_001.jpg": [
+    "source/originals/第28话/第28話_01_001.jpg",
+    "source/proxies/ep28/第28話_01_001.jpg",
+    "source/validation-panels/第28話_01_001.jpg"
+  ],
+  "第28話_01_002.jpg": [
+    "source/originals/第28话/第28話_01_002.jpg",
+    "source/proxies/ep28/第28話_01_002.jpg",
+    "source/validation-panels/第28話_01_002.jpg"
+  ],
+  "第28話_01_003.jpg": [
+    "source/originals/第28话/第28話_01_003.jpg",
+    "source/proxies/ep28/第28話_01_003.jpg",
+    "source/validation-panels/第28話_01_003.jpg"
+  ],
+  "第28話_01_004.jpg": [
+    "source/originals/第28话/第28話_01_004.jpg",
+    "source/proxies/ep28/第28話_01_004.jpg",
+    "source/validation-panels/第28話_01_004.jpg"
+  ],
+  "第28話_02_001.jpg": [
+    "source/originals/第28话/第28話_02_001.jpg",
+    "source/proxies/ep28/第28話_02_001.jpg",
+    "source/validation-panels/第28話_02_001.jpg"
+  ],
+  "第28話_02_002.jpg": [
+    "source/originals/第28话/第28話_02_002.jpg",
+    "source/proxies/ep28/第28話_02_002.jpg",
+    "source/validation-panels/第28話_02_002.jpg"
+  ],
+  "第28話_02_003.jpg": [
+    "source/originals/第28话/第28話_02_003.jpg",
+    "source/proxies/ep28/第28話_02_003.jpg",
+    "source/validation-panels/第28話_02_003.jpg"
+  ],
+  "第28話_02_004.jpg": [
+    "source/originals/第28话/第28話_02_004.jpg",
+    "source/proxies/ep28/第28話_02_004.jpg",
+    "source/validation-panels/第28話_02_004.jpg"
+  ],
+  "第28話_03_002.jpg": [
+    "source/originals/第28话/第28話_03_002.jpg",
+    "source/proxies/ep28/第28話_03_002.jpg",
+    "source/validation-panels/第28話_03_002.jpg"
+  ],
+  "第28話_03_003.jpg": [
+    "source/originals/第28话/第28話_03_003.jpg",
+    "source/proxies/ep28/第28話_03_003.jpg",
+    "source/validation-panels/第28話_03_003.jpg"
+  ],
+  "第28話_03_004.jpg": [
+    "source/originals/第28话/第28話_03_004.jpg",
+    "source/proxies/ep28/第28話_03_004.jpg",
+    "source/validation-panels/第28話_03_004.jpg"
+  ],
+  "第28話_04_001.jpg": [
+    "source/originals/第28话/第28話_04_001.jpg",
+    "source/proxies/ep28/第28話_04_001.jpg",
+    "source/validation-panels/第28話_04_001.jpg"
+  ],
+  "第28話_04_002.jpg": [
+    "source/originals/第28话/第28話_04_002.jpg",
+    "source/proxies/ep28/第28話_04_002.jpg",
+    "source/validation-panels/第28話_04_002.jpg"
+  ],
+  "第28話_04_003.jpg": [
+    "source/originals/第28话/第28話_04_003.jpg",
+    "source/proxies/ep28/第28話_04_003.jpg",
+    "source/validation-panels/第28話_04_003.jpg"
+  ],
+  "第28話_05_001.jpg": [
+    "source/originals/第28话/第28話_05_001.jpg",
+    "source/proxies/ep28/第28話_05_001.jpg",
+    "source/validation-panels/第28話_05_001.jpg"
+  ],
+  "第28話_05_002.jpg": [
+    "source/originals/第28话/第28話_05_002.jpg",
+    "source/proxies/ep28/第28話_05_002.jpg",
+    "source/validation-panels/第28話_05_002.jpg"
+  ],
+  "第28話_05_003.jpg": [
+    "source/originals/第28话/第28話_05_003.jpg",
+    "source/proxies/ep28/第28話_05_003.jpg",
+    "source/validation-panels/第28話_05_003.jpg"
+  ],
+  "第28話_05_004.jpg": [
+    "source/originals/第28话/第28話_05_004.jpg",
+    "source/proxies/ep28/第28話_05_004.jpg",
+    "source/validation-panels/第28話_05_004.jpg"
+  ],
+  "第28話_06_001.jpg": [
+    "source/originals/第28话/第28話_06_001.jpg",
+    "source/proxies/ep28/第28話_06_001.jpg",
+    "source/validation-panels/第28話_06_001.jpg"
+  ],
+  "第28話_06_002.jpg": [
+    "source/originals/第28话/第28話_06_002.jpg",
+    "source/proxies/ep28/第28話_06_002.jpg",
+    "source/validation-panels/第28話_06_002.jpg"
+  ],
+  "第28話_06_003.jpg": [
+    "source/originals/第28话/第28話_06_003.jpg",
+    "source/proxies/ep28/第28話_06_003.jpg",
+    "source/validation-panels/第28話_06_003.jpg"
+  ],
+  "第28話_06_004.jpg": [
+    "source/originals/第28话/第28話_06_004.jpg",
+    "source/proxies/ep28/第28話_06_004.jpg",
+    "source/validation-panels/第28話_06_004.jpg"
+  ],
+  "第28話_07_001.jpg": [
+    "source/originals/第28话/第28話_07_001.jpg",
+    "source/proxies/ep28/第28話_07_001.jpg",
+    "source/validation-panels/第28話_07_001.jpg"
+  ],
+  "第28話_07_002.jpg": [
+    "source/originals/第28话/第28話_07_002.jpg",
+    "source/proxies/ep28/第28話_07_002.jpg",
+    "source/validation-panels/第28話_07_002.jpg"
+  ],
+  "第28話_07_003.jpg": [
+    "source/originals/第28话/第28話_07_003.jpg",
+    "source/proxies/ep28/第28話_07_003.jpg",
+    "source/validation-panels/第28話_07_003.jpg"
+  ],
+  "第28話_08_001.jpg": [
+    "source/originals/第28话/第28話_08_001.jpg",
+    "source/proxies/ep28/第28話_08_001.jpg",
+    "source/validation-panels/第28話_08_001.jpg"
+  ],
+  "第28話_08_002.jpg": [
+    "source/originals/第28话/第28話_08_002.jpg",
+    "source/proxies/ep28/第28話_08_002.jpg",
+    "source/validation-panels/第28話_08_002.jpg"
+  ],
+  "第28話_08_003.jpg": [
+    "source/originals/第28话/第28話_08_003.jpg",
+    "source/proxies/ep28/第28話_08_003.jpg",
+    "source/validation-panels/第28話_08_003.jpg"
+  ],
+  "第28話_09_001.jpg": [
+    "source/originals/第28话/第28話_09_001.jpg",
+    "source/proxies/ep28/第28話_09_001.jpg",
+    "source/validation-panels/第28話_09_001.jpg"
+  ],
+  "第28話_09_002.jpg": [
+    "source/originals/第28话/第28話_09_002.jpg",
+    "source/proxies/ep28/第28話_09_002.jpg",
+    "source/validation-panels/第28話_09_002.jpg"
+  ],
+  "第28話_10_001.jpg": [
+    "source/originals/第28话/第28話_10_001.jpg",
+    "source/proxies/ep28/第28話_10_001.jpg",
+    "source/validation-panels/第28話_10_001.jpg"
+  ],
+  "第28話_10_002.jpg": [
+    "source/originals/第28话/第28話_10_002.jpg",
+    "source/proxies/ep28/第28話_10_002.jpg",
+    "source/validation-panels/第28話_10_002.jpg"
+  ],
+  "第28話_10_003.jpg": [
+    "source/originals/第28话/第28話_10_003.jpg",
+    "source/proxies/ep28/第28話_10_003.jpg",
+    "source/validation-panels/第28話_10_003.jpg"
+  ],
+  "第28話_10_004.jpg": [
+    "source/originals/第28话/第28話_10_004.jpg",
+    "source/proxies/ep28/第28話_10_004.jpg",
+    "source/validation-panels/第28話_10_004.jpg"
+  ],
+  "第28話_11_001.jpg": [
+    "source/originals/第28话/第28話_11_001.jpg",
+    "source/proxies/ep28/第28話_11_001.jpg",
+    "source/validation-panels/第28話_11_001.jpg"
+  ],
+  "第28話_11_002.jpg": [
+    "source/originals/第28话/第28話_11_002.jpg",
+    "source/proxies/ep28/第28話_11_002.jpg",
+    "source/validation-panels/第28話_11_002.jpg"
+  ],
+  "第28話_11_003.jpg": [
+    "source/originals/第28话/第28話_11_003.jpg",
+    "source/proxies/ep28/第28話_11_003.jpg",
+    "source/validation-panels/第28話_11_003.jpg"
+  ],
+  "第28話_12_001.jpg": [
+    "source/originals/第28话/第28話_12_001.jpg",
+    "source/proxies/ep28/第28話_12_001.jpg",
+    "source/validation-panels/第28話_12_001.jpg"
+  ],
+  "第28話_12_002.jpg": [
+    "source/originals/第28话/第28話_12_002.jpg",
+    "source/proxies/ep28/第28話_12_002.jpg",
+    "source/validation-panels/第28話_12_002.jpg"
+  ],
+  "第28話_12_003.jpg": [
+    "source/originals/第28话/第28話_12_003.jpg",
+    "source/proxies/ep28/第28話_12_003.jpg",
+    "source/validation-panels/第28話_12_003.jpg"
+  ],
+  "第28話_12_004.jpg": [
+    "source/originals/第28话/第28話_12_004.jpg",
+    "source/proxies/ep28/第28話_12_004.jpg",
+    "source/validation-panels/第28話_12_004.jpg"
+  ],
+  "第28話_13_001.jpg": [
+    "source/originals/第28话/第28話_13_001.jpg",
+    "source/proxies/ep28/第28話_13_001.jpg",
+    "source/validation-panels/第28話_13_001.jpg"
+  ],
+  "第28話_13_002.jpg": [
+    "source/originals/第28话/第28話_13_002.jpg",
+    "source/proxies/ep28/第28話_13_002.jpg",
+    "source/validation-panels/第28話_13_002.jpg"
+  ],
+  "第28話_14_001.jpg": [
+    "source/originals/第28话/第28話_14_001.jpg",
+    "source/proxies/ep28/第28話_14_001.jpg",
+    "source/validation-panels/第28話_14_001.jpg"
+  ],
+  "第28話_14_002.jpg": [
+    "source/originals/第28话/第28話_14_002.jpg",
+    "source/proxies/ep28/第28話_14_002.jpg",
+    "source/validation-panels/第28話_14_002.jpg"
+  ],
+  "第28話_14_003.jpg": [
+    "source/originals/第28话/第28話_14_003.jpg",
+    "source/proxies/ep28/第28話_14_003.jpg",
+    "source/validation-panels/第28話_14_003.jpg"
+  ],
+  "第28話_15_001.jpg": [
+    "source/originals/第28话/第28話_15_001.jpg",
+    "source/proxies/ep28/第28話_15_001.jpg",
+    "source/validation-panels/第28話_15_001.jpg"
+  ],
+  "第28話_16_001.jpg": [
+    "source/originals/第28话/第28話_16_001.jpg",
+    "source/proxies/ep28/第28話_16_001.jpg",
+    "source/validation-panels/第28話_16_001.jpg"
+  ],
+  "第28話_16_002.jpg": [
+    "source/originals/第28话/第28話_16_002.jpg",
+    "source/proxies/ep28/第28話_16_002.jpg",
+    "source/validation-panels/第28話_16_002.jpg"
+  ],
+  "第28話_16_003.jpg": [
+    "source/originals/第28话/第28話_16_003.jpg",
+    "source/proxies/ep28/第28話_16_003.jpg",
+    "source/validation-panels/第28話_16_003.jpg"
+  ],
+  "第28話_17_001.jpg": [
+    "source/originals/第28话/第28話_17_001.jpg",
+    "source/proxies/ep28/第28話_17_001.jpg",
+    "source/validation-panels/第28話_17_001.jpg"
+  ],
+  "第28話_17_002.jpg": [
+    "source/originals/第28话/第28話_17_002.jpg",
+    "source/proxies/ep28/第28話_17_002.jpg",
+    "source/validation-panels/第28話_17_002.jpg"
+  ],
+  "第28話_18_001.jpg": [
+    "source/originals/第28话/第28話_18_001.jpg",
+    "source/proxies/ep28/第28話_18_001.jpg",
+    "source/validation-panels/第28話_18_001.jpg"
+  ],
+  "第28話_18_002.jpg": [
+    "source/originals/第28话/第28話_18_002.jpg",
+    "source/proxies/ep28/第28話_18_002.jpg",
+    "source/validation-panels/第28話_18_002.jpg"
+  ],
+  "第28話_19_003.jpg": [
+    "source/originals/第28话/第28話_19_003.jpg",
+    "source/proxies/ep28/第28話_19_003.jpg",
+    "source/validation-panels/第28話_19_003.jpg"
+  ],
+  "第28話_20_001.jpg": [
+    "source/originals/第28话/第28話_20_001.jpg",
+    "source/proxies/ep28/第28話_20_001.jpg",
+    "source/validation-panels/第28話_20_001.jpg"
+  ],
+  "第28話_20_002.jpg": [
+    "source/originals/第28话/第28話_20_002.jpg",
+    "source/proxies/ep28/第28話_20_002.jpg",
+    "source/validation-panels/第28話_20_002.jpg"
+  ],
+  "第28話_20_003.jpg": [
+    "source/originals/第28话/第28話_20_003.jpg",
+    "source/proxies/ep28/第28話_20_003.jpg",
+    "source/validation-panels/第28話_20_003.jpg"
+  ],
+  "第28話_21_001.jpg": [
+    "source/originals/第28话/第28話_21_001.jpg",
+    "source/proxies/ep28/第28話_21_001.jpg",
+    "source/validation-panels/第28話_21_001.jpg"
+  ],
+  "第28話_21_002.jpg": [
+    "source/originals/第28话/第28話_21_002.jpg",
+    "source/proxies/ep28/第28話_21_002.jpg",
+    "source/validation-panels/第28話_21_002.jpg"
+  ],
+  "第28話_21_003.jpg": [
+    "source/originals/第28话/第28話_21_003.jpg",
+    "source/proxies/ep28/第28話_21_003.jpg",
+    "source/validation-panels/第28話_21_003.jpg"
+  ],
+  "第28話_22_001.jpg": [
+    "source/originals/第28话/第28話_22_001.jpg",
+    "source/proxies/ep28/第28話_22_001.jpg",
+    "source/validation-panels/第28話_22_001.jpg"
+  ],
+  "第28話_22_002.jpg": [
+    "source/originals/第28话/第28話_22_002.jpg",
+    "source/proxies/ep28/第28話_22_002.jpg",
+    "source/validation-panels/第28話_22_002.jpg"
+  ],
+  "第28話_22_003.jpg": [
+    "source/originals/第28话/第28話_22_003.jpg",
+    "source/proxies/ep28/第28話_22_003.jpg",
+    "source/validation-panels/第28話_22_003.jpg"
+  ],
+  "第28話_22_004.jpg": [
+    "source/originals/第28话/第28話_22_004.jpg",
+    "source/proxies/ep28/第28話_22_004.jpg",
+    "source/validation-panels/第28話_22_004.jpg"
+  ],
+  "第28話_23_001.jpg": [
+    "source/originals/第28话/第28話_23_001.jpg",
+    "source/proxies/ep28/第28話_23_001.jpg",
+    "source/validation-panels/第28話_23_001.jpg"
+  ],
+  "第28話_23_002.jpg": [
+    "source/originals/第28话/第28話_23_002.jpg",
+    "source/proxies/ep28/第28話_23_002.jpg",
+    "source/validation-panels/第28話_23_002.jpg"
+  ],
+  "第28話_23_003.jpg": [
+    "source/originals/第28话/第28話_23_003.jpg",
+    "source/proxies/ep28/第28話_23_003.jpg",
+    "source/validation-panels/第28話_23_003.jpg"
+  ],
+  "第28話_23_004.jpg": [
+    "source/originals/第28话/第28話_23_004.jpg",
+    "source/proxies/ep28/第28話_23_004.jpg",
+    "source/validation-panels/第28話_23_004.jpg"
+  ],
+  "第28話_24_001.jpg": [
+    "source/originals/第28话/第28話_24_001.jpg",
+    "source/proxies/ep28/第28話_24_001.jpg",
+    "source/validation-panels/第28話_24_001.jpg"
+  ],
+  "第28話_24_002.jpg": [
+    "source/originals/第28话/第28話_24_002.jpg",
+    "source/proxies/ep28/第28話_24_002.jpg",
+    "source/validation-panels/第28話_24_002.jpg"
+  ],
+  "第28話_24_003.jpg": [
+    "source/originals/第28话/第28話_24_003.jpg",
+    "source/proxies/ep28/第28話_24_003.jpg",
+    "source/validation-panels/第28話_24_003.jpg"
+  ],
+  "第28話_25_001.jpg": [
+    "source/originals/第28话/第28話_25_001.jpg",
+    "source/proxies/ep28/第28話_25_001.jpg",
+    "source/validation-panels/第28話_25_001.jpg"
+  ],
+  "第28話_25_002.jpg": [
+    "source/originals/第28话/第28話_25_002.jpg",
+    "source/proxies/ep28/第28話_25_002.jpg",
+    "source/validation-panels/第28話_25_002.jpg"
+  ],
+  "第28話_26_001.jpg": [
+    "source/originals/第28话/第28話_26_001.jpg",
+    "source/proxies/ep28/第28話_26_001.jpg",
+    "source/validation-panels/第28話_26_001.jpg"
+  ],
+  "第28話_26_002.jpg": [
+    "source/originals/第28话/第28話_26_002.jpg",
+    "source/proxies/ep28/第28話_26_002.jpg",
+    "source/validation-panels/第28話_26_002.jpg"
+  ],
+  "第28話_26_003.jpg": [
+    "source/originals/第28话/第28話_26_003.jpg",
+    "source/proxies/ep28/第28話_26_003.jpg",
+    "source/validation-panels/第28話_26_003.jpg"
+  ],
+  "第28話_27_001.jpg": [
+    "source/originals/第28话/第28話_27_001.jpg",
+    "source/proxies/ep28/第28話_27_001.jpg",
+    "source/validation-panels/第28話_27_001.jpg"
+  ],
+  "第28話_27_002.jpg": [
+    "source/originals/第28话/第28話_27_002.jpg",
+    "source/proxies/ep28/第28話_27_002.jpg",
+    "source/validation-panels/第28話_27_002.jpg"
+  ],
+  "第28話_27_003.jpg": [
+    "source/originals/第28话/第28話_27_003.jpg",
+    "source/proxies/ep28/第28話_27_003.jpg",
+    "source/validation-panels/第28話_27_003.jpg"
+  ],
+  "第28話_28_001.jpg": [
+    "source/originals/第28话/第28話_28_001.jpg",
+    "source/proxies/ep28/第28話_28_001.jpg",
+    "source/validation-panels/第28話_28_001.jpg"
+  ],
+  "第28話_28_002.jpg": [
+    "source/originals/第28话/第28話_28_002.jpg",
+    "source/proxies/ep28/第28話_28_002.jpg",
+    "source/validation-panels/第28話_28_002.jpg"
+  ],
+  "第28話_28_003.jpg": [
+    "source/originals/第28话/第28話_28_003.jpg",
+    "source/proxies/ep28/第28話_28_003.jpg",
+    "source/validation-panels/第28話_28_003.jpg"
+  ],
+  "第28話_29_001.jpg": [
+    "source/originals/第28话/第28話_29_001.jpg",
+    "source/proxies/ep28/第28話_29_001.jpg",
+    "source/validation-panels/第28話_29_001.jpg"
+  ],
+  "第28話_29_002.jpg": [
+    "source/originals/第28话/第28話_29_002.jpg",
+    "source/proxies/ep28/第28話_29_002.jpg",
+    "source/validation-panels/第28話_29_002.jpg"
+  ],
+  "第28話_30_001.jpg": [
+    "source/originals/第28话/第28話_30_001.jpg",
+    "source/proxies/ep28/第28話_30_001.jpg",
+    "source/validation-panels/第28話_30_001.jpg"
+  ],
+  "第26話_11_001a.jpg": [
+    "source/proxies/ep26/第26話_11_001a.jpg",
+    "source/validation-panels/第26話_11_001a.jpg",
+    "working-materials/batch-01/sources/第26話_11_001a.jpg"
+  ],
+  "第26話_11_001b.jpg": [
+    "source/proxies/ep26/第26話_11_001b.jpg",
+    "source/validation-panels/第26話_11_001b.jpg",
+    "working-materials/batch-01/sources/第26話_11_001b.jpg"
+  ],
+  "index.json": [
+    "source/proxies/ep26/overview/index.json",
+    "source/proxies/ep27/overview/index.json",
+    "source/proxies/ep28/overview/index.json",
+    "source/proxies/overview/index.json"
+  ],
+  "overview-0001.jpg": [
+    "source/proxies/ep26/overview/overview-0001.jpg",
+    "source/proxies/ep27/overview/overview-0001.jpg",
+    "source/proxies/ep28/overview/overview-0001.jpg"
+  ],
+  "overview-0002.jpg": [
+    "source/proxies/ep26/overview/overview-0002.jpg",
+    "source/proxies/ep27/overview/overview-0002.jpg",
+    "source/proxies/ep28/overview/overview-0002.jpg"
+  ],
+  "overview-0003.jpg": [
+    "source/proxies/ep26/overview/overview-0003.jpg",
+    "source/proxies/ep27/overview/overview-0003.jpg",
+    "source/proxies/ep28/overview/overview-0003.jpg"
+  ],
+  "第27話_20_001a.jpg": [
+    "source/proxies/ep27/第27話_20_001a.jpg",
+    "source/validation-panels/第27話_20_001a.jpg",
+    "working-materials/batch-02/sources/第27話_20_001a.jpg"
+  ],
+  "第27話_20_001b.jpg": [
+    "source/proxies/ep27/第27話_20_001b.jpg",
+    "source/validation-panels/第27話_20_001b.jpg",
+    "working-materials/batch-02/sources/第27話_20_001b.jpg"
+  ],
+  "overview-0004.jpg": [
+    "source/proxies/ep28/overview/overview-0004.jpg"
+  ],
+  "overview-0005.jpg": [
+    "source/proxies/ep28/overview/overview-0005.jpg"
+  ],
+  "overview-0006.jpg": [
+    "source/proxies/ep28/overview/overview-0006.jpg"
+  ],
+  "overview-0007.jpg": [
+    "source/proxies/ep28/overview/overview-0007.jpg"
+  ],
+  "overview-0008.jpg": [
+    "source/proxies/ep28/overview/overview-0008.jpg"
+  ],
+  "alignment.py": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/alignment.py",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/alignment.py"
+  ],
+  "build_delivery.py": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/build_delivery.py",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/build_delivery.py"
+  ],
+  "director_plan.py": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/director_plan.py",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/director_plan.py"
+  ],
+  "finish_delivery.py": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/finish_delivery.py",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/finish_delivery.py"
+  ],
+  "交付指纹.json": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/交付指纹.json",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/交付指纹.json"
+  ],
+  "修改与核对记录.md": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/修改与核对记录.md",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/修改与核对记录.md"
+  ],
+  "剪辑与声轨.json": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/剪辑与声轨.json",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/剪辑与声轨.json"
+  ],
+  "执行稿校验.txt": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/执行稿校验.txt",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/执行稿校验.txt"
+  ],
+  "提示分类.json": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/提示分类.json",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/提示分类.json"
+  ],
+  "版本与验证.json": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/版本与验证.json",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/版本与验证.json"
+  ],
+  "环境复核.md": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/环境复核.md",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/环境复核.md"
+  ],
+  "第一批_六字段核对稿.md": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/第一批_六字段核对稿.md"
+  ],
+  "第一批_动作逻辑修订_R2.md": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/第一批_动作逻辑修订_R2.md"
+  ],
+  "第一批_逐片执行稿.md": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/第一批_逐片执行稿.md"
+  ],
+  "结构校验.txt": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/结构校验.txt",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/结构校验.txt"
+  ],
+  "编译日志.txt": [
+    "unapproved-director-history/第一批_动作逻辑修订_R2_20261111/编译日志.txt",
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/编译日志.txt"
+  ],
+  "原格与台词对照.md": [
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/原格与台词对照.md"
+  ],
+  "第二批_六字段核对稿.md": [
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/第二批_六字段核对稿.md"
+  ],
+  "第二批_动作与演出优化_R1.md": [
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/第二批_动作与演出优化_R1.md"
+  ],
+  "第二批_逐片执行稿.md": [
+    "unapproved-director-history/第二批_动作与演出优化_R1_20261111/第二批_逐片执行稿.md"
+  ],
+  "写入第二遍.py": [
+    "working-materials/batch-01/写入第二遍.py",
+    "working-materials/batch-02/写入第二遍.py",
+    "working-materials/batch-03/写入第二遍.py",
+    "working-materials/batch-04/写入第二遍.py",
+    "working-materials/batch-05/写入第二遍.py"
+  ],
+  "第一批_原文与日文演出台词对照.md": [
+    "working-materials/batch-01/第一批_原文与日文演出台词对照.md"
+  ],
+  "第二遍_窗口01.py": [
+    "working-materials/batch-01/第二遍_窗口01.py"
+  ],
+  "第二遍_窗口02.py": [
+    "working-materials/batch-01/第二遍_窗口02.py"
+  ],
+  "第二遍_窗口03.py": [
+    "working-materials/batch-01/第二遍_窗口03.py"
+  ],
+  "第二遍_窗口04.py": [
+    "working-materials/batch-01/第二遍_窗口04.py"
+  ],
+  "第二遍_窗口05.py": [
+    "working-materials/batch-01/第二遍_窗口05.py"
+  ],
+  "第二遍_窗口06.py": [
+    "working-materials/batch-01/第二遍_窗口06.py"
+  ],
+  "第二遍_窗口07.py": [
+    "working-materials/batch-01/第二遍_窗口07.py"
+  ],
+  "第二遍_窗口08.py": [
+    "working-materials/batch-01/第二遍_窗口08.py"
+  ],
+  "第二遍_窗口09.py": [
+    "working-materials/batch-01/第二遍_窗口09.py"
+  ],
+  "第二遍_窗口10.py": [
+    "working-materials/batch-01/第二遍_窗口10.py"
+  ],
+  "第二遍_窗口11.py": [
+    "working-materials/batch-01/第二遍_窗口11.py"
+  ],
+  "第二遍_窗口12.py": [
+    "working-materials/batch-01/第二遍_窗口12.py"
+  ],
+  "11_001_下部_核对.png": [
+    "working-materials/batch-01/核对裁图/11_001_下部_核对.png"
+  ],
+  "15_002_轨迹末端_仅核对.png": [
+    "working-materials/batch-01/核对裁图/15_002_轨迹末端_仅核对.png"
+  ],
+  "第二批_原文与日文演出台词对照.md": [
+    "working-materials/batch-02/第二批_原文与日文演出台词对照.md"
+  ],
+  "第二遍_01.py": [
+    "working-materials/batch-02/第二遍_01.py",
+    "working-materials/batch-03/第二遍_01.py",
+    "working-materials/batch-04/第二遍_01.py",
+    "working-materials/batch-05/第二遍_01.py"
+  ],
+  "第二遍_02.py": [
+    "working-materials/batch-02/第二遍_02.py",
+    "working-materials/batch-03/第二遍_02.py",
+    "working-materials/batch-04/第二遍_02.py",
+    "working-materials/batch-05/第二遍_02.py"
+  ],
+  "第二遍_03.py": [
+    "working-materials/batch-02/第二遍_03.py",
+    "working-materials/batch-03/第二遍_03.py",
+    "working-materials/batch-04/第二遍_03.py",
+    "working-materials/batch-05/第二遍_03.py"
+  ],
+  "第二遍_04.py": [
+    "working-materials/batch-02/第二遍_04.py",
+    "working-materials/batch-03/第二遍_04.py",
+    "working-materials/batch-04/第二遍_04.py",
+    "working-materials/batch-05/第二遍_04.py"
+  ],
+  "第二遍_05.py": [
+    "working-materials/batch-02/第二遍_05.py",
+    "working-materials/batch-03/第二遍_05.py",
+    "working-materials/batch-04/第二遍_05.py",
+    "working-materials/batch-05/第二遍_05.py"
+  ],
+  "第二遍_06.py": [
+    "working-materials/batch-02/第二遍_06.py",
+    "working-materials/batch-03/第二遍_06.py",
+    "working-materials/batch-04/第二遍_06.py",
+    "working-materials/batch-05/第二遍_06.py"
+  ],
+  "第二遍_07.py": [
+    "working-materials/batch-02/第二遍_07.py",
+    "working-materials/batch-03/第二遍_07.py",
+    "working-materials/batch-04/第二遍_07.py",
+    "working-materials/batch-05/第二遍_07.py"
+  ],
+  "第二遍_08.py": [
+    "working-materials/batch-02/第二遍_08.py",
+    "working-materials/batch-03/第二遍_08.py",
+    "working-materials/batch-05/第二遍_08.py"
+  ],
+  "第二遍_09.py": [
+    "working-materials/batch-02/第二遍_09.py",
+    "working-materials/batch-03/第二遍_09.py",
+    "working-materials/batch-05/第二遍_09.py"
+  ],
+  "26_003_英文尖叫原尺寸.png": [
+    "working-materials/batch-02/核对裁图/26_003_英文尖叫原尺寸.png"
+  ],
+  "第三批_原文与日文演出台词对照.md": [
+    "working-materials/batch-03/第三批_原文与日文演出台词对照.md"
+  ],
+  "第二遍_10.py": [
+    "working-materials/batch-03/第二遍_10.py",
+    "working-materials/batch-05/第二遍_10.py"
+  ],
+  "第二遍_11.py": [
+    "working-materials/batch-03/第二遍_11.py"
+  ],
+  "第二遍_12.py": [
+    "working-materials/batch-03/第二遍_12.py"
+  ],
+  "第四批_原文与日文演出台词对照.md": [
+    "working-materials/batch-04/第四批_原文与日文演出台词对照.md"
+  ],
+  "12_004_detail.png": [
+    "working-materials/batch-04/细节读图/12_004_detail.png"
+  ],
+  "14_002_detail.png": [
+    "working-materials/batch-04/细节读图/14_002_detail.png"
+  ],
+  "20_002_detail.png": [
+    "working-materials/batch-04/细节读图/20_002_detail.png"
+  ],
+  "第五批_原文与日文演出台词对照.md": [
+    "working-materials/batch-05/第五批_原文与日文演出台词对照.md"
+  ],
+  "24_001_upper.png": [
+    "working-materials/batch-05/细节读图/24_001_upper.png"
+  ]
+}

@@ -1,0 +1,2379 @@
+{
+  "version": 3,
+  "skill_version": "2.8.2",
+  "authoring_format": "compact-2.8.2",
+  "source_language": "zh",
+  "script_language": "ja",
+  "look": "日间阴云下的悬空城镇平台，灰绿石铺地面、灰米砖墙、蓝灰屋顶、米灰烟尘；远处森林灰绿，岩体断面深灰褐，跨平台斜索深褐。正上方云天冷白漫射，烟囱残基侧稍亮，平台敞口中性弱补光。高空云天深蓝灰，细白粒与亮迹为速度和冲击的二维画面表现。高品质二维手绘，手脚接触、残影和单次落地节奏清楚。",
+  "character_registry_source": {
+    "path": "D:\\Codex\\Projects\\New project\\write-comic-video-storyboards\\comic-workspace\\character-references\\角色映射.md",
+    "version": "9",
+    "read_date": "2026-10-25",
+    "sha256": "75b9fe855ae41f8ea7376b6f93b0f6caaba5ec04ea0721efbecfe2e3be1a2c9a"
+  },
+  "character_registry": [
+    {
+      "id": "C001",
+      "canonical_name": "青",
+      "aliases": [],
+      "identity_status": "identified",
+      "design_reference": "青2.png；漫画尖耳保留，粉紫交领无袖短上衣、紫色不对称裙摆、白色长袜／靴与腕部护件",
+      "performance_profile": {
+        "baseline": "活泼阳光；危险时保留主动判断、惊愕、羞恼和疲惫，不固定嬉笑。",
+        "source": "共享主档用户确认条目"
+      },
+      "reference_visually_opened": true
+    },
+    {
+      "id": "C008",
+      "canonical_name": "鬼头武士",
+      "aliases": [
+        "龟头武士"
+      ],
+      "identity_status": "identified",
+      "design_reference": "鬼头武士.png；褐色贴头头罩、深灰围布、破边黑外衣、米灰交领内衣、缠腿；变身状态从本场漫画核对",
+      "performance_profile": {
+        "baseline": "长期性格未确认；本场追击、自负判断和调侃来自本次原作。",
+        "source": "共享主档设计＋本场上下文，不以参考展示姿势推断长期性格"
+      },
+      "reference_visually_opened": true
+    }
+  ],
+  "project_title": "第四批 青与鬼头武士 第28话再战及后续",
+  "stage": "second_pass_complete",
+  "panels": [
+    {
+      "image": "第28話_11_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_11_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "平台石铺表层在左下与中央断裂掀起，几块大石呈扇形直立，碎屑向上；斜向速度线由左下扫向右上，武士黑色宽立轮廓位于右上平台远端。青实体未在此格清楚显出。",
+        "initial_action_understanding": "咬指后青启动，蹬力掀起起点石面，线迹朝武士方向；实体姿态由接格再判，不当瞬移。",
+        "uncertainties": "起点青身体未明见，不把速度线中随意一块石头认作人。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "平台石铺表层在左下与中央断裂掀起，几块大石呈扇形直立，碎屑向上；斜向速度线由左下扫向右上，武士黑色宽立轮廓位于右上平台远端。青实体未在此格清楚显出。",
+      "source_facts": {
+        "entities": [
+          "平台石铺表层在左下与中央断裂掀起，几块大石呈扇形直立，碎屑向上；斜向速度线由左下扫向右上，武士黑色宽立轮廓位于右上平台远端。青实体未在此格清楚显出。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青蹬地后高速消失于起点",
+        "武士.位置": "原地宽立，双臂位置稳定"
+      },
+      "anchor_target": "片段1/分镜1",
+      "narrative_kind": "action",
+      "story_context": [
+        "青以残影瞬移观感从起点骤然离开，武士不攻击也不改站位。"
+      ],
+      "action_reading": {
+        "summary": "青以残影瞬移观感从起点骤然离开，武士不攻击也不改站位。",
+        "phase": "process",
+        "world_motion": "青以残影瞬移观感从起点骤然离开，武士不攻击也不改站位。",
+        "screen_motion": "残形与速度线由左下起点斜向右上掠出，石板只在起点向上爆开。",
+        "grounding": "青起脚蹬地；武士远处双脚保持着地。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_12_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头部侧面极近，椭圆弧面从右延向左，白眼在左端黑隙里很小；纯白背景，无字。",
+        "initial_action_understanding": "武士的视线特写，接青已到其背后，具体反应速度由邻格读通。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头部侧面极近，椭圆弧面从右延向左，白眼在左端黑隙里很小；纯白背景，无字。",
+      "source_facts": {
+        "entities": [
+          "武士头部侧面极近，椭圆弧面从右延向左，白眼在左端黑隙里很小；纯白背景，无字。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士先察觉身后声位",
+        "武士.位置": "原地站立"
+      },
+      "anchor_target": "片段1/分镜2",
+      "narrative_kind": "action",
+      "story_context": [
+        "武士视线特写先感知青已越过，固定姿态中只有眼神反应。"
+      ],
+      "action_reading": {
+        "summary": "武士视线特写先感知青已越过，固定姿态中只有眼神反应。",
+        "phase": "reaction",
+        "world_motion": "武士视线特写先感知青已越过，固定姿态中只有眼神反应。",
+        "screen_motion": "眼珠在头部黑隙内向背后侧滑，身体没有位移。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_12_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "巨大武士背肩占中央，近侧长粗臂从左上压向左下石面，左下有烟尘和石屑；头转向背后。青位于右后腰际，身体前倾、双腿斜开，一臂抬向其背／腰部，长发向右拖。",
+        "initial_action_understanding": "青已来到武士背后，出声点明位置，武士回头；近侧粗臂与石面关系待后续连读判定。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-12_002-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "在你后面.",
+          "script_text": "後ろだよ。",
+          "status": "mapped",
+          "target": "片段1/分镜3",
+          "start": 0.3,
+          "seconds": 1.03
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "巨大武士背肩占中央，近侧长粗臂从左上压向左下石面，左下有烟尘和石屑；头转向背后。青位于右后腰际，身体前倾、双腿斜开，一臂抬向其背／腰部，长发向右拖。",
+      "source_facts": {
+        "entities": [
+          "巨大武士背肩占中央，近侧长粗臂从左上压向左下石面，左下有烟尘和石屑；头转向背后。青位于右后腰际，身体前倾、双腿斜开，一臂抬向其背／腰部，长发向右拖。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青已到武士背后并开口",
+        "青.位置": "武士右后侧，站稳准备拉拳",
+        "武士.位置": "原地站姿，只有头回转"
+      },
+      "anchor_target": "片段1/分镜3",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "用户纠正：青残影瞬间到背后，武士只回头，无粗臂落空或身体转位。"
+      ],
+      "action_reading": {
+        "summary": "用户纠正：青残影瞬间到背后，武士只回头，无粗臂落空或身体转位。",
+        "phase": "process",
+        "world_motion": "用户纠正：青残影瞬间到背后，武士只回头，无粗臂落空或身体转位。",
+        "screen_motion": "青先以残形闪到右后，再凝实；武士头转向右后，脚与臂不跟转。",
+        "grounding": "青双脚落在武士后侧石面；武士双脚仍在原位承重。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_12_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青头肩占右侧，眼睛睁圆、嘴微合，一只握紧拳头在左后拉开，头发往上后扬；黑白放射速度线由拳头附近向外铺满底场，无气泡。",
+        "initial_action_understanding": "青贴到背后后拧肩拉拳，准备打出重击，拳在身后尚未接触。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青头肩占右侧，眼睛睁圆、嘴微合，一只握紧拳头在左后拉开，头发往上后扬；黑白放射速度线由拳头附近向外铺满底场，无气泡。",
+      "source_facts": {
+        "entities": [
+          "青头肩占右侧，眼睛睁圆、嘴微合，一只握紧拳头在左后拉开，头发往上后扬；黑白放射速度线由拳头附近向外铺满底场，无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青背后拉拳结束，即将命中"
+      },
+      "anchor_target": "片段1/分镜4",
+      "narrative_kind": "action",
+      "story_context": [
+        "青圆眼专注、拳后拉与转肩蓄力保留，下一镜进入同一拳的接触。"
+      ],
+      "action_reading": {
+        "summary": "青圆眼专注、拳后拉与转肩蓄力保留，下一镜进入同一拳的接触。",
+        "phase": "preparation",
+        "world_motion": "青圆眼专注、拳后拉与转肩蓄力保留，下一镜进入同一拳的接触。",
+        "screen_motion": "肩与拳先向左后拉开，再向画面右前同一目标送出。",
+        "grounding": "腿部在画外维持后侧立足，起力从支撑侧向肩传递。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_12_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_12_004.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士椭圆头部与黑色眼隙占左下，右上有弯曲的粗大形体与强烈挤压曲线；细长运动线由下向上斜入，白眼圆睁，气泡EUT...!!。",
+        "initial_action_understanding": "紧接青拉拳的近距离接触重音；需要与后续整体姿势核准命中部位和受力关系，暂不凭局部把右上弯形说成新器官。",
+        "uncertainties": "局部重叠较密；动作路径提交前与12_003、13_001连读。",
+        "detail_reopen": {
+          "source_resolution": "original",
+          "reason": "拳头与颈侧交叠、气泡归属不易判断",
+          "method": "实际打开原文件局部放大；只提高清楚度，不生成或补画。"
+        },
+        "speaker_note": "连读拳击、受击眼形与泡尾暂归武士挨拳闷哼；局部没有说话嘴可辨，提交用户核对，不冒报已经确认。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-12_004-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "EUT...!!",
+          "script_text": "ぐっ…！！",
+          "status": "mapped",
+          "target": "片段1/分镜5",
+          "start": 0.3,
+          "seconds": 0.7
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士椭圆头部与黑色眼隙占左下，右上有弯曲的粗大形体与强烈挤压曲线；细长运动线由下向上斜入，白眼圆睁，气泡EUT...!!。",
+      "source_facts": {
+        "entities": [
+          "武士椭圆头部与黑色眼隙占左下，右上有弯曲的粗大形体与强烈挤压曲线；细长运动线由下向上斜入，白眼圆睁，气泡EUT...!!。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青一拳命中头颈侧，武士被推出原位",
+        "武士.位置": "受击开始离地横移"
+      },
+      "anchor_target": "片段1/分镜5",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "拳击头／颈侧的挤压形、睁大的白眼与武士闷哼保留。"
+      ],
+      "action_reading": {
+        "summary": "拳击头／颈侧的挤压形、睁大的白眼与武士闷哼保留。",
+        "phase": "contact",
+        "world_motion": "拳击头／颈侧的挤压形、睁大的白眼与武士闷哼保留。",
+        "screen_motion": "拳由右下斜向左上顶入，头肩沿受力侧被甩出画幅。",
+        "grounding": "命中后武士重心被带出支撑，接下一镜全身离地。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_13_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_13_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "远景中武士巨大身体向画面右侧离地偏移，粗臂伸向右上，另一大块肢体压在左下；青小小地贴在其右下／身侧，左方大块烟尘，长白冲击带由左上斜通两人。石铺平台斜穿下缘。",
+        "initial_action_understanding": "青近身重击后武士整体被带离原位，双方向平台另一侧推进；留待后格确认青是否跟随并持续击打。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "远景中武士巨大身体向画面右侧离地偏移，粗臂伸向右上，另一大块肢体压在左下；青小小地贴在其右下／身侧，左方大块烟尘，长白冲击带由左上斜通两人。石铺平台斜穿下缘。",
+      "source_facts": {
+        "entities": [
+          "远景中武士巨大身体向画面右侧离地偏移，粗臂伸向右上，另一大块肢体压在左下；青小小地贴在其右下／身侧，左方大块烟尘，长白冲击带由左上斜通两人。石铺平台斜穿下缘。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士横向离地，青贴身跟进",
+        "青.位置": "武士胸侧近身",
+        "武士.位置": "平台上方横飞"
+      },
+      "anchor_target": "片段1/分镜6",
+      "narrative_kind": "action",
+      "story_context": [
+        "被击离地的巨大武士与贴身跟进的青同框，建立后续连续拳击的距离。"
+      ],
+      "action_reading": {
+        "summary": "被击离地的巨大武士与贴身跟进的青同框，建立后续连续拳击的距离。",
+        "phase": "result",
+        "world_motion": "被击离地的巨大武士与贴身跟进的青同框，建立后续连续拳击的距离。",
+        "screen_motion": "武士与青同向向右，镜头平行追移，青保持约一臂内的贴身距离。",
+        "grounding": "武士双脚离地；青由一次蹬石转入短暂悬空跟进。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_13_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_13_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头部大特写斜占画幅，白眼圆睁并偏向一边；轮廓有短促振动尖线，周围散落少量深色点。两泡边缘模糊为内心。",
+        "initial_action_understanding": "武士挨重击后惊讶青的力量和速度完全变化，保持其内心判断，不改成青自夸。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-13_002-b1",
+          "speaker": "鬼头武士",
+          "kind": "inner",
+          "source_text": "什么情况...?!",
+          "script_text": "何だこれは…？！",
+          "status": "mapped",
+          "target": "片段1/分镜7",
+          "start": 0.3,
+          "seconds": 1.24
+        },
+        {
+          "id": "28-13_002-b2",
+          "speaker": "鬼头武士",
+          "kind": "inner",
+          "source_text": "力量和速度与之前完全不是一个档次...!",
+          "script_text": "力も速さも、さっきとはまるで桁が違う…！",
+          "status": "mapped",
+          "target": "片段1/分镜7",
+          "start": 1.79,
+          "seconds": 3.74
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头部大特写斜占画幅，白眼圆睁并偏向一边；轮廓有短促振动尖线，周围散落少量深色点。两泡边缘模糊为内心。",
+      "source_facts": {
+        "entities": [
+          "武士头部大特写斜占画幅，白眼圆睁并偏向一边；轮廓有短促振动尖线，周围散落少量深色点。两泡边缘模糊为内心。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士受击惊觉青已全面强化"
+      },
+      "anchor_target": "片段1/分镜7",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "武士白眼震惊与两句内心判断完整保留，受击后的视线追逐接连续拳击。"
+      ],
+      "action_reading": {
+        "summary": "武士白眼震惊与两句内心判断完整保留，受击后的视线追逐接连续拳击。",
+        "phase": "reaction",
+        "world_motion": "武士白眼震惊与两句内心判断完整保留，受击后的视线追逐接连续拳击。",
+        "screen_motion": "镜头追随横向飞行，武士头向一边歪、眼珠追青，后方细屑同向拖走。",
+        "grounding": "仍在平台上方横移，尚未发生新的落地接触。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_14_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士巨大头胸在左后，青在右前侧身前压，长发向右后拖；巨体胸腹、肩侧等位置密布白色爆点，青双臂／手部有多重短残形，深色放射底。",
+        "initial_action_understanding": "青贴身连续拳击，武士在多点命中下晃动；不把所有爆点当一次拳头同时分身。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士巨大头胸在左后，青在右前侧身前压，长发向右后拖；巨体胸腹、肩侧等位置密布白色爆点，青双臂／手部有多重短残形，深色放射底。",
+      "source_facts": {
+        "entities": [
+          "武士巨大头胸在左后，青在右前侧身前压，长发向右后拖；巨体胸腹、肩侧等位置密布白色爆点，青双臂／手部有多重短残形，深色放射底。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青完成肩胸腹三组连续拳击，准备落脚转上踢"
+      },
+      "anchor_target": "片段1/分镜8",
+      "narrative_kind": "action",
+      "story_context": [
+        "青贴身连续拳击与武士多点白色爆形保留，各爆点是依次命中。"
+      ],
+      "action_reading": {
+        "summary": "青贴身连续拳击与武士多点白色爆形保留，各爆点是依次命中。",
+        "phase": "process",
+        "world_motion": "青贴身连续拳击与武士多点白色爆形保留，各爆点是依次命中。",
+        "screen_motion": "青由肩高压到腹侧，武士仍顺横向受力晃动，摄影机始终在青侧后方追住。",
+        "grounding": "近地短暂离地状态，最后青身体下落，下一镜支撑足着地。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_14_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "一只白化高速足部斜压石面，接触处深色挤压痕和破碎边，白色长弧从两侧掠过，背景仍为石铺平台；无气泡。",
+        "initial_action_understanding": "连打后青支撑脚踩实，接14_003蓄力与15_001向上踢；足主依据相邻整身动作理解，仍提交路径确认。",
+        "uncertainties": "局部高速白化；需14_003及15_001看清足主后锁路径。",
+        "detail_reopen": {
+          "source_resolution": "original",
+          "reason": "白化足部需结合青的下一上踢判定足主",
+          "method": "实际打开原文件局部放大；只提高清楚度，不生成或补画。"
+        }
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "一只白化高速足部斜压石面，接触处深色挤压痕和破碎边，白色长弧从两侧掠过，背景仍为石铺平台；无气泡。",
+      "source_facts": {
+        "entities": [
+          "一只白化高速足部斜压石面，接触处深色挤压痕和破碎边，白色长弧从两侧掠过，背景仍为石铺平台；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青支撑足踩实蓄力",
+        "青.位置": "石面着地，准备上踢"
+      },
+      "anchor_target": "片段1/分镜9",
+      "narrative_kind": "action",
+      "story_context": [
+        "用户确认的支撑脚踩实；足底接触、石纹与白色弧线保留，向上踢转换。"
+      ],
+      "action_reading": {
+        "summary": "用户确认的支撑脚踩实；足底接触、石纹与白色弧线保留，向上踢转换。",
+        "phase": "contact",
+        "world_motion": "用户确认的支撑脚踩实；足底接触、石纹与白色弧线保留，向上踢转换。",
+        "screen_motion": "足由右上斜落至中央，压实后脚踝向上蓄紧，弧线从两侧掠过。",
+        "grounding": "青支撑脚完整着地承重，另一腿在画外准备踢出。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_14_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_14_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青正面脸部近景，双眼半垂、眉斜压，牙关闭紧、嘴角绷成波折；银发两侧直落，竖向速度线穿过面部。气泡HEUUUUP!!!!。",
+        "initial_action_understanding": "青蓄力短喝，接向下一格上踢，表情由连打的专注转强发力。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-14_003-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "HEUUUUP!!!!",
+          "script_text": "ふううっ！！！！",
+          "status": "mapped",
+          "target": "片段1/分镜10",
+          "start": 0.3,
+          "seconds": 1.03
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青正面脸部近景，双眼半垂、眉斜压，牙关闭紧、嘴角绷成波折；银发两侧直落，竖向速度线穿过面部。气泡HEUUUUP!!!!。",
+      "source_facts": {
+        "entities": [
+          "青正面脸部近景，双眼半垂、眉斜压，牙关闭紧、嘴角绷成波折；银发两侧直落，竖向速度线穿过面部。气泡HEUUUUP!!!!。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青踩实后蓄力起腿"
+      },
+      "anchor_target": "片段1/分镜10",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "半垂眼、紧眉与咬紧的波折嘴角保留，短喝接全身上踢。"
+      ],
+      "action_reading": {
+        "summary": "半垂眼、紧眉与咬紧的波折嘴角保留，短喝接全身上踢。",
+        "phase": "preparation",
+        "world_motion": "半垂眼、紧眉与咬紧的波折嘴角保留，短喝接全身上踢。",
+        "screen_motion": "脸保持对敌方向，身体向下压紧后转向上方发力。",
+        "grounding": "支撑脚仍着地承重，腰胯开始上提。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_15_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_15_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "狭长全身格：青在中下，一腿向上竖直踢起、足底转向镜头，另一腿屈收，手臂收紧，眼睛闭住；弧形大白冲击带从脚下卷过，武士黑色小身影已在高处云天。气泡TCHA!!!。",
+        "initial_action_understanding": "青一记高位上踢把武士打向高空，身体腿位与上下距离是此格核心，不能改作拳击或平踢。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-15_001-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "TCHA!!!",
+          "script_text": "てやっ！！！",
+          "status": "mapped",
+          "target": "片段1/分镜11",
+          "start": 0.3,
+          "seconds": 0.82
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "狭长全身格：青在中下，一腿向上竖直踢起、足底转向镜头，另一腿屈收，手臂收紧，眼睛闭住；弧形大白冲击带从脚下卷过，武士黑色小身影已在高处云天。气泡TCHA!!!。",
+      "source_facts": {
+        "entities": [
+          "狭长全身格：青在中下，一腿向上竖直踢起、足底转向镜头，另一腿屈收，手臂收紧，眼睛闭住；弧形大白冲击带从脚下卷过，武士黑色小身影已在高处云天。气泡TCHA!!!。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "上踢将武士送上高空",
+        "青.位置": "近平台上方收腿前",
+        "武士.位置": "向高空急升"
+      },
+      "anchor_target": "片段1/分镜11",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "保留竖直上踢腿、另一屈腿、闭眼握拳与高处武士小身影，竖格通过仰摇拉远展开高度。"
+      ],
+      "action_reading": {
+        "summary": "保留竖直上踢腿、另一屈腿、闭眼握拳与高处武士小身影，竖格通过仰摇拉远展开高度。",
+        "phase": "result",
+        "world_motion": "保留竖直上踢腿、另一屈腿、闭眼握拳与高处武士小身影，竖格通过仰摇拉远展开高度。",
+        "screen_motion": "青起腿从下向上；武士沿上踢方向离镜，再在上方远层显小；摄影机仰摇到两者同框的落幅。",
+        "grounding": "青由支撑足蹬地转短暂腾空，踢后另一腿屈收；武士完全离地上升。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_16_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "极远景：下方巨大石质悬空平台顶面有城镇轮廓，左上另一断岩平台以斜索相连；一条竖直细亮轨迹从主平台中段升向高空亮点，底场云层与密小白点铺满。无气泡。",
+        "initial_action_understanding": "接上踢，以远景显示被击飞的高度与平台整体关系；白点和亮迹保留作实际画面表达，是否粒子或星空不凭黑白灰直接定夜晚。",
+        "uncertainties": "首次细读本格明确悬空平台与斜索；后续环境沿新实见展开，不把先前近景中的低边推成地面城镇地平线。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "极远景：下方巨大石质悬空平台顶面有城镇轮廓，左上另一断岩平台以斜索相连；一条竖直细亮轨迹从主平台中段升向高空亮点，底场云层与密小白点铺满。无气泡。",
+      "source_facts": {
+        "entities": [
+          "极远景：下方巨大石质悬空平台顶面有城镇轮廓，左上另一断岩平台以斜索相连；一条竖直细亮轨迹从主平台中段升向高空亮点，底场云层与密小白点铺满。无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "旁观极远景交代被击飞高度",
+        "武士.位置": "悬空城镇上方极高处"
+      },
+      "anchor_target": "片段1/分镜12",
+      "narrative_kind": "action",
+      "story_context": [
+        "极远悬空平台、斜索和竖直轨迹保留，速度表现沿漫画处理，时间仍承接同一白日战斗。"
+      ],
+      "action_reading": {
+        "summary": "极远悬空平台、斜索和竖直轨迹保留，速度表现沿漫画处理，时间仍承接同一白日战斗。",
+        "phase": "result",
+        "world_motion": "极远悬空平台、斜索和竖直轨迹保留，速度表现沿漫画处理，时间仍承接同一白日战斗。",
+        "screen_motion": "轨迹自下往上，平台和索不动，机位不追近高空人物。",
+        "grounding": "武士远在高空，青暂在平台侧画外，镜头不冒报新的接触。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_16_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士在半空俯身，双臂垂向下方两角，背肩到头多处深色擦伤形，细碎深点从下方散开；身下是大片森林冠层与远方云天。气泡KEUK!!。",
+        "initial_action_understanding": "武士被上踢送到高处，俯身发出吃痛声；与地面的高度由林海背景建立，不让他提前落回平台。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-16_002-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "KEUK!!",
+          "script_text": "くっ！！",
+          "status": "mapped",
+          "target": "片段1/分镜13",
+          "start": 0.3,
+          "seconds": 0.7
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士在半空俯身，双臂垂向下方两角，背肩到头多处深色擦伤形，细碎深点从下方散开；身下是大片森林冠层与远方云天。气泡KEUK!!。",
+      "source_facts": {
+        "entities": [
+          "武士在半空俯身，双臂垂向下方两角，背肩到头多处深色擦伤形，细碎深点从下方散开；身下是大片森林冠层与远方云天。气泡KEUK!!。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士升到高处，痛叫并向下看",
+        "武士.位置": "林海之上，升势渐缓"
+      },
+      "anchor_target": "片段1/分镜13",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "武士高空俯身、两臂下垂与林海背景保留，痛叫在尚未落地的高度发生。"
+      ],
+      "action_reading": {
+        "summary": "武士高空俯身、两臂下垂与林海背景保留，痛叫在尚未落地的高度发生。",
+        "phase": "reaction",
+        "world_motion": "武士高空俯身、两臂下垂与林海背景保留，痛叫在尚未落地的高度发生。",
+        "screen_motion": "身体上升趋缓，头胸下垂，细屑向下；摄影机跟升后放慢。",
+        "grounding": "全身离地，身下远处林海无接触。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_16_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_16_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士低头朝下的头肩近景，白眼居黑隙中，肩头多处深色擦痕，两处边缘尖折气泡；下方版外另有中英词义注。",
+        "initial_action_understanding": "武士痛后质问力量来源，又作下流猜测，都是原作说话，不外演成身体接触。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-16_003-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "这股力量是从哪来的?!",
+          "script_text": "この力はどこから湧いてきた？！",
+          "status": "mapped",
+          "target": "片段1/分镜14",
+          "start": 0.3,
+          "seconds": 2.91
+        },
+        {
+          "id": "28-16_003-b2",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "她难道是那种‘外表清纯,内心放荡’的类型吗?!",
+          "script_text": "こいつ、外では清楚で、内では淫らなタイプなのか？！",
+          "status": "mapped",
+          "target": "片段1/分镜14",
+          "start": 3.46,
+          "seconds": 4.58
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "page_overlays": [
+        {
+          "kind": "translator_note",
+          "source_text": "原文 LADY IN THE STREETS, FREAK IN THE SHEETS. 直译在外是贵妇,在家是荡妇 据说是某个女优的推特签名",
+          "render": false,
+          "audio_meaning": "汉化页外释义注，非人物台词，不发声。"
+        }
+      ],
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士低头朝下的头肩近景，白眼居黑隙中，肩头多处深色擦痕，两处边缘尖折气泡；下方版外另有中英词义注。",
+      "source_facts": {
+        "entities": [
+          "武士低头朝下的头肩近景，白眼居黑隙中，肩头多处深色擦痕，两处边缘尖折气泡；下方版外另有中英词义注。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士质问力量来源，青从下方追近"
+      },
+      "anchor_target": "片段1/分镜14",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "武士低头正面、白眼与两句原作质问保留，版外中英注释不入配音。"
+      ],
+      "action_reading": {
+        "summary": "武士低头正面、白眼与两句原作质问保留，版外中英注释不入配音。",
+        "phase": "reaction",
+        "world_motion": "武士低头正面、白眼与两句原作质问保留，版外中英注释不入配音。",
+        "screen_motion": "武士在高空缓慢升沉，眼神向下方来路移动。",
+        "grounding": "仍离地，身体只有惯性升沉，不新增支点。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_17_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_17_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "高处武士黑色小身影在画面顶端中央，狭长白色锥形轨迹从左下延到身体下方，另一白弧从右下越出；大幅云层、密细点和放射速度线包围轨迹。",
+        "initial_action_understanding": "保持武士与平台极大高度差，并承接青追击的速度空间；白轨是运动表现，非凭空新增光炮。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "高处武士黑色小身影在画面顶端中央，狭长白色锥形轨迹从左下延到身体下方，另一白弧从右下越出；大幅云层、密细点和放射速度线包围轨迹。",
+      "source_facts": {
+        "entities": [
+          "高处武士黑色小身影在画面顶端中央，狭长白色锥形轨迹从左下延到身体下方，另一白弧从右下越出；大幅云层、密细点和放射速度线包围轨迹。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青追到武士所在高度",
+        "青.位置": "由下方向武士头侧高速接近"
+      },
+      "anchor_target": "片段1/分镜15",
+      "narrative_kind": "action",
+      "story_context": [
+        "高空小黑影与长白追近轨迹保留，到下一原镜才揭示青已在头旁。"
+      ],
+      "action_reading": {
+        "summary": "高空小黑影与长白追近轨迹保留，到下一原镜才揭示青已在头旁。",
+        "phase": "process",
+        "world_motion": "高空小黑影与长白追近轨迹保留，到下一原镜才揭示青已在头旁。",
+        "screen_motion": "白轨自左下向顶端逼近，摄影机沿同一方向上仰；黑影几乎停在升势顶点。",
+        "grounding": "双方均在高空，平台不入画。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_17_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_17_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青侧脸与握紧拳头占左半，武士椭圆头部在右侧极近，双方眼睛几乎同高；青眉压低、牙齿微露，长发向左后飘。两泡均指向青。",
+        "initial_action_understanding": "青追到高空贴近武士，再次拉拳并反问，不能把此格两人放回平台落地。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-17_002-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "怎么了?说两句吧?",
+          "script_text": "どうしたの？何か言ってよ。",
+          "status": "mapped",
+          "target": "片段1/分镜16",
+          "start": 0.3,
+          "seconds": 2.49
+        },
+        {
+          "id": "28-17_002-b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "不是你让我用出全力的嘛.",
+          "script_text": "全力を出せって言ったのは、そっちでしょ。",
+          "status": "mapped",
+          "target": "片段1/分镜16",
+          "start": 3.04,
+          "seconds": 3.95
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青侧脸与握紧拳头占左半，武士椭圆头部在右侧极近，双方眼睛几乎同高；青眉压低、牙齿微露，长发向左后飘。两泡均指向青。",
+      "source_facts": {
+        "entities": [
+          "青侧脸与握紧拳头占左半，武士椭圆头部在右侧极近，双方眼睛几乎同高；青眉压低、牙齿微露，长发向左后飘。两泡均指向青。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青在高空头旁反问，接旁观交锋远景",
+        "青.位置": "武士头侧近处，高空"
+      },
+      "anchor_target": "片段1/分镜16",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "青握拳侧脸与武士头侧同高的逼近关系保留，两句反问后切远，不补近处收尾招式。"
+      ],
+      "action_reading": {
+        "summary": "青握拳侧脸与武士头侧同高的逼近关系保留，两句反问后切远，不补近处收尾招式。",
+        "phase": "state",
+        "world_motion": "青握拳侧脸与武士头侧同高的逼近关系保留，两句反问后切远，不补近处收尾招式。",
+        "screen_motion": "双方高处惯性漂移，摄影机跟住对视；青发尾顺来路飘，眼睛与拳保持相对位置。",
+        "grounding": "两人均无地面支点，位置由既有升势与追近接续。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_18_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_18_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "云天极远景，两小团深色身影重叠在中央上方，白色交叉闪芒从交叠点向四方向拉开；无气泡。",
+        "initial_action_understanding": "青与武士在高处再度交锋的远观闪点，具体命中动作未在这张远景清楚显出。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "云天极远景，两小团深色身影重叠在中央上方，白色交叉闪芒从交叠点向四方向拉开；无气泡。",
+      "source_facts": {
+        "entities": [
+          "云天极远景，两小团深色身影重叠在中央上方，白色交叉闪芒从交叠点向四方向拉开；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "旁观远景见高空闪点交锋"
+      },
+      "anchor_target": "片段1/分镜17",
+      "narrative_kind": "action",
+      "story_context": [
+        "严格沿漫画旁观者远景，只见两小身影与闪点，不补可辨的空中拳脚收尾。"
+      ],
+      "action_reading": {
+        "summary": "严格沿漫画旁观者远景，只见两小身影与闪点，不补可辨的空中拳脚收尾。",
+        "phase": "contact",
+        "world_motion": "严格沿漫画旁观者远景，只见两小身影与闪点，不补可辨的空中拳脚收尾。",
+        "screen_motion": "远处小黑影短交叠，机位不追近，白芒由中心向四周拉开。",
+        "grounding": "人物均远在高空，地面在画外。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_18_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_18_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "仰看大幅云天，中央小亮点周围一圈尖齿状白环，外层更大白弧绕开，放射线贯穿上下；无人物特征与气泡。",
+        "initial_action_understanding": "空中交锋形成扩张的环形冲击表现，承接闪点，不凭此添加法术或爆炸器官。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "仰看大幅云天，中央小亮点周围一圈尖齿状白环，外层更大白弧绕开，放射线贯穿上下；无人物特征与气泡。",
+      "source_facts": {
+        "entities": [
+          "仰看大幅云天，中央小亮点周围一圈尖齿状白环，外层更大白弧绕开，放射线贯穿上下；无人物特征与气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "旁观冲击环扩散，坠落开始"
+      },
+      "anchor_target": "片段1/分镜18",
+      "narrative_kind": "action",
+      "story_context": [
+        "原格扩散白环、亮点与云天完整保留，观察距离和未显出的手脚过程保持原漫画处理。"
+      ],
+      "action_reading": {
+        "summary": "原格扩散白环、亮点与云天完整保留，观察距离和未显出的手脚过程保持原漫画处理。",
+        "phase": "result",
+        "world_motion": "原格扩散白环、亮点与云天完整保留，观察距离和未显出的手脚过程保持原漫画处理。",
+        "screen_motion": "同心白环由中心扩到画外，中心远迹转向下方，摄影机始终不接近人物。",
+        "grounding": "空中结果转入下坠，接触平台尚未发生。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_19_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_19_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "城内屋顶烟囱形成下方黑色剪影，右侧一条极细竖向轨迹从高空接到地面，接点朝两侧掀起大团白烟尘；无人物实体、无气泡。",
+        "initial_action_understanding": "空中交锋后武士沿竖线被打回平台，远处落地掀尘；实际接触由下一格砸坑中的武士确认。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "城内屋顶烟囱形成下方黑色剪影，右侧一条极细竖向轨迹从高空接到地面，接点朝两侧掀起大团白烟尘；无人物实体、无气泡。",
+      "source_facts": {
+        "entities": [
+          "城内屋顶烟囱形成下方黑色剪影，右侧一条极细竖向轨迹从高空接到地面，接点朝两侧掀起大团白烟尘；无人物实体、无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "旁观武士单次坠落平台、烟尘掀起",
+        "武士.位置": "平台石坑中伏地"
+      },
+      "anchor_target": "片段1/分镜19",
+      "narrative_kind": "action",
+      "story_context": [
+        "漫画远观坠落线与屋顶后尘团保留，仅发生一次落地。"
+      ],
+      "action_reading": {
+        "summary": "漫画远观坠落线与屋顶后尘团保留，仅发生一次落地。",
+        "phase": "result",
+        "world_motion": "漫画远观坠落线与屋顶后尘团保留，仅发生一次落地。",
+        "screen_motion": "细迹自上而下，接触后尘团横向铺开再向上鼓起，机位不追入落点。",
+        "grounding": "武士落地接触在屋脊后方，被尘团与剪影遮住，下一镜才看清伏地结果。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_20_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士巨大身体伏在破碎石坑上，头部垂入／压在坑心，两臂向左右下角伸开；深色放射裂痕从其头胸下向外爬满石面，身上擦痕还在，边缘薄尘，背景云天。无气泡。",
+        "initial_action_understanding": "武士重砸平台形成坑与裂地，暂时伏地；原格未给死亡，不补断气或解体。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士巨大身体伏在破碎石坑上，头部垂入／压在坑心，两臂向左右下角伸开；深色放射裂痕从其头胸下向外爬满石面，身上擦痕还在，边缘薄尘，背景云天。无气泡。",
+      "source_facts": {
+        "entities": [
+          "武士巨大身体伏在破碎石坑上，头部垂入／压在坑心，两臂向左右下角伸开；深色放射裂痕从其头胸下向外爬满石面，身上擦痕还在，边缘薄尘，背景云天。无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "烟散后先看武士伏地不动",
+        "武士.位置": "石坑伏地一动不动",
+        "青.位置": "远处平台，烟雾尚遮住身体"
+      },
+      "anchor_target": "片段1/分镜20",
+      "narrative_kind": "action",
+      "story_context": [
+        "用户指定20_001与20_002合为连续前推转焦，武士静止，青从远处平台走来而不踩背。"
+      ],
+      "action_reading": {
+        "summary": "用户指定20_001与20_002合为连续前推转焦，武士静止，青从远处平台走来而不踩背。",
+        "phase": "result",
+        "world_motion": "用户指定20_001与20_002合为连续前推转焦，武士静止，青从远处平台走来而不踩背。",
+        "screen_motion": "镜头从全景向前缓推并降低一点；先聚焦武士，后聚焦后层走来的青。",
+        "grounding": "武士躯干与双臂伏在碎坑石面；青每一步都在后方平台落脚，与武士分处前后。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_20_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士巨大背、肩、头占画面下方近层并虚化，青在中央后层烟尘中呈完整身影，长发两侧垂落，一腿微屈、另一腿较直；青足部与武士背部边缘重叠，接地点在遮挡里。",
+        "initial_action_understanding": "青在伏地武士之后显出，究竟踩背还是落于其身后平台须邻格核对，先保留前后遮挡，不乱写落点。",
+        "uncertainties": "足下支点被巨体遮挡，不据前后层次直接断言踩在背上。",
+        "detail_reopen": {
+          "source_resolution": "original",
+          "reason": "青的足下支点被武士背缘与烟尘遮住",
+          "method": "实际打开原文件局部放大；只提高清楚度，不生成或补画。"
+        }
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "最新用户纠正见QG-B04-28B：原地只回头／高速残影／空中旁观／伏地前推转焦后景走来，优先于未确认首遍解释。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "本次与20_001一起实际重开，用户明确前推转焦与雾中走来关系。",
+      "composition_lock": "武士巨大背、肩、头占画面下方近层并虚化，青在中央后层烟尘中呈完整身影，长发两侧垂落，一腿微屈、另一腿较直；青足部与武士背部边缘重叠，接地点在遮挡里。",
+      "source_facts": {
+        "entities": [
+          "武士巨大背、肩、头占画面下方近层并虚化，青在中央后层烟尘中呈完整身影，长发两侧垂落，一腿微屈、另一腿较直；青足部与武士背部边缘重叠，接地点在遮挡里。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "同一个落点石坑，烟层散开与前后景深沿用户指定。"
+      },
+      "node_state": {
+        "叙事阶段": "武士前层虚化，青在后层雾中走来",
+        "武士.位置": "石坑伏地一动不动",
+        "青.位置": "远处平台上缓缓走向前方"
+      },
+      "anchor_target": "片段1/分镜20",
+      "narrative_kind": "action",
+      "story_context": [
+        "用户明确：青从远处平台缓缓走来，武士不动，两个原格合为一个前推转焦镜头。"
+      ],
+      "action_reading": {
+        "summary": "武士作为近层虚化遮挡，青从平台远处烟雾中缓步走来。",
+        "phase": "process",
+        "world_motion": "青在武士身后平台上朝镜头缓慢走近，武士不动。",
+        "screen_motion": "镜头前推后转焦，青从小剪影到清晰后层，武士在近层变虚。",
+        "grounding": "青的脚在后方石面，足下被前层巨体遮住，依用户明确解释不踩背。",
+        "basis": "第二遍实际重开两格，依用户指定合镜与前后空间。"
+      }
+    },
+    {
+      "image": "第28話_20_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_20_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青头肩正面，一手按在太阳穴，另一手垂在画外，单眼闭、另一眼半垂，嘴角勉强笑，额角汗珠与喘息拟声；双臂有深色细长流痕／擦痕，头肩附近短颤线。上方另有页外评论。",
+        "initial_action_understanding": "青击倒武士后喘着气嘲讽，按头、颤动提示负荷，接后续身体失力；不把笑演成毫无疲劳的轻松胜利。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-20_003-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "你也没什么了不起的嘛.",
+          "script_text": "大したことないんだね。",
+          "status": "mapped",
+          "target": "片段1/分镜21",
+          "start": 0.3,
+          "seconds": 2.28
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "page_overlays": [
+        {
+          "kind": "editor_comment",
+          "source_text": "团长你就是个JB.",
+          "render": false,
+          "audio_meaning": "页外评论，非人物台词，不入字幕或配音。"
+        }
+      ],
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青头肩正面，一手按在太阳穴，另一手垂在画外，单眼闭、另一眼半垂，嘴角勉强笑，额角汗珠与喘息拟声；双臂有深色细长流痕／擦痕，头肩附近短颤线。上方另有页外评论。",
+      "source_facts": {
+        "entities": [
+          "青头肩正面，一手按在太阳穴，另一手垂在画外，单眼闭、另一眼半垂，嘴角勉强笑，额角汗珠与喘息拟声；双臂有深色细长流痕／擦痕，头肩附近短颤线。上方另有页外评论。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青按头喘息，微颤着嘲讽，本批结束",
+        "青.状态": "强化后负荷显出，仍站立可说话"
+      },
+      "anchor_target": "片段1/分镜21",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "青按太阳穴、单眼闭、另一眼半垂、勉强笑与微颤保留；页外评论不入对白。"
+      ],
+      "action_reading": {
+        "summary": "青按太阳穴、单眼闭、另一眼半垂、勉强笑与微颤保留；页外评论不入对白。",
+        "phase": "reaction",
+        "world_motion": "青按太阳穴、单眼闭、另一眼半垂、勉强笑与微颤保留；页外评论不入对白。",
+        "screen_motion": "青从远处走来后近处再落一步，镜头稍退保持尺度；没有从武士背上跳下。",
+        "grounding": "青站在平台石面，与伏地武士分开。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_11_003.jpg"
+      ],
+      "purpose": "青以残影瞬移观感从起点骤然离开，武士不攻击也不改站位。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "平台石铺表层在左下与中央断裂掀起，几块大石呈扇形直立，碎屑向上；斜向速度线由左下扫向右上，武士黑色宽立轮廓位于右上平台远端。青实体未在此格清楚显出。",
+      "anchor_state": {
+        "叙事阶段": "青蹬地后高速消失于起点",
+        "武士.位置": "原地宽立，双臂位置稳定"
+      },
+      "state_changes": {
+        "叙事阶段": "青蹬地后高速消失于起点",
+        "武士.位置": "原地宽立，双臂位置稳定"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，贴近石铺地面的低机位全景，扇形掀起的大石占画面左下与中央，武士宽立的小轮廓留在右上远层；固定机位。",
+        "可见动作": "青原先立足处只闪过一抹银白发色与粉紫衣色的薄残形，下一瞬便空了；蹬力把几块石板从左下猛掀成扇面，碎石从板缝迸起，白色斜向速度划线直掠武士方向。远处武士保持宽立姿态，双臂仍垂在原位，残形随石屑的升起迅速擦净。",
+        "可见背景": "灰绿石铺地面延向右上，掀起的石板断面米灰、板缝深灰；远层一条蓝灰云天从平台上缘露出。",
+        "台词与语气": "无台词。",
+        "光影布光": "正上方云天冷白漫射，石板立起后背面转深冷灰，飞屑亮暗清楚。",
+        "声音设计": "脚下骤裂一声脆轰，接碎石急促迸响和一记短利破风。"
+      },
+      "meaning_excerpt": "青原先立足处只闪过一抹银白发色与粉紫衣色的薄残形，下一瞬便空了；蹬力把几块石板从左下猛掀成扇面，碎石从板缝迸起，白色斜向速度划线直掠武士方向。远处武士保持宽立姿态，双臂仍垂在原位，残形随石屑的升起迅速擦净。"
+    },
+    {
+      "target": "片段1/分镜2",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_12_001.jpg"
+      ],
+      "purpose": "武士视线特写先感知青已越过，固定姿态中只有眼神反应。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "武士头部侧面极近，椭圆弧面从右延向左，白眼在左端黑隙里很小；纯白背景，无字。",
+      "anchor_state": {
+        "叙事阶段": "武士先察觉身后声位",
+        "武士.位置": "原地站立"
+      },
+      "state_changes": {
+        "叙事阶段": "武士先察觉身后声位",
+        "武士.位置": "原地站立"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士椭圆头部的侧面极特写，弧面占中央到画面右侧，左端只留一线黑隙与小白眼；固定机位，远处背景压为平整浅底。",
+        "可见动作": "武士白眼先停在原先朝前的方向，一小拍后，眼珠沿黑隙朝身后侧滑动；头的厚重轮廓保持原位，眼珠停住的瞬间黑隙边缘收紧，下一镜才接完整回头。",
+        "可见背景": "头部下沿与左端以外是均匀浅蓝灰图形底场，稀薄云纹退成软面。",
+        "台词与语气": "无台词。",
+        "光影布光": "同场冷白柔光铺在头部弧面，黑隙保持深黑，小白眼清晰。",
+        "声音设计": "快速破风的短尾从画外掠过，随后只有一口低沉呼吸。"
+      },
+      "meaning_excerpt": "武士白眼先停在原先朝前的方向，一小拍后，眼珠沿黑隙朝身后侧滑动；头的厚重轮廓保持原位，眼珠停住的瞬间黑隙边缘收紧，下一镜才接完整回头。"
+    },
+    {
+      "target": "片段1/分镜3",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_12_002.jpg"
+      ],
+      "purpose": "用户纠正：青残影瞬间到背后，武士只回头，无粗臂落空或身体转位。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "process",
+      "anchor_elements": "巨大武士背肩占中央，近侧长粗臂从左上压向左下石面，左下有烟尘和石屑；头转向背后。青位于右后腰际，身体前倾、双腿斜开，一臂抬向其背／腰部，长发向右拖。",
+      "anchor_state": {
+        "叙事阶段": "青已到武士背后并开口",
+        "青.位置": "武士右后侧，站稳准备拉拳",
+        "武士.位置": "原地站姿，只有头回转"
+      },
+      "state_changes": {
+        "叙事阶段": "青已到武士背后并开口",
+        "青.位置": "武士右后侧，站稳准备拉拳",
+        "武士.位置": "原地站姿，只有头回转"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士背肩与青同框的低机位中全景，巨大背与近臂占中央和画面左侧，青在右后腰际；固定机位，留清青的全身与回头的白眼。",
+        "可见动作": "青在武士右后方忽然凝实，银白长发和粉紫裙角各留一道薄残形，残形擦过后才是稳定身体；她腿位撑开、上身前倾，一臂抬在肩侧，另一臂向下展出，吐字清楚地提醒背后。武士双脚与双臂维持宽立姿态，只把头沿颈轴向青转回，白眼落到她身上；青的发尾晚一拍追过身体，手指开始握紧。",
+        "可见背景": "灰绿石铺地面在两人下缘与左侧臂外露出，原有米灰薄尘贴着石面缓散；上方一小块蓝灰云天，远层不添近处建筑。",
+        "台词与语气": "青：“後ろだよ。”（青声线清楚，带抢到先机的轻快提醒，短句落定后立即凝神。）",
+        "光影布光": "正上方冷白漫射在武士背肩与青银发形成宽软亮面，背下侧为深冷灰，石面弱补光托住青脸侧。",
+        "声音设计": "高速到位一记短促风切声，青鞋底轻擦石面，发梢余风迅速平息。"
+      },
+      "meaning_excerpt": "青在武士右后方忽然凝实，银白长发和粉紫裙角各留一道薄残形，残形擦过后才是稳定身体；她腿位撑开、上身前倾，一臂抬在肩侧，另一臂向下展出，吐字清楚地提醒背后。武士双脚与双臂维持宽立姿态，只把头沿颈轴向青转回，白眼落到她身上；青的发尾晚一拍追过身体，手指开始握紧。",
+      "performance": {
+        "card": {
+          "opening": "青取得速度优势，从背后夺走注意。",
+          "beats": [
+            "残影擦净后稳住腿位，短句提醒",
+            "武士只转头，青指尖握紧"
+          ],
+          "coupling": "声音让武士的回头完成，青已在准备下一动作。",
+          "landing": "青在背后拉拳前，武士刚看见她。"
+        },
+        "details": [
+          "青在武士右后方忽然凝实，银白长发和粉紫裙角各留一道薄残形，残形擦过后才是稳定身体；她腿位撑开、上身前倾，一臂抬在肩侧，另一臂向下展出，吐字清楚地提醒背后。武士双脚与双臂维"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 1.03,
+            "acting_seconds": 2.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜4",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_12_003.jpg"
+      ],
+      "purpose": "青圆眼专注、拳后拉与转肩蓄力保留，下一镜进入同一拳的接触。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "preparation",
+      "anchor_elements": "青头肩占右侧，眼睛睁圆、嘴微合，一只握紧拳头在左后拉开，头发往上后扬；黑白放射速度线由拳头附近向外铺满底场，无气泡。",
+      "anchor_state": {
+        "叙事阶段": "青背后拉拳结束，即将命中"
+      },
+      "state_changes": {
+        "叙事阶段": "青背后拉拳结束，即将命中"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青头肩与后拉拳的斜侧近景，脸居画面右侧，拳头拉在左后深层；镜头贴着她肩线短移，停在拳、耳尖和圆眼同框处。",
+        "可见动作": "青把刚握紧的拳向后抽，肩胛带着上身拧开，拳和胸口拉出一条紧绷斜线；她圆睁双眼锁住武士侧头，嘴唇轻合，另一肩先向前顶，后拉的拳在镜尾骤然离开蓄力位置。发根被转肩带起，长马尾随后向左后掀开。",
+        "可见背景": "人物外侧为深蓝灰放射图形底，浅冷白细线从拳后方向脸侧快速收束，边缘一小条灰绿石铺地面随短移擦过。",
+        "台词与语气": "无台词。",
+        "光影布光": "人物保持云天冷白柔光，拳背亮面短促滑过，图形底加深形成蓄力对比。",
+        "声音设计": "护腕骤绷声，肩背拧开的一记短布擦，拳启动时风声变尖。"
+      },
+      "meaning_excerpt": "青把刚握紧的拳向后抽，肩胛带着上身拧开，拳和胸口拉出一条紧绷斜线；她圆睁双眼锁住武士侧头，嘴唇轻合，另一肩先向前顶，后拉的拳在镜尾骤然离开蓄力位置。发根被转肩带起，长马尾随后向左后掀开。"
+    },
+    {
+      "target": "片段1/分镜5",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_12_004.jpg"
+      ],
+      "purpose": "拳击头／颈侧的挤压形、睁大的白眼与武士闷哼保留。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "contact",
+      "anchor_elements": "武士椭圆头部与黑色眼隙占左下，右上有弯曲的粗大形体与强烈挤压曲线；细长运动线由下向上斜入，白眼圆睁，气泡EUT...!!。",
+      "anchor_state": {
+        "叙事阶段": "青一拳命中头颈侧，武士被推出原位",
+        "武士.位置": "受击开始离地横移"
+      },
+      "state_changes": {
+        "叙事阶段": "青一拳命中头颈侧，武士被推出原位",
+        "武士.位置": "受击开始离地横移"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，拳击接触的极近景，武士白眼和椭圆头部占画面左下，青拳与前臂由右下斜入头／颈侧；固定机位，命中点居中央偏右。",
+        "可见动作": "青的拳从后拉位置爆发前送，拳面压进武士侧头与颈根的交叠处；厚重轮廓被顶成短弧，白眼猛张，黑隙向下扯长。拳面停住极短一拍，随后受力弧线弹开，武士的头先向侧面甩走，肩部被带出画幅；闷哼被这一击挤出。",
+        "可见背景": "极近主体之外仅余浅冷灰白图形底场，细长冲击线从接触点向左下放射。",
+        "台词与语气": "鬼头武士：“ぐっ…！！”（武士挨拳被挤出的一声短闷哼，起音受阻，随甩头迅速截住。）",
+        "光影布光": "同场冷白光在接触形上短促提高对比，外围归回浅冷灰，亮度随接触消退。",
+        "声音设计": "一记紧实沉闷拳响，接厚重身体被推出的短风；闷哼在台词栏发声。"
+      },
+      "meaning_excerpt": "青的拳从后拉位置爆发前送，拳面压进武士侧头与颈根的交叠处；厚重轮廓被顶成短弧，白眼猛张，黑隙向下扯长。拳面停住极短一拍，随后受力弧线弹开，武士的头先向侧面甩走，肩部被带出画幅；闷哼被这一击挤出。"
+    },
+    {
+      "target": "片段1/分镜6",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_13_001.jpg"
+      ],
+      "purpose": "被击离地的巨大武士与贴身跟进的青同框，建立后续连续拳击的距离。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "远景中武士巨大身体向画面右侧离地偏移，粗臂伸向右上，另一大块肢体压在左下；青小小地贴在其右下／身侧，左方大块烟尘，长白冲击带由左上斜通两人。石铺平台斜穿下缘。",
+      "anchor_state": {
+        "叙事阶段": "武士横向离地，青贴身跟进",
+        "青.位置": "武士胸侧近身",
+        "武士.位置": "平台上方横飞"
+      },
+      "state_changes": {
+        "叙事阶段": "武士横向离地，青贴身跟进",
+        "青.位置": "武士胸侧近身",
+        "武士.位置": "平台上方横飞"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，侧方远景，平台斜穿画面下方，武士巨大身体在中央偏右、青贴其右下侧；镜头随两人向右横移，落幅仍留左侧起点烟尘和两人完整轮廓。",
+        "可见动作": "武士的头肩沿拳力向右甩出，脚底离地，双臂在惯性里拉开；青向前蹬出一步紧跟在其胸侧，收回的拳护住面前，另一肩已向下一击转入。白色宽冲击带从左上沿武士背后拖过，左侧米灰尘团向外翻，青没有被巨体甩远。",
+        "可见背景": "灰绿石铺平台沿下缘斜过，左后米灰尘团占一角，上方浅蓝灰云天铺开。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方云天冷白漫射，武士与青的轮廓保持清晰，尘团外缘较亮、内侧偏暖灰。",
+        "声音设计": "重拳余声转成厚重破风，青鞋底最后一次蹬石短响，碎屑落回起点。"
+      },
+      "meaning_excerpt": "武士的头肩沿拳力向右甩出，脚底离地，双臂在惯性里拉开；青向前蹬出一步紧跟在其胸侧，收回的拳护住面前，另一肩已向下一击转入。白色宽冲击带从左上沿武士背后拖过，左侧米灰尘团向外翻，青没有被巨体甩远。"
+    },
+    {
+      "target": "片段1/分镜7",
+      "duration": 6,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_13_002.jpg"
+      ],
+      "purpose": "武士白眼震惊与两句内心判断完整保留，受击后的视线追逐接连续拳击。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "武士头部大特写斜占画幅，白眼圆睁并偏向一边；轮廓有短促振动尖线，周围散落少量深色点。两泡边缘模糊为内心。",
+      "anchor_state": {
+        "叙事阶段": "武士受击惊觉青已全面强化"
+      },
+      "state_changes": {
+        "叙事阶段": "武士受击惊觉青已全面强化"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，跟随武士头部的斜侧极特写，椭圆弧面占画面左侧到中央，黑隙与白眼留在右上，边缘被短振线割开；镜头以同速横移稳住眼睛，落幅停在眼珠偏向青的一侧。",
+        "可见动作": "武士的头在受力余势里侧歪，白眼先猛地定住，再向青所在的胸侧急移；眼隙边缘不规则地收缩，几枚深灰细屑从头侧向后拖走。第一声内心惊问掠过时，他试图抬正头部，刚抬一小截便被下一次贴身拳风逼回；内心衡量力量速度时，眼珠的转动逐渐变小，只追得住青发梢掠过的一道浅影。",
+        "可见背景": "头部右侧仅余浅冷灰白图形底，向后拖去的深灰细点形成短尾，云天纹理压得很淡。",
+        "台词与语气": "鬼头武士（内心）：“何だこれは…？！”（内心第一句骤然惊问；第二句急促比较，重音逐步落到力量、速度与差距，尚未找到回应。）\n鬼头武士（内心）：“力も速さも、さっきとはまるで桁が違う…！”（内心第一句骤然惊问；第二句急促比较，重音逐步落到力量、速度与差距，尚未找到回应。）",
+        "光影布光": "同场冷白光覆盖头部弧面，眼隙深黑、白眼高反差；受力时轮廓亮暗短促交替。",
+        "声音设计": "拳风在头侧近近掠过，厚重呼吸被迫断一下，细屑擦过风声。"
+      },
+      "meaning_excerpt": "武士的头在受力余势里侧歪，白眼先猛地定住，再向青所在的胸侧急移；眼隙边缘不规则地收缩，几枚深灰细屑从头侧向后拖走。第一声内心惊问掠过时，他试图抬正头部，刚抬一小截便被下一次贴身拳风逼回；内心衡量力量速度时，眼珠的转动逐渐变小，只追得住青发梢掠过的一道浅影。",
+      "performance": {
+        "card": {
+          "opening": "先前的自信被第一拳打断。",
+          "beats": [
+            "白眼定住再急移，第一句内心惊问",
+            "试抬头又被拳风压回",
+            "判断差距时眼珠越来越跟不上"
+          ],
+          "coupling": "内心不是嘴部说话，眼神与受力余势贯穿两句。",
+          "landing": "青已压到近身，武士没能形成反击。"
+        },
+        "details": [
+          "武士的头在受力余势里侧歪，白眼先猛地定住，再向青所在的胸侧急移；眼隙边缘不规则地收缩，几枚深灰细屑从头侧向后拖走。第一声内心惊问掠过时，他试图抬正头部，刚抬一小截便被下一"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 4.98,
+            "acting_seconds": 6,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜8",
+      "duration": 3,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_14_001.jpg"
+      ],
+      "purpose": "青贴身连续拳击与武士多点白色爆形保留，各爆点是依次命中。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "武士巨大头胸在左后，青在右前侧身前压，长发向右后拖；巨体胸腹、肩侧等位置密布白色爆点，青双臂／手部有多重短残形，深色放射底。",
+      "anchor_state": {
+        "叙事阶段": "青完成肩胸腹三组连续拳击，准备落脚转上踢"
+      },
+      "state_changes": {
+        "叙事阶段": "青完成肩胸腹三组连续拳击，准备落脚转上踢"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青侧后方的双人中景，青躯干与收展双臂占画面右侧，武士头胸占左后；机位贴着青肩后小幅追移，落幅把肩、胸、腹的连续击点和青发梢收进同一框。",
+        "可见动作": "青贴住武士胸侧，转腰送出一组快拳：肩侧两下、胸口两下，再把拳线压低扫到腹侧两下，三组之间只留极短收拳空隙。每一拳到位，武士对应部位才爆出一枚短白冲击形，头胸左右摇开；青另一只手随出拳交替护回身前，发束与裙侧被连转的腰胯拖成弧，最后一拳收回时身体开始下降。",
+        "可见背景": "人物外侧是深蓝灰速度图形底，浅冷灰放射短线随各次击点散开，边缘极窄一带石铺地面显示距离平台很近。",
+        "台词与语气": "无台词。",
+        "光影布光": "人物保持云天冷白光，白色冲击形只在各次接触瞬间出现；深灰主体轮廓在连续受力中清楚分离。",
+        "声音设计": "六记紧凑闷击分成二、二、二三组，护腕布料急绷、发梢破风夹在组间。"
+      },
+      "meaning_excerpt": "青贴住武士胸侧，转腰送出一组快拳：肩侧两下、胸口两下，再把拳线压低扫到腹侧两下，三组之间只留极短收拳空隙。每一拳到位，武士对应部位才爆出一枚短白冲击形，头胸左右摇开；青另一只手随出拳交替护回身前，发束与裙侧被连转的腰胯拖成弧，最后一拳收回时身体开始下降。"
+    },
+    {
+      "target": "片段1/分镜9",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_14_002.jpg"
+      ],
+      "purpose": "用户确认的支撑脚踩实；足底接触、石纹与白色弧线保留，向上踢转换。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "contact",
+      "anchor_elements": "一只白化高速足部斜压石面，接触处深色挤压痕和破碎边，白色长弧从两侧掠过，背景仍为石铺平台；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "青支撑足踩实蓄力",
+        "青.位置": "石面着地，准备上踢"
+      },
+      "state_changes": {
+        "叙事阶段": "青支撑足踩实蓄力",
+        "青.位置": "石面着地，准备上踢"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青支撑脚的贴地特写，足底在画面中央偏左压入石面，足踝从右上斜入；固定机位，两道白色弧线从左右擦过前后层。",
+        "可见动作": "青支撑脚先以前掌压到石面，再迅速把全脚踩实，膝踝随之沉下一小截；鞋底边缘将两粒碎石压开，板缝挤出一线灰尘。两道先前旋身的白弧越过脚侧，足踝在沉到最低的一刻绷住，蓄力转向上方。",
+        "可见背景": "灰绿石铺地面铺满画幅，足下接触处深灰，板缝边缘有小块米灰碎屑，远层石纹柔化。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方冷白漫射让足面与脚下短影分开，灰尘保持米灰。",
+        "声音设计": "鞋底重压石面一声短实响，碎石轻崩，风声在踩实瞬间收紧。"
+      },
+      "meaning_excerpt": "青支撑脚先以前掌压到石面，再迅速把全脚踩实，膝踝随之沉下一小截；鞋底边缘将两粒碎石压开，板缝挤出一线灰尘。两道先前旋身的白弧越过脚侧，足踝在沉到最低的一刻绷住，蓄力转向上方。"
+    },
+    {
+      "target": "片段1/分镜10",
+      "duration": 2.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_14_003.jpg"
+      ],
+      "purpose": "半垂眼、紧眉与咬紧的波折嘴角保留，短喝接全身上踢。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "preparation",
+      "anchor_elements": "青正面脸部近景，双眼半垂、眉斜压，牙关闭紧、嘴角绷成波折；银发两侧直落，竖向速度线穿过面部。气泡HEUUUUP!!!!。",
+      "anchor_state": {
+        "叙事阶段": "青踩实后蓄力起腿"
+      },
+      "state_changes": {
+        "叙事阶段": "青踩实后蓄力起腿"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青正面脸部特写居画面中央，半垂眼、压低的眉与绷紧嘴角同框，两边长发竖落；固定机位，竖向细线穿过头侧。",
+        "可见动作": "青踩稳后下颌微收，眼睑压得更低，眉尖向内锁紧；她把一口气压在齿间，肩膀下沉，嘴角绷成短短波折。短喝从闭齿间推出来时，脸颊轻绷，竖直发束先向下拉紧，下一瞬腰胯已把力量顶向上方。",
+        "可见背景": "两侧发隙之外为深蓝灰竖向图形底，冷白细线由下向上掠过，底部无近处建筑。",
+        "台词与语气": "青：“ふううっ！！！！”（青压住气息发力，短喝先紧后放，收在起腿的瞬间。）",
+        "光影布光": "云天冷白柔光仍在脸上，眉眼下方压深一层冷灰，竖线只作速度图形。",
+        "声音设计": "压紧的一次短呼气，护腕衣料轻绷，石面下低短回响。"
+      },
+      "meaning_excerpt": "青踩稳后下颌微收，眼睑压得更低，眉尖向内锁紧；她把一口气压在齿间，肩膀下沉，嘴角绷成短短波折。短喝从闭齿间推出来时，脸颊轻绷，竖直发束先向下拉紧，下一瞬腰胯已把力量顶向上方。"
+    },
+    {
+      "target": "片段1/分镜11",
+      "duration": 3,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_15_001.jpg"
+      ],
+      "purpose": "保留竖直上踢腿、另一屈腿、闭眼握拳与高处武士小身影，竖格通过仰摇拉远展开高度。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "狭长全身格：青在中下，一腿向上竖直踢起、足底转向镜头，另一腿屈收，手臂收紧，眼睛闭住；弧形大白冲击带从脚下卷过，武士黑色小身影已在高处云天。气泡TCHA!!!。",
+      "anchor_state": {
+        "叙事阶段": "上踢将武士送上高空",
+        "青.位置": "近平台上方收腿前",
+        "武士.位置": "向高空急升"
+      },
+      "state_changes": {
+        "叙事阶段": "上踢将武士送上高空",
+        "青.位置": "近平台上方收腿前",
+        "武士.位置": "向高空急升"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，先以青的低机位全景起幅，头与双腿完整；镜头随上踢方向仰摇并迅速拉远，落幅青占下方中央，竖直踢腿通向中层，武士黑色小身影高悬上方云隙，白色长弧沿画面左侧展开。",
+        "可见动作": "青从压紧的支撑腿猛然蹬起，腰胯上送，一腿沿身体前侧直甩到头顶，另一腿屈收；她双拳收紧、闭眼咬牙，起腿短喝一口气冲出。武士被这一踢送往镜头上方，体形随仰摇迅速缩成云天中的小黑影；青的竖直踢腿到顶后稳住极短一拍，银白马尾向后回卷，大白弧从脚下越过身侧后向上拔长。",
+        "可见背景": "上方蓝灰云层层叠，白色速度粒在云隙稀疏散开，最下缘一小带灰绿石铺地面很快退出画幅。",
+        "台词与语气": "青：“てやっ！！！”（青在腿甩直到顶之前短促喝出，重音随爆发上送，干脆收净。）",
+        "光影布光": "正上方冷白漫射统一，青衣色、银发与白色袜靴保持分层；长白弧是短促冲击图形，人物光向稳定。",
+        "声音设计": "支撑脚蹬石短轰接一记沉实踢击，长破风骤然向高处拔起，衣摆与发尾急响。"
+      },
+      "meaning_excerpt": "青从压紧的支撑腿猛然蹬起，腰胯上送，一腿沿身体前侧直甩到头顶，另一腿屈收；她双拳收紧、闭眼咬牙，起腿短喝一口气冲出。武士被这一踢送往镜头上方，体形随仰摇迅速缩成云天中的小黑影；青的竖直踢腿到顶后稳住极短一拍，银白马尾向后回卷，大白弧从脚下越过身侧后向上拔长。"
+    },
+    {
+      "target": "片段1/分镜12",
+      "duration": 3.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_16_001.jpg"
+      ],
+      "purpose": "极远悬空平台、斜索和竖直轨迹保留，速度表现沿漫画处理，时间仍承接同一白日战斗。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "极远景：下方巨大石质悬空平台顶面有城镇轮廓，左上另一断岩平台以斜索相连；一条竖直细亮轨迹从主平台中段升向高空亮点，底场云层与密小白点铺满。无气泡。",
+      "anchor_state": {
+        "叙事阶段": "旁观极远景交代被击飞高度",
+        "武士.位置": "悬空城镇上方极高处"
+      },
+      "state_changes": {
+        "叙事阶段": "旁观极远景交代被击飞高度",
+        "武士.位置": "悬空城镇上方极高处"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，悬空城镇平台的极远全景，主岩台横在画面下方，左侧高处岩台与斜索形成纵深；机位固定，细亮轨迹由下方城镇中央直上画面上部亮点。",
+        "可见动作": "极细的竖直亮迹从主平台中央拔向高处，顶端小亮点继续上升一小段，拖尾随距离越拉越细；两片云在轨迹两侧缓慢分开，细白点从亮迹旁向外散。下方屋顶群与连台斜索几乎静止，让上下高度清楚地留在一眼里。",
+        "可见背景": "主平台为深灰褐断岩与灰米城镇、蓝灰屋顶；左侧另一段高岩台伸入，深褐斜索连向主平台。天空深蓝灰云层层叠，细白粒散在高处云隙。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方开阔云天冷白光，岩体下侧深冷灰；顶端微小亮点只强化远处速度位置，平台明暗保持日间阴云层次。",
+        "声音设计": "高处细长破风拉远，平台附近只留一层很低的轰响余声，风声渐宽。"
+      },
+      "meaning_excerpt": "极细的竖直亮迹从主平台中央拔向高处，顶端小亮点继续上升一小段，拖尾随距离越拉越细；两片云在轨迹两侧缓慢分开，细白点从亮迹旁向外散。下方屋顶群与连台斜索几乎静止，让上下高度清楚地留在一眼里。"
+    },
+    {
+      "target": "片段1/分镜13",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_16_002.jpg"
+      ],
+      "purpose": "武士高空俯身、两臂下垂与林海背景保留，痛叫在尚未落地的高度发生。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "武士在半空俯身，双臂垂向下方两角，背肩到头多处深色擦伤形，细碎深点从下方散开；身下是大片森林冠层与远方云天。气泡KEUK!!。",
+      "anchor_state": {
+        "叙事阶段": "武士升到高处，痛叫并向下看",
+        "武士.位置": "林海之上，升势渐缓"
+      },
+      "state_changes": {
+        "叙事阶段": "武士升到高处，痛叫并向下看",
+        "武士.位置": "林海之上，升势渐缓"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，高空俯看武士上半身的中全景，武士头居画面中央上方，两条巨大手臂垂向左右下角，远处林海铺在身下；摄影机随上升渐缓，落幅把头和臂端外缘留全。",
+        "可见动作": "武士的上升速度开始放缓，头胸沿惯性向下垂，双臂在两侧落成沉重弧线；擦伤轮廓旁几枚深灰细屑继续向下拖走。他把气憋到肩头一缩，低短痛叫从胸腔顶出，白眼朝身下扫过，第一次看清与林海间拉开的高度。",
+        "可见背景": "灰绿森林冠层铺满下方远景，树团密而细，越远越淡；地平远端接蓝灰云层与一线浅冷灰雾。",
+        "台词与语气": "鬼头武士：“くっ！！”（武士上踢后的短痛叫，压在胸腔里，起音重而收得快。）",
+        "光影布光": "高处开阔云天冷白柔光均匀照到背肩，巨大身体下侧偏冷灰，林海在薄雾中降低对比。",
+        "声音设计": "拉长的风声渐薄，武士肩部缩动的低沉气响，细屑向下擦过。"
+      },
+      "meaning_excerpt": "武士的上升速度开始放缓，头胸沿惯性向下垂，双臂在两侧落成沉重弧线；擦伤轮廓旁几枚深灰细屑继续向下拖走。他把气憋到肩头一缩，低短痛叫从胸腔顶出，白眼朝身下扫过，第一次看清与林海间拉开的高度。"
+    },
+    {
+      "target": "片段1/分镜14",
+      "duration": 8.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_16_003.jpg"
+      ],
+      "purpose": "武士低头正面、白眼与两句原作质问保留，版外中英注释不入配音。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "武士低头朝下的头肩近景，白眼居黑隙中，肩头多处深色擦痕，两处边缘尖折气泡；下方版外另有中英词义注。",
+      "anchor_state": {
+        "叙事阶段": "武士质问力量来源，青从下方追近"
+      },
+      "state_changes": {
+        "叙事阶段": "武士质问力量来源，青从下方追近"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士低头的正面头肩近景，白眼落在中央黑隙中，两肩向左右伸出画幅；机位随身体轻微升沉，落幅维持由上方看其头肩的角度。",
+        "可见动作": "武士先用白眼搜向下方，眼隙绷开，第一句质问急急顶出；他想端正头部，肩颈刚抬起便牵到擦伤，停住一拍。第二句转回惯有的下流猜测，白眼斜移，试着把方才的惊慌压成判断；话尾一阵风从下方卷上，眼珠又向来路猛地回扫，肩膀随之绷紧。",
+        "可见背景": "两肩之间与下沿只有浅蓝灰云天，极近轮廓之外为淡冷灰云雾，林海留在画外下方。",
+        "台词与语气": "鬼头武士：“この力はどこから湧いてきた？！”（武士第一句惊怒急问；第二句强作猜测，仍带原作粗俗语气，尾句被接近的风声牵动注意。）\n鬼头武士：“こいつ、外では清楚で、内では淫らなタイプなのか？！”（武士第一句惊怒急问；第二句强作猜测，仍带原作粗俗语气，尾句被接近的风声牵动注意。）",
+        "光影布光": "云天冷白漫射在额顶和肩顶形成宽亮面，擦痕以深灰短线保留，眼隙深黑。",
+        "声音设计": "高处稀薄风声，肩颈用力时一声短沉呼吸，镜尾由下而上的破风渐近。"
+      },
+      "meaning_excerpt": "武士先用白眼搜向下方，眼隙绷开，第一句质问急急顶出；他想端正头部，肩颈刚抬起便牵到擦伤，停住一拍。第二句转回惯有的下流猜测，白眼斜移，试着把方才的惊慌压成判断；话尾一阵风从下方卷上，眼珠又向来路猛地回扫，肩膀随之绷紧。",
+      "performance": {
+        "card": {
+          "opening": "武士试图理解自己忽然落入的劣势。",
+          "beats": [
+            "搜向下方急问",
+            "欲抬头牵动擦伤，停一拍",
+            "以粗俗猜测掩饰惊慌，随近风回扫"
+          ],
+          "coupling": "第一句泄出惊怒，第二句试夺回判断权，逼近的声音又打断稳定。",
+          "landing": "白眼锁向追来的方向，肩颈绷紧。"
+        },
+        "details": [
+          "武士先用白眼搜向下方，眼隙绷开，第一句质问急急顶出；他想端正头部，肩颈刚抬起便牵到擦伤，停住一拍。第二句转回惯有的下流猜测，白眼斜移，试着把方才的惊慌压成判断；话尾一阵风"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 7.49,
+            "acting_seconds": 8.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜15",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_17_001.jpg"
+      ],
+      "purpose": "高空小黑影与长白追近轨迹保留，到下一原镜才揭示青已在头旁。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "高处武士黑色小身影在画面顶端中央，狭长白色锥形轨迹从左下延到身体下方，另一白弧从右下越出；大幅云层、密细点和放射速度线包围轨迹。",
+      "anchor_state": {
+        "叙事阶段": "青追到武士所在高度",
+        "青.位置": "由下方向武士头侧高速接近"
+      },
+      "state_changes": {
+        "叙事阶段": "青追到武士所在高度",
+        "青.位置": "由下方向武士头侧高速接近"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，仰看高空的极远景，武士小黑影位于画面中央上方，一条长白锥形轨迹从左下通向影子下方；镜头沿轨迹缓慢上仰，落幅把顶端黑影留在中央上部。",
+        "可见动作": "武士小黑影在高处升势将尽，两条臂形向下弯；下方白色细尖骤然沿长轨向他逼近，轨迹两侧的细线被向后抽长。细尖临近黑影下缘时，白弧从画面右下掠出，云纹在镜头上仰中缓缓下移，下一镜才看清追到的青。",
+        "可见背景": "深浅蓝灰云层占满天空，细白速度粒在云隙散开，白色长锥周围留出平缓冷灰空隙。",
+        "台词与语气": "无台词。",
+        "光影布光": "高处云天冷白漫射，远端黑影与白轨形成清晰对比，云层保持同一日间色调。",
+        "声音设计": "从低处直拔上来的长破风越逼越近，临近顶端时突然收成短而锐的一声。"
+      },
+      "meaning_excerpt": "武士小黑影在高处升势将尽，两条臂形向下弯；下方白色细尖骤然沿长轨向他逼近，轨迹两侧的细线被向后抽长。细尖临近黑影下缘时，白弧从画面右下掠出，云纹在镜头上仰中缓缓下移，下一镜才看清追到的青。"
+    },
+    {
+      "target": "片段1/分镜16",
+      "duration": 7.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_17_002.jpg"
+      ],
+      "purpose": "青握拳侧脸与武士头侧同高的逼近关系保留，两句反问后切远，不补近处收尾招式。",
+      "characters": [
+        "青",
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "state",
+      "anchor_elements": "青侧脸与握紧拳头占左半，武士椭圆头部在右侧极近，双方眼睛几乎同高；青眉压低、牙齿微露，长发向左后飘。两泡均指向青。",
+      "anchor_state": {
+        "叙事阶段": "青在高空头旁反问，接旁观交锋远景",
+        "青.位置": "武士头侧近处，高空"
+      },
+      "state_changes": {
+        "叙事阶段": "青在高空头旁反问，接旁观交锋远景",
+        "青.位置": "武士头侧近处，高空"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青侧脸与武士头侧的双人近景，青居画面左侧、握拳在颊旁，武士头部圆弧在右侧近层压入；摄影机随二人高处惯性漂移，落幅维持两只眼睛接近同高的对视关系。",
+        "可见动作": "青从下方追上后停在武士头侧，长发继续朝来路飘；她拳头护在颊旁，圆睁双眼盯住对方，先抬一点下巴把反问送出去。武士白眼停在她脸上，迟迟没有回应；青嘴角绷住，眉梢再压低一点，接着把第二句说清，五指在拳里又扣紧。话落后她仍维持对视，发尾从大幅飘动收成缓慢摆动，武士眼隙侧缘轻颤。",
+        "可见背景": "两张脸与拳外的空隙是浅蓝灰云天，稀薄冷灰云纹慢慢下移，平台与地面不入画。",
+        "台词与语气": "青：“どうしたの？何か言ってよ。”（青第一句主动追问，后半句催他回答；第二句带回敬挑衅的笃定，语尾收紧，武士沉默。）\n青：“全力を出せって言ったのは、そっちでしょ。”（青第一句主动追问，后半句催他回答；第二句带回敬挑衅的笃定，语尾收紧，武士沉默。）",
+        "光影布光": "开阔云天冷白漫射照亮青脸与拳背，武士头侧保持冷灰弧面，双方光向一致。",
+        "声音设计": "追来的尖风散成高处气流声，青护腕轻绷；话间留一小拍只听风的空隙。"
+      },
+      "meaning_excerpt": "青从下方追上后停在武士头侧，长发继续朝来路飘；她拳头护在颊旁，圆睁双眼盯住对方，先抬一点下巴把反问送出去。武士白眼停在她脸上，迟迟没有回应；青嘴角绷住，眉梢再压低一点，接着把第二句说清，五指在拳里又扣紧。话落后她仍维持对视，发尾从大幅飘动收成缓慢摆动，武士眼隙侧缘轻颤。",
+      "performance": {
+        "card": {
+          "opening": "青把先前的挑衅原样还给武士。",
+          "beats": [
+            "护拳抬下巴，主动追问",
+            "对方沉默时维持注视",
+            "眉再压、拳扣紧，把第二句落定"
+          ],
+          "coupling": "青的提问留给对方一拍回应空间，沉默推动她继续追逼。",
+          "landing": "双方对视仍在高空，下一镜退回旁观距离。"
+        },
+        "details": [
+          "青从下方追上后停在武士头侧，长发继续朝来路飘；她拳头护在颊旁，圆睁双眼盯住对方，先抬一点下巴把反问送出去。武士白眼停在她脸上，迟迟没有回应；青嘴角绷住，眉梢再压低一点，接"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.44,
+            "acting_seconds": 7.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜17",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_18_001.jpg"
+      ],
+      "purpose": "严格沿漫画旁观者远景，只见两小身影与闪点，不补可辨的空中拳脚收尾。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "contact",
+      "anchor_elements": "云天极远景，两小团深色身影重叠在中央上方，白色交叉闪芒从交叠点向四方向拉开；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "旁观远景见高空闪点交锋"
+      },
+      "state_changes": {
+        "叙事阶段": "旁观远景见高空闪点交锋"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，从城镇方向仰看的极远景，云天占满画幅，两小团人物黑影挤在中央上方，交叉白芒由交叠点伸出；固定机位，始终保持旁观距离。",
+        "可见动作": "两小团身影在高处短促交叠，交点猛亮一下，四道细白芒向外拉开；黑影被亮点遮住极短一拍，亮点随即缩紧。云层仍按原方向缓慢漂移，人物具体手脚留在远得无法分辨的尺度里。",
+        "可见背景": "蓝灰云天层层展开，中央云隙略浅，外围较深灰云围成不规则大面。",
+        "台词与语气": "无台词。",
+        "光影布光": "冷白云光为环境底，交叠点短促白亮后立刻收束，云层只受一瞬画面提亮。",
+        "声音设计": "高处一声极短闷击隔着距离传来，随后一小段低频空隙。"
+      },
+      "meaning_excerpt": "两小团身影在高处短促交叠，交点猛亮一下，四道细白芒向外拉开；黑影被亮点遮住极短一拍，亮点随即缩紧。云层仍按原方向缓慢漂移，人物具体手脚留在远得无法分辨的尺度里。"
+    },
+    {
+      "target": "片段1/分镜18",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_18_002.jpg"
+      ],
+      "purpose": "原格扩散白环、亮点与云天完整保留，观察距离和未显出的手脚过程保持原漫画处理。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "仰看大幅云天，中央小亮点周围一圈尖齿状白环，外层更大白弧绕开，放射线贯穿上下；无人物特征与气泡。",
+      "anchor_state": {
+        "叙事阶段": "旁观冲击环扩散，坠落开始"
+      },
+      "state_changes": {
+        "叙事阶段": "旁观冲击环扩散，坠落开始"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，沿同一城镇旁观方向仰看的云天远景，中心亮点居画面中央偏左，上下两道外圈白弧从边缘通过；固定机位让内环到外环依次展开。",
+        "可见动作": "小亮点先缩成尖白核，紧贴它的一圈齿状白环猛向外扩，随后更大的环弧赶到画面四边；环缘短线一根根向外倒伏，云层被环形画线切开又重新露出。中心仍远得看不清人物，外圈越过边缘后，只留一条向下收细的远处亮迹。",
+        "可见背景": "深浅蓝灰云层铺满天空，中心附近浅云被白色同心环形图形分开，外缘淡冷灰云纹在白弧后显回。",
+        "台词与语气": "无台词。",
+        "光影布光": "云天冷白光稳定，白核与环缘只在冲击重音上短促提亮，图形过后环境明度回稳。",
+        "声音设计": "延迟到达的一声低沉空爆扩开成宽回响，接远处向下拉长的细风声。"
+      },
+      "meaning_excerpt": "小亮点先缩成尖白核，紧贴它的一圈齿状白环猛向外扩，随后更大的环弧赶到画面四边；环缘短线一根根向外倒伏，云层被环形画线切开又重新露出。中心仍远得看不清人物，外圈越过边缘后，只留一条向下收细的远处亮迹。"
+    },
+    {
+      "target": "片段1/分镜19",
+      "duration": 3,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_19_003.jpg"
+      ],
+      "purpose": "漫画远观坠落线与屋顶后尘团保留，仅发生一次落地。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "城内屋顶烟囱形成下方黑色剪影，右侧一条极细竖向轨迹从高空接到地面，接点朝两侧掀起大团白烟尘；无人物实体、无气泡。",
+      "anchor_state": {
+        "叙事阶段": "旁观武士单次坠落平台、烟尘掀起",
+        "武士.位置": "平台石坑中伏地"
+      },
+      "state_changes": {
+        "叙事阶段": "旁观武士单次坠落平台、烟尘掀起",
+        "武士.位置": "平台石坑中伏地"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，屋顶群后的远观全景，深色烟囱与屋脊占画面下方近层，竖直细迹落在画面右侧远处，尘团在中后层抬起；固定机位，保持城内旁观距离。",
+        "可见动作": "右侧一条极细竖迹从云天下冲，末端撞到屋脊后方的石铺平台，一大团米灰烟尘猛向两侧铺开，再向上卷成鼓起轮廓；屋顶与烟囱的深色剪影仍挡住具体落点。细迹随接触迅速断去，最外层尘边继续越过低处屋脊，云层在上方缓慢漂移。",
+        "可见背景": "下方蓝灰屋顶与深灰烟囱叠成剪影，后方米灰烟尘遮住石铺平台与低处残屋，天空为分层蓝灰云。",
+        "台词与语气": "无台词。",
+        "光影布光": "日间云天冷白漫射，屋顶近层背光较深，烟尘外缘柔亮，内部暖灰。",
+        "声音设计": "一声远处重砸低轰延迟到达，碎石在远处接连回响，尘浪把风声推宽。"
+      },
+      "meaning_excerpt": "右侧一条极细竖迹从云天下冲，末端撞到屋脊后方的石铺平台，一大团米灰烟尘猛向两侧铺开，再向上卷成鼓起轮廓；屋顶与烟囱的深色剪影仍挡住具体落点。细迹随接触迅速断去，最外层尘边继续越过低处屋脊，云层在上方缓慢漂移。"
+    },
+    {
+      "target": "片段1/分镜20",
+      "duration": 9,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_20_001.jpg",
+        "第28話_20_002.jpg"
+      ],
+      "purpose": "用户指定20_001与20_002合为连续前推转焦，武士静止，青从远处平台走来而不踩背。",
+      "characters": [
+        "鬼头武士",
+        "青"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "武士巨大身体伏在破碎石坑上，头部垂入／压在坑心，两臂向左右下角伸开；深色放射裂痕从其头胸下向外爬满石面，身上擦痕还在，边缘薄尘，背景云天。无气泡。",
+      "anchor_state": {
+        "叙事阶段": "先看武士伏地不动，前推转焦至雾中走来的青",
+        "武士.位置": "石坑伏地一动不动",
+        "青.位置": "远处平台上缓缓走向前方"
+      },
+      "state_changes": {
+        "叙事阶段": "武士前层虚化，青在后层雾中走来",
+        "武士.位置": "石坑伏地一动不动",
+        "青.位置": "远处平台上缓缓走向前方"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，同一连续镜头，从平台正面的略俯全景缓慢前推至武士头背占下方近层；机位随推近小幅降低，焦点先在伏地武士与碎石坑，烟雾散开时转焦到后方缓缓走来的青，落幅武士虚化、青居画面中央后层。\n- 参考 [第28話_20_001.jpg]（起势）：武士趴在碎石坑里，头低伏、双臂分向左右，放射裂痕在下方清晰。\n- 参考 [第28話_20_002.jpg]（结果）：武士头背在下半幅近层虚化，青从中央后层烟雾中走来，前后层次与雾中剪影清楚。",
+        "可见动作": "0-2.5s：米灰烟雾先从坑边向两侧退开，露出武士趴伏在放射裂痕中心的身躯；头与双臂一动不动，破开的石板和擦痕清晰，只有碎石从坑边滑落。\n2.5-5.5s：镜头沿坑边缓慢前推，武士在近处逐渐占大；薄烟从他背后横向散开，青的银白长发和粉紫衣形从远处淡影变清。焦点从武士头肩离开，近处厚重轮廓慢慢虚下去，后层青的轮廓逐渐锐起来。\n5.5-9s：青在平台上从雾里缓缓走来，一步落定再接下一步，长发在两侧摆出低弧；她与伏地武士之间仍有一段石面距离，步子虽慢，身体朝向始终对着前方。武士保持伏地不动，成为下方模糊的厚重遮挡。",
+        "可见背景": "灰绿石铺地面在坑边裂成米灰断片，深灰放射裂缝从坑心向镜头展开；后层米灰薄烟逐渐稀开，远处一线蓝灰云天从尘后显出。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方云天冷白漫射，坑壁与巨体下方为冷灰暗面；烟层散开后后方人物逐渐获得同场柔光，明暗随遮挡变化。",
+        "声音设计": "碎石从坑边滑下的细响先清楚，随后退远；后方两下缓慢鞋声渐近，青压着的呼吸随雾中走近稍稍变清。"
+      },
+      "meaning_excerpt": "0-2.5s：米灰烟雾先从坑边向两侧退开，露出武士趴伏在放射裂痕中心的身躯；头与双臂一动不动，破开的石板和擦痕清晰，只有碎石从坑边滑落。\n2.5-5.5s：镜头沿坑边缓慢前推，武士在近处逐渐占大；薄烟从他背后横向散开，青的银白长发和粉紫衣形从远处淡影变清。焦点从武士头肩离开，近处厚重轮廓慢慢虚下去，后层青的轮廓逐渐锐起来。\n5.5-9s：青在平台上从雾里缓缓走来，一步落定再接下一步，长发在两侧摆出低弧；她与伏地武士之间仍有一段石面距离，步子虽慢，身体朝向始终对着前方。武士保持伏地不动，成为下方模糊的厚重遮挡。",
+      "merge_basis": "用户明确要求两格合成同一连续镜头；烟散、前推、前景虚化、后景聚焦与缓步走来构成同一运镜和景深变化，无中途切镜。",
+      "anchors": [
+        {
+          "image": "第28話_20_001.jpg",
+          "start": 0.8,
+          "anchor_phase": "result",
+          "anchor_elements": "武士巨大身体伏在破碎石坑上，头部垂入／压在坑心，两臂向左右下角伸开；深色放射裂痕从其头胸下向外爬满石面，身上擦痕还在，边缘薄尘，背景云天。无气泡。",
+          "anchor_state": {
+            "叙事阶段": "烟散后先看武士伏地不动",
+            "武士.位置": "石坑伏地一动不动",
+            "青.位置": "远处平台，烟雾尚遮住身体"
+          },
+          "action_excerpt": "露出武士趴伏在放射裂痕中心的身躯；头与双臂一动不动",
+          "meaning_excerpt": "露出武士趴伏在放射裂痕中心的身躯；头与双臂一动不动"
+        },
+        {
+          "image": "第28話_20_002.jpg",
+          "start": 6.0,
+          "anchor_phase": "process",
+          "anchor_elements": "武士巨大背、肩、头占画面下方近层并虚化，青在中央后层烟尘中呈完整身影，长发两侧垂落，一腿微屈、另一腿较直；青足部与武士背部边缘重叠，接地点在遮挡里。",
+          "anchor_state": {
+            "叙事阶段": "武士前层虚化，青在后层雾中走来",
+            "武士.位置": "石坑伏地一动不动",
+            "青.位置": "远处平台上缓缓走向前方"
+          },
+          "action_excerpt": "青在平台上从雾里缓缓走来，一步落定再接下一步",
+          "meaning_excerpt": "青在平台上从雾里缓缓走来，一步落定再接下一步"
+        }
+      ]
+    },
+    {
+      "target": "片段1/分镜21",
+      "duration": 4.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_20_003.jpg"
+      ],
+      "purpose": "青按太阳穴、单眼闭、另一眼半垂、勉强笑与微颤保留；页外评论不入对白。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "青头肩正面，一手按在太阳穴，另一手垂在画外，单眼闭、另一眼半垂，嘴角勉强笑，额角汗珠与喘息拟声；双臂有深色细长流痕／擦痕，头肩附近短颤线。上方另有页外评论。",
+      "anchor_state": {
+        "叙事阶段": "青按头喘息，微颤着嘲讽，本批结束",
+        "青.状态": "强化后负荷显出，仍站立可说话"
+      },
+      "state_changes": {
+        "叙事阶段": "青按头喘息，微颤着嘲讽，本批结束",
+        "青.状态": "强化后负荷显出，仍站立可说话"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；用户指定的连续前推转焦按其意图执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青正面头肩与上臂的中近景居画面中央，一手贴太阳穴，长马尾从右上垂入，衣服破边在下缘；摄影机缓慢后退半步接她走近，落幅头、按头手与微颤肩线同框。",
+        "可见动作": "青继续走近一小步，抬手按住太阳穴，单眼闭紧、另一眼半垂，嘴角勉强挑起；她先喘一口，再把嘲讽说向伏地武士。说到句尾，手指无意识地收紧，肩膀短短颤一下，脸上笑意却仍撑着；已有擦痕沿手臂保留，破边衣料随未平的呼吸轻抖，长发在肩后慢慢落稳。",
+        "可见背景": "青轮廓之外是米灰烟雾逐渐散开的软层，头侧上缘蓝灰云层透出，平台与武士留在画外低处。",
+        "台词与语气": "青：“大したことないんだね。”（青喘过一口后勉强轻笑着嘲讽，句尾还在撑住气势，疲惫从余气里漏出。）",
+        "光影布光": "上方冷白云光柔和覆盖脸与手背，烟层使后方偏亮，闭眼一侧压出浅冷灰影。",
+        "声音设计": "压着的一次喘息，指腹擦过发根，慢步鞋声落定后只留衣料轻颤。"
+      },
+      "meaning_excerpt": "青继续走近一小步，抬手按住太阳穴，单眼闭紧、另一眼半垂，嘴角勉强挑起；她先喘一口，再把嘲讽说向伏地武士。说到句尾，手指无意识地收紧，肩膀短短颤一下，脸上笑意却仍撑着；已有擦痕沿手臂保留，破边衣料随未平的呼吸轻抖，长发在肩后慢慢落稳。",
+      "performance": {
+        "card": {
+          "opening": "击倒对手后仍想把气势维持到最后。",
+          "beats": [
+            "抬手按头、单眼闭紧，先喘气",
+            "勉强挑嘴角说完嘲讽",
+            "手指收紧、肩短颤，笑意仍撑住"
+          ],
+          "coupling": "表面的回敬与身体透出的负荷并行，最后一口气不够从容。",
+          "landing": "青仍站着，但已开始显出后续失力前兆。"
+        },
+        "details": [
+          "青继续走近一小步，抬手按住太阳穴，单眼闭紧、另一眼半垂，嘴角勉强挑起；她先喘一口，再把嘲讽说向伏地武士。说到句尾，手指无意识地收紧，肩膀短短颤一下，脸上笑意却仍撑着；已有"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 2.28,
+            "acting_seconds": 4.5,
+            "concurrent": true
+          }
+        ]
+      }
+    }
+  ],
+  "cuts": [],
+  "action_routes": [
+    {
+      "id": "QG-B04-28B",
+      "source_images": [
+        "第28話_11_003.jpg",
+        "第28話_12_001.jpg",
+        "第28話_12_002.jpg",
+        "第28話_12_003.jpg",
+        "第28話_12_004.jpg",
+        "第28話_13_001.jpg",
+        "第28話_13_002.jpg",
+        "第28話_14_001.jpg",
+        "第28話_14_002.jpg",
+        "第28話_14_003.jpg",
+        "第28話_15_001.jpg",
+        "第28話_16_001.jpg",
+        "第28話_16_002.jpg",
+        "第28話_16_003.jpg",
+        "第28話_17_001.jpg",
+        "第28話_17_002.jpg",
+        "第28話_18_001.jpg",
+        "第28話_18_002.jpg",
+        "第28話_19_003.jpg",
+        "第28話_20_001.jpg",
+        "第28話_20_002.jpg",
+        "第28話_20_003.jpg"
+      ],
+      "path": "本批第28話_11_003—20_003，22原文件；21_001、21_002只作后续邻格。\n1. 青咬指后蹬裂石面，以高速残影瞬间出现在武士背后说“在你后面”；武士保持原地站姿，双臂与脚不改位，只有头转向青。残影是高速到位的画面表达，不补绕身路线或武士挥臂攻击。\n2. 青拉拳，命中武士头／颈侧交叠处，武士被打得横向离地，青贴身跟进连续拳击；12_004的EUT...!!按武士受击闷哼。用户针对其他步骤给出明确纠正，未改此项，沿用确认。\n3. 青支撑脚踩实，短喝蓄力，上踢把武士送往高空；青竖直踢腿、屈收另一腿与高处武士小身影保留。16_001保留悬空城镇平台、斜索与竖直轨迹的高度关系。\n4. 武士在林海上空吃痛质问，青追到其头旁反问。随后严格以漫画旁观者远景呈现两小身影闪点、扩散冲击环、城内远看竖向坠落烟尘；不补近处空中招式或具体向下重击姿势。\n5. 20_001和20_002是同一个连续镜头：先看武士伏在石坑里一动不动，烟尘散开，镜头缓慢前推；武士留在前景逐渐虚化，焦点交给远处雾中缓缓走来的青。青在平台上从远处走来，不站到武士背上。20_003再看她按住太阳穴、喘息微颤着嘲讽，本批结束。\n原作未证明死亡；高空白迹与冲击环沿漫画作为运动与受力表现，不新设能力或突然变成夜晚。16_003中英词义注、20_003页外评论不作人物台词。第三轮用插入与返回组织蹬地、拉拳、拳击接触／横飞、连打节奏、脚下转力与上踢；空中保持旁观距离，落地只发生一次。",
+      "proposal_sha256": "fe874de94edab267cf4bf76bbe248afd3f00e525a2bfe3568de28117db6c2ad5",
+      "confirmation_status": "user_explained_corrected_path",
+      "user_confirmation": {
+        "quote": "1.武士就站在原地维持站姿，只有回头，因为青速度很快，这里青要直接残影瞬移过来。4.就按漫画来处理就行，有一种旁观者视角。5.20001和20002合并为同一个镜头，烟雾散开，镜头前推，先展示武士趴在地上一动不动，随后前景趴在地上的武士虚化，聚焦后面雾中走出来的青。青从远处缓缓走来",
+        "sha256": "fe874de94edab267cf4bf76bbe248afd3f00e525a2bfe3568de28117db6c2ad5",
+        "interpretation_note": "依用户最新纠正直接进入二遍，不另求重复确认；1、4、5替换旧提案，2、3保留。"
+      }
+    }
+  ],
+  "source_lock": {
+    "version": 1,
+    "sha256": "26c5c974a88e4f48b5394c7351955b82b67ce53e66b19e438ae61c4902930b13",
+    "manifest": [
+      {
+        "image": "第28話_11_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_12_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_12_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_12_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_12_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_13_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_13_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_14_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_14_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_14_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_15_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_16_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_16_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_16_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_17_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_17_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_18_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_18_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_19_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_20_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_20_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_20_003.jpg",
+        "renderable_visual": true
+      }
+    ]
+  },
+  "warnings": [],
+  "revision_audit": [
+    {
+      "date": "2026-10-25",
+      "scope": "本批22张720p首次精读实际完成，12_004、14_002、20_002因局部接触／足主／支点不清而回原图放大；21_001—21_002仅作相邻后果。尚未开始二遍或冻结。"
+    },
+    {
+      "date": "2026-10-25",
+      "scope": "依用户纠正修订动作路径并开始二遍。完整保留原提案与本次原话。",
+      "user_quote": "1.武士就站在原地维持站姿，只有回头，因为青速度很快，这里青要直接残影瞬移过来。4.就按漫画来处理就行，有一种旁观者视角。5.20001和20002合并为同一个镜头，烟雾散开，镜头前推，先展示武士趴在地上一动不动，随后前景趴在地上的武士虚化，聚焦后面雾中走出来的青。青从远处缓缓走来"
+    }
+  ],
+  "scope": {
+    "first_source": "第28話_11_003.jpg",
+    "last_source": "第28話_20_003.jpg",
+    "raw_files": 22,
+    "neighbor_only": [
+      "第28話_21_001.jpg",
+      "第28話_21_002.jpg"
+    ],
+    "neighbor_reading": "21_001董白圆眼惊讶，认为该一开始用此招；21_002青背向镜头屈膝垂头向下失力，董白远处站着。这两张仅定本批结束与后果衔接，下一批另行写作。"
+  },
+  "route_proposal_history": [
+    {
+      "path": "本批第28話_11_003—20_003，22原文件；21_001、21_002仅作下一段相邻后果查看。\n1. 青咬指后蹬裂脚下石面高速接近；武士粗臂落向前方石面，青绕到其背后说“在你后面”，武士回头，青拉拳。\n2. 青从背后挥拳命中武士头／颈侧的交叠处，武士被打得横向离地，青跟进连续拳击。12_004的EUT...!!暂理解为武士挨拳的闷哼，需用户核准；原图局部未见可核对的说话嘴。\n3. 青支撑脚踩实，短喝蓄力，接一记朝上的高踢，把武士送上高空；保留15_001青竖起的一腿、屈收的另一腿与武士高处小身影，16_001再以悬空城镇平台和竖直轨迹显示高度。\n4. 武士在林海上空吃痛、质问，青追上去到其头旁反问。对话后原作给两小身影的闪点和扩散冲击环，接竖直坠落与武士伏在碎石坑中；空中具体收尾动作原作省略，拟第三轮补成青一记向下重击把武士打回平台，不伪报为18_001／18_002中已经画清的拳姿。\n5. 武士伏在坑内，青在其背后／背缘的烟尘中显出。20_002放大后足底与背缘仍有遮挡，拟按青落到武士背上站稳处理，须用户确认；不直接当作观察事实。20_003青按住太阳穴、单眼闭起、身体微颤着嘲讽，本批在这句结束；下一批再接董白惊讶与青失力。\n原作未证明武士死亡，不补断气。16_003中英词义注、20_003页外评论均不变成角色配音。高空白迹、闪点与冲击环作运动和冲击表现，不自动扩写新法术或突然转入夜晚。\n第三轮重点：蹬地插入与绕身落位、前方粗臂落空与青背后反打、拉拳／接触／横飞／贴身连击的清晰切点、足底踩实到全身上踢、极远高度与近处追上的空间衔接、空中交锋后同一条下坠轨迹接单次落地，不重复起跳或砸坑。",
+      "sha256": "038b99ec5ce41061d269dec093b46a4a1eb167dd796a63abc0d244f563c305ec",
+      "status": "用户纠正：武士原地只回头，青残影瞬间到背后；空中旁观；伏地与雾中走来的青合为前推转焦。"
+    }
+  ],
+  "initial_state": {
+    "场景": "阴云下的城镇石铺平台",
+    "青.武器": "空手",
+    "青.状态": "已咬指，力量速度激增，尚能行动",
+    "武士.形态": "巨大形态",
+    "武士.位置": "原地站立",
+    "叙事阶段": "青高速到背后之前"
+  }
+}

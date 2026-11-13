@@ -1,0 +1,3333 @@
+{
+  "version": 3,
+  "skill_version": "2.8.2",
+  "authoring_format": "compact-2.8.2",
+  "source_language": "zh",
+  "script_language": "ja",
+  "look": "清晨云层下的城镇石铺平台，灰绿石铺地面、深灰裂坑、米灰残尘；人物为高品质二维赛璐璐，环境留手绘纹理。段前沿用上方冷白云光，24_001中央朝阳从林海与云雾交界升起，浅金白晨光逐渐透入，与冷灰云影并存；中央明亮射束是阳光。之后暖白低角度晨光与上方冷白漫射共同照明，色彩仍克制。",
+  "character_registry_source": {
+    "path": "D:\\Codex\\Projects\\New project\\write-comic-video-storyboards\\comic-workspace\\character-references\\角色映射.md",
+    "version": "9",
+    "read_date": "2026-10-25",
+    "sha256": "75b9fe855ae41f8ea7376b6f93b0f6caaba5ec04ea0721efbecfe2e3be1a2c9a"
+  },
+  "character_registry": [
+    {
+      "id": "C001",
+      "canonical_name": "青",
+      "aliases": [],
+      "identity_status": "identified",
+      "design_reference": "青2.png；漫画尖耳保留，粉紫交领无袖短上衣、紫色不对称裙摆、白色长袜／靴与腕部护件",
+      "performance_profile": {
+        "baseline": "活泼阳光；危险时保留主动判断、惊愕、羞恼和疲惫，不固定嬉笑。",
+        "source": "共享主档用户确认条目"
+      },
+      "reference_visually_opened": true
+    },
+    {
+      "id": "C008",
+      "canonical_name": "鬼头武士",
+      "aliases": [
+        "龟头武士"
+      ],
+      "identity_status": "identified",
+      "design_reference": "鬼头武士.png；褐色贴头头罩、深灰围布、破边黑外衣、米灰交领内衣、缠腿；变身状态从本场漫画核对",
+      "performance_profile": {
+        "baseline": "长期性格未确认；本场追击、自负判断和调侃来自本次原作。",
+        "source": "共享主档设计＋本场上下文，不以参考展示姿势推断长期性格"
+      },
+      "reference_visually_opened": true
+    },
+    {
+      "id": "C004",
+      "canonical_name": "董白",
+      "aliases": [],
+      "identity_status": "identified",
+      "design_reference": "turnarounds/董白.png，已实际打开；黑发双高长马尾、浅色挑染、蓝眼、黑色高领无袖短裙与高跟鞋。",
+      "performance_profile": {
+        "baseline": "高傲自负；从容占据空间与自信判断，保留原格夸张圆眼、惊讶和受冒犯反应。",
+        "source": "项目共享人物主档用户确认条目。"
+      },
+      "reference_visually_opened": true
+    },
+    {
+      "id": "C011",
+      "canonical_name": "欧铂",
+      "aliases": [
+        "魔王欧铂"
+      ],
+      "identity_status": "identified",
+      "design_reference": "共享turnarounds/欧铂.png，本次实际打开匹配；黑色外弯双角棱面盔、下栅、一侧大肩甲与臂甲、旋纹胸肩、黑披风和长裤，裸露厚重胸腹、较深肤色。按当格实见保留甲片与裸露位置。",
+      "reference_visually_opened": true,
+      "performance_profile": {
+        "baseline": "长期基调未确认；本场以控制违令下属、质问与直接惩罚为任务，人物面孔全遮，力量来自稳定姿态与手指受力。",
+        "source": "共享人物主档C011设计＋本次漫画上下文，不从参考展示姿势推断性格。"
+      }
+    }
+  ],
+  "project_title": "第五批 青与鬼头武士 第28话战后及续变",
+  "stage": "second_pass_complete",
+  "panels": [
+    {
+      "image": "第28話_21_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白正面头肩近景，双眼极圆、小瞳孔居中，嘴松成小圆口，双马尾在两肩后；背景云天。两气泡都指向董白。",
+        "initial_action_understanding": "董白目睹青强化后的表现，先惊讶再说该早点用这招；不是内心，正常说话。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-21_001-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "...什么情况?既然有这种招式.",
+          "script_text": "…何なの？そんな技があるなら、",
+          "status": "mapped",
+          "target": "片段1/分镜1",
+          "start": 0.3,
+          "seconds": 2.7
+        },
+        {
+          "id": "28-21_001-b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "一开始就用这招不就好了吗.",
+          "script_text": "最初から使えばよかったじゃない。",
+          "status": "mapped",
+          "target": "片段1/分镜1",
+          "start": 3.25,
+          "seconds": 3.33
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白正面头肩近景，双眼极圆、小瞳孔居中，嘴松成小圆口，双马尾在两肩后；背景云天。两气泡都指向董白。",
+      "source_facts": {
+        "entities": [
+          "董白正面头肩近景，双眼极圆、小瞳孔居中，嘴松成小圆口，双马尾在两肩后；背景云天。两气泡都指向董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白惊讶青有此招式，尚未接触她"
+      },
+      "anchor_target": "片段1/分镜1",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白圆眼小口的惊讶保留，两句由意外过渡到高傲的指点。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼小口的惊讶保留，两句由意外过渡到高傲的指点。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼小口的惊讶保留，两句由意外过渡到高傲的指点。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_21_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "从青背后低看中全身，青双膝向下屈开、上身与头垂下，双臂沿身侧落，长马尾向左上飘出低弧；董白在右远处全身站着，腿直，背景大幅白底。无气泡。",
+        "initial_action_understanding": "青身体突然失力下沉，膝部落向石面，董白仍在远处看着；需邻格核准是跪下、坐下或倒下阶段。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "从青背后低看中全身，青双膝向下屈开、上身与头垂下，双臂沿身侧落，长马尾向左上飘出低弧；董白在右远处全身站着，腿直，背景大幅白底。无气泡。",
+      "source_facts": {
+        "entities": [
+          "从青背后低看中全身，青双膝向下屈开、上身与头垂下，双臂沿身侧落，长马尾向左上飘出低弧；董白在右远处全身站着，腿直，背景大幅白底。无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青失力跪落",
+        "青.状态": "屈膝跪下，仍清醒",
+        "青.支撑": "双膝与下垂身体",
+        "董白.位置": "远处站着看，未接触青"
+      },
+      "anchor_target": "片段1/分镜2",
+      "narrative_kind": "action",
+      "story_context": [
+        "用户确认青失力屈膝跪落；背后大姿态与董白远处站位保留。"
+      ],
+      "action_reading": {
+        "summary": "用户确认青失力屈膝跪落；背后大姿态与董白远处站位保留。",
+        "phase": "process",
+        "world_motion": "用户确认青失力屈膝跪落；背后大姿态与董白远处站位保留。",
+        "screen_motion": "青垂直下沉，马尾反向上扬后落回；董白位置不变。",
+        "grounding": "双膝落在石面，未向前伏倒。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_21_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_21_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青正面近景低垂着头，双眼半垂、眉尖向上聚，张口勉强笑，嘴边喘息拟声；长发沿两侧垂，肩头微晃线。两普通气泡指向青。",
+        "initial_action_understanding": "青失力后仍能自嘲回应，说确实该上来就开大，不能当已经昏迷。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-21_003-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...哈,还真是.",
+          "script_text": "…はは、ほんとだね。",
+          "status": "mapped",
+          "target": "片段1/分镜3",
+          "start": 0.3,
+          "seconds": 1.66
+        },
+        {
+          "id": "28-21_003-b2",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "我确实应该上来就开大的.",
+          "script_text": "最初から大技を出すべきだったよ。",
+          "status": "mapped",
+          "target": "片段1/分镜3",
+          "start": 2.21,
+          "seconds": 3.33
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青正面近景低垂着头，双眼半垂、眉尖向上聚，张口勉强笑，嘴边喘息拟声；长发沿两侧垂，肩头微晃线。两普通气泡指向青。",
+      "source_facts": {
+        "entities": [
+          "青正面近景低垂着头，双眼半垂、眉尖向上聚，张口勉强笑，嘴边喘息拟声；长发沿两侧垂，肩头微晃线。两普通气泡指向青。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青跪姿中勉强笑着回应，继续失力"
+      },
+      "anchor_target": "片段1/分镜3",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "青半垂眼、向上聚的眉、张嘴勉强笑与喘息保留，此时仍清醒能回应。"
+      ],
+      "action_reading": {
+        "summary": "青半垂眼、向上聚的眉、张嘴勉强笑与喘息保留，此时仍清醒能回应。",
+        "phase": "reaction",
+        "world_motion": "青半垂眼、向上聚的眉、张嘴勉强笑与喘息保留，此时仍清醒能回应。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_22_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青头顶与上背占竖幅下部，头完全垂下，刘海遮脸，长发顺前方滑落；肩头两侧有短晃线，大幅空白底，无气泡。",
+        "initial_action_understanding": "青先从勉强笑的姿态继续低垂，身躯失去支撑，接着向前倒。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青头顶与上背占竖幅下部，头完全垂下，刘海遮脸，长发顺前方滑落；肩头两侧有短晃线，大幅空白底，无气泡。",
+      "source_facts": {
+        "entities": [
+          "青头顶与上背占竖幅下部，头完全垂下，刘海遮脸，长发顺前方滑落；肩头两侧有短晃线，大幅空白底，无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青头完全低下，身体失去向前支撑"
+      },
+      "anchor_target": "片段1/分镜4",
+      "narrative_kind": "action",
+      "story_context": [
+        "垂头遮脸、肩晃与向前失力的原格阶段保留。"
+      ],
+      "action_reading": {
+        "summary": "垂头遮脸、肩晃与向前失力的原格阶段保留。",
+        "phase": "process",
+        "world_motion": "垂头遮脸、肩晃与向前失力的原格阶段保留。",
+        "screen_motion": "头与肩先垂，再向前倾，发束沿重力滑落。",
+        "grounding": "双膝仍着地，重心正越出膝部支撑。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_22_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白黑裙胸肩轮廓压在左侧近层，青在中央远层石面上向前伏倒，头发铺在左右、头贴近地，手臂弯在头侧，两侧小尘团；无气泡。",
+        "initial_action_understanding": "青由跪／屈膝状态彻底向前倒在石面，董白近层看着，二人距离保留，不提前接住。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白黑裙胸肩轮廓压在左侧近层，青在中央远层石面上向前伏倒，头发铺在左右、头贴近地，手臂弯在头侧，两侧小尘团；无气泡。",
+      "source_facts": {
+        "entities": [
+          "董白黑裙胸肩轮廓压在左侧近层，青在中央远层石面上向前伏倒，头发铺在左右、头贴近地，手臂弯在头侧，两侧小尘团；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青向前伏倒，脸侧贴地",
+        "青.状态": "伏地，仍能答话",
+        "青.支撑": "石面与弯在头侧的前臂",
+        "董白.位置": "前层站着看，尚未扶起青"
+      },
+      "anchor_target": "片段1/分镜5",
+      "narrative_kind": "action",
+      "story_context": [
+        "用户确认的前伏倒地，董白前层与青远层构图保留，此时青仍清醒。"
+      ],
+      "action_reading": {
+        "summary": "用户确认的前伏倒地，董白前层与青远层构图保留，此时青仍清醒。",
+        "phase": "result",
+        "world_motion": "用户确认的前伏倒地，董白前层与青远层构图保留，此时青仍清醒。",
+        "screen_motion": "青由上向前倒，发与尘向两侧散；董白未进入倒地位置。",
+        "grounding": "青上身、前臂与腿部落在石面，未发生新的攻击。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_22_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白正面头肩近景，圆眼小瞳孔、嘴松成小圆，头发与肩侧有轻晃线，背景云天。",
+        "initial_action_understanding": "董白向倒下的青问是否还活着，要求说话，紧张带试探；不是武士在讲话。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-22_003-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "...你没死吧?说话.",
+          "script_text": "…死んでないわよね？何か言いなさい。",
+          "status": "mapped",
+          "target": "片段1/分镜6",
+          "start": 0.3,
+          "seconds": 3.33
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白正面头肩近景，圆眼小瞳孔、嘴松成小圆，头发与肩侧有轻晃线，背景云天。",
+      "source_facts": {
+        "entities": [
+          "董白正面头肩近景，圆眼小瞳孔、嘴松成小圆，头发与肩侧有轻晃线，背景云天。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白向伏地的青试探问话"
+      },
+      "anchor_target": "片段1/分镜6",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白圆眼微张口、轻偏头的原格反应保留，话对倒地青说。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼微张口、轻偏头的原格反应保留，话对倒地青说。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼微张口、轻偏头的原格反应保留，话对倒地青说。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_22_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_22_004.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "高处俯视石铺平台，董白在右上站着，青横伏在左下，双腿向下展开，长发铺在头臂两侧；两人之间留石面空隙。上泡尾指青，下泡尾指董白。",
+        "initial_action_understanding": "青仍能答话“还没有，快了”；董白接着抱怨功劳被抢。青持续卧地，正背细节不靠灰度强认。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-22_004-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...还没有,快了.",
+          "script_text": "…まだ。もうすぐだけど。",
+          "status": "mapped",
+          "target": "片段1/分镜7",
+          "start": 0.3,
+          "seconds": 2.08
+        },
+        {
+          "id": "28-22_004-b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "你到底是谁?为什么每次都是你抢走我的功劳?真让人生气.",
+          "script_text": "あなた、一体何者なの？どうして毎回私の手柄を横取りするのよ。ほんと、腹が立つ。",
+          "status": "mapped",
+          "target": "片段1/分镜7",
+          "start": 2.63,
+          "seconds": 7.28
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "高处俯视石铺平台，董白在右上站着，青横伏在左下，双腿向下展开，长发铺在头臂两侧；两人之间留石面空隙。上泡尾指青，下泡尾指董白。",
+      "source_facts": {
+        "entities": [
+          "高处俯视石铺平台，董白在右上站着，青横伏在左下，双腿向下展开，长发铺在头臂两侧；两人之间留石面空隙。上泡尾指青，下泡尾指董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青伏地回答，董白抱怨功劳被抢"
+      },
+      "anchor_target": "片段1/分镜7",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "俯视青卧地与董白站立的原格距离保留，两人各自回应，青未被扶起。"
+      ],
+      "action_reading": {
+        "summary": "俯视青卧地与董白站立的原格距离保留，两人各自回应，青未被扶起。",
+        "phase": "state",
+        "world_motion": "俯视青卧地与董白站立的原格距离保留，两人各自回应，青未被扶起。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_23_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青脸侧贴石铺地面的近景，一眼闭、一眼半睁，嘴角拉开露齿笑，嘴旁有弱短喘声拟字，头发散在地面；一泡指青。",
+        "initial_action_understanding": "青倒着仍把功劳让给董白，疲惫中带善意和顺势解围的轻松。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-23_001-b1",
+          "speaker": "青",
+          "kind": "dialogue",
+          "source_text": "...那你就告诉他们是你解决这事的吧...",
+          "script_text": "…じゃあ、あなたが解決したって皆に言えばいいよ…",
+          "status": "mapped",
+          "target": "片段1/分镜8",
+          "start": 0.3,
+          "seconds": 4.58
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青脸侧贴石铺地面的近景，一眼闭、一眼半睁，嘴角拉开露齿笑，嘴旁有弱短喘声拟字，头发散在地面；一泡指青。",
+      "source_facts": {
+        "entities": [
+          "青脸侧贴石铺地面的近景，一眼闭、一眼半睁，嘴角拉开露齿笑，嘴旁有弱短喘声拟字，头发散在地面；一泡指青。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "青主动把功劳让给董白"
+      },
+      "anchor_target": "片段1/分镜8",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "青侧脸贴地、单眼闭与露齿笑保留，疲惫中仍主动回应别人。"
+      ],
+      "action_reading": {
+        "summary": "青侧脸贴地、单眼闭与露齿笑保留，疲惫中仍主动回应别人。",
+        "phase": "reaction",
+        "world_motion": "青侧脸贴地、单眼闭与露齿笑保留，疲惫中仍主动回应别人。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_23_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白斜前探的头肩近景，双眼极圆，眉尖放开，嘴大张而露笑，上身向前凑，旁有好感度上升的图形字。两普通气泡指董白。",
+        "initial_action_understanding": "董白一听能拿功劳便明显转喜，开心确认一言为定，夸青好说话。图形字不当人物配音。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-23_002-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "嗯?当真?一言为定哦?!",
+          "script_text": "え？本当に？約束よ？！",
+          "status": "mapped",
+          "target": "片段1/分镜9",
+          "start": 0.3,
+          "seconds": 1.66
+        },
+        {
+          "id": "28-23_002-b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "干这行的很少像你这么好说话的.",
+          "script_text": "この仕事で、あんたみたいに話の分かる人は珍しいわ。",
+          "status": "mapped",
+          "target": "片段1/分镜9",
+          "start": 2.21,
+          "seconds": 4.99
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白斜前探的头肩近景，双眼极圆，眉尖放开，嘴大张而露笑，上身向前凑，旁有好感度上升的图形字。两普通气泡指董白。",
+      "source_facts": {
+        "entities": [
+          "董白斜前探的头肩近景，双眼极圆，眉尖放开，嘴大张而露笑，上身向前凑，旁有好感度上升的图形字。两普通气泡指董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白闻让功转喜，准备上前扶起青"
+      },
+      "anchor_target": "片段1/分镜9",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白圆眼大笑、前探与好感突增的原作表情保留，图形拟字转为表情节奏而不生成字幕。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼大笑、前探与好感突增的原作表情保留，图形拟字转为表情节奏而不生成字幕。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼大笑、前探与好感突增的原作表情保留，图形拟字转为表情节奏而不生成字幕。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_23_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "双人头肩景，青在左侧垂头、长发遮眼，一条手臂搭过右侧董白的肩；董白身体靠近支撑，一手扣住青搭肩手臂的外侧前臂。董白半垂眼、带得意笑，青全身弱晃线。两泡均指董白。",
+        "initial_action_understanding": "董白把地上的青扶起来，用搭肩支撑带走，并得意招她当马仔；具体左右臂在二遍再锁，不能改公主抱。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-23_003-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "嗯.你还挺有用的...来当我的马仔吧",
+          "script_text": "うん、あんた結構使えるじゃない…私の子分になりなさい。",
+          "status": "mapped",
+          "target": "片段1/分镜10",
+          "start": 0.3,
+          "seconds": 5.2
+        },
+        {
+          "id": "28-23_003-b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "当然有几个月的试用期哦.",
+          "script_text": "もちろん、数か月の試用期間はあるけどね。",
+          "status": "mapped",
+          "target": "片段1/分镜10",
+          "start": 5.75,
+          "seconds": 3.95
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "双人头肩景，青在左侧垂头、长发遮眼，一条手臂搭过右侧董白的肩；董白身体靠近支撑，一手扣住青搭肩手臂的外侧前臂。董白半垂眼、带得意笑，青全身弱晃线。两泡均指董白。",
+      "source_facts": {
+        "entities": [
+          "双人头肩景，青在左侧垂头、长发遮眼，一条手臂搭过右侧董白的肩；董白身体靠近支撑，一手扣住青搭肩手臂的外侧前臂。董白半垂眼、带得意笑，青全身弱晃线。两泡均指董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白扶起青，搭肩架稳并招揽",
+        "青.状态": "扶起后闭眼，渐渐失去回应",
+        "青.支撑": "靠董白一侧手臂搭肩，身体由董白架住",
+        "董白.位置": "紧靠青，外侧手扣前臂，内侧臂护腰"
+      },
+      "anchor_target": "片段1/分镜10",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白将青扶起为搭肩搀扶，原格垂头、扣前臂与董白得意半垂眼保留。"
+      ],
+      "action_reading": {
+        "summary": "董白将青扶起为搭肩搀扶，原格垂头、扣前臂与董白得意半垂眼保留。",
+        "phase": "process",
+        "world_motion": "董白将青扶起为搭肩搀扶，原格垂头、扣前臂与董白得意半垂眼保留。",
+        "screen_motion": "两人从低位升到并肩，青的重量转交董白，镜头跟升后停稳。",
+        "grounding": "董白双脚分开承重；青双脚回到地面但重心靠同伴，未被横抱。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_23_004.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_23_004.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "青的闭眼侧脸在左近层，嘴微张、头垂；董白在右后近景，眼半垂、嘴微张，视线斜向青脸，眉尖一高一低。",
+        "initial_action_understanding": "青在搀扶中闭眼失去回应，董白发现她居然睡着；不把更早还会说话阶段写成已昏。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-23_004-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "什么嘛?居然睡着了?",
+          "script_text": "何よ。寝ちゃったの？",
+          "status": "mapped",
+          "target": "片段1/分镜11",
+          "start": 0.3,
+          "seconds": 1.87
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "青的闭眼侧脸在左近层，嘴微张、头垂；董白在右后近景，眼半垂、嘴微张，视线斜向青脸，眉尖一高一低。",
+      "source_facts": {
+        "entities": [
+          "青的闭眼侧脸在左近层，嘴微张、头垂；董白在右后近景，眼半垂、嘴微张，视线斜向青脸，眉尖一高一低。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白发现青睡着",
+        "青.状态": "闭眼失去回应，被架住",
+        "董白.位置": "继续搭肩搀扶青"
+      },
+      "anchor_target": "片段1/分镜11",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "青闭眼微张口、董白半垂眼斜看与原句保留，睡着发生在搀扶之后。"
+      ],
+      "action_reading": {
+        "summary": "青闭眼微张口、董白半垂眼斜看与原句保留，睡着发生在搀扶之后。",
+        "phase": "reaction",
+        "world_motion": "青闭眼微张口、董白半垂眼斜看与原句保留，睡着发生在搀扶之后。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_24_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "狭长环境空镜，下方密细林冠，云雾压在上方；画面中央朝阳升起的亮光穿透云雾，形成上升的浅亮射束与几何光面。没有悬空岩台实体。小鸟鸣拟声位于左中，无气泡。",
+        "initial_action_understanding": "回原图放大并与25_002对照，浅影为悬空岩台而非武士；以林海、云雾与岩台的环境空镜连接晨光变化，再切回伏地武士。",
+        "context_reassessment": "25_002明确在云后画出岩台轮廓，24_001上半浅影可能同属悬空岩台而非巨体；将回原图核对。",
+        "detail_reopen": {
+          "source_resolution": "original",
+          "reason": "首遍将浅色岩台轮廓疑似看成武士，需要核准是否人物。",
+          "method": "实际打开原文件上半部放大，对照25_002两块岩台；未补画。"
+        }
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "user_action_override": "用户明确：画面中央是朝阳升起的光线，没有悬空岩台。",
+      "second_pass_correction": "首遍将几何光束误认岩台，二遍回图按用户解释纠正，不作为实体建筑。",
+      "composition_correction_history": "狭长环境空镜，下方密细林冠，云雾压在上方；上半部两块平直顶缘、锥形侧面的悬空岩台剪影隔云相叠，两条细烟／云丝向上延伸；小鸟鸣般拟声在左中，无气泡。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "狭长环境空镜，下方密细林冠，云雾压在上方；画面中央朝阳升起的亮光穿透云雾，形成上升的浅亮射束与几何光面。没有悬空岩台实体。小鸟鸣拟声位于左中，无气泡。",
+      "source_facts": {
+        "entities": [
+          "狭长环境空镜，下方密细林冠，云雾压在上方；画面中央朝阳升起的亮光穿透云雾，形成上升的浅亮射束与几何光面。没有悬空岩台实体。小鸟鸣拟声位于左中，无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "朝阳升起，光线转暖变亮",
+        "场景光线": "中央朝阳穿雾，冷灰云光与浅金白晨光并存"
+      },
+      "anchor_target": "片段1/分镜12",
+      "narrative_kind": "state",
+      "story_context": [
+        "用户纠正：24_001中间是朝阳升起光线，光束与林海构成空镜，不建悬空岩台。"
+      ]
+    },
+    {
+      "image": "第28話_24_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士伏地的背肩与垂头占满近景，整块主体虚化，双肩擦痕模糊，背景云天亮；无气泡。",
+        "initial_action_understanding": "切回此前伏地武士，先以虚焦保持不确定，不写成已经死亡或已站起。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士伏地的背肩与垂头占满近景，整块主体虚化，双肩擦痕模糊，背景云天亮；无气泡。",
+      "source_facts": {
+        "entities": [
+          "武士伏地的背肩与垂头占满近景，整块主体虚化，双肩擦痕模糊，背景云天亮；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "切回伏地武士，整体仍虚焦",
+        "武士.状态": "伏地不动，复起前一刻"
+      },
+      "anchor_target": "片段1/分镜13",
+      "narrative_kind": "action",
+      "story_context": [
+        "武士伏地虚焦节点保留，以短静止衔接局部复苏预兆。"
+      ],
+      "action_reading": {
+        "summary": "武士伏地虚焦节点保留，以短静止衔接局部复苏预兆。",
+        "phase": "state",
+        "world_motion": "武士伏地虚焦节点保留，以短静止衔接局部复苏预兆。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_24_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_24_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士背肩的局部近景，肌块轮廓清楚，背上裂纹／深色擦痕与高光交错，右侧短晃线，细小拟声；没有脸和气泡。",
+        "initial_action_understanding": "伏地巨体背部开始抽动或鼓起，复苏预兆从局部发生，具体后果由后格读通。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士背肩的局部近景，肌块轮廓清楚，背上裂纹／深色擦痕与高光交错，右侧短晃线，细小拟声；没有脸和气泡。",
+      "source_facts": {
+        "entities": [
+          "武士背肩的局部近景，肌块轮廓清楚，背上裂纹／深色擦痕与高光交错，右侧短晃线，细小拟声；没有脸和气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士背部抽动，复起预兆出现",
+        "武士.状态": "伏地背肩绷动"
+      },
+      "anchor_target": "片段1/分镜14",
+      "narrative_kind": "action",
+      "story_context": [
+        "从整体虚焦转到背肩清楚的抽动，原格短动线与隆起形落实为局部动作。"
+      ],
+      "action_reading": {
+        "summary": "从整体虚焦转到背肩清楚的抽动，原格短动线与隆起形落实为局部动作。",
+        "phase": "process",
+        "world_motion": "从整体虚焦转到背肩清楚的抽动，原格短动线与隆起形落实为局部动作。",
+        "screen_motion": "背肩向上短抬再回压，尚未撑起全身。",
+        "grounding": "躯干仍伏在石坑，只有背部局部绷动。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_25_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_25_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白侧脸极近景从右入画，圆眼瞳孔很小，眉上扬，嘴小幅张开，鼻前有快速横线，左侧空白；无气泡。",
+        "initial_action_understanding": "董白被武士侧的新响动吸引，转眼／回头察觉危险，不提前放下青或出手。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白侧脸极近景从右入画，圆眼瞳孔很小，眉上扬，嘴小幅张开，鼻前有快速横线，左侧空白；无气泡。",
+      "source_facts": {
+        "entities": [
+          "董白侧脸极近景从右入画，圆眼瞳孔很小，眉上扬，嘴小幅张开，鼻前有快速横线，左侧空白；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白察觉武士动静",
+        "董白.位置": "仍搭肩扶着青，转头看向武士"
+      },
+      "anchor_target": "片段1/分镜15",
+      "narrative_kind": "action",
+      "story_context": [
+        "董白圆眼侧脸突转的原格反应保留，感知在复起全貌揭示之前。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼侧脸突转的原格反应保留，感知在复起全貌揭示之前。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼侧脸突转的原格反应保留，感知在复起全貌揭示之前。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_25_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_25_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士巨大黑色身影从平台坑边撑起，腰身前曲，粗臂与一侧膝部形成支撑角，白眼为一点，足边掉细屑。背景云层亮，中央晨光穿雾形成斜向射束和几何亮面；一泡从武士方向发声。",
+        "initial_action_understanding": "武士复起并说新的黎明到来，天空转亮的画面与其话配合；不把黑影当另一个角色。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-25_002-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "...新的黎明到了.",
+          "script_text": "…新たな夜明けが来た。",
+          "status": "mapped",
+          "target": "片段1/分镜16",
+          "start": 0.3,
+          "seconds": 2.08
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "composition_correction_history": "武士巨大黑色身影从平台后缘撑起，腰身前曲，粗臂／膝部形成支撑角，白眼为一点；左足边掉细屑。背景云层很亮，有斜向光束，远处两块浅灰岩台轮廓叠在云后。一泡从武士方向发出。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士巨大黑色身影从平台坑边撑起，腰身前曲，粗臂与一侧膝部形成支撑角，白眼为一点，足边掉细屑。背景云层亮，中央晨光穿雾形成斜向射束和几何亮面；一泡从武士方向发声。",
+      "source_facts": {
+        "entities": [
+          "武士巨大黑色身影从平台坑边撑起，腰身前曲，粗臂与一侧膝部形成支撑角，白眼为一点，足边掉细屑。背景云层亮，中央晨光穿雾形成斜向射束和几何亮面；一泡从武士方向发声。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士撑起，宣告新黎明",
+        "武士.状态": "从伏地撑到半起，准备站直"
+      },
+      "anchor_target": "片段1/分镜16",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "巨体撑起的剪影、地面坡入构图与晨光相接，中央亮形按阳光处理。"
+      ],
+      "action_reading": {
+        "summary": "巨体撑起的剪影、地面坡入构图与晨光相接，中央亮形按阳光处理。",
+        "phase": "process",
+        "world_motion": "巨体撑起的剪影、地面坡入构图与晨光相接，中央亮形按阳光处理。",
+        "screen_motion": "重心由撑地臂与膝转向踩实脚，头胸从下向上抬。",
+        "grounding": "仍有一臂与一侧膝脚承重，镜尾向双脚站立转换。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_26_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头肩正面中近景，椭圆头竖直，白眼居黑隙，肩背擦痕保留；亮云天。两泡均指武士。",
+        "initial_action_understanding": "武士站起宣称早上是晨勃的时候，现在杀他太迟；粗俗原文完整保留，只作为战斗中的宣言。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-26_001-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "早上是晨勃的时候.",
+          "script_text": "朝は朝立ちの時間だ。",
+          "status": "mapped",
+          "target": "片段1/分镜17",
+          "start": 0.3,
+          "seconds": 2.08
+        },
+        {
+          "id": "28-26_001-b2",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "现在要杀我已经太迟了.",
+          "script_text": "今、俺を殺そうとしても、もう遅い。",
+          "status": "mapped",
+          "target": "片段1/分镜17",
+          "start": 2.63,
+          "seconds": 3.12
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头肩正面中近景，椭圆头竖直，白眼居黑隙，肩背擦痕保留；亮云天。两泡均指武士。",
+      "source_facts": {
+        "entities": [
+          "武士头肩正面中近景，椭圆头竖直，白眼居黑隙，肩背擦痕保留；亮云天。两泡均指武士。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士已站直并威胁",
+        "武士.状态": "恢复直立，准备聚全力"
+      },
+      "anchor_target": "片段1/分镜17",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "武士正面竖头白眼与两句原作宣言完整保留，仍是言语威胁阶段。"
+      ],
+      "action_reading": {
+        "summary": "武士正面竖头白眼与两句原作宣言完整保留，仍是言语威胁阶段。",
+        "phase": "state",
+        "world_motion": "武士正面竖头白眼与两句原作宣言完整保留，仍是言语威胁阶段。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_26_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白在右前近景、青在左侧垂头闭眼；青搭肩的手臂横过董白胸颈前，董白一手抓住其前臂。董白半垂眼、微张口，眉尖向内上扬。气泡指董白。",
+        "initial_action_understanding": "董白还在搀扶青，嫌弃她没彻底解决对手；青尚不回应。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-26_002-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "切,像个笨蛋一样.你都没有彻底的解决它.",
+          "script_text": "ちっ、バカみたい。あんた、ちゃんと仕留めてないじゃない。",
+          "status": "mapped",
+          "target": "片段1/分镜18",
+          "start": 0.3,
+          "seconds": 5.2
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白在右前近景、青在左侧垂头闭眼；青搭肩的手臂横过董白胸颈前，董白一手抓住其前臂。董白半垂眼、微张口，眉尖向内上扬。气泡指董白。",
+      "source_facts": {
+        "entities": [
+          "董白在右前近景、青在左侧垂头闭眼；青搭肩的手臂横过董白胸颈前，董白一手抓住其前臂。董白半垂眼、微张口，眉尖向内上扬。气泡指董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白扶着闭眼青，埋怨未彻底解决武士"
+      },
+      "anchor_target": "片段1/分镜18",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白半垂眼与扶青前臂的原作接触保留，青闭眼不答话。"
+      ],
+      "action_reading": {
+        "summary": "董白半垂眼与扶青前臂的原作接触保留，青闭眼不答话。",
+        "phase": "reaction",
+        "world_motion": "董白半垂眼与扶青前臂的原作接触保留，青闭眼不答话。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_26_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_26_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士全身正面，双腿宽开，头往下垂，粗臂在身前交叠／内收，肩背肌块向外鼓，肩上散小亮屑和短动线；亮云天加放射线。两泡属武士。",
+        "initial_action_understanding": "武士再聚全力，体表鼓胀，准备宣告秘技；没有在此格击中董白或青。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-26_003-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "...此刻",
+          "script_text": "…今こそ、",
+          "status": "mapped",
+          "target": "片段1/分镜19",
+          "start": 0.3,
+          "seconds": 0.82
+        },
+        {
+          "id": "28-26_003-b2",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "我要使出我的全力了.",
+          "script_text": "俺の全力を出す。",
+          "status": "mapped",
+          "target": "片段1/分镜19",
+          "start": 1.37,
+          "seconds": 1.66
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士全身正面，双腿宽开，头往下垂，粗臂在身前交叠／内收，肩背肌块向外鼓，肩上散小亮屑和短动线；亮云天加放射线。两泡属武士。",
+      "source_facts": {
+        "entities": [
+          "武士全身正面，双腿宽开，头往下垂，粗臂在身前交叠／内收，肩背肌块向外鼓，肩上散小亮屑和短动线；亮云天加放射线。两泡属武士。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士聚全力，尚未攻出",
+        "武士.状态": "宽立内收双臂，全身鼓胀蓄势"
+      },
+      "anchor_target": "片段1/分镜19",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "全身内收、低头、鼓胀和两句宣告保留，力量仍在蓄积。"
+      ],
+      "action_reading": {
+        "summary": "全身内收、低头、鼓胀和两句宣告保留，力量仍在蓄积。",
+        "phase": "preparation",
+        "world_motion": "全身内收、低头、鼓胀和两句宣告保留，力量仍在蓄积。",
+        "screen_motion": "双臂向内扣，背肩向外绷，重心向下压紧。",
+        "grounding": "双脚宽立着地，未发生对董白或青的击中。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_27_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头部竖向特写，白眼在右侧黑隙；画面两侧排版大字“秘技 SECRET TECHNIQUE”和“晨勃 MORNING WOOD”，没有气泡。",
+        "initial_action_understanding": "原作技名揭示“秘技／晨勃”；图形字属于本格表达，二遍应区分出声与字幕表现，不当成译者恶搞注释丢掉。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-27_001-title1",
+          "speaker": "旁白",
+          "kind": "narration",
+          "source_text": "秘技 SECRET TECHNIQUE",
+          "script_text": "秘技。",
+          "status": "mapped",
+          "target": "片段1/分镜20",
+          "start": 0.3,
+          "seconds": 0.7
+        },
+        {
+          "id": "28-27_001-title2",
+          "speaker": "旁白",
+          "kind": "narration",
+          "source_text": "晨勃 MORNING WOOD",
+          "script_text": "朝立ち。",
+          "status": "mapped",
+          "target": "片段1/分镜20",
+          "start": 1.25,
+          "seconds": 0.82
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "page_overlays": [
+        {
+          "kind": "technique_title",
+          "source_text": "秘技 SECRET TECHNIQUE／晨勃 MORNING WOOD",
+          "render": false,
+          "audio_meaning": "漫画技名的中英排字转为两段等值日语旁白，原字形不进入动画画面。"
+        }
+      ],
+      "bubble_count_note": "原图无人物对话气泡；按技能将两组技名排字作为两个旁白信息单元存入bubbles，保持意义与顺序。中英为同义双语标签，不重复朗读两种语言。",
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头部竖向特写，白眼在右侧黑隙；画面两侧排版大字“秘技 SECRET TECHNIQUE”和“晨勃 MORNING WOOD”，没有气泡。",
+      "source_facts": {
+        "entities": [
+          "武士头部竖向特写，白眼在右侧黑隙；画面两侧排版大字“秘技 SECRET TECHNIQUE”和“晨勃 MORNING WOOD”，没有气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "graphic",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "技名信息揭晓，秘技未实际攻出"
+      },
+      "anchor_target": "片段1/分镜20",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "原格头部极近与技名语义保留；漫画中英排字不作为生成图字，改由日文旁白完整承载。"
+      ],
+      "action_reading": {
+        "summary": "原格头部极近与技名语义保留；漫画中英排字不作为生成图字，改由日文旁白完整承载。",
+        "phase": "preparation",
+        "world_motion": "原格头部极近与技名语义保留；漫画中英排字不作为生成图字，改由日文旁白完整承载。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_27_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "一只深色分节长指手掌从上方扣住武士头顶，几根尖指沿椭圆头前后两侧伸下；武士白眼在左下黑隙，头被控制，背景黑灰聚光底。无气泡。",
+        "initial_action_understanding": "武士宣告秘技后头部被黑色关节长指手扣住，手主尚未在本格露脸，不凭手型冒认董白或武士自己的手。",
+        "uncertainties": "须后续整身揭晓识别手主并定接触结果。",
+        "identity_resolution": "后格28_003武士明确喊“魔王欧铂”，实际打开共享C011欧铂.png，双角棱面盔、下栅、单侧肩甲、旋纹胸肩与披风组合匹配，手主归C011。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "一只深色分节长指手掌从上方扣住武士头顶，几根尖指沿椭圆头前后两侧伸下；武士白眼在左下黑隙，头被控制，背景黑灰聚光底。无气泡。",
+      "source_facts": {
+        "entities": [
+          "一只深色分节长指手掌从上方扣住武士头顶，几根尖指沿椭圆头前后两侧伸下；武士白眼在左下黑隙，头被控制，背景黑灰聚光底。无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "graphic",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "黑色长指手先扣住武士头顶",
+        "武士.状态": "头部被控制，秘技中断",
+        "欧铂.揭晓": "只有手入画，身体仍在画外"
+      },
+      "anchor_target": "片段1/分镜21",
+      "narrative_kind": "action",
+      "story_context": [
+        "先手后人的接触揭晓保留，此镜只控制头顶，尚未捏碎。"
+      ],
+      "action_reading": {
+        "summary": "先手后人的接触揭晓保留，此镜只控制头顶，尚未捏碎。",
+        "phase": "contact",
+        "world_motion": "先手后人的接触揭晓保留，此镜只控制头顶，尚未捏碎。",
+        "screen_motion": "长指自上而下落到头顶再向内扣，头被压住，不抢先展示手主脸。",
+        "grounding": "武士仍站在原地，欧铂的身体和落脚尚未入画。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_27_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_27_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头部在左侧近层被扣住，白眼睁圆；其后右上显出一名双角金属面盔来者，盔面中央尖棱、下半有竖栅，颈部肌肉显露，外侧一块深色肩甲带旋纹。左上长指仍扣着武士头。下方惊愕泡只有?!!。",
+        "initial_action_understanding": "手主在背后揭晓，持续扣头令武士吃惊；来者身份待本段后续称呼与共享参考匹配，不凭黑甲就认作董白。",
+        "identity_resolution": "后格28_003武士明确喊“魔王欧铂”，实际打开共享C011欧铂.png，双角棱面盔、下栅、单侧肩甲、旋纹胸肩与披风组合匹配，手主归C011。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-27_003-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "?!!",
+          "script_text": "っ？！",
+          "status": "mapped",
+          "target": "片段1/分镜22",
+          "start": 0.3,
+          "seconds": 0.7
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头部在左侧近层被扣住，白眼睁圆；其后右上显出一名双角金属面盔来者，盔面中央尖棱、下半有竖栅，颈部肌肉显露，外侧一块深色肩甲带旋纹。左上长指仍扣着武士头。下方惊愕泡只有?!!。",
+      "source_facts": {
+        "entities": [
+          "武士头部在左侧近层被扣住，白眼睁圆；其后右上显出一名双角金属面盔来者，盔面中央尖棱、下半有竖栅，颈部肌肉显露，外侧一块深色肩甲带旋纹。左上长指仍扣着武士头。下方惊愕泡只有?!!。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "双角面盔来者在背后揭晓",
+        "欧铂.揭晓": "头肩角盔已显出，姓名尚未由人物叫出",
+        "武士.状态": "头被扣住，惊惧失语"
+      },
+      "anchor_target": "片段1/分镜22",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "先手后人的原格揭晓保留，武士白眼与来者双角头肩的前后关系不变。"
+      ],
+      "action_reading": {
+        "summary": "先手后人的原格揭晓保留，武士白眼与来者双角头肩的前后关系不变。",
+        "phase": "reaction",
+        "world_motion": "先手后人的原格揭晓保留，武士白眼与来者双角头肩的前后关系不变。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_28_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白正面脸部近景，青垂头和搭肩手臂从左前入画；董白圆眼、紧眉，嘴开露齿，目光朝来者。两泡都指董白。",
+        "initial_action_understanding": "董白还扶着青，震惊来者悄无声息出现，未松手或袭击。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-28_001-b1",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "...那又是谁?",
+          "script_text": "…今度は誰？",
+          "status": "mapped",
+          "target": "片段1/分镜23",
+          "start": 0.3,
+          "seconds": 1.03
+        },
+        {
+          "id": "28-28_001-b2",
+          "speaker": "董白",
+          "kind": "dialogue",
+          "source_text": "他是怎么悄无声息的出现的?",
+          "script_text": "どうやって、音もなく現れたの？",
+          "status": "mapped",
+          "target": "片段1/分镜23",
+          "start": 1.58,
+          "seconds": 2.91
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白正面脸部近景，青垂头和搭肩手臂从左前入画；董白圆眼、紧眉，嘴开露齿，目光朝来者。两泡都指董白。",
+      "source_facts": {
+        "entities": [
+          "董白正面脸部近景，青垂头和搭肩手臂从左前入画；董白圆眼、紧眉，嘴开露齿，目光朝来者。两泡都指董白。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白震惊来者无声出现",
+        "董白.位置": "仍架住青，视线朝欧铂",
+        "青.状态": "闭眼无回应"
+      },
+      "anchor_target": "片段1/分镜23",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "董白圆眼紧眉与青仍搭肩的原格关系保留，两句惊问不伴随放人或出手。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼紧眉与青仍搭肩的原格关系保留，两句惊问不伴随放人或出手。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼紧眉与青仍搭肩的原格关系保留，两句惊问不伴随放人或出手。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_28_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "双角面盔来者头肩正面近景，脸完全被棱面头盔与下栅遮住，肩颈厚重，武士局部在左前遮挡；两泡由面盔方向发声。",
+        "initial_action_understanding": "来者叫出龟头武士并质问违令动她，保持其扣头控制状态；“她”暂不凭近景替换为青或春子。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-28_002-b1",
+          "speaker": "欧铂",
+          "kind": "dialogue",
+          "source_text": "龟头武士.",
+          "script_text": "亀頭武士。",
+          "status": "mapped",
+          "target": "片段1/分镜24",
+          "start": 0.3,
+          "seconds": 1.03
+        },
+        {
+          "id": "28-28_002-b2",
+          "speaker": "欧铂",
+          "kind": "dialogue",
+          "source_text": "我应该有明确命令过你们不要动她吧.",
+          "script_text": "お前たちには、彼女に手を出すなと、はっきり命じたはずだが。",
+          "status": "mapped",
+          "target": "片段1/分镜24",
+          "start": 1.58,
+          "seconds": 5.62
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "双角面盔来者头肩正面近景，脸完全被棱面头盔与下栅遮住，肩颈厚重，武士局部在左前遮挡；两泡由面盔方向发声。",
+      "source_facts": {
+        "entities": [
+          "双角面盔来者头肩正面近景，脸完全被棱面头盔与下栅遮住，肩颈厚重，武士局部在左前遮挡；两泡由面盔方向发声。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "欧铂点名质问违令，持续扣头"
+      },
+      "anchor_target": "片段1/分镜24",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "遮面角盔、厚颈与武士局部近层的原格构图保留，“她”只按原文代词，不替换人物名字。"
+      ],
+      "action_reading": {
+        "summary": "遮面角盔、厚颈与武士局部近层的原格构图保留，“她”只按原文代词，不替换人物名字。",
+        "phase": "state",
+        "world_motion": "遮面角盔、厚颈与武士局部近层的原格构图保留，“她”只按原文代词，不替换人物名字。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_28_003.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_28_003.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "武士头部被深色长指扣压的侧面特写，指节折出强角，头部轮廓向内凹裂，白眼偏在左侧，边缘有散小深点；两尖折气泡从武士方向发出。",
+        "initial_action_understanding": "武士认出魔王欧铂，惊惧问他怎么会出现；扣头压力加重，尚未到下一格喷裂结果。"
+      },
+      "source_bubble_count": 2,
+      "bubbles": [
+        {
+          "id": "28-28_003-b1",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "魔王欧铂...!!!",
+          "script_text": "魔王欧鉑…！！！",
+          "status": "mapped",
+          "target": "片段1/分镜25",
+          "start": 0.3,
+          "seconds": 1.03
+        },
+        {
+          "id": "28-28_003-b2",
+          "speaker": "鬼头武士",
+          "kind": "dialogue",
+          "source_text": "你怎么会...?!",
+          "script_text": "どうしてここに…？！",
+          "status": "mapped",
+          "target": "片段1/分镜25",
+          "start": 1.58,
+          "seconds": 1.66
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "武士头部被深色长指扣压的侧面特写，指节折出强角，头部轮廓向内凹裂，白眼偏在左侧，边缘有散小深点；两尖折气泡从武士方向发出。",
+      "source_facts": {
+        "entities": [
+          "武士头部被深色长指扣压的侧面特写，指节折出强角，头部轮廓向内凹裂，白眼偏在左侧，边缘有散小深点；两尖折气泡从武士方向发出。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "武士认出魔王欧铂，头部受压凹裂",
+        "欧铂.揭晓": "姓名由武士明确叫出",
+        "武士.状态": "被扣头加压，尚未整体喷裂"
+      },
+      "anchor_target": "片段1/分镜25",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "明确叫名与被扣压凹裂阶段保留，接下一格单次捏碎结果。"
+      ],
+      "action_reading": {
+        "summary": "明确叫名与被扣压凹裂阶段保留，接下一格单次捏碎结果。",
+        "phase": "contact",
+        "world_motion": "明确叫名与被扣压凹裂阶段保留，接下一格单次捏碎结果。",
+        "screen_motion": "甲指持续向内扣，头部向下和内侧压缩，白眼追向后方。",
+        "grounding": "武士与欧铂仍在平台上原接触关系内，控制未松。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_29_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_29_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "低机位双人中全景，欧铂在右后，黑双角面盔、单侧肩甲、长披风、裸露胸腹与长裤；一臂抬高扣住左前巨大武士头顶，头顶沿指间裂成尖形并向两侧喷出深色长飞溅。武士巨体斜伏，欧铂稳立。气泡由欧铂发出。",
+        "initial_action_understanding": "欧铂保持扣头、以手指压碎武士头部，黑色喷裂表达保留；不扩写内脏或额外肢解。"
+      },
+      "source_bubble_count": 1,
+      "bubbles": [
+        {
+          "id": "28-29_001-b1",
+          "speaker": "欧铂",
+          "kind": "dialogue",
+          "source_text": "看来你没把我的话当一回事.",
+          "script_text": "どうやら、俺の言葉を軽く見ていたようだな。",
+          "status": "mapped",
+          "target": "片段1/分镜26",
+          "start": 0.3,
+          "seconds": 4.16
+        }
+      ],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "低机位双人中全景，欧铂在右后，黑双角面盔、单侧肩甲、长披风、裸露胸腹与长裤；一臂抬高扣住左前巨大武士头顶，头顶沿指间裂成尖形并向两侧喷出深色长飞溅。武士巨体斜伏，欧铂稳立。气泡由欧铂发出。",
+      "source_facts": {
+        "entities": [
+          "低机位双人中全景，欧铂在右后，黑双角面盔、单侧肩甲、长披风、裸露胸腹与长裤；一臂抬高扣住左前巨大武士头顶，头顶沿指间裂成尖形并向两侧喷出深色长飞溅。武士巨体斜伏，欧铂稳立。气泡由欧铂发出。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "欧铂单次捏碎武士头部，深色喷裂",
+        "武士.状态": "头部压碎，巨体向左前俯沉",
+        "欧铂.揭晓": "抬臂与稳立全身关系清楚"
+      },
+      "anchor_target": "片段1/分镜26",
+      "narrative_kind": "mixed",
+      "story_context": [
+        "扣指、头顶深色喷裂、巨体俯斜与欧铂稳立的原格结果保留，不扩写额外解体。"
+      ],
+      "action_reading": {
+        "summary": "扣指、头顶深色喷裂、巨体俯斜与欧铂稳立的原格结果保留，不扩写额外解体。",
+        "phase": "result",
+        "world_motion": "扣指、头顶深色喷裂、巨体俯斜与欧铂稳立的原格结果保留，不扩写额外解体。",
+        "screen_motion": "指节向内收至终点，喷裂先上后两侧，巨体向左前下沉，欧铂不随之移步。",
+        "grounding": "欧铂双脚稳踏石面，武士巨体下沉；镜头只展示原作的单次捏碎结果。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_29_002.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_29_002.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "董白双眼与上半脸极特写，圆瞳小点、眉尖高抬、额角和脸侧有汗滴，眼睑绷紧；无气泡。",
+        "initial_action_understanding": "董白目睹捏碎武士后惊惧出汗，视线固定，不提前开口或逃跑。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "董白双眼与上半脸极特写，圆瞳小点、眉尖高抬、额角和脸侧有汗滴，眼睑绷紧；无气泡。",
+      "source_facts": {
+        "entities": [
+          "董白双眼与上半脸极特写，圆瞳小点、眉尖高抬、额角和脸侧有汗滴，眼睑绷紧；无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "董白目睹捏碎后惊惧出汗",
+        "董白.位置": "仍搀扶青，身体未脱离支撑位"
+      },
+      "anchor_target": "片段1/分镜27",
+      "narrative_kind": "action",
+      "story_context": [
+        "董白圆眼小瞳、紧眉与汗滴的原格反应保留，不增加说话或放开青。"
+      ],
+      "action_reading": {
+        "summary": "董白圆眼小瞳、紧眉与汗滴的原格反应保留，不增加说话或放开青。",
+        "phase": "reaction",
+        "world_motion": "董白圆眼小瞳、紧眉与汗滴的原格反应保留，不增加说话或放开青。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    },
+    {
+      "image": "第28話_30_001.jpg",
+      "source_path": "D:\\Codex\\Projects\\New project\\第26-28话_春子奶奶黑衣人_Gen2.8.2_20261025\\01_原格归组\\A_青与武士及城内战斗\\第28话\\第28話_30_001.jpg",
+      "renderable_visual": true,
+      "first_pass": {
+        "viewed": true,
+        "resolution": "720p",
+        "date": "2026-10-25",
+        "observation": "欧铂面盔下半部、粗颈与旋纹肩胸的极近景，盔面亮棱和下栅清楚，几枚深色飞溅点在左侧空白；无眼睛、无嘴部可见、无气泡。",
+        "initial_action_understanding": "捏碎武士后的欧铂近景收尾，稳住其力量与压迫，不补原作没有的新话或掀盔。"
+      },
+      "source_bubble_count": 0,
+      "bubbles": [],
+      "viewed_at_drafting": true,
+      "bubble_audit": "pass",
+      "requires_route_confirmation": true,
+      "drafting_resolution": "720p",
+      "bubble_audit_notes": "第二遍实际重开逐图看清主体、接触与全部气泡，按最新用户路径纠正。",
+      "composition_lock": "欧铂面盔下半部、粗颈与旋纹肩胸的极近景，盔面亮棱和下栅清楚，几枚深色飞溅点在左侧空白；无眼睛、无嘴部可见、无气泡。",
+      "source_facts": {
+        "entities": [
+          "欧铂面盔下半部、粗颈与旋纹肩胸的极近景，盔面亮棱和下栅清楚，几枚深色飞溅点在左侧空白；无眼睛、无嘴部可见、无气泡。"
+        ],
+        "actions": [],
+        "relations": []
+      },
+      "background": {
+        "mode": "continuity",
+        "basis": "当格实见云天／石面／烟尘与同场生产设计，色彩统一。"
+      },
+      "node_state": {
+        "叙事阶段": "欧铂遮面极近景收尾"
+      },
+      "anchor_target": "片段1/分镜28",
+      "narrative_kind": "action",
+      "story_context": [
+        "原作遮面下半盔、颈与肩胸旋纹近景保留，以无对白停留结束，不增加对青出手或掀盔。"
+      ],
+      "action_reading": {
+        "summary": "原作遮面下半盔、颈与肩胸旋纹近景保留，以无对白停留结束，不增加对青出手或掀盔。",
+        "phase": "state",
+        "world_motion": "原作遮面下半盔、颈与肩胸旋纹近景保留，以无对白停留结束，不增加对青出手或掀盔。",
+        "screen_motion": "按本镜主体朝向与镜内过程展开，摄影机换面不重新起动。",
+        "grounding": "保留当格接触／悬空状态，依据前后关系与用户明确纠正。",
+        "basis": "本次实际重开二遍；关键空间关系按用户明确纠正。"
+      }
+    }
+  ],
+  "shots": [
+    {
+      "target": "片段1/分镜1",
+      "duration": 7.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_21_001.jpg"
+      ],
+      "purpose": "董白圆眼小口的惊讶保留，两句由意外过渡到高傲的指点。",
+      "characters": [
+        "董白"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白正面头肩近景，双眼极圆、小瞳孔居中，嘴松成小圆口，双马尾在两肩后；背景云天。两气泡都指向董白。",
+      "anchor_state": {
+        "叙事阶段": "董白惊讶青有此招式，尚未接触她"
+      },
+      "state_changes": {
+        "叙事阶段": "董白惊讶青有此招式，尚未接触她"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白正面头肩近景居画面中央，双马尾根部与高领肩线同框，双眼圆睁、嘴微张；固定眼高机位，脸后留浅云层。",
+        "可见动作": "董白先把眼睛睁到极圆，眼珠停在青所在的画外方向，嘴松成小圆口；第一问带着意外冲出来，肩膀尚未跟着放松。看青还站着，她吸了小半口气，眉尖略下收，后半句又端回指点别人的口吻；下巴抬了一点，眼睛仍没完全收回正常大小，嘴角也只轻轻合上。",
+        "可见背景": "两侧马尾之间为蓝灰云天与淡米灰薄尘，低层云纹缓慢横移。",
+        "台词与语气": "董白：“…何なの？そんな技があるなら、”（董白先惊问，再试着恢复指点人的从容；第二句带埋怨，眼神仍有未退的惊讶。）\n董白：“最初から使えばよかったじゃない。”（董白先惊问，再试着恢复指点人的从容；第二句带埋怨，眼神仍有未退的惊讶。）",
+        "光影布光": "段前仍以上方冷白云光为主，董白黑发与裙领留宽软冷反光，脸下侧由石面中性弱补光托住。",
+        "声音设计": "远处落石余响已稀，董白一口短吸气，双马尾根部轻擦衣领。"
+      },
+      "meaning_excerpt": "董白先把眼睛睁到极圆，眼珠停在青所在的画外方向，嘴松成小圆口；第一问带着意外冲出来，肩膀尚未跟着放松。看青还站着，她吸了小半口气，眉尖略下收，后半句又端回指点别人的口吻；下巴抬了一点，眼睛仍没完全收回正常大小，嘴角也只轻轻合上。",
+      "performance": {
+        "card": {
+          "opening": "她刚见到青压倒武士的力量，判断被打乱。",
+          "beats": [
+            "圆眼小口先惊问",
+            "吸气抬下巴，试着端回训人的口吻"
+          ],
+          "coupling": "恢复姿态比语言慢一拍，惊讶仍留在眼中。",
+          "landing": "话说完时她仍远看青，尚未上前扶。"
+        },
+        "details": [
+          "董白先把眼睛睁到极圆，眼珠停在青所在的画外方向，嘴松成小圆口；第一问带着意外冲出来，肩膀尚未跟着放松。看青还站着，她吸了小半口气，眉尖略下收，后半句又端回指点别人的口吻；"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.03,
+            "acting_seconds": 7.0,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜2",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_21_002.jpg"
+      ],
+      "purpose": "用户确认青失力屈膝跪落；背后大姿态与董白远处站位保留。",
+      "characters": [
+        "青",
+        "董白"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "从青背后低看中全身，青双膝向下屈开、上身与头垂下，双臂沿身侧落，长马尾向左上飘出低弧；董白在右远处全身站着，腿直，背景大幅白底。无气泡。",
+      "anchor_state": {
+        "叙事阶段": "青失力跪落",
+        "青.状态": "屈膝跪下，仍清醒",
+        "青.支撑": "双膝与下垂身体",
+        "董白.位置": "远处站着看，未接触青"
+      },
+      "state_changes": {
+        "叙事阶段": "青失力跪落",
+        "青.状态": "屈膝跪下，仍清醒",
+        "青.支撑": "双膝与下垂身体",
+        "董白.位置": "远处站着看，未接触青"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，从青背后看向董白的低机位中全景，青背腰和双膝占画面左侧近层，董白完整站姿缩在右后；镜头随青身体下沉稍降，落幅保留垂头与着地膝部。",
+        "可见动作": "青背脊忽然松掉，双膝向两侧屈开落向石面，肩膀随之猛低一截；两手垂在腿旁，指尖失去刚才的紧劲。她头先垂下，马尾却因惯性向左上扬出长弧，膝落地后才慢慢坠回；董白仍站在远处，刚端起的下巴停住，目光追着青下移。",
+        "可见背景": "灰绿石铺地面在二人之间展开，后层退成浅冷灰云雾面，近处石缝清楚。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方冷白漫射照亮青银发与背肩，石面短影随下沉缩在双膝旁。",
+        "声音设计": "双膝落石的两下低短响，衣摆骤然折下，发尾掀起一记空风。"
+      },
+      "meaning_excerpt": "青背脊忽然松掉，双膝向两侧屈开落向石面，肩膀随之猛低一截；两手垂在腿旁，指尖失去刚才的紧劲。她头先垂下，马尾却因惯性向左上扬出长弧，膝落地后才慢慢坠回；董白仍站在远处，刚端起的下巴停住，目光追着青下移。"
+    },
+    {
+      "target": "片段1/分镜3",
+      "duration": 6.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_21_003.jpg"
+      ],
+      "purpose": "青半垂眼、向上聚的眉、张嘴勉强笑与喘息保留，此时仍清醒能回应。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "青正面近景低垂着头，双眼半垂、眉尖向上聚，张口勉强笑，嘴边喘息拟声；长发沿两侧垂，肩头微晃线。两普通气泡指向青。",
+      "anchor_state": {
+        "叙事阶段": "青跪姿中勉强笑着回应，继续失力"
+      },
+      "state_changes": {
+        "叙事阶段": "青跪姿中勉强笑着回应，继续失力"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，青正面头肩近景居画面左侧偏中，头微低、双眼半垂，嘴角与下沉肩线同框；固定略俯机位。",
+        "可见动作": "青跪着抬起一点脸，眉尖向上聚，双眼勉强留出窄缝；她先从气里漏出一小声笑，再张开嘴回应。说到该早点开大的话，她嘴角努力往上挑，肩头却随两次喘气颤动，脑袋又一点点低回去；长发已经落在胸前，她没再伸手拨开。",
+        "可见背景": "青发丝外侧是淡蓝灰云层和米灰薄尘，低处石面虚成灰绿软面。",
+        "台词与语气": "青：“…はは、ほんとだね。”（青虚弱地笑着认同，后一句带自嘲，气息撑到句尾后明显落下。）\n青：“最初から大技を出すべきだったよ。”（青虚弱地笑着认同，后一句带自嘲，气息撑到句尾后明显落下。）",
+        "光影布光": "冷白云光柔和覆盖额头，低垂眉眼下方有浅冷灰，发内层次稳定。",
+        "声音设计": "两口偏急的喘息，衣料随肩颤轻擦，跪姿压石细响。"
+      },
+      "meaning_excerpt": "青跪着抬起一点脸，眉尖向上聚，双眼勉强留出窄缝；她先从气里漏出一小声笑，再张开嘴回应。说到该早点开大的话，她嘴角努力往上挑，肩头却随两次喘气颤动，脑袋又一点点低回去；长发已经落在胸前，她没再伸手拨开。",
+      "performance": {
+        "card": {
+          "opening": "青想接住同伴的埋怨，身体却已透支。",
+          "beats": [
+            "勉强抬脸漏出一声笑",
+            "挑嘴角自嘲，肩随喘息颤",
+            "说完脑袋重新低下"
+          ],
+          "coupling": "语言维持轻松，身体持续下沉，没有突然恢复力气。",
+          "landing": "笑意未能撑住姿态，接头垂与向前倒。"
+        },
+        "details": [
+          "青跪着抬起一点脸，眉尖向上聚，双眼勉强留出窄缝；她先从气里漏出一小声笑，再张开嘴回应。说到该早点开大的话，她嘴角努力往上挑，肩头却随两次喘气颤动，脑袋又一点点低回去；长发"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 4.99,
+            "acting_seconds": 6.0,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜4",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_22_001.jpg"
+      ],
+      "purpose": "垂头遮脸、肩晃与向前失力的原格阶段保留。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "青头顶与上背占竖幅下部，头完全垂下，刘海遮脸，长发顺前方滑落；肩头两侧有短晃线，大幅空白底，无气泡。",
+      "anchor_state": {
+        "叙事阶段": "青头完全低下，身体失去向前支撑"
+      },
+      "state_changes": {
+        "叙事阶段": "青头完全低下，身体失去向前支撑"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，略高机位青头顶与上背的近景，发根居画面中央，下垂刘海遮住脸，两肩留在下缘；固定机位。",
+        "可见动作": "青刚抬过一点的头重新垂到底，发束从胸前又往前滑了一截；肩膀先轻晃，随后两侧同时向前松开，背脊失去绷劲。她的重量越过双膝的支撑线，长发尖端先向地面垂落，上身接着向前倾出。",
+        "可见背景": "头肩外侧为浅冷灰图形底，米灰薄尘在下边形成柔软淡层。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方冷白云光落在发顶，发内深浅灰分层，肩侧光线稳定。",
+        "声音设计": "发丝滑过衣领的细擦，短短呼气往下落，衣料随前倾一声软折。"
+      },
+      "meaning_excerpt": "青刚抬过一点的头重新垂到底，发束从胸前又往前滑了一截；肩膀先轻晃，随后两侧同时向前松开，背脊失去绷劲。她的重量越过双膝的支撑线，长发尖端先向地面垂落，上身接着向前倾出。"
+    },
+    {
+      "target": "片段1/分镜5",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_22_002.jpg"
+      ],
+      "purpose": "用户确认的前伏倒地，董白前层与青远层构图保留，此时青仍清醒。",
+      "characters": [
+        "青",
+        "董白"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "result",
+      "anchor_elements": "董白黑裙胸肩轮廓压在左侧近层，青在中央远层石面上向前伏倒，头发铺在左右、头贴近地，手臂弯在头侧，两侧小尘团；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "青向前伏倒，脸侧贴地",
+        "青.状态": "伏地，仍能答话",
+        "青.支撑": "石面与弯在头侧的前臂",
+        "董白.位置": "前层站着看，尚未扶起青"
+      },
+      "state_changes": {
+        "叙事阶段": "青向前伏倒，脸侧贴地",
+        "青.状态": "伏地，仍能答话",
+        "青.支撑": "石面与弯在头侧的前臂",
+        "董白.位置": "前层站着看，尚未扶起青"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，越董白近侧肩胸看平台远处的全景，黑裙轮廓占画面左侧近层，青在中央后层；固定机位，青伏倒的位置和两侧尘团清楚。",
+        "可见动作": "青从跪姿向前倒，前臂和肘侧先软软落到石面，头随上身低下，脸侧贴住地；长发被压住一部分，其余向左右铺开，细尘在肩头两侧鼓起小团。她落定后双腿松展，只有呼吸还轻轻牵动肩背；董白近层身体僵了一小拍，肩线向青的方向微倾。",
+        "可见背景": "灰绿石铺地面在两人之间延伸，近处石块纹理清楚，青身侧米灰小尘团向外摊平；远层渐淡为浅冷灰云雾。",
+        "台词与语气": "无台词。",
+        "光影布光": "冷白云光均匀覆盖平台，黑裙近层压深，青银发与石面柔亮，尘边浅米灰。",
+        "声音设计": "肘侧与衣料落石的一声软闷响，头发铺地细擦，尘团轻散。"
+      },
+      "meaning_excerpt": "青从跪姿向前倒，前臂和肘侧先软软落到石面，头随上身低下，脸侧贴住地；长发被压住一部分，其余向左右铺开，细尘在肩头两侧鼓起小团。她落定后双腿松展，只有呼吸还轻轻牵动肩背；董白近层身体僵了一小拍，肩线向青的方向微倾。"
+    },
+    {
+      "target": "片段1/分镜6",
+      "duration": 4.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_22_003.jpg"
+      ],
+      "purpose": "董白圆眼微张口、轻偏头的原格反应保留，话对倒地青说。",
+      "characters": [
+        "董白"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白正面头肩近景，圆眼小瞳孔、嘴松成小圆，头发与肩侧有轻晃线，背景云天。",
+      "anchor_state": {
+        "叙事阶段": "董白向伏地的青试探问话"
+      },
+      "state_changes": {
+        "叙事阶段": "董白向伏地的青试探问话"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，从青倒地高度略仰看董白的正面头肩近景，脸居画面中央，双马尾沿左右垂下；固定机位，圆眼与小圆口清楚。",
+        "可见动作": "董白低头盯着地上的青，眼珠向下移，眉尖一高一低，嘴先松开又抿了一下；她把第一个问句说得有些迟疑，没等到立刻回应，头朝另一边偏了一点。催她说话时，董白把下巴往前送，手指在画外裙侧轻扣，眼睛仍圆睁着等。",
+        "可见背景": "双马尾两侧露出蓝灰云天，浅灰云层从左向右缓慢漂移。",
+        "台词与语气": "董白：“…死んでないわよね？何か言いなさい。”（董白先试探地问，停一小拍再带命令感催回应，紧张留在圆眼里。）",
+        "光影布光": "上方冷白漫射，董白脸下侧有石面中性弱补光，黑发反光细窄。",
+        "声音设计": "发尾随偏头扫过衣肩，空地风声在问句间短短露出。"
+      },
+      "meaning_excerpt": "董白低头盯着地上的青，眼珠向下移，眉尖一高一低，嘴先松开又抿了一下；她把第一个问句说得有些迟疑，没等到立刻回应，头朝另一边偏了一点。催她说话时，董白把下巴往前送，手指在画外裙侧轻扣，眼睛仍圆睁着等。",
+      "performance": {
+        "card": {
+          "opening": "她不确定青突然倒下后的状态。",
+          "beats": [
+            "低头圆眼试探问",
+            "未立即回应时偏头，催她开口"
+          ],
+          "coupling": "短暂等待让命令语气里透出担心。",
+          "landing": "她停住盯看，等地上的青回答。"
+        },
+        "details": [
+          "董白低头盯着地上的青，眼珠向下移，眉尖一高一低，嘴先松开又抿了一下；她把第一个问句说得有些迟疑，没等到立刻回应，头朝另一边偏了一点。催她说话时，董白把下巴往前送，手指在画"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 3.33,
+            "acting_seconds": 4.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜7",
+      "duration": 10.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_22_004.jpg"
+      ],
+      "purpose": "俯视青卧地与董白站立的原格距离保留，两人各自回应，青未被扶起。",
+      "characters": [
+        "青",
+        "董白"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "state",
+      "anchor_elements": "高处俯视石铺平台，董白在右上站着，青横伏在左下，双腿向下展开，长发铺在头臂两侧；两人之间留石面空隙。上泡尾指青，下泡尾指董白。",
+      "anchor_state": {
+        "叙事阶段": "青伏地回答，董白抱怨功劳被抢"
+      },
+      "state_changes": {
+        "叙事阶段": "青伏地回答，董白抱怨功劳被抢"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，高位俯视双人全景，青伏在画面左下，董白站在右上，两人之间留完整石面；镜头沿两人连线缓慢降近，落幅仍保留青的展开双腿与董白的鞋位。",
+        "可见动作": "青脸侧贴地，只把嘴角很轻地动了一下，气音般回答；手指在石面上松松蜷起，双腿仍摊着。董白听到回答先稍稍松肩，紧接着把一只手放到腰侧，脚尖转向青，低头追问身份；说到被抢走功劳，她上身前倾，空着的手张开半掌，最后又把手收回身边。青一直伏着听完，头旁发尾只被风推了一小段。",
+        "可见背景": "灰绿不规则石铺地面占满背景，近层板缝深灰，细砂稀疏；高位光下二人的短影各留在身侧。",
+        "台词与语气": "青：“…まだ。もうすぐだけど。”（青虚弱地开一句黑色幽默；董白先确认她能说话，随即转成不服气的抱怨，末句短促收回。）\n董白：“あなた、一体何者なの？どうして毎回私の手柄を横取りするのよ。ほんと、腹が立つ。”（青虚弱地开一句黑色幽默；董白先确认她能说话，随即转成不服气的抱怨，末句短促收回。）",
+        "光影布光": "上方冷白云光为主，石面反出弱中性补光，尚未出现直射晨光。",
+        "声音设计": "青呼气擦过地面的微声，董白鞋尖转石一声轻擦，衣料随叉腰轻绷。"
+      },
+      "meaning_excerpt": "青脸侧贴地，只把嘴角很轻地动了一下，气音般回答；手指在石面上松松蜷起，双腿仍摊着。董白听到回答先稍稍松肩，紧接着把一只手放到腰侧，脚尖转向青，低头追问身份；说到被抢走功劳，她上身前倾，空着的手张开半掌，最后又把手收回身边。青一直伏着听完，头旁发尾只被风推了一小段。",
+      "performance": {
+        "card": {
+          "opening": "确认青还能开口后，董白又想起自己的功劳。",
+          "beats": [
+            "青气音回答，董白略松肩",
+            "董白叉腰转脚追问",
+            "前倾张掌抱怨后收手，青伏地听完"
+          ],
+          "coupling": "董白先听到活着的回应再放松，埋怨接在关心之后。",
+          "landing": "青仍卧地，准备把功劳让给她。"
+        },
+        "details": [
+          "青脸侧贴地，只把嘴角很轻地动了一下，气音般回答；手指在石面上松松蜷起，双腿仍摊着。董白听到回答先稍稍松肩，紧接着把一只手放到腰侧，脚尖转向青，低头追问身份；说到被抢走功劳"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 9.36,
+            "acting_seconds": 10.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜8",
+      "duration": 5.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_23_001.jpg"
+      ],
+      "purpose": "青侧脸贴地、单眼闭与露齿笑保留，疲惫中仍主动回应别人。",
+      "characters": [
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "青脸侧贴石铺地面的近景，一眼闭、一眼半睁，嘴角拉开露齿笑，嘴旁有弱短喘声拟字，头发散在地面；一泡指青。",
+      "anchor_state": {
+        "叙事阶段": "青主动把功劳让给董白"
+      },
+      "state_changes": {
+        "叙事阶段": "青主动把功劳让给董白"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，贴地看青脸的近景，脸居画面中央偏左，一眼闭、一眼半睁，笑口和侧贴地的脸颊同框；固定机位，散发铺过下缘。",
+        "可见动作": "青把半睁的眼睛转向董白鞋位的画外方向，嘴角先翘起一点，随即张嘴把解决办法慢慢说完；那只闭眼始终没力睁开，笑里露出短短一线齿。说完，她脸颊重新贴实石面，唇角还留着一点笑，呼吸把鼻旁细灰吹散一小块，发丝在地面轻轻滑开。",
+        "可见背景": "灰绿石铺地面紧贴脸旁，石纹与深灰缝清晰，远层淡米灰薄尘虚化。",
+        "台词与语气": "青：“…じゃあ、あなたが解決したって皆に言えばいいよ…”（青虚弱地笑着提出让功，语气真诚又带一点顺水推舟的轻松，句尾气息软下去。）",
+        "光影布光": "冷白云光沿发顶与脸侧柔亮，脸贴石的一边由地面弱反光托起，旧擦痕保持。",
+        "声音设计": "微弱喘气，脸旁发丝与石面的细擦，近处空地风声。"
+      },
+      "meaning_excerpt": "青把半睁的眼睛转向董白鞋位的画外方向，嘴角先翘起一点，随即张嘴把解决办法慢慢说完；那只闭眼始终没力睁开，笑里露出短短一线齿。说完，她脸颊重新贴实石面，唇角还留着一点笑，呼吸把鼻旁细灰吹散一小块，发丝在地面轻轻滑开。",
+      "performance": {
+        "card": {
+          "opening": "青现在更想有人接手，功劳并非她眼前所需。",
+          "beats": [
+            "半睁眼转向董白，嘴角先挑起",
+            "笑着把建议说完",
+            "脸贴回石面，笑意留一线"
+          ],
+          "coupling": "让步既承接对方抱怨，也延续青活泼而善于互动的底色。",
+          "landing": "建议送出，轮到董白接收。"
+        },
+        "details": [
+          "青把半睁的眼睛转向董白鞋位的画外方向，嘴角先翘起一点，随即张嘴把解决办法慢慢说完；那只闭眼始终没力睁开，笑里露出短短一线齿。说完，她脸颊重新贴实石面，唇角还留着一点笑，呼"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 4.58,
+            "acting_seconds": 5.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜9",
+      "duration": 8.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_23_002.jpg"
+      ],
+      "purpose": "董白圆眼大笑、前探与好感突增的原作表情保留，图形拟字转为表情节奏而不生成字幕。",
+      "characters": [
+        "董白"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白斜前探的头肩近景，双眼极圆，眉尖放开，嘴大张而露笑，上身向前凑，旁有好感度上升的图形字。两普通气泡指董白。",
+      "anchor_state": {
+        "叙事阶段": "董白闻让功转喜，准备上前扶起青"
+      },
+      "state_changes": {
+        "叙事阶段": "董白闻让功转喜，准备上前扶起青"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白向前探身的头肩近景，脸居画面中央，两根高马尾在上方张开；机位略低于她眼睛，随她前探轻退，落幅保留大张笑口与两肩。",
+        "可见动作": "董白眼睛骤然睁得更圆，眉尖向上跳，原来微抿的嘴一下展开成大笑；她向青凑近，第一轮确认连着问出，句末下巴向前一点，像急着把约定钉住。听完自己的话，她上身又直回少许，笑口收小但仍露着齿，目光在青脸上停住，第二句夸得格外痛快；马尾被前探带起，最后绕过肩侧慢慢落回。",
+        "可见背景": "蓝灰云天在马尾外侧铺开，薄米灰尘退在低处，人物后方淡灰云纹柔和。",
+        "台词与语气": "董白：“え？本当に？約束よ？！”（董白第一句由惊喜冲成急切确认，末尾重重约定；第二句畅快夸赞，态度明显转好。）\n董白：“この仕事で、あんたみたいに話の分かる人は珍しいわ。”（董白第一句由惊喜冲成急切确认，末尾重重约定；第二句畅快夸赞，态度明显转好。）",
+        "光影布光": "上方冷白柔光照亮睁大的双眼，黑发与亮黑领口留软反光，脸侧明暗稳定。",
+        "声音设计": "突然前探的衣料短擦，马尾掀起一记轻风，鞋底重心前移小响。"
+      },
+      "meaning_excerpt": "董白眼睛骤然睁得更圆，眉尖向上跳，原来微抿的嘴一下展开成大笑；她向青凑近，第一轮确认连着问出，句末下巴向前一点，像急着把约定钉住。听完自己的话，她上身又直回少许，笑口收小但仍露着齿，目光在青脸上停住，第二句夸得格外痛快；马尾被前探带起，最后绕过肩侧慢慢落回。",
+      "performance": {
+        "card": {
+          "opening": "能拿到功劳让董白瞬间改观。",
+          "beats": [
+            "眉眼猛开、大笑前探确认",
+            "下巴一点钉约定",
+            "身子稍回直，痛快夸青"
+          ],
+          "coupling": "情绪转折先于身体收回，马尾拖住兴奋的余势。",
+          "landing": "她已愿意靠近并帮青起身。"
+        },
+        "details": [
+          "董白眼睛骤然睁得更圆，眉尖向上跳，原来微抿的嘴一下展开成大笑；她向青凑近，第一轮确认连着问出，句末下巴向前一点，像急着把约定钉住。听完自己的话，她上身又直回少许，笑口收小"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.65,
+            "acting_seconds": 8.0,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜10",
+      "duration": 11,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_23_003.jpg"
+      ],
+      "purpose": "董白将青扶起为搭肩搀扶，原格垂头、扣前臂与董白得意半垂眼保留。",
+      "characters": [
+        "青",
+        "董白"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "process",
+      "anchor_elements": "双人头肩景，青在左侧垂头、长发遮眼，一条手臂搭过右侧董白的肩；董白身体靠近支撑，一手扣住青搭肩手臂的外侧前臂。董白半垂眼、带得意笑，青全身弱晃线。两泡均指董白。",
+      "anchor_state": {
+        "叙事阶段": "董白扶起青，搭肩架稳并招揽",
+        "青.状态": "扶起后闭眼，渐渐失去回应",
+        "青.支撑": "靠董白一侧手臂搭肩，身体由董白架住",
+        "董白.位置": "紧靠青，外侧手扣前臂，内侧臂护腰"
+      },
+      "state_changes": {
+        "叙事阶段": "董白扶起青，搭肩架稳并招揽",
+        "青.状态": "扶起后闭眼，渐渐失去回应",
+        "青.支撑": "靠董白一侧手臂搭肩，身体由董白架住",
+        "董白.位置": "紧靠青，外侧手扣前臂，内侧臂护腰"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白与青并肩的双人中近景，青在画面左侧垂头，董白在右侧，搭肩手臂与扣住前臂的手留全；相机从较低处随扶起抬升，落幅两人的头肩同高。",
+        "可见动作": "董白靠到青身边，屈膝俯身把她靠近自己的手臂搭过肩，外侧手扣住那条前臂，内侧臂护住她后腰；她踩稳脚，用腿部撑起把青带到身侧。青的头一直垂着，身体刚直起便把重量交给董白，指尖从轻勾慢慢松开。董白扶稳后抬起下巴，半垂眼得意笑着招她当马仔；说到试用期，笑口向一边挑，扣前臂的手又收紧一回，免得青滑下。",
+        "可见背景": "两人头发之间与两侧露蓝灰云天，低处米灰薄尘薄薄飘过，平台地面只在抬升起幅下缘短暂显出。",
+        "台词与语气": "董白：“うん、あんた結構使えるじゃない…私の子分になりなさい。”（董白扶人同时得意评价，前句像赏识下属；后句故意端起招人的架子，尾音轻轻扬起。）\n董白：“もちろん、数か月の試用期間はあるけどね。”（董白扶人同时得意评价，前句像赏识下属；后句故意端起招人的架子，尾音轻轻扬起。）",
+        "光影布光": "冷白云光从上方铺开，黑裙、银发和裸露手臂明暗柔和，石面弱补光随抬升渐淡。",
+        "声音设计": "董白靠近两下轻鞋声，屈膝起身的衣料绷响，青长发从地面拖起后扫过衣肩。"
+      },
+      "meaning_excerpt": "董白靠到青身边，屈膝俯身把她靠近自己的手臂搭过肩，外侧手扣住那条前臂，内侧臂护住她后腰；她踩稳脚，用腿部撑起把青带到身侧。青的头一直垂着，身体刚直起便把重量交给董白，指尖从轻勾慢慢松开。董白扶稳后抬起下巴，半垂眼得意笑着招她当马仔；说到试用期，笑口向一边挑，扣前臂的手又收紧一回，免得青滑下。",
+      "performance": {
+        "card": {
+          "opening": "董白拿到让功的承诺，愿意接手照料青。",
+          "beats": [
+            "俯身搭臂、扣前臂、护后腰，踩稳扶起",
+            "青把重量交过来，指尖渐松",
+            "董白架稳后得意招揽，补一句试用期并再扣紧"
+          ],
+          "coupling": "招揽的从容由真实承重支撑，手上照料与口头端架子并行。",
+          "landing": "青已被架在肩旁，董白仍等她答应。"
+        },
+        "details": [
+          "董白靠到青身边，屈膝俯身把她靠近自己的手臂搭过肩，外侧手扣住那条前臂，内侧臂护住她后腰；她踩稳脚，用腿部撑起把青带到身侧。青的头一直垂着，身体刚直起便把重量交给董白，指尖"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 9.15,
+            "acting_seconds": 11,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜11",
+      "duration": 3,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_23_004.jpg"
+      ],
+      "purpose": "青闭眼微张口、董白半垂眼斜看与原句保留，睡着发生在搀扶之后。",
+      "characters": [
+        "青",
+        "董白"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "青的闭眼侧脸在左近层，嘴微张、头垂；董白在右后近景，眼半垂、嘴微张，视线斜向青脸，眉尖一高一低。",
+      "anchor_state": {
+        "叙事阶段": "董白发现青睡着",
+        "青.状态": "闭眼失去回应，被架住",
+        "董白.位置": "继续搭肩搀扶青"
+      },
+      "state_changes": {
+        "叙事阶段": "董白发现青睡着",
+        "青.状态": "闭眼失去回应，被架住",
+        "董白.位置": "继续搭肩搀扶青"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，双人脸侧近景，青闭眼侧脸在画面左侧近层，董白在中央偏右，仍留青搭过来的手臂边缘；固定机位，董白目光斜向青。",
+        "可见动作": "董白说完还等着回应，眼珠先向青脸上偏，笑口却渐渐停住；青双眼闭合，嘴微张，头随着呼吸轻轻向下点，搭肩的手指完全松了。董白半垂的眼睛又抬起一点，凑近看她，再说出发现睡着的抱怨；话落后手臂仍稳稳托着，肩没有松开。",
+        "可见背景": "两张脸与发束之外是蓝灰云层，右侧开一小块浅冷灰天空。",
+        "台词与语气": "董白：“何よ。寝ちゃったの？”（董白先带没等到答复的不满，后半句意外地确认，末尾轻轻落下。）",
+        "光影布光": "上方冷白柔光照侧脸，银发与黑发分层清楚，嘴旁阴影浅软。",
+        "声音设计": "青一口均匀偏轻的呼吸，董白侧头时发丝扫领，承重姿势中的衣料轻绷。"
+      },
+      "meaning_excerpt": "董白说完还等着回应，眼珠先向青脸上偏，笑口却渐渐停住；青双眼闭合，嘴微张，头随着呼吸轻轻向下点，搭肩的手指完全松了。董白半垂的眼睛又抬起一点，凑近看她，再说出发现睡着的抱怨；话落后手臂仍稳稳托着，肩没有松开。",
+      "performance": {
+        "card": {
+          "opening": "董白还以为会听到招揽的答复。",
+          "beats": [
+            "等一下，眼珠偏去，笑口停",
+            "凑近确认闭眼呼吸，出声抱怨"
+          ],
+          "coupling": "嘴上不满，肩与托臂保持支撑。",
+          "landing": "她已确认青不回应，仍将青扶稳。"
+        },
+        "details": [
+          "董白说完还等着回应，眼珠先向青脸上偏，笑口却渐渐停住；青双眼闭合，嘴微张，头随着呼吸轻轻向下点，搭肩的手指完全松了。董白半垂的眼睛又抬起一点，凑近看她，再说出发现睡着的抱"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 1.87,
+            "acting_seconds": 3,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜12",
+      "duration": 3.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_24_001.jpg"
+      ],
+      "purpose": "用户纠正：24_001中间是朝阳升起光线，光束与林海构成空镜，不建悬空岩台。",
+      "characters": [],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "state",
+      "anchor_elements": "狭长环境空镜，下方密细林冠，云雾压在上方；画面中央朝阳升起的亮光穿透云雾，形成上升的浅亮射束与几何光面。没有悬空岩台实体。小鸟鸣拟声位于左中，无气泡。",
+      "anchor_state": {
+        "叙事阶段": "朝阳升起，光线转暖变亮",
+        "场景光线": "中央朝阳穿雾，冷灰云光与浅金白晨光并存"
+      },
+      "state_changes": {
+        "叙事阶段": "朝阳升起，光线转暖变亮",
+        "场景光线": "中央朝阳穿雾，冷灰云光与浅金白晨光并存"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，林海与晨光的远景空镜，林冠从画面左下斜铺向中央，朝阳升起的光线位于中央云雾交界；镜头从林冠上摇到穿云光束，落幅以中央亮带和两侧分层云雾为主。",
+        "可见动作": "林海上缘中央的浅金白光带缓缓升亮，薄雾先透出几条细束，随后光束连成更宽的柔亮面；云雾沿亮面两侧缓慢漂开，林冠顶缘渐渐多出一点暖色。画面中央明亮射束向上伸展，远处两声短鸟鸣从林海里传来，人物始终在画外。",
+        "可见背景": "深浅灰绿林冠、低处米灰晨雾与上方蓝灰云层；中央浅金白晨光穿过云雾，几何亮面均为透光层次。",
+        "台词与语气": "无台词。",
+        "光影布光": "中央低处升起的朝阳提供浅金白透雾光，周围仍保留冷灰云影；晨光由弱到强，林海顶缘获柔暖亮边。",
+        "声音设计": "两声短鸟鸣，林海远风与薄雾间空旷底声。"
+      }
+    },
+    {
+      "target": "片段1/分镜13",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_24_002.jpg"
+      ],
+      "purpose": "武士伏地虚焦节点保留，以短静止衔接局部复苏预兆。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "state",
+      "anchor_elements": "武士伏地的背肩与垂头占满近景，整块主体虚化，双肩擦痕模糊，背景云天亮；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "切回伏地武士，整体仍虚焦",
+        "武士.状态": "伏地不动，复起前一刻"
+      },
+      "state_changes": {
+        "叙事阶段": "切回伏地武士，整体仍虚焦",
+        "武士.状态": "伏地不动，复起前一刻"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士伏地头背的中近景，巨体占满中央与下幅，头压在下缘，远处云天较亮；固定机位，整体维持浅景深虚焦，轮廓只留模糊厚重形。",
+        "可见动作": "武士仍伏在碎坑里，头与双臂没有抬起；一缕米灰薄尘贴着背侧散过去，晨光在圆弧背缘慢慢铺开一条柔亮带。画面停住一小拍，远处鸟鸣退去，坑边几粒细石落完，巨体仍虚在焦点之外。",
+        "可见背景": "上方浅蓝灰云天转暖白，坑边米灰碎石在下缘模糊，薄尘退成浅暖灰层。",
+        "台词与语气": "无台词。",
+        "光影布光": "中央晨光穿雾后形成低角度暖白亮边，上方冷白云光仍托住背部暗面，整体保持虚焦软层。",
+        "声音设计": "鸟鸣余声渐退，几粒细石落坑，随后一段偏静的空地风声。"
+      },
+      "meaning_excerpt": "武士仍伏在碎坑里，头与双臂没有抬起；一缕米灰薄尘贴着背侧散过去，晨光在圆弧背缘慢慢铺开一条柔亮带。画面停住一小拍，远处鸟鸣退去，坑边几粒细石落完，巨体仍虚在焦点之外。"
+    },
+    {
+      "target": "片段1/分镜14",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_24_003.jpg"
+      ],
+      "purpose": "从整体虚焦转到背肩清楚的抽动，原格短动线与隆起形落实为局部动作。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "武士背肩的局部近景，肌块轮廓清楚，背上裂纹／深色擦痕与高光交错，右侧短晃线，细小拟声；没有脸和气泡。",
+      "anchor_state": {
+        "叙事阶段": "武士背部抽动，复起预兆出现",
+        "武士.状态": "伏地背肩绷动"
+      },
+      "state_changes": {
+        "叙事阶段": "武士背部抽动，复起预兆出现",
+        "武士.状态": "伏地背肩绷动"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士背肩的局部特写，隆起肌块横跨画面中央，右侧轮廓与擦痕清楚；固定低侧机位，焦点由软到清落在背部隆起线。",
+        "可见动作": "武士背肩先在皮下般绷紧一小块，沿肌块边缘向两侧牵开，右侧轮廓短短抬起又压回；深色擦痕跟着弧面移过一点，几枚贴背的细灰被震落。焦点完全锐起来时，背部再抽动一下，低沉的受力声从巨体里传出。",
+        "可见背景": "背部外缘上方只有浅暖灰白云雾，下方背景完全被主体遮住。",
+        "台词与语气": "无台词。",
+        "光影布光": "暖白晨光沿背脊弧面拉出柔长亮带，冷白漫射在凹处保留冷灰层，擦痕与轮廓清楚。",
+        "声音设计": "两下低短的肌肉绷动声，细灰落石，风声在第二下后收薄。"
+      },
+      "meaning_excerpt": "武士背肩先在皮下般绷紧一小块，沿肌块边缘向两侧牵开，右侧轮廓短短抬起又压回；深色擦痕跟着弧面移过一点，几枚贴背的细灰被震落。焦点完全锐起来时，背部再抽动一下，低沉的受力声从巨体里传出。"
+    },
+    {
+      "target": "片段1/分镜15",
+      "duration": 1,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_25_001.jpg"
+      ],
+      "purpose": "董白圆眼侧脸突转的原格反应保留，感知在复起全貌揭示之前。",
+      "characters": [
+        "董白"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白侧脸极近景从右入画，圆眼瞳孔很小，眉上扬，嘴小幅张开，鼻前有快速横线，左侧空白；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "董白察觉武士动静",
+        "董白.位置": "仍搭肩扶着青，转头看向武士"
+      },
+      "state_changes": {
+        "叙事阶段": "董白察觉武士动静",
+        "董白.位置": "仍搭肩扶着青，转头看向武士"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白侧脸极特写从画面右侧入框，圆眼与微张嘴位于中央偏右，左侧留武士所在的画外方向；固定机位。",
+        "可见动作": "董白原本看着青的眼珠骤然横移，眉毛抬起，唇缝松开；她头沿声音方向转过小角度，鬓发晚一拍扫过脸侧，视线立刻锁在武士方向。脸部动作停得很快，瞳孔仍缩成小点。",
+        "可见背景": "左侧空隙为浅暖灰天空，极淡蓝灰云纹在远层柔化。",
+        "台词与语气": "无台词。",
+        "光影布光": "晨光在脸侧添一线暖白，上方冷白漫射保留在黑发边缘，圆眼反光清楚。",
+        "声音设计": "武士方向的绷动余声先入，董白鬓发急擦一下，随后只留短吸气。"
+      },
+      "meaning_excerpt": "董白原本看着青的眼珠骤然横移，眉毛抬起，唇缝松开；她头沿声音方向转过小角度，鬓发晚一拍扫过脸侧，视线立刻锁在武士方向。脸部动作停得很快，瞳孔仍缩成小点。"
+    },
+    {
+      "target": "片段1/分镜16",
+      "duration": 4,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_25_002.jpg"
+      ],
+      "purpose": "巨体撑起的剪影、地面坡入构图与晨光相接，中央亮形按阳光处理。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "process",
+      "anchor_elements": "武士巨大黑色身影从平台坑边撑起，腰身前曲，粗臂与一侧膝部形成支撑角，白眼为一点，足边掉细屑。背景云层亮，中央晨光穿雾形成斜向射束和几何亮面；一泡从武士方向发声。",
+      "anchor_state": {
+        "叙事阶段": "武士撑起，宣告新黎明",
+        "武士.状态": "从伏地撑到半起，准备站直"
+      },
+      "state_changes": {
+        "叙事阶段": "武士撑起，宣告新黎明",
+        "武士.状态": "从伏地撑到半起，准备站直"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，低机位平台全景，武士黑色巨体位于画面中央上方，石铺地面占下半幅，坑沿碎板横在脚边，亮云与朝阳光线留在背后；固定机位。",
+        "可见动作": "武士一只手臂撑住坑边，另一侧膝部先顶起来，厚重背肩从低处抬高；踩实的脚把两粒碎石压开，他把头慢慢抬出肩线，白眼在阴影里亮成一点。话音从巨体里低沉传出，胸廓逐渐撑开，最后支撑臂从石面卸掉重量，身形将要完全站起；背后的晨光在烟雾里铺宽。",
+        "可见背景": "灰绿石铺地面、深灰裂坑边与米灰断板，背后蓝灰云层被中央浅金白晨光透开，稀薄米灰尘沿低处流动。",
+        "台词与语气": "鬼头武士：“…新たな夜明けが来た。”（武士缓慢、沉重地宣告，尾句落在抬头和胸廓撑开的时刻。）",
+        "光影布光": "低处晨光在云雾中形成暖白背亮，巨体按原格压成深灰剪影，眼点清晰，上方冷白漫射保留少量弧面层次。",
+        "声音设计": "重体撑石的一声低压响，碎石两下崩开，抬身带出深长呼吸。"
+      },
+      "meaning_excerpt": "武士一只手臂撑住坑边，另一侧膝部先顶起来，厚重背肩从低处抬高；踩实的脚把两粒碎石压开，他把头慢慢抬出肩线，白眼在阴影里亮成一点。话音从巨体里低沉传出，胸廓逐渐撑开，最后支撑臂从石面卸掉重量，身形将要完全站起；背后的晨光在烟雾里铺宽。"
+    },
+    {
+      "target": "片段1/分镜17",
+      "duration": 6.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_26_001.jpg"
+      ],
+      "purpose": "武士正面竖头白眼与两句原作宣言完整保留，仍是言语威胁阶段。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "state",
+      "anchor_elements": "武士头肩正面中近景，椭圆头竖直，白眼居黑隙，肩背擦痕保留；亮云天。两泡均指武士。",
+      "anchor_state": {
+        "叙事阶段": "武士已站直并威胁",
+        "武士.状态": "恢复直立，准备聚全力"
+      },
+      "state_changes": {
+        "叙事阶段": "武士已站直并威胁",
+        "武士.状态": "恢复直立，准备聚全力"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士正面头肩中近景居画面中央，椭圆头竖起，白眼落在黑隙中；镜头随最后挺身微升，落幅头顶与双肩完整。",
+        "可见动作": "武士把胸肩挺直，头部完全立起，白眼从下方慢慢抬到董白所在的方向；第一句说得格外笃定，肩头的擦痕仍清楚。说完他留半拍，胸廓又向外撑一点，再把第二句压向对方；狭长眼隙收紧，庞大身体在直立姿态里逐渐稳住，刚才的受伤迟滞被新的气势压下去。",
+        "可见背景": "头肩外是浅蓝灰云天与透雾暖白晨光，下缘米灰尘层渐淡，平台在画外。",
+        "台词与语气": "鬼头武士：“朝は朝立ちの時間だ。”（武士带夸口的笃定，第一句低沉陈述，第二句更缓、更重地威胁，末尾稳住。）\n鬼头武士：“今、俺を殺そうとしても、もう遅い。”（武士带夸口的笃定，第一句低沉陈述，第二句更缓、更重地威胁，末尾稳住。）",
+        "光影布光": "上方冷白柔光与低处暖白晨光并存，背肩边缘稍暖，眼隙保持深黑，擦痕偏深灰。",
+        "声音设计": "挺身关节的低短响，胸腔沉呼吸，两句间露出空地风声。"
+      },
+      "meaning_excerpt": "武士把胸肩挺直，头部完全立起，白眼从下方慢慢抬到董白所在的方向；第一句说得格外笃定，肩头的擦痕仍清楚。说完他留半拍，胸廓又向外撑一点，再把第二句压向对方；狭长眼隙收紧，庞大身体在直立姿态里逐渐稳住，刚才的受伤迟滞被新的气势压下去。",
+      "performance": {
+        "card": {
+          "opening": "复起使武士重新认定自己占优。",
+          "beats": [
+            "站直抬眼，笃定陈述",
+            "半拍后再撑胸，缓压第二句"
+          ],
+          "coupling": "身体立稳后才把威胁落定，仍能看见原有擦伤。",
+          "landing": "把压力交给仍在扶人的董白。"
+        },
+        "details": [
+          "武士把胸肩挺直，头部完全立起，白眼从下方慢慢抬到董白所在的方向；第一句说得格外笃定，肩头的擦痕仍清楚。说完他留半拍，胸廓又向外撑一点，再把第二句压向对方；狭长眼隙收紧，庞"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 5.2,
+            "acting_seconds": 6.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜18",
+      "duration": 6.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_26_002.jpg"
+      ],
+      "purpose": "董白半垂眼与扶青前臂的原作接触保留，青闭眼不答话。",
+      "characters": [
+        "董白",
+        "青"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白在右前近景、青在左侧垂头闭眼；青搭肩的手臂横过董白胸颈前，董白一手抓住其前臂。董白半垂眼、微张口，眉尖向内上扬。气泡指董白。",
+      "anchor_state": {
+        "叙事阶段": "董白扶着闭眼青，埋怨未彻底解决武士"
+      },
+      "state_changes": {
+        "叙事阶段": "董白扶着闭眼青，埋怨未彻底解决武士"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白正面脸部与扣前臂的手同框近景，青垂头在画面左侧、搭肩手臂横在下方，董白位于中央偏右；固定机位。",
+        "可见动作": "董白先看着武士，眼睑慢慢压成半垂，嘴轻轻一撇；她把视线斜移到肩旁闭眼的青，低声嫌弃地把话说完。青头仍垂着，手臂软软搭在她肩上；董白外侧手在前臂上重新扣牢，内侧肩向上送一点继续承重，脸上却还维持那副不满。",
+        "可见背景": "两人头发外露浅蓝灰云层，晨光使上缘浅暖白，下方米灰薄尘柔软。",
+        "台词与语气": "董白：“ちっ、バカみたい。あんた、ちゃんと仕留めてないじゃない。”（董白压低声音嫌弃地埋怨，话是对肩旁的青说，语尾有不服气，手上继续扶稳。）",
+        "光影布光": "暖白晨光给董白脸侧一线亮面，上方冷白漫射托住阴影，青银发在侧边柔亮。",
+        "声音设计": "董白轻轻咂气，扣前臂时护腕布料细响，青仍均匀轻呼吸。"
+      },
+      "meaning_excerpt": "董白先看着武士，眼睑慢慢压成半垂，嘴轻轻一撇；她把视线斜移到肩旁闭眼的青，低声嫌弃地把话说完。青头仍垂着，手臂软软搭在她肩上；董白外侧手在前臂上重新扣牢，内侧肩向上送一点继续承重，脸上却还维持那副不满。",
+      "performance": {
+        "card": {
+          "opening": "她发现手柄还没有真正落袋。",
+          "beats": [
+            "看武士，眼睑压低嘴角一撇",
+            "斜看青埋怨，手重新扣牢前臂"
+          ],
+          "coupling": "抱怨和支撑同时发生，不为训话把青放下。",
+          "landing": "她仍负担同伴，面前武士即将聚力。"
+        },
+        "details": [
+          "董白先看着武士，眼睑慢慢压成半垂，嘴轻轻一撇；她把视线斜移到肩旁闭眼的青，低声嫌弃地把话说完。青头仍垂着，手臂软软搭在她肩上；董白外侧手在前臂上重新扣牢，内侧肩向上送一点"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 5.2,
+            "acting_seconds": 6.0,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜19",
+      "duration": 5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_26_003.jpg"
+      ],
+      "purpose": "全身内收、低头、鼓胀和两句宣告保留，力量仍在蓄积。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "preparation",
+      "anchor_elements": "武士全身正面，双腿宽开，头往下垂，粗臂在身前交叠／内收，肩背肌块向外鼓，肩上散小亮屑和短动线；亮云天加放射线。两泡属武士。",
+      "anchor_state": {
+        "叙事阶段": "武士聚全力，尚未攻出",
+        "武士.状态": "宽立内收双臂，全身鼓胀蓄势"
+      },
+      "state_changes": {
+        "叙事阶段": "武士聚全力，尚未攻出",
+        "武士.状态": "宽立内收双臂，全身鼓胀蓄势"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士正面全景居画面中央，双腿宽开、双臂在身前交叠内收，头压在肩线中；镜头从膝高缓慢推近到大腿上方，落幅保留头、鼓起双肩与交叠前臂。",
+        "可见动作": "武士把两臂往身前扣紧，腰背向下压，肩头肌块接连向外鼓起；第一句从低头的胸腔里沉沉漏出。小亮屑从肩线上跳开，皮肤表面的擦痕被绷得更直；他说出要用全力时双膝再张开一点，脊背猛地撑宽，头仍收在肩间，力气聚在身体里。",
+        "可见背景": "背后浅蓝灰云层透出暖白晨光，人物外缘细长放射线向外铺开，脚下灰绿石面在起幅下缘短暂留着。",
+        "台词与语气": "鬼头武士：“…今こそ、”（武士先压低拖出时机，后句沉重宣布，发声在身体绷紧中逐字加力。）\n鬼头武士：“俺の全力を出す。”（武士先压低拖出时机，后句沉重宣布，发声在身体绷紧中逐字加力。）",
+        "光影布光": "上方冷白漫射保留体积，晨光在肩顶和臂缘加暖白亮线，聚力的亮屑短促而稀疏。",
+        "声音设计": "肌块接连绷动的低闷响，足底压石细崩，胸腔深呼吸后收紧。"
+      },
+      "meaning_excerpt": "武士把两臂往身前扣紧，腰背向下压，肩头肌块接连向外鼓起；第一句从低头的胸腔里沉沉漏出。小亮屑从肩线上跳开，皮肤表面的擦痕被绷得更直；他说出要用全力时双膝再张开一点，脊背猛地撑宽，头仍收在肩间，力气聚在身体里。"
+    },
+    {
+      "target": "片段1/分镜20",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_27_001.jpg"
+      ],
+      "purpose": "原格头部极近与技名语义保留；漫画中英排字不作为生成图字，改由日文旁白完整承载。",
+      "characters": [
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "preparation",
+      "anchor_elements": "武士头部竖向特写，白眼在右侧黑隙；画面两侧排版大字“秘技 SECRET TECHNIQUE”和“晨勃 MORNING WOOD”，没有气泡。",
+      "anchor_state": {
+        "叙事阶段": "技名信息揭晓，秘技未实际攻出"
+      },
+      "state_changes": {
+        "叙事阶段": "技名信息揭晓，秘技未实际攻出"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士眼隙与竖直头部的极特写，白眼位于画面右侧，左侧厚重弧面占满大半幅；固定机位，头顶和下颌均在画外。",
+        "可见动作": "武士把头沿肩线微抬，狭长黑隙收紧，白眼在其中定住；头侧肌理轻轻绷直，轮廓几乎不动，把蓄力顶点压成一小拍。两段技名旁白依次响起，眼点在第二段落完时短亮一下，外侧气流细线骤然收住。",
+        "可见背景": "主体之外只留极窄浅冷灰图形底，深灰压暗层向画边收束。",
+        "台词与语气": "旁白（旁白）：“秘技。”（技名旁白低沉简短，第一段轻停，第二段重音落定；作为原作排字信息的等值声音承载。）\n旁白（旁白）：“朝立ち。”（技名旁白低沉简短，第一段轻停，第二段重音落定；作为原作排字信息的等值声音承载。）",
+        "光影布光": "冷白柔光维持头部体积，眼隙深黑；画边暗层增强凝聚感，晨光只在轮廓留窄暖白线。",
+        "声音设计": "低沉聚力声收成很薄的一线，技名读完后短停。"
+      },
+      "meaning_excerpt": "武士把头沿肩线微抬，狭长黑隙收紧，白眼在其中定住；头侧肌理轻轻绷直，轮廓几乎不动，把蓄力顶点压成一小拍。两段技名旁白依次响起，眼点在第二段落完时短亮一下，外侧气流细线骤然收住。"
+    },
+    {
+      "target": "片段1/分镜21",
+      "duration": 1.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_27_002.jpg"
+      ],
+      "purpose": "先手后人的接触揭晓保留，此镜只控制头顶，尚未捏碎。",
+      "characters": [
+        "鬼头武士",
+        "欧铂"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "contact",
+      "anchor_elements": "一只深色分节长指手掌从上方扣住武士头顶，几根尖指沿椭圆头前后两侧伸下；武士白眼在左下黑隙，头被控制，背景黑灰聚光底。无气泡。",
+      "anchor_state": {
+        "叙事阶段": "黑色长指手先扣住武士头顶",
+        "武士.状态": "头部被控制，秘技中断",
+        "欧铂.揭晓": "只有手入画，身体仍在画外"
+      },
+      "state_changes": {
+        "叙事阶段": "黑色长指手先扣住武士头顶",
+        "武士.状态": "头部被控制，秘技中断",
+        "欧铂.揭晓": "只有手入画，身体仍在画外"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士头顶与黑色关节长指的特写，头部居画面中央偏左，长指从上方和右侧扣下；固定机位，手主身体留在画外，黑灰图形底向四角压暗。",
+        "可见动作": "一只黑色长指手忽然从上方落在头顶，几根指节沿椭圆弧面分开扣住，掌根最后贴稳；武士刚要上提的头被压住，白眼向左下急滑。指尖只先收紧到牢牢控制的位置，头部轮廓凹下一点便停住，方才聚起的气流在两侧断掉。",
+        "可见背景": "头与指缝外为黑灰聚光图形底，中央稍浅，四角深黑；实景背景完全被主体与压暗处理覆盖。",
+        "台词与语气": "无台词。",
+        "光影布光": "上方冷白柔光在黑甲指节留窄亮棱，头部冷灰体积清楚，画边压暗而实体光源保持。",
+        "声音设计": "一声轻而清楚的甲指搭触声，聚力声骤然中断，指节随后低低一紧。"
+      },
+      "meaning_excerpt": "一只黑色长指手忽然从上方落在头顶，几根指节沿椭圆弧面分开扣住，掌根最后贴稳；武士刚要上提的头被压住，白眼向左下急滑。指尖只先收紧到牢牢控制的位置，头部轮廓凹下一点便停住，方才聚起的气流在两侧断掉。"
+    },
+    {
+      "target": "片段1/分镜22",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_27_003.jpg"
+      ],
+      "purpose": "先手后人的原格揭晓保留，武士白眼与来者双角头肩的前后关系不变。",
+      "characters": [
+        "鬼头武士",
+        "欧铂"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "武士头部在左侧近层被扣住，白眼睁圆；其后右上显出一名双角金属面盔来者，盔面中央尖棱、下半有竖栅，颈部肌肉显露，外侧一块深色肩甲带旋纹。左上长指仍扣着武士头。下方惊愕泡只有?!!。",
+      "anchor_state": {
+        "叙事阶段": "双角面盔来者在背后揭晓",
+        "欧铂.揭晓": "头肩角盔已显出，姓名尚未由人物叫出",
+        "武士.状态": "头被扣住，惊惧失语"
+      },
+      "state_changes": {
+        "叙事阶段": "双角面盔来者在背后揭晓",
+        "欧铂.揭晓": "头肩角盔已显出，姓名尚未由人物叫出",
+        "武士.状态": "头被扣住，惊惧失语"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士被扣住的头在画面左侧近层，欧铂双角面盔与头肩在右后显出；镜头由手部短短后退，落幅保留左侧头部、上方扣指和右后完整角盔。",
+        "可见动作": "武士头被长指固定着，白眼在黑隙里猛地向后偏，身体只来得及短颤；镜头退开，原本被巨体遮住的后方露出欧铂的双角棱面盔。欧铂已经立在身后，颈肩稳定，扣头手沿原来的接触点保持控制，披风边缘只被风带开一点；武士喉间挤出一记吐不成字的惊哽，眼点僵住。",
+        "可见背景": "角盔与被控头部外侧是浅暖灰天空，晨光穿雾使后层均匀偏亮，余尘很薄。",
+        "台词与语气": "鬼头武士：“っ？！”（武士惊惧的无词短哽与倒抽气，标点不逐字朗读。）",
+        "光影布光": "暖白晨光沿黑甲角缘与面盔中棱留窄亮边，上方冷白漫射让盔面几何层次清楚，脸完全遮住。",
+        "声音设计": "惊吸气一短截，甲指在控制点很轻地摩擦，披风只留极低风擦，来者没有脚步落声。"
+      },
+      "meaning_excerpt": "武士头被长指固定着，白眼在黑隙里猛地向后偏，身体只来得及短颤；镜头退开，原本被巨体遮住的后方露出欧铂的双角棱面盔。欧铂已经立在身后，颈肩稳定，扣头手沿原来的接触点保持控制，披风边缘只被风带开一点；武士喉间挤出一记吐不成字的惊哽，眼点僵住。"
+    },
+    {
+      "target": "片段1/分镜23",
+      "duration": 5.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_28_001.jpg"
+      ],
+      "purpose": "董白圆眼紧眉与青仍搭肩的原格关系保留，两句惊问不伴随放人或出手。",
+      "characters": [
+        "董白",
+        "青"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白正面脸部近景，青垂头和搭肩手臂从左前入画；董白圆眼、紧眉，嘴开露齿，目光朝来者。两泡都指董白。",
+      "anchor_state": {
+        "叙事阶段": "董白震惊来者无声出现",
+        "董白.位置": "仍架住青，视线朝欧铂",
+        "青.状态": "闭眼无回应"
+      },
+      "state_changes": {
+        "叙事阶段": "董白震惊来者无声出现",
+        "董白.位置": "仍架住青，视线朝欧铂",
+        "青.状态": "闭眼无回应"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白正面脸部近景居画面中央，青的垂头发束在左侧近层、搭肩手臂横过下缘；固定机位，圆眼与紧张半张嘴清楚。",
+        "可见动作": "董白把视线从武士身上抬到新出现的面盔，双眼再次骤睁，眉尖压向中间；她先短短问是谁，嘴张开露出一线齿。第二句出口时，眼珠从角盔上缘移到扣头的手，又迅速回到面盔；青的头仍软垂在她肩旁，董白肩线因承重压低，却没有放松托住的姿态，问完只剩紧盯。",
+        "可见背景": "两人发丝外是透雾的浅蓝灰云层，暖白晨光在上缘铺开，低处米灰薄尘极淡。",
+        "台词与语气": "董白：“…今度は誰？”（董白由震惊挤出第一问，第二句急着寻找解释，音量压住，末尾悬着。）\n董白：“どうやって、音もなく現れたの？”（董白由震惊挤出第一问，第二句急着寻找解释，音量压住，末尾悬着。）",
+        "光影布光": "上方冷白柔光照亮眼睛，晨光在黑发轮廓添暖白亮条；青银发与董白脸部分层清楚。",
+        "声音设计": "董白吸气骤短，搭肩衣料维持受力细响，远处风声在两句之间露出。"
+      },
+      "meaning_excerpt": "董白把视线从武士身上抬到新出现的面盔，双眼再次骤睁，眉尖压向中间；她先短短问是谁，嘴张开露出一线齿。第二句出口时，眼珠从角盔上缘移到扣头的手，又迅速回到面盔；青的头仍软垂在她肩旁，董白肩线因承重压低，却没有放松托住的姿态，问完只剩紧盯。",
+      "performance": {
+        "card": {
+          "opening": "更强的来者在她未察觉时已经到位。",
+          "beats": [
+            "抬眼见面盔，第一问出口",
+            "扫扣头手再回面盔，追问如何出现"
+          ],
+          "coupling": "头脸寻找解释，身体仍被同伴的重量牵在原地。",
+          "landing": "她扶着青紧盯来者，无法靠刚才的自信处理。"
+        },
+        "details": [
+          "董白把视线从武士身上抬到新出现的面盔，双眼再次骤睁，眉尖压向中间；她先短短问是谁，嘴张开露出一线齿。第二句出口时，眼珠从角盔上缘移到扣头的手，又迅速回到面盔；青的头仍软垂"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 3.94,
+            "acting_seconds": 5.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜24",
+      "duration": 8.0,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_28_002.jpg"
+      ],
+      "purpose": "遮面角盔、厚颈与武士局部近层的原格构图保留，“她”只按原文代词，不替换人物名字。",
+      "characters": [
+        "欧铂",
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P",
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "state",
+      "anchor_elements": "双角面盔来者头肩正面近景，脸完全被棱面头盔与下栅遮住，肩颈厚重，武士局部在左前遮挡；两泡由面盔方向发声。",
+      "anchor_state": {
+        "叙事阶段": "欧铂点名质问违令，持续扣头"
+      },
+      "state_changes": {
+        "叙事阶段": "欧铂点名质问违令，持续扣头"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，欧铂正面角盔头肩近景居画面中央，武士头部一角留在左下近层，右侧胸肩旋纹与黑甲边缘可见；固定低机位，完整中棱与下栅在框内。",
+        "可见动作": "欧铂先把面盔朝被控的武士微微下倾，叫出他的名字；颈侧肌肉绷成两道稳定线，发声从遮面的下栅后低低透出。短停后，他把质问逐句压下，扣头的手在左侧画外维持同一高度；武士头角在近层短颤一下，欧铂头肩始终稳住，直到最后一字落下才极轻地收回下颌。",
+        "可见背景": "角盔与肩颈外侧只有浅暖灰天空、稀薄米灰雾与淡蓝灰云纹，近层头部遮住左下大半背景。",
+        "台词与语气": "欧铂：“亀頭武士。”（欧铂先低声点名，短停后用明确而压低的质问追责，末尾稳重下沉。）\n欧铂：“お前たちには、彼女に手を出すなと、はっきり命じたはずだが。”（欧铂先低声点名，短停后用明确而压低的质问追责，末尾稳重下沉。）",
+        "光影布光": "暖白晨光沿双角与盔面中棱形成窄亮边，冷白云光保留黑甲暗部层次，颈侧受石面少量中性补光。",
+        "声音设计": "低稳的人声从面栅后透出，甲指受力的细小低响在问句间短露，披风风声很轻。"
+      },
+      "meaning_excerpt": "欧铂先把面盔朝被控的武士微微下倾，叫出他的名字；颈侧肌肉绷成两道稳定线，发声从遮面的下栅后低低透出。短停后，他把质问逐句压下，扣头的手在左侧画外维持同一高度；武士头角在近层短颤一下，欧铂头肩始终稳住，直到最后一字落下才极轻地收回下颌。",
+      "performance": {
+        "card": {
+          "opening": "欧铂已经控制目标，追问的是违令。",
+          "beats": [
+            "微下倾面盔低声点名",
+            "颈侧绷紧，稳定压下完整质问",
+            "末字后收下颌极小一截"
+          ],
+          "coupling": "力量来自控制的稳定与停顿，遮面角色不添加可见嘴型或眼神。",
+          "landing": "武士必须回答，扣头接触尚未松。"
+        },
+        "details": [
+          "欧铂先把面盔朝被控的武士微微下倾，叫出他的名字；颈侧肌肉绷成两道稳定线，发声从遮面的下栅后低低透出。短停后，他把质问逐句压下，扣头的手在左侧画外维持同一高度；武士头角在近"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 6.65,
+            "acting_seconds": 8.0,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜25",
+      "duration": 4.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_28_003.jpg"
+      ],
+      "purpose": "明确叫名与被扣压凹裂阶段保留，接下一格单次捏碎结果。",
+      "characters": [
+        "鬼头武士",
+        "欧铂"
+      ],
+      "risk_flags": [
+        "D"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "contact",
+      "anchor_elements": "武士头部被深色长指扣压的侧面特写，指节折出强角，头部轮廓向内凹裂，白眼偏在左侧，边缘有散小深点；两尖折气泡从武士方向发出。",
+      "anchor_state": {
+        "叙事阶段": "武士认出魔王欧铂，头部受压凹裂",
+        "欧铂.揭晓": "姓名由武士明确叫出",
+        "武士.状态": "被扣头加压，尚未整体喷裂"
+      },
+      "state_changes": {
+        "叙事阶段": "武士认出魔王欧铂，头部受压凹裂",
+        "欧铂.揭晓": "姓名由武士明确叫出",
+        "武士.状态": "被扣头加压，尚未整体喷裂"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，武士头部被长指扣压的侧面特写，白眼在画面左侧，甲指从右上压向中央；固定机位，眼隙、内凹轮廓与指节折角同时清楚。",
+        "可见动作": "武士白眼沿黑隙急滑到来者方向，惊惧地认出名字；扣在头顶的甲指向内收紧一寸，椭圆头缘被挤成折弧，几枚深色细点从缝边甩出。武士想把后半句问完，声音却断在气息里；头部再被压低一点，颈侧绷起，白眼僵在被拉长的眼隙边缘。",
+        "可见背景": "头部与手指之外为浅冷灰放射图形底，细长线从受压位置向外围展开。",
+        "台词与语气": "鬼头武士：“魔王欧鉑…！！！”（武士先失声叫出身份，后一句惊惧急问却说不完整，气息在末尾被压断。）\n鬼头武士：“どうしてここに…？！”（武士先失声叫出身份，后一句惊惧急问却说不完整，气息在末尾被压断。）",
+        "光影布光": "暖白晨光沿甲指尖与头部弧缘形成窄亮，深灰挤压缝与白眼对比清楚，图形底不改实体光向。",
+        "声音设计": "甲指节一声低短绞紧，厚重轮廓受压的闷裂细响，武士一口断住的急气。"
+      },
+      "meaning_excerpt": "武士白眼沿黑隙急滑到来者方向，惊惧地认出名字；扣在头顶的甲指向内收紧一寸，椭圆头缘被挤成折弧，几枚深色细点从缝边甩出。武士想把后半句问完，声音却断在气息里；头部再被压低一点，颈侧绷起，白眼僵在被拉长的眼隙边缘。"
+    },
+    {
+      "target": "片段1/分镜26",
+      "duration": 5.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_29_001.jpg"
+      ],
+      "purpose": "扣指、头顶深色喷裂、巨体俯斜与欧铂稳立的原格结果保留，不扩写额外解体。",
+      "characters": [
+        "欧铂",
+        "鬼头武士"
+      ],
+      "risk_flags": [
+        "P"
+      ],
+      "risk_basis": "人物表演、动作连接与对白承载。",
+      "anchor_phase": "result",
+      "anchor_elements": "低机位双人中全景，欧铂在右后，黑双角面盔、单侧肩甲、长披风、裸露胸腹与长裤；一臂抬高扣住左前巨大武士头顶，头顶沿指间裂成尖形并向两侧喷出深色长飞溅。武士巨体斜伏，欧铂稳立。气泡由欧铂发出。",
+      "anchor_state": {
+        "叙事阶段": "欧铂单次捏碎武士头部，深色喷裂",
+        "武士.状态": "头部压碎，巨体向左前俯沉",
+        "欧铂.揭晓": "抬臂与稳立全身关系清楚"
+      },
+      "state_changes": {
+        "叙事阶段": "欧铂单次捏碎武士头部，深色喷裂",
+        "武士.状态": "头部压碎，巨体向左前俯沉",
+        "欧铂.揭晓": "抬臂与稳立全身关系清楚"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，低机位双人全景，武士巨体压在画面左侧近层，欧铂立在右后，抬高手与头顶喷裂同框；镜头沿抬臂稍上摇并后退，落幅保留欧铂完整头肩、站稳双足与上方接触点。",
+        "可见动作": "欧铂把扣头的手指收拢到最后位置，武士头部顶端在指间压裂，一束近黑深褐喷溅先向上挑，再向两侧甩开；巨大颈肩随即向左前方沉下，身体失去刚才的撑势。欧铂抬臂高度保持稳定，双脚站稳，披风只在后方掀起小角；他把话低低说完，指节停在收紧的位置，喷裂长线化成几枚飞散点。",
+        "可见背景": "背后浅蓝灰云天与暖白透雾晨光，低处米灰尘在脚边成薄层，灰绿平台只在落幅下缘窄处显出。",
+        "台词与语气": "欧铂：“どうやら、俺の言葉を軽く見ていたようだな。”（欧铂低稳地作出判断，语速不急，最后一句向下落定，捏碎后的姿态保持稳定。）",
+        "光影布光": "暖白晨光沿黑甲和披风边缘留亮棱，上方冷白漫射保持裸露胸腹体积，近黑喷溅在亮云前清楚。",
+        "声音设计": "一声集中、短实的挤压裂响，接几下细小喷溅风声与巨体沉落的衣肌低响；欧铂声音保持低稳。"
+      },
+      "meaning_excerpt": "欧铂把扣头的手指收拢到最后位置，武士头部顶端在指间压裂，一束近黑深褐喷溅先向上挑，再向两侧甩开；巨大颈肩随即向左前方沉下，身体失去刚才的撑势。欧铂抬臂高度保持稳定，双脚站稳，披风只在后方掀起小角；他把话低低说完，指节停在收紧的位置，喷裂长线化成几枚飞散点。",
+      "performance": {
+        "card": {
+          "opening": "欧铂已经听完违令者的惊惧。",
+          "beats": [
+            "指节收至终点，单次喷裂",
+            "巨体俯沉，抬臂与站位保持",
+            "低稳说完判断，指节停在收紧处"
+          ],
+          "coupling": "暴烈结果与稳定发声、稳立姿态形成反差，力量不靠额外大动作。",
+          "landing": "控制结果已定，轮到目睹者承受压力。"
+        },
+        "details": [
+          "欧铂把扣头的手指收拢到最后位置，武士头部顶端在指间压裂，一束近黑深褐喷溅先向上挑，再向两侧甩开；巨大颈肩随即向左前方沉下，身体失去刚才的撑势。欧铂抬臂高度保持稳定，双脚站"
+        ],
+        "intervals": [
+          {
+            "speech_seconds": 4.16,
+            "acting_seconds": 5.5,
+            "concurrent": true
+          }
+        ]
+      }
+    },
+    {
+      "target": "片段1/分镜27",
+      "duration": 2,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_29_002.jpg"
+      ],
+      "purpose": "董白圆眼小瞳、紧眉与汗滴的原格反应保留，不增加说话或放开青。",
+      "characters": [
+        "董白"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "reaction",
+      "anchor_elements": "董白双眼与上半脸极特写，圆瞳小点、眉尖高抬、额角和脸侧有汗滴，眼睑绷紧；无气泡。",
+      "anchor_state": {
+        "叙事阶段": "董白目睹捏碎后惊惧出汗",
+        "董白.位置": "仍搀扶青，身体未脱离支撑位"
+      },
+      "state_changes": {
+        "叙事阶段": "董白目睹捏碎后惊惧出汗",
+        "董白.位置": "仍搀扶青，身体未脱离支撑位"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，董白双眼与额侧的极特写，圆眼居画面中央，刘海压在上沿，嘴在画外；固定机位。",
+        "可见动作": "董白双眼僵在睁大的形状里，瞳孔缩成小点，眼睑上缘又绷开极小一截；额侧一滴汗沿鬓边滑到脸侧，鼻梁旁的细汗停住一小拍才向下滚。她迟迟没眨眼，眉间收紧，目光仍锁着欧铂所在的方向。",
+        "可见背景": "刘海和脸外缘以外只余浅冷灰图形底，其他背景完全被主体遮住。",
+        "台词与语气": "无台词。",
+        "光影布光": "晨光在眼中留小而清楚的暖白点，眼睑下方冷灰影加深，汗珠亮面极细。",
+        "声音设计": "捏裂余响迅速远去，董白一口压住的短吸气，空地风声变得很轻。"
+      },
+      "meaning_excerpt": "董白双眼僵在睁大的形状里，瞳孔缩成小点，眼睑上缘又绷开极小一截；额侧一滴汗沿鬓边滑到脸侧，鼻梁旁的细汗停住一小拍才向下滚。她迟迟没眨眼，眉间收紧，目光仍锁着欧铂所在的方向。"
+    },
+    {
+      "target": "片段1/分镜28",
+      "duration": 2.5,
+      "role": "source_locked",
+      "source_images": [
+        "第28話_30_001.jpg"
+      ],
+      "purpose": "原作遮面下半盔、颈与肩胸旋纹近景保留，以无对白停留结束，不增加对青出手或掀盔。",
+      "characters": [
+        "欧铂"
+      ],
+      "risk_flags": [],
+      "risk_basis": "动作或环境节点。",
+      "anchor_phase": "state",
+      "anchor_elements": "欧铂面盔下半部、粗颈与旋纹肩胸的极近景，盔面亮棱和下栅清楚，几枚深色飞溅点在左侧空白；无眼睛、无嘴部可见、无气泡。",
+      "anchor_state": {
+        "叙事阶段": "欧铂遮面极近景收尾"
+      },
+      "state_changes": {
+        "叙事阶段": "欧铂遮面极近景收尾"
+      },
+      "viewed_while_writing": true,
+      "source_audit": "pass",
+      "source_audit_notes": "实际第二遍核准原作主体、阶段、关键构图、表情与全文；晨光、失力、搀扶与扣头揭晓按用户确认执行。",
+      "frame_adaptation": "16:9等比二维画幅；竖长原格通过明确摇移或短促展开经过必要节点，漫画不是生成首帧。",
+      "fields": {
+        "镜头设计": "16:9，欧铂面盔下半部、颈与旋纹肩胸的侧面极近景，面栅斜贯画面中央，左侧留飞散点，眼睛与头顶都在画外；固定机位。",
+        "可见动作": "欧铂面盔的中棱稳在画内，颈侧由绷紧慢慢回到稳定线条；几枚近黑小飞散点从左上缓缓坠过空隙。肩胸没有跟着大幅起伏，披风领边被风带动一小片，面栅后的一口呼吸很低地散出，最后只剩厚重轮廓压在静止画幅里。",
+        "可见背景": "面盔与肩胸外的左侧空隙为浅暖灰天空，其余背景完全被主体遮住。",
+        "台词与语气": "无台词。",
+        "光影布光": "暖白晨光沿面盔尖棱和甲缘留细亮面，上方冷白漫射托住黑甲深灰层次，裸露颈肩为深棕肤色与冷灰软影。",
+        "声音设计": "一口低稳呼吸，披风领边极轻的风擦，空地远风持续。"
+      },
+      "meaning_excerpt": "欧铂面盔的中棱稳在画内，颈侧由绷紧慢慢回到稳定线条；几枚近黑小飞散点从左上缓缓坠过空隙。肩胸没有跟着大幅起伏，披风领边被风带动一小片，面栅后的一口呼吸很低地散出，最后只剩厚重轮廓压在静止画幅里。"
+    }
+  ],
+  "cuts": [],
+  "action_routes": [
+    {
+      "id": "QG-B05-28C",
+      "source_images": [
+        "第28話_21_001.jpg",
+        "第28話_21_002.jpg",
+        "第28話_21_003.jpg",
+        "第28話_22_001.jpg",
+        "第28話_22_002.jpg",
+        "第28話_22_003.jpg",
+        "第28話_22_004.jpg",
+        "第28話_23_001.jpg",
+        "第28話_23_002.jpg",
+        "第28話_23_003.jpg",
+        "第28話_23_004.jpg",
+        "第28話_24_001.jpg",
+        "第28話_24_002.jpg",
+        "第28話_24_003.jpg",
+        "第28話_25_001.jpg",
+        "第28話_25_002.jpg",
+        "第28話_26_001.jpg",
+        "第28話_26_002.jpg",
+        "第28話_26_003.jpg",
+        "第28話_27_001.jpg",
+        "第28話_27_002.jpg",
+        "第28話_27_003.jpg",
+        "第28話_28_001.jpg",
+        "第28話_28_002.jpg",
+        "第28話_28_003.jpg",
+        "第28話_29_001.jpg",
+        "第28話_29_002.jpg",
+        "第28話_30_001.jpg"
+      ],
+      "path": "本批第28話_21_001—30_001，28原文件。\n1. 青由站立失力屈膝下沉，仍勉强笑着回答；随后低头向前倒在石面，脸侧贴地，仍能说“还没有，快了”。董白起初站在旁边，未在她倒地前接住。\n2. 青把功劳让给董白，董白转喜；随后董白将青扶起，用搭肩支撑的方式架住她，一手扣住搭肩前臂，不公主抱。青在搀扶中才闭眼失去回应，董白发现她睡着，之后一直继续扶住她。\n3. 24_001是林海、云雾与画面中央朝阳升起光线的环境空镜；该格无悬空岩台；接伏地武士虚焦、背部抽动，再到武士撑起说“新的黎明到了”，晨光较前明显转亮。26_003再次鼓胀聚力，27_001以原作技名“秘技／晨勃”信息揭招；按技能将漫画排字转成日文旁白声音，不把原漫画字形放入生成画面，但不补成实际打中青或董白。\n4. 秘技尚未真正攻出，黑色关节长指手从上方扣住武士头顶；随后揭晓背后双角面盔来者。董白仍架着闭眼的青，惊问是谁、怎样无声出现。来者叫出龟头武士并质问违令动她，武士明确认出“魔王欧铂”；“她”按原文不自行换成青或春子的名字。\n5. 欧铂持续扣住头部，指节加压使武士头部凹裂，再捏碎，保留29_001原作深色喷裂形与巨体俯斜；不扩写内脏或额外肢解。董白圆眼出汗的反应后，以30_001欧铂面盔下半部近景结束，不补摘盔、对青出手或新台词。\n导演拟补只用于青失力到伏倒、董白俯身扶起到搭肩稳住、原地搀扶中转头与视线切换、武士由局部抽动到撑起，以及扣头的接触受力与结果。保留欧铂先手后人再被叫出名字的揭晓次序。",
+      "proposal_sha256": "a3d4794e5990e70e8a86bfee03be814b7c2e60cdc370bc807fdf6ed3db9be0cb",
+      "confirmation_status": "user_explained_corrected_path",
+      "user_confirmation": {
+        "quote": "3.没有悬空烟台，是画面中间是朝阳升起的光线。其他无误。",
+        "sha256": "a3d4794e5990e70e8a86bfee03be814b7c2e60cdc370bc807fdf6ed3db9be0cb",
+        "interpretation_note": "用户纠正对应24_001中央亮形；本批该处不造岩台，关联晨光背景按同场连续性处理。其余已明确确认，无须重复询问。"
+      }
+    }
+  ],
+  "source_lock": {
+    "version": 1,
+    "sha256": "e230d345200185046307e459573cbd408480811848425fcefb6bd34f411307ff",
+    "manifest": [
+      {
+        "image": "第28話_21_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_21_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_21_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_22_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_22_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_22_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_22_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_23_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_23_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_23_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_23_004.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_24_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_24_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_24_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_25_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_25_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_26_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_26_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_26_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_27_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_27_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_27_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_28_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_28_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_28_003.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_29_001.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_29_002.jpg",
+        "renderable_visual": true
+      },
+      {
+        "image": "第28話_30_001.jpg",
+        "renderable_visual": true
+      }
+    ]
+  },
+  "warnings": [],
+  "revision_audit": [
+    {
+      "date": "2026-10-25",
+      "scope": "28原格720p首次精读实际完成；24_001回原文件放大，纠正浅影为悬空岩台；C011欧铂源文叫名与实际参考图组合匹配。准备关键动作路径待用户确认，尚未开始二遍。"
+    },
+    {
+      "date": "2026-10-25",
+      "scope": "依用户明确纠正进入二遍：24_001中间为朝阳光线，其他路径已确认。",
+      "user_quote": "3.没有悬空烟台，是画面中间是朝阳升起的光线。其他无误。"
+    }
+  ],
+  "scope": {
+    "first_source": "第28話_21_001.jpg",
+    "last_source": "第28話_30_001.jpg",
+    "raw_files": 28,
+    "overview": "本项目A组146原文件全部已实际完成至少首次精读；本批尚未二遍。"
+  },
+  "route_proposal_history": [
+    {
+      "path": "本批第28話_21_001—30_001，28原文件。\n1. 青由站立失力屈膝下沉，仍勉强笑着回答；随后低头向前倒在石面，脸侧贴地，仍能说“还没有，快了”。董白起初站在旁边，未在她倒地前接住。\n2. 青把功劳让给董白，董白转喜；随后董白将青扶起，用搭肩支撑的方式架住她，一手扣住搭肩前臂，不公主抱。青在搀扶中才闭眼失去回应，董白发现她睡着，之后一直继续扶住她。\n3. 24_001是林海、云雾与悬空岩台空镜；接伏地武士虚焦、背部抽动，再到武士撑起说“新的黎明到了”，晨光较前明显转亮。26_003再次鼓胀聚力，27_001以原作“秘技／晨勃”字卡揭招，但不补成实际打中青或董白。\n4. 秘技尚未真正攻出，黑色关节长指手从上方扣住武士头顶；随后揭晓背后双角面盔来者。董白仍架着闭眼的青，惊问是谁、怎样无声出现。来者叫出龟头武士并质问违令动她，武士明确认出“魔王欧铂”；“她”按原文不自行换成青或春子的名字。\n5. 欧铂持续扣住头部，指节加压使武士头部凹裂，再捏碎，保留29_001原作深色喷裂形与巨体俯斜；不扩写内脏或额外肢解。董白圆眼出汗的反应后，以30_001欧铂面盔下半部近景结束，不补摘盔、对青出手或新台词。\n导演拟补只用于青失力到伏倒、董白俯身扶起到搭肩稳住、原地搀扶中转头与视线切换、武士由局部抽动到撑起，以及扣头的接触受力与结果。保留欧铂先手后人再被叫出名字的揭晓次序。",
+      "sha256": "feef30487f60cb4fbbc89ec76189139dc4035244f067d2226445c1ebc4a00cdb",
+      "status": "用户纠正第三步24_001为中央朝阳光线，其他确认。"
+    }
+  ],
+  "initial_state": {
+    "场景": "城内石铺平台，武士伏地处附近",
+    "青.状态": "强化后负荷显出，仍站立可说话",
+    "青.支撑": "自己双脚",
+    "董白.位置": "青远后方，未接触青",
+    "武士.状态": "伏地不动",
+    "欧铂.揭晓": "未进入画面",
+    "叙事阶段": "青即将失力"
+  }
+}
